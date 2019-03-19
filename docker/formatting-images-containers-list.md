@@ -34,6 +34,6 @@ docker ps -a --format "{{.ID}}"
 * .Size
 * .Names
 * .Labels
-* .Label "<label>"
+* .Label "&lt;label&gt;"
 * .Mounts
 * .Networks
