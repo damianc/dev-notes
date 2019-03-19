@@ -13,6 +13,7 @@ Currently: 4 Dev_Notes
 
 # Categories
 
+* [Docker](#docker)
 * [Git](#git)
 * [WordPress](#wordpress)
 
