@@ -14,8 +14,13 @@ Currently: 1 Dev_Note
 # Categories
 
 * [Git](#git)
+* [WordPress](#wordpress)
 
 
 # Git
 
 * [Empty commit](git/empty-commit.md)
+
+# WordPress
+
+* [Adding a favicon](wordpress/adding-favicon.md)
