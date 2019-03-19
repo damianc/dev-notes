@@ -25,6 +25,7 @@ Currently: 5 Dev_Notes
 # Git
 
 * [Empty commit](git/empty-commit.md)
+* [Update last commit](git/update-last-commit.md)
 
 # WordPress
 
