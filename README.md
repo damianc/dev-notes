@@ -16,6 +16,6 @@ Currently: 1 Dev_Note
 * [Git](#git)
 
 
-# Tech
+# Git
 
 * [Empty commit](git/empty-commit.md)
