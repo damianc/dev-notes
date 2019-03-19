@@ -7,15 +7,15 @@ It is as helpful as often I tend to forget this and that, especially there is a 
 
 Something new is hoped to be written as often as it could.
 
-Currently: 0 Dev_Notes
+Currently: 1 Dev_Note
 
 ---
 
 # Categories
 
-* [Tech](#tech)
+* [Git](#git)
 
 
 # Tech
 
-* [Description/title of a thing](tech/shorterDescFile.md)
+* [Empty commit](git/empty-commit.md)
