@@ -23,7 +23,7 @@ docker ps (-f|--format) status=paused
 ### Examples of filtering images
 
 | Example command | Description |
----------------------------------
+|-----------------|-------------|
 | `docker images --filter "before=mock"` | images created before the image named `mock` |
 | `docker images --filter reference='pub*:app*'` | images whose repository name starts with *pub* and whose tag name starts with *app* |
 | `docker images --filter reference='*:*alpha'` | images whose tag name ends with *alpha* |
@@ -47,7 +47,7 @@ docker ps (-f|--format) status=paused
 ### Examples of filtering containers
 
 | Example command | Description |
----------------------------------
+|-----------------|-------------|
 | `docker ps --filter "label=color"` | containers with the `color` label assigned (regardless of its value) |
 | `docker ps --filter "label=color=red"` | containers with the `color` label whose value is `red` |
 | `docker ps --filter before=app` | containers created before the container named `app` |
