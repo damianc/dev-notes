@@ -7,7 +7,7 @@ It is as helpful as often I tend to forget this and that, especially there is a 
 
 Something new is hoped to be written as often as it could.
 
-Currently: 6 Dev_Notes
+Currently: 8 Dev_Notes
 
 ---
 
@@ -15,6 +15,7 @@ Currently: 6 Dev_Notes
 
 * [Docker](#docker)
 * [Git](#git)
+* [SQL](#sql)
 * [WordPress](#wordpress)
 
 # Docker
@@ -26,6 +27,11 @@ Currently: 6 Dev_Notes
 
 * [Empty commit](git/empty-commit.md)
 * [Update last commit](git/update-last-commit.md)
+
+# SQL
+
+* [Create table with a struct of another - `CREATE TABLE...LIKE`](sql/create-table-like-another.md)
+* [Create table with a query - `CREATE TABLE...SELECT`](sql/create-table-with-query.md)
 
 # WordPress
 
