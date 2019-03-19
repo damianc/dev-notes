@@ -9,8 +9,8 @@ CREATE TRIGGER <name>
 ```
 
 Queries can contain:
-* `NEW.&lt;column&gt;` - a reference to a new value in the column (using in *INSERT* and *UPDATE* triggers)
-* `OLD.&lt;column&gt;` - a reference to an old value in the column (using in *DELETE* and *UPDATE* triggers)
+* `NEW.<column>` - a reference to a new value in the column (using in *INSERT* and *UPDATE* triggers)
+* `OLD.<column>` - a reference to an old value in the column (using in *DELETE* and *UPDATE* triggers)
 
 ## Example
 
