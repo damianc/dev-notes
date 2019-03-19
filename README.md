@@ -1,4 +1,4 @@
-# Dev_Notes;
+# Dev_Notes
 
 Inspired by @charliegerard's [repo](https://github.com/charliegerard/dev-notes) (being inspired by repos of [@jbranchaud](https://github.com/jbranchaud/til) and [@thoughtbot](https://github.com/thoughtbot/til), in turn).
 
@@ -7,7 +7,7 @@ It is as helpful as often I tend to forget this and that, especially there is a 
 
 Something new is hoped to be written as often as it could.
 
-Currently: 0 TILs
+Currently: 0 Dev_Notes
 
 ---
 
