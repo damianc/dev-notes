@@ -39,6 +39,7 @@ Currently: 12 Dev_Notes
 # Tools
 
 * [vim commands](tools/vim-commands.md)
+* [Sublime shortcuts](tools/sublime-shortcuts.md)
 
 # WordPress
 
