@@ -1,4 +1,4 @@
-# Deleting images and containers
+# Deleting multiple images and containers
 
 ## Images:
 
