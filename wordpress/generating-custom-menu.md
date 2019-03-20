@@ -1,4 +1,4 @@
-# Generating custom menu
+# Generating a custom menu
 
 ## On back-end:
 
