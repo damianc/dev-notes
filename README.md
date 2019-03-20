@@ -7,7 +7,7 @@ It is as helpful as often I tend to forget this and that, especially there is a 
 
 Something new is hoped to be written as often as it could.
 
-Currently: 9 Dev_Notes
+Currently: 10 Dev_Notes
 
 ---
 
@@ -38,3 +38,4 @@ Currently: 9 Dev_Notes
 
 * [Adding a favicon](wordpress/adding-favicon.md)
 * [AJAX Requests](wordpress/ajax-requests.md)
+* [Generating a custom menu](wordpress/generating-custom-menu.md)
