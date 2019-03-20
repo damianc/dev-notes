@@ -22,6 +22,7 @@ Currently: 10 Dev_Notes
 
 * [Formatting a list of images/containers](docker/formatting-images-containers-list.md)
 * [Filtering a list of images/containers](docker/filtering-images-containers-list.md)
+* [Deleting images and containers](docker/deleting-images-containers.md)
 
 # Git
 
