@@ -20,3 +20,5 @@
 | Ctrl + KB | show/hide sidebar |
 | Ctrl + KU | transform to uppercase |
 | Ctrl + KL | transform to lowercase |
+
+[Full list in the docs](http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_win.html)
