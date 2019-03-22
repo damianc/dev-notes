@@ -7,7 +7,7 @@ It is as helpful as often I tend to forget this and that, especially there is a 
 
 Something new is hoped to be written as often as it could.
 
-Currently: 14 Dev_Notes
+Currently: 15 Dev_Notes
 
 ---
 
@@ -24,6 +24,10 @@ Currently: 14 Dev_Notes
 * [Formatting a list of images/containers](docker/formatting-images-containers-list.md)
 * [Filtering a list of images/containers](docker/filtering-images-containers-list.md)
 * [Deleting multiple images and containers](docker/deleting-images-containers.md)
+
+# ES6+
+
+* [[Weak]Map vs. [Weak]Set](es6+/maps-vs-sets.md)
 
 # Git
 
