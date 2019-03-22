@@ -7,7 +7,7 @@ It is as helpful as often I tend to forget this and that, especially there is a 
 
 Something new is hoped to be written as often as it could.
 
-Currently: 15 Dev_Notes
+Currently: 16 Dev_Notes
 
 ---
 
@@ -31,6 +31,7 @@ Currently: 15 Dev_Notes
 
 # Git
 
+* [Add SSH identity](git/add-ssh-identity.md)
 * [Empty commit](git/empty-commit.md)
 * [Update last commit](git/update-last-commit.md)
 * [Find the commit a bug has been introduced in](git/find-commit-introducing-bug.md)
