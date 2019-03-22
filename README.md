@@ -27,6 +27,7 @@ Currently: 17 Dev_Notes
 
 # ES6+
 
+* [RegExp: named captured groups](es6+/re-named-groups.md)
 * [[Weak]Map vs. [Weak]Set](es6+/maps-vs-sets.md)
 * [export and import](es6+/export-and-import.md)
 
