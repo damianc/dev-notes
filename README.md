@@ -7,18 +7,23 @@ It is as helpful as often I tend to forget this and that, especially there is a 
 
 Something new is hoped to be written as often as it could.
 
-Currently: 19 Dev_Notes
+Currently: 20 Dev_Notes
 
 ---
 
 # Categories
 
+* [Bash Apps](#bash-apps)
 * [Design Patterns](#design-patterns)
 * [Docker](#docker)
 * [Git](#git)
 * [SQL](#sql)
 * [Tools](#tools)
 * [WordPress](#wordpress)
+
+# Bash Apps
+
+* [[du] Disk Usage](#bash-apps/du.md)
 
 # Design Patterns
 
