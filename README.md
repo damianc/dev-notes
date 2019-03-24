@@ -13,7 +13,7 @@ Currently: 19 Dev_Notes
 
 # Categories
 
-* (Design Patterns)(#design-patterns)
+* [Design Patterns](#design-patterns)
 * [Docker](#docker)
 * [Git](#git)
 * [SQL](#sql)
