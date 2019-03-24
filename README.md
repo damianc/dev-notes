@@ -23,7 +23,7 @@ Currently: 20 Dev_Notes
 
 # Bash Apps
 
-* [[du] Disk Usage](#bash-apps/du.md)
+* [[du] Disk Usage](bash-apps/du.md)
 
 # Design Patterns
 
