@@ -16,6 +16,7 @@ Currently: 22 Dev_Notes
 * [Bash Apps](#bash-apps)
 * [Design Patterns](#design-patterns)
 * [Docker](#docker)
+* [ES6+](#es6)
 * [Git](#git)
 * [SQL](#sql)
 * [Tools](#tools)
