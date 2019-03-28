@@ -20,13 +20,43 @@ ln [<options>] <target1> ... <targetN> <directory>
 ## Example
 
 ```
-echo 'abc' > abc.txt
+echo abc > abc.txt
 cat abc.txt
 >> abc
+
 ln abc.txt _abc
 cat _abc
 >> abc
-echo 'def' > _abc
+
+echo def > _abc
+cat abc.txt
+>> def
+```
+## Windows
+
+```
+mklink <link-name> <target>
+```
+
+| Option | Description |
+|--------|-------------|
+| no option | soft link pointing to a file |
+| /D | soft link pointing to a directory |
+| /H | hard link pointing to a file |
+| /J | hard link pointing to a directory |
+
+### Windows example
+
+```
+echo abc > abc.txt
+cat abc.txt
+>> abc
+
+mklink /H _abc abc.txt
+cat _abc
+>> abc
+
+echo def > _abc
 cat abc.txt
 >> def
 ```
