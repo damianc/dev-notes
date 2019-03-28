@@ -7,7 +7,7 @@ It is as helpful as often I tend to forget this and that, especially there is a 
 
 Something new is hoped to be written as often as it could.
 
-Currently: 23 Dev_Notes
+Currently: 24 Dev_Notes
 
 ---
 
@@ -26,6 +26,7 @@ Currently: 23 Dev_Notes
 
 * [[du] Disk Usage](bash-apps/du.md)
 * [`cd /d` on Win10 / cmd](bash-apps/cdd-win10.md)
+* [[ln] Symbolic and hard links](bash-apps/symbolic-and-hard-links.md)
 
 # Design Patterns
 
