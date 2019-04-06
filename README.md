@@ -7,12 +7,13 @@ It is as helpful as often I tend to forget this and that, especially there is a 
 
 Something new is hoped to be written as often as it could.
 
-Currently: 24 Dev_Notes
+Currently: 25 Dev_Notes
 
 ---
 
 # Categories
 
+* [Algorithms and Data Structures](#algorithms-and-data-structures)
 * [Bash Apps](#bash-apps)
 * [Design Patterns](#design-patterns)
 * [Docker](#docker)
@@ -21,6 +22,10 @@ Currently: 24 Dev_Notes
 * [SQL](#sql)
 * [Tools](#tools)
 * [WordPress](#wordpress)
+
+# Algorithms and Data Structures
+
+* [Abstract Data Types](algorithms-and-data-structures/abstract-data-types.md)
 
 # Bash Apps
 
