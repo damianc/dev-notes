@@ -7,7 +7,7 @@ It is as helpful as often I tend to forget this and that, especially there is a 
 
 Something new is hoped to be written as often as it could.
 
-Currently: 26 Dev_Notes
+Currently: 27 Dev_Notes
 
 ---
 
@@ -26,6 +26,7 @@ Currently: 26 Dev_Notes
 # Algorithms and Data Structures
 
 * [Abstract Data Types](algorithms-and-data-structures/abstract-data-types.md)
+* [Algorithms](algorithms-and-data-structures/algorithms.md)
 
 # Bash Apps
 
