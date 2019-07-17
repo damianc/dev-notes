@@ -1,6 +1,6 @@
 # Formatting Output
 
-To format an output use `\e[CODESm]` where `CODES` is `CODE[;CODE]...`.
+To format an output use `\e[CODESm` where `CODES` is `CODE[;CODE]...`.
 The following ones are the examples:
 
 * red &rarr; `\e[31m`
