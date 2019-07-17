@@ -7,7 +7,7 @@ It is as helpful as often I tend to forget this and that, especially there is a 
 
 Something new is hoped to be written as often as it could.
 
-Currently: 28 Dev_Notes
+Currently: 29 Dev_Notes
 
 ---
 
@@ -31,6 +31,7 @@ Currently: 28 Dev_Notes
 # Bash Apps
 
 * [Formatting Output](bash-apps/formatting-output.md)
+* [`PS1` Variable](bash-apps/ps1-variable.md)
 * [[du] Disk Usage](bash-apps/du.md)
 * [`cd /d` on Win10 / cmd](bash-apps/cdd-win10.md)
 * [Pipe to `while`](bash-apps/pipe-to-while.md)
