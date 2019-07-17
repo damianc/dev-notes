@@ -20,7 +20,7 @@
 
 | Symbol | Meaning                          |
 |--------|----------------------------------|
-| `\@`   | 12hr time (HH:MM AM|PM)          |
+| `\@`   | 12hr time (HH:MM AM\|PM)          |
 | `\T`   | 12hr time w/ seconds (HH:MM:SS)  |
 | `\A`   | 24hr time (HH:MM)                |
 | `\t`   | 24hr time w/ seconds (HH:MM:SS)  |
