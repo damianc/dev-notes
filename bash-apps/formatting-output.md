@@ -1,7 +1,7 @@
 # Formatting Output
 
 To format an output use `\e[CODESm]` where `CODES` is `CODE[;CODE]...`.
-The following ones are the exaples:
+The following ones are the examples:
 
 * red &rarr; `\e[31m`
 * red and bold &rarr; `\e[31;1m` (or `\e[1;31m`)
