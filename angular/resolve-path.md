@@ -20,8 +20,6 @@ import Iterable from '@interface/Iterable';
 
 We must use `baseUrl` and `paths` within `compilerOptions` in _tsconfig.json_ file:
 
-
-tsconfig.json
 ```
 {
 	"compilerOptions": {
