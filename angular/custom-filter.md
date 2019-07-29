@@ -36,3 +36,18 @@ export class FilterFilter {
 	<li *ngFor="let item of getItems() | filter:phrase:'name'">{{ item.name }}</li>
 </ul>
 ```
+
+### Registering
+
+To register a filter, use the `declarations` property of `@NgModule()`.
+
+```
+import { FilterFilter } from './filter';
+// ...
+
+@NgModule({
+	declarations: [FilterFilter, ...]
+	// ...
+})
+export class SomeModule {}
+```
