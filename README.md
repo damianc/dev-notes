@@ -7,13 +7,14 @@ It is as helpful as often I tend to forget this and that, especially there is a 
 
 Something new is hoped to be written as often as it could.
 
-Currently: 29 Dev_Notes
+Currently: 30 Dev_Notes
 
 ---
 
 # Categories
 
 * [Algorithms and Data Structures](#algorithms-and-data-structures)
+* [Angular](#angular)
 * [Bash Apps](#bash-apps)
 * [Design Patterns](#design-patterns)
 * [Docker](#docker)
@@ -27,6 +28,10 @@ Currently: 29 Dev_Notes
 
 * [Abstract Data Types](algorithms-and-data-structures/abstract-data-types.md)
 * [Algorithms](algorithms-and-data-structures/algorithms.md)
+
+# Angular
+
+* [Resolving path, e.g., `@interface/Readable`](angular/resolve-path.md)
 
 # Bash Apps
 
