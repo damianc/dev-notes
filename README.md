@@ -7,7 +7,7 @@ It is as helpful as often I tend to forget this and that, especially there is a 
 
 Something new is hoped to be written as often as it could.
 
-Currently: 31 Dev_Notes
+Currently: 32 Dev_Notes
 
 ---
 
@@ -69,6 +69,7 @@ Currently: 31 Dev_Notes
 
 # SQL
 
+* [`UNION`](sql/union.md)
 * [Triggers](sql/triggers.md)
 * [Create table with a struct of another - `CREATE TABLE...LIKE`](sql/create-table-like-another.md)
 * [Create table with a query - `CREATE TABLE...SELECT`](sql/create-table-with-query.md)
