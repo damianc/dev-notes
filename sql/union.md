@@ -17,9 +17,9 @@ Every `SELECT` statement must fetch the same number of columns.
 		<th colspan="2">t3</th>
 	</tr>
 	<tr>
-		<td>**i**</td> <td>**c**</td>
-		<td>**j**</td> <td>**c**</td>
-		<td>**d**</td> <td>**k**</td>
+		<td><b>i</b></td> <td><b>c</b></td>
+		<td><b>j</b></td> <td><b>c</b></td>
+		<td><b>d</b></td> <td><b>k</b></td>
 	</tr>
 	<tr>
 		<td>1</td> <td>red</td>
