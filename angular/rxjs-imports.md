@@ -1,4 +1,4 @@
-# RxJS Import
+# RxJS Imports
 
 ```
 import { fromEvent, of, zip, interval } from 'rxjs';
