@@ -33,8 +33,8 @@ Currently: 36 Dev_Notes
 
 * [Resolving path, e.g., `@interface/Readable`](angular/resolve-path.md)
 * [RxJS Imports](angular/rxjs-imports.md)
-* [Custom Filter/Pipe](angular/custom-filter.md)
-* [Custom Pipe for Numbers](angular/pipe.md)
+* [Custom Pipe](angular/pipe.md)
+* [More Complex Pipe](angular/custom-filter.md)
 * [Component Event with `@Output`](angular/component-event.md)
 * [`@ContentChildren` vs `@ViewChildren` and Detecting Changes](angular/content-and-view-children.md)
 

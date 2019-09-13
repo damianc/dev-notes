@@ -1,4 +1,4 @@
-# Custom Filter
+# Custom Complex Pipe
 
 ```
 import { Pipe } from "@angular/core";

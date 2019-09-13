@@ -1,4 +1,4 @@
-# Pipe
+# Custom Pipe
 
 ## `fraction.pipe.ts`
 
@@ -29,3 +29,5 @@ export class FractionPipe {
   ...
 </div>
 ```
+
+> Pipes are registered in `NgModule.declarations[]`.
