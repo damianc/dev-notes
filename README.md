@@ -7,7 +7,7 @@ It is as helpful as often I tend to forget this and that, especially there is a 
 
 Something new is hoped to be written as often as it could.
 
-Currently: 36 Dev_Notes
+Currently: 37 Dev_Notes
 
 ---
 
@@ -35,6 +35,7 @@ Currently: 36 Dev_Notes
 * [RxJS Imports](angular/rxjs-imports.md)
 * [Custom Pipe](angular/pipe.md)
 * [More Complex Pipe](angular/custom-filter.md)
+* [Impure Pipe](angular/impure-pipe.md)
 * [Component Event with `@Output`](angular/component-event.md)
 * [`@ContentChildren` vs `@ViewChildren` and Detecting Changes](angular/content-and-view-children.md)
 
