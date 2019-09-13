@@ -16,6 +16,12 @@
 ```
 List ({{ items | length }})
 <button (click)="addItem()">NEW ITEM</button>
+
+<ul>
+	<li *ngFor="let item of items; let i = index">
+		{{ i + 1}}. {{ item }}
+	</li>
+</ul>
 ```
 
 ### `app.component.ts`
