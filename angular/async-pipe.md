@@ -33,5 +33,5 @@ loader$ = merge(
 ```
 
 ```
-{{ loader$ | pipe }}
+{{ loader$ | async }}
 ```
