@@ -31,3 +31,9 @@ export class FractionPipe {
 ```
 
 > Pipes are registered in `NgModule.declarations[]`.
+
+## Multiple Pipes
+
+```
+{{ item.result | fr:4 | otherPipe:10:20 }}
+```
