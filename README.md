@@ -7,7 +7,7 @@ It is as helpful as often I tend to forget this and that, especially there is a 
 
 Something new is hoped to be written as often as it could.
 
-Currently: 35 Dev_Notes
+Currently: 36 Dev_Notes
 
 ---
 
@@ -34,6 +34,7 @@ Currently: 35 Dev_Notes
 * [Resolving path, e.g., `@interface/Readable`](angular/resolve-path.md)
 * [RxJS Imports](angular/rxjs-imports.md)
 * [Custom Filter/Pipe](angular/custom-filter.md)
+* [Custom Pipe for Numbers](angular/pipe.md)
 * [Component Event with `@Output`](angular/component-event.md)
 * [`@ContentChildren` vs `@ViewChildren` and Detecting Changes](angular/content-and-view-children.md)
 
