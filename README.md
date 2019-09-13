@@ -7,7 +7,7 @@ It is as helpful as often I tend to forget this and that, especially there is a 
 
 Something new is hoped to be written as often as it could.
 
-Currently: 38 Dev_Notes
+Currently: 39 Dev_Notes
 
 ---
 
@@ -38,6 +38,7 @@ Currently: 38 Dev_Notes
 * [Impure Pipe](angular/impure-pipe.md)
 * [`async` Pipe](angular/async-pipe.md)
 * [Component Event with `@Output`](angular/component-event.md)
+* [`ngIf` Implementation](angular/ngif-implementation.md)
 * [`@ContentChildren` vs `@ViewChildren` and Detecting Changes](angular/content-and-view-children.md)
 
 # Bash Apps
