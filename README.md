@@ -7,7 +7,7 @@ It is as helpful as often I tend to forget this and that, especially there is a 
 
 Something new is hoped to be written as often as it could.
 
-Currently: 40 Dev_Notes
+Currently: 41 Dev_Notes
 
 ---
 
@@ -39,6 +39,7 @@ Currently: 40 Dev_Notes
 * [`async` Pipe](angular/async-pipe.md)
 * [Component Event with `@Output`](angular/component-event.md)
 * [`ngIf` Implementation](angular/ngif-implementation.md)
+* [`ngFor` Implementation](angular/ngfor-implementation.md)
 * [`@ContentChildren` vs `@ViewChildren` and Detecting Changes](angular/content-and-view-children.md)
 * [Custom Service](angular/custom-service.md)
 
