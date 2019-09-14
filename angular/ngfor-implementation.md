@@ -3,7 +3,7 @@
 ```
 import {
 	Directive, ViewContainerRef, TemplateRef, Input,
-	IterableDiffer, IterableDiffers, DefaultIterableDiffer
+	IterableDiffers, DefaultIterableDiffer
 } from '@angular/core';
 
 @Directive({
