@@ -89,6 +89,7 @@ Currently: 44 Dev_Notes
 * [Triggers](sql/triggers.md)
 * [Create table with a struct of another - `CREATE TABLE...LIKE`](sql/create-table-like-another.md)
 * [Create table with a query - `CREATE TABLE...SELECT`](sql/create-table-with-query.md)
+* [Triggers](sql/triggers.md)
 
 # Tools
 
