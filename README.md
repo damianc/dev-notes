@@ -7,7 +7,7 @@ It is as helpful as often I tend to forget this and that, especially there is a 
 
 Something new is hoped to be written as often as it could.
 
-Currently: 42 Dev_Notes
+Currently: 43 Dev_Notes
 
 ---
 
@@ -78,6 +78,7 @@ Currently: 42 Dev_Notes
 
 # SQL
 
+* [`SELECT`](sql/select.md)
 * [`INSERT`/`UPDATE`/`DELETE`](sql/insert-update-delete.md)
 * [`UNION`](sql/union.md)
 * [Triggers](sql/triggers.md)
