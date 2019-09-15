@@ -7,7 +7,7 @@ It is as helpful as often I tend to forget this and that, especially there is a 
 
 Something new is hoped to be written as often as it could.
 
-Currently: 43 Dev_Notes
+Currently: 44 Dev_Notes
 
 ---
 
@@ -16,6 +16,7 @@ Currently: 43 Dev_Notes
 * [Algorithms and Data Structures](#algorithms-and-data-structures)
 * [Angular](#angular)
 * [Bash Apps](#bash-apps)
+* [CSS](#css)
 * [Design Patterns](#design-patterns)
 * [Docker](#docker)
 * [ES6+](#es6)
@@ -51,6 +52,10 @@ Currently: 43 Dev_Notes
 * [`cd /d` on Win10 / cmd](bash-apps/cdd-win10.md)
 * [Pipe to `while`](bash-apps/pipe-to-while.md)
 * [[ln] Symbolic and hard links](bash-apps/symbolic-and-hard-links.md)
+
+# CSS
+
+* [Generating CSS stylesheet with JavaScript's `FileReader`](css/generating-css-file-in-js.md)
 
 # Design Patterns
 
