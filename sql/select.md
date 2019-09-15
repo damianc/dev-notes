@@ -53,7 +53,7 @@ WHERE status IN ('active', 'pending')
 ```
 SELECT * FROM todo
 WHERE category NOT IN (
-	SELECT DISTINCT category_name FROM outdated_category
+	SELECT DISTINCT category_name FROM outdated_categories
 )
 ```
 
