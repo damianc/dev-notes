@@ -7,7 +7,7 @@ It is as helpful as often I tend to forget this and that, especially there is a 
 
 Something new is hoped to be written as often as it could.
 
-Currently: 48 Dev_Notes
+Currently: 49 Dev_Notes
 
 ---
 
@@ -57,6 +57,7 @@ Currently: 48 Dev_Notes
 
 # CSS
 
+* [Named Grid Lines](css/named-grid-lines.md)
 * [Generating CSS stylesheet with JavaScript's `FileReader`](css/generating-css-file-in-js.md)
 
 # Design Patterns
