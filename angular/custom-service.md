@@ -133,7 +133,7 @@ export class PaDiscountPipe {
 
 ```
 <ul>
-	<li *ngxFor="let book of books; let i = index; let last = last" 
+	<li *ngFor="let book of books; let i = index; let last = last" 
 		[class.text-danger]="last">
 		{{ i + 1 }}. {{ book.title }} - {{ book.price | discount }}
 	</li>
