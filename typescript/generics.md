@@ -37,4 +37,7 @@ function firstItem<T>(collection: Array<T>): T {
 
 ```
 firstItem<number>([1, 2, 3, 4]);
+
+// auto-detection of the type
+firstItem(['a', 'b', 'c', 'd']);
 ```
