@@ -111,3 +111,31 @@ export class AppModule {}
 <discountEditor></discountEditor>
 <discountDisplay></discountDisplay>
 ```
+
+## Pipe using the service
+
+```
+import { Pipe } from '@angular/core';
+import { DiscountService } from './discount.service';
+
+@Pipe({
+	name: 'discount',
+	pure: false
+})
+export class PaDiscountPipe {
+	constructor(private discount: DiscountService) {}
+
+	transform(price: number): number {
+		return this.discount.applyDiscount(price);
+	}
+}
+```
+
+```
+<ul>
+	<li *ngxFor="let book of books; let i = index; let last = last" 
+		[class.text-danger]="last">
+		{{ i + 1 }}. {{ book.title }} - {{ book.price | discount }}
+	</li>
+</ul>
+```
