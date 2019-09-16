@@ -7,7 +7,7 @@ It is as helpful as often I tend to forget this and that, especially there is a 
 
 Something new is hoped to be written as often as it could.
 
-Currently: 45 Dev_Notes
+Currently: 46 Dev_Notes
 
 ---
 
@@ -23,6 +23,7 @@ Currently: 45 Dev_Notes
 * [Git](#git)
 * [SQL](#sql)
 * [Tools](#tools)
+* [TypeScript](#typescript)
 * [WordPress](#wordpress)
 
 # Algorithms and Data Structures
@@ -95,6 +96,10 @@ Currently: 45 Dev_Notes
 
 * [vim commands](tools/vim-commands.md)
 * [Sublime shortcuts](tools/sublime-shortcuts.md)
+
+# TypeScript
+
+* [Generics](typescript/generics.md)
 
 # WordPress
 
