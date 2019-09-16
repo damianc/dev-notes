@@ -7,7 +7,7 @@ It is as helpful as often I tend to forget this and that, especially there is a 
 
 Something new is hoped to be written as often as it could.
 
-Currently: 46 Dev_Notes
+Currently: 47 Dev_Notes
 
 ---
 
@@ -39,6 +39,7 @@ Currently: 46 Dev_Notes
 * [More Complex Pipe](angular/custom-filter.md)
 * [Impure Pipe](angular/impure-pipe.md)
 * [`async` Pipe](angular/async-pipe.md)
+* [Interfaces](angular/interfaces.md)
 * [Component Event with `@Output`](angular/component-event.md)
 * [`ngIf` Implementation](angular/ngif-implementation.md)
 * [`ngFor` Implementation](angular/ngfor-implementation.md)
