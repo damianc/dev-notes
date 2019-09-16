@@ -30,7 +30,7 @@ s.push(2);
 ## Generic Function
 
 ```
-function firstItem(collection: Array<T>): T {
+function firstItem<T>(collection: Array<T>): T {
 	return collection[0];
 }
 ```
