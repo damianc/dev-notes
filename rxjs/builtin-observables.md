@@ -1,20 +1,20 @@
 # Built-in Observables
 
-* `interval(periodMs)`
-* `timer(delayMs, nextsPeriodMs?)`
-* `of(item1, ..., itemN)`
-* `range(start, count?)`
-* `generate(initState, conditionFn?, iterationFn?, selectorFn?)`
-* `from(iterableOrPromiseOrObservableLike)`
-* `empty()` [_DEPRECATED_]
-* `iif(condition, trueResult, falseResult?)`
-* `defer(observableFactory)`
-* `throwError(error)`
-* `fromEvent(target, eventName, useCaptureOrOptions?, selectorFn?)`
-* `fromEventPattern(addHandler, removeHandler?, selectorFn?)`
-* `bindCallback(callback, selectorFn?)`
-* `bindNodeCallback(nodeStyleCallback, selectorFn?)`
-* `ajax(urlOrOptionsObject)`
+* [`interval(periodMs)`](#intervalperiodms)
+* [`timer(delayMs, nextsPeriodMs?)`](#timerdelayms-nextsperiodms)
+* [`of(item1, ..., itemN)`](#ofitem1--itemn)
+* [`range(start, count?)`](#rangestart-count)
+* [`generate(initState, conditionFn?, iterationFn?, selectorFn?)`](#generateinitstate-conditionfn-iterationfn-selectorfn)
+* [`from(iterableOrPromiseOrObservableLike)`](#fromiterableorpromiseorobservablelike)
+* [`empty()` [_DEPRECATED_]](#empty-deprecated)
+* [`iif(condition, trueResult, falseResult?)`](#iifcondition-trueresult-falseresult)
+* [`defer(observableFactory)`](#deferobservablefactory)
+* [`throwError(error)`](#throwerrorerror)
+* [`fromEvent(target, eventName, useCaptureOrOptions?, selectorFn?)`](#fromeventtarget-eventname-usecaptureoroptions-selectorfn)
+* [`fromEventPattern(addHandler, removeHandler?, selectorFn?)`](#fromeventpatternaddhandler-removehandler-selectorfn)
+* [`bindCallback(callback, selectorFn?)`](#bindcallbackcallback-selectorfn)
+* [`bindNodeCallback(nodeStyleCallback, selectorFn?)`](#bindnodecallbacknodestylecallback-selectorfn)
+* [`ajax(urlOrOptionsObject)`](#ajaxurloroptionsobject)
 
 ## `interval(periodMs)`
 
