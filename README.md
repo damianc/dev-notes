@@ -7,7 +7,7 @@ It is as helpful as often I tend to forget this and that, especially there is a 
 
 Something new is hoped to be written as often as it could.
 
-Currently: 50 Dev_Notes
+Currently: 51 Dev_Notes
 
 ---
 
@@ -21,6 +21,7 @@ Currently: 50 Dev_Notes
 * [Docker](#docker)
 * [ES6+](#es6)
 * [Git](#git)
+* [PHP](#php)
 * [SQL](#sql)
 * [Tools](#tools)
 * [TypeScript](#typescript)
@@ -83,6 +84,10 @@ Currently: 50 Dev_Notes
 * [Empty commit](git/empty-commit.md)
 * [Update last commit](git/update-last-commit.md)
 * [Find the commit a bug has been introduced in](git/find-commit-introducing-bug.md)
+
+# PHP
+
+* [Closure](php/closure.md)
 
 # SQL
 
