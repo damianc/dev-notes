@@ -7,7 +7,7 @@ It is as helpful as often I tend to forget this and that, especially there is a 
 
 Something new is hoped to be written as often as it could.
 
-Currently: 55 Dev_Notes
+Currently: 56 Dev_Notes
 
 ---
 
@@ -22,6 +22,7 @@ Currently: 55 Dev_Notes
 * [ES6+](#es6)
 * [Git](#git)
 * [PHP](#php)
+* [RxJS](#rxjs)
 * [SQL](#sql)
 * [Tools](#tools)
 * [TypeScript](#typescript)
@@ -92,6 +93,10 @@ Currently: 55 Dev_Notes
 * [Namespaces](php/namespaces.md)
 * [Late Static Bindings](php/late-static-bindings.md)
 * [`const` vs `define`](php/const-vs-define.md)
+
+# RxJS
+
+* [Built-in Observables](rxjs/builtin-observables.md)
 
 # SQL
 
