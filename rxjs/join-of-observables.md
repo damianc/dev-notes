@@ -1,11 +1,11 @@
 # Join of Observables
 
-* `combineLatest(observable1, ..., observableN)`
-* `concat(observable1, ..., observableN)`
-* `forkJoin(sourceObservablesArrOrDict)`
-* `merge(observable1, ..., observableN)`
-* `race(observable1, ..., observableN)`
-* `zip(observable1, ..., observableN, selectorFn?)`
+* [`combineLatest(observable1, ..., observableN)`](#combinelatestobservable1--observablen)
+* [`concat(observable1, ..., observableN)`](#concatobservable1--observablen)
+* [`forkJoin(sourceObservablesArrOrDict)`](#forkjoinsourceobservablesarrordict)
+* [`merge(observable1, ..., observableN)`](#mergeobservable1--observablen)
+* [`race(observable1, ..., observableN)`](#raceobservable1--observablen)
+* [`zip(observable1, ..., observableN, selectorFn?)`](#zipobservable1--observablen-selectorfn)
 
 ## `combineLatest(observable1, ..., observableN)`
 
