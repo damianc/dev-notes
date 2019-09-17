@@ -16,9 +16,11 @@ class Circle {
 	const PI = 3.14;
 }
 
-echo Circle::PI
+echo Circle::PI;
 // 3.14
 ```
+
+> Yep, a constant is accessed with `::` like a static member of a class.
 
 ### Global Constant
 
