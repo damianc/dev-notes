@@ -16,7 +16,7 @@ class Circle {
 	const PI = 3.14;
 }
 
-echo Circle::PIl
+echo Circle::PI
 // 3.14
 ```
 
