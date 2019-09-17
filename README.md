@@ -7,7 +7,7 @@ It is as helpful as often I tend to forget this and that, especially there is a 
 
 Something new is hoped to be written as often as it could.
 
-Currently: 52 Dev_Notes
+Currently: 53 Dev_Notes
 
 ---
 
@@ -89,6 +89,7 @@ Currently: 52 Dev_Notes
 
 * [Closure](php/closure.md)
 * [Generator](php/generator.md)
+* [Late Static Bindings](php/late-static-bindings.md)
 
 # SQL
 
