@@ -7,7 +7,7 @@ It is as helpful as often I tend to forget this and that, especially there is a 
 
 Something new is hoped to be written as often as it could.
 
-Currently: 59 Dev_Notes
+Currently: 60 Dev_Notes
 
 ---
 
@@ -47,6 +47,7 @@ Currently: 59 Dev_Notes
 * [`ngFor` Implementation](angular/ngfor-implementation.md)
 * [`@ContentChildren` vs `@ViewChildren` and Detecting Changes](angular/content-and-view-children.md)
 * [Custom Service](angular/custom-service.md)
+* [Service Provider](angular/service-provider.md)
 
 # Bash Apps
 
