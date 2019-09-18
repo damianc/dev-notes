@@ -7,7 +7,7 @@ It is as helpful as often I tend to forget this and that, especially there is a 
 
 Something new is hoped to be written as often as it could.
 
-Currently: 58 Dev_Notes
+Currently: 59 Dev_Notes
 
 ---
 
@@ -78,6 +78,7 @@ Currently: 58 Dev_Notes
 * [RegExp: named captured groups](es6+/re-named-groups.md)
 * [[Weak]Map vs. [Weak]Set](es6+/maps-vs-sets.md)
 * [export and import](es6+/export-and-import.md)
+* [Proxy Traps](es6+/proxy-traps.md)
 
 # Git
 
