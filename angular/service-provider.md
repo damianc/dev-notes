@@ -89,9 +89,9 @@ export class AppModule {}
 })
 ```
 
-## Providers Overview
+# Providers Overview
 
-### Properties of Providers
+## Properties of Providers
 
 | Property               | Description                                     |
 |------------------------|-------------------------------------------------|
@@ -103,7 +103,7 @@ export class AppModule {}
 | `deps`                 | Dependencies for the factory function.          |
 | `useExisting`          | An existing service for the alias.              |
 
-### Text Token
+## Text Token
 
 ```
 providers: [
@@ -126,7 +126,7 @@ export class AnotherService {
 }
 ```
 
-### `InjectionToken`
+## `InjectionToken`
 
 ```
 import { Injectable, InjectionToken } from '@angular/core';
@@ -166,7 +166,7 @@ export class SomeDirective {
 }
 ```
 
-### Providing an Array of Services
+## Providing an Array of Services
 
 ```
 export const READ_SERVICE = new InjectionToken('reader');
@@ -203,7 +203,7 @@ import { READ_SERVICE, ReadService, ReaderFormat } from './read.service';
 @Injectable()
 export class AnotherService {
 	private reader: ReadService;
-	
+
 	constructor(
 		@Inject(READ_SERVICE) readers: ReadService[]
 	) {
