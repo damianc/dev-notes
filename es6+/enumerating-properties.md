@@ -9,36 +9,36 @@
     <th>KEYS ORDER</th>
   </tr>
   <tr>
-    <td>`Reflect.ownKeys()`</td>
-    <td rowspan="3">__[[OwnPropertyKeys]]__</td>
+    <td><code>Reflect.ownKeys()</code></td>
+    <td rowspan="3"><i>[[OwnPropertyKeys]]</i></td>
     <td rowspan="3">YES</td>
     <td rowspan="3">YES</td>
     <td rowspan="3">standard-compatible</td>
   </tr>
   <tr>
-    <td>`Object.getOwnPropertyNames()`</td>
+    <td><code>Object.getOwnPropertyNames()</code></td>
   </tr>
   <tr>
-    <td>`Object.getOwnPropertySymbols()`</td>
+    <td><code>Object.getOwnPropertySymbols()</code></td>
   </tr>
   <tr>
-    <td>`Reflect.enumerate()`</td>
-    <td rowspan="2">__[[Enumerate]]__</td>
+    <td><code>Reflect.enumerate()</code></td>
+    <td rowspan="2"><i>[[Enumerate]]</i></td>
     <td rowspan="2">NO</td>
     <td rowspan="2">NO</td>
     <td rowspan="2">based on an implementation</td>
   </tr>
   <tr>
-    <td>`for...in`</td>
+    <td><code>for...in</code></td>
   </tr>
   <tr>
-    <td>`Object.keys()`</td>
-    <td rowspan="2">__[[OwnPropertyKeys]]__ <br/> + filtering <br/> + sorting</td>
+    <td><code>Object.keys()</code></td>
+    <td rowspan="2"><i>[[OwnPropertyKeys]]</i> <br/> + filtering <br/> + sorting</td>
     <td rowspan="2">YES</td>
     <td rowspan="2">NO</td>
     <td rowspan="2">based on an implementation</td>
   </tr>
   <tr>
-    <td>`JSON.stringify()`</td>
+    <td><code>JSON.stringify()</code></td>
   </tr>
 </table>
