@@ -43,7 +43,7 @@
   </tr>
 </table>
 
-## __[[GetOwnPropertyKeys]]__ Algorithm
+## _[[GetOwnPropertyKeys]]_ Algorithm
 
 <ol>
 	<li>numeric keys are fetched in the ascending order</li>
