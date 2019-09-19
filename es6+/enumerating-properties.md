@@ -42,3 +42,11 @@
     <td><code>for...in</code></td>
   </tr>
 </table>
+
+## __[[GetOwnPropertyKeys]]__ Algorithm
+
+<ol>
+	<li>numeric keys are fetched in the ascending order</li>
+	<li>text keys are fetched in a order they were being created</li>
+	<li>symbols are fetched in a order they were being created</li>
+</ol>
