@@ -175,10 +175,10 @@ export const READ_SERVICE = new InjectionToken('reader');
 export class ReadService { ... }
 
 @Injectable()
-export class PDFReadService { ... }
+export class PDFReadService extends ReadService { ... }
 
 @Injectable()
-export class XMLReadService { ... }
+export class XMLReadService extends ReadService { ... }
 ```
 
 ```
