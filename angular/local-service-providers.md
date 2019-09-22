@@ -74,7 +74,7 @@ export class AppModule {}
 
 ```
 <zoo>
-	<div displayAnimal></div>
+  <div displayAnimal></div>
 </zoo>
 ```
 
@@ -126,7 +126,7 @@ export class AppModule {}
 
 ```
 <zoo>
-	<div displayAnimal></div>
+  <div displayAnimal></div>
 </zoo>
 ```
 
@@ -143,7 +143,7 @@ The `'ANIMAL'` service has been provided to the view only (markup within `templa
 
 | Decorator        | Description        |
 |------------------|--------------------|
-| `@Optional`      | Tells Angular to return null when it can't find the dependency, instead of throwing error. |
+| `@Optional`      | Tells Angular to return `null` when it can't find the dependency, instead of throwing error. |
 | `@SkipSelf`      | Skips the local injector and looks up in the hierarchy to find a proper provider. |
 | `@Self`          | Makes the injector only looks at the component's injector for its providers, no further upward. |
 | `@Host`          | Stops the upward search at the host component. The host component is typically the component requesting the dependency. However, when this component is projected into a parent component, that parent component becomes the host. |
@@ -163,16 +163,16 @@ import { Component, Inject, Optional } from '@angular/core';
 			<ng-content></ng-content>
 		</div>
 	`,
-	viewProviders: [
+	providers: [
 		{provide: 'ANIMAL', useValue: 'Elephant'}
 	]
 })
 export class ZooComponent {
-	anml: string;
-
 	constructor(@Inject('NONEXISTING') @Optional() _anml: string) {
 		this.anml = _anml || 'No Animal';
 	}
+
+	anml: string;
 }
 
 ```
@@ -188,3 +188,267 @@ export class ZooComponent {
 ```
 ANIMAL: No Animal
 ```
+
+## `@SkipSelf` Decorator
+
+### `zoo.component.ts`
+
+```
+import { Component, Inject } from '@angular/core';
+
+@Component({
+	selector: 'zoo',
+	template: `
+		<div>
+			<div>ANIMAL: {{ anml }}</div>
+			<ng-content></ng-content>
+		</div>
+	`,
+	providers: [
+		{provide: 'ANIMAL', useValue: 'Elephant'}
+	]
+})
+export class ZooComponent {
+	constructor(@Inject('ANIMAL') public anml: string) {}
+}
+```
+
+### `park.component.ts`
+
+```
+import { Component, Inject, SkipSelf } from '@angular/core';
+
+@Component({
+	selector: 'park',
+	template: `
+		<div>
+			<div>ANIMAL: {{ anml }}</div>
+			<ng-content></ng-content>
+		</div>
+	`,
+	providers: [
+		{provide: 'ANIMAL', useValue: 'Squirrel'}
+	]
+})
+export class ParkComponent {
+	constructor(@Inject('ANIMAL') @SkipSelf() public anml: string) {}
+}
+```
+
+### `lake.component.ts`
+
+```
+import { Component, Inject } from '@angular/core';
+
+@Component({
+	selector: 'lake',
+	template: `
+		<div>
+			<div>ANIMAL: {{ anml }}</div>
+			<ng-content></ng-content>
+		</div>
+	`
+})
+export class LakeComponent {
+	constructor(@Inject('ANIMAL') public anml: string) {}
+}
+```
+
+### `app.component.html`
+
+```
+<zoo>
+  <park>
+    <lake></lake>
+  </park>
+</zoo>
+```
+
+### Output
+
+```
+ANIMAL: Elephant
+ANIMAL: Elephant
+ANIMAL: Squirrel
+```
+
+The `@SkipSelf` makes a component skips its injector, but the child components can access the injector of the component with this decorator.
+
+In other words, `@SkipSelf` makes the service providers accessible to the child components, but not to the component itself.
+
+## `@Self` Decorator
+
+### `zoo.component.ts`
+
+```
+import { Component, Inject } from '@angular/core';
+
+@Component({
+	selector: 'zoo',
+	template: `
+		<div>
+			<div>ANIMAL: {{ anml }}</div>
+			<ng-content></ng-content>
+		</div>
+	`,
+	providers: [
+		{provide: 'ANIMAL', useValue: 'Elephant'}
+	]
+})
+export class ZooComponent {
+	constructor(@Inject('ANIMAL') public anml: string) {}
+}
+```
+
+### `park.component.ts`
+
+```
+import { Component, Inject, Self, Optional } from '@angular/core';
+
+@Component({
+	selector: 'park',
+	template: `
+		<div>
+			<div>ANIMAL: {{ anml }}</div>
+			<ng-content></ng-content>
+		</div>
+	`
+})
+export class ParkComponent {
+	constructor(@Inject('ANIMAL') @Self() @Optional() _anml: string) {
+		this.anml = _anml || 'No Animal';
+	}
+
+	anml: string;
+}
+```
+
+### `lake.component.ts`
+
+```
+import { Component, Inject } from '@angular/core';
+
+@Component({
+	selector: 'lake',
+	template: `
+		<div>
+			<div>ANIMAL: {{ anml }}</div>
+			<ng-content></ng-content>
+		</div>
+	`
+})
+export class LakeComponent {
+	constructor(@Inject('ANIMAL') public anml: string) {}
+}
+```
+
+### `app.component.html`
+
+```
+<zoo>
+  <park>
+    <lake></lake>
+  </park>
+</zoo>
+```
+
+### Output
+
+```
+ANIMAL: Elephant
+ANIMAL: No Animal
+ANIMAL: Elephant
+```
+
+The `Park` component does not have the service provider for `ANIMAL` and `@Self` stops further searching upward.  
+The child component `Lake` is not affected by this behavior and uses the service provider from the `Zoo` component.
+
+## `Host` Component
+
+### `zoo.component.ts`
+
+```
+import { Component, Inject } from '@angular/core';
+
+@Component({
+	selector: 'zoo',
+	template: `
+		<div>
+			<div>ANIMAL: {{ anml }}</div>
+			<ng-content></ng-content>
+		</div>
+	`,
+	providers: [
+		{provide: 'ANIMAL', useValue: 'Elephant'}
+	]
+})
+export class ZooComponent {
+	constructor(@Inject('ANIMAL') public anml: string) {}
+}
+```
+
+### `park.component.ts`
+
+```
+import { Component, Inject } from '@angular/core';
+
+@Component({
+	selector: 'park',
+	template: `
+		<div>
+			<div>ANIMAL: {{ anml }}</div>
+			<ng-content></ng-content>
+		</div>
+	`,
+	providers: [
+		{provide: 'ANIMAL', useValue: 'Squirrel'}
+	]
+})
+export class ParkComponent {
+	constructor(@Inject('ANIMAL') public anml: string) {}
+}
+```
+
+### `lake.component.ts`
+
+```
+import { Component, Inject, Host, Optional } from '@angular/core';
+
+@Component({
+	selector: 'lake',
+	template: `
+		<div>
+			<div>ANIMAL: {{ anml }}</div>
+			<ng-content></ng-content>
+		</div>
+	`
+})
+export class LakeComponent {
+	constructor(@Inject('ANIMAL') @Host() @Optional() _anml: string) {
+		this.anml = _anml || 'No Animal';
+	}
+
+	anml: string;
+}
+```
+
+### `app.component.html`
+
+```
+<zoo>
+  <park>
+    <lake></lake>
+  </park>
+</zoo>
+```
+
+### Output
+
+```
+ANIMAL: Elephant
+ANIMAL: Squirrel
+ANIMAL: Squirrel
+```
+
+The `Lake` component does not have the service provider and `@Host` keeps searching until the host is reached.  
+Here the `Park` component is the host as the `Lake` is projected into a `Park` component. Therefore, the `Squirrel` value defined in the `Park` is used in the `Lake` component.
