@@ -146,4 +146,45 @@ The `'ANIMAL'` service has been provided to the view only (markup within `templa
 | `@Optional`      | Tells Angular to return null when it can't find the dependency, instead of throwing error. |
 | `@SkipSelf`      | Skips the local injector and looks up in the hierarchy to find a proper provider. |
 | `@Self`          | Makes the injector only looks at the component's injector for its providers, no further upward. |
-| `@Host`          | Stops the upward search at the host component. The host component is typically the component requesting the dependency. However, when this component is projected into a parent component, that parent component becomes the host. | 
+| `@Host`          | Stops the upward search at the host component. The host component is typically the component requesting the dependency. However, when this component is projected into a parent component, that parent component becomes the host. |
+
+## `@Optional` Decorator
+
+### `zoo.component.ts`
+
+```
+import { Component, Inject, Optional } from '@angular/core';
+
+@Component({
+	selector: 'zoo',
+	template: `
+		<div>
+			<div>ANIMAL: {{ anml }}</div>
+			<ng-content></ng-content>
+		</div>
+	`,
+	viewProviders: [
+		{provide: 'ANIMAL', useValue: 'Elephant'}
+	]
+})
+export class ZooComponent {
+	anml: string;
+
+	constructor(@Inject('NONEXISTING') @Optional() _anml: string) {
+		this.anml = _anml || 'No Animal';
+	}
+}
+
+```
+
+### `app.component.html`
+
+```
+<zoo></zoo>
+```
+
+### Output
+
+```
+ANIMAL: No Animal
+```
