@@ -71,7 +71,7 @@ export class ZooComponent {
 export class AppModule {}
 ```
 
-`app.component.html`
+## `app.component.html`
 
 ```
 <zoo>
