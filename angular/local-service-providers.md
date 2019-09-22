@@ -81,12 +81,12 @@ export class AppModule {}
 
 ### Output
 
-The `'ANIMAL'` service has been provided both to the view (markup within `template`) and the content (markup within `<zoo>`).
+```
+Elephant
+Elephant
+```
 
-```
-Elephant
-Elephant
-```
+The `'ANIMAL'` service has been provided both to the view (markup within `template`) and the content (markup within `<zoo>`).
 
 # Using `viewProviders`
 
@@ -124,7 +124,7 @@ export class ZooComponent {
 export class AppModule {}
 ```
 
-`app.component.html`
+## `app.component.html`
 
 ```
 <zoo>
@@ -134,9 +134,9 @@ export class AppModule {}
 
 ### Output
 
-The `'ANIMAL'` service has been provided to the view only (markup within `template`) and not to the content (markup within `<zoo>`).
-
 ```
 Elephant
 Eagle
 ```
+
+The `'ANIMAL'` service has been provided to the view only (markup within `template`) and not to the content (markup within `<zoo>`).
