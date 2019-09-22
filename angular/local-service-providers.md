@@ -363,7 +363,7 @@ ANIMAL: Elephant
 The `Park` component does not have the service provider for `ANIMAL` and `@Self` stops further searching upward.  
 The child component `Lake` is not affected by this behavior and uses the service provider from the `Zoo` component.
 
-## `Host` Component
+## `Host` Decorator
 
 ### `zoo.component.ts`
 
