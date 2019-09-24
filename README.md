@@ -7,7 +7,7 @@ It is as helpful as often I tend to forget this and that, especially there is a 
 
 Something new is hoped to be written as often as it could.
 
-Currently: 63 Dev_Notes
+Currently: 64 Dev_Notes
 
 ---
 
@@ -50,6 +50,7 @@ Currently: 63 Dev_Notes
 * [Custom Service](angular/custom-service.md)
 * [Service Provider](angular/service-provider.md)
 * [Local Service Providers](angular/local-service-providers.md)
+* [Angular Modules](angular/modules.md)
 
 # Bash Apps
 
