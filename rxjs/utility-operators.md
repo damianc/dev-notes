@@ -256,7 +256,8 @@ Notification {kind: "E", value: undefined, error: TypeError, hasValue: false}
 Notification(kind, value?, error?)
 ```
 
-* **kind**: `N` for _next_, `C` for _complete_ or `E` for _error_
+* **kind**: `N` for _next_, `C` for _complete_ or `E` for _error_  
+as of RxJS 6.5.0: `NotificationKind.NEXT`, `NotificationKind.COMPLETE` or `NotificationKind.ERROR`
 * **value**: a value for _next_
 * **error**: an error for _error_
 * **hasValue**: `true` for _next_
