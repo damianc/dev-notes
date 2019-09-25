@@ -38,12 +38,12 @@ getZipCode(): number | string {
 ```
 interface Category {
 	name: string;
-	addSubcategory(child: Category);
+	addSubcategory?(child: Category);
 }
 
 interface Tag {
 	name: string;
-	addSubtag(child: Tag);
+	addSubtag?(child: Tag);
 }
 
 getTaxonomy(taxonomy: Category | Tag) {
