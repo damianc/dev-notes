@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **66** Dev_Notes
+Currently: &nbsp; **67** Dev_Notes
 
 ---
 
@@ -134,6 +134,7 @@ Currently: &nbsp; **66** Dev_Notes
 
 * [Property Auto-Asignment within Constructor](typescript/auto-assignment.md)
 * [Generics](typescript/generics.md)
+* [Advanced Types](typescript/advanced-types.md)
 
 # WordPress
 
