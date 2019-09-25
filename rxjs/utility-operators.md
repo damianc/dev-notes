@@ -1,6 +1,6 @@
 # Utility Operators
 
-* `[tap(nextOrObserver?, error(e)?, complete()?)`](#tapnextorobserver-errore-complete)
+* [`tap(nextOrObserver?, error(e)?, complete()?)`](#tapnextorobserver-errore-complete)
 * [`delay(msOrDate)`](#delaymsordate)
 * [`delayWhen(delaySelectorObs(value, index), subscriptionDelayObs?)`](#delaywhendelayselectorobsvalue-index-subscriptiondelayobs)
 * [`timeInterval(scheduler?)`](#timeintervalscheduler)
