@@ -24,7 +24,7 @@
     'page sidebar';
 }
 
-.a {grid-area:header;background:#ff0;}
-.b {grid-area:sidebar;background:#2af;}
-.c {grid-area:page;background:#ddd;}
+#header { grid-area: header; }
+#page { grid-area: page; }
+#sidebar { grid-area: sidebar; }
 ```
