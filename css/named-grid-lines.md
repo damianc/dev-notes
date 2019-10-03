@@ -12,6 +12,20 @@
 #sidebar { grid-area: sidebar; }
 ```
 
+```
+|---------------|----------|----------
+|     H         |    H     | header
+|---------------|----------|----------
+|               |          | page
+|     P         |    S     | &
+|               |          | sidebar
+|               |          |
+|---------------|----------|----------
+| page          | sidebar  |
+| &             | &        |
+| header        | header   |
+```
+
 ## More Readable Approach: Named Grid Areas
 
 ```
@@ -27,4 +41,15 @@
 #header { grid-area: header; }
 #page { grid-area: page; }
 #sidebar { grid-area: sidebar; }
+```
+
+```
+|---------------|----------|
+|    header     |  header  |
+|---------------|----------|
+|               |          |
+|   page        | sidebar  |
+|               |          |
+|               |          |
+|---------------|----------|
 ```
