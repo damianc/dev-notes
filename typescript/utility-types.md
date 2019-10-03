@@ -1,17 +1,17 @@
 # Utility Types
 
-[`Partial<T>`](#partialt)
-[`Readonly<T>`](#readonlyt)
-[`Record<K,T>`](#recordkt)
-[`Pick<T,K>`](#picktk)
-[`Omit<T,K>`](#omittk)
-[`Exclude<T,U>`](#excludetu)
-[`Extract<T,U>`](#extracttu)
-[`NonNullable<T>`](#nonnullablet)
-[`ReturnType<T>`](#returntypet)
-[`InstanceType<T>`](#instancetypet)
-[`Required<T>`](#requiredt)
-[`ThisType<T>`](#thistypet)
+* [`Partial<T>`](#partialt)
+* [`Readonly<T>`](#readonlyt)
+* [`Record<K,T>`](#recordkt)
+* [`Pick<T,K>`](#picktk)
+* [`Omit<T,K>`](#omittk)
+* [`Exclude<T,U>`](#excludetu)
+* [`Extract<T,U>`](#extracttu)
+* [`NonNullable<T>`](#nonnullablet)
+* [`ReturnType<T>`](#returntypet)
+* [`InstanceType<T>`](#instancetypet)
+* [`Required<T>`](#requiredt)
+* [`ThisType<T>`](#thistypet)
 
 ## `Partial<T>`
 
