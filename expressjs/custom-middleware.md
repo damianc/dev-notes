@@ -3,8 +3,6 @@
 ## `log-divider.middleware.js`
 
 ```
-var express = require('express');
-
 function logDivider(divider = '-', length = 20) {
 	return function (req, res, next) {
 		var arr = new Array(length);
