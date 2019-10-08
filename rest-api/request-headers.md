@@ -44,6 +44,8 @@
 
 ## Common non-standard Request Fields
 
+| Header | Description | Example Value |
+|--------|-------------|---------------|
 | `Upgrade-Insecure-Requests` | Tells a server which (presumably in the middle of a HTTP -> HTTPS migration) hosts mixed content that the client would prefer redirection to HTTPS and can handle `Content-Security-Policy: upgrade-insecure-requests`. [~HTTP/2~] | `1` |
 | `X-Requested-With` | Mainly used to identify Ajax requests. Most JavaScript frameworks send this field with value of `XMLHttpRequest`. | `XMLHttpRequest` |
 | `DNT` | Requests a web application to disable (`1`)/enable (`0`) their tracking of a user. (This is Mozilla's version of the `X-Do-Not-Track` header field). | `1` |
