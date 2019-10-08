@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **70** Dev_Notes
+Currently: &nbsp; **71** Dev_Notes
 
 ---
 
@@ -25,6 +25,7 @@ Currently: &nbsp; **70** Dev_Notes
 * [Express.js](#expressjs)
 * [Git](#git)
 * [PHP](#php)
+* [REST API](#rest-api)
 * [RxJS](#rxjs)
 * [SQL](#sql)
 * [TDD](#tdd)
@@ -108,6 +109,10 @@ Currently: &nbsp; **70** Dev_Notes
 * [Namespaces](php/namespaces.md)
 * [Late Static Bindings](php/late-static-bindings.md)
 * [`const` vs `define`](php/const-vs-define.md)
+
+# REST API
+
+* [Request Headers](rest-api/request-headers.md)
 
 # RxJS
 
