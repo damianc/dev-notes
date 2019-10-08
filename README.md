@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **71** Dev_Notes
+Currently: &nbsp; **72** Dev_Notes
 
 ---
 
@@ -113,6 +113,7 @@ Currently: &nbsp; **71** Dev_Notes
 # REST API
 
 * [Request Headers](rest-api/request-headers.md)
+* [Response Headers](rest-api/response-headers.md)
 
 # RxJS
 
