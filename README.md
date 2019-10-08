@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **72** Dev_Notes
+Currently: &nbsp; **73** Dev_Notes
 
 ---
 
@@ -112,6 +112,7 @@ Currently: &nbsp; **72** Dev_Notes
 
 # REST API
 
+* [HTTP Codes](rest-api/http-codes.md)
 * [Request Headers](rest-api/request-headers.md)
 * [Response Headers](rest-api/response-headers.md)
 
