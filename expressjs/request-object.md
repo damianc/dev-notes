@@ -26,9 +26,9 @@
 ## Methods
 
 * [`req.accepts()`](#reqacceptstype)
-* [`req.acceptsCharsets()`](#reqacceptscharsetscharset)
-* [`req.acceptsEncodings()`](#reqacceptsencodingsencoding)
-* [`req.acceptsLanguages()`](#reqacceptslanguageslang)
+* [`req.acceptsCharsets()`](#reqacceptscharsetscharset--)
+* [`req.acceptsEncodings()`](#reqacceptsencodingsencoding--)
+* [`req.acceptsLanguages()`](#reqacceptslanguageslang--)
 * [`req.is()`](#reqistype)
 * [`req.get()`](#reqgetfield)
 * [`req.param()`](#reqparamname-defaultvalue)
@@ -329,7 +329,7 @@ When the trust proxy setting does not evaluate to false, this property contains 
 
 If `X-Forwarded-For` is `client, proxy1, proxy2`, it would be `["client", "proxy1", "proxy2"]`, where `proxy2` is the furthest downstream.
 
-## `accepts(types)`
+## `req.accepts(types)`
 
 If `Accept` header is `text/*, application/json`:
 
@@ -382,7 +382,7 @@ req.is('html');
 
 >  If the request has no body, returns `null`.
 
-## `get(field)`
+## `req.get(field)`
 
 ```
 req.get('Content-Type');
