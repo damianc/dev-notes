@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **73** Dev_Notes
+Currently: &nbsp; **74** Dev_Notes
 
 ---
 
@@ -94,6 +94,7 @@ Currently: &nbsp; **73** Dev_Notes
 
 * [Custom Middleware](expressjs/custom-middleware.md)
 * [Modular Structure](expressjs/modular-structure.md)
+* [Streaming](express/streaming.md)
 
 # Git
 
