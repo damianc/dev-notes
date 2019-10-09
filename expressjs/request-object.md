@@ -391,7 +391,7 @@ req.get('Content-Type');
 
 > The `Referrer` and `Referer` fields are interchangeable.
 
-## `req.param(name [, defaultValue])`
+## `req.param(name[, defaultValue])`
 
 Lookup is performed in the following order:
 
