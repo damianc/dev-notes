@@ -61,8 +61,8 @@ app.use(bodyParser.urlencoded());
 // if another is not needed
 ```
 
-> `$ curl <URL> -d 'name=John'
-> `{name: 'John'}
+> `$ curl <URL> -d 'name=John'`
+> `{name: 'John'}`
 
 > `$ curl -H "Content-Type: application/json" -d '{"username": "John"}' <URL>`
 > `{username: 'John'}`
