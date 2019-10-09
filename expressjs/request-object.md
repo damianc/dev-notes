@@ -25,7 +25,7 @@
 
 ## Methods
 
-* [`req.accepts()`](#reqacceptstype)
+* [`req.accepts()`](#reqacceptstypes)
 * [`req.acceptsCharsets()`](#reqacceptscharsetscharset--)
 * [`req.acceptsEncodings()`](#reqacceptsencodingsencoding--)
 * [`req.acceptsLanguages()`](#reqacceptslanguageslang--)
