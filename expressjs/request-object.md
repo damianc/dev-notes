@@ -1,5 +1,7 @@
 # The `request` Object
 
+> The `request` object in Express.js is the `http.request` from Node wrapped and enhanced by additional features.
+
 ## Properties
 
 * [`req.app`](#reqapp)
