@@ -97,7 +97,7 @@ res.attachment('img/logo.png');
 // Content-Type: image/png [received with res.type()]
 ```
 
-`res.cookie(name, value[, options])`
+## `res.cookie(name, value[, options])`
 
 | Option | Type | Notes |
 |--------|------|-------|
