@@ -111,6 +111,8 @@ res.attachment('img/logo.png');
 | `signed` | _Boolean_ | cookie is signed |
 | `sameSite` | _Boolean\|String_ | send cookie along with requests initiated by third party websites (`Lax`) or not (`Strict`) |
 
+* chaining `cookie()` calls
+
 ```
 res
 .cookie('user_id', '120', {
@@ -121,6 +123,8 @@ res
 .cookie('start_timestamp', Date.now())
 .redirect(301, '/admin');
 ```
+
+* custom encoding
 
 ```
 res.cookie('some_cross_domain_cookie', 'http://mysubdomain.example.com', {
@@ -137,8 +141,9 @@ res.cookie('some_cross_domain_cookie', 'http://mysubdomain.example.com', {
 // 'http://mysubdomain.example.com'
 ```
 
+* object as the value
+
 ```
-// object as the value parameter
 // serialized as JSON
 // parsed by bodyParser() middleware
 
