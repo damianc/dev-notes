@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **75** Dev_Notes
+Currently: &nbsp; **76** Dev_Notes
 
 ---
 
@@ -93,6 +93,7 @@ Currently: &nbsp; **75** Dev_Notes
 # Express.js
 
 * [The `request` Object](expressjs/request-object.md)
+* [The `response` Object](expressjs/response-object.md)
 * [Custom Middleware](expressjs/custom-middleware.md)
 * [Modular Structure](expressjs/modular-structure.md)
 * [Streaming](expressjs/streaming.md)
