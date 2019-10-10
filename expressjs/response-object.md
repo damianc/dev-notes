@@ -24,13 +24,13 @@
 * [`res.sendStatus()`](#ressendstatusstatuscode)
 * [`res.render()`](#resrenderview-locals-callback)
 * [`res.end()`](#resenddata-encoding)
-* [`res.send()`](#ressend-body)
+* [`res.send()`](#ressendbody)
 * [`res.format()`](#resformatobject)
 * [`res.json()`](#resjsonbody)
 * [`res.jsonp()`](#resjsonpbody)
 * [`res.sendFile()`](#ressendfilepath-options-fn)
 * [`res.download()`](#resdownloadpath-filename-options-fn)
-* [`res.attachment()`](#resattachment-filename)
+* [`res.attachment()`](#resattachmentfilename)
 
 ## `res.app`
 
@@ -317,7 +317,7 @@ res.render('posts', {category: 'health'}, (err, html) => {
 });
 ```
 
-## `([data][, encoding])`
+## `res.end([data][, encoding])`
 
 ```
 res.end();
