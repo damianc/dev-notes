@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **77** Dev_Notes
+Currently: &nbsp; **78** Dev_Notes
 
 ---
 
@@ -68,6 +68,7 @@ Currently: &nbsp; **77** Dev_Notes
 
 # CSS
 
+* [Media Queries](css/media-queries.md)
 * [Named Grid Lines](css/named-grid-lines.md)
 * [Generating CSS stylesheet with JavaScript's `FileReader`](css/generating-css-file-in-js.md)
 
