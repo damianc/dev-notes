@@ -86,7 +86,7 @@ Currently: &nbsp; **77** Dev_Notes
 * [Enumerating Properties](es6+/enumerating-properties.md)
 * [`this` reference](es6+/this-reference.md)
 * [RegExp: named captured groups](es6+/re-named-groups.md)
-* [`match()` vs. `exec()`](#es6+/match-vs-exec.md)
+* [`match()` vs. `exec()`](es6+/match-vs-exec.md)
 * [[Weak]Map vs. [Weak]Set](es6+/maps-vs-sets.md)
 * [export and import](es6+/export-and-import.md)
 * [Proxy Traps](es6+/proxy-traps.md)
