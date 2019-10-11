@@ -1,5 +1,5 @@
-# `match()` vs. `exec()`
-
+# `match()` <span style="color:red">vs.</span> `exec()`
+<span style="color:blue">2</span>
 <table>
 	<tr>
 		<td colspan="4" align="left">
