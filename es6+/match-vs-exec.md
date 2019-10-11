@@ -2,50 +2,50 @@
 
 <table>
 	<tr>
-		<td colspan="4">
-			<code>
-				<div>var str = 'aAbBcC';</div>
-				<div>var re_once = /([a-z])([A-Z])/;</div>
-				<div>var re_glob = /([a-z])([A-Z])/g;</div>
-			</code>
+		<td colspan="4" align="left">
+			<pre>
+				var str = 'aAbBcC';
+				var re_once = /([a-z])([A-Z])/;
+				var re_glob = /([a-z])([A-Z])/g;
+			</pre>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<code>
-				<div>str.match(re_once);</div>
-				<div>// ['aA', 'a', 'A']</div>
-			</code>
+			<pre>
+				str.match(re_once);
+				// ['aA', 'a', 'A']
+			</pre>
 		</td>
 		<td>
-			<code>
-				<div>str.match(re_glob);</div>
-				<div>// ['aA', 'bB', 'cC']</div>
-			</code>
+			<pre>
+				str.match(re_glob);
+				// ['aA', 'bB', 'cC']
+			</pre>
 		</td>
 		<td>
-			<code>
-				<div>re_once.exec(str);</div>
-				<div>// ['aA', 'a', 'A']</div>
-				<div>re_once.exec(str);</div>
-				<div>// ['aA', 'a', 'A']</div>
-				<div>// ...</div>
-			</code>
+			<pre>
+				re_once.exec(str);
+				// ['aA', 'a', 'A']
+				re_once.exec(str);
+				// ['aA', 'a', 'A']
+				// ...
+			</pre>
 		</td>
 		<td>
-			<code>
-				<div>re_glob.exec(str);</div>
-				<div>// ['aA', 'a', 'A']</div>
-				<div>re_glob.exec(str);</div>
-				<div>// ['bB', 'b', 'B']</div>
-				<div>re_glob.exec(str);</div>
-				<div>// ['cC', 'c', 'C']</div>
-				<div>re_glob.exec(str);</div>
-				<div>// null</div>
-				<div>re_glob.exec(str);</div>
-				<div>// ['aA', 'a', 'A']</div>
-				<div>// ...</div>
-			</code>
+			<pre>
+				re_glob.exec(str);
+				// ['aA', 'a', 'A']
+				re_glob.exec(str);
+				// ['bB', 'b', 'B']
+				re_glob.exec(str);
+				// ['cC', 'c', 'C']
+				re_glob.exec(str);
+				// null
+				re_glob.exec(str);
+				// ['aA', 'a', 'A']
+				// ...
+			</pre>
 		</td>
 	</tr>
 </table>
