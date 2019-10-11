@@ -32,7 +32,7 @@
 | `color-index` | **yes** | `<integer>` | `256` | no |
 | `monochrome` | **yes** | `<integer>` | `2` | **yes** |
 | `resolution` | **yes** | `<resolution>` | `300dpi` | no |
-| `scan` | no | `progressive | interlace` | `progressive` | no |
+| `scan` | no | `progressive \| interlace` | `progressive` | no |
 | `grid` | no | `0` for bitmap, `1` for grid | `1` | **yes** |
 
 ## Declaring Media Queries
