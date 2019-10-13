@@ -9,7 +9,7 @@
 | `ENV <name> <value>` | defines an environment variable in the image | `ENV hostname db_store` | |
 | `WORKDIR <path>` | changes image’s current working directory to the given path | `WORKDIR /var/www` | if specified directory does not exist, it will be created |
 | `EXPOSE <port[/<protocol>]> ...` | opens given port(s) (optionally along with a protocol whose default value is **tcp**) | `EXPOSE 7000/udp` | allows to connect with a service contained in the image |
-| `RUN <command>` | executes given command(s) | we can use any command accessible in OS like `mv`, `tar` or `apt-get` | `RUN cd sass && gulp build:css` | multiple commands are joined with `&` sign |
+| `RUN <command>` | executes given command(s) | `RUN cd sass && gulp build:css` | we can use any command accessible in OS like `mv`, `tar` or `apt-get` | multiple commands are joined with `&` sign |
 | `CMD <command>` | like RUN (differences are below) | `CMD echo 'Docker service is up...'` | |
 
 ## `RUN` vs. `CMD`
