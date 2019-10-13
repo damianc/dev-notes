@@ -67,7 +67,7 @@ setTimeout(() => {
 | 1s | `observerA: 1` | |
 | 2s | `observerA: 2` and `observerB: 2` | `observerB` receive the latest value emitted by `subject` (`2`) |
 | 3s | `observerA: 3` and `observerB: 3` | |
-| 4s | | `2s` | `observerA: 4` and `observerB: 4` | |
+| 4s | `observerA: 4` and `observerB: 4` | |
 
 ## `ReplaySubject(bufferSize)`
 
