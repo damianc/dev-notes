@@ -60,3 +60,19 @@ obs$.subscribe(
 | TIME | Im | 1s | 2s | 3s | 4s | 5s | 6s |
 |------|----|----|----|----|----|----|----|
 | `obs$` | `1` | | `4` | | `3` & `done` | | |
+
+## Handling Observable with Object
+
+```
+obs$.subscribe({
+	next(value) {
+		console.log('got %d', value);
+	},
+	error(err) {
+		console.error('error %s', err);
+	},
+	complete() {
+		console.warn('done');
+	}
+});
+```
