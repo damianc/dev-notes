@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **78** Dev_Notes
+Currently: &nbsp; **79** Dev_Notes
 
 ---
 
@@ -88,6 +88,7 @@ Currently: &nbsp; **78** Dev_Notes
 * [`this` reference](es6+/this-reference.md)
 * [RegExp: named captured groups](es6+/re-named-groups.md)
 * [`match()` vs. `exec()`](es6+/match-vs-exec.md)
+* [`$` in the `replace()` Function](es6+/regexp-dollar-in-replace.md)
 * [[Weak]Map vs. [Weak]Set](es6+/maps-vs-sets.md)
 * [export and import](es6+/export-and-import.md)
 * [Proxy Traps](es6+/proxy-traps.md)
