@@ -1,14 +1,31 @@
 # `$` in the `replace()` Function
 
-| Sign | Description |
-|------|-------------|
-| `$1` | text matched in the 1st group |
-| `$2` | text matched in the 2nd group |
-| `$n` | text matched in the n-th group |
-| `$$` | literal `$` sign |
-| `$&` | the matched text |
-| ``$``` | text placed before the matched one |
-| `$'` | text placed after the matched one |
+<table>
+	<tr>
+		<th>Sign</th> <th>Description</th>
+	</tr>
+	<tr>
+		<td><code>$1</code></td><td>text matched in the 1st group</td>
+	</tr>
+	<tr>
+		<td><code>$2</code></td><td>text matched in the 2nd group</td>
+	</tr>
+	<tr>
+		<td><code>$n</code></td><td>text matched in the n-th group</td>
+	</tr>
+	<tr>
+		<td><code>$$</code></td><td>literal <code>$</code> sign</td>
+	</tr>
+	<tr>
+		<td><code>$&</code></td><td>the matched text</td>
+	</tr>
+	<tr>
+		<td><code>$`</code></td><td>text placed before the matched one</td>
+	</tr>
+	<tr>
+		<td><code>$'</code></td><td>text placed after the matched one</td>
+	</tr>
+</table>
 
 ## Example \#1
 
