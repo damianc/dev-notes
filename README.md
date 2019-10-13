@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **81** Dev_Notes
+Currently: &nbsp; **82** Dev_Notes
 
 ---
 
@@ -125,6 +125,7 @@ Currently: &nbsp; **81** Dev_Notes
 # RxJS
 
 * [Custom Observable](rxjs/custom-observable.md)
+* [`Subject`](rxjs/subject.md)
 * [Built-in Observables](rxjs/builtin-observables.md)
 * [Join of Observables](rxjs/join-of-observables.md)
 * [Join Operators](rxjs/join-operators.md)
