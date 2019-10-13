@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **82** Dev_Notes
+Currently: &nbsp; **83** Dev_Notes
 
 ---
 
@@ -78,6 +78,7 @@ Currently: &nbsp; **82** Dev_Notes
 
 # Docker
 
+* [`Dockerfile` File](docker/dockerfile.md)
 * [Formatting a list of images/containers](docker/formatting-images-containers-list.md)
 * [Filtering a list of images/containers](docker/filtering-images-containers-list.md)
 * [Deleting multiple images and containers](docker/deleting-images-containers.md)
