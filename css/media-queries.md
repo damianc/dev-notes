@@ -54,3 +54,44 @@
 ```
 @media screen, projection and (color) {...}
 ```
+
+## ANDs and ORs
+
+| Media Query | Description |
+|-------------|-------------|
+| `@media (min-width: 320px) and (max-width: 640px)` | width greater than or equal to 320 px **AND** width less than or equal to 640 px |
+| `@media (min-width: 480px), (orientation: landscape)` | width greater than or equal to 480 px **OR** screen in the horizontal position |
+| `@media screen and (orientation: landscape), print and (orientation: portrait)` | (screen **AND** the vertical position) **OR** (print **AND** the horizontal position) |
+
+## `not` and `only` Keywords
+
+The keywords invert the meaning of an entire media query.
+
+```
+@media not all and (monochrome) { ... }
+
+// EVALUATED LIKE THIS:
+@media not (all and (monochrome)) { ... }
+
+// NOT LIKE THIS:
+@media (not all) and (monochrome) { ... }
+```
+
+The `only` keyword is primarly used to hide a stylesheet in older browsers that do not support _media queries_ and prevent styles from being applied.  
+Modren browsers ignore the `only` keyword and do load a stylesheet if a browser supports given features.
+
+```
+@media only screen and (color), (min-width: 1200px) { ... }
+```
+
+## Meta Viewport Tag
+
+* `width` is measured with CSS pixels
+* `device-width` is measured with physical pixels
+
+Therefore, to make the site readable and have _proper size_, both values should equal.  
+To do so, the following tag must be placed in the `<head>` section:
+
+```
+<meta name="viewport" content="width=device-width" />
+```
