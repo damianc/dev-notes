@@ -38,17 +38,16 @@ var obs$ = new Observable(sub => {
 
 	setTimeout(() => {
 		sub.next(2);
+	}, 5000);
+
+	setTimeout(() => {
+		sub.next(3);
 		sub.complete();
 	}, 4000);
 
 	setTimeout(() => {
-		sub.next(3);
-	}, 2000);
-
-	setTimeout(() => {
 		sub.next(4);
-		sub.complete();
-	}, 5000);
+	}, 2000);
 });
 
 obs$.subscribe(
@@ -60,4 +59,4 @@ obs$.subscribe(
 
 | TIME | Im | 1s | 2s | 3s | 4s | 5s | 6s |
 |------|----|----|----|----|----|----|----|
-| `obs$` | `1` | | `3` | | `2` & `done` | | |
+| `obs$` | `1` | | `4` | | `3` & `done` | | |
