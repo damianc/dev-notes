@@ -7,7 +7,7 @@
 | `$n` | text matched in the n-th group |
 | `$$` | literal `$` sign |
 | `$&` | the matched text |
-| `$\`` | text placed before the matched one |
+| ``$``` | text placed before the matched one |
 | `$'` | text placed after the matched one |
 
 ## Example \#1
