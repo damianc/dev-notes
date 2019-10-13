@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **79** Dev_Notes
+Currently: &nbsp; **80** Dev_Notes
 
 ---
 
@@ -153,6 +153,7 @@ Currently: &nbsp; **79** Dev_Notes
 
 * [Property Auto-Asignment within Constructor](typescript/auto-assignment.md)
 * [Generics](typescript/generics.md)
+* [Advanced Generics](typescript/advanced-generics.md)
 * [Utility Types](typescript/utility-types.md)
 * [Advanced Types](typescript/advanced-types.md)
 
