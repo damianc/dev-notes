@@ -28,5 +28,5 @@ var b = a ** 2;
 
 ## Typed Arrays of `BigInt`
 
-* BigInt64Array
-* BigUInt64Array
+* `BigInt64Array`
+* `BigUInt64Array`
