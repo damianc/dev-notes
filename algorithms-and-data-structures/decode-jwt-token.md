@@ -9,9 +9,9 @@ function parseJwt(token) {
     }).join(''));
 
     try {
-		return JSON.parse(payload);
+        return JSON.parse(payload);
     } catch (e) {
-		return payload;
+        return payload;
     }
 };
 ```
