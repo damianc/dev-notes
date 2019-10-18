@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **84** Dev_Notes
+Currently: &nbsp; **85** Dev_Notes
 
 ---
 
@@ -35,6 +35,7 @@ Currently: &nbsp; **84** Dev_Notes
 
 # Algorithms and Data Structures
 
+* [Decoding JWT Token](algorithms-and-data-structures/decode-jwt-token.md)
 * [Abstract Data Types](algorithms-and-data-structures/abstract-data-types.md)
 * [Algorithms](algorithms-and-data-structures/algorithms.md)
 
