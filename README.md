@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **83** Dev_Notes
+Currently: &nbsp; **84** Dev_Notes
 
 ---
 
@@ -93,6 +93,7 @@ Currently: &nbsp; **83** Dev_Notes
 * [[Weak]Map vs. [Weak]Set](es6+/maps-vs-sets.md)
 * [export and import](es6+/export-and-import.md)
 * [Proxy Traps](es6+/proxy-traps.md)
+* [`BigInt`](es6+/bigint.md)
 
 # Express.js
 
