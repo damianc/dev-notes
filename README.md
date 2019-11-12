@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **87** Dev_Notes
+Currently: &nbsp; **89** Dev_Notes
 
 ---
 
@@ -23,6 +23,7 @@ Currently: &nbsp; **87** Dev_Notes
 * [Docker](#docker)
 * [ES6+](#es6)
 * [Express.js](#expressjs)
+* [Firebase](#firebase)
 * [Git](#git)
 * [Node](#node)
 * [PHP](#php)
@@ -104,6 +105,11 @@ Currently: &nbsp; **87** Dev_Notes
 * [Custom Middleware](expressjs/custom-middleware.md)
 * [Modular Structure](expressjs/modular-structure.md)
 * [Streaming](expressjs/streaming.md)
+
+# Firebase
+
+* [Firebase Realtime Database: Observing a Value](firebase/realtime-database-observing-value)
+* [Firebase Realtime Database: Observing a Collection](firebase/realtime-database-observing-collection)
 
 # Git
 
