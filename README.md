@@ -108,8 +108,8 @@ Currently: &nbsp; **89** Dev_Notes
 
 # Firebase
 
-* [Firebase Realtime Database: Observing a Value](firebase/realtime-database-observing-value)
-* [Firebase Realtime Database: Observing a Collection](firebase/realtime-database-observing-collection)
+* [Firebase Realtime Database: Observing a Value](firebase/realtime-database-observing-value.md)
+* [Firebase Realtime Database: Observing a Collection](firebase/realtime-database-observing-collection.md)
 
 # Git
 
