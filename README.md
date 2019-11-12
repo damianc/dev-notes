@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **90** Dev_Notes
+Currently: &nbsp; **91** Dev_Notes
 
 ---
 
@@ -108,6 +108,7 @@ Currently: &nbsp; **90** Dev_Notes
 
 # Firebase
 
+* [Get Data from Firestore](firebase/get-data-from-firestore.md)
 * [Firebase Realtime Database: Observing a Value](firebase/realtime-database-observing-value.md)
 * [Firebase Realtime Database: Observing a Collection](firebase/realtime-database-observing-collection.md)
 * [Upload File to Bucket](firebase/upload-file-to-bucket.md)
