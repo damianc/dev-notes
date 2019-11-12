@@ -4,7 +4,7 @@
 const database = firebase.database();
 const dbRefVal = database.ref().child('app');
 
-bdRefVal.on('value', snap => {
+dbRefVal.on('value', snap => {
 	console.log('Current version:', snap.val());
 });
 ```
