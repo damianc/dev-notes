@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **91** Dev_Notes
+Currently: &nbsp; **92** Dev_Notes
 
 ---
 
@@ -123,6 +123,7 @@ Currently: &nbsp; **91** Dev_Notes
 
 # Node
 
+* [Set Environment Variable When Running App](node/set-env-when-running.md)
 * [`btoa()` and `atob()` in Node](node/btoa-and-atob.md)
 
 # PHP
