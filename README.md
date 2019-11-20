@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **92** Dev_Notes
+Currently: &nbsp; **93** Dev_Notes
 
 ---
 
@@ -22,6 +22,7 @@ Currently: &nbsp; **92** Dev_Notes
 * [Design Patterns](#design-patterns)
 * [Docker](#docker)
 * [ES6+](#es6)
+	- [Redux](#redux)
 * [Express.js](#expressjs)
 * [Firebase](#firebase)
 * [Git](#git)
@@ -97,6 +98,10 @@ Currently: &nbsp; **92** Dev_Notes
 * [export and import](es6+/export-and-import.md)
 * [Proxy Traps](es6+/proxy-traps.md)
 * [`BigInt`](es6+/bigint.md)
+
+## Redux
+
+* [Pure Redux](es6+/redux/pure-redux.md)
 
 # Express.js
 
