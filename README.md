@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **94** Dev_Notes
+Currently: &nbsp; **95** Dev_Notes
 
 ---
 
@@ -102,6 +102,7 @@ Currently: &nbsp; **94** Dev_Notes
 ## Redux
 
 * [Pure Redux](es6+/redux/pure-redux.md)
+* [Component Being Container for Itself](es6+/redux/component-being-container-for-itself.md)
 
 # Express.js
 
