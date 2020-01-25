@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **93** Dev_Notes
+Currently: &nbsp; **94** Dev_Notes
 
 ---
 
@@ -120,6 +120,7 @@ Currently: &nbsp; **93** Dev_Notes
 
 # Git
 
+* [Generate and Add SSH Key](git/generate-and-add-ssh-key.md)
 * [Add SSH identity](git/add-ssh-identity.md)
 * [Empty commit](git/empty-commit.md)
 * [Update last commit](git/update-last-commit.md)
