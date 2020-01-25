@@ -1,4 +1,4 @@
-Generate and Add SSH Key
+# Generate and Add SSH Key
 
 * generate key pair
 
