@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **95** Dev_Notes
+Currently: &nbsp; **96** Dev_Notes
 
 ---
 
@@ -34,6 +34,7 @@ Currently: &nbsp; **95** Dev_Notes
 * [TDD](#tdd)
 * [Tools](#tools)
 * [TypeScript](#typescript)
+* [Webpack](#webpack)
 * [WordPress](#wordpress)
 
 # Algorithms and Data Structures
@@ -183,6 +184,10 @@ Currently: &nbsp; **95** Dev_Notes
 * [Advanced Generics](typescript/advanced-generics.md)
 * [Utility Types](typescript/utility-types.md)
 * [Advanced Types](typescript/advanced-types.md)
+
+# Webpack
+
+* [Resolve Shorthand Module](webpack/resolve-shorthand-module.md)
 
 # WordPress
 
