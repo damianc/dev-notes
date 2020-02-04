@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **94** Dev_Notes
+Currently: &nbsp; **97** Dev_Notes
 
 ---
 
@@ -34,6 +34,7 @@ Currently: &nbsp; **94** Dev_Notes
 * [TDD](#tdd)
 * [Tools](#tools)
 * [TypeScript](#typescript)
+* [Webpack](#webpack)
 * [WordPress](#wordpress)
 
 # Algorithms and Data Structures
@@ -102,6 +103,7 @@ Currently: &nbsp; **94** Dev_Notes
 ## Redux
 
 * [Pure Redux](es6+/redux/pure-redux.md)
+* [Component Being Container for Itself](es6+/redux/component-being-container-for-itself.md)
 
 # Express.js
 
@@ -120,6 +122,7 @@ Currently: &nbsp; **94** Dev_Notes
 
 # Git
 
+* [Generate and Add SSH Key](git/generate-and-add-ssh-key.md)
 * [Add SSH identity](git/add-ssh-identity.md)
 * [Empty commit](git/empty-commit.md)
 * [Update last commit](git/update-last-commit.md)
@@ -182,6 +185,11 @@ Currently: &nbsp; **94** Dev_Notes
 * [Advanced Generics](typescript/advanced-generics.md)
 * [Utility Types](typescript/utility-types.md)
 * [Advanced Types](typescript/advanced-types.md)
+
+# Webpack
+
+* [Resolve Extensions (Other Than `.js`)](webpack/resolve-extensions.md)
+* [Resolve Shorthand Module](webpack/resolve-shorthand-module.md)
 
 # WordPress
 
