@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **93** Dev_Notes
+Currently: &nbsp; **94** Dev_Notes
 
 ---
 
@@ -130,6 +130,7 @@ Currently: &nbsp; **93** Dev_Notes
 
 * [Set Environment Variable When Running App](node/set-env-when-running.md)
 * [`btoa()` and `atob()` in Node](node/btoa-and-atob.md)
+* [[Error] System limit for number of file watchers reached](node/system-limit-of-file-watchers.md)
 
 # PHP
 
