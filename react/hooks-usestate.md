@@ -1,6 +1,12 @@
 # Hooks: `useState()`
 
 ```
+const [getter, setter] = useState(initialValue);
+```
+
+## Example: Counter
+
+```
 function Counter() {
 	const [counter, setCounter] = useState(0);
 
