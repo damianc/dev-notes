@@ -147,8 +147,8 @@ Currently: &nbsp; **100** Dev_Notes
 
 ## Redux
 
-* [Pure Redux](es6+/redux/pure-redux.md)
-* [Component Being Container for Itself](es6+/redux/component-being-container-for-itself.md)
+* [Pure Redux](react/redux/pure-redux.md)
+* [Component Being Container for Itself](react/redux/component-being-container-for-itself.md)
 
 ## react-router
 
