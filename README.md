@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **101** Dev_Notes
+Currently: &nbsp; **102** Dev_Notes
 
 ---
 
@@ -21,6 +21,7 @@ Currently: &nbsp; **101** Dev_Notes
 * [CSS](#css)
 * [Design Patterns](#design-patterns)
 * [Docker](#docker)
+* [Errors](#errors)
 * [ES6+](#es6)
 * [Express.js](#expressjs)
 * [Firebase](#firebase)
@@ -90,6 +91,11 @@ Currently: &nbsp; **101** Dev_Notes
 * [Filtering a list of images/containers](docker/filtering-images-containers-list.md)
 * [Deleting multiple images and containers](docker/deleting-images-containers.md)
 
+# Errors
+
+* [System limit for number of file watchers reached](errors/system-limit-of-file-watchers.md)
+* [zsh: corrupt history file](errors/zsh-corrupt-history-file.md)
+
 # ES6+
 
 * [Enumerating Properties](es6+/enumerating-properties.md)
@@ -130,7 +136,6 @@ Currently: &nbsp; **101** Dev_Notes
 
 * [Set Environment Variable When Running App](node/set-env-when-running.md)
 * [`btoa()` and `atob()` in Node](node/btoa-and-atob.md)
-* [[Error] System limit for number of file watchers reached](node/system-limit-of-file-watchers.md)
 
 # PHP
 
