@@ -22,12 +22,13 @@ Currently: &nbsp; **97** Dev_Notes
 * [Design Patterns](#design-patterns)
 * [Docker](#docker)
 * [ES6+](#es6)
-	- [Redux](#redux)
 * [Express.js](#expressjs)
 * [Firebase](#firebase)
 * [Git](#git)
 * [Node](#node)
 * [PHP](#php)
+* [React](#react)
+	- [Redux](#redux)
 * [REST API](#rest-api)
 * [RxJS](#rxjs)
 * [SQL](#sql)
@@ -100,11 +101,6 @@ Currently: &nbsp; **97** Dev_Notes
 * [Proxy Traps](es6+/proxy-traps.md)
 * [`BigInt`](es6+/bigint.md)
 
-## Redux
-
-* [Pure Redux](es6+/redux/pure-redux.md)
-* [Component Being Container for Itself](es6+/redux/component-being-container-for-itself.md)
-
 # Express.js
 
 * [The `request` Object](expressjs/request-object.md)
@@ -142,6 +138,13 @@ Currently: &nbsp; **97** Dev_Notes
 * [Namespaces](php/namespaces.md)
 * [Late Static Bindings](php/late-static-bindings.md)
 * [`const` vs `define`](php/const-vs-define.md)
+
+# React
+
+## Redux
+
+* [Pure Redux](es6+/redux/pure-redux.md)
+* [Component Being Container for Itself](es6+/redux/component-being-container-for-itself.md)
 
 # REST API
 
