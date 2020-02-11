@@ -54,5 +54,5 @@ function ThemedButton({ children }) {
 
 > When the nearest `<MyContext.Provider>` above the component updates, this hook will trigger a rerender with the latest context value passed to that `MyContext` provider.
 >
-> *Even if* an ancestor uses React.memo or shouldComponentUpdate, a rerender will still happen starting at the component itself using useContext.
+> **Even if** an ancestor uses React.memo or shouldComponentUpdate, a rerender will still happen starting at the component itself using useContext.
 
