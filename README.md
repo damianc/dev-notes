@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **98** Dev_Notes
+Currently: &nbsp; **99** Dev_Notes
 
 ---
 
@@ -141,6 +141,8 @@ Currently: &nbsp; **98** Dev_Notes
 * [`const` vs `define`](php/const-vs-define.md)
 
 # React
+
+* [Hooks: `useState()`](react/hooks-usestate.md)
 
 ## Redux
 
