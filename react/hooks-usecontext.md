@@ -36,7 +36,7 @@ function App() {
 function Toolbar() {
   return (
     <div>
-      <ThemedButton />
+      <ThemedButton>Process</ThemedButton>
     </div>
   );
 }
