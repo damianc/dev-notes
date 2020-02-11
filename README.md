@@ -28,6 +28,7 @@ Currently: &nbsp; **98** Dev_Notes
 * [Node](#node)
 * [PHP](#php)
 * [React](#react)
+	- [react-router](#react-router)
 	- [Redux](#redux)
 * [REST API](#rest-api)
 * [RxJS](#rxjs)
