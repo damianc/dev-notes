@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **99** Dev_Notes
+Currently: &nbsp; **100** Dev_Notes
 
 ---
 
@@ -143,6 +143,7 @@ Currently: &nbsp; **99** Dev_Notes
 # React
 
 * [Hooks: `useState()`](react/hooks-usestate.md)
+* [Hooks: `useEffect()`](react/hooks-useeffect.md)
 
 ## Redux
 
