@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **102** Dev_Notes
+Currently: &nbsp; **103** Dev_Notes
 
 ---
 
@@ -26,6 +26,7 @@ Currently: &nbsp; **102** Dev_Notes
 * [Express.js](#expressjs)
 * [Firebase](#firebase)
 * [Git](#git)
+* [HTML](#html)
 * [Node](#node)
 * [PHP](#php)
 * [React](#react)
@@ -131,6 +132,10 @@ Currently: &nbsp; **102** Dev_Notes
 * [Update last commit](git/update-last-commit.md)
 * [Comparing Files from 2 Different Branches](git/diff-different-branches.md)
 * [Find the commit a bug has been introduced in](git/find-commit-introducing-bug.md)
+
+# HTML
+
+* [Prevent Line-Break in a Table](html/prevent-line-break-in-table.md)
 
 # Node
 
