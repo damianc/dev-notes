@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **103** Dev_Notes
+Currently: &nbsp; **104** Dev_Notes
 
 ---
 
@@ -130,6 +130,7 @@ Currently: &nbsp; **103** Dev_Notes
 * [Add SSH identity](git/add-ssh-identity.md)
 * [Empty commit](git/empty-commit.md)
 * [Update last commit](git/update-last-commit.md)
+* [Renaming Branch](git/rename-branch.md)
 * [Comparing Files from 2 Different Branches](git/diff-different-branches.md)
 * [Find the commit a bug has been introduced in](git/find-commit-introducing-bug.md)
 
