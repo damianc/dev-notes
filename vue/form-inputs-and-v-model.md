@@ -6,14 +6,14 @@ It will always treat the Vue instance data as the source of truth. You should de
 * [Input Text](#input-text)
 * [Textarea](#textarea)
 * [Checkbox](#checkbox)
-	* [Non-Boolean Checkbox Values](#nonboolean-checkbox-values)
+	* [Non-Boolean Checkbox Values](#non-boolean-checkbox-values)
 	* [Checkbox with Array Value](#checkbox-with-array-value)
 * [Radio](#radio)
 * [Select](#select)
 	* [Select of Multiple](#select-of-multiple)
 	* [Select of Objects](#select-of-objects)
 * [Dynamic Select](#dynamic-select)
-* [Properties and Events That `v-model` Uses](#properties-and-events-that-vmodel-uses)
+* [Properties and Events That `v-model` Uses](#properties-and-events-that-v-model-uses)
 * [Modifiers](#modifiers)
 
 ## Input Text
