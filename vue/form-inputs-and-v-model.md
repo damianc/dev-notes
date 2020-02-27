@@ -1,5 +1,21 @@
 # Form Inputs and `v-model`
 
+`v-model` will ignore the initial `value`, `checked`, or `selected` attributes found on any form elements.  
+It will always treat the Vue instance data as the source of truth. You should declare the initial value on the JavaScript side, inside the `data` option of your component.
+
+* [Input Text](#input-text)
+* [Textarea](#textarea)
+* [Checkbox](#checkbox)
+	* [Non-Boolean Checkbox Values](#nonboolean-checkbox-values)
+	* [Checkbox with Array Value](#checkbox-with-array-value)
+* [Radio](#radio)
+* [Select](#select)
+	* [Select of Multiple](#select-of-multiple)
+	* [Select of Objects](#select-of-objects)
+* [Dynamic Select](#dynamic-select)
+* [Properties and Events That `v-model` Uses](#properties-and-events-that-vmodel-uses)
+* [Modifiers](#modifiers)
+
 ## Input Text
 
 ```
@@ -128,7 +144,7 @@ plan: undefined
 color: ''
 ```
 
-## Select of Multiple
+### Select of Multiple
 
 ```
 <select v-model="fruits" multiple>
@@ -143,6 +159,31 @@ color: ''
 
 ```
 fruits: ['APPLE', 'banana']
+```
+
+### Select of Objects
+
+```
+<select v-model="currency">
+	<option :value="currencies.usd">dollar</option>
+	<option :value="currencies.eur">euro</option>
+</select>
+Selected: {{ currency.code }} [PRICE: 10.00 {{ currency.symbol }}]
+```
+
+```
+const currencies = {
+	usd: {symbol: '$', code: 'USD'},
+	eur: {symbol: '€', code: 'EUR'}
+};
+
+new Vue({
+	...
+	data: {
+		currency: currencies.usd,
+		currencies
+	}
+});
 ```
 
 ## Dynamic Select
@@ -167,4 +208,32 @@ directionCollection: [
 	{text: 'West', value: 'W'},
 	{text: 'East', value: 'E'}
 ]
+```
+
+## Properties and Events That `v-model` Uses
+
+| INPUT | PROPERTY | EVENT |
+|-------|----------|-------|
+| text, textarea | `value` | `input` |
+| select | `value` | `change` |
+| checkbox, radio | `checked` | `change` |
+
+## Modifiers
+
+* `.lazy` - sync input with the data after `change` event instead of `input` event
+
+```
+<input v-model.lazy="message" />
+```
+
+* `.number` - automatically cast value to a Number
+
+```
+<input v-model.number="age" type="number" />
+```
+
+* `.trim` - automatically trim whitespaces from input
+
+```
+<input v-model.trim="comment" />
 ```
