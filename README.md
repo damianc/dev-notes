@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **104** Dev_Notes
+Currently: &nbsp; **105** Dev_Notes
 
 ---
 
@@ -38,6 +38,7 @@ Currently: &nbsp; **104** Dev_Notes
 * [TDD](#tdd)
 * [Tools](#tools)
 * [TypeScript](#typescript)
+* [Vue](#vue)
 * [Webpack](#webpack)
 * [WordPress](#wordpress)
 
@@ -208,6 +209,10 @@ Currently: &nbsp; **104** Dev_Notes
 * [Advanced Generics](typescript/advanced-generics.md)
 * [Utility Types](typescript/utility-types.md)
 * [Advanced Types](typescript/advanced-types.md)
+
+# Vue
+
+* [Features Preview with Counter Example](vue/counter-example.md)
 
 # Webpack
 
