@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **105** Dev_Notes
+Currently: &nbsp; **106** Dev_Notes
 
 ---
 
@@ -213,6 +213,7 @@ Currently: &nbsp; **105** Dev_Notes
 # Vue
 
 * [Features Preview with Counter Example](vue/counter-example.md)
+* [Form Inputs and `v-model`](vue/form-inputs-and-v-model.md)
 
 # Webpack
 
