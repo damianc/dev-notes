@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **108** Dev_Notes
+Currently: &nbsp; **109** Dev_Notes
 
 ---
 
@@ -213,8 +213,9 @@ Currently: &nbsp; **108** Dev_Notes
 # Vue
 
 * [Features Preview with Counter Example](vue/counter-example.md)
-* [`v-if`](vue/v-if.md)
-* [`v-for`](vue/v-for.md)
+* [Classes and Styles](vue/classes-and-styles.md)
+* [The `v-if` Directive](vue/v-if.md)
+* [The `v-for` Directive](vue/v-for.md)
 * [Form Inputs and `v-model`](vue/form-inputs-and-v-model.md)
 
 # Webpack

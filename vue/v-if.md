@@ -1,4 +1,4 @@
-# `v-if`
+# The `v-if` Directive
 
 ```
 <div v-if="success">

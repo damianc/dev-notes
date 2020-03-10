@@ -1,4 +1,4 @@
-# `v-for`
+# The `v-for` Directive
 
 ## Iterating through an Array
 
