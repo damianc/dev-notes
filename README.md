@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **110** Dev_Notes
+Currently: &nbsp; **111** Dev_Notes
 
 ---
 
@@ -213,6 +213,7 @@ Currently: &nbsp; **110** Dev_Notes
 # Vue
 
 * [Features Preview with Counter Example](vue/counter-example.md)
+* [Template Syntax](vue/template-syntax.md)
 * [Classes and Styles](vue/classes-and-styles.md)
 * [Events](vue/events.md)
 * [The `v-if` Directive](vue/v-if.md)
