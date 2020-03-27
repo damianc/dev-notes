@@ -25,12 +25,12 @@
 |--------|------|---------------|---------|
 | `case sensitive routing` | `Boolean` | `undefined` | When enabled, `/Users` and `/users` are different routes. |
 | `env` | `String` | `process.env.NODE_ENV` \|\| `"development"` | Environment mode (like _test_, _qa_, _stage_, _preview_, _production_). |
-| `etag` | `Boolean|String|Function` | `"weak"` | The _ETag_ response header. |
+| `etag` | `Boolean\|String\|Function` | `"weak"` | The _ETag_ response header. |
 | `jsonp callback name` | `String` | `"callback"` | The default JSONP callback name. |
 | `json escape` | `Boolean` | `undefined` | Enable escaping the characters `<`, `>`, and `&` as Unicode escape sequences in JSON from a response of `res.json()`, `res.jsonp()`, and `res.send()`. |
-| `json replacer` | `Function|String[]|Number[]` | `undefined` | The `replacer` argument used by `JSON.stringify()`. |
-| `json spaces` | `Number|String` | `undefined` | The `space` argument used by `JSON.stringify()`. |
-| `query parser` | `String|Boolean|(String):Object` | `"extended"` | Query parsing (_?name=value&name2=value2_):  
+| `json replacer` | `Function\|String[]\|Number[]` | `undefined` | The `replacer` argument used by `JSON.stringify()`. |
+| `json spaces` | `Number\|String` | `undefined` | The `space` argument used by `JSON.stringify()`. |
+| `query parser` | `String\|Boolean\|(String):Object` | `"extended"` | Query parsing (_?name=value&name2=value2_):  
 * `false` - disabled
 * `"simple"` - Node's _querystring_
 * `"extended"` - _qs_ module (\|\| `true`) |
