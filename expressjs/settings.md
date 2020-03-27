@@ -23,7 +23,14 @@
 		<td><code>etag</code></td>
 		<td><code>Boolean|String|Function</code></td>
 		<td><code>"weak"</code></td>
-		<td>The <i>ETag</i> response header.</td>
+		<td>
+			The <i>ETag</i> response header.
+			<pre>
+			app.set('etag', (body, encoding) => {
+				return generateHash(body, encoding);
+			});
+			</pre>
+		</td>
 	</tr>
 	<tr>
 		<td><code>jsonp callback name</code></td>
