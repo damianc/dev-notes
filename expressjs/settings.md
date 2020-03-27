@@ -25,11 +25,11 @@
 		<td><code>"weak"</code></td>
 		<td>
 			The <i>ETag</i> response header.
-			<pre>
-			app.set('etag', (body, encoding) => {
-				return generateHash(body, encoding);
-			});
-			</pre>
+<pre>
+app.set('etag', (body, encoding) => {
+	return generateHash(body, encoding);
+});
+</pre>
 		</td>
 	</tr>
 	<tr>
