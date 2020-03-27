@@ -109,10 +109,37 @@ app.set('json spaces', 4);
 		</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td><code>trust proxy</code></td>
+		<td><code>Boolean|String|String[]|Number|(ip):Boolean</code></td>
+		<td><code>false</code></td>
+		<td>
+			Trust Proxy headers, e.g., <code>X-Forwarded-Proto</code> (<code>req.protocol</code>) and <code>X-Forwarded-For</code> (<code>req.ips</code>).
+			<ul>
+				<li><code>true</code> - IP is leftmost entry in <code>X-Forwarded-*</code></li>
+				<li><code>false</code> - IP is in <code>req.connection.remoteAddress</code></li>
+				<li>
+					IP adresses to trust
+					<ul>
+						<li><code>'loopback'</code> - single subnet</li>
+						<li><code>'loopback, 123.123.123.123'</code> - subnet and IP address</li>
+						<li><code>'loopback, linklocal, uniquelocal'</code> - multiple subnets</li>
+						<li><code>['loopback', 'linklocal', 'uniquelocal']</code> - multiple subnets (as array)</li>
+					</ul>
+					Built-in values: <code>loopback</code> - 127.0.0.1/8, ::1/128; <code>linklocal</code> - 169.254.0.0/16, fe80::/10; <code>uniquelocal</code> - 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16, fc00::/7
+				</li>
+				<li><i>Number</i> - trust the n-th hop from the front-facing proxy server as the client</li>
+				<li>custom function - custom implementation of trust</li>
+<pre>
+app.set('trust proxy', ip => {
+    if (ip == '127.0.0.1' || ip == '123.123.123.123') {
+        return true; // trusted IPs
+    } else {
+        return false;
+    }
+});
+</pre>
+			</ul>
+		</td>
 	</tr>
 	<tr>
 		<td><code>views</code></td>
