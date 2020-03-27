@@ -32,7 +32,7 @@ $ NODE_ENV=production node app
 			The <i>ETag</i> response header.
 <pre>
 app.set('etag', (body, encoding) => {
-	return generateHash(body, encoding);
+    return generateHash(body, encoding);
 });
 </pre>
 		</td>
@@ -57,11 +57,11 @@ app.set('etag', (body, encoding) => {
 			The <code>replacer</code> argument used by <code>JSON.stringify()</code>.
 <pre>
 app.set('json replacer', (key, value) => {
-	if (key == 'discount') {
-		return undefined; // omit value
-	} else {
-		return value;
-	}
+    if (key == 'discount') {
+        return undefined; // omit value
+    } else {
+        return value;
+    }
 });
 </pre>
 		</td>
