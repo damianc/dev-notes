@@ -32,3 +32,10 @@
 | `@Query(key?: string)` | `req.query`/`req.query[key]` |
 | `@Headers(key?: string)` | `req.headers`/`req.headers[key]` |
 | `@Ip()` | `req.ip` |
+
+```
+@Get(':id')
+findOne(@Param('id') id: string) {
+	return `show user #${id}`;
+}
+```
