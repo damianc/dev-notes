@@ -101,9 +101,11 @@ app.set('json spaces', 4);
 		<td><code>Number</code></td>
 		<td><code>2</code></td>
 		<td>
-			The number of dot-separated parts of the host to remove to access subdomain.  
-			<code>2</code>: <i>ncbi.nlm.<u>nih.gov</u></i> &rarr; <code>['nlm', 'ncbi']</code>  
-			<code>3</code>: <i>ncbi.<u>nlm.nih.gov</u></i> &rarr; <code>['ncbi']</code>
+			The number of dot-separated parts of the host to remove to access subdomain.
+			<ul>
+				<li><code>2</code>: <i>ncbi.nlm.<u>nih.gov</u></i> &rarr; <code>['nlm', 'ncbi']</code></li>
+				<li><code>3</code>: <i>ncbi.<u>nlm.nih.gov</u></i> &rarr; <code>['ncbi']</code></li>
+			</ul>
 		</td>
 	</tr>
 </table>
