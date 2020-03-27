@@ -13,7 +13,7 @@
 Query parsing (_?name=value&name2=value2_):  
 * `false` - disabled
 * `"simple"` - Node's _querystring_
-* `"extended"` - _qs_ module (|| `true`) |
+* `"extended"` - _qs_ module (\|\| `true`) |
 | `strict routing` | `Boolean` | `undefined` | When enabled, `/foo` and `/foo/` are different routes. |
 
 ## Examples
