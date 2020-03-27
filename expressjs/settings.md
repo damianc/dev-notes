@@ -30,8 +30,7 @@
 | `json escape` | `Boolean` | `undefined` | Enable escaping the characters `<`, `>`, and `&` as Unicode escape sequences in JSON from a response of `res.json()`, `res.jsonp()`, and `res.send()`. |
 | `json replacer` | `Function|String[]|Number[]` | `undefined` | The `replacer` argument used by `JSON.stringify()`. |
 | `json spaces` | `Number|String` | `undefined` | The `space` argument used by `JSON.stringify()`. |
-| `query parser` | `String|Boolean|(String):Object` | `"extended"` |
-Query parsing (_?name=value&name2=value2_):  
+| `query parser` | `String|Boolean|(String):Object` | `"extended"` | Query parsing (_?name=value&name2=value2_):  
 * `false` - disabled
 * `"simple"` - Node's _querystring_
 * `"extended"` - _qs_ module (\|\| `true`) |
