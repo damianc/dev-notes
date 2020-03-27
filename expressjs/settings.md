@@ -18,7 +18,7 @@
 		<td><code>String</code></td>
 		<td><code>process.env.NODE_ENV || "development"</code></td>
 		<td>
-			Environment mode (like <i>test</i>, <i>qa</i>, <i>stage</i>, <i>codeview</i>, <i>production</i>).
+			Environment mode (like <i>test</i>, <i>qa</i>, <i>stage</i>, <i>preview</i>, <i>production</i>).
 <pre>
 $ NODE_ENV=production node app
 </pre>
