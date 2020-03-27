@@ -19,6 +19,12 @@
 * `@Head()`
 * `@All()`
 
+## Method Decorators
+
+* `@Redirect(url, statusCode? = 302)`
+* `@Header(headerName, headerValue)`
+* `@HttpCode(code)`
+
 ## Param Decorators
 
 | Decorator | Respective Express/Fastify Object |
@@ -34,8 +40,12 @@
 | `@Ip()` | `req.ip` |
 
 ```
-@Get(':id')
-findOne(@Param('id') id: string) {
-	return `show user #${id}`;
+@Controller('user')
+class UserController {
+    @Get(':id')
+    @Header('Cache-Control', 'none')
+    findOne(@Param('id') id: string) {
+        return `show user #${id}`;
+    }
 }
 ```
