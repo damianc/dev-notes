@@ -108,4 +108,39 @@ app.set('json spaces', 4);
 			</ul>
 		</td>
 	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>views</code></td>
+		<td><code>String|String[]</code></td>
+		<td><code>process.cwd() + '/views'</code></td>
+		<td>
+			Directory (or directories) for the application's views.
+<pre>
+app.set('views', path.join(__dirname, 'templates'));
+</pre>
+		</td>
+	</tr>
+	<tr>
+		<td><code>view cache</code></td>
+		<td><code>Boolean</code></td>
+		<td><code>true</code> in production, <code>undefined</code> otherwise</td>
+		<td>View template compilation cache.</td>
+	</tr>
+	<tr>
+		<td><code>view engine</code></td>
+		<td><code>String</code></td>
+		<td><code>undefined</code></td>
+		<td>Default engine extension to use when omitted.</td>
+	</tr>
+	<tr>
+		<td><code>x-powered-by</code></td>
+		<td><code>Boolean</code></td>
+		<td><code>true</code></td>
+		<td>Enable the <code>X-Powered-By: Express</code> HTTP header.</td>
+	</tr>
 </table>
