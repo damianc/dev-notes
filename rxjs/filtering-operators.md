@@ -5,8 +5,9 @@
 * [`debounce(durationSelector)`](#debouncedurationselector)
 * [`debounceTime(dueTimeMs)`](#debouncetimeduetimems)
 	* [`auditTime()` vs. `debounceTime()`](#audittime-vs-debouncetime)
-* [`throttle(durationSelector)`](#throttledurationselector)
-* [`throttleTime(durationMs)`](#throttletimedurationms)
+* [`throttle(durationSelector, config)`](#throttledurationselector-config)
+* [`throttleTime(durationMs, scheduler?=async, config?)`](#throttletimedurationms-schedulerasync-config)
+	* [Configuration for `throttle`/`throttleTime`](#configuration-for-throttlethrottletime)
 * [`distinct(keySelector?, flushes?)`](#distinctkeyselector-flushes)
 * [`distinctUntilChanged(compare? keySelector?)`](#distinctuntilchangedcompare-keyselector)
 * [`distinctUntilKeyChanged(key, compare?)`](#distinctuntilkeychangedkey-compare)
@@ -123,7 +124,7 @@ press.subscribe(console.log);
 | obs.   |     |    | a  |    |    |    |    |    |    | e  | 
 
 
-## `throttle(durationSelector)`
+## `throttle(durationSelector, config)`
 
 * emit a value from the source Observable
 * then ignore subsequent source values for a duration determined by another Observable
@@ -152,7 +153,7 @@ const result = clicks.pipe(
 result.subscribe(console.log);
 ```
 
-## `throttleTime(durationMs)`
+## `throttleTime(durationMs, scheduler?=async, config?)`
 
 ```
 // at most 1 click/second
@@ -163,6 +164,76 @@ const result = clicks.pipe(
 
 result.subscribe(console.log);
 ```
+
+### Configuration for `throttle`/`throttleTime`
+
+> L -> `{leading: true, trailing: false}` (default)
+> T -> `{leading: false, trailing: true}`
+> LT -> `{leading: true, trailing: true}`
+> `{leading: false, trailing: false}` is not a valid option
+
+```
+var int$ = interval(1000);
+var int_ = int$.pipe(
+	throttleTime(200, asyncScheduler, <CONFIG>)
+);
+int_.subscribe(console.log);
+```
+
+| TIME | 1s | 2s | 3s | 4s | 5s | 6s | 7s | 8s | 9s | 10s | 11s | 12s | 13s | 14s | 15s | 16s | 17s | 18s | 19s | 20s |
+|------|----|----|----|----|----|----|----|----|----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| L    | 0  |    |    | 3  |    |    | 6  |    |    | 9   |     |     | 12  |     |     | 15  |     |     | 18  |     |
+| T    |    |    | 2  |    |    | 5  |    |    | 8  |     |     | 11  |     |     | 14  |     |     | 17  |     |     |
+| LT   | 0  |    | 2  | 3  |    | 5  | 6  |    | 8  | 9   |     | 11  | 12  |     | 14  | 15  |     | 17   | 18 |     |
+
+```
+var click = fromEvent(document, 'click');
+var doubleClick = click.pipe(
+	throttleTime(2000, asyncScheduler, <CONFIG>)
+);
+doubleClick.subscribe(console.log);
+```
+
+* config `L`
+
+| TIME   | 0.25s | 0.50s | 0.75s | 1s | 1.25s | 1.50s | 1.75s | 2s |
+|--------|-------|-------|-------|----|-------|-------|-------|----|
+| clicks | x     | x     | x     |    |       |       |       |    |
+| log    | x     |       |       |    |       |       |       |    |
+
+* config `T`
+
+| TIME   | 0.25s | 0.50s | 0.75s | 1s | 1.25s | 1.50s | 1.75s | 2s |
+|--------|-------|-------|-------|----|-------|-------|-------|----|
+| clicks | x     | x     | x     | x  |       |       |       |    |
+| log    |       |       |       |    |       |       |       | x  |
+
+* config `LT`
+
+| TIME   | 0.25s | 0.50s | 0.75s | 1s | 1.25s | 1.50s | 1.75s | 2s |
+|--------|-------|-------|-------|----|-------|-------|-------|----|
+| clicks | x     | x     | x     | x  |       |       |       |    |
+| log    | x     |       |       |    |       |       |       | x  |
+
+| TIME   | 0.25s | 0.50s | 0.75s | 1s | 1.25s | 1.50s | 1.75s | 2s |
+|--------|-------|-------|-------|----|-------|-------|-------|----|
+| clicks | x     |       |       |    |       |       |       |    |
+| log    | x     |       |       |    |       |       |       | x  |
+
+```
+var press = fromEvent(document, 'keyup');
+press.pipe(
+	map(e => e.keyCode),
+	throttleTime(1000, asyncScheduler, <CONFIG>)
+).subscribe(console.log);
+```
+
+| TIME  | Im. | 0.25s | 0.50s | 0.75s | 1s | 1.25s | 1.50s | 1.75s | 2s | 2.25s | 2.50s | 2.75s | 3s |
+|-------|-----|-------|-------|-------|----|-------|-------|-------|----|-------|-------|-------|----|
+| press |     | x     | x     | x     |    | x     |  x    | x     |    | x     | x     | x     |    |
+| L     |     | x     |       |       |    | x     |       |       |    | x     |       |       |    |
+| T     |     |       |       | x     |    |       |       | x     |    | x     |       | x     |    |
+| LT    |     | x     |       | x     |    | x     |       | x     |    | x     |       | x     |    |
 
 ## `distinct(keySelector?, flushes?)`
 
