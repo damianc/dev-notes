@@ -170,3 +170,21 @@ fromEvent(document, 'click').pipe(
 |--------|---|-----|----|----|-----|---|----|----|-----|------|-----|----|----|
 | click  | x  |     |     |    |   | `x`   |  x   | | | | | | |
 | obs.   |    |   | 0  |   | 1 | | ... | `0` | 0  | `1` |1  | `...` | ... |
+
+## `map(project, thisArg?)`
+
+* `project: (value, index)`
+
+```
+fromEvent(document, 'click').pipe(
+	map(e => e.clientX)
+).subscribe(console.log);
+```
+
+## `mapTo(value)`
+
+```
+fromEvent(document, 'click').pipe(
+	mapTo('hi')
+).subscribe(console.log);
+```
