@@ -167,9 +167,9 @@ result.subscribe(console.log);
 
 ### Configuration for `throttle`/`throttleTime`
 
-> L -> `{leading: true, trailing: false}` (default)
-> T -> `{leading: false, trailing: true}`
-> LT -> `{leading: true, trailing: true}`
+> L -> `{leading: true, trailing: false}` (default)  
+> T -> `{leading: false, trailing: true}`  
+> LT -> `{leading: true, trailing: true}`  
 > `{leading: false, trailing: false}` is not a valid option
 
 ```
