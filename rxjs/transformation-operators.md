@@ -106,6 +106,39 @@ fromEvent(document, 'click').pipe(
 
 > compare with `concatMap()`
 
+## `switchMap(project, resultSelector?)`
+
+* `project: (value, index)`
+* `resultSelector: (outerValue, innerValue, outerIndex, innerIndex)`
+
+```
+fromEvent(document, 'click').pipe(
+	switchMap(e => interval(1000).pipe(take(4)))
+).subscribe(console.log);
+```
+
+| TIME | 1s | 2s | 3s | 4s | 5s | 6s | 7s | 8s | 8.5 | 9s | 9.5s | 10s | 10.5s | 11s | 11.5s | 12s | 12.5s | 13s | 13.5s | 14s | 14.5s | 15s |
+|-------|----|----|----|----|----|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
+| click | x   |    |   |   | | | | `x` | | | | | x | | | |
+| obs.  |  |  0  | 1 | 2 | 3 | | | | | `0` | | `1` | | | 0 | | 1 | | 2 | | 3 | |
+
+## `switchMapTo(innerObservable, resultSelector?)`
+
+* `resultSelector: (outerValue, innerValue, outerIndex, innerIndex)`
+
+```
+fromEvent(document, 'click').pipe(
+	switchMapTo(interval(1000).pipe(take(4)))
+).subscribe(console.log);
+```
+
+The result is like the above one (_switchMap()_).
+
+| TIME | 1s | 2s | 3s | 4s | 5s | 6s | 7s | 8s | 8.5 | 9s | 9.5s | 10s | 10.5s | 11s | 11.5s | 12s | 12.5s | 13s | 13.5s | 14s | 14.5s | 15s |
+|-------|----|----|----|----|----|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
+| click | x   |    |   |   | | | | `x` | | | | | x | | | |
+| obs.  |  |  0  | 1 | 2 | 3 | | | | | `0` | | `1` | | | 0 | | 1 | | 2 | | 3 | |
+
 ## `mergeMap(project, resultSelector?, concurrent?=Number.POSITIVE_INFINITY)`
 
 * `project: (value, index)`
