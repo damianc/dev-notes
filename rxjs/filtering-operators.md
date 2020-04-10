@@ -175,7 +175,7 @@ result.subscribe(console.log);
 ```
 var int$ = interval(1000);
 var int_ = int$.pipe(
-	throttleTime(200, asyncScheduler, <CONFIG>)
+	throttleTime(2000, asyncScheduler, <CONFIG>)
 );
 int_.subscribe(console.log);
 ```
