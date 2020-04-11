@@ -314,6 +314,26 @@ fromEvent(document, 'click').pipe(
 | click  | x  |     |     |    |   | `x`   |  x   | | | | | | |
 | obs.   |    |   | 0  |   | 1 | | ... | `0` | 0  | `1` |1  | `...` | ... |
 
+### `concatMap()` vs. `mergeMap()` vs. `exhaustMap()` vs. `switchMap()`
+
+```
+of('a', 'b').pipe(
+	<OP>(
+		x => interval(1000).pipe(
+			take(3),
+			map(i => x + i)
+		)
+	)
+).subscribe(console.log);
+```
+
+| TIME | 1s | 2s | 3s | 4s | 5s | 6s |
+|--------|----|----|----|-----|---|----|
+| `concatMap()` | `a0` | `a1` | `a2` | `b0` | `b1` | `b2` |
+| `mergeMap()` | `a0` & `b0` | `a1` & `b1` | `a2` & `b2` | | | |
+| `exhaustMap()` | `a0` | `a1` | `a2` | | | |
+| `switchMap()` | `b0` | `b1` | `b2` | | | |
+
 ## `map(project, thisArg?)`
 
 * `project: (value, index)`
