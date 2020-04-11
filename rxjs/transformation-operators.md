@@ -70,6 +70,69 @@ interval(1000).pipe(
 | **\|**  | **-**   | **-**  | **-**   | c  |      |    |      |    |      | **\|** | **-**    | c  |     |
 |     |     |    |     | **[a,b]**   |      |    |      |    |      |    |     | **[f]**   |     |
 
+```
+import { interval, EMPTY } from 'rxjs';
+import { bufferToggle } from 'rxjs/operators';
+
+interval(250).pipe(
+	bufferToggle(
+		// every second
+		interval(1000),
+		// if it is an odd second
+		// emit values (of interval(250)) from the next 500ms
+		i => i % 2 ? interval(500) : EMPTY
+	)
+).subscribe(console.log);
+```
+
+| TIME | 0s | 1s | 2s | 3s | 4s | 5s | 6s | 7s |
+|--------|----|----|----|-----|----|----|----|----|
+| intv100 | | 0 | `1` | 2 | `3` | 4 | `5` | 6 |
+| intv500 | x 0 | 1 2 | 3 4 | 5 6 | 7 8 | 9 10 | 11 12 | 13 14 |
+| int250 | x 0 1 2 | 3 4 5 6 | `7` `8` `9` 10 | 11 12 13 14 | `15` `16` `17` 18 | 19 20 21 22 | `23` `24` `25` 26 | 27 28 29 30 |
+
+```
+const clicks = fromEvent(document, 'click');
+const buffered = clicks.pipe(
+	bufferToggle(
+		// every second
+		interval(1000),
+		// if it is an odd second
+		// emit clicks from the next 500ms
+		i => i % 2 ? interval(500) : EMPTY
+	)
+).subscribe(console.log);
+```
+
+| TIME | 0.5s | 1s | 1.5s | 2s | 2.5s | 3s | 3.5s | 4s | 4.5s | 5s | 5.5s | 6s | 6.5s | 7s | 7.5s | 8s |
+|--------|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+| click | | | | 2.25s | | | ~~3.75s, 3.85s~~ | 4.25s | ~~4.75s~~ | | | 6.25s, 6.35s | ~~6.75s~~ |
+| logged | | | `[]` | \|____ | `[Ev]` | | `[]` | \|____ | `[Ev]` | | `[]` | \|____ | `[Ev, Ev]` | | `[]` |
+
+## `bufferWhen(closingSelector)`
+
+```
+interval(500).pipe(
+	bufferWhen(i => interval(2000))
+).subscribe(console.log);
+```
+
+| TIME | 0.5s | 1s | 1.5s | 2s | 2.5s | 3s | 3.5s | 4s | 4.5s | 5s | 5.5s | 6s | 6.5s | 7s | 7.5s | 8s |
+|-------|------|----|-------|----|------|----|--------|----|-----|----|------|-----|-----|----|------|----|
+| intv500 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 |
+| logged | | | | `[0,1,2]` | | | | `[3,4,5,6,7]` | | | | `[8,9,10,11]` | | | | `[12,13,14,15]` |
+
+```
+interval(1000).pipe(
+	bufferWhen(i => interval(2000))
+).subscribe(console.log);
+```
+
+| TIME | 1s | 2s | 3s | 4s | 5s | 6s | 7s | 8s | 9s | 10s | 11s | 12s|
+|--------|----|----|----|----|----|----|----|----|-----|-----|------|----|
+intv1000 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |
+| logged | | `[0]` | | `[1,2,3]` | | `[4,5]` | | `[6,7]` | | `[8,9]` | | `[10,11]` |
+
 ## `exhaust()`
 
 ```
