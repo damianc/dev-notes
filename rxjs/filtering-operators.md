@@ -595,7 +595,7 @@ interval(1000).pipe(
 interval(1000).pipe(
 	take(5)
 ).subscribe(console.log);
-// 0-5 only
+// 0-4 only
 ```
 
 ## `takeLast(count)`
@@ -616,7 +616,7 @@ interval(1000).pipe(
 | final |   |    |    |    | 3 & 4 |
 
 ```
-range(1, 10).pipe(
+range(1, 100).pipe(
 	takeLast(3)
 ).subscribe(console.log);
 // 98 99 100
