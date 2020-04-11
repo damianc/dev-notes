@@ -202,6 +202,86 @@ The result is like the above one (_switchMap()_).
 | click | x   |    |   |   | | | | `x` | | | | | x | | | |
 | obs.  |  |  0  | 1 | 2 | 3 | | | | | `0` | | `1` | | | 0 | | 1 | | 2 | | 3 | |
 
+## `concatMap(project, resultSelector?)`
+
+* `project: (value, index)`
+* `resultSelector: (outerValue, innerValue, outerIndex, innerIndex)`
+
+> `concatMap` is equivalent to `mergeMap` with concurrency parameter set to `1`
+
+```
+fromEvent(document, 'click').pipe(
+	concatMap(e => interval(1000).pipe(take(4)))
+).subscribe(console.log);
+```
+
+| TIME | 1s | 2s | 3s | 4s | 5s | 6s | 7s | 8s | 9s | 10s | 11s | 12s | 13s | 14s | 15s |
+|--------|----|----|----|----|-----|---|----|-----|----|----|-----|-------|------|-----|----|
+| click | x | | | | | | x | | | x | | | | | |
+| obs. | | 0 | 1 | 2 | 3 | | | 0 | 1 | 2 | 3 | 0 | 1 | 2 | 3 |
+
+```
+interval(1000).pipe(
+	take(2),
+	concatMap(i => of('it is ' + i))
+).subscribe(console.log);
+```
+
+| TIME | 1s | 2s | 3s | 4s | 5s |
+|-------|----|-----|----|----|----|
+| obs.  | it is 0 | it is 1 | | | |
+
+### The `resultSelector` Callback
+
+```
+fromEvent(document, 'click').pipe(
+	concatMap(
+		e => interval(1000).pipe(take(4)),
+		(ov, iv, oi, ii) => console.log(ov, iv, oi, ii)
+	)
+).subscribe(console.log);
+```
+
+| TIME | 1s | 2s | 3s | 4s | 5s | 6s | 7s | 8s | 9s | 10s | 11s | 12s |
+|-------|-----|----|----|----|----|----|-----|----|----|-----|------|----|
+| click | x | | | | | | x | | | | | |
+| ov | | Ev | Ev | Ev | Ev | | | Ev | Ev | Ev | Ev | |
+| iv | | 0 | 1 | 2 | 3 | | | 0 | 1 | 2 | 3 | |
+| oi | | 0 | 0 | 0 | 0 | | | 1 | 1| 1| 1 | |
+| ii | | 0 | 1 | 2 | 3 | | | 0 | 1 | 2 | 3 | |
+
+### `concatMap()` vs. `map()`
+
+```
+fromEvent(document, 'click').pipe(
+	map(
+		e => interval(1000).pipe(take(4))
+	)
+).subscribe(console.log);
+```
+
+| TIME | 1s | 2s | 3s | 4s | 5s | 6s | 7s | 8s |
+|--------|----|----|----|----|----|----|-----|----|
+| click | x | | | x | | | | |
+| obs. | Observable | | | Observable | | | | |
+
+## `concatMapTo(innerObservable, resultSelector?)`
+
+* `resultSelector: (outerValue, innerValue, outerIndex, innerIndex)`
+
+```
+fromEvent(document, 'click').pipe(
+	concatMapTo(
+		interval(1000).pipe(take(4))
+	)
+).subscribe(console.log);
+```
+
+| TIME | 1s | 2s | 3s | 4s | 5s | 6s | 7s | 8s |
+|-------|-----|-----|----|----|----|----|----|----|
+| click | | x | | | | | | |
+| obs. | | | 0 | 1 | 2 | 3 | | |
+
 ## `mergeMap(project, resultSelector?, concurrent?=Number.POSITIVE_INFINITY)`
 
 * `project: (value, index)`
