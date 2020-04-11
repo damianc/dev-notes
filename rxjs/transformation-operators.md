@@ -1,5 +1,24 @@
 # Transformation Operators
 
+* [`buffer(closingNotifier)`](#bufferclosingnotifier)
+* [`bufferCount(bufferSize, startBufferEvery?)`](#buffercountbuffersize-startbufferevery)
+* [`bufferTime(bufferTimeSpan)`](#buffertimebuffertimespan)
+* [`bufferToggle(openings, closingSelector)`](#buffertoggleopenings-closingselector)
+* [`bufferWhen(closingSelector)`](#bufferwhenclosingselector)
+* [`exhaust()`](#exhaust)
+* [`exhaustMap(project, resultSelector?)`](#exhaustmapproject-resultselector)
+* [`switchMap(project, resultSelector?)`](#switchmapproject-resultselector)
+* [`switchMapTo(innerObservable, resultSelector?)`](#switchmaptoinnerobservable-resultselector)
+* [`concatMap(project, resultSelector?)`](#concatmapproject-resultselector)
+	* [The `resultSelector` Callback](#the-resultselector-callback)
+	* [`concatMap()` vs. `map()`](#concatmap-vs-map)
+* [`concatMapTo(innerObservable, resultSelector?)`](#concatmaptoinnerobservable-resultselector)
+* [`mergeMap(project, resultSelector?, concurrent?=Number.POSITIVE_INFINITY)`](#mergemapproject-resultselector-concurrentnumberpositive_infinity)
+* [`mergeMapTo(innerObservable, resultSelector?, concurrent?=Number.POSITIVE_INFINITY)`](#mergemaptoinnerobservable-resultselector-concurrentnumberpositive_infinity)
+	* [`concatMap()` vs. `mergeMap()` vs. `exhaustMap()` vs. `switchMap()`](#concatmap-vs-mergemap-vs-exhaustmap-vs-switchmap)
+* [`map(project, thisArg?)`](#mapproject-thisarg)
+* [`mapTo(value)`](#maptovalue)
+
 ## `buffer(closingNotifier)`
 
 ```
