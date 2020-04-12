@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **117** Dev_Notes
+Currently: &nbsp; **118** Dev_Notes
 
 ---
 
@@ -188,6 +188,7 @@ Currently: &nbsp; **117** Dev_Notes
 * [Join Operators](rxjs/join-operators.md)
 * [Filtering Operators](rxjs/filtering-operators.md)
 * [Transformation Operators](rxjs/transformation-operators.md)
+* [Error Handling Operators](rxjs/error-handling-operators.md)
 * [Conditional and Boolean Operators](rxjs/conditional-and-boolean-operators.md)
 * [Mathematical and Aggregation Operators](rxjs/math-stat.md)
 * [Utility Operators](rxjs/utility-operators.md)
