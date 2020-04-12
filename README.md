@@ -189,6 +189,7 @@ Currently: &nbsp; **116** Dev_Notes
 * [Filtering Operators](rxjs/filtering-operators.md)
 * [Transformation Operators](rxjs/transformation-operators.md)
 * [Conditional and Boolean Operators](rxjs/conditional-and-boolean-operators.md)
+* [Mathematical and Aggregation Operators](rxjs/math-stat.md)
 * [Utility Operators](rxjs/utility-operators.md)
 
 # SQL
