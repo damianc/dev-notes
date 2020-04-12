@@ -665,7 +665,7 @@ fromEvent(document, 'click').pipe(
 ).subscribe(console.log);
 ```
 
-`partition(predicate, thisArg?)`
+## `partition(predicate, thisArg?)`
 
 * `predicate: (value, index)`
 
