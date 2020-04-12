@@ -28,6 +28,12 @@
 * [`pairwise()`](#pairwise)
 * [`partition(predicate, thisArg?)`](#partitionpredicate-thisarg)
 * [`pluck(...properties)`](#pluckproperties)
+* [`window(windowBoundaries)`](#windowwindowboundaries)
+* [`windowCount(windowSize, startWindowEvery)`](#windowcountwindowsize-startwindowevery)
+* [`windowTime(windowTimeSpan, windowCreationInterval?, maxWindowSize?)`](#windowtimewindowtimespan-windowcreationinterval-maxwindowsize)
+	* [Limiting a Window Size by `take()`](#limiting-a-window-size-by-take)
+* [`windowToggle(openings, closingSelector)`](#windowtoggleopenings-closingselector)
+* [`windowWhen(closingSelector)`](#windowwhenclosingselector)
 
 ## `buffer(closingNotifier)`
 
@@ -720,4 +726,118 @@ of([
 	pluck(0, 1)
 ).subscribe(console.log);
 // b
+```
+
+## `window(windowBoundaries)`
+
+```
+var clicks = fromEvent(document, 'click');
+var sec = interval(1000);
+
+sec.pipe(
+	window(clicks),
+	map(win => win.pipe(take(4))),
+	mergeAll()
+).subscribe(console.log);
+```
+
+> Without the `map()` operator, we would get number after number (or all numbers) - switch of observable wouldn't be seen.
+
+| TIME | 1s | 2s | 3s | 4s | 5s | 6s | 7s | 8s | 9s | 10s | 11s | 12s |
+|------|-|-|-|-|-|-|-|-|-|-|-|-|
+| click | | | | | | x | | x | | | | |
+| obs. | 0 | 1 | 2 | 3 | | 5 | 6 | 7 | 8 | 9 | 10 | |
+
+| TIME | 1s | 2s | 3s | 4s | 5s | 6s | 7s | 8s | 9s | 10s | 11s | 12s |
+|------|-|-|-|-|-|-|-|-|-|-|-|-|
+| click | | x | | | | | | x | | | | |
+| obs. | 0 | 1 | 2 | 3 | 4 | | | 7 | 8 | 9 | 10 | |
+
+## `windowCount(windowSize, startWindowEvery)`
+
+```
+// ignore every 3rd click
+// starting from 1st one
+
+fromEvent(document, 'click').pipe(
+	windowCount(3),
+	// skip 1st of every 3 click
+	map(win => win.pipe(skip(1))),
+	mergeAll()
+).subscribe(console.log);
+```
+
+## `windowTime(windowTimeSpan, windowCreationInterval?, maxWindowSize?)`
+
+```
+fromEvent(document, 'click').pipe(
+	windowTime(2000,  5000,  2),
+	mergeAll()
+).subscribe(console.log);
+```
+
+| TIME | `1s` | `2s` | 3s | 4s | 5s | `6s` | `7s` | 8s | 9s | 10s |
+|--------|-|-|-|-|-|-|-|-|-|-|
+| click | x | x | x | x | | | x | | | |
+| obs. | Ev | Ev | | | | | Ev | | | |
+
+### Limiting a Window Size by `take()`
+
+```
+fromEvent(document, 'click').pipe(
+	windowTime(2000,  5000),
+	map(win => win.pipe(take(2))),
+	mergeAll()
+).subscribe(console.log);
+```
+
+## `windowToggle(openings, closingSelector)`
+
+* `closingSelector: (openValue)`
+
+```
+interval(500).pipe(
+	take(15),
+	windowToggle(
+		interval(2000),
+		i => interval(1000)
+	),
+	mergeAll()
+).subscribe(console.log);
+```
+
+| TIME | 0.5s | 1s | 1.5s | `2s` | `2.5s` | `3s` | `3.5s` | 4s | 4.5s | 5s | 5.5s | `6s` | `6.5s` | `7s` |
+|-------|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+| intv500 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 |
+| obs. | | | | 3 | 4 | 5 | | 7 | 8 | 9 | | 11 | 12 | 13 |
+
+```
+interval(500).pipe(
+	take(15),
+	windowToggle(
+		interval(2000),
+		i => interval(500) // 1000 -> 500
+	),
+	mergeAll()
+).subscribe(console.log);
+```
+
+| TIME | 0.5s | 1s | 1.5s | `2s` | `2.5s` | `3s` | `3.5s` | 4s | 4.5s | 5s | 5.5s | `6s` | `6.5s` | `7s` |
+|-------|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+| intv500 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 |
+| obs. | | | | 3 | 4 | | | 7 | 8 | | | 11 | 12 | |
+
+# `windowWhen(closingSelector)`
+
+* `closingSelector: ()`
+
+```
+// emit only 2 first clicks
+// in every window of 5 seconds
+
+fromEvent(document, 'click').pipe(
+	windowWhen(() => interval(5000)),
+	map(win => win.pipe(take(2))),
+	mergeAll()
+).subscribe(console.log);
 ```
