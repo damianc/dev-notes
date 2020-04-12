@@ -18,6 +18,16 @@
 	* [`concatMap()` vs. `mergeMap()` vs. `exhaustMap()` vs. `switchMap()`](#concatmap-vs-mergemap-vs-exhaustmap-vs-switchmap)
 * [`map(project, thisArg?)`](#mapproject-thisarg)
 * [`mapTo(value)`](#maptovalue)
+* [`mergeScan(accumulator, seed, concurrent=Number.POSITIVE_INFINITY)`](#mergescanaccumulator-seed-concurrentnumberpositive_infinity)
+* [`scan(accumulator, seed?)`](#scanaccumulator-seed)
+* [`expand(project, concurrent=Number.POSITIVE_INFINITY)`](#expandproject-concurrentnumberpositive_infinity)
+* [`groupBy(keySelector, elementSelector?, durationSelector?, subjectSelector?)`](#groupbykeyselector-elementselector-durationselector-subjectselector)
+	* [Boolean Expression as a Key Selector](#boolean-expression-as-a-key-selector)
+	* [Map #1](#map-1)
+	* [Map #2](#map-2)
+* [`pairwise()`](#pairwise)
+* [`partition(predicate, thisArg?)`](#partitionpredicate-thisarg)
+* [`pluck(...properties)`](#pluckproperties)
 
 ## `buffer(closingNotifier)`
 
@@ -369,4 +379,345 @@ fromEvent(document, 'click').pipe(
 fromEvent(document, 'click').pipe(
 	mapTo('hi')
 ).subscribe(console.log);
+```
+
+## `mergeScan(accumulator, seed, concurrent=Number.POSITIVE_INFINITY)`
+
+* `accumulator: (acc, value, index)`
+
+```
+range(1, 5).pipe(
+	mergeScan(
+		(acc, one) => of(acc * one),
+		1
+	)
+).subscribe(console.log);
+
+// 1 2 6 24 120
+```
+
+```
+const seed = 0;
+fromEvent(document, 'click').pipe(
+	mapTo(1)
+).pipe(
+	mergeScan(
+		(acc, one) => of(acc + one),
+		seed
+	)
+).subscribe(console.log);
+```
+
+| CLICK | | x | x | | | x | | x | | | | x | x | x | x | |
+|-------|-|---|---|-|-|---|-|---|-|-|-|---|---|---|---|-|
+| obs.  | | 1 | 2 | | | 3 | | 4 | | | | 5 | 6 | 7 | 8 | |
+
+## `scan(accumulator, seed?)`
+
+* `accumulator: (acc, value, index)`
+
+```
+const clicks = fromEvent(document, 'click');
+const ones = clicks.pipe(mapTo(1));
+const count = ones.pipe(
+	scan(
+		(acc, one) => acc + one,
+		0
+	)
+).subscribe(console.log);
+```
+
+| CLICK | | x | | | x | | x | | | | x | |
+|-------|-|---|-|-|---|-|---|-|-|-|---|-|
+| obs.  | | 1 | | | 2 | | 3 | | | | 4 | |
+
+```
+const stats = {len: 0, sum: 0, curr: 0};
+const nums = of(1, 3, 4, 2);
+
+nums.pipe(
+	scan(
+		(acc, val) => {
+			var obj = Object.assign({}, acc);
+			obj.len += 1;
+			obj.sum += val;
+			obj.curr = val;
+			return obj;
+		},
+		stats
+	)
+).subscribe(obj => {
+	console.log(
+		'current val is %d and average is %f',
+		obj.curr,
+		+(obj.sum / obj.len).toFixed(2)
+	);
+});
+
+// current val is 1 and average is 1
+// current val is 3 and average is 2
+// current val is 4 and average is 2.67
+// current val is 2 and average is 2.5
+```
+
+## `expand(project, concurrent=Number.POSITIVE_INFINITY)`
+
+* `project: (value, index)`
+
+```
+fromEvent(document, 'click').pipe(
+	mapTo(1),
+	expand(
+		x => of(2 * x).pipe(delay(1000))
+	),
+	take(10)
+).subscribe(console.log);
+```
+
+| TIME | 1s | 2s | 3s | 4s | 5s | 6s | 7s | 8s | 9s | 10s | 11s | 12s | 13s | 14s |
+|--------|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
+| click | x | | | | | | | | | | | x | | |
+| obs. | 1 | 2 | 4 | 8 | 16 | 32 | 64 | 128 | 256 | 512 | | | | |
+
+| TIME | 1s | 2s | 3s | 4s | 5s | 6s | 7s | 8s | 9s | 10s | 11s | 12s | 13s | 14s |
+|--------|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
+| click | x | | | | x | | | | | | | | | |
+| obs. | 1 | 2 | 4 | 8 | 16 & 1 | 32 & 2 | 64 & 4 | | | | | | | |
+
+```
+of(5).pipe(
+	expand(x => x > 1 ? of(x - 1) : EMPTY
+).subscribe(console.log);
+
+// 5 4 3 2 1
+```
+
+## `groupBy(keySelector, elementSelector?, durationSelector?, subjectSelector?)`
+
+* `keySelector: (value)`
+* `elementSelector: void | (value)`
+* `durationSelector: (grouped)`
+* `subjectSelector: ()`
+
+```
+of(1, 2, 3, 4, 5, 6 , 7, 8).pipe(
+	groupBy(p => p % 2),
+	mergeMap(group$ => group$.pipe(
+		reduce(
+			(acc, curr) => [...acc, curr],
+			[]
+		)
+	))
+).subscribe(console.log);
+
+// [1, 3, 5, 7]
+// [2, 4, 6, 8]
+```
+
+```
+of(1, 2, 3, 4, 5, 6 , 7, 8).pipe(
+	groupBy(p => p % 2),
+	mergeMap(group$ => group$.pipe(
+		reduce(
+			(acc, curr) => [...acc, curr],
+			[]
+		),
+		map(
+			arr => ({
+				nums: arr,
+				count: arr.length
+			})
+		)
+	))
+).subscribe(console.log);
+
+// {nums: [1, 3, 5, 7], count: 4}
+// {nums: [2, 4, 6, 8], count: 4}
+```
+
+```
+of(
+	{id: 1, name: 'JavaScript'},
+	{id: 2, name: 'Parcel'},
+	{id: 2, name: 'Webpack'},
+	{id: 1, name: 'TypeScript'},
+	{id: 3, name: 'TSLint'}
+).pipe(
+	groupBy(
+		p => p.id,
+		p => p.name
+	),
+	mergeMap(group$ => group$.pipe(
+		reduce(
+			(acc, curr) => [...acc, curr],
+			[`${group$.key}`]
+		)
+	)),
+	map(arr => ({
+		id: parseInt(arr[0], 10),
+		values: arr.slice(1)
+	}))
+).subscribe(console.log);
+
+// {id: 1, values: ['JavaScript', 'TypeScript']}
+// {id: 2, values: ['Parcel', 'Webpack']}
+// {id: 3, values: ['TSLint']}
+```
+
+### Boolean Expression as a Key Selector
+
+```
+of(...).pipe(
+	groupBy(
+		p => p.rate > 3,
+		p => p.name
+	)
+).subscribe(console.log);
+
+// Observable {key: true ...}
+// Observable {key: false ...}
+```
+
+```
+of(...).pipe(
+	groupBy(
+		p => p.rate > 3 ? 'A' : 'B',
+		p => p.name
+	)
+).subscribe(console.log);
+
+// Observable {key: "A" ...}
+// Observable {key: "B" ...}
+```
+
+### Map #1
+
+```
+of(
+	{name: 'John', rate: 4},
+	{name: 'Adam', rate: 3},
+	{name: 'Leo', rate: 2},
+	{name: 'David', rate: 5}
+).pipe(
+	groupBy(
+		p => p.rate > 3 ? 'A' : 'B',
+		p => p.name
+	),
+	mergeMap(g => g.pipe(
+		reduce(
+			(acc, curr) => [...acc, curr],
+			[`${g.key}`]
+		)
+	))
+).subscribe(console.log);
+
+// ['A', 'John', 'David']
+// ['B', 'Adam', 'Leo']
+```
+
+### Map #2
+
+```
+of(
+	{name: 'John', rate: 4},
+	{name: 'Adam', rate: 3},
+	{name: 'Leo', rate: 2},
+	{name: 'David', rate: 5}
+).pipe(
+	groupBy(
+		p => p.rate > 3 ? 'A' : 'B',
+		p => p.name
+	),
+	mergeMap(g => g.pipe(
+		reduce(
+			(acc, curr) => [...acc, curr],
+			[`${g.key}`]
+		)
+	)),
+	map(arr => ({
+		rate: arr[0],
+		students: arr.slice(1)
+	}))
+).subscribe(console.log);
+
+// {rate: 'A', students: ['John', 'David']}
+// {rate: 'B', students: ['Adam', 'Leo']}
+```
+
+## `pairwise()`
+
+```
+// on every click (starting from 2nd)
+// emit the relative distance to the previous click
+
+fromEvent(document, 'click').pipe(
+	pairwise()
+).pipe(
+	map(pair => {
+		const x0 = pair[0].clientX, y0 = pair[0].clientY;
+		const x1 = pair[1].clientX, y1 = pair[1].clientY;
+
+		return Math.sqrt(
+			Math.pow(x0 - x1, 2) +
+			Math.pow(y0 - y1, 2)
+		);
+	})
+).subscribe(console.log);
+```
+
+`partition(predicate, thisArg?)`
+
+* `predicate: (value, index)`
+
+```
+const clicks = fromEvent(document, 'click');
+const parts = clicks.pipe(
+	partition(
+		e => e.target.tagName === 'DIV'
+	)
+);
+
+const clicksOnDivs = parts[0];
+const clicksElsewhere = parts[1];
+
+clicksOnDivs.subscribe(x => {
+	console.log('DIV clicked: ', x);
+});
+
+clicksElsewhere.subscribe(x => {
+	console.log('Other clicked: ', x);
+});
+```
+
+```
+const int$ = interval(1000).pipe(take(8));
+const [evens, odds] = int$.pipe(
+	partition(x => x % 2 === 0)
+);
+
+evens.subscribe(x => console.log('EVEN: %d', x));
+odds.subscribe(x => console.log('ODD: %d', x));
+```
+
+| TIME | 1s | 2s | 3s | 4s | 5s | 6s | 7s | 8s | 9s | 10s |
+|-------|----|----|-----|----|----|----|----|-----|----|----|
+| evens | `EVEN: 0` | | `EVEN: 2` | | `EVEN: 4` | | `EVEN: 6` | | | |
+| odds | | `ODD: 1` | | `ODD: 3` | | `ODD: 5` | | `ODD: 7` | | |
+
+## `pluck(...properties)`
+
+```
+fromEvent(document, 'click').pipe(
+	pluck('target', 'tagName')
+).subscribe(console.log);
+```
+
+```
+of([
+	['a', 'b'],
+	['c', 'd']
+]).pipe(
+	pluck(0, 1)
+).subscribe(console.log);
+// b
 ```
