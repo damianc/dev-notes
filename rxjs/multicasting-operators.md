@@ -5,7 +5,7 @@
 * [`share()`](#share)
 * [`publish(selector?)`](#publishselector)
 * [`publishLast()`](#publishlast)
-* [`publishBehavior(value)`](#publishbehavior)
+* [`publishBehavior(value)`](#publishbehaviorvalue)
 * [`publishReplay(bufferSize?, windowTime?, selectorOrScheduler?, scheduler?)`](#publishreplaybuffersize-windowtime-selectororscheduler-scheduler)
 	* [`publishReplay()` with `windowTime`](#publishreplay-with-windowtime)
 
