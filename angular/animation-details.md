@@ -142,7 +142,7 @@ trigger('rowHighlight', [
 ])
 ```
 
-> `400ms ----> 450ms/250ms --*--> 200ms ---->`
+> `400ms ----> 450ms/250ms --*--> X 200ms ---->`
 
 ## Common Styles
 
