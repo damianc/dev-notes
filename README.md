@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **119** Dev_Notes
+Currently: &nbsp; **120** Dev_Notes
 
 ---
 
@@ -67,6 +67,7 @@ Currently: &nbsp; **119** Dev_Notes
 * [Service Provider](angular/service-provider.md)
 * [Local Service Providers](angular/local-service-providers.md)
 * [Angular Modules](angular/modules.md)
+* [Animations](angular/animations.md)
 
 # Bash Apps
 
