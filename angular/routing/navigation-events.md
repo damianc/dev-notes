@@ -1,10 +1,26 @@
 # Navigation Events
 
+`RouterEvent`:
+
+* `GuardsCheckStart`
+* `GuardsCheckEnd`
 * `NavigationStart`
 * `NavigationEnd`
 * `NavigationError`
 * `NavigationCancel`
+* `ResolveStart`
+* `ResolveEnd`
 * `RoutesRecognized`
+
+Other:
+
+* `ActivationStart`
+* `ActivationEnd`
+* `ChildActivationStart`
+* `ChildActivationEnd`
+* `RouteConfigLoadStart`
+* `RouteConfigLoadEnd`
+* `Scroll`
 
 ```
 import { Router, NavigationEnd, NavigationCancel } from '@angular/router';
