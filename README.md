@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **122** Dev_Notes
+Currently: &nbsp; **123** Dev_Notes
 
 ---
 
@@ -74,6 +74,7 @@ Currently: &nbsp; **122** Dev_Notes
 ## Angular Routing
 
 * [Params of Route](angular/routing/route-params.md)
+* [Highlight Active Route](angular/routing/highlight-active-route.md)
 
 # Bash Apps
 
