@@ -14,7 +14,7 @@
 </button>
 ```
 
->> `active` is a CSS class of the element
+> `active` is a CSS class of the element
 
 ## Caveat
 
