@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **121** Dev_Notes
+Currently: &nbsp; **122** Dev_Notes
 
 ---
 
@@ -17,6 +17,7 @@ Currently: &nbsp; **121** Dev_Notes
 
 * [Algorithms and Data Structures](#algorithms-and-data-structures)
 * [Angular](#angular)
+	- [Angular Routing](#angular-routing)
 * [Bash Apps](#bash-apps)
 * [CSS](#css)
 * [Design Patterns](#design-patterns)
@@ -69,6 +70,10 @@ Currently: &nbsp; **121** Dev_Notes
 * [Angular Modules](angular/modules.md)
 * [Animations](angular/animations.md)
 * [Animation Details](angular/animation-details.md)
+
+## Angular Routing
+
+* [Params of Route](angular/routing/route-params.md)
 
 # Bash Apps
 
