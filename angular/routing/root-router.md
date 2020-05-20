@@ -1,6 +1,6 @@
 # Adding a Router
 
-## A - Const
+## Option A: Const
 
 ```
 import { Routes, RouterModule } from '@angular/router';
@@ -26,7 +26,7 @@ imports: [
 ...
 ```
 
-## B - Module
+## Option B: Module
 
 ```
 import { NgModule } from '@angular/core';
