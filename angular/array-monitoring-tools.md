@@ -46,7 +46,7 @@ class ArrDiffComponent {
 
 **ICR** - `IterableChangeRecord<V>` interface with the following fields:
 
-- `currentIndex:number`
-- `previousIndex:number`
-- `item:V`
-- `trackById:any`
+- `currentIndex: number | null`
+- `previousIndex: number | null`
+- `item: V`
+- `trackById: any`

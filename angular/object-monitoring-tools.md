@@ -44,6 +44,6 @@ class ObjDiffComponent {
 
 **KVCR** - `KeyValueChangeRecord<K,V>` interface with the following fields:
 
-- `key:K`
+- `key: K`
 - `currentValue: V | null`
 - `previousValue: V | null`
