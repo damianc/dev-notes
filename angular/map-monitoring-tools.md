@@ -52,4 +52,4 @@ class MapDiffComponent {
 }
 ```
 
-More details &rarr; [Diff Monitoring: Object](/object-monitoring-tools.md)
+More details &rarr; [Diff Monitoring: Object](object-monitoring-tools.md)
