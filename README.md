@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **124** Dev_Notes
+Currently: &nbsp; **125** Dev_Notes
 
 ---
 
@@ -58,6 +58,7 @@ Currently: &nbsp; **124** Dev_Notes
 * [More Complex Pipe](angular/custom-filter.md)
 * [Impure Pipe](angular/impure-pipe.md)
 * [`async` Pipe](angular/async-pipe.md)
+* [Pipe Using Another Pipe](angular/pipe-using-pipe.md)
 * [Interfaces](angular/interfaces.md)
 * [Lifecycle Hooks](angular/hooks.md)
 * [Component Event with `@Output`](angular/component-event.md)
