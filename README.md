@@ -65,7 +65,7 @@ Currently: &nbsp; **128** Dev_Notes
 * [Component Event with `@Output`](angular/component-event.md)
 * [`ngIf` Implementation](angular/ngif-implementation.md)
 * [`ngFor` Implementation](angular/ngfor-implementation.md)
-* [Array Monitoring Tools](angular/array-monitoring-tools.md)
+* [Diff Monitoring: Array](angular/array-monitoring-tools.md)
 * [`@ContentChildren` vs `@ViewChildren` and Detecting Changes](angular/content-and-view-children.md)
 * [Custom Service](angular/custom-service.md)
 * [Service Provider](angular/service-provider.md)
