@@ -36,10 +36,17 @@ class ArrDiffComponent {
 
 ## Methods of `IterableChanges` Interface
 
-- `forEachItem()`
-- `forEachOperation()`
-- `forEachPreviousItem()`
-- `forEachAddedItem()`
-- `forEachMovedItem()`
-- `forEachRemovedItem()`
-- `forEachIdentityChange()`
+- `forEachItem((record: ICR)=>void)`
+- `forEachOperation((record: ICR, previousIndex, currentIndex)=>void)`
+- `forEachPreviousItem((record: ICR)=>void)`
+- `forEachAddedItem((record: ICR)=>void)`
+- `forEachMovedItem((record: ICR)=>void)`
+- `forEachRemovedItem((record: ICR)=>void)`
+- `forEachIdentityChange((record: ICR)=>void)`
+
+**ICR** - `IterableChangeRecord<V>` interface with the following fields:
+
+- `currentIndex:number`
+- `previousIndex:number`
+- `item:V`
+- `trackById:any`
