@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **130** Dev_Notes
+Currently: &nbsp; **131** Dev_Notes
 
 ---
 
@@ -53,6 +53,7 @@ Currently: &nbsp; **130** Dev_Notes
 # Angular
 
 * [`[ngTemplateOutlet]` vs. `*ngTemplateOutlet`](angular/ng-template-outlet.md)
+* [Structural Directive with Context](angular/struct-directive-context.md)
 * [Resolving path, e.g., `@interface/Readable`](angular/resolve-path.md)
 * [RxJS Imports](angular/rxjs-imports.md)
 * [Custom Pipe](angular/pipe.md)
