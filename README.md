@@ -17,6 +17,8 @@ Currently: &nbsp; **135** Dev_Notes
 
 * [Algorithms and Data Structures](#algorithms-and-data-structures)
 * [Angular](#angular)
+	- [Directives and Components](#directives-and-components)
+	- [Pipes](#pipes)
 	- [Angular Routing](#angular-routing)
 * [Bash Apps](#bash-apps)
 * [CSS](#css)
