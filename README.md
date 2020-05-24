@@ -52,25 +52,10 @@ Currently: &nbsp; **135** Dev_Notes
 
 # Angular
 
-* [`[ngTemplateOutlet]` vs. `*ngTemplateOutlet`](angular/ng-template-outlet.md)
-* [Structural Directive with Context](angular/struct-directive-context.md)
-* [Structural Directive Using `for..of` Expression](angular/structural-directive-using-forof.md)
-* [Structural Directive: One \*Attribute instead of [Two]](angular/two-attrs-into-one.md)
 * [Resolving path, e.g., `@interface/Readable`](angular/resolve-path.md)
 * [RxJS Imports](angular/rxjs-imports.md)
-* [Custom Pipe](angular/pipe.md)
-* [More Complex Pipe](angular/custom-filter.md)
-* [Impure Pipe](angular/impure-pipe.md)
-* [`async` Pipe](angular/async-pipe.md)
-* [Pipe Using Another Pipe](angular/pipe-using-pipe.md)
 * [Interfaces](angular/interfaces.md)
 * [Lifecycle Hooks](angular/hooks.md)
-* [Component Event with `@Output`](angular/component-event.md)
-* [`ngIf` Implementation](angular/ngif-implementation.md)
-* [`ngFor` Implementation](angular/ngfor-implementation.md)
-* [Diff Monitoring: Array](angular/array-monitoring-tools.md)
-* [Diff Monitoring: Object](angular/object-monitoring-tools.md)
-* [Diff Monitoring: Map](angular/map-monitoring-tools.md)
 * [`@ContentChildren` vs `@ViewChildren` and Detecting Changes](angular/content-and-view-children.md)
 * [Custom Service](angular/custom-service.md)
 * [Service Provider](angular/service-provider.md)
@@ -78,6 +63,27 @@ Currently: &nbsp; **135** Dev_Notes
 * [Angular Modules](angular/modules.md)
 * [Animations](angular/animations.md)
 * [Animation Details](angular/animation-details.md)
+
+## Directives and Components
+
+* [Component Event with `@Output`](angular/component-event.md)
+* [Structural Directive with Context](angular/struct-directive-context.md)
+* [Structural Directive Using `for..of` Expression](angular/structural-directive-using-forof.md)
+* [Structural Directive: One \*Attribute instead of [Two]](angular/two-attrs-into-one.md)
+* [`[ngTemplateOutlet]` vs. `*ngTemplateOutlet`](angular/ng-template-outlet.md)
+* [`ngIf` Implementation](angular/ngif-implementation.md)
+* [`ngFor` Implementation](angular/ngfor-implementation.md)
+* [Diff Monitoring: Array](angular/array-monitoring-tools.md)
+* [Diff Monitoring: Object](angular/object-monitoring-tools.md)
+* [Diff Monitoring: Map](angular/map-monitoring-tools.md)
+
+## Pipes
+
+* [Custom Pipe](angular/pipe.md)
+* [More Complex Pipe](angular/custom-filter.md)
+* [Impure Pipe](angular/impure-pipe.md)
+* [`async` Pipe](angular/async-pipe.md)
+* [Pipe Using Another Pipe](angular/pipe-using-pipe.md)
 
 ## Angular Routing
 
