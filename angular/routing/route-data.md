@@ -8,10 +8,10 @@
 }
 ```
 
-## Component
+## `foo-bar.component.ts`
 
 ```
-export class FooBarComponent {
+class FooBarComponent {
 	fooValue = '';
 
 	constructor(private activeRoute: ActivatedRoute) {}
