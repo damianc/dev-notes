@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **133** Dev_Notes
+Currently: &nbsp; **134** Dev_Notes
 
 ---
 
@@ -83,6 +83,7 @@ Currently: &nbsp; **133** Dev_Notes
 
 * [Adding a Router](angular/routing/root-router.md)
 * [Params of Route](angular/routing/route-params.md)
+* [Route Children](angular/routing/route-children.md)
 * [Highlight Active Route](angular/routing/highlight-active-route.md)
 * [Navigation Events](angular/routing/navigation-events.md)
 
