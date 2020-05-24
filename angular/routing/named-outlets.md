@@ -26,6 +26,11 @@
 ## `app.component.html`
 
 ```
+<router-outlet></router-outlet>
+<router-outlet name="aside"></router-outlet>
+
+<!-- or: [routerLink]="['tiny', 'a']" -->
+<!-- or just: routerLink="tiny/a" -->
 <button [routerLink]="{outlets: {primary: ['tiny', 'a']}}">
 	A @primary
 </button>
@@ -38,6 +43,8 @@
 	C @both
 </button>
 
+<!-- or: [routerLink]="['tiny', 'c']" -->
+<!-- or just: routerLink="tiny/c" -->
 <button [routerLink]="{outlets: {primary: ['tiny', 'c']}}">
 	C @primary
 </button>
@@ -45,7 +52,4 @@
 <button [routerLink]="{outlets: {aside: ['tiny', 'c']}}">
 	C @aside
 </button>
-
-<router-outlet></router-outlet>
-<router-outlet name="aside"></router-outlet>
 ```
