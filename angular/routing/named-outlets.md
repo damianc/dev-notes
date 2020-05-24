@@ -28,7 +28,9 @@
 ```
 <router-outlet></router-outlet>
 <router-outlet name="aside"></router-outlet>
+```
 
+```
 <!-- or: [routerLink]="['tiny', 'a']" -->
 <!-- or just: routerLink="tiny/a" -->
 <button [routerLink]="{outlets: {primary: ['tiny', 'a']}}">
