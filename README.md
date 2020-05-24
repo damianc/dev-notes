@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **138** Dev_Notes
+Currently: &nbsp; **139** Dev_Notes
 
 ---
 
@@ -267,6 +267,7 @@ Currently: &nbsp; **138** Dev_Notes
 
 * [Resolve Extensions (Other Than `.js`)](webpack/resolve-extensions.md)
 * [Resolve Shorthand Module](webpack/resolve-shorthand-module.md)
+* [Multiple Outputs](webpack/multiple-outputs.md)
 
 # WordPress
 
