@@ -3,15 +3,15 @@
 ```
 {
 	path: 'parent-one',
-	component: Parent,
+	component: ParentComponent,
 	children: [
 		{
 			path: 'child-one',
-			component: Child,
+			component: ChildComponent,
 			children: [
 				{
 					path: 'grandchild-one',
-					component: GrandChild
+					component: GrandChildComponent
 				}
 			]
 		}
@@ -31,7 +31,7 @@
 		[/PARENT]
 	`
 })
-export class Parent {}
+export class ParentComponent {}
 ```
 
 ## `child.component.ts`
@@ -46,7 +46,7 @@ export class Parent {}
 		[/CHILD]
 	`
 })
-export class Child {}
+export class ChildComponent {}
 ```
 
 ## `grandchild.component.ts`
@@ -60,5 +60,5 @@ export class Child {}
 		[/GRANDCHILD]
 	`
 })
-export class GrandChild {}
+export class GrandChildComponent {}
 ```
