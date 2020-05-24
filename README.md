@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **135** Dev_Notes
+Currently: &nbsp; **136** Dev_Notes
 
 ---
 
@@ -188,6 +188,7 @@ Currently: &nbsp; **135** Dev_Notes
 
 # React
 
+* [`React.forwardRef()`](react/forward-ref.md)
 * [Hooks: `useState()`](react/hooks-usestate.md)
 * [Hooks: `useEffect()`](react/hooks-useeffect.md)
 * [Hooks: `useContext()`](react/hooks-usecontext.md)
