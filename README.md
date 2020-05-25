@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **140** Dev_Notes
+Currently: &nbsp; **141** Dev_Notes
 
 ---
 
@@ -72,6 +72,7 @@ Currently: &nbsp; **140** Dev_Notes
 * [Component Event with `@Output`](angular/component-event.md)
 * [Structural Directive with Context](angular/struct-directive-context.md)
 * [Structural Directive Using `for..of` Expression](angular/structural-directive-using-forof.md)
+* [Assignment vs. `as` in Structural Directive](angular/assignment-as-in-structural-directive.md)
 * [Structural Directive: One \*Attribute instead of [Two]](angular/two-attrs-into-one.md)
 * [`[ngTemplateOutlet]` vs. `*ngTemplateOutlet`](angular/ng-template-outlet.md)
 * [`ngIf` Implementation](angular/ngif-implementation.md)
