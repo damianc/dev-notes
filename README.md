@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **139** Dev_Notes
+Currently: &nbsp; **140** Dev_Notes
 
 ---
 
@@ -68,6 +68,7 @@ Currently: &nbsp; **139** Dev_Notes
 
 ## Directives and Components
 
+* [The `*ngIf` Directive](angular/ngif-directive.md)
 * [Component Event with `@Output`](angular/component-event.md)
 * [Structural Directive with Context](angular/struct-directive-context.md)
 * [Structural Directive Using `for..of` Expression](angular/structural-directive-using-forof.md)
