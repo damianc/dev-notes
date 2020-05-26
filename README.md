@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **142** Dev_Notes
+Currently: &nbsp; **143** Dev_Notes
 
 ---
 
@@ -99,6 +99,7 @@ Currently: &nbsp; **142** Dev_Notes
 * [Route Children](angular/routing/route-children.md)
 * [Named Outlets](angular/routing/named-outlets.md)
 * [Highlight Active Route](angular/routing/highlight-active-route.md)
+* [Lazy Loading a Module](angular/routing/lazy-loading-module.md)
 * [Navigation Events](angular/routing/navigation-events.md)
 
 # Bash Apps
