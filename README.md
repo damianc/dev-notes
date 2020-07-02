@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **144** Dev_Notes
+Currently: &nbsp; **145** Dev_Notes
 
 ---
 
@@ -145,6 +145,7 @@ Currently: &nbsp; **144** Dev_Notes
 * [export and import](es6+/export-and-import.md)
 * [Proxy Traps](es6+/proxy-traps.md)
 * [`BigInt`](es6+/bigint.md)
+* [Generator Member Shorthand](es6+/generator-member-shorthand.md)
 
 # Express.js
 
