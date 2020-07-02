@@ -21,7 +21,7 @@ class ReplaceOperation {
 
 console.log(
     'var'.replace(new ReplaceOperation('let'))
-)
+);
 
 // [-]var [+]let
 ```
@@ -90,6 +90,7 @@ const re = /foo/;
 console.log(
     '/foo/'.startsWith(re)
 );
+
 // TypeError
 ```
 
@@ -103,6 +104,7 @@ re[Symbol.match] = false;
 console.log(
     '/foo/'.startsWith(re)
 );
+
 // true
 ```
 
@@ -116,10 +118,10 @@ const textA = 'The /\d/ matches a digit'; // contains \d
 const textB = 'The /\\d/ matches a digit'; // contains \\d
 
 textA.includes(reDigit)
-false
+// false
 
 textB.includes(reDigit)
-true
+// true
 ```
 
 ## `Symbol.matchAll`
