@@ -1,9 +1,10 @@
 # RegExp Related Symbols
 
-* [`Symbol.replace`](#symbol-replace)
-* [`Symbol.search`](#symbol-search)
-* [`Symbol.split`](#symbol-split)
-* [`Symbol.match`](#symbol-match)
+* [`Symbol.replace`](#symbolreplace)
+* [`Symbol.search`](#symbolsearch)
+* [`Symbol.split`](#symbolsplit)
+* [`Symbol.match`](#symbolmatch)
+* [`Symbol.matchAll`](#symbolmatchall)
 
 ## `Symbol.replace`
 
@@ -151,6 +152,8 @@ const reStrEmptyIterator = str.matchAll('A');
 reStrEmptyIterator.next();
 // {value: undefined, done: true}
 ```
+
+### Using Symbol
 
 ```
 class Matcher {
