@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **145** Dev_Notes
+Currently: &nbsp; **146** Dev_Notes
 
 ---
 
@@ -119,6 +119,7 @@ Currently: &nbsp; **145** Dev_Notes
 
 # Design Patterns
 
+* [List of Design Patterns](design-patterns/list.md)
 * [Builder vs. Abstract Factory](design-patterns/builder-vs-abstract-factory.md)
 
 # Docker
