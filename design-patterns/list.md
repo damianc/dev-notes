@@ -1,5 +1,11 @@
 # List of Design Patterns
 
+* [Creational](#creational) - how objects are being created
+* [Structural](#structural) - how objects are organized to form larger structures providing new functionality
+* [Behavioral](#behavioral) - how objects communicate with each other
+
+> \* - contained in GoF's "Design Patterns"
+
 ## Creational
 
 | name | other names | description |
@@ -42,5 +48,3 @@
 | Strategy | Policy |
 | Template Method | |
 | Visitor | |
-
-\* - contained in GoF's "Design Patterns"
