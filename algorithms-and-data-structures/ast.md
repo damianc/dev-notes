@@ -12,7 +12,7 @@ function abs(x) {
 }
 ```
 
-The code above may be represented as follows:
+* the code above may be represented as follows:
 
 * `FunctionDeclaration`
 	* `BlockStatement`
@@ -28,6 +28,8 @@ The code above may be represented as follows:
 				* `Identifier (x)`
 				* `NumberLiteral (-1)`
 
+
+* or in the form of table/graph:
 
 <table>
 	<tr>
