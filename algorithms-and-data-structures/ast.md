@@ -27,3 +27,31 @@ The code above may be represented as follows:
 			* `BinaryExpression (*)`
 				* `Identifier (x)`
 				* `NumberLiteral (-1)`
+
+
+<table>
+	<tr>
+		<td colspan="5"><code>FunctionDeclaration</code></td>
+	</tr>
+	<tr>
+		<td colspan="3"><code>IfStatement</code></td>
+		<td colspan="2"><code>ReturnStatement</code></td>
+	</tr>
+	<tr>
+		<td colspan="2"><code>BinaryExpression (>=)</code></td>
+		<td><code>BlockStatement</code></td>
+		<td colspan="2"><code>BinaryExpression (*)</code></td>
+	</tr>
+	<tr>
+		<td><code>Identifier (x)</code></td>
+		<td><code>NumberLiteral (0)</code></td>
+		<td><code>Return Statement</code></td>
+		<td><code>Identifier (x)</code></td>
+		<td><code>NumberLiteral (-1)</code></td>
+	</tr>
+	<tr>
+		<td></td><td></td>
+		<td><code>Identifier (x)</code></td>
+		<td></td><td></td>
+	</tr>
+</table>
