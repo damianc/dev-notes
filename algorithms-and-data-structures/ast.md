@@ -15,14 +15,15 @@ function abs(x) {
 The code above may be represented as follows:
 
 * `FunctionDeclaration`
-	* `IfStatement`
-		* `BinaryExpression (>=)`
-			* `Identifier (x)`
-			* `NumberLiteral (0)`
-		* `BlockStatement`
-			* `ReturnStatement`
+	* `BlockStatement`
+		* `IfStatement`
+			* `BinaryExpression (>=)`
 				* `Identifier (x)`
-	* `ReturnStatement`
-		* `BinaryExpression (*)`
-			* `Identifier (x)`
-			* `NumberLiteral (-1)`
+				* `NumberLiteral (0)`
+			* `BlockStatement`
+				* `ReturnStatement`
+					* `Identifier (x)`
+		* `ReturnStatement`
+			* `BinaryExpression (*)`
+				* `Identifier (x)`
+				* `NumberLiteral (-1)`
