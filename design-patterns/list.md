@@ -43,4 +43,4 @@
 | Template Method | |
 | Visitor | |
 
-* - contained in GoF's "Design Patterns"
+\* - contained in GoF's "Design Patterns"
