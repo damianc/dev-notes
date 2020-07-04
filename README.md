@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **148** Dev_Notes
+Currently: &nbsp; **149** Dev_Notes
 
 ---
 
@@ -123,6 +123,7 @@ Currently: &nbsp; **148** Dev_Notes
 * [List of Design Patterns](design-patterns/list.md)
 * [Builder vs. Abstract Factory](design-patterns/builder-vs-abstract-factory.md)
 * [Singleton](design-patterns/singleton.md)
+* [Abstract and Final Classes in JS](design-patterns/abstract-final-class.md)
 
 # Docker
 
