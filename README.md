@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **154** Dev_Notes
+Currently: &nbsp; **155** Dev_Notes
 
 ---
 
@@ -55,6 +55,7 @@ Currently: &nbsp; **154** Dev_Notes
 * [Abstract Data Types](algorithms-and-data-structures/abstract-data-types.md)
 * [Algorithms](algorithms-and-data-structures/algorithms.md)
 * [Bubble Sort](algorithms-and-data-structures/bubble-sort.md)
+* [Fibonacci Generator](algorithms-and-data-structures/fibonacci-generator.md)
 
 # Angular
 
