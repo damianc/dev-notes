@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **153** Dev_Notes
+Currently: &nbsp; **154** Dev_Notes
 
 ---
 
@@ -43,6 +43,7 @@ Currently: &nbsp; **153** Dev_Notes
 * [TDD](#tdd)
 * [Tools](#tools)
 * [TypeScript](#typescript)
+* [UI](#ui)
 * [Vue](#vue)
 * [Webpack](#webpack)
 * [WordPress](#wordpress)
@@ -270,6 +271,10 @@ Currently: &nbsp; **153** Dev_Notes
 * [Advanced Generics](typescript/advanced-generics.md)
 * [Utility Types](typescript/utility-types.md)
 * [Advanced Types](typescript/advanced-types.md)
+
+# UI
+
+* [Distribute Items Equally on a Circle](ui/distribute-items-equally-on-circle.md)
 
 # Vue
 
