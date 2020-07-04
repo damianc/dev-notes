@@ -1,4 +1,4 @@
-# Abstract and Final Classes in JavaScript
+# Abstract and Final Classes
 
 ## Abstract Class
 

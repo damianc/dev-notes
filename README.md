@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **149** Dev_Notes
+Currently: &nbsp; **150** Dev_Notes
 
 ---
 
@@ -121,7 +121,6 @@ Currently: &nbsp; **149** Dev_Notes
 # Design Patterns
 
 * [List of Design Patterns](design-patterns/list.md)
-* [Abstract and Final Classes in JavaScript](design-patterns/abstract-final-class.md)
 * [Builder vs. Abstract Factory](design-patterns/builder-vs-abstract-factory.md)
 * [Singleton](design-patterns/singleton.md)
 
@@ -150,6 +149,11 @@ Currently: &nbsp; **149** Dev_Notes
 * [Proxy Traps](es6+/proxy-traps.md)
 * [`BigInt`](es6+/bigint.md)
 * [Generator Member Shorthand](es6+/generator-member-shorthand.md)
+
+## OOP
+
+* [Abstract and Final Classes](es6+/oop/abstract-final-class.md)
+* [Inheritance](es6+/oop/inheritance.md)
 
 # Express.js
 
