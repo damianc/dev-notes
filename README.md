@@ -121,9 +121,9 @@ Currently: &nbsp; **149** Dev_Notes
 # Design Patterns
 
 * [List of Design Patterns](design-patterns/list.md)
+* [Abstract and Final Classes in JavaScript](design-patterns/abstract-final-class.md)
 * [Builder vs. Abstract Factory](design-patterns/builder-vs-abstract-factory.md)
 * [Singleton](design-patterns/singleton.md)
-* [Abstract and Final Classes in JS](design-patterns/abstract-final-class.md)
 
 # Docker
 
