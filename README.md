@@ -26,6 +26,7 @@ Currently: &nbsp; **150** Dev_Notes
 * [Docker](#docker)
 * [Errors](#errors)
 * [ES6+](#es6)
+	- [OOP](#oop)
 * [Express.js](#expressjs)
 * [Firebase](#firebase)
 * [Git](#git)
