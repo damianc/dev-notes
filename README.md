@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **152** Dev_Notes
+Currently: &nbsp; **153** Dev_Notes
 
 ---
 
@@ -141,6 +141,7 @@ Currently: &nbsp; **152** Dev_Notes
 
 # ES6+
 
+* [Reduce Array to HTML Markup](es6+/reduce-array-to-html-markup.md)
 * [Enumerating Properties](es6+/enumerating-properties.md)
 * [`this` reference](es6+/this-reference.md)
 * [RegExp: named captured groups](es6+/re-named-groups.md)
