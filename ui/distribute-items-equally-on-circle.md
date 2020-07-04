@@ -7,11 +7,11 @@ function getCoords(slotsNumber, circleSpec, itemSpec) {
 	const coords = [];
 
 	for (let i = 1; i <= slotsNumber; i++) {
-	const fi = 2 * Math.PI * (i - 1) / slotsNumber;
-	const x = circleSpec.radius * Math.cos(fi) + circleSpec.x - itemSpec.width;
-	const y = circleSpec.radius * Math.sin(fi) + circleSpec.y - itemSpec.height;
+		const fi = 2 * Math.PI * (i - 1) / slotsNumber;
+		const x = circleSpec.radius * Math.cos(fi) + circleSpec.x - itemSpec.width;
+		const y = circleSpec.radius * Math.sin(fi) + circleSpec.y - itemSpec.height;
 
-	coords.push([x, y]);
+		coords.push([x, y]);
 	}
 
 	return coords;
@@ -49,8 +49,8 @@ function produceItem(className, leftPos, topPos) {
 	div.style.position = 'absolute';
 	div.style.left = leftPos + 'px';
 	div.style.top = topPos + 'px';
-	div.style.width = itemSize.width + 'px';
-	div.style.height = itemSize.height + 'px';
+	div.style.width = itemSpec.width + 'px';
+	div.style.height = itemSpec.height + 'px';
 
 	return div;
 }
