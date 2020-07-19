@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **156** Dev_Notes
+Currently: &nbsp; **157** Dev_Notes
 
 ---
 
@@ -109,6 +109,7 @@ Currently: &nbsp; **156** Dev_Notes
 
 # Bash Apps
 
+* [Text Processing: `cut`](bash-apps/text-processing-cut.md)
 * [Formatting Output](bash-apps/formatting-output.md)
 * [`PS1` Variable](bash-apps/ps1-variable.md)
 * [[du] Disk Usage](bash-apps/du.md)
