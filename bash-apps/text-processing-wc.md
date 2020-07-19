@@ -1,5 +1,7 @@
 # Text Processing: `wc`
 
+## Examining File(s)
+
 ```
 $ wc note.txt
 >     5    31     146    note.txt
@@ -13,11 +15,7 @@ $ wc -lw note1.txt note2.txt note3.txt
 >     43    204   total
 ```
 
-* `-c` - bytes
-* `-l` - lines
-* `-m` - characters
-* `-w` - words
-* `-L` - length of longest line
+## Examining stdin
 
 ```
 $ ls | wc
@@ -28,6 +26,14 @@ $ ls | wc
 $ ls | wc -w
 > 4
 ```
+
+## Measurable Elements
+
+* `-c` - bytes
+* `-l` - lines
+* `-m` - characters
+* `-w` - words
+* `-L` - length of longest line
 
 ## Longest Line
 
