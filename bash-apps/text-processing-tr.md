@@ -19,7 +19,7 @@ $ echo foobarbaz | tr ba ke
 > fookerkez
 ```
 
-> `echo foobar | tr ab x` &rarr; `fooxxr` (last character on the right remains in use if not enough)
+> `echo foobar | tr ab x` &rarr; `fooxxr` (last character on the right remains in use if not enough)  
 > `echo foobar | tr a xy` &rarr; `foobxr` (extra characters on the right are ignored)
 
 
