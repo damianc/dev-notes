@@ -71,8 +71,8 @@ $ find -name 'pre*' ! -name '*.sample'
 ### `[+-]n`
 
 * `n` - `n`
-* `+n` - `n` or more
-* `-n` - `n` or less
+* `+n` - more than `n`
+* `-n` - less than `n`
 
 ## Options
 
