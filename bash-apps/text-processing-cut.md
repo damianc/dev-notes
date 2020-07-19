@@ -51,6 +51,23 @@ $ echo foobar | cut -c-3,5
 > fooa
 ```
 
+## Excluding instead of Picking
+
+```
+$ echo foobar | cut --complement -c1
+> oobar
+
+$ echo foobar | cut --complement -c1-3,6
+> ba
+```
+
+* to delete last characters use `sed` command
+
+```
+$ echo foobar | sed 's/..$//'
+> foob
+```
+
 ## Characters, Bytes and Fields
 
 | Option | Meaning      |
