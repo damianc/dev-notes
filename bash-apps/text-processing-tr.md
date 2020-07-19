@@ -26,6 +26,11 @@ $ echo foobarbaz | tr ba ke
 * ranges of characters
 
 ```
+$ echo foobar | tr a-z A-Z
+> FOOBAR
+```
+
+```
 $ echo foobar | tr oa g-i
 > fggbhr
 
@@ -37,6 +42,14 @@ $ echo foobar | tr a-c s-v
 ```
 
 * mixed
+
+```
+$ echo ćwiek | tr a-z A-Z
+> ćWIEK
+
+$ echo ćwiek | tr a-zć A-ZĆ
+> ĆWIEK
+```
 
 ```
 $ echo abcdef | tr a-e m-ox
@@ -159,4 +172,17 @@ $ echo foobaar | tr -cs abc x
 > xbaax
 # foobaar -> xxxbaax
 # [^abc]+ -> x
+```
+
+## Align Set to Replacements (`-t`)
+
+```
+$ echo abcdef | tr abc x
+> xxxdef
+
+$ echo abcdef | tr -t abc x
+> xbcdef
+
+$ echo abcdef | tr -t abc xy
+> xycdef
 ```
