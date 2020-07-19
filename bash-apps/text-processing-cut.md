@@ -79,12 +79,12 @@ $ cut -d: -f3 data.txt
 $ ls -l
 > total 2944
 > -rw-rw-r--	1	john	pubs	4770	10731	Apr 4	23:26	notes.txt
-> -rw-rw-r--	1	john	pubs	13580	0		Sep 11	08:01	script.sh
+> -rw-rw-r--	1	john	pubs	13580	0	Sep 11	08:01	script.sh
 
 $ ls -l | cut -f9
 > total 2944
 > -rw-rw-r--	1	john	pubs	4770	10731	Apr 4	23:26	notes.txt
-> -rw-rw-r--	1	john	pubs	13580	0		Sep 11	08:01	script.sh
+> -rw-rw-r--	1	john	pubs	13580	0	Sep 11	08:01	script.sh
 ```
 
 * solution (change multiple spaces to single space with `tr`, and use space [instead of tab] as a delimiter with `-d` option)
