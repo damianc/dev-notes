@@ -114,7 +114,7 @@ $ echo foobar | tr -s ao ey
 > fyber
 ```
 
-* replacement caveats
+* Details of Working
 
 ```
 $ echo foobar | tr -s ob
