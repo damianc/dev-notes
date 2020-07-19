@@ -6,6 +6,8 @@ The following ones are the examples:
 * red &rarr; `\e[31m`
 * red and bold &rarr; `\e[31;1m` (or `\e[1;31m`)
 
+> when formatting `PS1` variable, use different syntax: `\[\e[31m\]`
+
 ## Example
 
 Echo the white [_97_] `HELLO` word on the blue [_104_] background:

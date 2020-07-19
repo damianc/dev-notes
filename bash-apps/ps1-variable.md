@@ -33,3 +33,8 @@
 | `\s`   | shell                         |
 | `\v`   | shell version                 |
 | `\V`   | shell release                 |
+
+## Formatting
+
+When adding colors, the `\e[0m` syntax causes problems with wrapping input.  
+The proper syntax for `PS1` variable is `\[\e[0m\]`.
