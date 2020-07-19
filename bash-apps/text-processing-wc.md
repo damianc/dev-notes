@@ -5,6 +5,7 @@
 ```
 $ wc note.txt
 >     5    31     146    note.txt
+# lines words bytes
 ```
 
 ```
@@ -38,7 +39,7 @@ $ ls | wc -w
 ## Longest Line
 
 ```
-$ cat
+$ cat file.txt
 > abc
 > abcdef
 
