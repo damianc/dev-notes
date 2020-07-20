@@ -44,7 +44,7 @@ $ find -name 'pre*' ! -name '*.sample'
 | Spec | When file is matched | Example |
 |--|--|--|
 | `-name pattern` | if its name matches a pattern (`*`, `?` and `[]` can be used, yet quoted) | `-name '*.pdf'` |
-| `-type type` | if is of given type: `b` (specific file block), `c` (specific file character), `d` (directory), `f` (regular file), `l` (symbolic link), `p` (FIFO, i.e., named pipe) or `s` (socket) | `-type f` |
+| `-type type` | if is of given type: `b` (special file block), `c` (special file character), `d` (directory), `f` (regular file), `l` (symbolic link), `p` (FIFO, i.e., named pipe) or `s` (socket) | `-type f` |
 | `-size [+-]n[c\|k\|M\|G]` | if has given size (measured in 512b blocks, characters (`c`), kb (`k`), MB (`M`) or GB (`G`)) | `-size +5M` |
 |  |  |  |
 | `-anewer file` | if accessed later than _file_ | `-anewer log.txt` |
