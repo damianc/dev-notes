@@ -3,7 +3,7 @@
 ```
 read -p "Type Y or N:" user_input
 
-if test $user_input = "Y"; then
+if test $user_input = 'Y'; then
     echo 'You typed Y'
 fi
 ```
@@ -13,10 +13,12 @@ fi
 ```
 read -p "Type Y or N:" user_input
 
-if [ "$user_input" = "Y" ]; then
+if [ $user_input = 'Y' ]; then
     echo 'You typed Y'
 fi
 ```
+
+> if a variable contains whitespaces, should be quoted (unless `[[ ]]` version is used)
 
 ## Expressions
 
