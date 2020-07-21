@@ -3,6 +3,16 @@
 ```
 read -p "Type Y or N:" user_input
 
+if test $user_input = "Y"; then
+    echo 'You typed Y'
+fi
+```
+
+* `[ ]` is a synonym for the `test` command
+
+```
+read -p "Type Y or N:" user_input
+
 if [ "$user_input" = "Y" ]; then
     echo 'You typed Y'
 fi
