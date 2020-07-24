@@ -62,6 +62,11 @@ echo {{A..C},{1..2}}
 # A B C 1 2
 ```
 
+```
+echo {A,B}{1,2}{C,D}
+# A1C A1D A2C A2D B1C B1D B2C B2D
+```
+
 ## Prefixes and Suffixes
 
 ```
@@ -132,4 +137,24 @@ echo _{a,} | sed 's/_*$//'
 
 echo _a
 # _a
+```
+
+### Elements May Be Empty
+
+```
+echo "/\\/\\/\\/\\"
+# /\/\/\/\
+
+echo /\\{,,,}
+# /\ /\ /\ /\
+
+echo /\\{,,,} | tr -d ' '
+# /\/\/\/\
+```
+
+## Example
+
+```
+mkdir /c/{js,css,img}
+# create 3 directories (/c/js, /c/css and /c/img)
 ```

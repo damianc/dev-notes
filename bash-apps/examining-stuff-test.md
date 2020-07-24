@@ -18,7 +18,7 @@ if [ $user_input = 'Y' ]; then
 fi
 ```
 
-> if a variable contains whitespaces, should be quoted (unless `[[ ]]` version is used)
+> if a variable value contains whitespaces, should be quoted (unless `[[ ]]` version is used)
 
 ## Expressions
 
@@ -49,6 +49,8 @@ fi
 | `-u file` | if exists and has _setuid_ byte set |
 | `-w file` | if exists and a user can write in it |
 | -`x file` | if exists and a user can execute it (and find) |
+
+> `==` is supported in `[[ ]]` variant
 
 ## Number Operators
 
