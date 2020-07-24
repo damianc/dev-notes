@@ -133,8 +133,3 @@ echo _{a,} | sed 's/_*$//'
 echo _a
 # _a
 ```
-
-```
-echo $(echo -n _{a,}b | sed 's/_*b$//')c
-# _ab c
-```
