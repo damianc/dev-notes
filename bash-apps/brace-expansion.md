@@ -115,7 +115,7 @@ echo {00..0004}
 
 ## List Must Consist of 2+ Elements
 
-The _brace expansion_ is only performed if a list contains at least 2 element (or: has at least one comma [`,`]).
+The _brace expansion_ is only performed if a list contains at least 2 elements (or: has at least one comma [`,`]).
 
 ```
 echo {a}
