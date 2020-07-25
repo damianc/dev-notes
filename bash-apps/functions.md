@@ -158,13 +158,13 @@ getFive() {
 }
 
 $ getFive
-$ echo five
+$ echo $five
 > 5
 ```
 
 ### The `return` keyword
 
-The `return` keyword is not thought to return a value from function. Its task is terminating the function. A numeric value can be used along with `return` to state _"exit statis"_ of the function (something like in _exit statement_). The status can be accessed from the `$?` variable.
+The `return` keyword is not thought to return a value from function. Its task is terminating the function. A numeric value can be used along with `return` to state _"exit status"_ of the function (something like in _exit statement_). The status can be accessed from the `$?` variable.
 
 ```
 getAB() {
