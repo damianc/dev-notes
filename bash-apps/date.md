@@ -24,7 +24,7 @@ $ date +%T
 
 ### Time Parts
 
-| Date part | Format option |
+| Time part | Format option |
 |----|----|
 | hour (24h, like 05) | `%H` |
 | hour (24h, like  5) | `%k` |
@@ -81,6 +81,8 @@ $ date +%T
 * `%%` - a literal `%`
 * `%n` - a newline
 * `%t` - a tab
+
+----
 
 * `%^N` - use uppercase (if possible)
 * `%#N` - use opposite case (if possible)
