@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **163** Dev_Notes
+Currently: &nbsp; **164** Dev_Notes
 
 ---
 
@@ -110,6 +110,7 @@ Currently: &nbsp; **163** Dev_Notes
 # Bash Apps
 
 * [Searching Files: `find`](bash-apps/searching-files-find.md)
+* [Functions](bash-apps/functions.md)
 * [Flow Control](bash-apps/flow-control.md)
 * [Examining Stuff: `test`](bash-apps/examining-stuff-test.md)
 * [Text Processing: `cut`](bash-apps/text-processing-cut.md)
