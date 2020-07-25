@@ -72,7 +72,7 @@ $ date +%T
 |----|----|
 | YYYY-MM-DD | `%F` |
 | MM/DD/YY | `%D` |
-| DD/MM/YY | `%x` |
+| DD.MM.YY | `%x` |
 | 24h time (HH:MM) | `%R` |
 | 24h time (HH:MM:SS) | `%T`, `%X` |
 | 12h time like 11:00:50 PM | `%r` |
