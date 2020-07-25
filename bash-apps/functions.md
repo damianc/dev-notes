@@ -14,7 +14,8 @@ function get_name() {
 	echo 'Mark'
 }
 
-echo "You are $(get_name)"
+$ echo "You are $(get_name)"
+> You are Mark
 ```
 
 ## Arguments
@@ -57,7 +58,7 @@ $ allArgsTogether abc def
 
 ```
 function allArgsAlone() {
-	for w in "$@"; done
+	for w in "$@"; do
 		echo --${w}--
 	done
 }
