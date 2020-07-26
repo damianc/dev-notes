@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **165** Dev_Notes
+Currently: &nbsp; **166** Dev_Notes
 
 ---
 
@@ -119,6 +119,7 @@ Currently: &nbsp; **165** Dev_Notes
 * [Brace Expansion](bash-apps/brace-expansion.md)
 * [Formatting Output](bash-apps/formatting-output.md)
 * [`PS1` Variable](bash-apps/ps1-variable.md)
+* [Progress Bar](bash-apps/progress-bar.md)
 * [Date: `date`](bash-apps/date.md)
 * [[du] Disk Usage](bash-apps/du.md)
 * [`cd /d` on Win10 / cmd](bash-apps/cdd-win10.md)
