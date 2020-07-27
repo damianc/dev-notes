@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **166** Dev_Notes
+Currently: &nbsp; **167** Dev_Notes
 
 ---
 
@@ -18,6 +18,7 @@ Currently: &nbsp; **166** Dev_Notes
 * [Algorithms and Data Structures](#algorithms-and-data-structures)
 * [Angular](#angular)
 	- [Directives and Components](#directives-and-components)
+	- [NgRx](#ngrx)
 	- [Pipes](#pipes)
 	- [Angular Routing](#angular-routing)
 * [Bash Apps](#bash-apps)
@@ -85,6 +86,10 @@ Currently: &nbsp; **166** Dev_Notes
 * [Diff Monitoring: Array](angular/array-monitoring-tools.md)
 * [Diff Monitoring: Object](angular/object-monitoring-tools.md)
 * [Diff Monitoring: Map](angular/map-monitoring-tools.md)
+
+## NgRx
+
+* [Counter Example with NgRx](angular/ngrx/counter-example.md)
 
 ## Pipes
 
