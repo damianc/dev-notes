@@ -107,3 +107,59 @@ export class NgrxCounterComponent {
 
 <button id="reset" (click)="reset()">Reset Counter</button>
 ```
+
+## Adding _Increase By_ Field
+
+* `app.module.ts`
+
+```
+...
+import { FormsModule } from '@angular/forms';
+// providers[]: FormsModule
+```
+
+* `ngrx-counter.component.html`
+
+```
+Increment by: <input type="number" [(ngModel)]="incrementStep" />
+<button (click)="incrementBy()">Apply</button>
+```
+
+* `ngrx-counter.component.ts`
+
+```
+import { ..., incrementBy } from './counter.actions';
+...
+  incrementStep: number;
+  ...
+  incrementBy() {
+    this.store.dispatch(incrementBy({
+      step: this.incrementStep || 1
+    }));
+  }
+...
+```
+
+* `ngrx-counter/counter.actions.ts`
+
+```
+import { createAction, props } from '@ngrx/store';
+...
+export const incrementBy = createAction(
+  '[Counter Component] Increment By',
+  props<{step: number}>()
+);
+```
+
+* `ngrx-counter/counter.reducer.ts`
+
+```
+import { ..., incrementBy } from './counter.actions';
+...
+const _counterReducer = createReducer(initialState,
+  ...
+  on(incrementBy, (state, action) => {
+    return state + action.step;
+  })
+);
+```
