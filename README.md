@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **169** Dev_Notes
+Currently: &nbsp; **170** Dev_Notes
 
 ---
 
@@ -108,6 +108,7 @@ Currently: &nbsp; **169** Dev_Notes
 ## Angular Routing
 
 * [Adding a Router](angular/routing/root-router.md)
+* [Redirect to Dynamic Path](angular/routing/redirect-to-dynamic-path.md)
 * [Params of Route](angular/routing/route-params.md)
 * [Parent Router Params](angular/routing/parent-router-params.md)
 * [Optional Params vs. Query Params](angular/routing/optional-query-params.md)
