@@ -29,4 +29,4 @@ public otherCurrencyCheckChanged(isChecked: boolean): void {
 }
 ```
 
-> If we only pass 1 validator, it does not have to be given as an array: `currencyControl.setValidators(Validators.required)`.
+> If we only pass 1 validator, it does not have to be given in an array: `currencyControl.setValidators(Validators.required)`.
