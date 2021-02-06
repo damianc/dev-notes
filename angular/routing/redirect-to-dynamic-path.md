@@ -2,7 +2,7 @@
 
 ```
 {
-  path: ':id/programy-studiow-studenta',
+  path: ':id/details',
   redirectTo: ':id'
 }
 ```
