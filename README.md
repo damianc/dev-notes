@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **167** Dev_Notes
+Currently: &nbsp; **168** Dev_Notes
 
 ---
 
@@ -32,6 +32,7 @@ Currently: &nbsp; **167** Dev_Notes
 * [Firebase](#firebase)
 * [Git](#git)
 * [HTML](#html)
+* [HTML5 APIs](#html5-apis)
 * [Nest.js](#nestjs)
 * [Node](#node)
 * [PHP](#php)
@@ -205,6 +206,10 @@ Currently: &nbsp; **167** Dev_Notes
 # HTML
 
 * [Prevent Line-Break in a Table](html/prevent-line-break-in-table.md)
+
+# HTML5 APIs
+
+* [Web Worker](html5-apis/web-worker.md)
 
 # Nest.js
 
