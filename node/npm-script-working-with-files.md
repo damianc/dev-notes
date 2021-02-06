@@ -43,7 +43,7 @@ platforms.forEach((platform) => {
 }
 ```
 
-## How this example work?
+## How does this example work?
 
 Having files:
 
