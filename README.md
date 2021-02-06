@@ -18,6 +18,7 @@ Currently: &nbsp; **169** Dev_Notes
 * [Algorithms and Data Structures](#algorithms-and-data-structures)
 * [Angular](#angular)
 	- [Directives and Components](#directives-and-components)
+  - [Forms](#forms)
 	- [NgRx](#ngrx)
 	- [Pipes](#pipes)
 	- [Angular Routing](#angular-routing)
