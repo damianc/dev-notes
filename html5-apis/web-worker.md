@@ -30,12 +30,33 @@ addEventListener('message', ({ data }) => {
 
 ## Closing connection
 
-* in client or in worker
+* client:
 
 ```
 worker.terminate();
 ```
 
+* worker:
+
 ```
 close();
+```
+
+## Importing scripts in Worker
+
+```
+importScripts('lib.js');
+importScripts('utils.js');
+```
+
+or:
+
+```
+importScripts('lib.js', 'utils.js');
+```
+
+### Other Origin
+
+```
+importScripts('//example.com/hello.js');
 ```
