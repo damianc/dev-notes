@@ -23,6 +23,8 @@ public downloadFile(id: string): Observable<ArrayBuffer> {
 ```
 import { saveAs } from 'file-saver';
 
+...
+
 public downloadFile(id: string, filename: string): void {
   this.fileService.downloadFile(id).subscribe((source) => {
     saveAs(
