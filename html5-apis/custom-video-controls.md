@@ -280,7 +280,9 @@ rewindControl.addEventListener('click', () => {
 });
 
 ffControl.addEventListener('click', () => {
-  video.playbackRate += 2;
+  if (video.playbackRate < 14) {
+    video.playbackRate += 2;
+  }
 });
 ```
 
