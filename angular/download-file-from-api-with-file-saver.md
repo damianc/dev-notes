@@ -33,3 +33,5 @@ public downloadFile(id: string, filename: string): void {
   });
 }
 ```
+
+> `npm i -P file-saver`
