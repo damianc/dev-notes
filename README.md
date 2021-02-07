@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **171** Dev_Notes
+Currently: &nbsp; **172** Dev_Notes
 
 ---
 
@@ -216,6 +216,7 @@ Currently: &nbsp; **171** Dev_Notes
 
 * [Generating Dynamic Files with `FileReader`](html5-apis/generate-dynamic-file.md)
 * [Web Worker](html5-apis/web-worker.md)
+* [Custom Video Controls](html5-apis/custom-video-controls.md)
 
 # Nest.js
 
