@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **172** Dev_Notes
+Currently: &nbsp; **173** Dev_Notes
 
 ---
 
@@ -71,6 +71,7 @@ Currently: &nbsp; **172** Dev_Notes
 * [Service Provider](angular/service-provider.md)
 * [Local Service Providers](angular/local-service-providers.md)
 * [Angular Modules](angular/modules.md)
+* [Download File Returned from API with `file-saver`](angular/download-file-from-api-with-file-saver.md)
 * [Animations](angular/animations.md)
 * [Animation Details](angular/animation-details.md)
 
