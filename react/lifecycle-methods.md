@@ -69,7 +69,7 @@
     <tr>
       <td><code>static getDerivedStateFromProps(props, state)</code></td>
       <td>
-        Called just before <code>render()</code>, should return an object updating state or <code>null</code> to update nothing. In React 16.3, called after constructor and addition of new props, as of React 16.4, additionally it's caled after `setState()` and `forceUpdate()` methods.
+        Called just before <code>render()</code>, should return an object updating state or <code>null</code> to update nothing. In React 16.3, called after constructor and addition of new props, as of React 16.4, additionally it's caled after <code>setState()</code> and <code>forceUpdate()</code> methods.
       </td>
       <td>
         This method is unable to access an instance of a component.
