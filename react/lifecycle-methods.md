@@ -120,3 +120,5 @@
 | Commit | Can work with DOM, run side effects, schedule updates. | `componentDidMount()`, `componentDidUpdate()`, `componentWillUnmount()` |
 
 ![Phases and lifecycle methods](img/react-lifecycle-methods.png)
+
+Source: [https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram)
