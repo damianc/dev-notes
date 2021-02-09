@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **173** Dev_Notes
+Currently: &nbsp; **174** Dev_Notes
 
 ---
 
@@ -239,6 +239,7 @@ Currently: &nbsp; **173** Dev_Notes
 
 # React
 
+* [Lifecycle Methods](react/lifecycle-methods.md)
 * [`React.forwardRef()`](react/forward-ref.md)
 * [Hooks: `useState()`](react/hooks-usestate.md)
 * [Hooks: `useEffect()`](react/hooks-useeffect.md)
