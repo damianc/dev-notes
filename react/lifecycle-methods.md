@@ -109,7 +109,7 @@
 
 * `UNSAFE_componentWillMount()` - use constructor for defining state or `componentDidMount` for side effects and subscriptions
 * `UNSAFE_componentWillReceiveProps(nextProps)` - use `getDerivedStateFromProps` with `componentDidUpdate` if needed
-* `UNSAFE__componentWillUpdate(nextProps, nextState)` - use: `getSnapshotBeforeUpdate` with `componentDidUpdate` if needed
+* `UNSAFE__componentWillUpdate(nextProps, nextState)` - use `getSnapshotBeforeUpdate` with `componentDidUpdate` if needed
 
 ## Phases
 
