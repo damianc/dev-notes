@@ -115,6 +115,8 @@
 
 | Phase | Description | Methods |
 |----|----|----|
-| Render | Pure and without side effects. Can be held, canceled or restarted by React. | `constructor()`, `getDerivedStateFromProps()`, `shouldComponentUpdate()`, `render()` |
-| Pre-commit | Can read DOM. | `getSnapshotBeforeUpdate()` |
-| Commit | Can operate on DOM, create side effects and queue updates. | `componentDidMount()`, `componentDidUpdate()`, `componentWillUnmount()` |
+| Render | Pure and has no side effects. May be paused, aborted or restarted by React. | `constructor()`, `getDerivedStateFromProps()`, `shouldComponentUpdate()`, `render()` |
+| Pre-commit | Can read the DOM. | `getSnapshotBeforeUpdate()` |
+| Commit | Can work with DOM, run side effects, schedule updates. | `componentDidMount()`, `componentDidUpdate()`, `componentWillUnmount()` |
+
+![Phases and lifecycle methods](img/react-lifecycle-methods.png)
