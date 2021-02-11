@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **174** Dev_Notes
+Currently: &nbsp; **175** Dev_Notes
 
 ---
 
@@ -218,6 +218,7 @@ Currently: &nbsp; **174** Dev_Notes
 * [Generating Dynamic Files with `FileReader`](html5-apis/generate-dynamic-file.md)
 * [Web Worker](html5-apis/web-worker.md)
 * [Custom Video Controls](html5-apis/custom-video-controls.md)
+* [Display Browser Modal to Save Credentials](html5-apis/display-browser-modal-to-save-pass.md)
 
 # Nest.js
 
