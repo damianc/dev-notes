@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **178** Dev_Notes
+Currently: &nbsp; **179** Dev_Notes
 
 ---
 
@@ -28,7 +28,8 @@ Currently: &nbsp; **178** Dev_Notes
 * [Docker](#docker)
 * [Errors](#errors)
 * [ES6+](#es6)
-	- [OOP](#oop)
+  - [OOP](#oop)
+  - [FP](#fp)
 * [Express.js](#expressjs)
 * [Firebase](#firebase)
 * [Git](#git)
@@ -38,8 +39,8 @@ Currently: &nbsp; **178** Dev_Notes
 * [Node](#node)
 * [PHP](#php)
 * [React](#react)
-	- [react-router](#react-router)
-	- [Redux](#redux)
+  - [react-router](#react-router)
+  - [Redux](#redux)
 * [REST API](#rest-api)
 * [RxJS](#rxjs)
 * [SQL](#sql)
@@ -182,6 +183,10 @@ Currently: &nbsp; **178** Dev_Notes
 
 * [Abstract and Final Classes](es6+/oop/abstract-final-class.md)
 * [Inheritance](es6+/oop/inheritance.md)
+
+## FP
+
+* [`compose`](es6+/fp/compose.md)
 
 # Express.js
 
