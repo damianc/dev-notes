@@ -6,10 +6,10 @@
 function compose(...funcs) {
   return function (n) {
     let res = n;
-    funcs.reverse();
-    
-    for (fn of funcs) {
-        res = fn(res);
+
+    while (funcs.length) {
+      const fn = funcs.pop();
+      res = fn(res);
     }
     
     return res;
