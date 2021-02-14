@@ -13,7 +13,7 @@ console.log('' + params);
 
 ## Constructor
 
-Constructor can be passed one of the following:
+A constructor can be passed one of the following:
 
 * nothing - `new URLSearchParams()`
 * object - `new URLSearchParams({a: 1, b: 2})`
@@ -86,10 +86,10 @@ console.log(params.get('a'));
 console.log(params.getAll('a'));
 // ['10']
 
-console.log(params.get('a'));
+console.log(params.get('b'));
 // '20'
 
-console.log(params.getAll('a'));
+console.log(params.getAll('b'));
 // ['20', '30']
 
 console.log(params.has('a'));
