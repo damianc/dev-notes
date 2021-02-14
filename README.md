@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **180** Dev_Notes
+Currently: &nbsp; **181** Dev_Notes
 
 ---
 
@@ -259,6 +259,7 @@ Currently: &nbsp; **180** Dev_Notes
 * [Pure Redux](react/redux/pure-redux.md)
 * [Component Being Container for Itself](react/redux/component-being-container-for-itself.md)
 * [Custom Middleware](react/redux/custom-middleware.md)
+* [Multiple Stores](react/redux/multiple-stores.md)
 
 ## react-router
 
