@@ -116,7 +116,7 @@ ReactDOM.render(
 
 ## Passing Context in Props
 
-Passing a context in third parameter of `connect()` is one way to state the context to use.  
+Passing a context in the 4th parameter of `connect()` is one way to state the context to use.  
 Another way is passing context via `context` prop:
 
 ```
