@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **182** Dev_Notes
+Currently: &nbsp; **183** Dev_Notes
 
 ---
 
@@ -124,6 +124,7 @@ Currently: &nbsp; **182** Dev_Notes
 
 # Bash Apps
 
+* [Count Particular Files Excluding a Particular Directory](bash-apps/count-particular-files-excluding-a-dir.md)
 * [Searching Files: `find`](bash-apps/searching-files-find.md)
 * [Functions](bash-apps/functions.md)
 * [Flow Control](bash-apps/flow-control.md)
