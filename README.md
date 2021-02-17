@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **183** Dev_Notes
+Currently: &nbsp; **184** Dev_Notes
 
 ---
 
@@ -144,6 +144,8 @@ Currently: &nbsp; **183** Dev_Notes
 
 # CSS
 
+* [Prevent Line-Break in a Table](css/prevent-line-break-in-table.md)
+* [Ellipsis at the end of too long text](css/long-text-ellipsis.md)
 * [Media Queries](css/media-queries.md)
 * [Named Grid Lines](css/named-grid-lines.md)
 * [SassScript Mixins](css/sassscript-mixins.md)
@@ -194,7 +196,6 @@ Currently: &nbsp; **183** Dev_Notes
 
 # HTML
 
-* [Prevent Line-Break in a Table](html/prevent-line-break-in-table.md)
 * [Suggest New Password on Password Control](html/suggest-new-password.md)
 
 # HTML5 APIs
