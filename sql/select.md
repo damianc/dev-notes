@@ -74,8 +74,8 @@ ORDER BY priority DESC, end_date ASC
 
 ### Sorting `NULL` values
 
-* for `ASC`: `NULL`s goes to the beginning
-* for `DESC`: `NULL`s goes to the end
+* for `ASC`: `NULL`s go to the beginning
+* for `DESC`: `NULL`s go to the end
 
 To change this behavior, results can be sorted using `IF()` function:
 
