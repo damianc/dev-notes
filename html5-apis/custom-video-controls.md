@@ -64,13 +64,6 @@ button {
   padding: 5px;
 }
 
-button {
-  background-color: rgba(255, 255, 255, .7);
-  border: none;
-  cursor: pointer;
-  padding: 5px;
-}
-
 #time,
 #duration {
   color: #fff;
