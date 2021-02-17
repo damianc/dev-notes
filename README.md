@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **181** Dev_Notes
+Currently: &nbsp; **182** Dev_Notes
 
 ---
 
@@ -27,14 +27,15 @@ Currently: &nbsp; **181** Dev_Notes
 * [Design Patterns](#design-patterns)
 * [Docker](#docker)
 * [Errors](#errors)
-* [ES6+](#es6)
-  - [OOP](#oop)
-  - [FP](#fp)
 * [Express.js](#expressjs)
 * [Firebase](#firebase)
 * [Git](#git)
 * [HTML](#html)
 * [HTML5 APIs](#html5-apis)
+* [JavaScript](#javascript)
+  - [ES6+](#es6)
+  - [OOP](#oop)
+  - [FP](#fp)
 * [Nest.js](#nestjs)
 * [Node](#node)
 * [PHP](#php)
@@ -164,30 +165,6 @@ Currently: &nbsp; **181** Dev_Notes
 * [System limit for number of file watchers reached](errors/system-limit-of-file-watchers.md)
 * [zsh: corrupt history file](errors/zsh-corrupt-history-file.md)
 
-# ES6+
-
-* [Reduce Array to HTML Markup](es6+/reduce-array-to-html-markup.md)
-* [Enumerating Properties](es6+/enumerating-properties.md)
-* [`this` reference](es6+/this-reference.md)
-* [RegExp: named captured groups](es6+/re-named-groups.md)
-* [`match()` vs. `exec()`](es6+/match-vs-exec.md)
-* [`$` in the `replace()` Function](es6+/regexp-dollar-in-replace.md)
-* [RegExp Related Symbols](es6+/regexp-related-symbols.md)
-* [[Weak]Map vs. [Weak]Set](es6+/maps-vs-sets.md)
-* [export and import](es6+/export-and-import.md)
-* [Proxy Traps](es6+/proxy-traps.md)
-* [`BigInt`](es6+/bigint.md)
-* [Generator Member Shorthand](es6+/generator-member-shorthand.md)
-
-## OOP
-
-* [Abstract and Final Classes](es6+/oop/abstract-final-class.md)
-* [Inheritance](es6+/oop/inheritance.md)
-
-## FP
-
-* [`compose`](es6+/fp/compose.md)
-
 # Express.js
 
 * [The `request` Object](expressjs/request-object.md)
@@ -227,6 +204,34 @@ Currently: &nbsp; **181** Dev_Notes
 * [`URL`](html5-apis/url.md)
 * [`URLSearchParams`](html5-apis/url-search-params.md)
 * [Display Browser Modal to Save Credentials](html5-apis/display-browser-modal-to-save-pass.md)
+
+# JavaScript
+
+* [Reduce Array to HTML Markup](javascript/reduce-array-to-html-markup.md)
+* [Enumerating Properties](javascript/enumerating-properties.md)
+* [`this` reference](javascript/this-reference.md)
+* [`match()` vs. `exec()`](javascript/match-vs-exec.md)
+* [`$` in the `replace()` Function](javascript/regexp-dollar-in-replace.md)
+* [RegExp Related Symbols](javascript/regexp-related-symbols.md)
+* [`BigInt`](javascript/bigint.md)
+
+## ES6+
+
+* [Iterators](javascript/es6/iterators.md)
+* [Generator Member Shorthand](javascript/es6/generator-member-shorthand.md)
+* [[Weak]Map vs. [Weak]Set](javascript/es6/maps-vs-sets.md)
+* [export and import](javascript/es6/export-and-import.md)
+* [Proxy Traps](javascript/es6/proxy-traps.md)
+* [RegExp: named captured groups](javascript/es6/re-named-groups.md)
+
+## OOP
+
+* [Abstract and Final Classes](javascript/oop/abstract-final-class.md)
+* [Inheritance](javascript/oop/inheritance.md)
+
+## FP
+
+* [`compose`](es6+/fp/compose.md)
 
 # Nest.js
 
