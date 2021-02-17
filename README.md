@@ -231,7 +231,7 @@ Currently: &nbsp; **182** Dev_Notes
 
 ## FP
 
-* [`compose`](es6+/fp/compose.md)
+* [`compose`](javascript/fp/compose.md)
 
 # Nest.js
 
