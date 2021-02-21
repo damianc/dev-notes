@@ -22,7 +22,7 @@
 
 ## Attributes as CSS Properties
 
-Starting with SVG2, some attributes are _geometry properties_ and can also be used in CSS:
+Starting with SVG2, some attributes are _Geometry Properties_ and can also be used in CSS:
 
 * for `rect`: `x`, `y`, `width`, `height`, `rx` and `ry`
 * for `circle`: `cx`, `cy` and `r`
