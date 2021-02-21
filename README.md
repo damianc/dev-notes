@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **187** Dev_Notes
+Currently: &nbsp; **188** Dev_Notes
 
 ---
 
@@ -212,6 +212,7 @@ Currently: &nbsp; **187** Dev_Notes
 
 ## SVG
 
+* [Lines and Polygons](html5-apis/svg/lines-and-polygons.md)
 * [Basic Shapes](html5-apis/svg/basic-shapes.md)
 
 # JavaScript
