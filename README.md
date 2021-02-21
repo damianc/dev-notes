@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **186** Dev_Notes
+Currently: &nbsp; **187** Dev_Notes
 
 ---
 
@@ -32,6 +32,7 @@ Currently: &nbsp; **186** Dev_Notes
 * [Git](#git)
 * [HTML](#html)
 * [HTML5 APIs](#html5-apis)
+  - [SVG](#svg)
 * [JavaScript](#javascript)
   - [ES6+](#es6)
   - [OOP](#oop)
@@ -208,6 +209,10 @@ Currently: &nbsp; **186** Dev_Notes
 * [`URL`](html5-apis/url.md)
 * [`URLSearchParams`](html5-apis/url-search-params.md)
 * [Display Browser Modal to Save Credentials](html5-apis/display-browser-modal-to-save-pass.md)
+
+## SVG
+
+* [Basic Shapes](html5-apis/svg/basic-shapes.md)
 
 # JavaScript
 
