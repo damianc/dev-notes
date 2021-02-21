@@ -30,7 +30,7 @@
 | `T` | smooth quadratic Bézier curve to | `T x y` | `T 100 50` |
 | `t` | smooth quadratic Bézier curve to | `t x y` | `t 100 50` |
 
-Details: (MDN)[https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#curve_commands]
+Details: [MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#curve_commands)
 
 ### Arcs
 
@@ -39,4 +39,4 @@ A rx ry x-axis-rotation large-arc-flag sweep-flag x y
 a rx ry x-axis-rotation large-arc-flag sweep-flag dx dy
 ```
 
-Details: (MDN)[https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#arcs]
+Details: [MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#arcs)
