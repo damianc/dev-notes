@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **189** Dev_Notes
+Currently: &nbsp; **191** Dev_Notes
 
 ---
 
@@ -212,6 +212,8 @@ Currently: &nbsp; **189** Dev_Notes
 
 ## SVG
 
+* [SVG Markup](html5-apis/svg/markup.md)
+* [Styling SVG](html5-apis/svg/styling.md)
 * [Lines and Polygons](html5-apis/svg/lines-and-polygons.md)
 * [Basic Shapes](html5-apis/svg/basic-shapes.md)
 * [Paths](html5-apis/svg/paths.md)
