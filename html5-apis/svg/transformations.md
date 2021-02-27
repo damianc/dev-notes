@@ -32,7 +32,7 @@
 ## Functions
 
 | Function | Description | Signature | Example |
-|----|----|----|
+|----|----|----|----|
 | `translate` | moves the object by `x` and `y` | `translate(x [y=0])` | `translate(20 20)` |
 | `scale` | scales the object by `x` and `y` | `scale(x [y=0])` | `scale(2)` |
 | `rotate` | rotates the object by `a` degress about the point `(x, y)` or about the origin of the current user coordinate system if not supplied | `rotate(a [x y])` | `rotate(45)` |
