@@ -40,3 +40,14 @@
   <circle cx="150" cy="150" r="100" fill="url(#grad)"/>
 </svg>
 ```
+
+<svg width="300" height="300">
+  <defs>
+    <radialGradient id="grad" cx="20%" cy="20%">
+      <stop offset="5%" stop-color="yellow" />
+      <stop offset="95%" stop-color="orange" />
+    </radialGradient>
+  </defs>
+
+  <circle cx="150" cy="150" r="100" fill="url(#grad)"/>
+</svg>
