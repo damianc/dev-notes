@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **196** Dev_Notes
+Currently: &nbsp; **197** Dev_Notes
 
 ---
 
@@ -217,6 +217,7 @@ Currently: &nbsp; **196** Dev_Notes
 * [Lines and Polygons](html5-apis/svg/lines-and-polygons.md)
 * [Basic Shapes](html5-apis/svg/basic-shapes.md)
 * [Paths](html5-apis/svg/paths.md)
+* [Texts](html5-apis/svg/texts.md)
 * [Grouping Elements](html5-apis/svg/groups.md)
 * [Transformations](html5-apis/svg/transformations.md)
 * [Reusing Elements](html5-apis/svg/reusing-elements.md)
