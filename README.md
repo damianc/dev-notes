@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **194** Dev_Notes
+Currently: &nbsp; **195** Dev_Notes
 
 ---
 
@@ -220,6 +220,7 @@ Currently: &nbsp; **194** Dev_Notes
 * [Grouping Elements](html5-apis/svg/groups.md)
 * [Transformations](html5-apis/svg/transformations.md)
 * [Reusing Elements](html5-apis/svg/reusing-elements.md)
+* [Patterns and Imaged Backgrounds](html5-apis/svg/patterns.md)
 
 # JavaScript
 
