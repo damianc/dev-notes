@@ -7,4 +7,4 @@
 </g>
 ```
 
-Elements are shown, to define them to later use, place them in `<def>`.
+Elements are shown, to define them to later use, place them in `<defs>`.
