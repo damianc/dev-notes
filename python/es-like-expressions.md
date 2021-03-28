@@ -39,19 +39,19 @@ set2 = {5, 6}
 ```
 arr = [1, 2, 3, 4]
 one, two, *rest = arr
-# one=1 two=2 rest=[3,4]
+# one=1 two=2 rest=[3, 4]
 
 head, *body, tail = arr
-# head=1 body=['2', '3'] tail=4
+# head=1 body=[2, 3] tail=4
 ```
 
 ```
 tuple = (1, 2, 3, 4)
 one, two, *rest = tuple
-# one=1 two=2 rest=[3,4]
+# one=1 two=2 rest=[3, 4]
 
 head, *body, tail = tuple
-# head=1 body=['2', '3'] tail=4
+# head=1 body=[2, 3] tail=4
 ```
 
 ```
