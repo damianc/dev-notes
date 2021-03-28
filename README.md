@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **198** Dev_Notes
+Currently: &nbsp; **199** Dev_Notes
 
 ---
 
@@ -274,6 +274,7 @@ Currently: &nbsp; **198** Dev_Notes
 # Python
 
 * [ES-Like Expressions](python/es-like-expressions.md)
+* [Comprehensions](python/comprehensions.md)
 
 # React
 
