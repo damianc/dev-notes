@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **197** Dev_Notes
+Currently: &nbsp; **198** Dev_Notes
 
 ---
 
@@ -40,6 +40,7 @@ Currently: &nbsp; **197** Dev_Notes
 * [Nest.js](#nestjs)
 * [Node](#node)
 * [PHP](#php)
+* [Python](#python)
 * [React](#react)
   - [react-router](#react-router)
   - [Redux](#redux)
@@ -269,6 +270,10 @@ Currently: &nbsp; **197** Dev_Notes
 * [Namespaces](php/namespaces.md)
 * [Late Static Bindings](php/late-static-bindings.md)
 * [`const` vs `define`](php/const-vs-define.md)
+
+# Python
+
+* [ES-Like Expressions](python/es-like-expressions.md)
 
 # React
 
