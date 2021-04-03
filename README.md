@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **199** Dev_Notes
+Currently: &nbsp; **200** Dev_Notes
 
 ---
 
@@ -178,6 +178,7 @@ Currently: &nbsp; **199** Dev_Notes
 * [Custom Middleware](expressjs/custom-middleware.md)
 * [Modular Structure](expressjs/modular-structure.md)
 * [Streaming](expressjs/streaming.md)
+* [Streaming Video](expressjs/streaming-video.md)
 
 # Firebase
 
