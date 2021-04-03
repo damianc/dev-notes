@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **200** Dev_Notes
+Currently: &nbsp; **201** Dev_Notes
 
 ---
 
@@ -345,6 +345,7 @@ Currently: &nbsp; **200** Dev_Notes
 * [Advanced Generics](typescript/advanced-generics.md)
 * [Utility Types](typescript/utility-types.md)
 * [Advanced Types](typescript/advanced-types.md)
+* [Bivariance Hack](typescript/bivariance-hack.md)
 
 # UI
 
