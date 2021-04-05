@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **201** Dev_Notes
+Currently: &nbsp; **202** Dev_Notes
 
 ---
 
@@ -179,6 +179,7 @@ Currently: &nbsp; **201** Dev_Notes
 * [Modular Structure](expressjs/modular-structure.md)
 * [Streaming](expressjs/streaming.md)
 * [Streaming Video](expressjs/streaming-video.md)
+* [Manual Streaming of Text](expressjs/manual-streaming-text.md)
 
 # Firebase
 
