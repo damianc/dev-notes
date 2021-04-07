@@ -9,7 +9,7 @@ class RandomString extends Readable {
       encoding: 'utf8'
     };
 
-    super({ ...options, ...defaults });
+    super({ ...defaults, ...options });
   }
 
   _read() {
@@ -27,6 +27,9 @@ class RandomString extends Readable {
 ```
 
 ```
-const rStr = new RandomString();
-rStr.on('data', console.log);
+const rStream = new RandomString({
+  encoding: 'hex'
+});
+
+rStream.on('data', console.log);
 ```
