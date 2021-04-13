@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **203** Dev_Notes
+Currently: &nbsp; **204** Dev_Notes
 
 ---
 
@@ -277,6 +277,7 @@ Currently: &nbsp; **203** Dev_Notes
 # Python
 
 * [ES-Like Expressions](python/es-like-expressions.md)
+* [Array Sequentially Assignment](python/array-sequentially-assignment.md)
 * [Comprehensions](python/comprehensions.md)
 
 # React
