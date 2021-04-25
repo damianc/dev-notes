@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **204** Dev_Notes
+Currently: &nbsp; **205** Dev_Notes
 
 ---
 
@@ -29,6 +29,7 @@ Currently: &nbsp; **204** Dev_Notes
 * [Errors](#errors)
 * [Express.js](#expressjs)
 * [Firebase](#firebase)
+* [Formulas](#formulas)
 * [Git](#git)
 * [HTML](#html)
 * [HTML5 APIs](#html5-apis)
@@ -187,6 +188,10 @@ Currently: &nbsp; **204** Dev_Notes
 * [Firebase Realtime Database: Observing a Value](firebase/realtime-database-observing-value.md)
 * [Firebase Realtime Database: Observing a Collection](firebase/realtime-database-observing-collection.md)
 * [Upload File to Bucket](firebase/upload-file-to-bucket.md)
+
+# Formulas
+
+* [Distance Between 2 Coords](formulas/distance-between-two-coords.md)
 
 # Git
 
