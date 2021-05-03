@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **206** Dev_Notes
+Currently: &nbsp; **207** Dev_Notes
 
 ---
 
@@ -294,6 +294,7 @@ Currently: &nbsp; **206** Dev_Notes
 * [Hooks: `useState()`](react/hooks-usestate.md)
 * [Hooks: `useEffect()`](react/hooks-useeffect.md)
 * [Hooks: `useContext()`](react/hooks-usecontext.md)
+* [Hooks: `useMemo()` and `useCallback()`](react/hooks-usememo-and-usecallback.md)
 
 ## Redux
 
