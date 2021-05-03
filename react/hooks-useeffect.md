@@ -38,6 +38,8 @@ useEffect(() => {
 }, [filteredUsers]);
 ```
 
+To run an effect and clean it up only once (on mount and unmount), we can pass an empty array (`[]`) as a second argument.
+
 ## Cleaning Up
 
 ```
