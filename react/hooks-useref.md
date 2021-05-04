@@ -145,6 +145,6 @@ function ClickCounter() {
 ## Sources
 
 * [Hooks API Reference: `useRef()`](https://reactjs.org/docs/hooks-reference.html#useref)
-* [The Complete Guide to `useRef()` and Refs in React](https://dmitripavlutin.com/react-useref-guide/#1-mutable-values)
+* [The Complete Guide to `useRef()` and Refs in React](https://dmitripavlutin.com/react-useref-guide)
 * [React's `useEffect` and `useRef` Explained for Mortals](https://leewarrick.com/blog/react-use-effect-explained/)
 * [A Thoughtful Way To Use React’s `useRef()` Hook](https://www.smashingmagazine.com/2020/11/react-useref-hook/)
