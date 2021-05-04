@@ -298,16 +298,16 @@ Currently: &nbsp; **209** Dev_Notes
 * [Hooks: `useRef()`](react/hooks-useref.md)
 * [Hooks FAQ](react/hooks-faq.md)
 
+## react-router
+
+* [Link Passing Additional Data](react/react-router/link-passing-additional-data.md)
+
 ## Redux
 
 * [Pure Redux](react/redux/pure-redux.md)
 * [Component Being Container for Itself](react/redux/component-being-container-for-itself.md)
 * [Custom Middleware](react/redux/custom-middleware.md)
 * [Multiple Stores](react/redux/multiple-stores.md)
-
-## react-router
-
-* [Link Passing Additional Data](react/react-router/link-passing-additional-data.md)
 
 # REST API
 
