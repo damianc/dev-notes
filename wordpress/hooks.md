@@ -2,8 +2,8 @@
 
 * [Workflow](#workflow)
 * [`add_action()`](#add_actionname-function-priority-accepted_args)
-* [`do_action()`](#do_action-name-args)
-* [`do_action_ref_array()`](#do_action_ref_array-name-args_arr)
+* [`do_action()`](#do_actionname-args)
+* [`do_action_ref_array()`](#do_action_ref_arrayname-args_arr)
 * [`remove_action()`](#remove_actionname-function-priority)
 * [Hook Being Class Static Method](#hook-being-class-static-method)
 * [Hook Being Class Instance Method](#hook-being-class-instance-method)
