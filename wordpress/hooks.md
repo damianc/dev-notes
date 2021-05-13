@@ -1,10 +1,10 @@
 # WordPress Hooks
 
 * [Workflow](#workflow)
-* [`add_action()`](#addactionname-function-priority-acceptedargs)
-* [`do_action()`](#doaction-name-args)
-* [`do_action_ref_array()`](#doactionrefarray-name-argsarr)
-* [`remove_action()`](#removeactionname-function-priority)
+* [`add_action()`](#add_actionname-function-priority-accepted_args)
+* [`do_action()`](#do_action-name-args)
+* [`do_action_ref_array()`](#do_action_ref_array-name-args_arr)
+* [`remove_action()`](#remove_actionname-function-priority)
 * [Hook Being Class Static Method](#hook-being-class-static-method)
 * [Hook Being Class Instance Method](#hook-being-class-instance-method)
 * [Hook Being Method of a Singleton](#hook-being-method-of-a-singleton)
