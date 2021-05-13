@@ -13,6 +13,7 @@ function prfx_favicon() {
 ## More Icons
 
 ```
+<?php
 add_action('wp_head', 'prfx_favicon');
 add_action('login_head', 'prfx_favicon');
 add_action('admin_head', 'prfx_favicon');
