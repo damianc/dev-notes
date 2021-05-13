@@ -5,12 +5,16 @@
 * [`do_action()`](#do_actionname-args)
 * [`do_action_ref_array()`](#do_action_ref_arrayname-args_arr)
 * [`remove_action()`](#remove_actionname-function-priority)
+
+Integration with Classes:
+
 * [Hook Being Class Static Method](#hook-being-class-static-method)
 * [Hook Being Class Instance Method](#hook-being-class-instance-method)
 * [Hook Being Method of a Singleton](#hook-being-method-of-a-singleton)
-* [Hook Being Class Instance Method and Added within Another Instance Method](#hook-being-class-instance-method-and-added-within-another-instance-method)
-* [Hook Being Class Static Method and Added within Another Static Method](#hook-being-class-static-method-and-added-within-another-static-method)
-* [Hook Being Class Static Method and Added within Class Instance Method](#hook-being-class-static-method-and-added-within-class-instance-method)
+* [Hook Added/Removed within Class](#hook-addedremoved-within-class)
+  * [Addition and Definition within Instance Methods](#addition-and-definition-within-instance-methods)
+  * [Addition and Defintion within Static Methods](#addition-and-definition-within-static-methods)
+  * [Addition within Instance Method and Definition within Static Method](#addition-within-instance-method-and-definition-within-static-method)
 
 ## Workflow
 
@@ -149,7 +153,9 @@ add_action('prfx_plugin_pre_setup', [Hook::getInstance(), 'calc_hook'], 10, 2);
 remove_action('prfx_plugin_pre_setup', [Hook::getInstance(), 'calc_hook']);
 ```
 
-## Hook Being Class Instance Method and Added within Another Instance Method
+## Hook Added/Removed within Class
+
+### Addition and Definition within Instance Methods
 
 ```
 class Hook {
@@ -173,7 +179,7 @@ $hook->addHooks();
 $hook->removeHooks();
 ```
 
-## Hook Being Class Static Method and Added within Another Static Method
+### Addition and Defintion within Static Methods
 
 ```
 class Hook {
@@ -195,7 +201,7 @@ Hook::addHooks();
 Hook::removeHooks();
 ```
 
-## Hook Being Class Static Method and Added within Class Instance Method
+### Addition within Instance Method and Definition within Static Method
 
 ```
 class Hook {
