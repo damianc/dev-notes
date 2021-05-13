@@ -246,6 +246,8 @@ class Hook {
 $hook = new Hook();
 
 $hook::addHooks();
+# or: Hook::addHooks()
 ...
 $hook::removeHooks();
+# or: Hook::removeHooks()
 ```
