@@ -13,7 +13,7 @@ Integration with Classes:
 * [Hook Being Method of a Singleton](#hook-being-method-of-a-singleton)
 * [Hook Added/Removed within Class](#hook-addedremoved-within-class)
   * [Addition and Definition within Instance Methods](#addition-and-definition-within-instance-methods)
-  * [Addition and Defintion within Static Methods](#addition-and-definition-within-static-methods)
+  * [Addition and Definition within Static Methods](#addition-and-definition-within-static-methods)
   * [Addition within Instance Method and Definition within Static Method](#addition-within-instance-method-and-definition-within-static-method)
 
 ## Workflow
@@ -179,7 +179,7 @@ $hook->addHooks();
 $hook->removeHooks();
 ```
 
-### Addition and Defintion within Static Methods
+### Addition and Definition within Static Methods
 
 ```
 class Hook {
