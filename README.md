@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **210** Dev_Notes
+Currently: &nbsp; **211** Dev_Notes
 
 ---
 
@@ -383,6 +383,7 @@ Currently: &nbsp; **210** Dev_Notes
 
 # WordPress
 
+* [WordPress Hooks](wordpress/hooks.md)
 * [Adding a favicon](wordpress/adding-favicon.md)
 * [Adding thumbnail metabox to posts](wordpress/thumbnail-support.md)
 * [AJAX Requests](wordpress/ajax-requests.md)
