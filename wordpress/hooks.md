@@ -15,6 +15,7 @@ Integration with Classes:
   * [Addition and Definition within Instance Methods](#addition-and-definition-within-instance-methods)
   * [Addition and Definition within Static Methods](#addition-and-definition-within-static-methods)
   * [Addition within Instance Method and Definition within Static Method](#addition-within-instance-method-and-definition-within-static-method)
+  * [Addition within Static Method and Definition within Instance Method](#addition-within-static-method-and-definition-within-instance-method)
 
 ## Workflow
 
@@ -223,4 +224,28 @@ $hook = new Hook();
 $hook->addHooks();
 ...
 $hook->removeHooks();
+```
+
+### Addition within Static Method and Definition within Instance Method
+
+```
+class Hook {
+  public static function addHooks() {
+    add_action('prfx_plugin_pre_setup', [get_called_class(), 'calc_hook'], 10, 2);
+  }
+
+  public static function removeHooks() {
+    remove_action('prfx_plugin_pre_setup', [get_called_class(), 'calc_hook']);
+  }
+
+  public function calc_hook($a, $b) {
+    echo $a + $b;
+  }
+}
+
+$hook = new Hook();
+
+$hook::addHooks();
+...
+$hook::removeHooks();
 ```
