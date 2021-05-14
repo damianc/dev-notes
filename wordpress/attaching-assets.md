@@ -123,7 +123,7 @@ add_action('wp_enqueue_scripts', function () {
 
 * `wp_add_inline_style($sibling_ref, $data)`
 
-  ```
+```
 add_action('wp_enqueue_scripts', function () {
   wp_enqueue_style('theme');
 
