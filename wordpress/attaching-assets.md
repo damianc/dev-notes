@@ -1,5 +1,15 @@
 # Attaching Assets
 
+* [Overview](#overview)
+* [Different Hooks for Different Places](#different-hooks-for-different-places)
+* [Registering Assets](#registering-assets)
+  * [Deregistering Assets](#deregistering-assets)
+* [Adding Inline Scripts and Styles](#adding-inline-scripts-and-styles)
+* [Altering Script and Link Tags](#altering-script-and-link-tags)
+* [Conditional Loading of Assets](#conditional-loading-of-assets)
+
+## Overview
+
 * `wp_enqueue_script($name, $src, $deps, $version = false, $in_footer = false)`
 * `wp_enqueue_style($name, $src, $deps, $version = false, $media = 'all')`
 
