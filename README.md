@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **212** Dev_Notes
+Currently: &nbsp; **213** Dev_Notes
 
 ---
 
@@ -385,6 +385,7 @@ Currently: &nbsp; **212** Dev_Notes
 
 * [Attaching Assets](wordpress/attaching-assets.md)
 * [WordPress Hooks](wordpress/hooks.md)
+* [WordPress Filters](wordpress/filters.md)
 * [Adding a favicon](wordpress/adding-favicon.md)
 * [Adding thumbnail metabox to posts](wordpress/thumbnail-support.md)
 * [AJAX Requests](wordpress/ajax-requests.md)
