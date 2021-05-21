@@ -5,7 +5,7 @@
 * add filter with `add_filter()`
 * apply filter with `apply_filters()` or `apply_filters_ref_array()`
 
-## `add_filter($name, $function, $priority, $accepted_args)`
+## `add_filter($name, $function, $priority = 10, $accepted_args = 1)`
 
 ```
 add_filter('prfx_email', function ($name, $provider) {
@@ -42,3 +42,26 @@ array_unshift(
   ]
 );
 ```
+
+## `remove_filter($name, $function, $priority = 10)`
+
+```
+remove_filter('the_content', 'wpautop');
+```
+
+## `remove_all_filters($name, $priority = false)`
+
+```
+remove_all_filters('prfx_code_snippet');
+```
+
+## `has_filter($name, $function_to_check)`
+
+```
+if (!has_filter('the_content', 'sth_markdown_cutter')) {
+  add_filter('the_content', 'prfx_markdown_parser');
+}
+```
+
+* if `$function_to_check` is omitted, returns boolean for whether the hook has anything registered
+* when checking a specific function, the priority of that hook is returned (or `false` if the function is not attached)
