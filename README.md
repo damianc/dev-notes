@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **214** Dev_Notes
+Currently: &nbsp; **215** Dev_Notes
 
 ---
 
@@ -48,6 +48,7 @@ Currently: &nbsp; **214** Dev_Notes
 * [RxJS](#rxjs)
 * [SQL](#sql)
 * [SVG](#svg)
+  - [SVG + JavaScript](#svg--javascript)
 * [TDD](#tdd)
 * [Tools](#tools)
 * [TypeScript](#typescript)
@@ -341,6 +342,10 @@ Currently: &nbsp; **214** Dev_Notes
 * [Reusing Elements](svg/reusing-elements.md)
 * [Patterns and Imaged Backgrounds](svg/patterns.md)
 * [Gradients](svg/gradients.md)
+
+## SVG + JavaScript
+
+* [Dynamic Polyline](svg/js/dynamic-polyline.md)
 
 # TDD
 
