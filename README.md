@@ -33,7 +33,6 @@ Currently: &nbsp; **214** Dev_Notes
 * [Git](#git)
 * [HTML](#html)
 * [HTML5 APIs](#html5-apis)
-  - [SVG](#svg)
 * [JavaScript](#javascript)
   - [ES6+](#es6)
   - [OOP](#oop)
@@ -48,6 +47,7 @@ Currently: &nbsp; **214** Dev_Notes
 * [REST API](#rest-api)
 * [RxJS](#rxjs)
 * [SQL](#sql)
+* [SVG](#svg)
 * [TDD](#tdd)
 * [Tools](#tools)
 * [TypeScript](#typescript)
@@ -220,20 +220,6 @@ Currently: &nbsp; **214** Dev_Notes
 * [`URLSearchParams`](html5-apis/url-search-params.md)
 * [Display Browser Modal to Save Credentials](html5-apis/display-browser-modal-to-save-pass.md)
 
-## SVG
-
-* [SVG Markup](html5-apis/svg/markup.md)
-* [Styling SVG](html5-apis/svg/styling.md)
-* [Lines and Polygons](html5-apis/svg/lines-and-polygons.md)
-* [Basic Shapes](html5-apis/svg/basic-shapes.md)
-* [Paths](html5-apis/svg/paths.md)
-* [Texts](html5-apis/svg/texts.md)
-* [Grouping Elements](html5-apis/svg/groups.md)
-* [Transformations](html5-apis/svg/transformations.md)
-* [Reusing Elements](html5-apis/svg/reusing-elements.md)
-* [Patterns and Imaged Backgrounds](html5-apis/svg/patterns.md)
-* [Gradients](html5-apis/svg/gradients.md)
-
 # JavaScript
 
 * [Reduce Array to HTML Markup](javascript/reduce-array-to-html-markup.md)
@@ -341,6 +327,20 @@ Currently: &nbsp; **214** Dev_Notes
 * [Create table with a struct of another - `CREATE TABLE...LIKE`](sql/create-table-like-another.md)
 * [Create table with a query - `CREATE TABLE...SELECT`](sql/create-table-with-query.md)
 * [Triggers](sql/triggers.md)
+
+# SVG
+
+* [SVG Markup](svg/markup.md)
+* [Styling SVG](svg/styling.md)
+* [Lines and Polygons](svg/lines-and-polygons.md)
+* [Basic Shapes](svg/basic-shapes.md)
+* [Paths](svg/paths.md)
+* [Texts](svg/texts.md)
+* [Grouping Elements](svg/groups.md)
+* [Transformations](svg/transformations.md)
+* [Reusing Elements](svg/reusing-elements.md)
+* [Patterns and Imaged Backgrounds](svg/patterns.md)
+* [Gradients](svg/gradients.md)
 
 # TDD
 
