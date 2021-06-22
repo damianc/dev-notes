@@ -4,7 +4,7 @@
 
 ```
 <svg width="400" height="400" id="canvas">
-  <polyline id="line" stroke-width="4" stroke="red" points="0 0" />
+  <polyline id="polyline" stroke-width="4" stroke="red" points="0 0" />
   <line id="next-line" stroke="rgba(255, 200, 0, .5)" stroke-width="4" />
 </svg>
 ```
@@ -13,7 +13,7 @@
 
 ```
 const canvas = document.getElementById('canvas');
-const line = document.getElementById('line');
+const polyline = document.getElementById('polyline');
 const nextLine = document.getElementById('next-line');
 
 const lastPoint = {
@@ -35,7 +35,7 @@ function nextLinePreview(e) {
 function insertLine(e) {
   const p = getPoint(e.pageX, e.pageY);
 
-  line.points.appendItem(p);
+  polyline.points.appendItem(p);
   lastPoint.x = e.pageX;
   lastPoint.y = e.pageY;
 }
