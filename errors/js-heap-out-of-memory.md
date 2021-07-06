@@ -17,8 +17,8 @@ set NODE_OPTIONS=--max-old-space-size=4096
 ```
 ...
 
-scripts": {
-  "start": "node  --max-old-space-size=4096 app"
+"scripts": {
+  "start": "node --max-old-space-size=4096 app"
   ...
 }
 
