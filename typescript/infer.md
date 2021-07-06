@@ -24,7 +24,7 @@ const arrItem1: ArrayValue<[number]> = 1;
 
 const arrItem2: ArrayValue<typeof arr> = 2;
 // arrItem2: number
-// same as ArrayValue<number[]>
+// same as ArrayValue<[number]>
 ```
 
 ## Example: Type of a Promise Value
