@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **218** Dev_Notes
+Currently: &nbsp; **219** Dev_Notes
 
 ---
 
@@ -171,6 +171,7 @@ Currently: &nbsp; **218** Dev_Notes
 
 # Errors
 
+* [JavaScript heap out of memory](errors/js-heap-out-of-memory.md)
 * [System limit for number of file watchers reached](errors/system-limit-of-file-watchers.md)
 * [zsh: corrupt history file](errors/zsh-corrupt-history-file.md)
 
