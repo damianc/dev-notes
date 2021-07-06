@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **215** Dev_Notes
+Currently: &nbsp; **216** Dev_Notes
 
 ---
 
@@ -364,6 +364,7 @@ Currently: &nbsp; **215** Dev_Notes
 * [Advanced Generics](typescript/advanced-generics.md)
 * [Utility Types](typescript/utility-types.md)
 * [Advanced Types](typescript/advanced-types.md)
+* [The `infer` Keyword](typescript/infer.md)
 * [Building Object Type from Array](typescript/build-object-type-from-array.md)
 * [Bivariance Hack](typescript/bivariance-hack.md)
 
