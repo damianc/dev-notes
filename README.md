@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **216** Dev_Notes
+Currently: &nbsp; **217** Dev_Notes
 
 ---
 
@@ -120,6 +120,7 @@ Currently: &nbsp; **216** Dev_Notes
 * [Params of Route](angular/routing/route-params.md)
 * [Parent Router Params](angular/routing/parent-router-params.md)
 * [Optional Params vs. Query Params](angular/routing/optional-query-params.md)
+* [Add Params to Current URL](angular/routing/add-params-to-current-url.md)
 * [Route Data](angular/routing/route-data.md)
 * [Route Children](angular/routing/route-children.md)
 * [Named Outlets](angular/routing/named-outlets.md)
