@@ -72,6 +72,32 @@ opArgs = ['+', 1];
 opArgs = ['+', 1, 2, 3, 4];
 ```
 
+## Example: Type of a Value Returned by Function
+
+* with this type:
+
+```
+type ReturnedType<T> = T extends (...args: any[]) => infer R ? R : never;
+```
+
+* having the following function:
+
+```
+function diff(a: number, b: number) {
+  return Math.abs(a - b);
+}
+```
+
+* we get that:
+
+```
+let someFn: ReturnedType<typeof diff>;
+// someFn: number
+
+let nonFn: TheReturnType<string>;
+// nonFn: never
+```
+
 ## Example: Type of the Array Items
 
 ```
