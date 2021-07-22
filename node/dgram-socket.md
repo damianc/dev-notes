@@ -16,7 +16,7 @@ setInterval(() => {
 ## `receiver.js`
 
 ```
-cośnst dgram = require('dgram');
+const dgram = require('dgram');
 const socket = dgram.createSocket('udp4');
 const PORT = 1234;
 
