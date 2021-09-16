@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **221** Dev_Notes
+Currently: &nbsp; **222** Dev_Notes
 
 ---
 
@@ -84,6 +84,7 @@ Currently: &nbsp; **221** Dev_Notes
 
 ## Directives and Components
 
+* [Multiple `<ng-content>`](angular/multiple-ng-content.md)
 * [The `*ngIf` Directive](angular/ngif-directive.md)
 * [Component Event with `@Output`](angular/component-event.md)
 * [Structural Directive with Context](angular/struct-directive-context.md)
