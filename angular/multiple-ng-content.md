@@ -33,11 +33,14 @@ export class LeftRightComponent {}
 ### The `select` value
 
 * element - e.g., `h1`
-* component - e.g., `myComponent` 
-* class name = e.g., `.slot-class`
+* component - e.g., `slotComponent` 
+* class name - e.g., `.slot-class`
+* identifier - e.g., `#slot-id`
 * attribute - e.g., `[slotAttr]`
-* attribute with value - e.g., `[attr="val"]`
-* multiple selectiors - e.g., `h1, [slotAttr]`
+* attribute with value - e.g., `[slotAttr="val"]`
+* compound selectors - e.g., `article[attr].class`
+* multiple selectors - e.g., `h1, [slotAttr]`
+* negated selectors - e.g., `article:not(.nonslot)`
 
 ## Default Slot
 
