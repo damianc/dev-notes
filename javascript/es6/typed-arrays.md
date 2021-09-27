@@ -184,3 +184,8 @@ view.buffer === viewFromTypedArray.buffer
 viewFromBuffer.buffer === viewFromTypedArray.buffer
 // false
 ```
+
+## Further Reading
+
+* [[MDN] `SharedArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer)
+* [[MDN] Atomics](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics)
