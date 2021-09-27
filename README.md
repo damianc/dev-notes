@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **223** Dev_Notes
+Currently: &nbsp; **224** Dev_Notes
 
 ---
 
@@ -368,6 +368,7 @@ Currently: &nbsp; **223** Dev_Notes
 * [Iteration Types](typescript/iteration-types.md)
 * [Generics](typescript/generics.md)
 * [Advanced Generics](typescript/advanced-generics.md)
+* [`Lowercase<T>`, `Uppercase<T>`, `Capitalize<T>` and `Uncapitalize<T>`](typescript/lowercase-uppercase-etc.md)
 * [Utility Types](typescript/utility-types.md)
 * [Advanced Types](typescript/advanced-types.md)
 * [The `infer` Keyword](typescript/infer.md)
