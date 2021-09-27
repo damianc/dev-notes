@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **224** Dev_Notes
+Currently: &nbsp; **225** Dev_Notes
 
 ---
 
@@ -31,6 +31,7 @@ Currently: &nbsp; **224** Dev_Notes
 * [Firebase](#firebase)
 * [Formulas](#formulas)
 * [Git](#git)
+* [GraphQL](#graphql)
 * [HTML](#html)
 * [HTML5 APIs](#html5-apis)
 * [JavaScript](#javascript)
@@ -208,6 +209,10 @@ Currently: &nbsp; **224** Dev_Notes
 * [Renaming Branch](git/rename-branch.md)
 * [Comparing Files from 2 Different Branches](git/diff-different-branches.md)
 * [Find the commit a bug has been introduced in](git/find-commit-introducing-bug.md)
+
+# GraphQL
+
+* [Fragments](graphql/fragments.md)
 
 # HTML
 
