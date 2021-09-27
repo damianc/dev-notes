@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **227** Dev_Notes
+Currently: &nbsp; **228** Dev_Notes
 
 ---
 
@@ -214,6 +214,7 @@ Currently: &nbsp; **227** Dev_Notes
 
 * [Query](graphql/query.md)
 * [Query Arguments](graphql/query-arguments.md)
+* [Aliases](graphql/aliases.md)
 * [Fragments](graphql/fragments.md)
 
 # HTML
