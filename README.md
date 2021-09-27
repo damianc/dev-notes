@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **222** Dev_Notes
+Currently: &nbsp; **223** Dev_Notes
 
 ---
 
@@ -241,6 +241,7 @@ Currently: &nbsp; **222** Dev_Notes
 * [Generator Member Shorthand](javascript/es6/generator-member-shorthand.md)
 * [[Weak]Map vs. [Weak]Set](javascript/es6/maps-vs-sets.md)
 * [export and import](javascript/es6/export-and-import.md)
+* [Typed Arrays](javascript/es6/typed-array.md)
 * [Proxy Traps](javascript/es6/proxy-traps.md)
 * [RegExp: named captured groups](javascript/es6/re-named-groups.md)
 
