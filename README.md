@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **229** Dev_Notes
+Currently: &nbsp; **230** Dev_Notes
 
 ---
 
@@ -53,6 +53,7 @@ Currently: &nbsp; **229** Dev_Notes
 * [TDD](#tdd)
 * [Tools](#tools)
 * [TypeScript](#typescript)
+  - [Types From Types](#types-from-types)
 * [UI](#ui)
 * [Vue](#vue)
 * [Webpack](#webpack)
@@ -384,6 +385,10 @@ Currently: &nbsp; **229** Dev_Notes
 * [Type Being Props Selector](typescript/type-being-props-selector.md)
 * [Building Object Type from Array](typescript/build-object-type-from-array.md)
 * [Bivariance Hack](typescript/bivariance-hack.md)
+
+## Types From Types
+
+* [`Replace<Str, S, E>`](typescript/types-from-types/replace.md)
 
 # UI
 
