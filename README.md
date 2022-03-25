@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **235** Dev_Notes
+Currently: &nbsp; **236** Dev_Notes
 
 ---
 
@@ -393,6 +393,7 @@ Currently: &nbsp; **235** Dev_Notes
 * [`Replace<Str, S, E>`](typescript/types-from-types/replace.md)
 * [`Repeat<Str, N>`](typescript/types-from-types/repeat.md)
 * [`ReverseStr<Str>` and `ReverseArr<Arr>`](typescript/types-from-types/reversestr-reversearr.md)
+* [`Join<Arr>` and `Split<Arr>`](typescript/types-from-types/join-split.md)
 * [`Getterize<T>` and `Degetterize<T>`](typescript/types-from-types/getterize-and-degetterize.md)
 
 # UI
