@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **238** Dev_Notes
+Currently: &nbsp; **239** Dev_Notes
 
 ---
 
@@ -390,6 +390,7 @@ Currently: &nbsp; **238** Dev_Notes
 
 ## Types From Types
 
+* [`StrLength<Str>` and `ArrLength<Arr>`](typescript/types-from-types/strlen-arrlen.md)
 * [`Replace<Str, S, E>`](typescript/types-from-types/replace.md)
 * [`Repeat<Str, N>`](typescript/types-from-types/repeat.md)
 * [`ReverseStr<Str>` and `ReverseArr<Arr>`](typescript/types-from-types/reversestr-reversearr.md)
