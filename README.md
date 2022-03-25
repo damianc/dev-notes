@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **233** Dev_Notes
+Currently: &nbsp; **234** Dev_Notes
 
 ---
 
@@ -391,6 +391,7 @@ Currently: &nbsp; **233** Dev_Notes
 ## Types From Types
 
 * [`Replace<Str, S, E>`](typescript/types-from-types/replace.md)
+* [`Repeat<Str, N>`](typescript/types-from-types/repeat.md)
 * [`Getterize<T>` and `Degetterize<T>`](typescript/types-from-types/getterize-and-degetterize.md)
 
 # UI
