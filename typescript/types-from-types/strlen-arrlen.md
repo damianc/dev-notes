@@ -60,11 +60,11 @@ type DotsToNum<
       : [...acc: Acc, x: string]['length'];
 
 
-type DTN1 = $$DotsToNum<''>;
+type DTN1 = DotsToNum<''>;
 // 0
-type DTN2 = $$DotsToNum<'.'>;
+type DTN2 = DotsToNum<'.'>;
 // 1
-type DTN3 = $$DotsToNum<'....'>;
+type DTN3 = DotsToNum<'....'>;
 // 4
 ```
 
