@@ -9,7 +9,11 @@ type Replace<
   E extends string,
   Global = true
 > = Str extends `${infer Head}${S}${infer Tail}`
-  ? Global extends true ? GenReplace<`${Head}${E}${Tail}`, S, E, Global> :  `${Head}${E}${Tail}`
+  ? (
+    Global extends true
+      ? Replace<`${Head}${E}${Tail}`, S, E, Global>
+      : `${Head}${E}${Tail}`
+  )
   : Str;
 ```
 
@@ -27,6 +31,69 @@ type ReplaceTest3 = Replace<'**foo', '*', '$', false>;
 
 type ReplaceTest4 = Replace<'**foo**', '*', '$'>;
 // '$$foo$$'
+```
+
+### Nesting
+
+```
+type WeirdString = '_g_e_tF_oo';
+
+// replace first _ with $
+// remove remaining _ chars
+type FirstOnlyReplaced = Replace<
+  Replace<WeirdString, '_', '$', false>,
+  '_',
+  ''
+>;
+
+// '$getFoo'
+```
+
+### `ReplaceIfFirst<Str, S, E>`
+
+```
+type ReplaceIfFirst<
+  Str extends string,
+  S extends string,
+  E extends string
+> =
+  Str extends `${S}${infer R}`
+    ? `${E}${R}`
+    : Str;
+
+type RIF1 = ReplaceIfFirst<'_foo', '_', '$'>;
+// '$foo
+type RIF2 = ReplaceIfFirst<'_foo', '%', '$'>;
+// '_foo'
+type RIF3 = ReplaceIfFirst<'%foo', '_', '$'>;
+// '%foo'
+type RIF4 = ReplaceIfFirst<'%foo', '_' | '%', '$'>;
+// '$foo'
+```
+
+* or:
+
+```
+type ReplaceIfFirst<
+  Str extends string,
+  S extends string,
+  E extends string
+> =
+  Replace<
+    Str,
+    Str extends `${S}${string}` ? S : never,
+    E,
+    false
+  >;
+
+type RIF1 = ReplaceIfFirst<'_foo', '_', '$'>;
+// '$foo
+type RIF2 = ReplaceIfFirst<'_foo', '%', '$'>;
+// '_foo'
+type RIF3 = ReplaceIfFirst<'%foo', '_', '$'>;
+// '%foo'
+type RIF4 = ReplaceIfFirst<'%foo', '_' | '%', '$'>;
+// '$foo'
 ```
 
 ## Replacing Object Keys
