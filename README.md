@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **231** Dev_Notes
+Currently: &nbsp; **232** Dev_Notes
 
 ---
 
@@ -205,6 +205,7 @@ Currently: &nbsp; **231** Dev_Notes
 
 * [Generate and Add SSH Key](git/generate-and-add-ssh-key.md)
 * [Add SSH identity](git/add-ssh-identity.md)
+* [Assume Unchanged](git/assume-unchanged.md)
 * [Empty commit](git/empty-commit.md)
 * [Update last commit](git/update-last-commit.md)
 * [Renaming Branch](git/rename-branch.md)
