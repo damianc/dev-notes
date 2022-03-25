@@ -104,7 +104,7 @@ type Obj = {
     somePropToRead: string;
 }
 
-type DG_Obj = Degetterize<Obx>;
+type DG_Obj = Degetterize<Obj>;
 // {
 //   foo: string;
 //   getBar: number;

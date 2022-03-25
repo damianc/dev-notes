@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **237** Dev_Notes
+Currently: &nbsp; **238** Dev_Notes
 
 ---
 
@@ -395,6 +395,7 @@ Currently: &nbsp; **237** Dev_Notes
 * [`ReverseStr<Str>` and `ReverseArr<Arr>`](typescript/types-from-types/reversestr-reversearr.md)
 * [`Join<Arr>` and `Split<Str>`](typescript/types-from-types/join-split.md)
 * [`TrimLeft<Str>`, `TrimRight<Str>` and `Trim<Str>`](typescript/types-from-types/trim-left-right.md)
+* [`CamelCase<Str>` and `KebabCase<Str>`](typescript/types-from-types/camelcase-kebabcase.md)
 * [`Getterize<T>` and `Degetterize<T>`](typescript/types-from-types/getterize-and-degetterize.md)
 
 # UI
