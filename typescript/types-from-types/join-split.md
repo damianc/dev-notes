@@ -29,7 +29,7 @@ type J4 = Join<[1, 'b', 3, 'd'], '-'>;
 // '1-b-3-d'
 ```
 
-## `Split<Arr, Sep>`
+## `Split<Str, Sep>`
 
 ```
 type Split<
