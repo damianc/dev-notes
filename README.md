@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **232** Dev_Notes
+Currently: &nbsp; **233** Dev_Notes
 
 ---
 
@@ -380,6 +380,7 @@ Currently: &nbsp; **232** Dev_Notes
 * [Generics](typescript/generics.md)
 * [Advanced Generics](typescript/advanced-generics.md)
 * [`Lowercase<T>`, `Uppercase<T>`, `Capitalize<T>` and `Uncapitalize<T>`](typescript/lowercase-uppercase-etc.md)
+* [`Extract` and `Exclude` with Template Literals](typescript/extract-exclude-template-literal.md)
 * [Utility Types](typescript/utility-types.md)
 * [Advanced Types](typescript/advanced-types.md)
 * [The `infer` Keyword](typescript/infer.md)
