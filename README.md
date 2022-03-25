@@ -393,7 +393,7 @@ Currently: &nbsp; **237** Dev_Notes
 * [`Replace<Str, S, E>`](typescript/types-from-types/replace.md)
 * [`Repeat<Str, N>`](typescript/types-from-types/repeat.md)
 * [`ReverseStr<Str>` and `ReverseArr<Arr>`](typescript/types-from-types/reversestr-reversearr.md)
-* [`Join<Arr>` and `Split<Arr>`](typescript/types-from-types/join-split.md)
+* [`Join<Arr>` and `Split<Str>`](typescript/types-from-types/join-split.md)
 * [`TrimLeft<Str>`, `TrimRight<Str>` and `Trim<Str>`](typescript/types-from-types/trim-left-right.md)
 * [`Getterize<T>` and `Degetterize<T>`](typescript/types-from-types/getterize-and-degetterize.md)
 

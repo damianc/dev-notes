@@ -1,4 +1,4 @@
-# `Join<Arr>` and `Split<Arr>`
+# `Join<Arr>` and `Split<Str>`
 
 ## `Join<Arr, Sep>`
 
