@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **239** Dev_Notes
+Currently: &nbsp; **240** Dev_Notes
 
 ---
 
@@ -264,6 +264,7 @@ Currently: &nbsp; **239** Dev_Notes
 ## FP
 
 * [`compose`](javascript/fp/compose.md)
+* Recursive Accumulator(javascript/fp/recursive-accumulator.md)
 
 # Nest.js
 
