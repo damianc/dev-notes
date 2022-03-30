@@ -38,7 +38,7 @@ Currently: &nbsp; **241** Dev_Notes
   - [ES6+](#es6)
   - [OOP](#oop)
   - [FP](#fp)
-  - Exotics(#exotics)
+  - [Exotics](#exotics)
 * [Nest.js](#nestjs)
 * [Node](#node)
 * [PHP](#php)
