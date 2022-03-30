@@ -264,7 +264,7 @@ Currently: &nbsp; **240** Dev_Notes
 ## FP
 
 * [`compose`](javascript/fp/compose.md)
-* Recursive Accumulator(javascript/fp/recursive-accumulator.md)
+* [Recursive Accumulator](javascript/fp/recursive-accumulator.md)
 
 # Nest.js
 
