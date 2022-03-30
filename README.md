@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **231** Dev_Notes
+Currently: &nbsp; **239** Dev_Notes
 
 ---
 
@@ -205,6 +205,7 @@ Currently: &nbsp; **231** Dev_Notes
 
 * [Generate and Add SSH Key](git/generate-and-add-ssh-key.md)
 * [Add SSH identity](git/add-ssh-identity.md)
+* [Assume Unchanged](git/assume-unchanged.md)
 * [Empty commit](git/empty-commit.md)
 * [Update last commit](git/update-last-commit.md)
 * [Renaming Branch](git/rename-branch.md)
@@ -379,6 +380,7 @@ Currently: &nbsp; **231** Dev_Notes
 * [Generics](typescript/generics.md)
 * [Advanced Generics](typescript/advanced-generics.md)
 * [`Lowercase<T>`, `Uppercase<T>`, `Capitalize<T>` and `Uncapitalize<T>`](typescript/lowercase-uppercase-etc.md)
+* [`Extract` and `Exclude` with Template Literals](typescript/extract-exclude-template-literal.md)
 * [Utility Types](typescript/utility-types.md)
 * [Advanced Types](typescript/advanced-types.md)
 * [The `infer` Keyword](typescript/infer.md)
@@ -388,7 +390,13 @@ Currently: &nbsp; **231** Dev_Notes
 
 ## Types From Types
 
+* [`StrLength<Str>` and `ArrLength<Arr>`](typescript/types-from-types/strlen-arrlen.md)
 * [`Replace<Str, S, E>`](typescript/types-from-types/replace.md)
+* [`Repeat<Str, N>`](typescript/types-from-types/repeat.md)
+* [`ReverseStr<Str>` and `ReverseArr<Arr>`](typescript/types-from-types/reversestr-reversearr.md)
+* [`Join<Arr>` and `Split<Str>`](typescript/types-from-types/join-split.md)
+* [`TrimLeft<Str>`, `TrimRight<Str>` and `Trim<Str>`](typescript/types-from-types/trim-left-right.md)
+* [`CamelCase<Str>` and `KebabCase<Str>`](typescript/types-from-types/camelcase-kebabcase.md)
 * [`Getterize<T>` and `Degetterize<T>`](typescript/types-from-types/getterize-and-degetterize.md)
 
 # UI
