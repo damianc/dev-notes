@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **240** Dev_Notes
+Currently: &nbsp; **241** Dev_Notes
 
 ---
 
@@ -38,6 +38,7 @@ Currently: &nbsp; **240** Dev_Notes
   - [ES6+](#es6)
   - [OOP](#oop)
   - [FP](#fp)
+  - Exotics(#exotics)
 * [Nest.js](#nestjs)
 * [Node](#node)
 * [PHP](#php)
@@ -265,6 +266,10 @@ Currently: &nbsp; **240** Dev_Notes
 
 * [`compose`](javascript/fp/compose.md)
 * [Recursive Accumulator](javascript/fp/recursive-accumulator.md)
+
+## Exotics
+
+* [8 Variants of the `for` Loop](javascript/exotics/eight-for-variants.md)
 
 # Nest.js
 
