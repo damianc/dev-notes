@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **241** Dev_Notes
+Currently: &nbsp; **242** Dev_Notes
 
 ---
 
@@ -270,6 +270,7 @@ Currently: &nbsp; **241** Dev_Notes
 ## Exotics
 
 * [8 Variants of the `for` Loop](javascript/exotics/eight-for-variants.md)
+* [Swap Variables](javascript/exotics/swap-variables.md)
 
 # Nest.js
 
