@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **242** Dev_Notes
+Currently: &nbsp; **243** Dev_Notes
 
 ---
 
@@ -158,7 +158,11 @@ Currently: &nbsp; **242** Dev_Notes
 * [Ellipsis at the end of too long text](css/long-text-ellipsis.md)
 * [Media Queries](css/media-queries.md)
 * [Named Grid Lines](css/named-grid-lines.md)
-* [SassScript Mixins](css/sassscript-mixins.md)
+
+## Scss
+
+* [`@each...in`](css/scss/each-in.md)
+* [SassScript Mixins](css/scss/sassscript-mixins.md)
 
 # Design Patterns
 
