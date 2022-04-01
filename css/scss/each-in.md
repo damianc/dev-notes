@@ -197,7 +197,7 @@ $space: (
   lg: (30 36)
 );
 
-@each $s,$vals in $space {
+@each $s, $vals in $space {
   .space-#{$s} {
     margin: list.nth($vals, 1) * 1px; // multiplication by 1px
     padding: #{list.nth($vals, 2)}px; // interpolation
