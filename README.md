@@ -24,6 +24,7 @@ Currently: &nbsp; **243** Dev_Notes
   - [Angular Routing](#angular-routing)
 * [Bash Apps](#bash-apps)
 * [CSS](#css)
+  - [Scss](#scss)
 * [Design Patterns](#design-patterns)
 * [Docker](#docker)
 * [Errors](#errors)
