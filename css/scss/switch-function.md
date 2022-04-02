@@ -4,13 +4,19 @@
 
 ```
 @function switch($value, $cases, $default: 0) {
+
   @each $case, $newValue in $cases {
-  @if $value == $case {
-    @return $newValue;
+
+    @if $value == $case {
+
+      @return $newValue;
+
+    }
+
   }
-  }
-  
+
   @return $default;
+
 }
 ```
 
