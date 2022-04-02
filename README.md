@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **243** Dev_Notes
+Currently: &nbsp; **244** Dev_Notes
 
 ---
 
@@ -163,6 +163,7 @@ Currently: &nbsp; **243** Dev_Notes
 ## Scss
 
 * [`@each...in`](css/scss/each-in.md)
+* [`@for` Loop](css/scss/for-loop.md)
 * [SassScript Mixins](css/scss/sassscript-mixins.md)
 
 # Design Patterns
