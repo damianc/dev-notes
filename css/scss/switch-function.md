@@ -9,6 +9,7 @@
       @return $newValue;
     }
   }
+  
   @return $default;
 }
 ```
@@ -34,6 +35,6 @@ output:
 
 ```
 .list-item {
-	padding-left: 20px;
+  padding-left: 20px;
 }
 ```
