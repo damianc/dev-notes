@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **247** Dev_Notes
+Currently: &nbsp; **248** Dev_Notes
 
 ---
 
@@ -165,6 +165,7 @@ Currently: &nbsp; **247** Dev_Notes
 
 * [`@each...in`](css/scss/each-in.md)
 * [`@for` Loop](css/scss/for-loop.md)
+* [If Conditions](css/scss/if-conditions.md)
 * [`switch` Function](css/scss/switch-function.md)
 * [Recursive Functions](css/scss/recursive-functions.md)
 * [SassScript Mixins](css/scss/sassscript-mixins.md)
