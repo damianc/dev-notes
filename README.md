@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **246** Dev_Notes
+Currently: &nbsp; **247** Dev_Notes
 
 ---
 
@@ -159,6 +159,7 @@ Currently: &nbsp; **246** Dev_Notes
 * [Ellipsis at the end of too long text](css/long-text-ellipsis.md)
 * [Media Queries](css/media-queries.md)
 * [Named Grid Lines](css/named-grid-lines.md)
+* [Paintlet](css/paintlet.md)
 
 ## Scss
 
