@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **248** Dev_Notes
+Currently: &nbsp; **249** Dev_Notes
 
 ---
 
@@ -168,6 +168,7 @@ Currently: &nbsp; **248** Dev_Notes
 * [If Conditions](css/scss/if-conditions.md)
 * [`switch` Function](css/scss/switch-function.md)
 * [Recursive Functions](css/scss/recursive-functions.md)
+* [RWD Mixins](css/scss/rwd-mixins.md)
 * [SassScript Mixins](css/scss/sassscript-mixins.md)
 
 # Design Patterns
