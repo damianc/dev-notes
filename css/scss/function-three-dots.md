@@ -79,10 +79,23 @@ prop: midpoint((x1:10, x2:20, y1:40, y2:20)...);
 // ok
 
 prop: midpoint(10, 40, (y2:20, x2:20)...);
+prop: midpoint((y2:20, x2:20)..., 10, 40);
 // ok
 
 prop: midpoint((y1:40, x1:10)..., 20, 20);
+prop: midpoint(20, 20, (y1:40, x1:10)...);
 // Error: Argument $x1 was passed both by position and by name.
+```
+
+* using named params:
+
+```
+prop: midpoint($x1:10, $y1:40, (x2:20, y2:20)...);
+prop: midpoint((x1:10, y1:40)..., $x2:20, $y2:20);
+prop: midpoint($x1:10, (x2:20, y1:40)..., $y2:20);
+
+prop: functionSumming6Numbers(a:1, b:2)..., $c:3, $d:4, (e:5, f:6)...);
+// ok too
 ```
 
 ## `...` in a Function Definition
