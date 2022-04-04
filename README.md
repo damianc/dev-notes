@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **250** Dev_Notes
+Currently: &nbsp; **251** Dev_Notes
 
 ---
 
@@ -168,6 +168,7 @@ Currently: &nbsp; **250** Dev_Notes
 * [`@while` Loop](css/scss/while-loop.md)
 * [If Conditions](css/scss/if-conditions.md)
 * [`switch` Function](css/scss/switch-function.md)
+* [`@function` and `...`](css/scss/function-three-dots.md)
 * [Recursive Functions](css/scss/recursive-functions.md)
 * [RWD Mixins](css/scss/rwd-mixins.md)
 * [SassScript Mixins](css/scss/sassscript-mixins.md)
