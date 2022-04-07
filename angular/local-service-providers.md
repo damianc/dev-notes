@@ -191,6 +191,8 @@ ANIMAL: No Animal
 
 ## `@SkipSelf` Decorator
 
+![Effect of the @SkipSelf() Decorator](/_img/angular/ng-providers-skip-self.png "@SkipSelf() Decorator")
+
 ### `zoo.component.ts`
 
 ```
