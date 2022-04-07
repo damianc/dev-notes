@@ -55,3 +55,5 @@ function produceItem(className, leftPos, topPos) {
 	return div;
 }
 ```
+
+![Distribution Examples](https://github.com/damianc/dev-notes/blob/master/_images/ui/circular-distribution-examples.png "Distribution Examples")
