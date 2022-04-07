@@ -191,7 +191,7 @@ ANIMAL: No Animal
 
 ## `@SkipSelf` Decorator
 
-![Effect of the @SkipSelf() Decorator](../_img/angular/ng-providers-skip-self.png "@SkipSelf() Decorator")
+![Effect of the @SkipSelf() Decorator](https://github.com/damianc/dev-notes/blob/master/_images/angular/ng-providers-skip-self.png "@SkipSelf() Decorator")
 
 ### `zoo.component.ts`
 
@@ -280,6 +280,8 @@ In other words, `@SkipSelf` makes the service providers accessible to the child 
 
 ## `@Self` Decorator
 
+![Effect of the @Self() Decorator](https://github.com/damianc/dev-notes/blob/master/_images/angular/ng-providers-self.png "@Self() Decorator")
+
 ### `zoo.component.ts`
 
 ```
@@ -366,6 +368,8 @@ The `Park` component does not have the service provider for `ANIMAL` and `@Self`
 The child component `Lake` is not affected by this behavior and uses the service provider from the `Zoo` component.
 
 ## `Host` Decorator
+
+![Effect of the @Host() Decorator](https://github.com/damianc/dev-notes/blob/master/_images/angular/ng-providers-host.png "@Host() Decorator")
 
 ### `zoo.component.ts`
 
