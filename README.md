@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **252** Dev_Notes
+Currently: &nbsp; **253** Dev_Notes
 
 ---
 
@@ -270,6 +270,7 @@ Currently: &nbsp; **252** Dev_Notes
 * [Typed Arrays](javascript/es6/typed-arrays.md)
 * [Proxy Traps](javascript/es6/proxy-traps.md)
 * [RegExp: named captured groups](javascript/es6/re-named-groups.md)
+* [`Symbol.match`](javascript/es6/symbol-match.md)
 
 ## OOP
 
