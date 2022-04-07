@@ -60,6 +60,8 @@ CSS.paintWorklet.addModule(
 
 ## Example: Dotted Pattern
 
+![CSS Paintlet: Dotted Pattern](https://github.com/damianc/dev-notes/blob/master/_images/css/paintlet-example.png "Dotted Pattern")
+
 ```
 class DottedPattern {
   static get inputProperties() {
