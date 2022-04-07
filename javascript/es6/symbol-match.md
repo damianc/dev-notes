@@ -32,6 +32,8 @@ class Matcher {
       case 'WORD':
         return target.match(/[a-z]+/ig);
     }
+
+    return null;
   }
 }
 
@@ -46,4 +48,7 @@ class Matcher {
 
 'ID: X12N90'.match(new Matcher('WORD'))
 // ['ID', 'X', 'N']
+
+'ID: X12N90'.match(new Matcher('FOOBAR'))
+// null
 ```
