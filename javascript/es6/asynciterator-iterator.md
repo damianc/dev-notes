@@ -30,7 +30,7 @@ for (let x of iters) console.log(x);
 // 3
 // 4
 
-for await (let x of iters) console.log(x)
+for await (let x of iters) console.log(x);
 // Async 1
 // Async 2
 // Async 3
