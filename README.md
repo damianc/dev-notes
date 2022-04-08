@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **255** Dev_Notes
+Currently: &nbsp; **256** Dev_Notes
 
 ---
 
@@ -271,6 +271,7 @@ Currently: &nbsp; **255** Dev_Notes
 * [Proxy Traps](javascript/es6/proxy-traps.md)
 * [RegExp: named captured groups](javascript/es6/re-named-groups.md)
 * [`Symbol.match`](javascript/es6/symbol-match.md)
+* [`Symbol.search`](javascript/es6/symbol-search.md)
 * [`Symbol.replace`](javascript/es6/symbol-replace.md)
 * [`Symbol.split`](javascript/es6/symbol-split.md)
 
