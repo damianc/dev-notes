@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **254** Dev_Notes
+Currently: &nbsp; **255** Dev_Notes
 
 ---
 
@@ -272,6 +272,7 @@ Currently: &nbsp; **254** Dev_Notes
 * [RegExp: named captured groups](javascript/es6/re-named-groups.md)
 * [`Symbol.match`](javascript/es6/symbol-match.md)
 * [`Symbol.replace`](javascript/es6/symbol-replace.md)
+* [`Symbol.split`](javascript/es6/symbol-split.md)
 
 ## OOP
 
