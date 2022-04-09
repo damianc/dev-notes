@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **258** Dev_Notes
+Currently: &nbsp; **259** Dev_Notes
 
 ---
 
@@ -287,6 +287,7 @@ Currently: &nbsp; **258** Dev_Notes
 
 ## Exotics
 
+* [Two-Way Maps](javascript/exotics/two-way-maps.md)
 * [8 Variants of the `for` Loop](javascript/exotics/eight-for-variants.md)
 * [Swap Variables](javascript/exotics/swap-variables.md)
 
