@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **259** Dev_Notes
+Currently: &nbsp; **258** Dev_Notes
 
 ---
 
@@ -253,7 +253,6 @@ Currently: &nbsp; **259** Dev_Notes
 # JavaScript
 
 * [`reduce()` Uses](javascript/reduce-uses.md)
-* [Reduce Array to HTML Markup](javascript/reduce-array-to-html-markup.md)
 * [Enumerating Properties](javascript/enumerating-properties.md)
 * [`this` reference](javascript/this-reference.md)
 * [`match()` vs. `exec()`](javascript/match-vs-exec.md)
