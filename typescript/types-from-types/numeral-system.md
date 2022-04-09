@@ -95,7 +95,7 @@ type ResTwoDots = $$NumToDots<$$DotsToNum<'..'>>;
 ## `Sum<A, B>` and `Diff<A, B>` with Numeral System
 
 ```
-type NSum<A extends number, B extends number> =
+type Sum<A extends number, B extends number> =
   $$DotsToNum<
     `${$$NumToDots<A>}${$$NumToDots<B>}`
   >;
