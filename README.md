@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **256** Dev_Notes
+Currently: &nbsp; **257** Dev_Notes
 
 ---
 
@@ -415,6 +415,7 @@ Currently: &nbsp; **256** Dev_Notes
 
 ## Types From Types
 
+* [Numeral System](typescript/types-from-types/numeral-system.md)
 * [`StrLength<Str>` and `ArrLength<Arr>`](typescript/types-from-types/strlen-arrlen.md)
 * [`Replace<Str, S, E>`](typescript/types-from-types/replace.md)
 * [`Repeat<Str, N>`](typescript/types-from-types/repeat.md)
