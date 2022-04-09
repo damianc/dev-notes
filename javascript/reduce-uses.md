@@ -376,21 +376,24 @@ function items(arrsArr, mode = 'common') {
         } else if (mode === 'unique') {
           return v.join().indexOf(',') === -1;
         }
-      }).map(([k, v]) => k);
+      }).map(([k, v]) => +k == k ? +k : k);
     } else {
       return [update, idxEnumed];
     }
   }, [{}, []]);
 }
 
-const arrs = [ [1, 2, 3, 4], [2, 2, 8, 4], [4, 12, 20] ];
 
-items(arrs)
-// ['4']
+const numArrs = [ [1, 2, 3, 4], [2, 2, 8, 4], [4, 12, 20] ];
 
-items(arrs, 'common')
-// ['4']
+items(numArrs) // [4]
+items(numArrs, 'common') // [4]
+items(numArrs, 'unique') // [1, 3, 8, 12, 20]
 
-items(arrs, 'unique')
-// ['1', '3', '8', '12', '20']
+
+const charArrs = [ ['a', 'b'], ['b', 'c'] ];
+
+items(charArrs) // ['b']
+items(charArrs, 'common') // ['b']
+items(charArrs, 'unique') // ['a', 'c']
 ```
