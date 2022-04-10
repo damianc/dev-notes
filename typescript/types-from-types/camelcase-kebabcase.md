@@ -25,6 +25,8 @@ type CC6 = CamelCase<'a-bc-de-f'>;
 ##  `KebabCase<Str>`
 
 ```
+type LTR = 'A'|'B'|'C'|'D'|'E'|'F'|'G'|'H'|'I'|'J'|'K'|'L'|'M'|'N'|'O'|'P'|'Q'|'R'|'S'|'T'|'U'|'V'|'W'|'X'|'Y'|'Z';
+
 type KebabCase<
   T extends string,
   Q extends string = ''
