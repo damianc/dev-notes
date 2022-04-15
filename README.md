@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **260** Dev_Notes
+Currently: &nbsp; **261** Dev_Notes
 
 ---
 
@@ -369,6 +369,7 @@ Currently: &nbsp; **260** Dev_Notes
 * [`UNION`](sql/union.md)
 * [Types of Join](sql/types-of-join.md)
 * [`CREATE TABLE`](sql/create-table.md)
+* [Stored Function](sql/stored-function.md)
 * [Create table with a struct of another - `CREATE TABLE...LIKE`](sql/create-table-like-another.md)
 * [Create table with a query - `CREATE TABLE...SELECT`](sql/create-table-with-query.md)
 * [Triggers](sql/triggers.md)
