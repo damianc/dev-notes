@@ -8,6 +8,10 @@
 | used in expressions | called with `CALL` command |
 | must return value | don't return value (still can assign values to `OUT`/`INOUT` parameters) |
 
+Both stored function and triggers can't:
+* contain dynamic SQL (prepared statements)
+* be recursive function
+
 ## Implementation and Use
 
 * implementation:
