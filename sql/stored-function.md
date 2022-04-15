@@ -1,6 +1,16 @@
 # Stored Function
 
-* implementation
+## Function vs Procedure
+
+| Function | Procedure |
+|--|--|
+| cannot alter data | can alter data (unless called by a stored function) |
+| used in expressions | called with `CALL` command |
+| must return value | don't return value (still can assign values to `OUT`/`INOUT` parameters) |
+
+## Implementation and Use
+
+* implementation:
 
 ```
 delimiter $
@@ -12,7 +22,7 @@ end
 delimiter ;
 ```
 
-* use
+* use:
 
 ```
 SELECT name, dob, salary, taxed(salary, null) as salary_net
@@ -24,9 +34,88 @@ SELECT name, class, savings, taxed(savings, 5) as savings_net
 FROM students;
 ```
 
-## Keywords Spelling
+## Using Variables
 
-Keywords (like `create`, `function`, `float`, `return` or `end`) can consist of both lowercase and uppercase chars in any combination: all of `set`, `SET`, `Set` and even `sET` are proper. It also applies to `ifnull()` and other built-in functions.
+* custom variables must be declared with `DECLARE <name> <type> [default <value>]`
+
+```
+create function taxed (amount float, tax float) returns float
+begin
+  declare taxed float default 0;
+
+  set tax = ifnull(tax, 23);
+  set taxed = 1 + (tax / 100);
+
+  return amount / taxed;
+end
+```
+
+## Function Reading SQL Data
+
+```
+delimiter $
+create function not_mine_cash (my_cash float)
+returns float
+reads sql data
+begin
+  return (SELECT SUM(cash) - my_cash FROM students);
+  # or: return (SELECT SUM(cash) FROM students) - my_cash;
+  # or even: return (SELECT (SELECT sum(cash) from students) - my_cash);
+end
+delimiter ;
+```
+
+```
+SELECT name, cash, not_mine_cash(cash) AS others_cash FROM students;
+```
+
+### `SELECT ... INTO <variable>`
+
+```
+begin
+  declare sum float default 0;
+
+  SELECT sum(cash) FROM students into sum;
+  # or: SELECT sum(cash) into sum FROM students;
+
+  return sum;
+end
+```
+
+the code above conceptually equals the following:
+
+```
+begin
+  declare sum float default 0;
+
+  set sum = (SELECT sum(cash) FROM students);
+
+  return sum;
+end
+```
+
+## Standalone Function
+
+```
+delimiter $
+create function all_cash ()
+returns float
+reads sql data
+begin
+  return (SELECT SUM(cash) FROM students);
+end
+delimiter ;
+```
+
+```
+SELECT all_cash() AS all_cash;
+```
+
+## Syntax Details
+
+### Keywords Spelling
+
+Keywords (like `create`, `function`, `float`, `return` or `end`) can consist of both lowercase and uppercase chars in any combination: all of `set`, `SET`, `Set` and even `sET` are proper. It also applies to `ifnull()` and other functions (both built-in and custom).
 
 ```
 Delimiter $
@@ -38,11 +127,11 @@ End
 Delimiter ;
 ```
 
-## Simple Functions
+### `BEGIN...END` in Simple Functions
 
 Simple functions can omit `begin...end` keywords:
 
 ```
-create function number_of_hundreds(n float) returns int
-return floor(n / 100);
+create function square(n int) returns int
+return n * n;
 ```
