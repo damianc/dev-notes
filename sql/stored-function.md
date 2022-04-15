@@ -113,6 +113,21 @@ SELECT all_cash() AS all_cash;
 
 ## Syntax Details
 
+```
+CREATE FUNCTION [IF NOT EXISTS]
+sf_name (
+  param_name type
+  ...
+)
+RETURNS type
+[ COMMENT 'string' ]
+[ LANGUAGE SQL ]
+[ [NOT] DETERMINISTIC ]
+[ (CONTAINS|NO) SQL | (READS|MODIFIES) SQL DATA ]
+[ SQL SECURITY (DEFINER | INVOKER) ]
+routine_body
+```
+
 ### Keywords Spelling
 
 Keywords (like `create`, `function`, `float`, `return` or `end`) can consist of both lowercase and uppercase chars in any combination: all of `set`, `SET`, `Set` and even `sET` are proper. It also applies to `ifnull()` and other functions (both built-in and custom).
