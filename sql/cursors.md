@@ -134,3 +134,91 @@ begin
 ```
 CALL add_age_prefix();
 ```
+
+## Example 4: Nested Cursors
+
+```
+delimiter $
+create procedure who_has_more_money (
+  inout res text
+)
+begin
+  declare lv1_done int default false;
+  declare lv1_name text;
+  declare lv1_cash float;
+
+  declare lv1_cur cursor for select name, cash from men;
+  declare continue handler for not found set lv1_done = true;
+
+  open lv1_cur;
+
+  lv1: loop
+    fetch lv1_cur into lv1_name, lv1_cash;
+    if lv1_done then
+      leave lv1;
+    end if;
+  
+    set res = concat(
+      res,
+      ' > ',
+      lv1_name,
+      ' has less cash than: '
+    );
+  
+    block_lv2: begin
+      declare lv2_done int default false;
+      declare lv2_name text;
+      declare lv2_cash float;
+      declare lv2_name_list text default '';
+
+      declare lv2_cur cursor for select name, cash from men;
+      declare continue handler for not found set lv2_done = true;
+
+      open lv2_cur;
+      
+      lv2: loop
+        fetch lv2_cur into lv2_name, lv2_cash;
+        if lv2_done then
+          set lv2_done = false;
+          close lv2_cur;
+          leave lv2;
+        end if;
+      
+        if (lv1_cash < lv2_cash) then
+          set lv2_name_list = concat(
+            lv2_name_list,
+            lv2_name,
+            ', '
+          );
+        end if;
+      end loop lv2;
+    
+      if lv2_name_list = '' then
+        set lv2_name_list = 'nobody';
+      end if;
+    
+      set res = concat(
+        res,
+        ' ',
+        lv2_name_list
+      );
+    end block_lv2;
+  end loop lv1;
+end
+delimiter ;
+```
+
+```
+set @richer = '';
+call who_has_more_money(@richer);
+select @richer;
+```
+
+example output may be:
+
+```
+> John has less cash than: nobody
+> Mark has less cash than: John, Adam, Eva,
+> Adam has less cash than: John,
+> Eva has less cash than: John, Adam,
+```
