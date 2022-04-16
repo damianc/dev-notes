@@ -21,7 +21,7 @@ create procedure apply_interest(
 )
 MODIFIES SQL DATA
 begin
-  UPDATE men SET cash = cash * (1 + interest / 100);
+  UPDATE customers SET cash = cash * (1 + interest / 100);
 end
 delimiter ;
 ```
@@ -52,7 +52,7 @@ BEGIN
         SET date = CURDATE() + INTERVAL 1 YEAR;
   END CASE;
 
-  UPDATE men SET exp = date WHERE id = user_id;
+  UPDATE subscribers SET exp = date WHERE id = user_id;
 END
 DELIMITER ;
 ```
@@ -80,7 +80,7 @@ begin
 
   set @s = 1 + interest / 100;
   set @q = concat(
-    'update men set cash = cash * ? ',
+    'update customers set cash = cash * ? ',
     if(person_id is null, '', concat('where id = ', person_id))
   );
 
@@ -114,7 +114,7 @@ delimiter $
 create procedure all_cash(out amount float)
 reads sql data
 begin
-  SELECT sum(cash) INTO amount FROM students;
+  SELECT sum(cash) INTO amount FROM customers;
 end
 delimiter ;
 ```
