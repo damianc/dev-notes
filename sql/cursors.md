@@ -1,5 +1,31 @@
 # Cursors in Stored Procedure
 
+## Steps
+
+* declare a cursor (the cursor declaration must be after any variable declaration):
+
+```
+DECLARE <cursor_name> CURSOR FOR <select_stmt>;
+```
+
+* open the cursor:
+
+```
+OPEN <cursor_name>;
+```
+
+* retrieve the next row pointed by the cursor and move the cursor to the next row in the result set:
+
+```
+FETCH [[NEXT] FROM] <cursor_name> INTO <variables_list>;
+```
+
+* deactivate the cursor and release the memory associated with it:
+
+```
+CLOSE <cursor_name>;
+```
+
 ## Example 1: Collect Names into Semicolon-separated List
 
 ```
@@ -235,4 +261,33 @@ example output:
 > Mark has less cash than: John, Adam, Eva,
 > Adam has less cash than: John,
 > Eva has less cash than: John, Adam,
+```
+
+## Cursor Handlers
+
+* single handler:
+
+```
+DECLARE cur CURSOR FOR SELECT name FROM table;
+
+DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+```
+
+* multiple handlers for different states:
+
+```
+DECLARE cur CURSOR FOR SELECT name FROM table;
+
+DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = true;
+DECLARE CONTINUE HANDLER FOR SQLSTATE '23000' SET done = true;
+```
+
+* multiple handlers both by description and by SQL state:
+
+```
+DECLARE cur CURSOR FOR SELECT name FROM table;
+
+DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = true;
+DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = true;
+DECLARE CONTINUE HANDLER FOR SQLSTATE '23000' SET done = true;
 ```
