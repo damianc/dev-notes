@@ -371,7 +371,7 @@ Currently: &nbsp; **263** Dev_Notes
 * [`CREATE TABLE`](sql/create-table.md)
 * [Stored Function](sql/stored-function.md)
 * [Stored Procedure](sql/stored-procedure.md)
-* [Cursors in Stored Procedure](sql/cursor.md)
+* [Cursors in Stored Procedure](sql/cursors.md)
 * [Triggers](sql/triggers.md)
 * [Create table with a struct of another - `CREATE TABLE...LIKE`](sql/create-table-like-another.md)
 * [Create table with a query - `CREATE TABLE...SELECT`](sql/create-table-with-query.md)
