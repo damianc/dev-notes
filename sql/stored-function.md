@@ -7,10 +7,8 @@
 | cannot alter data | can alter data (unless called by a stored function) |
 | used in expressions | called with `CALL` command |
 | must return value | don't return value (still can assign values to `OUT`/`INOUT` parameters) |
-
-Both stored function and triggers can't:
-* contain dynamic SQL (prepared statements)
-* be recursive function
+| can't contain prepared statements | can contain prepared statements |
+| can't be recursive function | can be recursive function |
 
 ## Implementation and Use
 
@@ -127,7 +125,7 @@ RETURNS type
 [ COMMENT 'string' ]
 [ LANGUAGE SQL ]
 [ [NOT] DETERMINISTIC ]
-[ (CONTAINS|NO) SQL | (READS|MODIFIES) SQL DATA ]
+[ (CONTAINS | NO) SQL | READS SQL DATA ]
 [ SQL SECURITY (DEFINER | INVOKER) ]
 routine_body
 ```
