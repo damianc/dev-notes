@@ -37,6 +37,12 @@ CALL list_name(@name_list);
 SELECT @name_list;
 ```
 
+example output:
+
+```
+Eva;Adam;Mark;John;
+```
+
 ### Notes
 
 * characteristic `reads/modifies sql data` is optional
@@ -88,6 +94,14 @@ SET @cash = 0;
 SET @num = 0;
 CALL stats(@cash, @num);
 SELECT @cash, @num;
+```
+
+example output:
+
+```
+| @cash    | @num     |
+|----------|----------|
+| 1619.74  | 4        |
 ```
 
 ## Example 3: Add Age-Wise Prefix to Name
@@ -214,7 +228,7 @@ call who_has_more_money(@richer);
 select @richer;
 ```
 
-example output may be:
+example output:
 
 ```
 > John has less cash than: nobody
