@@ -143,6 +143,40 @@ SELECT @x AS x;
 # x -> 14
 ```
 
+## Loop
+
+```
+delimiter $
+create procedure seq (
+  in init int,
+  in target int,
+  out res text
+)
+begin
+  declare seq text default '';
+  
+  lp: LOOP
+    set seq = concat(seq, ' ', init);
+    set init = init + 1;
+
+    if init > target then
+      leave lp;
+    end if;
+
+  end loop lp;
+  set res = seq;
+end
+delimiter ;
+```
+
+```
+set @seq = '';
+call seq(4, 10, @seq);
+select @seq;
+
+# 4 5 6 7 8 9 10
+```
+
 ## Syntax Details
 
 ```
