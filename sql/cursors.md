@@ -31,6 +31,12 @@ begin
  delimiter ;
 ```
 
+```
+SET @name_list = '';
+CALL list_name(@name_list);
+SELECT @name_list;
+```
+
 ### Notes
 
 * characteristic `reads/modifies sql data` is optional
@@ -77,6 +83,13 @@ end
 delimiter ;
 ```
 
+```
+SET @cash = 0;
+SET @num = 0;
+CALL stats(@cash, @num);
+SELECT @cash, @num;
+```
+
 ## Example 3: Add Age-Wise Prefix to Name
 
 Precede name with:
@@ -116,4 +129,8 @@ begin
   close cur;
  end
  delimiter ;
+```
+
+```
+CALL add_age_prefix();
 ```
