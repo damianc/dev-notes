@@ -12,7 +12,7 @@ begin
   declare is_done integer default 0;
   declare s_name varchar(100) default '';
   
-  declare stud_cursor cursor for select name from men;
+  declare stud_cursor cursor for select name from students;
   declare continue handler for not found set is_done = 1;
   
   open stud_cursor;
@@ -62,7 +62,7 @@ begin
   declare done int default false;
   declare amount float default 0;
   
-  declare cur cursor for select cash from men;
+  declare cur cursor for select cash from savings;
   declare continue handler for NOT FOUND set done = true;
   
   open cur;
@@ -105,7 +105,7 @@ begin
   declare c_id, c_age int;
   declare prefix varchar(12);
   
-  declare cur cursor for select id, age from men;
+  declare cur cursor for select id, age from employees;
   declare continue handler for not found set done = 1;
   
   open cur;
@@ -147,7 +147,7 @@ begin
   declare lv1_name text;
   declare lv1_cash float;
 
-  declare lv1_cur cursor for select name, cash from men;
+  declare lv1_cur cursor for select name, cash from savings;
   declare continue handler for not found set lv1_done = true;
 
   open lv1_cur;
@@ -171,7 +171,7 @@ begin
       declare lv2_cash float;
       declare lv2_name_list text default '';
 
-      declare lv2_cur cursor for select name, cash from men;
+      declare lv2_cur cursor for select name, cash from savings;
       declare continue handler for not found set lv2_done = true;
 
       open lv2_cur;
