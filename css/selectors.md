@@ -30,7 +30,7 @@
 | `[src$=pdf]` | contain `src` attribute whose value ends with `pdf` |
 | `[src*=avatar]` | contain `src` attribute whose value contains `avatar` |
 | `[title~=table]` | contain `title` attribute whose value contains `table` word (with spaces on both sides) |
-| `[src|=medium]` | contain `src` attribute whose value equals `medium` or starts with `medium-` |
+| `[src\|=medium]` | contain `src` attribute whose value equals `medium` or starts with `medium-` |
 
 ### Examples
 
