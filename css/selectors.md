@@ -4,6 +4,7 @@
 
 | Selector | Matches Elements... |
 |--|--|
+| `*` | any element |
 | `div` | by element name |
 | `#id` | by element id |
 | `.foo` | by element class name |
