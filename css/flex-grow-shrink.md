@@ -1,4 +1,10 @@
-# `flex-grow` and `flex-shrink`
+# `flex-grow`, `flex-shrink` and `flex-basis`
+
+## Shorthand
+
+```
+flex: <grow = 0> <shrink = 1> <basis>;
+```
 
 ## `flex-grow`
 
@@ -25,3 +31,7 @@
 * `flex-shrink: 3` cuts item by 3 slices of extra space
 
 ![Flex items cut in a ratio of 1:3:1](https://github.com/damianc/dev-notes/blob/master/_images/css/flex-shrink-03.png "Flex items cut in a ratio of 1:3:1")
+
+## `flex-basis` vs `width`
+
+![flex-basis vs width property](https://github.com/damianc/dev-notes/blob/master/_images/css/flex-basis.png "flex-basis vs width property")
