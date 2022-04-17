@@ -16,7 +16,7 @@ import { PermissionsService } from '@services/permissions.service';
 @Injectable({
   providedIn: 'root'
 })
-export class RoleGuardService implements CanActivate {
+export class ExampleModulePermsGuardService implements CanActivate {
   constructor(
     private permissions: PermissionsService
   ) {}
@@ -35,7 +35,7 @@ export class RoleGuardService implements CanActivate {
 const routes: Routes = [
   {
     path: '',
-    canActivate: [RoleGuardService],
+    canActivate: [ExampleModulePermsGuardService],
     data: {
       expectedPermissionCode: 'ExampleModule.ExamplePermission'
     }
