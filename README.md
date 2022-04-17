@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **264** Dev_Notes
+Currently: &nbsp; **265** Dev_Notes
 
 ---
 
@@ -159,6 +159,7 @@ Currently: &nbsp; **264** Dev_Notes
 * [Prevent Line-Break in a Table](css/prevent-line-break-in-table.md)
 * [Ellipsis at the end of too long text](css/long-text-ellipsis.md)
 * [Media Queries](css/media-queries.md)
+* [`flex-grow` and `flex-shrink`](css/flex-grow-shrink.md)
 * [Grid Named Lines and Areas](css/grid-lines-and-areas.md)
 * [Paintlet](css/paintlet.md)
 
