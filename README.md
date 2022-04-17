@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **265** Dev_Notes
+Currently: &nbsp; **266** Dev_Notes
 
 ---
 
@@ -128,6 +128,7 @@ Currently: &nbsp; **265** Dev_Notes
 * [Add Params to Current URL](angular/routing/add-params-to-current-url.md)
 * [Route Data](angular/routing/route-data.md)
 * [Route Children](angular/routing/route-children.md)
+* [Routing Guards](angular/routing/guards.md)
 * [Named Outlets](angular/routing/named-outlets.md)
 * [Highlight Active Route](angular/routing/highlight-active-route.md)
 * [Lazy Loading a Module](angular/routing/lazy-loading-module.md)
