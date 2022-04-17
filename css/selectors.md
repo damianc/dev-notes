@@ -2,7 +2,7 @@
 
 ## General Selectors
 
-| Selector | Matches Elements that... |
+| Selector | Matches Elements... |
 |--|--|
 | `div` | by element name |
 | `#id` | by element id |
