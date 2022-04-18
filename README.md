@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **267** Dev_Notes
+Currently: &nbsp; **268** Dev_Notes
 
 ---
 
@@ -136,6 +136,7 @@ Currently: &nbsp; **267** Dev_Notes
 
 ## HTTP
 
+* [`HttpRequest`](angular/http/http-request.md)
 * [`HttpContext`](angular/http/http-context.md)
 * [Download File Returned from API with `file-saver`](angular/http/download-file-from-api-with-file-saver.md)
 
