@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **271** Dev_Notes
+Currently: &nbsp; **272** Dev_Notes
 
 ---
 
@@ -96,6 +96,7 @@ Currently: &nbsp; **271** Dev_Notes
 * [Assignment vs. `as` in Structural Directive](angular/assignment-as-in-structural-directive.md)
 * [Structural Directive: One \*Attribute instead of [Two]](angular/two-attrs-into-one.md)
 * [`[ngTemplateOutlet]` vs. `*ngTemplateOutlet`](angular/ng-template-outlet.md)
+* [`Renderer2`](angular/renderer2.md)
 * [`ngIf` Implementation](angular/ngif-implementation.md)
 * [`ngFor` Implementation](angular/ngfor-implementation.md)
 * [Diff Monitoring: Array](angular/array-monitoring-tools.md)
