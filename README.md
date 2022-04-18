@@ -132,7 +132,7 @@ Currently: &nbsp; **268** Dev_Notes
 * [Named Outlets](angular/routing/named-outlets.md)
 * [Highlight Active Route](angular/routing/highlight-active-route.md)
 * [Lazy Loading a Module](angular/routing/lazy-loading-module.md)
-* [Navigation Events](angular/routing/navigation-events.md)
+* [Router Events](angular/routing/router-events.md)
 
 ## HTTP
 
