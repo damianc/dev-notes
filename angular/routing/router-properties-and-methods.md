@@ -49,18 +49,25 @@ constructor(
 ## Related Specs
 
 * [`ChildrenOutletContexts`](#childrenoutletcontexts-class)
+* [`ComponentRef<C>`](#componentrefc-abstract-class)
 * [`IsActiveMatchOptions`](#isactivematchoptions-interface)
 * [`Location`](#location-class)
 * [`Navigation`](#navigation-interface)
 * [`NavigationBehaviorOptions`](#navigationbehavioroptions-interface)
 * [`NavigationExtras`](#navigationextras-interface)
 * [`OutletContext`](#outletcontext-class)
+* [`ParamMap`](#parammap-interface)
 * [`PopStateEvent`](#popstateevent-interface)
 * [`Route`](#route-interface)
+* [`RouteReuseStrategy`](#routereusestrategy-abstract-class)
 * [`RouterOutletContract`](#routeroutletcontract-interface)
 * [`SubscriptionLike`](#subscriptionlike-interface-rxjs)
 * [`UrlCreationOptions`](#urlcreationoptions-interface)
+* [`UrlHandlingStrategy`](#urlhandlingstrategy-abstract-class)
+* [`UrlSegment`](#urlsegment-class)
+* [`UrlSegmentGroup`](#urlsegmentgroup-class)
 * [`UrlSerializer`](#urlserializer-abstract-class)
+* [`UrlTree`](#urltree-class)
 
 ### `ChildrenOutletContexts` [class]
 
@@ -70,6 +77,17 @@ constructor(
 * `onOutletReAttached(contexts: Map<string, OutletContext>)`
 * `getOrCreateContext(childName: string): OutletContext`
 * `getContext(childName: string): OutletContext | null`
+
+### `ComponentRef<C>` [abstract class]
+
+* `location: ElementRef`
+* `injector: Injector`
+* `instance: C`
+* `hostView: ViewRef`
+* `changeDetectorRef: ChangeDetectorRef`
+* `componentType: Type<any>`
+* `destroy(): void`
+* `onDestroy(callback: Function): void`
 
 ### `IsActiveMatchOptions` [interface]
 
@@ -136,6 +154,13 @@ constructor(
 * `children: ChildrenOutletContexts`
 * `attachRef: ComponentRef<any> | null`
 
+### `ParamMap` [interface]
+
+* `keys: string[]`
+* `has(name: string): boolean`
+* `get(name: string): string | null`
+* `getAll(name: string): string[]`
+
 ### `PopStateEvent` [interface]
 
 * `pop?: boolean`
@@ -160,6 +185,16 @@ constructor(
 * `children?: Route[]`
 * `loadChildren?: () => Type<any> | NgModuleFactory<any> | Observable<Type<any>> | Promise<NgModuleFactory<any> | Type<any> | any>`
 * `runGuardsAndResolvers?: 'pathParamsChange' | 'pathParamsOrQueryParamsChange' | 'paramsChange' | 'paramsOrQueryParamsChange' | 'always' | ((from: ActivatedRouteSnapshot, to: ActivatedRouteSnapshot) => boolean)`
+
+### `RouteReuseStrategy` [abstract class]
+
+* `shouldDetach(route: ActivatedRouteSnapshot): boolean`
+* `store(route: ActivatedRouteSnapshot, handle: DetachedRouteHandle): void`
+* `shouldAttach(route: ActivatedRouteSnapshot): boolean`
+* `retrieve(route: ActivatedRouteSnapshot): DetachedRouteHandle | null`
+* `shouldReuseRoute(future: ActivatedRouteSnapshot, curr: ActivatedRouteSnapshot): boolean`
+
+> `DetachedRouteHandle` type represents the detached route tree (`{}`)
 
 ### `RouterOutletContract` [interface]
 
@@ -191,7 +226,39 @@ constructor(
 * `queryParamsHandling?: 'merge' | 'preserve' | '' | null`
 * `preserveFragment?: boolean`
 
+### `UrlHandlingStrategy` [abstract class]
+
+> used for migration AngularJS -> Angular
+
+* `shouldProcessUrl(url: UrlTree): boolean`
+* `extract(url: UrlTree): UrlTree`
+* `merge(newUrlPart: UrlTree, rawUrl: UrlTree): UrlTree`
+
+### `UrlSegment` [class]
+
+* `path: string`
+* `parameters: {[name: string]: string}`
+* `parameterMap: ParamMap`
+* `toString(): string`
+
+### `UrlSegmentGroup` [class]
+
+* `parent: UrlSegmentGroup | null`
+* `segments: UrlSegment[]`
+* `children: {[key: string]: UrlSegmentGroup}`
+* `numberOfChildren: number`
+* `hasChildren(): boolean`
+* `toString(): string`
+
 ### `UrlSerializer` [abstract class]
 
 * `parse(url: string): UrlTree`
 * `serialize(tree: UrlTree): string`
+
+### `UrlTree` [class]
+
+* `root: UrlSegmentGroup`
+* `queryParams: Params`
+* `fragment: string | null`
+* `queryParamMap: ParamMap`
+* `toString(): string`
