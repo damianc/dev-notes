@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **272** Dev_Notes
+Currently: &nbsp; **273** Dev_Notes
 
 ---
 
@@ -106,6 +106,7 @@ Currently: &nbsp; **272** Dev_Notes
 ## Forms
 
 * [Conditional Validators](angular/forms/conditional-validators.md)
+* [Custom Form Control](angular/forms/custom-form-control.md)
 
 ## NgRx
 
