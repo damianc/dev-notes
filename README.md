@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **270** Dev_Notes
+Currently: &nbsp; **271** Dev_Notes
 
 ---
 
@@ -140,6 +140,7 @@ Currently: &nbsp; **270** Dev_Notes
 
 * [`HttpRequest`](angular/http/http-request.md)
 * [`HttpContext`](angular/http/http-context.md)
+* [Interceptors](angular/http/interceptors.md)
 * [Download File Returned from API with `file-saver`](angular/http/download-file-from-api-with-file-saver.md)
 
 # Bash Apps
