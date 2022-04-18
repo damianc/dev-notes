@@ -60,7 +60,7 @@ constructor(private route: ActivatedRoute) {
 ## In-line Resolver Function
 
 ```
-export const book: Book= { ... };
+export const book: Book = { ... };
 
 @NgModule({
   imports: [
