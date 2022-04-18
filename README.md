@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **266** Dev_Notes
+Currently: &nbsp; **267** Dev_Notes
 
 ---
 
@@ -22,6 +22,7 @@ Currently: &nbsp; **266** Dev_Notes
   - [NgRx](#ngrx)
   - [Pipes](#pipes)
   - [Angular Routing](#angular-routing)
+  - [HTTP](#http)
 * [Bash Apps](#bash-apps)
 * [CSS](#css)
   - [Scss](#scss)
@@ -82,7 +83,6 @@ Currently: &nbsp; **266** Dev_Notes
 * [Service Provider](angular/service-provider.md)
 * [Local Service Providers](angular/local-service-providers.md)
 * [Angular Modules](angular/modules.md)
-* [Download File Returned from API with `file-saver`](angular/download-file-from-api-with-file-saver.md)
 * [Animations](angular/animations.md)
 * [Animation Details](angular/animation-details.md)
 
@@ -133,6 +133,11 @@ Currently: &nbsp; **266** Dev_Notes
 * [Highlight Active Route](angular/routing/highlight-active-route.md)
 * [Lazy Loading a Module](angular/routing/lazy-loading-module.md)
 * [Navigation Events](angular/routing/navigation-events.md)
+
+## HTTP
+
+* [`HttpContext`](angular/http/http-context.md)
+* [Download File Returned from API with `file-saver`](angular/http/download-file-from-api-with-file-saver.md)
 
 # Bash Apps
 
