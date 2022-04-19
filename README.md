@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **273** Dev_Notes
+Currently: &nbsp; **274** Dev_Notes
 
 ---
 
@@ -38,6 +38,7 @@ Currently: &nbsp; **273** Dev_Notes
 * [HTML5 APIs](#html5-apis)
 * [JavaScript](#javascript)
   - [ES6+](#es6)
+  - [RegExp](#regexp)
   - [OOP](#oop)
   - [FP](#fp)
   - [Exotics](#exotics)
@@ -266,12 +267,10 @@ Currently: &nbsp; **273** Dev_Notes
 
 # JavaScript
 
+* [`mouseenter`, `mouseover`, `mousemove`, `mouseleave` and `mouseout`](javascript/mouse-events.md)
 * [`reduce()` Uses](javascript/reduce-uses.md)
 * [Enumerating Properties](javascript/enumerating-properties.md)
 * [`this` reference](javascript/this-reference.md)
-* [`match()` vs. `exec()` and RegExp with/without the `g` Flag](javascript/match-vs-exec-g.md)
-* [`$` in the `replace()` Function](javascript/regexp-dollar-in-replace.md)
-* [RegExp Related Symbols](javascript/regexp-related-symbols.md)
 * [`BigInt`](javascript/bigint.md)
 
 ## ES6+
@@ -283,11 +282,17 @@ Currently: &nbsp; **273** Dev_Notes
 * [export and import](javascript/es6/export-and-import.md)
 * [Typed Arrays](javascript/es6/typed-arrays.md)
 * [Proxy Traps](javascript/es6/proxy-traps.md)
-* [RegExp: named captured groups](javascript/es6/re-named-groups.md)
 * [`Symbol.match`](javascript/es6/symbol-match.md)
 * [`Symbol.search`](javascript/es6/symbol-search.md)
 * [`Symbol.replace`](javascript/es6/symbol-replace.md)
 * [`Symbol.split`](javascript/es6/symbol-split.md)
+
+## RegExp
+
+* [RegExp: named captured groups](javascript/es6/re-named-groups.md)
+* [`match()` vs. `exec()` and RegExp with/without the `g` Flag](javascript/match-vs-exec-g.md)
+* [`$` in the `replace()` Function](javascript/regexp-dollar-in-replace.md)
+* [RegExp Related Symbols](javascript/regexp-related-symbols.md)
 
 ## OOP
 
