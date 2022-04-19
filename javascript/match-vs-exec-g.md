@@ -99,3 +99,14 @@ for (let match; match !== null; match = re.exec(str)) {
 // ['C3c', 'C', 'c']
 // ['D4d', 'D', 'd']
 ```
+
+```
+for (let match; (match = re.exec(str)) !== null; ) {
+  console.log(match);
+}
+
+// ['A1a', 'A', 'a']
+// ['B2b', 'B', 'b']
+// ['C3c', 'C', 'c']
+// ['D4d', 'D', 'd']
+```
