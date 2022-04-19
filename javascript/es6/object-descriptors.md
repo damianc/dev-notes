@@ -108,5 +108,5 @@ getter
 // function baz() { return 2; }
 ```
 
-> Deprecated and non-standard way of getting a getter:
+> Deprecated and non-standard way of getting a getter:  
 > `foo.__lookupGetter__('baz')`
