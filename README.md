@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **275** Dev_Notes
+Currently: &nbsp; **276** Dev_Notes
 
 ---
 
@@ -278,6 +278,7 @@ Currently: &nbsp; **275** Dev_Notes
 * [Iterators](javascript/es6/iterators.md)
 * [`Symbol.asyncIterator` and `Symbol.iterator`](javascript/es6/asynciterator-iterator.md)
 * [Generator Member Shorthand](javascript/es6/generator-member-shorthand.md)
+* [Object Descriptors](javascript/es6/object-descriptors.md)
 * [`preventExtensions()`, `seal()` and `freeze()`](javascript/es6/freeze-seal-preventextensions.md)
 * [[Weak]Map vs. [Weak]Set](javascript/es6/maps-vs-sets.md)
 * [export and import](javascript/es6/export-and-import.md)
