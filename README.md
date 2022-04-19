@@ -269,7 +269,7 @@ Currently: &nbsp; **273** Dev_Notes
 * [`reduce()` Uses](javascript/reduce-uses.md)
 * [Enumerating Properties](javascript/enumerating-properties.md)
 * [`this` reference](javascript/this-reference.md)
-* [`match()` vs. `exec()`](javascript/match-vs-exec.md)
+* [`match()` vs. `exec()` and RegExp with/without the `g` Flag](javascript/match-vs-exec-g.md)
 * [`$` in the `replace()` Function](javascript/regexp-dollar-in-replace.md)
 * [RegExp Related Symbols](javascript/regexp-related-symbols.md)
 * [`BigInt`](javascript/bigint.md)
