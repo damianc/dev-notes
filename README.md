@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **279** Dev_Notes
+Currently: &nbsp; **280** Dev_Notes
 
 ---
 
@@ -316,6 +316,7 @@ Currently: &nbsp; **279** Dev_Notes
 ## Exotics
 
 * [Dynamic Object Destructuring Assignment](javascript/exotics/dynamic-object-destructuring-assignment.md)
+* [`(...[,param2]) => ...`](javascript/exotics/func-params-rest-second-param.md)
 * [Two-Way Maps](javascript/exotics/two-way-maps.md)
 * [8 Variants of the `for` Loop](javascript/exotics/eight-for-variants.md)
 * [Swap Variables](javascript/exotics/swap-variables.md)
