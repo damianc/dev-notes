@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **278** Dev_Notes
+Currently: &nbsp; **279** Dev_Notes
 
 ---
 
@@ -38,6 +38,7 @@ Currently: &nbsp; **278** Dev_Notes
 * [HTML5 APIs](#html5-apis)
 * [JavaScript](#javascript)
   - [ES6+](#es6)
+  - [DOM](#dom)
   - [RegExp](#regexp)
   - [OOP](#oop)
   - [FP](#fp)
@@ -273,7 +274,6 @@ Currently: &nbsp; **278** Dev_Notes
 * [Enumerating Properties](javascript/enumerating-properties.md)
 * [`this` reference](javascript/this-reference.md)
 * [`BigInt`](javascript/bigint.md)
-* [`insertAdjacent*()`](javascript/insert-adjacent.md)
 
 ## ES6+
 
@@ -290,6 +290,11 @@ Currently: &nbsp; **278** Dev_Notes
 * [`Symbol.search`](javascript/es6/symbol-search.md)
 * [`Symbol.replace`](javascript/es6/symbol-replace.md)
 * [`Symbol.split`](javascript/es6/symbol-split.md)
+
+## DOM
+
+* [DOM Traversing Methods](javascript/dom/traverse-methods.md)
+* [`insertAdjacent*()`](javascript/dom/insert-adjacent.md)
 
 ## RegExp
 
