@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **277** Dev_Notes
+Currently: &nbsp; **278** Dev_Notes
 
 ---
 
@@ -273,6 +273,7 @@ Currently: &nbsp; **277** Dev_Notes
 * [Enumerating Properties](javascript/enumerating-properties.md)
 * [`this` reference](javascript/this-reference.md)
 * [`BigInt`](javascript/bigint.md)
+* [`insertAdjacent*()`](javascript/insert-adjacent.md)
 
 ## ES6+
 
