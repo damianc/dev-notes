@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **276** Dev_Notes
+Currently: &nbsp; **277** Dev_Notes
 
 ---
 
@@ -269,6 +269,7 @@ Currently: &nbsp; **276** Dev_Notes
 
 * [`mouseenter`, `mouseover`, `mousemove`, `mouseleave` and `mouseout`](javascript/mouse-events.md)
 * [`reduce()` Uses](javascript/reduce-uses.md)
+* [Deep Clone of Object](javascript/deep-clone.md)
 * [Enumerating Properties](javascript/enumerating-properties.md)
 * [`this` reference](javascript/this-reference.md)
 * [`BigInt`](javascript/bigint.md)
