@@ -7,9 +7,12 @@
 * [Strings](#strings)
   - [Object to Query String](#object-to-query-string)
   - [Query String to Object](#query-string-to-object)
+* [RegExps](#regexps)
+  - [Test Input with Multiple _Sticky_ RegExps](#test-input-with-multiple-sticky-regexps)
 * [HTML Elements](#html-elements)
   - [Nested](#nested)
   - [Siblings](#siblings)
+  - [Repeated Template with Data](#repeated-template-with-data)
 * [Entries](#entries)
   - [Entries to Object](#entries-to-object)
   - [Object to Entries](#object-to-entries)
@@ -135,6 +138,49 @@ fromQueryString('?page=1&query=something%20cool&lang=en');
 // {page: '1', query: 'something cool', lang: 'en'}
 ```
 
+## RegExps
+
+### Test Input with Multiple _Sticky_ RegExps
+
+```
+function reTest(
+  inputStr,
+  reArr,
+  reMap
+) {
+  const m = reArr.map(re => reMap[re]);
+  m.push(/$/y);
+
+  const [, match] = m.reduce(([lastIdx, res], curr) => {
+    curr.lastIndex = lastIdx;
+    const t = curr.test(inputStr);
+
+    return [
+      curr.lastIndex,
+      res && t
+    ];
+  }, [0, true]);
+
+  return match;
+}
+```
+
+```
+reTest('2020-06-01', ['d4', 'dash', 'd2', 'dash', 'd2'], {
+  d2: /\d{2}/y,
+  d4: /\d{4}/y,
+  dash: /\-/y
+});
+// true
+
+reTest('2020-06-010', ['d4', 'dash', 'd2', 'dash', 'd2'], {
+  d2: /\d{2}/y,
+  d4: /\d{4}/y,
+  dash: /\-/y
+});
+// false
+```
+
 ## HTML Elements
 
 ### Nested
@@ -200,6 +246,40 @@ listMarkup(['Point 1', 'Point 2'], true)
 //   <li>Point 1</li>
 //   <li>Point 2</li>
 // </ol>
+```
+
+### Repeated Template with Data
+
+```
+function htmlFor(container, template, data) {
+  return data.reduce((acc, curr) => {
+    const parsed = template.replace(
+      /\{\{\s*(\w+?)\s*\}\}/g,
+      (...[,m]) => curr[m]
+    );
+
+    acc.insertAdjacentHTML('beforeend', parsed);
+    return acc;
+  }, container);
+}
+```
+
+```
+htmlFor(
+  document.createElement('ul'), `
+    <li class="item item-{{ priority }}">
+      {{ name }}
+    </li>
+  `, [
+    { priority: 'high', name: 'Buy food' },
+    { priority: 'medium', name: 'Wash car' }
+  ]
+);
+
+// <ul>​
+//   <li class=​"item item-high">​ Buy food ​</li>​
+//   <li class=​"item item-medium">​ Wash car ​</li>​
+// </ul>​
 ```
 
 ## Entries
