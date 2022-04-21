@@ -254,7 +254,7 @@ listMarkup(['Point 1', 'Point 2'], true)
 function htmlFor(container, template, data) {
   return data.reduce((acc, curr) => {
     const parsed = template.replace(
-      /\{\{\s*(\w+?)\s*\}\}/g,
+      /\{\{\s*(\w+)\s*\}\}/g,
       (...[,m]) => curr[m]
     );
 
