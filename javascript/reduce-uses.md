@@ -255,7 +255,7 @@ function htmlFor(container, template, data) {
   return data.reduce((acc, curr) => {
     const parsed = template.replace(
       /\{\{\s*(\w+)\s*\}\}/g,
-      (...[,m]) => curr[m]
+      (w, m) => m in curr ? curr[m] : w
     );
 
     acc.insertAdjacentHTML('beforeend', parsed);
