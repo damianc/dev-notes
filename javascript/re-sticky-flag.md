@@ -39,7 +39,7 @@ re.exec('45A8');
 
 ### Results Explanation
 
-![RegExp global and sticky](https://github.com/damianc/dev-notes/blob/master/_images/js/re-global-sticky-general.png "RegExp global and sticky")
+![RegExp global and sticky](https://github.com/damianc/dev-notes/blob/master/_images/javascript/re-global-sticky-general.png "RegExp global and sticky")
 
 * regular expression is defined:
 
