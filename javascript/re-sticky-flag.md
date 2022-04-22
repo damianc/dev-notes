@@ -4,6 +4,8 @@ Regular expression with  _sticky flag_ (`y`) performs two conceptual operations:
 * cut `n` first characters from an input string (`n = lastIndex`)
 * match start of the input string against expression (as if `^` was present at the beginning of RegExp)
 
+![RegExp global and sticky](https://github.com/damianc/dev-notes/blob/master/_images/javascript/re-global-sticky-general.png "RegExp global and sticky")
+
 ## Flag `g`  vs Flag `y`
 
 <table>
@@ -38,8 +40,6 @@ re.exec('45A8');
 </table>
 
 ### Results Explanation
-
-![RegExp global and sticky](https://github.com/damianc/dev-notes/blob/master/_images/javascript/re-global-sticky-general.png "RegExp global and sticky")
 
 * regular expression is defined:
 
