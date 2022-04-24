@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **281** Dev_Notes
+Currently: &nbsp; **282** Dev_Notes
 
 ---
 
@@ -367,6 +367,7 @@ Currently: &nbsp; **281** Dev_Notes
 # Redux
 
 * [Pure Redux](redux/pure-redux.md)
+* [Passing State: `Provider`, `ReactReduxContext` and `connect()`](redux/passing-state.md)
 * [Component Being Container for Itself](redux/component-being-container-for-itself.md)
 * [Custom Middleware](redux/custom-middleware.md)
 * [Multiple Stores](redux/multiple-stores.md)
