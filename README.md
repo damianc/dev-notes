@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **282** Dev_Notes
+Currently: &nbsp; **283** Dev_Notes
 
 ---
 
@@ -371,6 +371,7 @@ Currently: &nbsp; **282** Dev_Notes
 * [Component Being Container for Itself](redux/component-being-container-for-itself.md)
 * [Custom Middleware](redux/custom-middleware.md)
 * [Multiple Stores](redux/multiple-stores.md)
+* [Extra Argument of Thunk](redux/thunk-extra-argument.md)
 
 # REST API
 
