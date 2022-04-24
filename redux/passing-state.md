@@ -153,12 +153,15 @@ connect(
 #### Object with Action Creators
 
 ```
+const mapDispatchToProps = {
+  increment: () => ({
+    type: 'INCREMENT'
+  })
+};
+
 export default connect(
-  null, {
-    increment: () => ({
-      type: 'INCREMENT'
-    })
-  }
+  null,
+  mapDispatchToProps
 )(Counter);
 ```
 
@@ -172,4 +175,9 @@ function mapDispatchToProps(dispatch) {
     })
   };
 }
+
+export default connect(
+  null,
+  mapDispatchToProps
+)(Counter);
 ```
