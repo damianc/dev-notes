@@ -9,7 +9,7 @@ export function CounterNavigation {
   const dispatch = useDispatch();
 
   return (
-    <button onClick={() => dispatch({ type: 'INCREMENT'}) }>
+    <button onClick={() => dispatch({ type: 'INCREMENT' }) }>
       +
     </button>
   );
