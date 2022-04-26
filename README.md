@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **282** Dev_Notes
+Currently: &nbsp; **285** Dev_Notes
 
 ---
 
@@ -49,7 +49,7 @@ Currently: &nbsp; **282** Dev_Notes
 * [Python](#python)
 * [React](#react)
   - [react-router](#react-router)
-  - [Redux](#redux)
+* [Redux](#redux)
 * [REST API](#rest-api)
 * [RxJS](#rxjs)
 * [SQL](#sql)
@@ -364,12 +364,15 @@ Currently: &nbsp; **282** Dev_Notes
 
 * [Link Passing Additional Data](react/react-router/link-passing-additional-data.md)
 
-## Redux
+# Redux
 
-* [Pure Redux](react/redux/pure-redux.md)
-* [Component Being Container for Itself](react/redux/component-being-container-for-itself.md)
-* [Custom Middleware](react/redux/custom-middleware.md)
-* [Multiple Stores](react/redux/multiple-stores.md)
+* [Pure Redux](redux/pure-redux.md)
+* [Passing State: `Provider`, `ReactReduxContext` and `connect()`](redux/passing-state.md)
+* [Component Being Container for Itself](redux/component-being-container-for-itself.md)
+* [`useDispatch()` and `useSelector()`](redux/useselector-usedispatch.md)
+* [Custom Middleware](redux/custom-middleware.md)
+* [Multiple Stores](redux/multiple-stores.md)
+* [Extra Argument of Thunk](redux/thunk-extra-argument.md)
 
 # REST API
 
