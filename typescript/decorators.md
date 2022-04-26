@@ -142,7 +142,7 @@ function ParamDesc(comment: string) {
 ```
 class FooBar {
   diff(
-    @ParamDesc('left value') left:number,
+    @ParamDesc('left value') left: number,
     @ParamDesc('right value') right: number
   ) {
     return Math.abs(left - right);
