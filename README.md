@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **281** Dev_Notes
+Currently: &nbsp; **282** Dev_Notes
 
 ---
 
@@ -443,6 +443,7 @@ Currently: &nbsp; **281** Dev_Notes
 * [`Extract` and `Exclude` with Template Literals](typescript/extract-exclude-template-literal.md)
 * [Utility Types](typescript/utility-types.md)
 * [Advanced Types](typescript/advanced-types.md)
+* [Decorators](typescript/decorators.md)
 * [The `infer` Keyword](typescript/infer.md)
 * [Type Being Props Selector](typescript/type-being-props-selector.md)
 * [Building Object Type from Array](typescript/build-object-type-from-array.md)
