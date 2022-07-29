@@ -3,6 +3,7 @@
 * [General](#general)
   - [Counting Elements](#counting-elements)
   - [Grouping Elements](#grouping-elements)
+  - [Flat](#flat)
 * [Numbers](#numbers)
   - [Average](#average)
   - [Minimum and Maximum Value](#minimum-and-maximum-value)
@@ -84,6 +85,37 @@ group([
 //   PL: [{name: 'Mark', country: 'PL'}],
 //   US: [{name: 'Adam', country: 'US'}, {name: 'John', country: 'US'}]
 // }
+```
+
+### Flat
+
+```
+function flat(arr) {
+  return arr.reduce((acc, curr) => {
+    return Array.isArray(curr) ? [...acc, ...curr] : [...acc, curr];
+  }, []);
+}
+
+flat([1, 2, 3, 4, [5, 6]]);
+// [1, 2, 3, 4, 5, 6]
+
+flat([1, 2, 3, 4, [5, 6, [7, 8]] ]);
+// [1, 2, 3, 4, 5, 6, [7, 8]]
+```
+
+#### Deep Flat
+
+```
+function deepFlat(arr) {
+  return arr.reduce((acc, curr) => {
+    return Array.isArray(curr)
+      ? [...acc, ...deepFlat(curr)]
+      : [...acc, curr];
+  }, []);
+}
+
+deepFlat([1, 2, [3, 4, 5, [6, 7, [8, [9]] ] ] ]);
+// [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
 ## Numbers
