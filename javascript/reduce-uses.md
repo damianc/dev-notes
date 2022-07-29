@@ -160,6 +160,8 @@ combined(10);
 // (10 + 10 = 20 -> 20 * 10 = 200 -> 200 / 2 = 100)
 ```
 
+> `curr(acc(x))` -> `acc(curr(x))`: `60` (10 / 2 = 5 -> 5 * 10 = 50 -> 50 + 10 = 60)
+
 ## RegExps
 
 ### Test Input with Multiple _Sticky_ RegExps
