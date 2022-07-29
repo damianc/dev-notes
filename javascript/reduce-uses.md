@@ -1,6 +1,6 @@
 # `reduce()` Uses
 
-* General
+* [General](#general)
   - [Counting Elements](#counting-elements)
 * [Numbers](#numbers)
   - [Average](#average)
