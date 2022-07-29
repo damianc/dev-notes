@@ -216,7 +216,7 @@ const Perm = {
   WRITE: 0b10,
   EDIT: 0b100,
   DELETE: 0b1000,
-  can: (role, permChecked) => (role | permChecked) === role
+  can: (role, permChecked) => (role & permChecked) === permChecked
 };
 
 const Role = {
