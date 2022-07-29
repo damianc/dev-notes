@@ -1,5 +1,7 @@
 # `reduce()` Uses
 
+* General
+  - [Counting Elements](#counting-elements)
 * [Numbers](#numbers)
   - [Average](#average)
   - [Minimum and Maximum Value](#minimum-and-maximum-value)
@@ -26,6 +28,31 @@
 * [Sets](#sets)
   - [Common and Unique Items](#common-and-unique-items)
 
+
+## General
+
+### Counting Elements
+
+```
+function count(arr, match) {
+  return arr.reduce((acc, curr) => acc + (
+    (typeof match === 'function' && match(curr)) ||
+    curr === match
+  ), 0);
+}
+
+count([1, 2, 3, 4, 2, 2], 2);
+// 3
+
+count([1, 2, 3, 4, 5, 6], x => x % 2 === 0);
+// 3
+
+count([1, 2, 3, 4, 5, 6], x => !(x % 3));
+// 2
+
+count([1, 2, 3, 4, 5, 6], 100);
+// 0
+```
 
 ## Numbers
 
