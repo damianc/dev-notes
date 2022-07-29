@@ -8,6 +8,7 @@
   - [Average](#average)
   - [Minimum and Maximum Value](#minimum-and-maximum-value)
   - [Factorial](#factorial)
+  - [Bitwise Flags](#bitwise-flags)
 * [Strings](#strings)
   - [Object to Query String](#object-to-query-string)
   - [Query String to Object](#query-string-to-object)
@@ -197,6 +198,25 @@ factorial(5) // 120
 factorial(6) // 720
 factorial(7) // 5040
 factorial(8) // 40320
+```
+
+### Bitwise Flags
+
+```
+const Perm = {
+  READ: 0b1,
+  WRITE: 0b10,
+  EDIT: 0b100,
+  DELETE: 0b1000,
+  can: (perms, perm) => (perms | perm) === perms
+};
+
+const remover = [Perm.READ, Perm.DELETE].reduce((acc, curr) => acc | curr, 0);
+
+Perm.can(remover, Perm.READ) // true
+Perm.can(remover, Perm.WRITE) // false
+Perm.can(remover, Perm.EDIT) // false
+Perm.can(remover, Perm.DELETE) // true
 ```
 
 ## Strings
