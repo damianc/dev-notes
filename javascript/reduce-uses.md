@@ -31,6 +31,8 @@
   - [Common and Unique Items](#common-and-unique-items)
 * [Objects](#objects)
   - [Link Objects with Protos](#link-objects-with-protos)
+* [Coordinates](#coordinates)
+  - [Polygon Length](#polygon-length)
 
 
 ## General
@@ -635,4 +637,54 @@ obj;
   |-- {a: 2, b: 3}
     |-- {b: 4, c: 5}
 */
+```
+
+## Coordinates
+
+### Polygon Length
+
+```
+[
+  [0, 0], [50, 0], [50, 25], [75, 50],
+  [120, 100], [50, 200], [80, 100], [250, 250]
+].reduce((acc, [xa, ya], idx, arr) => {
+  if (idx === arr.length - 1) return +acc.toFixed(2);
+
+  const [xb, yb] = arr[idx + 1];
+  return acc + Math.sqrt( (xb - xa)**2 + (yb - ya)**2 );
+}, 0);
+// 630.81
+```
+
+### Closest Sibling
+
+```
+function closestSibling(ctx, siblings) {
+  return siblings.reduce((acc, [xa, ya], idx) => {
+    const [xb, yb] = ctx;
+    const dist = +Math.sqrt(
+      (xb - xa)**2 + (yb - ya)**2
+    ).toFixed(2);
+
+    return dist < acc.dist
+      ? {dist, idx, coords: [xa, ya]}
+      : acc;
+  },  {dist: Number.MAX_SAFE_INTEGER});
+}
+
+const siblings = [
+  [0, 0], [50, 0],
+  [50, 25], [75, 50],
+  [120, 100], [50, 200],
+  [80, 100], [250, 250]
+];
+
+closestSibling([50, 0], siblings);
+// {dist: 0, idx: 1, coords: [50, 0]}
+
+closestSibling([30, 100], siblings);
+// {dist: 50, idx: 6, coords: [80, 100]}
+
+closestSibling([80, 205], siblings);
+// {dist: 30.41, idx: 5, coords: [50, 200]}
 ```
