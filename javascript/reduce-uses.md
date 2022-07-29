@@ -2,6 +2,7 @@
 
 * [General](#general)
   - [Counting Elements](#counting-elements)
+  - [Grouping Elements](#grouping-elements)
 * [Numbers](#numbers)
   - [Average](#average)
   - [Minimum and Maximum Value](#minimum-and-maximum-value)
@@ -52,6 +53,37 @@ count([1, 2, 3, 4, 5, 6], x => !(x % 3));
 
 count([1, 2, 3, 4, 5, 6], 100);
 // 0
+```
+
+### Grouping Elements
+
+```
+function group(arr, labelFactory) {
+  return arr.reduce((acc, curr) => {
+    const g = { ...acc };
+    const label = typeof labelFactory === 'function' ? labelFactory(curr) : curr[labelFactory];
+
+    if (!(label in g)) g[label] = [];
+    g[label] = [ ...g[label], curr ];
+    return g;
+  }, {});
+}
+
+group([1,2,3,4,5,6], x => x % 2 === 0 ? 'even' : 'odd');
+// { odd: [1,3,5], even: [2,4,6] }
+
+group(['a', 'bb', 'cc', 'ddd'], 'length');
+// { 1: ['a'], 2: ['bb', 'cc'], 3: ['ddd'] }
+
+group([
+  { name: 'Mark', country: 'PL' },
+  { name: 'Adam', country: 'US' },
+  { name: 'John', country: 'US' }
+], 'country');
+// {
+//   PL: [{name: 'Mark', country: 'PL'}],
+//   US: [{name: 'Adam', country: 'US'}, {name: 'John', country: 'US'}]
+// }
 ```
 
 ## Numbers
