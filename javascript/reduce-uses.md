@@ -29,6 +29,8 @@
   - [Filter Empty Values in Object](#filter-empty-values-in-object)
 * [Sets](#sets)
   - [Common and Unique Items](#common-and-unique-items)
+* [Objects](#objects)
+  - [Link Objects with Protos](#link-objects-with-protos)
 
 
 ## General
@@ -591,4 +593,46 @@ const charArrs = [ ['a', 'b'], ['b', 'c'] ];
 items(charArrs) // ['b']
 items(charArrs, 'common') // ['b']
 items(charArrs, 'unique') // ['a', 'c']
+```
+
+## Objects
+
+### Link Objects with Protos
+
+```
+const obj = [
+  {a: 1},
+  {a: 2, b: 3},
+  {b: 4, c: 5}
+].reduce((acc, curr) => {
+    return Object.setPrototypeOf(curr, acc);
+}, {});
+
+obj;
+/*
+  {b: 4, c: 5}
+  |-- {a: 2, b: 3}
+    |-- {a: 1}
+*/
+```
+
+```
+function linkWithProtos(...objs) {
+  return [...objs].reverse().reduce((acc, curr) => {
+    return Object.setPrototypeOf(curr, acc);
+  }, {});
+}
+
+const obj = linkWithProtos(
+  {a: 1},
+  {a: 2, b: 3},
+  {b: 4, c: 5}
+);
+
+obj;
+/*
+  {a: 1}
+  |-- {a: 2, b: 3}
+    |-- {b: 4, c: 5}
+*/
 ```
