@@ -203,20 +203,30 @@ factorial(8) // 40320
 ### Bitwise Flags
 
 ```
+function createRole(perms) {
+  return perms.reduce(
+    (acc, curr) => acc | curr,
+    0
+  );
+}
+
+
 const Perm = {
   READ: 0b1,
   WRITE: 0b10,
   EDIT: 0b100,
   DELETE: 0b1000,
-  can: (perms, perm) => (perms | perm) === perms
+  can: (role, permChecked) => (role | permChecked) === role
 };
 
-const remover = [Perm.READ, Perm.DELETE].reduce((acc, curr) => acc | curr, 0);
+const Role = {
+  Remover: createRole([Perm.READ, Perm.DELETE])
+};
 
-Perm.can(remover, Perm.READ) // true
-Perm.can(remover, Perm.WRITE) // false
-Perm.can(remover, Perm.EDIT) // false
-Perm.can(remover, Perm.DELETE) // true
+Perm.can(Role.Remover, Perm.READ) // true
+Perm.can(Role.Remover, Perm.WRITE) // false
+Perm.can(Role.Remover, Perm.EDIT) // false
+Perm.can(Role.Remover, Perm.DELETE) // true
 ```
 
 ## Strings
