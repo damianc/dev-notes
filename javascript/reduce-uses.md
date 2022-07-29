@@ -7,6 +7,8 @@
 * [Strings](#strings)
   - [Object to Query String](#object-to-query-string)
   - [Query String to Object](#query-string-to-object)
+* [Functions](#functions)
+  - [Combine Functions](#combine-functions)
 * [RegExps](#regexps)
   - [Test Input with Multiple _Sticky_ RegExps](#test-input-with-multiple-sticky-regexps)
 * [HTML Elements](#html-elements)
@@ -136,6 +138,26 @@ function fromQueryString(queryStr) {
 
 fromQueryString('?page=1&query=something%20cool&lang=en');
 // {page: '1', query: 'something cool', lang: 'en'}
+```
+
+## Functions
+
+### Combine Functions
+
+```
+const funcs = [
+  x => x + 10,
+  x => x * 10,
+  x => x / 2
+];
+
+const combined = funcs.reduce((acc, curr) => {
+  return x => curr(acc(x));
+}, x => x);
+
+combined(10);
+// 100
+// (10 + 10 = 20 -> 20 * 10 = 200 -> 200 / 2 = 100)
 ```
 
 ## RegExps
