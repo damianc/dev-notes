@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **285** Dev_Notes
+Currently: &nbsp; **286** Dev_Notes
 
 ---
 
@@ -43,6 +43,7 @@ Currently: &nbsp; **285** Dev_Notes
   - [OOP](#oop)
   - [FP](#fp)
   - [Exotics](#exotics)
+  - [JS Lab](#js-lab)
 * [Nest.js](#nestjs)
 * [Node](#node)
 * [PHP](#php)
@@ -321,6 +322,10 @@ Currently: &nbsp; **285** Dev_Notes
 * [Two-Way Maps](javascript/exotics/two-way-maps.md)
 * [8 Variants of the `for` Loop](javascript/exotics/eight-for-variants.md)
 * [Swap Variables](javascript/exotics/swap-variables.md)
+
+## JS Lab
+
+* [`this` in Static Methods](javascript/js-lab/this-in-static-methods.md)
 
 # Nest.js
 
