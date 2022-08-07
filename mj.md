@@ -1,30 +1,252 @@
-# Math in Markdown
+# MathJax
+
+* [MathJax Formatting](#mathjax-formatting)
+  - [Special Chars](#special-chars)
+  - [Display Mode](#display-mode)
+* [Operators](#operators)
+* [Basic Stuff](#basic-stuff)
+  - [Combined](#combined)
+* [Fractions](#fractions)
+* [Equality Operators](#equality-operators)
+* [Relation Operators](#relation-operators)
+* [Sets](#sets)
+* [Matrixes](#matrixes)
+* [Greek](#greek)
+
+## MathJax Formatting
+
+### Special Chars
+
+| Char | Meaning | Example |
+|--|--|--|
+| `\_` | space (`_` means _space_ here) | `x\ n` -> $x\ n$ |
+| `\\` | new line | `x\\n` -> $\\x\\n$
+| `\!` | move char to the left | `x\!2` -> $x\!2$ |
+| `\!\!` | move char to the left x2 [...] | `x\!\!2` -> $x\!\!2$ |
+
+### Sizing
+
+```
+\large P \normalsize P \small P
+```
+
+$\large P \normalsize P \small P$
+
+### Decoration
+
+$\bold{x^2}$
+$\underline{x^2}$
+$\overline{x^2}$
+$\over x^2$
+$n_{\color{red}{i-1}} + 4$
+$\boxed{x^4 + 2} \div 2$
+
+$^a_b\boxed{X^1_2}^c_d$
+
+$\boxed{\circ}$ $\boxed{}$ $\boxed{\ \ \ \ }$
+$\boxed{\ \ \circ\ \ }$
+$\boxed{\ \ \circ\ \ \ \ }$
+$\boxed{\ \ \ \ \circ\ \ }$
+
+$\boxed{x^{n+\bold{2}}}$
+$\boxed{x^{n+\color{red}{2}}}$
+
+### Display Mode
+
+| `$...$` | `$$...$$` |
+|--|--|
+| $\sum_{i=1}^{n}{i^2}$ | $$\sum_{i=1}^{n}{i^2}$$ |
+| $\frac{x}{\frac{1}{x^2}}$ | $$\frac{x}{\frac{1}{x^2}}$$ |
+| $\lim_{x \to 0}$ | $$\lim_{x \to 0}$$ |
+| $\lim^{6x}_{x \to 0}$ | $$\lim^{6x}_{x \to 0}$$ |
+
+## Brackets
+
+$\langle$x;2$\rangle$
+$[2]$
+$<2>$
+$(2)$
+$\{2\}$
+$\lbrack2\rbrack$
+$\lgroup2\rgroup$
+
+$\lceil2\rceil$
+$\lfloor2\rfloor$
+
+$\lceil2\rfloor$
+$\lfloor2\rceil$
+
+## Combinatorics
+
+| Symbol | Expr |
+|--|--|
+| $\binom{n}{k}$ | `\binom{n}{k}` |
+| $3!$ | `3!` |
+| $\over\overline\varOmega$ | `\over\overline\varOmega` |
+
+## Operators
+
+| Operator | Expr |
+|--|--|
+| $\cdot$ | `\cdot` |
+| $\times$ | `\times` |
+| $\div$ | `\div` |
+| $\pm$ | `\pm` |
+| $\mp$ | `\mp` |
+
+### Logical
+
+| Operator | Expr |
+|--|--|
+| $\neg$ | `\neg`, `\lnot` |
+| $\land$ | `\land` |
+| $\lor$ | `\lor` |
+| $\wedge$, $\bigwedge$ | `\wedge`, `\bigwedge` |
+| $\vee$, $\bigvee$ | `\vee`, `\bigvee` |
+| $\because$ | `\because` |
+| $\therefore$ | `\therefore` |
+| $\exists$ | `\exists`, `\exist` |
+| $\nexists$ | `\nexists` |
+| $\forall$ | `\forall` |
+| $\not\forall$ | `\not\forall` |
+| $\implies$ | `\implies` |
+| $\impliedby$ | `\impliedby` |
+| $\iff$ | `\iff` |
+
+### Circled
+
+| Operator | Expr |
+|--|--|
+| $\bull$ | `\bull`, `\bullet` |
+| $\circ$ | `\circ` |
+| $\oplus$ | `\oplus` |
+| $\ominus$ | `\ominus` |
+| $\otimes$ | `\otimes` |
+| $\oslash$ | `\oslash` |
+| $\odot$ | `\odot` |
+| $\bigcirc$ | `\bigcirc` |
+| $\bigoplus$ | `\bigoplus` |
+| $\bigotimes$ | `\bigotimes` |
+| $\bigodot$ | `\bigodot` |
+
+## Basic Stuff
+
+| Op | Expr |
+|--|--|
+| $n^{10}$ | `n^{10}` |
+| $n^2$ | `n^2` |
+| $\sqrt{16}$ | `\sqrt{16}` |
+| $\sqrt[3]{27}$ | `\sqrt[3]{27}` |
+| $a_2$ | `a_2` |
+| $n_k$ | `n_k` |
+| $\sin^2{x}$ | `\sin^2{x}` |
+| $\log_{n}{x}$ | `\log_{n}{x}`
+
+### Combined
+
+| Op | Expr |
+|--|--|
+| $n_k^2$ | `n_k^2`, `n^2_k` |
+| $2^{x^4}$ | `2^{x^4}` |
+| $x_{i_n}$ | `x_{i_n}` |
+| $2^{x_n}$ | `2^{x_n}` |
+| $x_{n^2}$ | `x_{n^2}` |
+| $_{10}X$ | `_{10}X` |
+| $^{10}X$ | `^{10}X` |
+| $^k_n{10}$ | `^k_n{10}`, `_n^k{10}` |
+| $\sqrt[n^2]{x_{n}+10}$ | `\sqrt[n^2]{x_{n}+10}` |
+
+## Fractions
+
+| Op | Expr |
+|--|--|
+| $\frac{1}{2}$ | `\frac{1}{2}` |
+| $\frac{x}{\frac{n^2}{4}}$ | `\frac{x}{\frac{n^2}{4}}` |
+| $\large\frac{x}{\frac{n^2}{4}}$ | `\large\frac{x}{\frac{n^2}{4}}` |
+| $^1/_2$ | `^1/_2` |
+| $_1\backslash^2$ | `\_1\backslash^2`
+
+$a\|b \nparallel \perp$
+
+## Equality Operators
+
+| Operator | Expr |
+|--|--|
+| $=$ | `=` |
+| $\not=$ | `\not=`, `\ne`, `\neq` |
+| $\approx$ | `\approx` |
+| $\cong$ | `\cong` |
+| $\ncong$ | `\ncong` |
+| $\bumpeq$ | `\bumpeq` |
+| $\Bumpeq$ | `\Bumpeq` |
+| $\equiv$ | `\equiv` |
 
 
+## Relation Operators
 
-$\begin{aligned}
-A &= B + C \\
-&= D
-\end{aligned}$
+| Operator | Expr | Negated | Expr
+|--|--|--|--|
+| $\gt$ | `\gt` | $\not\gt$ | `\not\gt`, `\ngtr` |
+| $\lt$ | `\lt` | $\not\lt$ | `\not\lt`, `\nless` |
+| $\ge$ | `\ge`, `\geq` | $\not\ge$ | `\not\ge`, `\not\geq`, `\ngeq` |
+||| $\gneq$ | `\gneq` |
+| $\le$ | `\le`, `\leq` | $\not\le$ | `\not\le`, `\not\leq`, `\nleq` |
+||| $\lneq$ | `\lneq` |
+| $\geqslant$ | `\geqslant` | $\ngeqslant$ | `\ngeqslant` |
+| $\leqslant$ | `\leqslant` | $\nleqslant$ | `\nleqslant` |
+| $\geqq$ | `\geqq` | $\ngeqq$ | `\ngeqq` |
+||| $\gneqq$ | `\gneqq` |
+| $\leqq$ | `\leqq` | $\nleqq$ | `\nleqq` |
+||| $\lneqq$ | `\lneqq` |
+| $\gtrsim$ | `\gtrsim` | $\gnsim$ | `\gnsim` |
+| $\lesssim$ | `\lesssim` | $\lnsim$ | `\lnsim` |
+| $\gtrapprox$ | `\gtrapprox` | $\gnapprox$ | `\gnapprox` |
+| $\lessapprox$  | `\lessapprox` | $\lnapprox$ | `\lnapprox` |
 
-$_==^=$
-
-Average:
-
-$\frac{\sum^k_{i=1}n_i}{k}$
-
-Weighted average:
-
-$\frac{\sum_{i=1}^k n_i * w_i}{}$
+$\lessdot$ $\gtrdot$
 
 
-## Syntax
+$\lessgtr$
 
-* formula is surrounded with `$`: `$expr...$`
-* macros start with `\`; for example `\times` gives $\times$
-* multi-digit numbers must be placed in `{}`:
-  - `n^{12}` gives $n^{12}$
-  - `n^12` gives $n^12$
+$\lesseqgtr$ $\lesseqqgtr$
+
+$\gtrless$
+
+$\gtreqless$ $\gtreqqless$
+
+$\backsim$
+ $\sim$ $\approx$
+ $\nsim$ $\not\approx$
+
+$\gg$ $\ll$
+$\ggg$ $\lll$
+
+## Geometry
+
+$\measuredangle$
+$\angle$
+$\perp$
+$\parallel$ $\nparallel$
+
+## Sets
+
+| Symbol | Expr |
+|--|--|
+| $\emptyset$ | `\empty`, `\emptyset` |
+| $\varnothing$ | `\varnothing` |
+| $\supset$ | `\supset` |
+| $\subset$ | `\subset` |
+| $\supe$ | `\supe`, `\supseteq` |
+| $\sube$ | `\sube`, `\subseteq` |
+| $\sqsupset$ | `\sqsupset` |
+| $\sqsubset$ | `\sqsubset` |
+| $\sqsupseteq$ | `\sqsupseteq` |
+| $\sqsubseteq$ | `\sqsubseteq` |
+| $\setminus$ | `\setminus` |
+| $\supseteqq$ | `\supseteqq` |
+| $\nsupseteqq$ | `\nsupseteqq` |
+| $\subseteqq$ | `\subseteqq` |
+| $\nsubseteqq$ | `\nsubseteqq` |
 
 ## Matrixes
 
@@ -75,90 +297,311 @@ b
 c
 \end{bmatrix}$
 
+---
 
+```
+$\begin{bmatrix}
+a \\ b
+\end{bmatrix}
+\times
+\begin{bmatrix}
+c \\ d
+\end{bmatrix}$
+```
 
 $\begin{bmatrix}
-a\\b
-\end{bmatrix}\times\begin{bmatrix}
-c\\d
+a \\ b
+\end{bmatrix}
+\times
+\begin{bmatrix}
+c \\ d
 \end{bmatrix}$
 
-## Basic Stuff
+----
 
-| Op | Expr |
-|--|--|
-| $n^{10}$ | `n^{10}` |
-| $n^2$ | `n^2` |
-| $\sqrt{16}$ | `\sqrt{16}` |
-| $\sqrt[3]{27}$ | `\sqrt[3]{27}` |
-| $a_2$ | `a_2` |
-| $n_k$ | `n_k` |
-| $n_k^2$, $n^2_k$ | `n_k^2`, `n^2_k` |
-| $_{10}X$ | `_{10}X` |
-| $^{10}X$ | `^{10}X` |
-| $^k_n{10}$, $_n^k{10}$ | `^k_n{10}`, `_n^k{10}` |
-| $3!$ | `3!` |
-| $\log_{n}{x}$ | `\log_{n}{x}`
+```
+$$
+\begin{bmatrix}
+\begin{bmatrix}1_a&2_a\\3_a&4_a\end{bmatrix}
+&
+\begin{bmatrix}1_b&2_b\\3_b&4_b\end{bmatrix}
+\\\\
+\begin{bmatrix}1_c&2_c\\3_c&4_c\end{bmatrix}
+&
+\begin{bmatrix}1_d&2_d\\3_d&4_d\end{bmatrix}
+\end{bmatrix}
+$$
+```
+
+$$
+\begin{bmatrix}
+\begin{bmatrix}1_a&2_a\\3_a&4_a\end{bmatrix}
+&
+\begin{bmatrix}1_b&2_b\\3_b&4_b\end{bmatrix}
+\\\\
+\begin{bmatrix}1_c&2_c\\3_c&4_c\end{bmatrix}
+&
+\begin{bmatrix}1_d&2_d\\3_d&4_d\end{bmatrix}
+\end{bmatrix}
+$$
+
+----
+
+```
+$$
+\begin{bmatrix}
+1_1 & \cdots & 1_n
+\\
+\vdots & \ddots & \vdots
+\\
+n_1 & \cdots & n_n
+\end{bmatrix}
+$$
+```
+
+$$
+\begin{bmatrix}
+1_1 & \cdots & 1_n
+\\
+\vdots & \ddots & \vdots
+\\
+n_1 & \cdots & n_n
+\end{bmatrix}
+$$
+
+### Other Matrixes
+
+$\begin{bmatrix}
+a &  c & e
+\\
+b & d & f
+\end{bmatrix}$
+
+$\begin{matrix}
+a &  c & e
+\\
+b & d & f
+\end{matrix}$
+
+$\begin{pmatrix}
+a &  c & e
+\\
+b & d & f
+\end{pmatrix}$
+
+$\begin{Bmatrix}
+a &  c & e
+\\
+b & d & f
+\end{Bmatrix}$
+
+$\begin{vmatrix}
+a &  c & e
+\\
+b & d & f
+\end{vmatrix}$
+
+$\begin{Vmatrix}
+a &  c & e
+\\
+b & d & f
+\end{Vmatrix}$
+
+## Arrays
+
+$\left(\begin{array}{cc|c}
+1&2&3
+\\
+4&5&6
+\end{array}\right)$
+
+$\left\{\begin{array}{cc|c}
+1&2&3
+\\
+4&5&6
+\end{array}\right\}$
+
+$\left|\begin{array}{cc|c}
+1&2&3
+\\
+4&5&6
+\end{array}\right|$
+
+$\left\|\begin{array}{cc|c}
+1&2&3
+\\
+4&5&6
+\end{array}\right\|$
+
+$\begin{array}{cc|c}
+1&2&3
+\\
+4&5&6
+\end{array}$
+
+----
+
+* with array:
+
+$\left\{\begin{array}{c}
+a_1x + b_1y + c_1z = d_1
+\\
+a_2x + b_2y + c_2z = d_2
+\\
+a_3x + b_3y + c_3z = d_3
+\end{array}\right.$
+
+* with cases:
+
+$\begin{cases}
+a_1x + b_1y + c_1z = d_1
+\\
+a_2x + b_2y + c_2z = d_2
+\\
+a_3x + b_3y + c_3z = d_3
+\end{cases}$
 
 
-$\log_{a}c^i \bigcup k$
+----
 
-$\displaystyle n_{k_4}$
-$n_{k_4}$
+$\left[\begin{array}{c||cc|c}
+1&2&3&4
+\\
+5&6&7&8
+\end{array}\right]$
 
-### Combined
+$\left[\begin{array}{c||cc|c}
+1&2&3&4
+\\\hline
+5&6&7&8
+\end{array}\right]$
 
-| Op | Expr |
-|--|--|
-| $n^{2^2}$, ${n^2}^2$ | `n^{2^2}`, `{n^2}^2` |
-| $\log_2x$ | `\log_2x` |
-| $log_{10} \space n^2$ | `log_{10} \space n^2` |
-| $(^n_k)$, $(_k^n)$ | `(^n_k)`, `(_k^n)` |
-| $^2X^k$ | `^2X^k` |
-| $_2X_k$ | `_2X_k` |
-| $^p_q{X^2}$ | `^p_q{X^2}` |
-| $^p_q{X_2}$ | `^p_q{X_2}` |
-| $^2{X^p_q}$ | `^2{X^p_q}` |
-| $_2{X^p_q}$ | `_2{X^p_q}` |
+$\left[\begin{array}{cccc}
+1&2&3&4
+\\
+5&6&7&8
+\\\hline
+x_1&x_2&x_3&x_4
+\end{array}\right]$
 
-## Equality Operators
+$\begin{array}{c|ccc}
+x&2&3&4
+\\
+y&6&7&8
+\\\hline
+&x_2&x_3&x_4
+\end{array}$
 
-| Operator | Expr |
-|--|--|
-| $=$ | `=` |
-| $\not=$ | `\not=` |
-| $\approx$ | `\approx` |
-| $\cong$ | `\cong` |
-| $\bumpeq$ | `\bumpeq` |
+----
 
+$$
+\left[\begin{array}{cc}
+\left(\begin{array}{cc}
+a&b\\c&d
+\end{array}\right)
+&
+\left\{\begin{array}{cc}
+a&b\\c&d
+\end{array}\right\}_2^n
+\\\\
+\left\|\begin{array}{c|c}
+1&2\\\hline 3&4
+\end{array}\right\|
+&
+\left[\begin{array}{cc|c}
+a&b&+\\c&d&x
+\end{array}\right]
+\end{array}\right]
+$$
 
-## Relation Operators
+## Cases
 
-| Operator | Expr | Negated | Expr
-|--|--|--|--|
-| $\gt$ | `\gt` | $\not\gt$ | `\not\gt` |
-| $\ge$ | `\ge`, `\geq` | $\not\ge$ | `\not\ge`, `\not\geq` |
-| $\lt$ | `\lt` | $\not\lt$ | `\not\lt` |
-| $\le$ | `\le`, `\leq` | $\not\le$ | `\not\le`, `\not\leq` |
+$$
+f(n) = \begin{cases}
+n/2, & \text{if $n$ is even}
+\\
+3n+1, & \text{if $n$ is odd}
+\end{cases}
+$$
 
+$$
+f(n) = \begin{cases}
+n/2, & \text{if $n$ is even}
+\\\hline
+3n+1, & \text{if $n$ is odd}
+\\
+3n+2, & \text{if $n$ is odd and $\gt$ 100}
+\end{cases}
+$$
 
-## Formatting
+----
 
-| Output | Expr |
-|--|--|
-| $23$, $2\!3$, $2\!\!3$ | `23`, `2\!3`, `2\!\!3` | 
-| $a\\b$ | `a\\b` |
-| $a b$ vs. $a\ b$ | `a b` vs. `a\ b` |
+$$
+f(n) = \begin{cases}
+n/2, & \text{if $n$ is even}
+\\
+3n+
+\begin{cases}
+1 & \text{if $n$ is odd}
+\\
+2 & \text{if $n$ is odd and $\gt 100$}
+\end{cases}
+\end{cases}
+$$
 
-$\not\lt$ $\cancel\lt \neg4$
+----
 
-## Symbols
+$$
+\left.\begin{array}{l}
+\text{if $n$ is even:} & n/2
+\\
+\text{if $n$ is odd:} & 3n+1
+\end{array}\right\}
+=f(n)
+$$
 
-| Symbol | Expr |
-|--|--|
-| $\times$ | `\times` |
-| $\bull$ | `\bull` |
-| $\circ$ | `\circ` |
+## Crossing Out
+
+$$
+y+\cancel{x} \\
+\cancel{y+x} \\
+y+\bcancel{x} \\
+\bcancel{y+x} \\
+y+\xcancel{x} \\
+\xcancel{y+x} 
+\\
+\frac{1\cancel9}{\cancel95} = \frac15
+$$
+
+$$
+.\\+\\.\\-\\.
+$$
+
+$$
+\begin{CD}
+A @>a_1>a_2> B @= X
+\\
+@A d_1 A d_2 A = @VVbV @|
+\\
+D @<< c< C @. Y
+\end{CD}
+$$
+
+----
+
+$$
+\begin{CD}
+arbuz @>\bold{siek}iera>> \Bbb{SKORUPA} + \rm{miąższ}
+\end{CD}
+$$
+
+$$
+\begin{CD}
+RCOHR'SO_3Na
+@>{\text{Hydrolysis,$\Delta, Dil.HCl$}}>>
+(RCOR')+NaCl+SO_2+ H_2O
+\end{CD}
+$$
 
 ## Greek
 
@@ -189,106 +632,27 @@ $\not\lt$ $\cancel\lt \neg4$
 |$\psi$|`\psi`|$\Psi$|`\Psi`|
 |$\omega$|`\omega`|$\Omega$|`\Omega`|
 
+### Variables
 
+| Var | Expr |
+|--|--|
+| $\varGamma$ | `\varGamma` |
+| $\varDelta$ | `\varDelta` |
+| $\varepsilon$ | `\varepsilon` |
+| $\vartheta$, $\varTheta$ | `\vartheta`, `\varTheta` |
+| $\varkappa$ | `\varkappa` |
+| $\varLambda$ | `\varLambda` |
+| $\varXi$ | `\varXi` |
+| $\varpi$, $\varPi$ | `\varpi`, `\varPi` |
+| $\varrho$ | `\varrho` |
+| $\varsigma$, $\varSigma$ | `\varsigma`, `\varSigma` |
+| $\varUpsilon$ | `\varUpsilon` |
+| $\varphi$, $\varPhi$ | `\varphi`, `\varPhi` |
+| $\varPsi$ | `\varPsi` |
+| $\varOmega$ | `\varOmega` |
 
+### Others
 
-$\aleph$
-$\beth$
-$\gimel$
-$\daleth$
-$\he$
-$\waw$
-$\zayin$
-$\heth$
-$\teth$
-$\yodh$
-$\kaph$
-$\lamedh$
-$\mem$
-$\nun$
-
-$\samekh{2}$
-$\ayin4$
-$\pe4$
-$\sade4$
-$\qoph4$
-$\res4$
-$\sin4$
-$\taw{3}$
-$\(waw4)4$
-
-$\backepsilon$
-$\barwedge$
-$\because$
-$\cancel{x}$
-$\bar{2}$
-$\circ$
-$\sqrt3$
-$f$
-$a b c d e f g h i j k l m n o p q r s t u v w x y z$
-$A B C D E F G H I J K L M N O P Q R S T U V W X Y Z$
-$\bowtie$
-$\brace{4}\braket r \bra r$
-$\bra 4$
-$\braket {4,3}$
-$\brack{4}\bullet$
-$\bumpeq$
-$\lt$ $\gt$
-$\le \ge$
-$\cancel=$
-$\cancel\lt$ $\cancel\gt$
-$\cancel\bumpeq$
-
-$4^{\cancel{4}}$
-$a_{\cancel{8}}$
-
-$\approx$
-$\cong$
-$\sub \sube \sup \supe \supset \subset \cancel\sube \cancel\sqsubseteq$
-$x \in r$ $x \cancel\in r$
-$\sqsubset \sqsupset \sqsubseteq \sqsupseteq$
-$\hat{x} \bull{3} \circ{3} \to  \to \leftarrow \rightarrow \top \uparrow \downarrow 3$
-
-$\ne \neq \not{12} 34$
-$a\cancel\perp{b} \cancel\parallel c \not\perp \not\parallel \not\le \cancel\le$
-
-$\in \notin \not\in \not\notin$
-
-$\searrow \swarrow \nearrow \nwarrow$
-
-$\mathbb{AQ} \mathfrak{AaDd38}38$
-
-
+$\ell$
 $\eth$
-
-
-$\flushleft \newenvironment{vardesc}[1]{% \settowidth{\parindent}{#1:\ } \makebox[0pt][r]{#1:\ }}{} \begin{displaymath} a^2+b^2=c^2 \end{displaymath} \begin{vardesc}{Where}$a$, $b$ -- are adjacent to the right angle of a right-angled triangle. $c$ -- is the hypotenuse of the triangle and feels lonely. $d$ -- finally does not show up here at all. Isn't that puzzling? \end{vardesc}$
-
-Wzór __Kutafona__ na średnią grubość kutasa w punkcie $\hat{G}^2$ to:
-
-$\varpi^6_2 \space\space\log_2\sin^2\subset\Delta\space\space\newline {x \bull y} \perp a^3$
-
-
-
-$\begin{bmatrix}
-x_a^2 & x^2_b & c^4
-\\\\
-y_{a^2} & y^{b_2} & \frac{\Theta_n}{{3}^{-10\times{k}}}
-\end{bmatrix}^2 \bull
-\hat{k}\aleph\times{R}\in(1,4)\because4^R > \square^{2+}$
-
-
-Dla pizdy o głębkokości $p_\gamma$ i szerokości dennej $p_\omega$, punkt tarcia o największej czułości znajduje się na pozycji ${\aleph}^\pi$.
-
-
-$\aleph^\pi = \frac{p_\gamma}{2\pi}\times\log_n{p_\omega}$
-
-gdzie $n \in \braket{0,arccos^2{\frac{p_\gamma}{p_\omega}}\times \int_\bullet^{\Delta^4}}$ 
-
-dla macierzy $\Delta$:
-
-$\Delta = \sqrt[3]{\begin{bmatrix}
-\gamma^2 & x^2_b & \cancel\empty_{4^2}
-\\\\
-\omega^2 & y^{b_2} & \frac{\Theta_n}{{3}^{-10\times{k}}}
-\end{bmatrix}}, k = \tanh(90 - [\pi^{\omega-\gamma}]\degree)$
+$\daleth$
