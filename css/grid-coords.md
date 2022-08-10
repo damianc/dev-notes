@@ -26,4 +26,12 @@ grid-area = row-start [column-start [row-end [column-end]]]
 
 ## Passing Area Names
 
+```
+#grid {
+  display: grid;
+  grid-template-areas: 'a a a b b c c d d d';
+  ...
+}
+```
+
 ![Cords with Named Areas](https://github.com/damianc/dev-notes/blob/master/_images/css/grid-prop-named-areas.png "Cords with Named Areas")
