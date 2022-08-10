@@ -18,4 +18,8 @@ grid-row = grid-row-start / grid-row-end
 
 ## `grid-area`
 
+```
+grid-area: row-start [column-start [row-end [column-end]]]
+```
+
 ![Areas Coords](https://github.com/damianc/dev-notes/blob/master/_images/css/grid-prop-area.png "Areas Coords")
