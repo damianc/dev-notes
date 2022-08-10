@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **286** Dev_Notes
+Currently: &nbsp; **287** Dev_Notes
 
 ---
 
@@ -175,6 +175,7 @@ Currently: &nbsp; **286** Dev_Notes
 * [Ellipsis at the end of too long text](css/long-text-ellipsis.md)
 * [Media Queries](css/media-queries.md)
 * [`flex-grow`, `flex-shrink` and `flex-basis`](css/flex-grow-shrink.md)
+* [Grid Coords](css/grid-coords.md)
 * [Grid Named Lines and Areas](css/grid-lines-and-areas.md)
 * [Paintlet](css/paintlet.md)
 
