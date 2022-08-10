@@ -14,8 +14,8 @@ grid-column = grid-column-start / grid-column-end
 grid-row = grid-row-start / grid-row-end
 ```
 
-![Rows Coords](https://github.com/damianc/dev-notes/blob/master/_images/css/grid-prop-column.png "Rows Coords")
+![Rows Coords](https://github.com/damianc/dev-notes/blob/master/_images/css/grid-prop-row.png "Rows Coords")
 
 ## `grid-area`
 
-![Areas Coords](https://github.com/damianc/dev-notes/blob/master/_images/css/grid-prop-column.png "Areas Coords")
+![Areas Coords](https://github.com/damianc/dev-notes/blob/master/_images/css/grid-prop-area.png "Areas Coords")
