@@ -23,3 +23,7 @@ grid-area = row-start [column-start [row-end [column-end]]]
 ```
 
 ![Areas Coords](https://github.com/damianc/dev-notes/blob/master/_images/css/grid-prop-area.png "Areas Coords")
+
+## Passing Area Names
+
+![Cords with Named Areas](https://github.com/damianc/dev-notes/blob/master/_images/css/grid-prop-named-areas.png "Cords with Named Areas")
