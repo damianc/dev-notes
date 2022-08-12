@@ -656,3 +656,78 @@ $$
 $\ell$
 $\eth$
 $\daleth$
+
+----
+
+# `nth-[last-]child()`
+
+## Common Recipes
+
+| Elements to Match | Selector | Preview |
+|--|--|--|
+| 4th | `div:nth-child(4)` | $\square\square\square\blacksquare\square\square\square\square$ |
+| 4th and 5th | `div:nth-child(4), div:nth-child(5)` | $\square\square\square\blacksquare\blacksquare\square\square\square$ |
+| 4th-6th | `div:nth-child(n+4):nth-child(-n+6)` | $\square\square\square\blacksquare\blacksquare\blacksquare\square\square$ |
+| even | `div:nth-child(even)` | $\square\blacksquare\square\blacksquare\square\blacksquare\square\blacksquare$ |
+| odd | `div:nth-child(odd)` | $\blacksquare\square\blacksquare\square\blacksquare\square\blacksquare\square$ |
+
+## Heads and Tails
+
+| Elements to Match | Selector | Preview |
+|--|--|--|
+| first 4 items | `:nth-child(-n+4)` | $\blacksquare\blacksquare\blacksquare\blacksquare\square\square\square\square\square\square$ |
+| last 4 items | `:nth-last-child(-n+4)` | $\square\square\square\square\square\square\blacksquare\blacksquare\blacksquare\blacksquare$ |
+| first 4 and last 4 items | `:nth-child(-n+4), :nth-last-child(-n+4)` | $\blacksquare\blacksquare\blacksquare\blacksquare\square\square\blacksquare\blacksquare\blacksquare\blacksquare$ |
+| all but first 4 items | `:nth-child(n+5)` | $\color{#bbb}{\cancel{\square\square\square\square}}\color{#000}{\blacksquare\blacksquare\blacksquare\blacksquare\blacksquare\blacksquare}$ |
+| all but last 4 items | `:nth-last-child(n+5)` | $\blacksquare\blacksquare\blacksquare\blacksquare\blacksquare\blacksquare\color{#bbb}{\cancel{\square\square\square\square}}$ |
+| all but first 4 and last 4 items | `:nth-child(n+5):nth-last-child(n+5)` | $\color{#bbb}{\cancel{\square\square\square\square}}\color{#000}{\blacksquare\blacksquare}\color{#bbb}{\cancel{\square\square\square\square}}$ |
+
+### 'Every 2nd' Variants
+
+| Elements to Match | Selector | Preview |
+|--|--|--|
+| every 2nd from first 4 items | a) `:nth-child(-2n+4)` $$\ $$ b) `:nth-child(-n+4):nth-child(even)` | $\square\blacksquare\square\blacksquare\color{#bbb}{\square\square\square\square\square\square}$ |
+| as above but starting from 1st | a) `:nth-child(-2n+3)` $$\ $$ b) `:nth-child(-n+4):nth-child(odd)` | $\blacksquare\square\blacksquare\square\color{#bbb}{\square\square\square\square\square\square}$ |
+| every 2nd from last 4 items | a) `:nth-last-child(-2n+4)` $$\ $$ b) `:nth-last-child(-n+4):nth-child(even)` | $\color{#bbb}{\square\square\square\square\square\square}\color{#000}{\blacksquare\square\blacksquare\square}$ |
+| as above but starting from "1st" | a) `:nth-last-child(-2n+3)` $$\ $$ b) `:nth-last-child(-n+4):nth-child(odd)` | $\color{#bbb}{\square\square\square\square\square\square}\color{#000}{\square\blacksquare\square\blacksquare}$ |
+| every 2nd but starting from 5th | `:nth-child(n+5)` | $\cancel{\square\square\square\square}\blacksquare\blacksquare\blacksquare\blacksquare\blacksquare\blacksquare$ |
+| every 2nd but without 4 last items | `:nth-last-child(n+5)` | $\blacksquare\blacksquare\blacksquare\blacksquare\blacksquare\blacksquare\square\square\square\square$ |
+
+n+6
+from 6th on
+= omit first 5
+
+ Value | Matched Elements | Preview |
+|--|--|--|
+| `3` | **3rd** item | $\square \square \blacksquare \square \square \square \square \square \square \square$ |
+| `3n` | **every 3rd** item [3rd, 6th, 9th, 12th ...] | $\square \square \blacksquare \square \square \blacksquare \square \square \blacksquare \square$ |
+| `3n+1` | **every 3rd** but starting **from 1st** [1st, 4th, 7th, 10th ...] | $\blacksquare \square \square \blacksquare \square \square \blacksquare \square \square \blacksquare$ |
+| `3n+6` | **every 3rd** but starting **from 6th** [6th, 9th, 12th, 15th ...] | $\square \square \square \square \square \blacksquare \square \square \blacksquare \square$ |
+| `-3n+6` | **every 3rd** from **6th to 1st** [3rd and 6th] | $\square \square \blacksquare \square \square \overleftarrow{\blacksquare} \square \square \square \square$ |
+| `-4n+6` | **every 4th** from **6th to 1st** [2nd and 6th] | $\square \blacksquare \square \square \square \mathring\blacksquare \square \square \square \square$ |
+| `5n-2` | match ***every 5th*** and ***back by 2*** [5th, 10th, 15th, 20th ... $\Rightarrow$ 3rd, 8th, 13th, 18th ...] | $\square \square \blacksquare \square _{\leftarrow 2} \check\square \square \square \blacksquare \square _{\leftarrow 2} \check\square$ |
+
+$\square\square\check\blacksquare\overleftarrow{\square}\hat\square\square\square...$
+
+$\boxed{1} \boxed{2} \boxed{3} \boxed{4} \cancel{\boxed{5}} \boxed{6}$
+
+$\boxed{\leftarrow\cancel5}$
+$\boxed{\ll^2\cancel5}$
+
+$\boxed{\bold3}\boxed{4} _{\ \color{red}{\leftarrow\ 2}\ }\boxed{\cancel5}$
+
+$\boxed{\bold3}\boxed{4}\boxed{\ll^2}\boxed{\cancel5}$
+
+## Order
+
+```
+li:nth-child(-n+4),li:nth-last-child(-n+4)
+// first 4 and last 4
+
+li:nth-child(-n+4):nth-last-child(-n+4)
+// nothing
+```
+
+$\square \square \color{red}\blacksquare\color{#000} \square \color{red}_{\ \ \leftarrow\ 2\ \ }\color{#000}\color{#888} \cancel{\check\square} \color{#000}\square \square \blacksquare \square _{\leftarrow 2} \check\square \frac{\Leftarrow}{4}$
+
+$\Leftarrow_2$
