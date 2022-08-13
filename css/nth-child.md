@@ -159,7 +159,7 @@ li:nth-child(even) {
 
 ## Variants Overview
 
-| Shape | Meaning | Example | Example Meaning |
+| Form | Meaning | Example | Example Meaning |
 |--|--|--|--|
 | `X` | X-th item | `2` | 2nd item |
 | `Xn` | every X-th item | `2n` | every 2nd item (`[2,4,6,8,10 ...]`) |
