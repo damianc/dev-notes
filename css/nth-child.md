@@ -31,7 +31,7 @@
 
 |||
 |--|--|
-| $li\!:\!nth\!-\!child(\ [m+n]\mathrm{n}+i\ ),\ \ \ \ i \in \lbrack1...n\rbrack$ | $$\sum_{i=1}^{m} \mathrm{li\colon\!{nth\!-\!child}} ([m+n]\mathrm{n} + i)$$ |
+| $li:nth-child(\ [m+n]\mathrm{n}+i\ ),\ \ \ \ i \in \lbrack1...n\rbrack$ | $$\sum_{i=1}^{m} \mathrm{li\colon{nth-child}} ([m+n]\mathrm{n} + i)$$ |
 
 - **`[2 matched, 2 not] ...`**
 
@@ -67,7 +67,7 @@ n omitted, **m matched**:
 
 |||
 |--|--|
-| $li\!:\!nth\!-\!child(\ [m+n]\mathrm{n}-i\ ),\ \ \ \ i \in \lbrack0...n\rbrack$ **or** $li\!:\!nth\!-\!child(\ [m+n]\mathrm{n}-[i-1]\ ),\ \ \ \ i \in \lbrack1...n\rbrack$ | $$\sum_{i=0}^{m} \mathrm{li\colon\!{nth\!-\!child}} ([m+n]\mathrm{n} - i)$$ |
+| $li:nth-child(\ [m+n]\mathrm{n}-i\ ),\ \ \ \ i \in \lbrack0...n\rbrack$ **or** $li:nth-child(\ [m+n]\mathrm{n}-[i-1]\ ),\ \ \ \ i \in \lbrack1...n\rbrack$ | $$\sum_{i=0}^{m} \mathrm{li\colon{nth-child}} ([m+n]\mathrm{n} - i)$$ |
 
 - **`[2 omitted, 2 matched] ...`**
 
@@ -169,7 +169,7 @@ li:nth-child(even) {
 | `-n+X` | only first X's items | `-n+4` | only first 4 items (`[1,2,3,4]`) |
 | `-Xn+Y` | every X^th^ item from first Y's items | `-2n+6` | every 2^nd^ item from first 6 items (`[2,4,6]`) |
 
-Selecting all: `n`, `n-X`
+Selecting all: `n`, `n-X`  
 Selecting nothing: `-n`, `0`, `-X`, `-Xn`, `-n-X`, `-Xn-Y`
 
 > ^1^: subtraction is cyclic and reduced to a group of X items: `4n-6` means _every 2nd from 2nd_, not from -2^nd^; the example's path of a pointer is  as follows: 1^st^ _"minus"_: 4-1=3; 2^nd^ _"minus"_: 3-1=2; 3^rd^ _"minus"_: 2-1=1; then 4^th^ _"minus"_ 1-1=0 (it starts another turn, we have 4 here); 5^th^ _"minus"_: 4-1=3; and finally 6^th^ _"minus"_: 3-1=2; (simply put: `3 -> 2 -> 1 -> 4 -> 3 -> 2`)
