@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **288** Dev_Notes
+Currently: &nbsp; **289** Dev_Notes
 
 ---
 
@@ -261,6 +261,7 @@ Currently: &nbsp; **288** Dev_Notes
 
 # HTML5 APIs
 
+* [Detect Tab Change](html5-apis/detect-tab-change.md)
 * [Download Textarea Content with `URL.createObjectURL()`](html5-apis/download-textarea-with-createobjecturl.md)
 * [Generating Dynamic Files with `FileReader`](html5-apis/generate-dynamic-file.md)
 * [Web Worker](html5-apis/web-worker.md)
