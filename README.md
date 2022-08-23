@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **290** Dev_Notes
+Currently: &nbsp; **291** Dev_Notes
 
 ---
 
@@ -39,6 +39,7 @@ Currently: &nbsp; **290** Dev_Notes
 * [JavaScript](#javascript)
   - [ES6+](#es6)
   - [DOM](#dom)
+  - [PWA](#pwa)
   - [RegExp](#regexp)
   - [OOP](#oop)
   - [FP](#fp)
@@ -300,6 +301,10 @@ Currently: &nbsp; **290** Dev_Notes
 
 * [DOM Traversing Methods](javascript/dom/traverse-methods.md)
 * [`insertAdjacent*()`](javascript/dom/insert-adjacent.md)
+
+## PWA
+
+* [Battery Events](javascript/pwa/battery-events.md)
 
 ## RegExp
 
