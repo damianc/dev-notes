@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **289** Dev_Notes
+Currently: &nbsp; **290** Dev_Notes
 
 ---
 
@@ -273,6 +273,7 @@ Currently: &nbsp; **289** Dev_Notes
 # JavaScript
 
 * [`mouseenter`, `mouseover`, `mousemove`, `mouseleave` and `mouseout`](javascript/mouse-events.md)
+* [Disable Shortcuts or Context Menu](javascript/disable-shortcuts-or-contextmenu.md)
 * [`reduce()` Uses](javascript/reduce-uses.md)
 * [Deep Clone of Object](javascript/deep-clone.md)
 * [Enumerating Properties](javascript/enumerating-properties.md)
