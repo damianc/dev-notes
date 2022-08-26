@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **294** Dev_Notes
+Currently: &nbsp; **295** Dev_Notes
 
 ---
 
@@ -208,6 +208,7 @@ Currently: &nbsp; **294** Dev_Notes
 
 * [Mediator](design-patterns/behavioral/mediator.md)
 * [Visitor](design-patterns/behavioral/visitor.md)
+* [Chain of Responsibility](design-patterns/behavioral/chain-of-responsibility.md)
 * [Command](design-patterns/behavioral/command.md)
 
 # Docker
