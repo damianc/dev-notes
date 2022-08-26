@@ -14,6 +14,7 @@ step2.setNextStep(step3);
 
 const user = new User();
 step1.handle(user);
+// User has been created: { name: 'Mark', age: 24, city: 'LA' }
 ```
 
 * Abstract Service - `WizardStep`:
