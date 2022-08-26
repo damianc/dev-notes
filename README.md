@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **292** Dev_Notes
+Currently: &nbsp; **293** Dev_Notes
 
 ---
 
@@ -197,6 +197,7 @@ Currently: &nbsp; **292** Dev_Notes
 
 * [List of Design Patterns](design-patterns/list.md)
 * [Visitor](design-patterns/visitor.md)
+* [Command](design-patterns/command.md)
 * [Builder vs. Abstract Factory](design-patterns/builder-vs-abstract-factory.md)
 * [Singleton](design-patterns/singleton.md)
 
