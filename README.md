@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **293** Dev_Notes
+Currently: &nbsp; **294** Dev_Notes
 
 ---
 
@@ -206,6 +206,7 @@ Currently: &nbsp; **293** Dev_Notes
 
 ## Behavioral
 
+* [Mediator](design-patterns/behavioral/mediator.md)
 * [Visitor](design-patterns/behavioral/visitor.md)
 * [Command](design-patterns/behavioral/command.md)
 
