@@ -27,6 +27,7 @@ Currently: &nbsp; **293** Dev_Notes
 * [CSS](#css)
   - [Scss](#scss)
 * [Design Patterns](#design-patterns)
+  - [Creational](#creational)
   - [Behavioral](#behavioral)
 * [Docker](#docker)
 * [Errors](#errors)
@@ -198,7 +199,10 @@ Currently: &nbsp; **293** Dev_Notes
 
 * [List of Design Patterns](design-patterns/list.md)
 * [Builder vs. Abstract Factory](design-patterns/builder-vs-abstract-factory.md)
-* [Singleton](design-patterns/singleton.md)
+
+## Creational
+
+* [Singleton](design-patterns/creational/singleton.md)
 
 ## Behavioral
 
