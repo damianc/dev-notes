@@ -15,6 +15,7 @@ process([step1, step2, step3], new User());
 
 // function does the following:
 // step1.setNextStep(step2); step2.setNextStep(step3); step1.handle(user);
+
 function process(stepsSequence: WizardStep[], user: User): void {
     stepsSequence.forEach((step, idx) => {
         const isLast = idx === stepsSequence.length - 1;
