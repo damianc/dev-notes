@@ -1,6 +1,6 @@
 # Chain of Responsibility
 
-## Example 1: Wizard Creating an User
+## Example 1: Wizard Creating a User
 
 * use:
 
