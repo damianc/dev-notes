@@ -27,6 +27,7 @@ Currently: &nbsp; **293** Dev_Notes
 * [CSS](#css)
   - [Scss](#scss)
 * [Design Patterns](#design-patterns)
+  - [Behavioral](#behavioral)
 * [Docker](#docker)
 * [Errors](#errors)
 * [Express.js](#expressjs)
@@ -196,10 +197,13 @@ Currently: &nbsp; **293** Dev_Notes
 # Design Patterns
 
 * [List of Design Patterns](design-patterns/list.md)
-* [Visitor](design-patterns/visitor.md)
-* [Command](design-patterns/command.md)
 * [Builder vs. Abstract Factory](design-patterns/builder-vs-abstract-factory.md)
 * [Singleton](design-patterns/singleton.md)
+
+## Behavioral
+
+* [Visitor](design-patterns/behavioral/visitor.md)
+* [Command](design-patterns/behavioral/command.md)
 
 # Docker
 
