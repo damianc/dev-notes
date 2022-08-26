@@ -34,7 +34,7 @@ class ShapeGroup {
 }
 ```
 
-* `Shape`: `Rectangle` and `Triangle`
+* `Shape` - `Rectangle` and `Triangle`:
 
 ```
 abstract class TransformableShape {
