@@ -9,12 +9,22 @@ const step1: WizardStep = new NameStep('Mark');
 const step2: WizardStep = new AgeStep(24);
 const step3: WizardStep = new CityStep('LA');
 
-step1.setNextStep(step2);
-step2.setNextStep(step3);
-
-const user = new User();
-step1.handle(user);
+process([step1, step2, step3], new User());
 // User has been created: { name: 'Mark', age: 24, city: 'LA' }
+
+
+function process(stepsSequence: WizardStep[], user: User): void {
+    stepsSequence.forEach((step, idx) => {
+        const isLast = idx === stepsSequence.length - 1;
+
+        if (!isLast) {
+            step.setNextStep(stepsSequence[idx + 1]);
+        } else {
+            const [firstStep] = stepsSequence;
+            firstStep.handle(user);
+        }
+    });
+}
 ```
 
 * Abstract Service - `WizardStep`:
