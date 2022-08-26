@@ -2,7 +2,7 @@
 
 Examples:
 - [Buying Stuff - from Shop through Warehouse to Factory](#example-1-buying-stuff---from-shop-through-warehouse-to-factory)
-- [Wizard Creating a User](#example-1-wizard-creating-a-user)
+- [Wizard Creating a User](#example-2-wizard-creating-a-user)
 
 ## Example 1: Buying Stuff - from Shop through Warehouse to Factory
 
