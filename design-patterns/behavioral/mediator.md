@@ -1,6 +1,129 @@
 # Mediator
 
-## Example 1: Bank Accounts and Transfer of Money
+Examples:
+- [Task Board Columns and Moving Tasks](#example-1-task-board-columns-and-moving-tasks)
+- [Bank Accounts and Transfer of Money](#example-2-bank-accounts-and-transfer-of-money)
+
+## Example 1: Task Board Columns and Moving Tasks
+
+* use:
+
+```
+const board = new Board();
+
+const todo: BoardColumn = new PlainColumn('TO DO', ['Task A', 'Task B']);
+const inProgress: BoardColumn = new HighlightedColumn('IN PROGRESS', ['Task C', 'Task D']);
+const done: BoardColumn = new PlainColumn('DONE', ['Task E', 'Task F']);
+
+board.addColumn(todo);
+board.addColumn(inProgress);
+board.addColumn(done);
+
+
+// move "Task A" from "TO DO" to "IN PROGRESS"
+todo.moveTo(inProgress, 'Task A');
+
+// move "Task C" from "IN PROGRESS" to "DONE"
+inProgress.moveTo(done, 'Task C');
+
+
+todo.listTasks();
+/*
+Column TODO
+-> Task B
+*/
+
+
+inProgress.listTasks();
+/*
+HIGHLIGHTED COLUMN IN PROGRESS
+-> Task D
+-> Task A
+*/
+
+
+done.listTasks();
+/*
+Column DONE
+-> Task E
+-> Task F
+-> Task C
+*/
+```
+
+* Mediator - `Board`:
+
+```
+abstract class AbstractBoard {
+    public abstract addColumn(column: BoardColumn): void;
+    public abstract moveTask(
+        sourceColumn: BoardColumn,
+        targetColumn: BoardColumn,
+        task: string
+    ): void;
+}
+
+class Board extends AbstractBoard {
+    private readonly columns: Record<string, BoardColumn> = {};
+
+    public addColumn(column: BoardColumn): void {
+        this.columns[column.name] = column;
+        column.board = this;
+    }
+
+    public moveTask(
+        sourceColumn: BoardColumn,
+        targetColumn: BoardColumn,
+        task: string
+    ): void {
+        const taskIdx = sourceColumn.tasks.indexOf(task);
+        if (taskIdx === -1) {
+            console.warn('No such task in the column.');
+            return;
+        }
+
+        const [pulled] = sourceColumn.tasks.splice(taskIdx, 1);
+        targetColumn.tasks.push(pulled);
+    }
+}
+```
+
+* `BoardColumn` - `PlainColumn` and `HighlightedColumn`:
+
+```
+class BoardColumn {
+    public board!: Board;
+
+    constructor(
+        public name: string,
+        public tasks: string[]
+    ) {}
+
+    public moveTo(column: BoardColumn, task: string): void {
+        this.board.moveTask(this, column, task);
+    }
+
+    public listTasks(): void {
+        const tasksList = this.tasks.map(t => '-> ' + t);
+        console.log(tasksList.join('\n'));
+    }
+}
+
+class PlainColumn extends BoardColumn {
+    public listTasks(): void {
+        console.log('Column ' + this.name);
+        super.listTasks();
+    }
+}
+class HighlightedColumn extends BoardColumn {
+    public listTasks(): void {
+        console.log('HIGHLIGHTED COLUMN ' + this.name);
+        super.listTasks();
+    }
+}
+```
+
+## Example 2: Bank Accounts and Transfer of Money
 
 * use:
 
