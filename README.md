@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **298** Dev_Notes
+Currently: &nbsp; **299** Dev_Notes
 
 ---
 
@@ -40,6 +40,7 @@ Currently: &nbsp; **298** Dev_Notes
 * [HTML](#html)
 * [HTML5 APIs](#html5-apis)
 * [JavaScript](#javascript)
+  - [Recipes](#recipes)
   - [ES6+](#es6)
   - [DOM](#dom)
   - [PWA](#pwa)
@@ -299,6 +300,10 @@ Currently: &nbsp; **298** Dev_Notes
 * [Enumerating Properties](javascript/enumerating-properties.md)
 * [`this` reference](javascript/this-reference.md)
 * [`BigInt`](javascript/bigint.md)
+
+## Recipes
+
+* [`n` Random Numbers from a Range](javascript/recipes/n-random-numbers-from-range.md)
 
 ## ES6+
 
