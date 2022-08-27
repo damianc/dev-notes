@@ -1,6 +1,92 @@
 # State
 
-## Example 1: Database Table Lock
+## Example 1: Open/Closed Bottle
+
+* use:
+
+```
+const bottle = new Bottle();
+
+bottle.open();
+// opening...
+// bottle open
+
+bottle.close();
+// closing...
+// bottle closed
+
+
+bottle.open();
+// opening...
+// bottle open
+
+bottle.open();
+// bottle already open
+
+
+bottle.close();
+// closing...
+// bottle closed
+
+bottle.close();
+// bottle already closed
+```
+
+* `Bottle`:
+
+```
+class Bottle {
+    public states: {[k:string]: BottleState} = {
+        open: new BottleOpen(),
+        closed: new BottleClosed()
+    };
+    public state: BottleState = this.states.closed;
+
+    public handleCork(state: BottleState): void {
+        this.state = state;
+    }
+
+    public open(): void {
+        this.state.open(this)
+    }
+
+    public close(): void {
+        this.state.close(this);
+    }
+}
+```
+
+* States - `BottleOpen` and `BottleClosed`:
+
+```
+class BottleState {
+    public open(b: Bottle): void {
+        console.log('bottle already open');
+    }
+
+    public close(b: Bottle): void {
+        console.log('bottle already closed');
+    }
+}
+
+class BottleOpen extends BottleState {
+    public close(b: Bottle): void {
+        console.log('closing...');
+        b.handleCork(b.states.closed);
+        console.log('bottle closed');
+    }
+}
+
+class BottleClosed extends BottleState {
+    public open(b: Bottle): void {
+        console.log('opening...');
+        b.handleCork(b.states.open);
+        console.log('bottle open');
+    }
+}
+```
+
+## Example 2: Database Table Lock
 
 * use:
 
