@@ -11,11 +11,11 @@ const board = generateBoard(4, 4, {
 const player = new Player();
 player.setBoard(board);
 
-player.checkIfTilesAreReused([4, 3], [2, 3]);
+player.checkIfTilesAreReused([4,3], [2,3]);
 // Selected samples: BombTile DiamondTile
 // Tiles of different type are not reused.
 
-player.checkIfTilesAreReused([1, 1], [2, 2]);
+player.checkIfTilesAreReused([1,1], [2,2]);
 // Selected samples: BombTile BombTile
 // Tiles of same type are reused.
 
@@ -29,19 +29,19 @@ player.auditReuse();
 console.log(player.points);
 // 50
 
-player.pickTile(2, 1);
+player.pickTile(2,1);
 // empty tile: -5 points
 
 console.log(player.points);
 // 45
 
-player.pickTile(1, 2);
+player.pickTile(1,2);
 // diamond: +10 points
 
 console.log(player.points);
 // 55
 
-player.pickTile(3, 4);
+player.pickTile(3,4);
 // bomb: YOU LOST
 
 console.log(player.points);
