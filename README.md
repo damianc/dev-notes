@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **297** Dev_Notes
+Currently: &nbsp; **298** Dev_Notes
 
 ---
 
@@ -28,6 +28,7 @@ Currently: &nbsp; **297** Dev_Notes
   - [Scss](#scss)
 * [Design Patterns](#design-patterns)
   - [Creational](#creational)
+  - [Structural](#structural)
   - [Behavioral](#behavioral)
 * [Docker](#docker)
 * [Errors](#errors)
@@ -203,6 +204,10 @@ Currently: &nbsp; **297** Dev_Notes
 ## Creational
 
 * [Singleton](design-patterns/creational/singleton.md)
+
+## Structural
+
+* [Flyweight](design-patterns/structural/flyweight.md)
 
 ## Behavioral
 
