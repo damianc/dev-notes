@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **295** Dev_Notes
+Currently: &nbsp; **296** Dev_Notes
 
 ---
 
@@ -206,6 +206,7 @@ Currently: &nbsp; **295** Dev_Notes
 
 ## Behavioral
 
+* [State](design-patterns/behavioral/state.md)
 * [Mediator](design-patterns/behavioral/mediator.md)
 * [Visitor](design-patterns/behavioral/visitor.md)
 * [Chain of Responsibility](design-patterns/behavioral/chain-of-responsibility.md)

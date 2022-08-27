@@ -1,0 +1,86 @@
+# State
+
+## Example 1: Database Table Lock
+
+* use:
+
+```
+const table = new Table();
+
+table.insertData({ name: 'John' });
+// Table is locked!
+// Cannot insert data: {name: 'John'}
+
+table.setState(table.TableUnlocked);
+
+table.insertData({ name: 'Mark' });
+// Added new data: {name: 'Mark'}
+// Current table size: 1
+
+table.insertData({ name: 'Adam' });
+// Added new data: {name: 'Adam'}
+// Current table size: 2
+
+
+table.setState(table.TableLocked);
+
+table.insertData({ name: 'Will' });
+// Table is locked!
+// Cannot insert data: {name: 'Will'}
+
+
+console.log(table.data);
+// [{name: 'Mark'}, {name: 'Adam'}]
+```
+
+* `Table`:
+
+```
+class Table {
+    public TableLocked = new TableStateLocked(this);
+    public TableUnlocked = new TableStateUnlocked(this);
+    public tableLock: TableState = this.TableLocked;
+    public data: IData[] = [];
+
+    public setState(state: TableState): void {
+        this.tableLock = state;
+    }
+
+    public insertData(data: IData): void {
+        this.tableLock.write(data);
+    }
+}
+
+interface IData {
+    name: string;
+}
+```
+
+* States - `TableStateLocked` and `TableStateUnlocked`:
+
+```
+abstract class TableState {
+    constructor(protected readonly table: Table) {}
+
+    public abstract write(data: IData): void;
+}
+
+class TableStateLocked extends TableState {
+    public write(data: IData): void {
+        console.log('Table is locked!');
+        console.log('Cannot insert data:', data);
+    }
+}
+
+class TableStateUnlocked extends TableState {
+    public write(data: IData): void {
+        this.table.data.push(data);
+        console.log('Added new data:', data);
+        console.log('Current table size:', this.table.data.length);
+    }
+}
+```
+
+
+
+
