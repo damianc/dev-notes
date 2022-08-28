@@ -1,5 +1,110 @@
 # Flyweight
 
+Examples:
+- [Binary Words](#example-1-binary-words)
+- [Game Board Tiles](#example-2-game-board-tiles)
+
+## Example 1: Binary Words
+
+* use:
+
+```
+const binTwentyTwo = '10110';
+
+const bf = new BinaryFactory();
+const bins = bf.fromString(binTwentyTwo, true);
+// number of words: 5
+// number of objects in memory: 2
+
+console.log(bins);
+// [BinOne, BinZero, BinOne, BinOne, BinZero]
+
+console.log(bins.decimalValue());
+// 22
+```
+
+* Flyweights - `BinZero` and `BinOne`:
+
+```
+interface IBinWord {
+    value: number;
+    valueInSeq(position: number): number;
+}
+
+class BinZero implements IBinWord {
+    value = 0;
+    valueInSeq(position: number): number {
+        return 0;
+    }
+}
+
+class BinOne implements IBinWord {
+    value = 1;
+    valueInSeq(position: number): number {
+        return 2 ** position;
+    }
+}
+```
+
+* Flyweight Factory - `BinaryFactory`:
+
+```
+class BinaryFactory {
+    private binWords: Record<string, IBinWord> = {};
+
+    public getWord(word: string): IBinWord {
+        let binWord: IBinWord;
+        if (word in this.binWords) {
+            binWord = this.binWords[word];
+        } else {
+            switch (word) {
+                case '1':
+                    binWord = new BinOne();
+                    break;
+                case '0':
+                default:
+                    binWord = new BinZero();
+            }
+            this.binWords[word] = binWord;
+        }
+        return binWord;
+    }
+
+    public fromString(str: string, withAudit = false): BinarySequence {
+        const bins = [...str].map(word => this.getWord(word));
+        if (withAudit) this.auditFlyweights(str);
+
+        return new BinarySequence(
+            ...bins
+        );
+    }
+
+    private auditFlyweights(str: string): void {
+        console.log(
+            'number of words: ' + str.length,
+        );
+        console.log(
+            'number of objects in memory: ' + Object.keys(this.binWords).length
+        );
+    }
+}
+```
+
+* Flyweight Consumer - `BinarySequence`:
+
+```
+class BinarySequence extends Array<IBinWord> {
+    public decimalValue(): number {
+        return this.reduce((acc: number, curr: IBinWord, idx: number) => {
+            const position = this.length - (idx + 1);
+            return acc + curr.valueInSeq(position);
+        }, 0);
+    }
+}
+```
+
+## Example 2: Game Board Tiles
+
 * use:
 
 ```
