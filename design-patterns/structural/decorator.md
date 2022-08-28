@@ -106,6 +106,7 @@ class StackLoggingRemovals extends StackDecorator {
         function pop() {
             const removed = currImpl();
             dec.logs.push('removed ' + removed);
+            return removed;
         }
         dec.pop = pop;
     }
