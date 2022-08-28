@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **299** Dev_Notes
+Currently: &nbsp; **300** Dev_Notes
 
 ---
 
@@ -208,6 +208,7 @@ Currently: &nbsp; **299** Dev_Notes
 
 ## Structural
 
+* [Decorator](design-patterns/structural/decorator.md)
 * [Flyweight](design-patterns/structural/flyweight.md)
 
 ## Behavioral
