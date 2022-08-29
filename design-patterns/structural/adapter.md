@@ -1,5 +1,91 @@
 # Adapter
 
+Examples:
+- [European/American Sockets and Plugs](#example-1-europeanamerican-sockets-and-plugs)
+- [Decimal Adapter for Binary Input/Output](#example-2-decimal-adapter-for-binary-inputoutput)
+
+## Example 1 - European/American Sockets and Plugs
+
+* use:
+
+```
+const es = new EuropeanSocket();
+const ep = new EuropeanPlug();
+
+es.receive(ep);
+// charging with European plug...
+
+const as = new AmericanSocket();
+as.receive(ep);
+// cannot connect European plug to American socket
+
+const ap = new AmericanPlug();
+as.receive(ap);
+// charging with American plug...
+
+es.receive(ap);
+// cannot connect American plug to European socket
+```
+
+* Interface - `EuropeanSocket` with `EuropeanPlug`:
+
+```
+abstract class Socket {
+    abstract plugs: string;
+    abstract type: string;
+
+    receive(plug: Plug): void {
+        if (plug.plugs === this.plugs) {
+            plug.plugIn();
+        } else {
+            console.log(
+                `cannot connect ${plug.type} plug to ${this.type} socket`
+            );
+        }
+    }
+}
+
+abstract class Plug {
+    abstract plugs: string;
+    abstract type: string;
+    abstract plugIn(): void;
+}
+
+class EuropeanSocket extends Socket {
+    plugs = '00';
+    type = 'European';
+}
+
+class EuropeanPlug extends Plug {
+    plugs = '00';
+    type = 'European';
+
+    plugIn(): void {
+        console.log('charging with European plug...');
+    }
+}
+```
+
+* Adapter - `AmericanSocket` with `AmericanPlug`:
+
+```
+class AmericanSocket extends EuropeanSocket {
+    plugs = '11';
+    type = 'American';
+}
+
+class AmericanPlug extends EuropeanPlug {
+    plugs = '11';
+    type = 'American';
+
+    plugIn(): void {
+        console.log('charging with American plug...');
+    }
+}
+```
+
+## Example 2 - Decimal Adapter for Binary Input/Output
+
 * use:
 
 ```
