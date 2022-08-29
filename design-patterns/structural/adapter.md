@@ -3,13 +3,14 @@
 * use:
 
 ```
+const hexer = new Hexer();
+const decHexer = new DecHexerAdapter(hexer);
+
 const fifteen = {
     bin: '1111',
     dec: 15,
     hex: 'f'
 };
-
-const hexer = new Hexer();
 
 console.log(
     hexer.convertTo(fifteen.bin) + ' = ' + fifteen.hex,
@@ -17,9 +18,6 @@ console.log(
 );
 // f = f
 // 1111 = 1111
-
-
-const decHexer = new DecHexerAdapter(hexer);
 
 console.log(
     decHexer.convertTo(fifteen.dec) + ' = ' + fifteen.hex,
