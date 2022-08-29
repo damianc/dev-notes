@@ -36,7 +36,7 @@ console.log(`${x} -> ${dec2Hex} -> ${hex2Bin} -> ${bin2Dec}`);
 // 22 -> 16 -> 10110 -> 22
 ```
 
-* Adapter - `DecHexerAdapter`:
+* Interface - `Hexer`:
 
 ```
 interface IConverable {
@@ -52,7 +52,11 @@ class Hexer implements IConverable {
         return parseInt(hexStr, 16).toString(2);
     }
 }
+```
 
+* Adapter - `DecHexerAdapter`:
+
+```
 class DecHexerAdapter implements IConverable {
     constructor(private adapted: Hexer) {}
 
