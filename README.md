@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **301** Dev_Notes
+Currently: &nbsp; **302** Dev_Notes
 
 ---
 
@@ -215,6 +215,7 @@ Currently: &nbsp; **301** Dev_Notes
 
 * [Chain of Responsibility](design-patterns/behavioral/chain-of-responsibility.md)
 * [Command](design-patterns/behavioral/command.md)
+* [Interpreter](design-patterns/behavioral/interpreter.md)
 * [Iterator](design-patterns/behavioral/iterator.md)
 * [Mediator](design-patterns/behavioral/mediator.md)
 * [State](design-patterns/behavioral/state.md)
