@@ -1,5 +1,11 @@
 # Interpreter
 
+Examples:
+- [Permissions Interpreter](#example-1-permissions-interpreter)
+- [AST Interpreter](#example-2-ast-interpreter)
+
+## Example 1: Permissions Interpreter
+
 * use:
 
 ```
@@ -95,6 +101,89 @@ class Removal extends PermWord {
     }
     one(): string {
         return 'can delete';
+    }
+}
+```
+
+## Example 2: AST Interpreter
+
+* use:
+
+```
+const expr = [
+    new NumberValue(10),
+    new ArithmeticOperator('+'),
+    new NumberValue(20),
+    new ArithmeticOperator('-'),
+    new NumberValue(5)
+];
+
+// 10 + 20 - 5
+const res = ExpressionNode.interpret(expr);
+
+console.log(res);
+// 25
+```
+
+* Context - `Expression`:
+
+```
+class Expression {
+    constructor(public nodes: ExpressionNode[]) {}
+
+    public result = 0;
+    public cache: Operator | string = '';
+}
+
+type Operator = '+' | '-';
+```
+
+* Implementation - `ExpressionNode`:
+
+```
+abstract class ExpressionNode {
+    abstract process(ctx: Expression, expr: ExpressionNode): void;
+
+    constructor(public content: number | string) {}
+
+    public interpret(ctx: Expression, expr: ExpressionNode): void {
+        expr.process(ctx, expr);
+    }
+
+    static interpret(nodes: ExpressionNode[]): number {
+        const ctx = new Expression(nodes);
+        ctx.nodes.forEach(n => n.interpret(ctx, n));
+
+        return ctx.result;
+    }
+}
+
+class ArithmeticOperator extends ExpressionNode {
+    process(ctx: Expression, expr: ExpressionNode): void {
+        ctx.cache = expr.content as Operator;
+    }
+}
+
+class NumberValue extends ExpressionNode {
+    process(ctx: Expression, expr: ExpressionNode): void {
+        if (ctx.cache !== '') {
+            const op = ctx.cache;
+            ctx.cache = '';
+            ctx.result = this.performOperation(
+                ctx.result,
+                expr.content as number,
+                op as Operator
+            );
+        } else {
+            ctx.result = expr.content as number;
+        }
+    }
+
+    private performOperation(a: number, b: number, op: Operator): number {
+        switch (op) {
+            case '+': return a + b;
+            case '-': return a - b;
+        }
     }
 }
 ```
