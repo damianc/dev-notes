@@ -23,6 +23,8 @@ console.log(
     decHexer.convertTo(fifteen.dec) + ' = ' + fifteen.hex,
     decHexer.convertFrom(fifteen.hex) + ' = ' + fifteen.dec
 );
+// f = f
+// 15 = 15
 
 
 const x = 22;
