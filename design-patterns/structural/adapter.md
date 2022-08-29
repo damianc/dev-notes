@@ -4,7 +4,7 @@ Examples:
 - [European/American Sockets and Plugs](#example-1-europeanamerican-sockets-and-plugs)
 - [Decimal Adapter for Binary Input/Output](#example-2-decimal-adapter-for-binary-inputoutput)
 
-## Example 1 - European/American Sockets and Plugs
+## Example 1: European/American Sockets and Plugs
 
 * use:
 
@@ -84,7 +84,7 @@ class AmericanPlug extends EuropeanPlug {
 }
 ```
 
-## Example 2 - Decimal Adapter for Binary Input/Output
+## Example 2: Decimal Adapter for Binary Input/Output
 
 * use:
 
