@@ -31,6 +31,7 @@
 * [Sets](#sets)
   - [Common and Unique Items](#common-and-unique-items)
 * [Objects](#objects)
+  - [Path to Object Property](#path-to-object-property)
   - [Link Objects with Protos](#link-objects-with-protos)
 * [Coordinates](#coordinates)
   - [Polygon Length](#polygon-length)
@@ -629,6 +630,66 @@ items(charArrs, 'unique') // ['a', 'c']
 ```
 
 ## Objects
+
+### Path to Object Property
+
+```
+const obj = {
+  foo: {
+    bar: {
+      baz: 120,
+      quux: 150
+    }
+  }
+};
+
+const path = 'foo.bar.baz';
+const paths = path.split('.');
+// ['foo', 'bar', 'baz']
+
+const baz = paths.reduce((acc, curr) => {
+  if (!acc || !acc[curr]) return null;
+  return acc[curr];
+}, obj);
+
+baz
+// 120
+```
+
+```
+const obj = {
+  foo: {
+    bar: [1, 2, {
+      baz: {
+        quux: [100, 200, 300, 400]
+      }
+    }]
+  }
+};
+
+const twoHundred = objPath(
+  obj,
+  'foo.bar[2].baz.quux[1]'
+);
+
+console.log(twoHundred);
+// 200
+
+
+function objPath(obj, path) {
+  const paths = parsePath(path);
+  return paths.reduce((acc, curr) => {
+    if (!acc || !acc[curr]) return null;
+    return acc[curr];
+  }, obj);
+
+  function parsePath(inputPath) {
+    return inputPath.split(
+      /(?:\.|\[(\d+)\])/
+    ).filter(Boolean);
+  }
+}
+```
 
 ### Link Objects with Protos
 
