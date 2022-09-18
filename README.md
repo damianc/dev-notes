@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **306** Dev_Notes
+Currently: &nbsp; **307** Dev_Notes
 
 ---
 
@@ -45,6 +45,7 @@ Currently: &nbsp; **306** Dev_Notes
   - [DOM](#dom)
   - [PWA](#pwa)
   - [RegExp](#regexp)
+  - [JS Tools](#js-tools)
   - [OOP](#oop)
   - [FP](#fp)
   - [Exotics](#exotics)
@@ -343,6 +344,9 @@ Currently: &nbsp; **306** Dev_Notes
 * [RegExp _Sticky_ Flag](javascript/re-sticky-flag.md)
 * [`$` in the `replace()` Function](javascript/regexp-dollar-in-replace.md)
 * [RegExp Related Symbols](javascript/regexp-related-symbols.md)
+
+## JS Tools
+* [Styling `console.log()`](javascript/tools/styling-console-log.md)
 
 ## OOP
 
