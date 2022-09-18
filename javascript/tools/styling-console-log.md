@@ -12,7 +12,7 @@ console.log(' %c ...', 'color:red' )
 
 ## Advanced Messages
 
-![Message with a complex styling applied](https://github.com/damianc/dev-notes/blob/master/_images/javascript/styled-console-log-2.png "Message with a complex styling applied")
+![Message with a complex styling applied](https://github.com/damianc/dev-notes/blob/master/_images/javascript/styled-console-log-2-function.png "Message with a complex styling applied")
 
 * Brain-Fucking Approach:
 
