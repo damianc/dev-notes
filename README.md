@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **307** Dev_Notes
+Currently: &nbsp; **308** Dev_Notes
 
 ---
 
@@ -342,6 +342,7 @@ Currently: &nbsp; **307** Dev_Notes
 * [RegExp: named captured groups](javascript/es6/re-named-groups.md)
 * [`match()` vs. `exec()` and RegExp with/without the `g` Flag](javascript/match-vs-exec-g.md)
 * [RegExp _Sticky_ Flag](javascript/re-sticky-flag.md)
+* [Matching Emoji in RegExp](javascript/es6/regexp-emoji.md)
 * [`$` in the `replace()` Function](javascript/regexp-dollar-in-replace.md)
 * [RegExp Related Symbols](javascript/regexp-related-symbols.md)
 
