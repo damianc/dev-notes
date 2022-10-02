@@ -5,6 +5,7 @@
 * [`Symbol.split`](#symbolsplit)
 * [`Symbol.match`](#symbolmatch)
 * [`Symbol.matchAll`](#symbolmatchall)
+* [Other Notes](#other-notes)
 
 ## `Symbol.replace`
 
@@ -180,3 +181,10 @@ const str = 'A 1 B 2';
 [...str.matchAll(new Matcher('CHARS'))]
 // ["A", "B"]
 ```
+
+## Other Notes
+
+* [`Symbol.match`](es6/symbol-match.md)
+* [`Symbol.search`](es6/symbol-search.md)
+* [`Symbol.replace`](es6/symbol-replace.md)
+* [`Symbol.split`](es6/symbol-split.md)
