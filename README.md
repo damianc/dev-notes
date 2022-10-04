@@ -1,6 +1,6 @@
 # Dev_Notes
 
-Stuff I have learned :rocket::rocket:
+Handy dev stuff :rocket::rocket:
 
 Similar repos:
 * [@charliegerard](https://github.com/charliegerard/dev-notes)
