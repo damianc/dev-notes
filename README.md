@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **310** Dev_Notes
+Currently: &nbsp; **311** Dev_Notes
 
 ---
 
@@ -307,6 +307,7 @@ Currently: &nbsp; **310** Dev_Notes
 * [Enumerating Properties](javascript/enumerating-properties.md)
 * [`this` reference](javascript/this-reference.md)
 * [`BigInt`](javascript/bigint.md)
+* [Checking `NaN`](javascript/checking-nan.md)
 
 ## Recipes
 
