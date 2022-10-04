@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **309** Dev_Notes
+Currently: &nbsp; **310** Dev_Notes
 
 ---
 
@@ -319,6 +319,7 @@ Currently: &nbsp; **309** Dev_Notes
 * [Generator Member Shorthand](javascript/es6/generator-member-shorthand.md)
 * [Object Descriptors](javascript/es6/object-descriptors.md)
 * [`preventExtensions()`, `seal()` and `freeze()`](javascript/es6/freeze-seal-preventextensions.md)
+* [`Object.is()`](javascript/es6/object-is.md)
 * [[Weak]Map vs. [Weak]Set](javascript/es6/maps-vs-sets.md)
 * [export and import](javascript/es6/export-and-import.md)
 * [Typed Arrays](javascript/es6/typed-arrays.md)
