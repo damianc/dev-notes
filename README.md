@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **311** Dev_Notes
+Currently: &nbsp; **312** Dev_Notes
 
 ---
 
@@ -52,6 +52,7 @@ Currently: &nbsp; **311** Dev_Notes
   - [JS Lab](#js-lab)
 * [Nest.js](#nestjs)
 * [Node](#node)
+  - [CLI](#cli)
 * [PHP](#php)
 * [Python](#python)
 * [React](#react)
@@ -385,6 +386,10 @@ Currently: &nbsp; **311** Dev_Notes
 * [`btoa()` and `atob()` in Node](node/btoa-and-atob.md)
 * [NPM Script Working with Files](node/npm-script-working-with-files.md)
 * [`dgram` Socket](node/dgram-socket.md)
+
+## CLI
+
+* [Progress Bar](node/cli/progress-bar.md)
 
 # PHP
 
