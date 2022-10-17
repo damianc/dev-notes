@@ -57,7 +57,7 @@ class ProgressBar {
 * use:
 
 ```
-const pb = new ProgressBar(50, 500);
+const pb = new ProgressBar(50);
 pb.run();
 ```
 
