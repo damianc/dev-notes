@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **312** Dev_Notes
+Currently: &nbsp; **313** Dev_Notes
 
 ---
 
@@ -178,6 +178,7 @@ Currently: &nbsp; **312** Dev_Notes
 # CSS
 
 * [CSS Selectors](css/selectors.md)
+* [CSS Counters](css/counters.md)
 * [Prevent Line-Break in a Table](css/prevent-line-break-in-table.md)
 * [Ellipsis at the end of too long text](css/long-text-ellipsis.md)
 * [Media Queries](css/media-queries.md)
