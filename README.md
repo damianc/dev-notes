@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **313** Dev_Notes
+Currently: &nbsp; **314** Dev_Notes
 
 ---
 
@@ -356,6 +356,7 @@ Currently: &nbsp; **313** Dev_Notes
 
 ## OOP
 
+* [Anonymous Classes](javascript/oop/anonymous-class.md)
 * [Abstract and Final Classes](javascript/oop/abstract-final-class.md)
 * [Inheritance](javascript/oop/inheritance.md)
 
