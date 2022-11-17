@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **314** Dev_Notes
+Currently: &nbsp; **315** Dev_Notes
 
 ---
 
@@ -53,6 +53,7 @@ Currently: &nbsp; **314** Dev_Notes
 * [Nest.js](#nestjs)
 * [Node](#node)
   - [CLI](#cli)
+* [npm](#npm)
 * [PHP](#php)
 * [Python](#python)
 * [React](#react)
@@ -392,6 +393,10 @@ Currently: &nbsp; **314** Dev_Notes
 ## CLI
 
 * [Progress Bar](node/cli/progress-bar.md)
+
+# npm
+
+* [Check if Package Name is Free to Use](npm/check-package-name.md)
 
 # PHP
 
