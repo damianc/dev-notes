@@ -164,14 +164,14 @@ console.log('[extra]', location.search);
 
 ```
 {
-  hash: ""
-  host: "localhost"
-  hostname: "localhost"
-  href: "http://localhost/web-workers/worker.js?a=1"
-  origin: "http://localhost"
-  pathname: "/web-workers/worker.js"
-  port: ""
-  protocol: "http:"
+  hash: "",
+  host: "localhost",
+  hostname: "localhost",
+  href: "http://localhost/web-workers/worker.js?a=1",
+  origin: "http://localhost",
+  pathname: "/web-workers/worker.js",
+  port: "",
+  protocol: "http:",
   search: "?a=1"
 }
 ```
