@@ -60,3 +60,58 @@ importScripts('lib.js', 'utils.js');
 ```
 importScripts('//example.com/hello.js');
 ```
+
+## Example with Imported Scripts
+
+```
+const worker = new Worker('worker.js');
+
+worker.addEventListener('message', ({ data }) => {
+  console.log('[app] worker sent:', data);
+});
+
+worker.postMessage(1);
+
+const t = setTimeout(() => {
+  worker.postMessage(2);
+  clearTimeout(t);
+}, 4000);
+```
+
+* `worker.js`
+
+```
+importScripts('calc.js');
+
+addEventListener('message', ({ data }) => {
+  console.log('[worker] worker received:', data);
+  
+  postMessage(Calc.mulBy10(data));
+  Calc.doMulBy10(data);
+});
+```
+
+* `calc.js`
+
+```
+const Calc = {
+  mulBy10(x) {
+    return x * 10;
+  },
+  doMulBy10(x) {
+    postMessage(this.mulBy10(x));
+  }
+};
+```
+
+* output:
+
+```
+[worker] worker received: 1
+[app] worker sent: 10
+[app] worker sent: 10
+
+[worker] worker received: 2
+[app] worker sent: 20
+[app] worker sent: 20
+```
