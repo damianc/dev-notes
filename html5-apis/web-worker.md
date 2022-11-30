@@ -129,3 +129,47 @@ const Calc = {
 [app] worker sent: 20
 [app] worker sent: 20
 ```
+
+## `WorkerLocation`
+
+* `app.js`
+
+```
+const worker = new Worker('worker.js?a=1');
+// ...
+```
+
+* `worker.js`
+
+```
+importScripts('extra.js?b=2');
+console.log('[worker]', location.search);
+// ...
+```
+
+* `extra.js`
+
+```
+console.log('[extra]', location.search);
+```
+
+* output:
+
+```
+[extra] ?a=1
+[worker] ?a=1
+```
+
+## `WorkerLocation` Properties
+
+```
+hash: ""
+host: "localhost"
+hostname: "localhost"
+href: "http://localhost/web-workers/worker.js?a=1"
+origin: "http://localhost"
+pathname: "/web-workers/worker.js"
+port: ""
+protocol: "http:"
+search: "?a=1"
+```
