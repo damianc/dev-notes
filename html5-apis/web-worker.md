@@ -89,17 +89,27 @@ addEventListener('message', ({ data }) => {
   postMessage(Calc.mulBy10(data));
   Calc.doMulBy10(data);
 });
+
+const WorkerAPI = {
+  log: console.log
+};
 ```
 
 * `calc.js`
 
 ```
 const Calc = {
-  mulBy10(x) {
-    return x * 10;
+  mulBy10(x, direct = true) {
+    const val = x * 10;
+    if (direct) {
+      WorkerAPI.log(`[calc] return n: ${x} -> ${val}`);
+    }
+    return val;
   },
   doMulBy10(x) {
-    postMessage(this.mulBy10(x));
+    const val = this.mulBy10(x, false);
+    WorkerAPI.log(`[calc] emit n: ${x} -> ${val}`);
+    postMessage(val);
   }
 };
 ```
@@ -108,10 +118,14 @@ const Calc = {
 
 ```
 [worker] worker received: 1
+[calc] return n: 1 -> 10
+[calc] emit n: 1 -> 10
 [app] worker sent: 10
 [app] worker sent: 10
 
 [worker] worker received: 2
+[calc] return n: 2 -> 20
+[calc] emit n: 2 -> 20
 [app] worker sent: 20
 [app] worker sent: 20
 ```
