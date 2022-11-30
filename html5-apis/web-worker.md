@@ -160,16 +160,18 @@ console.log('[extra]', location.search);
 [worker] ?a=1
 ```
 
-## `WorkerLocation` Properties
+### `WorkerLocation` Properties
 
 ```
-hash: ""
-host: "localhost"
-hostname: "localhost"
-href: "http://localhost/web-workers/worker.js?a=1"
-origin: "http://localhost"
-pathname: "/web-workers/worker.js"
-port: ""
-protocol: "http:"
-search: "?a=1"
+{
+  hash: ""
+  host: "localhost"
+  hostname: "localhost"
+  href: "http://localhost/web-workers/worker.js?a=1"
+  origin: "http://localhost"
+  pathname: "/web-workers/worker.js"
+  port: ""
+  protocol: "http:"
+  search: "?a=1"
+}
 ```
