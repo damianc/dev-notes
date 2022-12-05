@@ -18,7 +18,7 @@ btn.addEventListener('click', () => {
 });
 ```
 
-## select()
+## `select()`
 
 ```
 navigator.contacts.select(properties, options?)
@@ -59,3 +59,7 @@ navigator.contacts.getProperties()
 ```
 
 Returns a `Promise` that resolves with an array of strings - supported properties.
+
+----
+
+[W3C Docs](https://w3c.github.io/contact-api/spec)
