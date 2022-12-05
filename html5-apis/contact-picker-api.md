@@ -29,7 +29,7 @@ navigator.contacts.select(properties, options?)
 
 ### Return Value
 
-Returned value is a `Promise` that resolves with an array of objects with the following properites:
+Returned value is a `Promise` that resolves with an array of objects with the following properties:
 
 ```
 {
@@ -58,4 +58,4 @@ Returned value is a `Promise` that resolves with an array of objects with the fo
 navigator.contacts.getProperties()
 ```
 
-Returns a `Promise` that resolves with an array of strings - supported properites.
+Returns a `Promise` that resolves with an array of strings - supported properties.
