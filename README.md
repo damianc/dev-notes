@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **315** Dev_Notes
+Currently: &nbsp; **316** Dev_Notes
 
 ---
 
@@ -297,6 +297,7 @@ Currently: &nbsp; **315** Dev_Notes
 * [Generating Dynamic Files with `FileReader`](html5-apis/generate-dynamic-file.md)
 * [Web Worker](html5-apis/web-worker.md)
 * [Custom Video Controls](html5-apis/custom-video-controls.md)
+* [Contact Picker API](html5-apis/contact-picker-api.md)
 * [`URL`](html5-apis/url.md)
 * [`URLSearchParams`](html5-apis/url-search-params.md)
 * [Display Browser Modal to Save Credentials](html5-apis/display-browser-modal-to-save-pass.md)
