@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **318** Dev_Notes
+Currently: &nbsp; **319** Dev_Notes
 
 ---
 
@@ -286,6 +286,7 @@ Currently: &nbsp; **318** Dev_Notes
 
 # HTML
 
+* [File Input: `accept` Attribute](html/file-input-accept.md)
 * [Placeholder for `<input type="date" />`](html/placeholder-for-input-type-date.md)
 * [Values of the `autocomplete` Attribute](html/autocomplete-values.md)
 * [Suggest New Password on Password Control](html/suggest-new-password.md)
