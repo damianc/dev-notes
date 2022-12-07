@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **319** Dev_Notes
+Currently: &nbsp; **320** Dev_Notes
 
 ---
 
@@ -316,6 +316,7 @@ Currently: &nbsp; **319** Dev_Notes
 ## Recipes
 
 * [`n` Random Numbers from a Range](javascript/recipes/n-random-numbers-from-range.md)
+* [_Trusted Value Providers_ aka _Signed Objects_](javascript/recipes/encapsulated-objects.md)
 * [Calling `eval()` in a Context](javascript/recipes/eval-in-context.md)
 
 ## ES6+
