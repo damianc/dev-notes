@@ -46,7 +46,9 @@ function Singleton() {
 
   return Singleton.inst;
 }
+```
 
+```
 const inst1 = new Singleton();
 const inst2 = new Singleton();
 
@@ -69,7 +71,9 @@ class Singleton {
     return Singleton.inst;
   }
 }
+```
 
+```
 const inst1 = new Singleton();
 const inst2 = new Singleton();
 
