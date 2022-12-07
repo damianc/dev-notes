@@ -10,7 +10,7 @@ $a = \sin(\frac{lat_{\Delta}}{2})^2 +  \cos(lat_1) \cdot \cos(lat_2) \cdot \sin(
   
 $c = 2 \cdot \text{atan}^2(\sqrt{a}, \sqrt{1- a})$  
   
-$\bold{d = 6371 \cdot c}$
+**$d = 6371 \cdot c$**
 
 ```
 function getDistance(lat1, lon1, lat2, lon2) {
