@@ -39,3 +39,6 @@ getDistance(...warsaw, ...poznan);
 // 278.11
 // (278.34 KM by Google Maps)
 ```
+
+> Coordinates from:
+> [https://public.opendatasoft.com/explore/dataset/geonames-all-cities-with-a-population-1000/table](https://public.opendatasoft.com/explore/dataset/geonames-all-cities-with-a-population-1000/table/?disjunctive.cou_name_en&sort=name)
