@@ -9,7 +9,9 @@ const DB = (function () {
   const signSymbol = Symbol('sign');
 
   function sign(obj) {
-    obj.__sign = signSymbol;
+    Object.defineProperty(obj, '__sign', {
+      value: signSymbol
+    });
     return obj;
   }
 
@@ -23,6 +25,7 @@ const DB = (function () {
       return base;
     },
     delete(obj) {
+      if (!obj) return;
       if (obj.__sign !== signSymbol) {
         throw new Error('Invalid input object!');
       }
