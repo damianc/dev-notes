@@ -5,19 +5,37 @@
 
 ```
 function getDistance(lat1, lon1, lat2, lon2) {
-    const R = 6378.137; // radius of earth in KM
+  const rad = n => n * Math.PI / 180;
+  const R = 6371; // radius of Earth (KM)
 
-    const dLat = lat2 * Math.PI / 180 - lat1 * Math.PI / 180;
-    const dLon = lon2 * Math.PI / 180 - lon1 * Math.PI / 180;
+  const latDelta = rad(lat2) - rad(lat1);
+  const lonDelta = rad(lon2) - rad(lon1);
 
-    const a =
-      Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-      Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
-      Math.sin(dLon / 2) * Math.sin(dLon / 2);
+  const a =
+    Math.sin(latDelta / 2) ** 2 +
+    Math.cos(rad(lat1)) * Math.cos(rad(lat2)) *
+    Math.sin(lonDelta / 2) ** 2;
 
-    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-    const d = R * c;
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  const d = R * c;
 
-    return d * 1000; // convert to meters
+  return +d.toFixed(2); // KM
 }
+```
+
+```
+const tokyo = [35.6895, 139.69171];
+const sydney = [-33.86785, 151.20732];
+
+getDistance(...tokyo, ...sydney);
+// 7826.48
+// (7821 KM by Google)
+
+
+const warsaw = [52.22977, 21.01178];
+const poznan = [52.40692, 16.92993];
+
+getDistance(...warsaw, ...poznan);
+// 278.11
+// (278.34 KM by Google Maps)
 ```
