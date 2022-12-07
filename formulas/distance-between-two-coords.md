@@ -3,15 +3,6 @@
 * [Haversine Formula](https://en.wikipedia.org/wiki/Haversine_formula)
 * [UTM Coordinate System](https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system)
 
-$lat_{\Delta} = lat_2 - lat_1$  
-$lon_{\Delta} = lon_2 - lon_1$  
-  
-$a = \sin(\frac{lat_{\Delta}}{2})^2 +  \cos(lat_1) \cdot \cos(lat_2) \cdot \sin(\frac{lon_{\Delta}}{2})^2$  
-  
-$c = 2 \cdot \text{atan}^2(\sqrt{a}, \sqrt{1- a})$  
-  
-> $d = 6371 \cdot c$
-
 ```
 function getDistance(lat1, lon1, lat2, lon2) {
   const rad = n => n * Math.PI / 180;
@@ -31,6 +22,15 @@ function getDistance(lat1, lon1, lat2, lon2) {
   return +d.toFixed(2); // KM
 }
 ```
+
+$lat_{\Delta} = lat_2 - lat_1$  
+$lon_{\Delta} = lon_2 - lon_1$  
+  
+$a = \sin(\frac{lat_{\Delta}}{2})^2 +  \cos(lat_1) \cdot \cos(lat_2) \cdot \sin(\frac{lon_{\Delta}}{2})^2$  
+  
+$c = 2 \cdot \text{atan}^2(\sqrt{a}, \sqrt{1- a})$  
+  
+> $d = 6371 \cdot c$
 
 ```
 const tokyo = [35.6895, 139.69171];
