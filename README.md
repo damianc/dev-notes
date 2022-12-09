@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **321** Dev_Notes
+Currently: &nbsp; **322** Dev_Notes
 
 ---
 
@@ -25,6 +25,7 @@ Currently: &nbsp; **321** Dev_Notes
   - [HTTP](#http)
 * [Bash Apps](#bash-apps)
 * [Canvas](#canvas)
+  - [`ImageData` and Pixel Control](#imagedata-and-pixel-control)
 * [CSS](#css)
   - [Scss](#scss)
 * [Design Patterns](#design-patterns)
@@ -180,6 +181,10 @@ Currently: &nbsp; **321** Dev_Notes
 # Canvas
 
 * [Repeat Image in Grid](canvas/repeat-image-in-grid.md)
+
+## `ImageData` and Pixel Control
+
+* [Invert Colors](canvas/id-invert-colors.md)
 
 # CSS
 
