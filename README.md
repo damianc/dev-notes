@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **320** Dev_Notes
+Currently: &nbsp; **321** Dev_Notes
 
 ---
 
@@ -24,6 +24,7 @@ Currently: &nbsp; **320** Dev_Notes
   - [Angular Routing](#angular-routing)
   - [HTTP](#http)
 * [Bash Apps](#bash-apps)
+* [Canvas](#canvas)
 * [CSS](#css)
   - [Scss](#scss)
 * [Design Patterns](#design-patterns)
@@ -175,6 +176,10 @@ Currently: &nbsp; **320** Dev_Notes
 * [`cd /d` on Win10 / cmd](bash-apps/cdd-win10.md)
 * [Pipe to `while`](bash-apps/pipe-to-while.md)
 * [[ln] Symbolic and hard links](bash-apps/symbolic-and-hard-links.md)
+
+# Canvas
+
+* [Repeat Image in Grid](canvas/repeat-image-in-grid.md)
 
 # CSS
 
