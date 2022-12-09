@@ -94,7 +94,10 @@ for (let v = 1; v <= gridRows; v++) {
 
 ```
 // ...
-  if (h !== 1 && v !== 1 && h !== gridCols && v !== gridRows) continue;
+  if (
+    h !== 1 && v !== 1 &&
+    h !== gridCols && v !== gridRows
+  ) continue;
 // ...
 ```
 
