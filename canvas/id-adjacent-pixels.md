@@ -45,7 +45,7 @@ function blur() {
     data[i] = val;
   }
 
-  return data;
+  return new Uint8ClampedArray(data);
 }
 
 // ...
