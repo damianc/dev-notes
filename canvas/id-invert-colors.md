@@ -14,11 +14,11 @@ img.onload = () => {
 };
 
 function processImage(data) {
-  const nid = op_reverseColor(data);
+  const nid = invertColors(data);
   ctx.putImageData(nid, 0, 0);
 }
 
-function op_reverseColor(imageData) {
+function invertColors(imageData) {
   const newImageData = ctx.createImageData(imageData.width, imageData.height);
 
   for (let i = 0; i < imageData.data.length; i += 4) {
