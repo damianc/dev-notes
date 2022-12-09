@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **324** Dev_Notes
+Currently: &nbsp; **325** Dev_Notes
 
 ---
 
@@ -187,6 +187,7 @@ Currently: &nbsp; **324** Dev_Notes
 * [Getting Adjacent Pixels](canvas/id-adjacent-pixels.md)
 * [Invert Colors](canvas/id-invert-colors.md)
 * [Monochrome Image](canvas/id-monochrome.md)
+* [Reducing Number of Colors](canvas/id-reducing-colors.md)
 
 # CSS
 
