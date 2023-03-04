@@ -12,13 +12,9 @@ $$
 
 it derives from _Pythagorean theorem_:
 
-$$
-C^2 = A^2 + B^2
-\\\ \\
-|AB|^2 = |AC|^2 + |BC|^2
-\\\ \\
-|AB| = \sqrt{|AC|^2 + |BC|^2}
-$$
+$C^2 = A^2 + B^2$  
+$|AB|^2 = |AC|^2 + |BC|^2$  
+$|AB| = \sqrt{|AC|^2 + |BC|^2}$
 
 ## Center
 
