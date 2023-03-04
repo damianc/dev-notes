@@ -1,5 +1,22 @@
 # Distribute Items Equally on a Circle
 
+- the circle is placed at $(c_x, c_y)$ and is $c_r$ in radius
+- every item is $it_w$ in width and $it_h$ in height
+- $s$ items are placed around the circle
+
+$$
+\sum_{i=1}^{s}
+ \begin{cases}
+fi = 2\pi \times \frac{i-1}{s}
+\\\ \\
+x = c_r \times \cos(fi) + c_x - it_w
+\\
+y = c_r \times \sin(fi) + c_y - it_h
+\\\ \\
+coords_{i-1} =  [x, y]
+\end{cases}
+$$
+
 ## Function
 
 ```
