@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **327** Dev_Notes
+Currently: &nbsp; **328** Dev_Notes
 
 ---
 
@@ -275,6 +275,7 @@ Currently: &nbsp; **327** Dev_Notes
 
 # Formulas
 
+* [Distance between two Points](formulas/distance-between-points.md)
 * [Line Segment: Length and Center](formulas/line-segment.md)
 * [Distance Between 2 Coords](formulas/distance-between-two-coords.md)
 * [Distribute Items Equally on a Circle](ui/distribute-items-equally-on-circle.md)
