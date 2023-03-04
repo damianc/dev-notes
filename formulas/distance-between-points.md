@@ -1,4 +1,4 @@
-# Distance between two Points
+# Distance Between 2 Points
 
 If:
 - point `A` is at $(x_A, y_A)$

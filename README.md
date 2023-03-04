@@ -276,7 +276,7 @@ Currently: &nbsp; **328** Dev_Notes
 # Formulas
 
 * [Line Segment: Length and Center](formulas/line-segment.md)
-* [Distance between two Points](formulas/distance-between-points.md)
+* [Distance Between 2 Points](formulas/distance-between-points.md)
 * [Distance Between 2 Coords](formulas/distance-between-two-coords.md)
 * [Distribute Items Equally on a Circle](ui/distribute-items-equally-on-circle.md)
 
