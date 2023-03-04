@@ -4,6 +4,7 @@
   - [Counting Elements](#counting-elements)
   - [Grouping Elements](#grouping-elements)
   - [Flat](#flat)
+  - [Sorting](#sorting)
 * [Numbers](#numbers)
   - [Average](#average)
   - [Minimum and Maximum Value](#minimum-and-maximum-value)
@@ -123,6 +124,28 @@ function deepFlat(arr) {
 
 deepFlat([1, 2, [3, 4, 5, [6, 7, [8, [9]] ] ] ]);
 // [1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+
+### Sorting
+
+```
+function sort(arr) {
+  return arr.reduce((acc, curr, idx) => {
+    if (idx === 0) return [curr];
+
+    const sbl = acc.findIndex(x => x >= curr);
+    if (sbl === -1) {
+      return [...acc, curr];
+    } else {
+      const head = acc.slice(0, sbl);
+      const tail = acc.slice(sbl);
+      return [...head, curr, ...tail];
+    }
+  }, []);
+}
+
+sort([20, -10, 0, -5, 8])
+// [-10, -5, 0, 8, 20]
 ```
 
 ## Numbers
