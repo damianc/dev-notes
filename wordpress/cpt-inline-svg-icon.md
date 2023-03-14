@@ -24,4 +24,4 @@ add_action('init', function () {
 });
 ```
 
-> `fill="black"` is crucial for SVG icon in WordPress
+> `fill="black"` is crucial: WordPress will handle changing colors of such elements
