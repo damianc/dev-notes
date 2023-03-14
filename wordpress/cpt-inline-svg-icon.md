@@ -23,3 +23,5 @@ add_action('init', function () {
   register_post_type('book', $args);
 });
 ```
+
+> `fill="black"` is crucial for SVG icon in WordPress
