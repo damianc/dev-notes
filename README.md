@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **328** Dev_Notes
+Currently: &nbsp; **329** Dev_Notes
 
 ---
 
@@ -576,6 +576,7 @@ Currently: &nbsp; **328** Dev_Notes
 * [Attaching Assets](wordpress/attaching-assets.md)
 * [WordPress Hooks](wordpress/hooks.md)
 * [WordPress Filters](wordpress/filters.md)
+* [Inline SVG Icon when Registering CPT](wordpress/cpt-inline-svg-icon.md)
 * [Adding a favicon](wordpress/adding-favicon.md)
 * [Adding thumbnail metabox to posts](wordpress/thumbnail-support.md)
 * [AJAX Requests](wordpress/ajax-requests.md)
