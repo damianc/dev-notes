@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **329** Dev_Notes
+Currently: &nbsp; **330** Dev_Notes
 
 ---
 
@@ -579,5 +579,6 @@ Currently: &nbsp; **329** Dev_Notes
 * [Inline SVG Icon when Registering CPT](wordpress/cpt-inline-svg-icon.md)
 * [Adding a favicon](wordpress/adding-favicon.md)
 * [Adding thumbnail metabox to posts](wordpress/thumbnail-support.md)
+* [Change Title Placeholder](wordpress/change-title-placeholder.md)
 * [AJAX Requests](wordpress/ajax-requests.md)
 * [Generating a custom menu](wordpress/generating-custom-menu.md)
