@@ -12,13 +12,11 @@
 
 ### by Two Sides
 
-$$
-C = \sqrt{A^2 + B^2}
-\\\ \\
-A = \sqrt{C^2 - B^2}
-\\
-B = \sqrt{C^2 - A^2}
-$$
+| side | formula |
+|--|--|
+| C | $\sqrt{A^2 + B^2}$ |
+| A | $\sqrt{C^2 - B^2}$ |
+| B| $\sqrt{C^2 - A^2}$ |
 
 ## Getting Angle
 
