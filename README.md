@@ -276,13 +276,13 @@ Currently: &nbsp; **331** Dev_Notes
 
 # Formulas
 
-* [Line Segment: Length and Center](formulas/line-segment.md)
-* [Distance Between 2 Points](formulas/distance-between-points.md)
 * [Distance Between 2 Coords](formulas/distance-between-two-coords.md)
 * [Distribute Items Equally on a Circle](ui/distribute-items-equally-on-circle.md)
 
 ## Math Core
 
+* [Distance Between 2 Points](formulas/math-core/distance-between-points.md)
+* [Line Segment: Length and Center](formulas/math-core/line-segment.md)
 * [Getting Triangle's Lacking Parameters](formulas/math-core/triangle-lacking-info.md)
 
 # Git
