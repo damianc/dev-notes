@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **330** Dev_Notes
+Currently: &nbsp; **331** Dev_Notes
 
 ---
 
@@ -37,6 +37,7 @@ Currently: &nbsp; **330** Dev_Notes
 * [Express.js](#expressjs)
 * [Firebase](#firebase)
 * [Formulas](#formulas)
+  - [Math Core](#math-core)
 * [Git](#git)
 * [GraphQL](#graphql)
 * [HTML](#html)
@@ -279,6 +280,10 @@ Currently: &nbsp; **330** Dev_Notes
 * [Distance Between 2 Points](formulas/distance-between-points.md)
 * [Distance Between 2 Coords](formulas/distance-between-two-coords.md)
 * [Distribute Items Equally on a Circle](ui/distribute-items-equally-on-circle.md)
+
+## Math Core
+
+* [Getting Triangle's Lacking Parameters](formulas/math-core/triangle-lacking-info.md)
 
 # Git
 
