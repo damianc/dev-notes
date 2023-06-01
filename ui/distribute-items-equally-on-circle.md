@@ -7,15 +7,27 @@
 $$
 \sum_{i=1}^{s}
  \begin{cases}
-fi = 2\pi \times \frac{i-1}{s}
+\Delta_i = 2\pi \times \frac{i-1}{s}
 \\\ \\
-x = c_r \times \cos(fi) + c_x - it_w
+x = c_r \times \cos(\Delta_i) + c_x - it_w
 \\
-y = c_r \times \sin(fi) + c_y - it_h
+y = c_r \times \sin(\Delta_i) + c_y - it_h
 \\\ \\
 coords_{i-1} =  [x, y]
 \end{cases}
 $$
+
+## First Point Location
+
+By default, first point is on the right side of a circle.  
+To change this, we should move it by a specific angle in radians, i.e., $\Delta_i \pm \theta\pi$:
+
+| Location | Coords | $\theta$ | Final $\Delta_i$ |
+|--|--|--|--|
+| on the right | $(c_x+r, c_y)$ | $0$ | $2\pi\cdot\frac{i-1}{s}$ |
+| on the left | $(c_x-r, c_y)$ | $1$ | $[2\pi\cdot\frac{i-1}{s}]+\pi$ |
+| on the top | $(c_x, c_y-r)$ | $-\frac{1}{2}$ | $[2\pi\cdot\frac{i-1}{s}]-\frac{1}{2}\pi$ |
+| on the bottom | $(c_x, c_y+r)$ | $\frac{1}{2}$ | $[2\pi\cdot\frac{i-1}{s}]+\frac{1}{2}\pi$ |
 
 ## Function
 
