@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **331** Dev_Notes
+Currently: &nbsp; **332** Dev_Notes
 
 ---
 
@@ -284,6 +284,7 @@ Currently: &nbsp; **331** Dev_Notes
 * [Distance Between 2 Points](formulas/math-core/distance-between-points.md)
 * [Line Segment: Length and Center](formulas/math-core/line-segment.md)
 * [Getting Triangle's Lacking Parameters](formulas/math-core/triangle-lacking-info.md)
+* [Circle Parameters](formulas/math-core/circle-parameters.md)
 
 # Git
 
