@@ -1,7 +1,7 @@
 # Circle Parameters
 
 | Parameter | Formula | Getting R from Parameter | Getting $\alpha$ from Parameter |
-|--|--|--|--|
+|--|:--:|:--:|:--:|
 | circumference | $2{\pi}R$ | $\frac{x}{2\pi}$ | - |
 | area | ${\pi}R^2$ | $\sqrt{\frac{x}{\pi}}$ | - |
 | arc length | ${\alpha}R$ | $\frac{x}{\alpha}$ | $\frac{x}{R}$ |
