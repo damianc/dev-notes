@@ -1,7 +1,5 @@
 # Circle Parameters
 
-![Circle Parameters](https://github.com/damianc/dev-notes/blob/master/_images/math/circle-parameters.png "Circle Parameters")
-
 | Parameter | Formula | Getting R from Parameter | Getting $\alpha$ from Parameter |
 |--|--|--|--|
 | circumference | $2{\pi}R$ | $\frac{x}{2\pi}$ | - |
@@ -11,3 +9,5 @@
 | sector area | $\frac{\alpha}{2} R^2$ | $\sqrt{\frac{x}{\frac{1}{2}\alpha}}$ | $2 \frac{x}{R^2}$ |
 | segment area | $\frac{R^2}{2}(\alpha - \sin(\alpha))$ | $\sqrt{2\frac{x}{\alpha - \sin(\alpha)}}$ | *brute force* method |
 | perpendicular distance from circle center to chord | $R \cos(\frac{\alpha}{2})$ | $\frac{x}{\cos(\frac{\alpha}{2})}$ | $2 \arccos(\frac{x}{R})$ |
+
+![Circle Parameters](https://github.com/damianc/dev-notes/blob/master/_images/math/circle-parameters.png "Circle Parameters")
