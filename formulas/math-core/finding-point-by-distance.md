@@ -26,7 +26,9 @@ $C = (x_1 + x', f(x_1 + x'))$
 * a function __f(x)__ (passing through these points):
 
 $f(x) = \frac{y_2 - y_1}{x_2 - x_1}x + \frac{x_2y_1 - x_1y_2}{x_2-x_1}$  
+
 or:  
+
 $f(x) = \frac{y_2 - y_1}{x_2 - x_1}(x - x_1) + y_1$
 
 * a horizontal translation __x'__:
