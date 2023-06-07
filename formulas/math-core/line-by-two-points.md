@@ -1,6 +1,6 @@
 # Linear Function Passing Through 2 Points
 
-### Approach #1
+## Approach #1
 
 $$
 a = \frac{y_2 - y_1}{x_2 - x_1}
@@ -14,7 +14,7 @@ $$
 f(x) = ax + b
 $$
 
-### Approach #2
+## Approach #2
 
 $$
 m = \frac{y_2-y_1}{x_2-x_1}
