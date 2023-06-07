@@ -21,3 +21,7 @@ $|AB| = \sqrt{|AC|^2 + |BC|^2}$
 $$
 S = (\frac{x_1 + x_2}{2}, \frac{y_1 + y_2}{2})
 $$
+
+----
+
+![Line Segment](https://github.com/damianc/dev-notes/blob/master/_images/math/line-segment.png "Line Segment")
