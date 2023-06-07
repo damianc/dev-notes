@@ -1,5 +1,8 @@
 # Linear Function Passing Through 2 Points
 
+$A = (x_1, y_1)$  
+$B = (x_2, y_2)$
+
 ## Approach #1
 
 $$
