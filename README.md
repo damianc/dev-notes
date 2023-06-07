@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **336** Dev_Notes
+Currently: &nbsp; **337** Dev_Notes
 
 ---
 
@@ -282,11 +282,12 @@ Currently: &nbsp; **336** Dev_Notes
 ## Math Core
 
 * [Distance Between 2 Points](formulas/math-core/distance-between-points.md)
-* [Line Segment: Length and Center](formulas/math-core/line-segment.md)
+* [Distance Between Point and Line](formulas/math-core/distance-between-point-and-line.md)
+* [Distance Between 2 Parallel Lines](formulas/math-core/lines-distance.md)
+* [Finding a Point by Distance](formulas/math-core/finding-point-by-distance.md)
 * [Linear Function Passing Through 2 Points](formulas/math-core/line-by-two-points.md)
 * [Straight Lines: Intersection Point and Angle](formulas/math-core/lines-intersection-angle.md)
-* [Finding a Point by Distance](formulas/math-core/finding-point-by-distance.md)
-* [Distance Between 2 Parallel Lines](formulas/math-core/lines-distance.md)
+* [Line Segment: Length and Center](formulas/math-core/line-segment.md)
 * [Getting Triangle's Lacking Parameters](formulas/math-core/triangle-lacking-info.md)
 * [Circle Parameters](formulas/math-core/circle-parameters.md)
 
