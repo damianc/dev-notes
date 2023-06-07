@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **332** Dev_Notes
+Currently: &nbsp; **333** Dev_Notes
 
 ---
 
@@ -283,6 +283,7 @@ Currently: &nbsp; **332** Dev_Notes
 
 * [Distance Between 2 Points](formulas/math-core/distance-between-points.md)
 * [Line Segment: Length and Center](formulas/math-core/line-segment.md)
+* [Finding a Point by Distance](formulas/math-core/finding-point-by-distance.md)
 * [Getting Triangle's Lacking Parameters](formulas/math-core/triangle-lacking-info.md)
 * [Circle Parameters](formulas/math-core/circle-parameters.md)
 
