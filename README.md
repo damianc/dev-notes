@@ -283,7 +283,7 @@ Currently: &nbsp; **335** Dev_Notes
 
 * [Distance Between 2 Points](formulas/math-core/distance-between-points.md)
 * [Line Segment: Length and Center](formulas/math-core/line-segment.md)
-* [Linear Function Passing through 2 Points](formulas/math-core/line-by-two-points.md)
+* [Linear Function Passing Through 2 Points](formulas/math-core/line-by-two-points.md)
 * [Finding a Point by Distance](formulas/math-core/finding-point-by-distance.md)
 * [Distance Between 2 Parallel Lines](formulas/math-core/lines-distance.md)
 * [Getting Triangle's Lacking Parameters](formulas/math-core/triangle-lacking-info.md)
