@@ -8,6 +8,7 @@
 - [By angle β towards Y-axis ↑](#by-measuredangle-angle-beta-towards-y-axis-uarr)
 - [By angle γ towards _f(x)_ function line](#by-measuredangle-angle-gamma-towards-fx-function-line)
 - [By distance _d_ from _f(x)_ parallel function line ║](#by-distance-d-from-fx-parallel-function-line-parallel)
+- [By length _l_ in range of size _d_](#by-length-ell-in-range-of-size-d-implies-leftx_nx_ndright)
 
 ## By two points $A$ and $B$
 
