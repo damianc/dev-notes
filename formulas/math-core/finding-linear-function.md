@@ -599,3 +599,91 @@ function find([fa,fb], d) {
 find([0.25, 4], 2)
 // x => 0.25 * x + 1.938447
 ```
+
+## By length $\ell$ in range of size $d$ $\implies \left<x_n;x_{n+d}\right>$
+
+> $\ell \geq d$
+> $\beta = -\beta$ if function values are to be decreasing
+
+$$
+P = (x_p, y_p)
+$$
+
+$$
+\implies
+$$
+
+$$
+\alpha = \arccos\left(\frac{d}{\ell}\right)
+$$
+
+$$
+\beta = \alpha - \pi
+$$
+
+$$
+a_f = \tan \beta
+$$
+
+$$
+b_f = y_p - (x_p \cdot a_f)
+$$
+
+$$
+f(x) = a_fx + b_f 
+$$
+
+### Example
+
+$$
+P = (4,3)
+$$
+
+$$
+\ell = 6
+$$
+
+$$
+d = 2
+$$
+
+$$
+\implies
+$$
+
+$$
+\alpha = \arccos\left(\frac{d}{\ell}\right) = \arccos \left( \frac{2}{6} \right) \approx 1.230959
+$$
+
+$$
+\beta = \alpha - \pi \approx -1.910634
+$$
+
+$$
+a_f = \tan \beta = 2.828420
+$$
+
+$$
+b_f = y_p - (x_p \cdot a_f) = 3 - (4 \cdot 2.828420) = -8.31368
+$$
+
+$$
+f(x) = a_fx + b_f = 2.828420x - 8.31368 \approx 2.83x - 8.31
+$$
+
+### Implementation
+
+```
+function find(length, xRange, [x,y]) {
+  const alpha = Math.acos(xRange / length);
+  const beta = alpha - Math.PI;
+
+  const fa = Math.tan(beta);
+  const fb = y - (x * fa);
+  
+  return x => fa * x + fb;
+}
+
+find(6, 2, [4,3])
+// x => 2.828427 * x - 8.313708
+```
