@@ -1,13 +1,13 @@
 # Finding Linear Function
 
-- [By two points $A$ and $B$](#by-two-points-a-and-b)
-- [By two points $A$ and $B$ [#2]](#by-two-points-a-and-b-2)
-- [By $\parallel$ parallel function $f(x)$ and point $P$](#by-parallel-parallel-function-fx-and-point-p)
-- [By $\perp$ perpendicular function $f(x)$ and point $P$](#by-perp-perpendicular-function-fx-and-point-p)
-- [By $\measuredangle$ angle $\alpha$ towards X-axis $\rArr$](#by-measuredangle-angle-alpha-towards-x-axis-rarr)
-- [By $\measuredangle$ angle $\beta$ towards Y-axis $\uArr$](#by-measuredangle-angle-beta-towards-y-axis-uarr)
-- [By $\measuredangle$ angle $\gamma$ towards $f(x)$ function line](#by-measuredangle-angle-gamma-towards-fx-function-line)
-- [By distance $d$ from $f(x)$ parallel function line $\parallel$](#by-distance-d-from-fx-parallel-function-line-parallel)
+- [By two points _A_ and _B_](#by-two-points-a-and-b)
+- [By two points _A_ and _B_ [#2]](#by-two-points-a-and-b-2)
+- [By ║ parallel function _f(x)_ and point _P_](#by-parallel-parallel-function-fx-and-point-p)
+- [By ┴ perpendicular function _f(x)_ and point _P_](#by-perp-perpendicular-function-fx-and-point-p)
+- [By angle α towards X-axis](#by-measuredangle-angle-alpha-towards-x-axis-rarr)
+- [By angle β towards Y-axis](#by-measuredangle-angle-beta-towards-y-axis-uarr)
+- [By angle γ towards _f(x)_ function line](#by-measuredangle-angle-gamma-towards-fx-function-line)
+- [By distance _d_ from _f(x)_ parallel function line ║](#by-distance-d-from-fx-parallel-function-line-parallel)
 
 ## By two points $A$ and $B$
 
