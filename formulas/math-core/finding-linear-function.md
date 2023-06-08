@@ -113,7 +113,7 @@ find([1,2], [8,4])
 // x => 0.285714 * (x - 1) + 2
 ```
 
-## By $\|$ parallel function $f(x)$ and point $P$
+## By $\parallel$ parallel function $f(x)$ and point $P$
 
 $$
 f(x) = a_fx + b_f
@@ -294,7 +294,7 @@ find(30, [2,1])
 // x => -1.732051 * x + 4.464102
 ```
 
-## By distance $d$ from $f(x)$ parallel function line $\|$
+## By distance $d$ from $f(x)$ parallel function line $\parallel$
 
 $$
 f(x) = a_fx + b_f
