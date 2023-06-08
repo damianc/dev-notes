@@ -602,7 +602,7 @@ find([0.25, 4], 2)
 
 ## By length $\ell$ in range of size $d$ $\implies \left[x_n;x_{n+d}\right]$
 
-> $\ell \geq d$
+> $\ell \geq d$  
 > $\beta = -\beta$ if function values are to be decreasing
 
 $$
