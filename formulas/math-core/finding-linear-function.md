@@ -2,15 +2,29 @@
 
 ## By two points $A$ and $B$
 
-$A = (x_1, y_1)$  
-$B = (x_2, y_2)$  
+$$
+A = (x_1, y_1)
+$$
 
-$\implies$  
+$$
+B = (x_2, y_2)
+$$
 
-$a = \frac{y_2 -y_1}{x_2 - x_1}$  
-$b = \frac{x_2y_1 - x_1y_2}{x_2 - x_1}$  
+$$
+\implies
+$$
 
-$f(x) = ax + b$
+$$
+a = \frac{y_2 -y_1}{x_2 - x_1}
+$$
+
+$$
+b = \frac{x_2y_1 - x_1y_2}{x_2 - x_1}
+$$
+
+$$
+f(x) = ax + b
+$$
 
 ### Example
 
@@ -33,8 +47,7 @@ $$
 $$
 b = \frac{x_2y_1 - x_1y_2}{x_2 - x_1} = \frac{8\cdot2 - 1\cdot4}{8-1} = \frac{12}{7} \approx 1.7143
 $$
-  
-  
+
 $$
 f(x) = ax + b = 0.2857x + 1.7143 \approx 0.29x + 1.71
 $$
