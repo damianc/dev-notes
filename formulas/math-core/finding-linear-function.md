@@ -4,8 +4,8 @@
 - [By two points _A_ and _B_ [#2]](#by-two-points-a-and-b-2)
 - [By ║ parallel function _f(x)_ and point _P_](#by-parallel-parallel-function-fx-and-point-p)
 - [By ┴ perpendicular function _f(x)_ and point _P_](#by-perp-perpendicular-function-fx-and-point-p)
-- [By angle α towards X-axis](#by-measuredangle-angle-alpha-towards-x-axis-rarr)
-- [By angle β towards Y-axis](#by-measuredangle-angle-beta-towards-y-axis-uarr)
+- [By angle α towards X-axis →](#by-measuredangle-angle-alpha-towards-x-axis-rarr)
+- [By angle β towards Y-axis ↑](#by-measuredangle-angle-beta-towards-y-axis-uarr)
 - [By angle γ towards _f(x)_ function line](#by-measuredangle-angle-gamma-towards-fx-function-line)
 - [By distance _d_ from _f(x)_ parallel function line ║](#by-distance-d-from-fx-parallel-function-line-parallel)
 
