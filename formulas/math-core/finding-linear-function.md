@@ -600,7 +600,7 @@ find([0.25, 4], 2)
 // x => 0.25 * x + 1.938447
 ```
 
-## By length $\ell$ in range of size $d$ $\implies \left<x_n;x_{n+d}\right>$
+## By length $\ell$ in range of size $d$ $\implies \left[x_n;x_{n+d}\right]$
 
 > $\ell \geq d$
 > $\beta = -\beta$ if function values are to be decreasing
