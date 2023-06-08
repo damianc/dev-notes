@@ -294,6 +294,69 @@ find(30, [2,1])
 // x => -1.732051 * x + 4.464102
 ```
 
+## By $\measuredangle$ angle $\gamma$ towards $f(x)$ function line
+
+> Point $P$ may lay on $f(x)$, but it does not have to.
+
+$$
+f(x) = a_fx + b_f
+\\
+P = (x_p, y_p)
+\\
+\gamma \in \left< 0; 2\pi \right>
+\\\ \\
+\implies
+\\\ \\
+\alpha = \arctan a_f
+\\
+\beta = \alpha - \gamma
+\\\ \\
+a_g = \tan \beta
+\\
+b_g = y_p - [x_p \cdot a_g]
+\\\ \\
+g(x) = a_gx + b_g
+$$
+
+### Example
+
+$$
+f(x) = 2x + 1
+\\
+P = (2,4)
+\\
+\gamma = 30\degree = \frac{1}{6}\pi \approx 0.5236
+\\\ \\
+\implies
+\\\ \\
+\alpha = \arctan a_f = \arctan 2 \approx 1.1072
+\\
+\beta= \alpha - \gamma = 0.5836
+\\\ \\
+a_g = \tan \beta = \tan 0.5836 \approx 0.6603
+\\
+b_g = y_p - [x_p \cdot a_g] = 4 - [2\cdot 0.6603] \approx 2.6794
+\\\ \\
+g(x) = a_gx + b_g = 0.6603x + 2.6794 \approx 0.66x + 2.68
+$$
+
+### Implementation
+
+```
+function find([fa,fb], [x,y], gamma) {
+  const alpha = Math.atan(fa);
+  const beta = alpha - (gamma / 180 * Math.PI);
+  
+  const ga = Math.tan(beta);
+  const gb = y - (x * ga);
+  
+  return x => ga * x + gb;
+}
+
+find([2,1], [2,4], 30)
+// x => 0.660254 * x +  2.679492
+```
+
 ## By distance $d$ from $f(x)$ parallel function line $\parallel$
 
 $$
@@ -356,67 +419,4 @@ function find([fa,fb], d) {
 
 find([0.25, 4], 2)
 // x => 0.25 * x + 1.938447
-```
-
-## By $\measuredangle$ angle $\gamma$ towards $f(x)$ function line
-
-> Point $P$ may lay on $f(x)$, but it does not have to.
-
-$$
-f(x) = a_fx + b_f
-\\
-P = (x_p, y_p)
-\\
-\gamma \in \left< 0; 2\pi \right>
-\\\ \\
-\implies
-\\\ \\
-\alpha = \arctan a_f
-\\
-\beta = \alpha - \gamma
-\\\ \\
-a_g = \tan \beta
-\\
-b_g = y_p - [x_p \cdot a_g]
-\\\ \\
-g(x) = a_gx + b_g
-$$
-
-### Example
-
-$$
-f(x) = 2x + 1
-\\
-P = (2,4)
-\\
-\gamma = 30\degree = \frac{1}{6}\pi \approx 0.5236
-\\\ \\
-\implies
-\\\ \\
-\alpha = \arctan a_f = \arctan 2 \approx 1.1072
-\\
-\beta= \alpha - \gamma = 0.5836
-\\\ \\
-a_g = \tan \beta = \tan 0.5836 \approx 0.6603
-\\
-b_g = y_p - [x_p \cdot a_g] = 4 - [2\cdot 0.6603] \approx 2.6794
-\\\ \\
-g(x) = a_gx + b_g = 0.6603x + 2.6794 \approx 0.66x + 2.68
-$$
-
-### Implementation
-
-```
-function find([fa,fb], [x,y], gamma) {
-  const alpha = Math.atan(fa);
-  const beta = alpha - (gamma / 180 * Math.PI);
-  
-  const ga = Math.tan(beta);
-  const gb = y - (x * ga);
-  
-  return x => ga * x + gb;
-}
-
-find([2,1], [2,4], 30)
-// x => 0.660254 * x +  2.679492
 ```
