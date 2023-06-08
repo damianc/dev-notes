@@ -14,15 +14,12 @@ $f(x) = ax + b$
 
 ### Example
 
-$A = (1,2)$  
-$B = (8,4)$  
-
-$\implies$  
-
-$a = \frac{y_2 -y_1}{x_2 - x_1} = \frac{4-2}{8-1} = \frac{2}{7} \approx 0.2857$  
-$b = \frac{x_2y_1 - x_1y_2}{x_2 - x_1} = \frac{8\cdot2 - 1\cdot4}{8-1} = \frac{12}{7} \approx 1.7143$  
-
-$f(x) = ax + b = 0.2857x + 1.7143 \approx 0.29x + 1.71$
+$$A = (1,2)$$
+$$B = (8,4)$$
+$$\implies$$
+$$a = \frac{y_2 -y_1}{x_2 - x_1} = \frac{4-2}{8-1} = \frac{2}{7} \approx 0.2857$$
+$$b = \frac{x_2y_1 - x_1y_2}{x_2 - x_1} = \frac{8\cdot2 - 1\cdot4}{8-1} = \frac{12}{7} \approx 1.7143$$
+$$f(x) = ax + b = 0.2857x + 1.7143 \approx 0.29x + 1.71$$
 
 ### Implementation
 
