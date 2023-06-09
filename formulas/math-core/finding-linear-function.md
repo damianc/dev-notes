@@ -688,3 +688,108 @@ function find(length, xRange, [x,y]) {
 find(6, 2, [4,3])
 // x => 2.828427 * x - 8.313708
 ```
+
+## By distance $\vec{y}$ from parallel function $f(x)$
+
+$$
+f(x) = a_fx + b_f
+$$
+
+$$
+\implies
+$$
+
+$$
+b_g = b_f + \vec{y}
+$$
+
+$$
+g(x) = a_fx + b_g
+$$
+
+### Examples
+
+$$
+f(x) = 2x - 2
+$$
+
+$$
+\vec{y} = 4
+$$
+
+$$
+\implies
+$$
+
+$$
+b_g = b_f + \vec{y} = -2 + 4 = 2
+$$
+
+$$
+g(x) =  a_fx + b_g = 2x + 2
+$$
+
+### Implementation
+
+```
+function find([fa,fb], dy) {
+  const gb = fb + dy;
+  return x => fa * x + gb;
+}
+
+find([2,-2], 4)
+// x => 2 * x + 2
+```
+
+## By distance $\vec{x}$ from parallel function $f(x)$
+
+$$
+f(x) = a_fx + b_f
+$$
+
+$$
+\implies
+$$
+
+$$
+b_g = b_f + [f(0)- f(\vec{x})]
+$$
+
+$$
+g(x) = a_fx + b_g
+$$
+
+### Examples
+
+$$
+f(x) = 2x - 2
+$$
+
+$$
+\vec{x} = 4
+$$
+
+$$
+\implies
+$$
+
+$$
+b_g = b_f + [f(0)- f(\vec{x})] = -2 + [f(0) - f(4)] = -2 + [-2 - 6] = -2 - 8 = -10
+$$
+
+$$
+g(x) = a_fx + b_g = 2x - 10
+$$
+
+### Implementation
+
+```
+function find([fa,fb], dx) {
+  const f = x => fa * x + fb;
+  const gb = fb + (f(0) - f(dx));
+  return x => fa * x + gb;
+}
+
+find([2,-2], 4)
+// x => 2 * x - 10
+```
