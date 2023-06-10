@@ -60,8 +60,6 @@ arcLength(12,4)
 
 ## Example
 
-## Example
-
 ### Given
 
 $$
