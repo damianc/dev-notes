@@ -6,19 +6,34 @@
 
 $$
 w, h
-\\\ \\
+$$
+
+
+$$
 \implies
-\\\ \\
+$$
+
+$$
 \overline{h} = \sqrt{h^2 + \left[\frac{1}{2}w\right]^2}
-\\\ \\
+$$
+
+$$
 p = \frac{w + 2\overline{h}}{2}
-\\\ \\
+$$
+
+$$
 r = \sqrt{\frac{(p-w)\cdot(p-\overline{h})^2}{p}}
-\\\ \\
+$$
+
+$$
 R = \frac{w \cdot \overline{h}^2}{4rp}
-\\\ \\
+$$
+
+$$
 \alpha = 2 \arcsin\left( \frac{w}{2R} \right)
-\\\ \\
+$$
+
+$$
 \overset{\frown}{a} = R \cdot \alpha
 $$
 
