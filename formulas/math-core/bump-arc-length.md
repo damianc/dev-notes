@@ -1,6 +1,6 @@
 # Bump Arc Length
 
-- [By _Law of Sines_](By-Law-of-Sines)
+- [By _Law of Sines_](#By-Law-of-Sines)
 - [By Circles](#By-Circles)
 
 ## By _Law of Sines_
