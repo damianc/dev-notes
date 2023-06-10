@@ -20,6 +20,7 @@ $$
 $$
 
 $$
+\overset{\frown}{h} = \sqrt{h^2 + \left[\frac{1}{2}w\right]^2} = \sqrt{16 + 36} = \sqrt{52} = 7.211103
 $$
 
 $$
