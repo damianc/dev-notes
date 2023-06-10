@@ -14,19 +14,19 @@ $$
 $$
 
 $$
-\overline{h} = \sqrt{h^2 + \left[\frac{1}{2}w\right]^2}
+\overset{\frown}{h} = \sqrt{h^2 + \left[\frac{1}{2}w\right]^2}
 $$
 
 $$
-p = \frac{w + 2\overline{h}}{2}
+p = \frac{w + 2\overset{\frown}{h}}{2}
 $$
 
 $$
-r = \sqrt{\frac{(p-w)\cdot(p-\overline{h})^2}{p}}
+r = \sqrt{\frac{(p-w)\cdot(p-\\overset{\frown}{h})^2}{p}}
 $$
 
 $$
-R = \frac{w \cdot \overline{h}^2}{4rp}
+R = \frac{w \cdot \\overset{\frown}{h}^2}{4rp}
 $$
 
 $$
