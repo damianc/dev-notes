@@ -1,5 +1,17 @@
 # Circles Intersection
 
+For circles:
+
+$$
+\begin{cases}
+(x-a_1)^2 + (y-b_1)^2 = (r_1)^2
+\\
+(x-a_2)^2 + (y-b_2)^2 = (r_2)^2
+\end{cases}
+$$
+
+i.e., __circle 1__ with center at $a_1,b_1$ and $r_1$ in radius and __circle 2__ with center at $a_2,b_2$ and $r_2$ in radius:
+
 $$
 dx = a_2 - a_1
 $$
