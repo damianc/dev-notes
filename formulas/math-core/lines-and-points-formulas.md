@@ -6,6 +6,7 @@
 |--|--|
 | zero point | $\frac{-b}{a}$ |
 | y-intercept | $b$ |
+| value _x_ for given _y_ | $\frac{y-b}{a}$ |
 | angle between line and X-axis | $\arctan(a)$ |
 | angle between line and Y-axis | $\frac{1}{2}\pi - \arctan(a)$ |
 | angle between two lines | $\arctan\left(\vert \frac{a_2-a_1}{1 + a_1a_2} \vert\right)$ |
