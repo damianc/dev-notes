@@ -1,23 +1,27 @@
 # Line and Circle Intersection
 
-For function $f(x) = mx + i$ and circle with center at $(x,y)$ and $r$ in radius:
+- line $f(x) = mx + i$
+- circle $(x-a)^2 + (y-b)^2 = r^2$
+
+## Getting $\Delta$
 
 $$
 a = 1 + m^2
 $$
 
+$$
+b = -2a + 2mi - 2bm
+$$
 
 $$
-b = -2x + 2mi - 2ym
-$$
-
-$$
-c = x^2 + (i-y)^2 - r^2
+c = a^2 + (i-b)^2 - r^2
 $$
 
 $$
 \Delta = b^2 - 4ac
 $$
+
+## Getting Common Points
 
 $$
 \Delta < 0 \implies \varnothing
@@ -26,9 +30,9 @@ $$
 $$
 \Delta = 0 \implies
 \begin{cases}
-x_1 = \frac{-b}{2a}
+x = \frac{-b}{2a}
 \\
-y_1 = f(x_1)
+y = f(x) = mx + i
 \end{cases}
 $$
 
@@ -37,11 +41,11 @@ $$
 \begin{cases}
 x_1 = \frac{-b - \sqrt{\Delta}}{2a}
 \\
-y_1 = f(x_1)
+y_1 = f(x_1) = mx_1 + i
 \\\ \\
 x_2 = \frac{-b + \sqrt{\Delta}}{2a}
 \\
-y_2 = f(x_2)
+y_2 = f(x_2) = mx_2 + i
 \end{cases}
 $$
 
