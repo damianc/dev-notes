@@ -14,3 +14,16 @@
 | distance between two parallel lines | $$\frac{\vert b_2-b_1 \vert}{\sqrt{1+a^2}}$$ |
 | distance between line and point | $$\frac{\vert ax_p-y_p+b \vert}{\sqrt{1+a^2}}$$ |
 | distance between two points | $\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$ |
+
+## Lengths
+
+![Lines lengths formulas](https://github.com/damianc/dev-notes/blob/master/_images/math/lines-lengths-formulas.png "Lines lengths formulas")
+
+> for line $f(x) = mx + i$
+
+| Length | Formula |
+|--|--|
+| line length in range $\langle x; x \pm r \rangle$ in X-axis | $$\sqrt{r^2 + (rm)^2}$$ |
+| line length in range $\langle y; y \pm r \rangle$ in Y-axis | $$\sqrt{\left(\frac{r}{m}\right)^2 + r^2}$$ |
+| length of X-axis range in which line is $\ell$ in length | $$\frac{\ell}{\sqrt{1+m^2}}$$ |
+| length of Y-axis range in which line is $\ell$ in length | $$\frac{\ell}{\sqrt{1+\frac{1}{m^2}}}$$ |
