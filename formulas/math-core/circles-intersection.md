@@ -1,67 +1,64 @@
 # Circles Intersection
 
-For circles:
+- circle 1: $(x-a_1)^2 + (y-b_1)^2 = (r_1)^2$
+- circle 2: $(x-a_2)^2 + (y-b_2)^2 = (r_2)^2$
+
+## Edge Cases
 
 $$
-\begin{cases}
-(x-a_1)^2 + (y-b_1)^2 = (r_1)^2
-\\
-(x-a_2)^2 + (y-b_2)^2 = (r_2)^2
-\end{cases}
-$$
-
-i.e., __circle 1__ with center at $a_1,b_1$ and $r_1$ in radius and __circle 2__ with center at $a_2,b_2$ and $r_2$ in radius:
-
-$$
-dx = a_2 - a_1
+d_x = a_2 - a_1
 $$
 
 $$
-dy = b_2 - b_1
+d_y = b_2 - b_1
 $$
 
 $$
-d = \sqrt{dx^2 + dy^2}
+d = \sqrt{(d_x)^2 + (d_y)^2}
 $$
 
 $$
-(d > r_1+r_2) \ \cup\ (d < |r_1-r_2|) \implies \varnothing
+(d > r_1 + r_2) \ \cup\ (d < \vert r_1 - r_2 \vert) \implies \varnothing
 $$
 
 $$
 (d = 0) \ \cap\ (r_1 = r_2) \implies \infin
 $$
 
+## Calculations
+
 $$
-A = \frac{r_{1}^2 - r_{2}^2 + d^2}{2d}
+A = \frac{(r_1)^2 - (r_2)^2 + d^2}{2d}
 $$
 
 $$
-H = \sqrt{r_{1}^2 - A^2}
+H = \sqrt{(r_1)^2 - A^2}
 $$
 
 $$
-\theta_x = a_1 + \frac{A \cdot dx}{d}
+\theta_x = a_1 + \frac{A \cdot d_x}{d}
 $$
 
 $$
-\theta_y = b_1 + \frac{A \cdot dy}{d}
+\theta_y = b_1 + \frac{A \cdot d_y}{d}
 $$
 
 $$
-\vec{x} = \frac{H \cdot dy}{d}
+\vec{x} = \frac{H \cdot d_y}{d}
 $$
 
 $$
-\vec{y} = \frac{H \cdot dx}{d}
+\vec{y} = \frac{H \cdot d_x}{d}
 $$
+
+## Common Points
 
 $$
 H = 0 \implies
 \begin{cases}
-x_1 = \theta_x + \vec{x}
+x = \theta_x + \vec{x}
 \\
-y_1 = \theta_y - \vec{y}
+y = \theta_y - \vec{y}
 \end{cases}
 $$
 
