@@ -1,5 +1,25 @@
 # Finding a Point by Distance
 
+## Simplest Way
+
+Find point $Q$ whose distance from point $P$ along line described with $f(x)$ is $\ell$
+
+- function: $f(x) = mx + i$
+- point: $P = (x,y)$
+- distance: $\ell$
+
+$$
+\vec{x} = \frac{\ell}{\sqrt{1+m^2}}
+$$
+
+$$
+x' = x \pm \vec{x}
+$$
+
+$$
+Q = (x', f(x'))
+$$
+
 ## When Linear Function is Given
 
 Find point __B__ by distance __d__ from point __A__ along a line described with __f(x)__ function:
