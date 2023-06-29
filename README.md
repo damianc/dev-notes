@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **344** Dev_Notes
+Currently: &nbsp; **345** Dev_Notes
 
 ---
 
@@ -285,6 +285,7 @@ Currently: &nbsp; **344** Dev_Notes
 * [Lines and Points Formulas](formulas/math-core/lines-and-points-formulas.md)
 * [Distance Between 2 Points](formulas/math-core/distance-between-points.md)
 * [Distance Between Point and Line](formulas/math-core/distance-between-point-and-line.md)
+* [Line Transformations](formulas/math-core/line-transformations.md)
 * [Finding Linear Function](formulas/math-core/finding-linear-function.md)
 * [Distance Between 2 Parallel Lines](formulas/math-core/lines-distance.md)
 * [Finding a Point by Distance](formulas/math-core/finding-point-by-distance.md)
