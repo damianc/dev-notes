@@ -1,6 +1,9 @@
 # Line and Parabola Intersection
 
-For line $f(x) = mx + i$ and parabola $g(x) = ax^2 + bx + c$:
+- line $f(x) = mx + i$
+- parabola $g(x) = ax^2 + bx + c$
+
+## Getting $\Delta$
 
 $$
 A = a
@@ -18,6 +21,8 @@ $$
 \Delta = B^2 - 4AC
 $$
 
+## Getting Common Points
+
 $$
 \Delta < 0 \implies \varnothing
 $$
@@ -25,22 +30,22 @@ $$
 $$
 \Delta = 0 \implies
 \begin{cases}
-x_1 = \frac{-(b-m)}{2a} = \frac{-B}{2a}
+x = \frac{-B}{2A}
 \\
-y_1 = f(x_1)
+y = f(x) = mx + i
 \end{cases}
 $$
 
 $$
 \Delta > 0 \implies
 \begin{cases}
-x_1 = \frac{-(b-m) - \sqrt{\Delta}}{2a} = \frac{-B - \sqrt{\Delta}}{2a}
+x_1 = \frac{-B - \sqrt{\Delta}}{2A}
 \\
-y_1 = f(x_1)
+y_1 = f(x_1) = mx_1 + i
 \\\ \\
-x_2 = \frac{-(b-m) + \sqrt{\Delta}}{2a} = \frac{-B + \sqrt{\Delta}}{2a}
+x_2 = \frac{-B + \sqrt{\Delta}}{2A}
 \\
-y_2 = f(x_2)
+y_2 = f(x_2) = mx_2 + i
 \end{cases}
 $$
 
