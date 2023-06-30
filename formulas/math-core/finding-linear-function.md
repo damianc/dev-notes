@@ -13,6 +13,7 @@
 - [By distance _x_ from parallel function _f(x)_](#by-distance-vecx-from-parallel-function-fx)
 - [By Circle Tangent](#by-circle-tangent)
 - [By Circle Chord](#by-circle-chord)
+- [By Chord Length](#by-chord-length)
 
 ## By two points $A$ and $B$
 
@@ -1018,4 +1019,295 @@ function find([a,b,r], alpha, beta) {
 
 find([6,6,3], -45, 30)
 // x => 0.131653 *x +  7.610683
+```
+
+## By Chord Length
+
+- circle: $(x-a)^2 + (y-b)^2 = r^2$
+- angular point: $\sigma$
+- chord length: $\ell$
+- clockwise direction: $c$
+
+### Getting Point $P$ on Circle
+
+$$
+\Delta = \frac{1}{2}\pi - 2\pi \cdot \left( \frac{\sigma}{360} \right)
+$$
+
+$$
+x = r \cdot \cos(\Delta) + a
+$$
+
+$$
+y = r \cdot \sin(\Delta) + b
+$$
+
+### Line $f(x)$ Going Through $P$ and $(a,b)$
+
+$$
+a = \frac{b-P_y}{a-P_x}
+$$
+
+$$
+b = \frac{a \cdot P_y - P_x \cdot b}{a - P_x}
+$$
+
+$$
+f(x) = ax + b
+$$
+
+### Getting Angle $\alpha$ Subtended by Chord
+
+$$
+\alpha = 2 \cdot \arcsin\left( \frac{\ell}{2r} \right)
+$$
+
+### Getting $g(x)$ Line Being $f(x)$ Rotated by $\alpha$ at $(a,b)$
+
+$$
+\beta = \arctan(a_f)
+$$
+
+$$
+\gamma =
+\begin{cases}
+\alpha \iff c = 0
+\\
+\pi - \alpha \iff c = 1
+\end{cases}
+$$
+
+$$
+\theta = \beta + \gamma
+$$
+
+$$
+a' = \tan(\theta)
+$$
+
+$$
+b' = f(c_x) - (c_x \cdot a')
+$$
+
+$$
+g(x) = a' \cdot x + b'
+$$
+
+### Getting Point $Q$ on Other End of Chord
+
+$$
+\vec{x} = \frac{r}{\sqrt{1+(a_g)^2}}
+$$
+
+$$
+\eta =
+\begin{cases}
+-1 \iff c = 0
+\\
+1 \iff c = 1
+\end{cases}
+$$
+
+$$
+x' = c_x + \vec{x} \cdot \eta
+$$
+
+$$
+y' = g(x')
+$$
+
+$$
+Q = (x', y')
+$$
+
+### Line $h(x)$ Going Through Points $P$ and $Q$
+
+$$
+x_1 = P_x
+$$
+
+$$
+y_1 = P_y
+$$
+
+$$
+x_2 = Q_x
+$$
+
+$$
+y_2 = Q_y
+$$
+
+$$
+a = \frac{y_2 - y_1}{x_2 - x_1} = \frac{Q_y - P_y}{Q_x - P_x}
+$$
+
+$$
+b = \frac{x_2y_1 - x_1y_2}{x_2-x_1} = \frac{Q_xP_y - P_xQ_y}{Q_x - P_x}
+$$
+
+$$
+h(x) = ax + b
+$$
+
+### Example
+
+- circle: $(x-6)^2 + (y-6)^2 = 3^2$
+- angular point: $\sigma = -45\degree$
+- chord length: $\ell = 4$
+- clockwise direction: $c = 1$
+
+> Getting Point $P$ on Circle
+
+$$
+\Delta = \frac{1}{2}\pi - 2\pi \cdot \left( \frac{\sigma}{360} \right) = \frac{1}{2}\pi - 2\pi \cdot \left( \frac{-45}{360} \right) = 2.356195
+$$
+
+$$
+x = r \cdot \cos(\Delta) + a = 3 \cdot \cos(2.356195) + 6 = 3.878679
+$$
+
+$$
+y = r \cdot \sin(\Delta) + b = 3 \cdot \sin(2.356195) + 6 = 8.121319
+$$
+
+> Line $f(x)$ Going Through $P$ and $(a,b)$
+
+$$
+a = \frac{b-P_y}{a-P_x} = \frac{6-8.121319}{6-3.878679} \approx -1
+$$
+
+$$
+b = \frac{a \cdot P_y - P_x \cdot b}{a - P_x} = \frac{6 \cdot 8.121319 - 3.878679 \cdot 6}{6-3.878679} \approx 12
+$$
+
+$$
+f(x) = ax + b = -x + 12
+$$
+
+> Getting Angle $\alpha$ Subtended by Chord
+
+$$
+\alpha = 2 \cdot \arcsin\left( \frac{\ell}{2r} \right) = 2 \cdot \arcsin\left( \frac{4}{6} \right) = 1.459455
+$$
+
+> Getting $g(x)$ Line Being $f(x)$ Rotated by $\alpha$ at $(a,b)$
+
+$$
+\beta = \arctan(a_f) = \arctan(-1) = -0.785398
+$$
+
+$$
+(c = 1) \implies \gamma = \pi - \alpha = 1.682138
+$$
+
+$$
+\theta = \beta + \gamma = -0.785398 + 1.682138 = 0.896739
+$$
+
+$$
+a' = \tan(\theta) = \tan(0.896739) = 1.251753
+$$
+
+$$
+b' = f(c_x) - (c_x \cdot a') = f(6) - (6 \cdot 1.251753) = 6 - 7.510518 = -1.510518
+$$
+
+$$
+g(x) = a' \cdot x + b' = 1.251753x - 1.510518 
+$$
+
+> Getting Point $Q$ on Other End of Chord
+
+$$
+\vec{x} = \frac{r}{\sqrt{1+(a_g)^2}} = \frac{3}{\sqrt{1+1.251753^2}} = 1.872484
+$$
+
+$$
+(c = 1) \implies \eta = 1
+$$
+
+$$
+x' = c_x + \vec{x} \cdot \eta = 6 + 1.872484 \cdot 1 = 7.872484
+$$
+
+$$
+y' = g(x') = g(7.872484) = 8.343888
+$$
+
+$$
+Q = (x', y') = (7.872484, 8.343888)
+$$
+
+> Line $h(x)$ Going Through Points $P$ and $Q$
+
+$$
+x_1 = P_x = 3.878679
+$$
+
+$$
+y_1 = P_y = 8.121319
+$$
+
+$$
+x_2 = Q_x = 7.872484
+$$
+
+$$
+y_2 = Q_y = 8.343888
+$$
+
+$$
+a = \frac{Q_y - P_y}{Q_x - P_x} = 0.055729
+$$
+
+$$
+b = \frac{Q_xP_y - P_xQ_y}{Q_x - P_x} = 7.905166
+$$
+
+$$
+h(x) = ax + b = 0.055729x + 7.905166
+$$
+
+### Implementation
+
+```
+function find([a,b,r], aPoint, chordLen, cw = true) {
+  const delta = 0.5*Math.PI - 2*Math.PI*(aPoint/360);
+  const P = {
+    x: r * Math.cos(delta) + a,
+    y: r * Math.sin(delta) + b
+  };
+
+  const a_f = (b-P.y) / (a-P.x);
+  const b_f = (a*P.y-P.x*b) / (a-P.x);
+  const f = x => a_f * x + b_f;
+
+  const alpha = 2 * Math.asin(chordLen / (2*r));
+  const beta = Math.atan(a_f);
+  const gamma = cw ? (Math.PI-alpha) : alpha;
+  const theta = beta + gamma;
+
+  const a_g = Math.tan(theta);
+  const b_g = f(a) - (a*a_g);
+  const g = x => a_g * x + b_g;
+
+  const vecX = r/Math.sqrt(1+a_g**2);
+  const _x = a + vecX * (cw ? 1 : -1);
+  const _y = g(_x);
+  const Q = {
+    x: _x,
+    y: _y
+  };
+
+  const a_h = (Q.y-P.y) / (Q.x-P.x);
+  const b_h = (Q.x*P.y - P.x*Q.y) / (Q.x-P.x);
+  return x => a_h * x + b_h;
+}
+
+find([6,6,3], -45, 4)
+// x => 0.055728 * x + 7.905169
+
+find([6,6,3], -45, 4, false)
+// x => 17.944272 * x - 61.478762
 ```
