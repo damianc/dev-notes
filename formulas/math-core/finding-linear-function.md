@@ -14,6 +14,7 @@
 - [By Circle Tangent](#by-circle-tangent)
 - [By Circle Chord](#by-circle-chord)
 - [By Chord Length](#by-chord-length)
+- [By Arc Length](#by-arc-length)
 
 ## By two points $A$ and $B$
 
@@ -1311,3 +1312,13 @@ find([6,6,3], -45, 4)
 find([6,6,3], -45, 4, false)
 // x => 17.944272 * x - 61.478762
 ```
+
+## By Arc Length
+
+Like in **By Chord Length** with one exception - getting angle $\alpha$ subtended by arc:
+
+$$
+\alpha = \frac{\ell}{r}
+$$
+
+> here $\ell$ is length of arc
