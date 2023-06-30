@@ -11,6 +11,8 @@
 - [By length _l_ in range of size _d_](#by-length-ell-in-range-of-size-d-implies-leftx_nx_ndright)
 - [By distance _y_ from parallel function _f(x)_](#by-distance-vecy-from-parallel-function-fx)
 - [By distance _x_ from parallel function _f(x)_](#by-distance-vecx-from-parallel-function-fx)
+- [By Circle Tangent](#by-circle-tangent)
+- [By Circle Chord](#by-circle-chord)
 
 ## By two points $A$ and $B$
 
@@ -794,4 +796,226 @@ function find([fa,fb], dx) {
 
 find([2,-2], 4)
 // x => 2 * x - 10
+```
+
+## By Circle Tangent
+
+- circle: $(x-a)^2 + (y-b)^2 = r^2$
+- point angle: $\alpha$
+
+$$
+\Delta = \frac{1}{2}\pi - 2\pi \cdot \left( \frac{\alpha}{360} \right)
+$$
+
+$$
+x = r \cdot \cos(\Delta) + a
+$$
+
+$$
+y = r \cdot \sin(\Delta) + b
+$$
+
+$$
+a' = \frac{y-b}{x-a}
+$$
+
+$$
+A = \frac{-1}{a'}
+$$
+
+$$
+B = y - xA
+$$
+
+$$
+f(x) = Ax + B
+$$
+
+### Example
+
+$$
+(x-6)^2 + (y-6)^2 = 3^2
+$$
+
+$$
+\alpha = 45\degree
+$$
+
+$$
+\implies
+$$
+
+$$
+\Delta = \frac{1}{2}\pi - 2\pi \cdot \left( \frac{45}{360} \right) = \frac{1}{2}\pi - \frac{1}{4}\pi \approx 0.7854
+$$
+
+$$
+x = r \cdot \cos(\Delta) + a = 3 \cdot 0.7071 + 6 = 8.1213
+$$
+
+$$
+y = r \cdot \sin(\Delta) + b = 3 \cdot 0.7071 + 6 = 8.1213
+$$
+
+$$
+a' = \frac{y-b}{x-a} = \frac{8.1213-6}{8.1213-6} = 1
+$$
+
+$$
+A = \frac{-1}{a'} = \frac{-1}{1} = -1
+$$
+
+$$
+B = y - xA = 8.1213 - (8.1213 \cdot -1) = 16.2426
+$$
+
+$$
+f(x) = Ax + B = -x + 16.2426
+$$
+
+### Implementation
+
+```
+function find([a,b,r], alpha) {
+  const delta = 0.5*Math.PI - 2*Math.PI*(alpha/360);
+  const x = r * Math.cos(delta) + a;
+  const y = r * Math.sin(delta) + b;
+
+  const _a = (y-b) / (x-a);
+
+  const A = (-1) / _a;
+  const B = y - (x * A);
+  return _x => A * _x + B;
+}
+
+find([6,6,3], 45)
+// x => -1 * x + 16.242641
+```
+
+## By Circle Chord
+
+- circle: $(x-a)^2 + (y-b)^2 = r^2$
+- point 1 angle: $\alpha$
+- point 2 angle: $\beta$
+
+$$
+\Delta(\gamma) = \frac{1}{2}\pi - 2\pi \cdot \left( \frac{\gamma}{360} \right)
+$$
+
+$$
+\Delta_1 = \Delta(\alpha)
+$$
+
+$$
+\Delta_2 = \Delta(\beta)
+$$
+
+$$
+x_1 = r \cdot \cos(\Delta_1) + a
+$$
+
+$$
+y_1 = r \cdot \sin(\Delta_1) + b
+$$
+
+$$
+x_2 = r \cdot \cos(\Delta_2) + a
+$$
+
+$$
+y_2 = r \cdot \sin(\Delta_2) + b
+$$
+
+$$
+A = \frac{y_2-y_1}{x_2-x_1}
+$$
+
+$$
+B = \frac{x_2y_1 - x_1y_2}{x_2-x_1}
+$$
+
+$$
+f(x) = Ax + B
+$$
+
+### Example
+
+$$
+(x-6)^2 + (y-6)^2 = 3^2
+$$
+
+$$
+\alpha = -45\degree
+$$
+
+$$
+\beta = 30\degree
+$$
+
+$$
+\implies
+$$
+
+$$
+\Delta(\gamma) = \frac{1}{2}\pi - 2\pi \cdot \left( \frac{\gamma}{360} \right)
+$$
+
+$$
+\Delta_1 = \Delta(\alpha) \approx 2.3562
+$$
+
+$$
+\Delta_2 = \Delta(\beta) \approx 1.0472
+$$
+
+$$
+x_1 = r \cdot \cos(\Delta_1) + a = 3 \cdot (-0.7071) + 6 = 3.8787
+$$
+
+$$
+y_1 = r \cdot \sin(\Delta_1) + b = 3 \cdot 0.7071 + 6 = 8.1213
+$$
+
+$$
+x_2 = r \cdot \cos(\Delta_2) + a = 3 \cdot 0.4999 + 6 = 7.5
+$$
+
+$$
+y_2 = r \cdot \sin(\Delta_2) + b = 3 \cdot 0.9645 + 6 = 8.5981
+$$
+
+$$
+A = \frac{y_2-y_1}{x_2-x_1} = \frac{8.5981 - 8.1213}{7.5 - 3.8787} = \frac{0.4768}{3.6213} = 0.1317
+$$
+
+$$
+B = \frac{x_2y_1 - x_1y_2}{x_2-x_1} = \frac{(7.5\cdot8.1213)-(3.8787\cdot8.5981)}{7.5-3.8787} = \frac{60.9098 - 33.3495}{3.6213} = \frac{27.5603}{3.6213} = 7.6106
+$$
+
+$$
+f(x) = Ax + B = 0.1317 \cdot x + 7.6106
+$$
+
+### Implementation
+
+```
+function find([a,b,r], alpha, beta) {
+  const delta = angle => 0.5*Math.PI - 2*Math.PI*(angle/360);
+
+  const delta1 = delta(alpha);
+  const delta2 = delta(beta);
+
+  const x1 = r * Math.cos(delta1) + a;
+  const y1 = r * Math.sin(delta1) + b;
+
+  const x2 = r * Math.cos(delta2) + a;
+  const y2 = r * Math.sin(delta2) + b;
+
+  const A = (y2-y1) / (x2-x1);
+  const B = (x2*y1 - x1*y2) / (x2-x1);
+  return _x => A * _x + B;
+}
+
+find([6,6,3], -45, 30)
+// x => 0.131653 *x +  7.610683
 ```
