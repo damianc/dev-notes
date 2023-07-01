@@ -15,6 +15,8 @@
 - [By Circle Chord](#by-circle-chord)
 - [By Chord Length](#by-chord-length)
 - [By Arc Length](#by-arc-length)
+- [By Parabola _f(x)_ Tangent at _x_](#by-parabola-fx-tangent-at-x)
+- [By Parabola _f(x)_ Intersection at _x_1_ and _x_2_](#by-parabola-fx-intersection-at-x1-and-x2)
 
 ## By two points $A$ and $B$
 
@@ -1322,3 +1324,156 @@ $$
 $$
 
 > here $\ell$ is length of arc
+
+## By Parabola $f(x)$ Tangent at $x$
+
+$$
+f(x) = ax^2 + bx + c
+$$
+
+$$
+P = (x, f(x))
+$$
+
+$$
+\implies
+$$
+
+$$
+m = b + (P_x \cdot 2a)
+$$
+
+$$
+i = P_y - (P_x \cdot m)
+$$
+
+$$
+g(x) = mx + i
+$$
+
+### Example
+
+$$
+f(x) = 2x^2 + 3x - 4
+$$
+
+$$
+P = (-1.5, f(-1.5)) = (-1.5, -4)
+$$
+
+$$
+\implies
+$$
+
+$$
+m = b + (P_x \cdot 2a) = 3 + (-1.5 \cdot 4) = 3 - 6 = -3
+$$
+
+$$
+i = P_y - (P_x \cdot m) = -4 - (-1.5 \cdot -3) = -4 - 4.5 = -8.5
+$$
+
+$$
+g(x) = mx + i = -3x - 8.5
+$$
+
+### Implementation
+
+```
+function find([a,b,c], x) {
+  const P = {
+    x,
+    y: a*x**2 + b*x + c
+  };
+
+  const m = b + (P.x * 2*a);
+  const i = P.y - (P.x * m);
+  return _x => m * _x + i;
+}
+
+find([2,3,-4], -1.5)
+// x => -3 *x - 8.5
+```
+
+## By Parabola $f(x)$ Intersection at $x_1$ and $x_2$
+
+$$
+f(x) = ax^2 + bx + c
+$$
+
+$$
+P = (x_1, f(x_1))
+$$
+
+$$
+Q = (x_2, f(x_2))
+$$
+
+$$
+\implies
+$$
+
+$$
+m = \frac{Q_y-P_y}{Q_x-P_x}
+$$
+
+$$
+i = \frac{Q_xP_y - P_xQ_y}{Q_x-P_x}
+$$
+
+$$
+g(x) = mx + i
+$$
+
+### Example
+
+$$
+f(x) = 2x^2 + 3x - 4
+$$
+
+$$
+P = (-3, f(-3)) = (-3, 5)
+$$
+
+$$
+Q = (1, f(1)) = (1, 1)
+$$
+
+$$
+\implies
+$$
+
+$$
+m = \frac{Q_y-P_y}{Q_x-P_x} = \frac{1-5}{1+3} = \frac{-4}{4} = -1
+$$
+
+$$
+i = \frac{Q_xP_y - P_xQ_y}{Q_x-P_x} = \frac{1\cdot5 - (-3)\cdot1}{1+3} = \frac{5+3}{4} = \frac{8}{4} = 2
+$$
+
+$$
+g(x) = mx + i = -x + 2
+$$
+
+### Implementation
+
+```
+function find([a,b,c], x1, x2) {
+  const f = x => a*x**2 + b*x + c;
+  const P = {
+    x: x1,
+    y: f(x1)
+  };
+  const Q = {
+    x: x2,
+    y: f(x2)
+  };
+
+  const m = (Q.y-P.y) / (Q.x-P.x);
+  const i = (Q.x*P.y - P.x*Q.y) / (Q.x - P.x);
+  return x => m * x + i;
+}
+
+find([2,3,-4], -3, 1)
+// x => -x + 2
+```
