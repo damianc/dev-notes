@@ -16,7 +16,7 @@
 - [By Chord Length](#by-chord-length)
 - [By Arc Length](#by-arc-length)
 - [By Parabola _f(x)_ Tangent at _x_](#by-parabola-fx-tangent-at-x)
-- [By Parabola _f(x)_ Intersection at _x_1_ and _x_2_](#by-parabola-fx-intersection-at-x1-and-x2)
+- [By Parabola _f(x)_ Intersection at _x_1_ and _x_2_](#by-parabola-fx-intersection-at-x_1-and-x_2)
 
 ## By two points $A$ and $B$
 
