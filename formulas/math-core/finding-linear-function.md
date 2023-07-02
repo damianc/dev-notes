@@ -17,6 +17,7 @@
 - [By Arc Length](#by-arc-length)
 - [By Parabola _f(x)_ Tangent at _x_](#by-parabola-fx-tangent-at-x)
 - [By Parabola _f(x)_ Intersection at _x1_ and _x2_](#by-parabola-fx-intersection-at-x_1-and-x_2)
+- [By Circumference _l_ of Triangle Rendered with Lines _f(x)_ and _g(x)_](#by-circumference-ell-of-triangle-rendered-with-lines-fx-and-gx)
 
 ## By two points $A$ and $B$
 
@@ -1476,4 +1477,192 @@ function find([a,b,c], x1, x2) {
 
 find([2,3,-4], -3, 1)
 // x => -x + 2
+```
+
+## By Circumference $\ell$ of Triangle Rendered with Lines $f(x)$ and $g(x)$
+
+### Line Location (1 of 4)
+
+$$
+\vec{p} = 1 \ \cup\ -1
+$$
+
+$$
+\vec{q} = 1 \ \cup\ -1
+$$
+
+### Given Functions $f(x)$ and $g(x)$
+
+$$
+f(x) = ax + b
+$$
+
+$$
+g(x) = cx + d
+$$
+
+### Lines $f(x)$ and $g(x)$ Intersection
+
+$$
+I_x = \left( \frac{d-b}{a-c} \right)
+$$
+
+$$
+I = (I_x, f(I_x))
+$$
+
+### Init Rays
+
+#### Lengths
+
+$$
+\theta_f = \frac{1}{\sqrt{1 + a^2}}
+$$
+
+$$
+\theta_g = \frac{1}{\sqrt{1 + c^2}}
+$$
+
+#### Rays Ends
+
+$$
+P_x = I_x + \theta_f \cdot \vec{p}
+$$
+
+$$
+P = (P_x, f(P_x))
+$$
+
+$$
+Q_x = I_x + \theta_g \cdot \vec{q}
+$$
+
+$$
+Q = (Q_x, g(Q_x))
+$$
+
+### Enlonged Rays
+
+#### Existing Lengths
+
+$$
+|IP| = \sqrt{(P_x-I_x)^2 + (P_y-I_y)^2}
+$$
+
+$$
+|IQ| = \sqrt{(Q_x-I_x)^2 + (Q_y - I_y)^2}
+$$
+
+$$
+|PQ| = \sqrt{(Q_x-P_x)^2 + (Q_y-P_y)^2}
+$$
+
+#### Lacking Length of Rays
+
+$$
+s = |IP| + |IQ| + |PQ|
+$$
+
+$$
+\ell' = \ell - s
+$$
+
+$$
+R = \frac{s}{|IP| + |IQ|}
+$$
+
+$$
+\vec{R} = \frac{\ell'}{R}
+$$
+
+$$
+\vec{r} = \frac{\vec{R}}{2}
+$$
+
+#### Rays New Ends
+
+$$
+P'_x = P_x + \vec{p} \cdot \frac{\vec{r}}{\sqrt{1+a^2}}
+$$
+
+$$
+P' = (P'_x, f(P'_x))
+$$
+
+$$
+Q'_x = Q_x + \vec{q} \cdot \frac{\vec{r}}{\sqrt{1+c^2}}
+$$
+
+$$
+Q' = (Q'_x, g(Q'_x))
+$$
+
+### Final Function
+
+$$
+a_h = \frac{Q'_y - P'_y}{Q'_x - P'_x}
+$$
+
+$$
+b_h = \frac{Q'_xP'_y - P'_xQ'_y}{Q'x - P'_x}
+$$
+
+$$
+h(x) = a_hx + b_h
+$$
+
+### Implementation
+
+```
+function find([a,b], [c,d], l, [p,q]) {
+  // JS and its precision
+  const _t = x => +x.toFixed(4);
+  
+  const f = x => a*x + b;
+  const g = x => c*x + d;
+
+  const intersectionX = (d-b)/(a-c);
+  const intersectionY = f(intersectionX);
+  const I = {x: intersectionX, y: intersectionY};
+
+  const df = _t(1/Math.sqrt(1 + a**2));
+  const dg = _t(1/Math.sqrt(1 + c**2));
+
+  const Px = I.x + df * p;
+  const P = {x: Px, y: f(Px)};
+
+  const Qx = I.x + dg * q;
+  const Q = {x: Qx, y: g(Qx)};
+
+  const _IP_ = Math.sqrt((P.x-I.x)**2 + (P.y-I.y)**2);
+  const _IQ_ = Math.sqrt((Q.x-I.x)**2 + (Q.y-I.y)**2);
+  const _PQ_ = Math.sqrt((Q.x-P.x)**2 + (Q.y-P.y)**2);
+
+  const s = _IP_ + _IQ_ + _PQ_;
+  const _l = l - _t(s);
+
+  const _rays = s/(_IP_ + _IQ_);
+  const raysAVec = _l / _rays;
+  const rayAVec = _t(raysAVec / 2);
+
+  const nPx = P.x + p * _t(rayAVec/Math.sqrt(1+a**2));
+  const nPy = f(nPx);
+  const nP = {x:nPx, y:nPy};
+
+  const nQx = Q.x + q * _t(rayAVec/Math.sqrt(1+c**2));
+  const nQy = g(nQx);
+  const nQ = {x:nQx, y:nQy};
+
+  const ha = (nQ.y - nP.y) / (nQ.x - nP.x);
+  const hb = (nQ.x*nP.y - nP.x*nQ.y) / (nQ.x - nP.x);
+  return x => ha * x + hb;
+}
+
+find(
+  [-0.5, 3],
+  [4, -2],
+  12,
+  [1, -1]
+)
+// x => 0.459927 * x - 1.235305
 ```
