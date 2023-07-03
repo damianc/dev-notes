@@ -8,7 +8,7 @@
 | y-intercept | $b$ |
 | value _x_ for given _y_ | $\frac{y-b}{a}$ |
 | angle between line and X-axis | $\arctan(a)$ |
-| angle between line and Y-axis | $\frac{1}{2}\pi - \arctan(a)$ |
+| angle between line and Y-axis | $\frac{1}{2}\pi - \arctan(a)$ or $\arctan(\frac{1}{a})$ |
 | angle between two lines | $\arctan\left(\vert \frac{a_2-a_1}{1 + a_1a_2} \vert\right)$ |
 | two lines intersection point | $$\left( \frac{b_2-b_1}{a_1-a_2}, \frac{a_1\cdot[b_2-b_1]}{a_1-a_2} + b_1 \right)$$ |
 | distance between two parallel lines | $$\frac{\vert b_2-b_1 \vert}{\sqrt{1+a^2}}$$ |
