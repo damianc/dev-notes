@@ -7,9 +7,9 @@
 - [By angle α towards X-axis →](#by-measuredangle-angle-alpha-towards-x-axis-rarr)
 - [By angle β towards Y-axis ↑](#by-measuredangle-angle-beta-towards-y-axis-uarr)
 - [By angle γ towards _f(x)_ function line](#by-measuredangle-angle-gamma-towards-fx-function-line)
-- [By distance _d_ from _f(x)_ parallel function line ║](#by-distance-d-from-fx-parallel-function-line-parallel)
 - [By length _l_ in X-range of size _d_](#by-length-ell-in-x-range-of-size-d-implies-leftx_nx_ndright)
 - [By length _l_ in Y-range of size _d_](#by-length-ell-in-y-range-of-size-d-implies-lefty_ny_ndright)
+- [By distance _d_ from _f(x)_ parallel function line ║](#by-distance-d-from-fx-parallel-function-line-parallel)
 - [By distance _y_ from parallel function _f(x)_](#by-distance-vecy-from-parallel-function-fx)
 - [By distance _x_ from parallel function _f(x)_](#by-distance-vecx-from-parallel-function-fx)
 - [By Circle Tangent](#by-circle-tangent)
@@ -514,104 +514,6 @@ find([2,1], [2,4], 30)
 // x => 0.660254 * x +  2.679492
 ```
 
-## By distance $d$ from $f(x)$ parallel function line $\parallel$
-
-$$
-f(x) = a_fx + b_f
-$$
-
-$$
-\implies
-$$
-
-$$
-a_{f'} = \frac{-1}{a_f}
-$$
-
-$$
-f'(x) = a_{f'}x + f(0)
-$$
-
-$$
-\vec{x} = d \cdot \cos(\arctan(a_{f'}))
-$$
-
-$$
-Q = (\vec{x}, f'(\vec{x}))
-$$
-
-$$
-a_g = a_f
-$$
-
-$$
-b_g = y_Q - [x_Q \cdot a_g]
-$$
-
-$$
-g(x) = a_gx + b_g
-$$
-
-### Example
-
-$$
-f(x) = \frac{1}{4}x + 4
-$$
-
-$$
-d = 2
-$$
-
-$$
-\implies
-$$
-
-$$
-a_{f'} = \frac{-1}{a_f} = \frac{-1}{0.25} = -4
-$$
-
-$$
-f'(x) = a_{f'}x + f(0) = -4x + 4
-$$
-
-$$
-\vec{x} = d \cdot \cos(\arctan(a_{f'})) = 2 \cdot \cos(\arctan(-4)) = 2 \cdot 0.2425 = 0.485
-$$
-
-$$
-Q = (\vec{x}, f'(\vec{x})) = (0.485, 2.06)
-$$
-
-$$
-a_g = a_f = \frac{1}{4}
-$$
-
-$$
-b_g = y_Q - [x_Q \cdot a_g] = 2.06 - \left[0.485 \cdot \frac{1}{4}\right] = 1.93875
-$$
-
-$$
-g(x) = a_gx + b_g = \frac{1}{4}x + 1.93875 \approx \frac{1}{4}x + 1.94
-$$
-
-### Implementation
-
-```
-function find([fa,fb], d) {
-  const _fa = -1 / fa;
-  const _f = x => _fa * x + fb;
-  
-  const xVector = d * Math.cos(Math.atan(_fa));
-  const [qx,qy] = [xVector, _f(xVector)];
-  const gb = qy - (qx * fa);
-  
-  return x => fa * x + gb;
-}
-
-find([0.25, 4], 2)
-// x => 0.25 * x + 1.938447
-```
-
 ## By length $\ell$ in X-range of size $d$ $\implies \left[x_n;x_{n+d}\right]$
 
 > $\ell \geq d$  
@@ -786,6 +688,104 @@ function find(length, xRange, [x,y]) {
 
 find(6, 2, [4,3])
 // x => 0.353553 * x + 1.585786
+```
+
+## By distance $d$ from $f(x)$ parallel function line $\parallel$
+
+$$
+f(x) = a_fx + b_f
+$$
+
+$$
+\implies
+$$
+
+$$
+a_{f'} = \frac{-1}{a_f}
+$$
+
+$$
+f'(x) = a_{f'}x + f(0)
+$$
+
+$$
+\vec{x} = d \cdot \cos(\arctan(a_{f'}))
+$$
+
+$$
+Q = (\vec{x}, f'(\vec{x}))
+$$
+
+$$
+a_g = a_f
+$$
+
+$$
+b_g = y_Q - [x_Q \cdot a_g]
+$$
+
+$$
+g(x) = a_gx + b_g
+$$
+
+### Example
+
+$$
+f(x) = \frac{1}{4}x + 4
+$$
+
+$$
+d = 2
+$$
+
+$$
+\implies
+$$
+
+$$
+a_{f'} = \frac{-1}{a_f} = \frac{-1}{0.25} = -4
+$$
+
+$$
+f'(x) = a_{f'}x + f(0) = -4x + 4
+$$
+
+$$
+\vec{x} = d \cdot \cos(\arctan(a_{f'})) = 2 \cdot \cos(\arctan(-4)) = 2 \cdot 0.2425 = 0.485
+$$
+
+$$
+Q = (\vec{x}, f'(\vec{x})) = (0.485, 2.06)
+$$
+
+$$
+a_g = a_f = \frac{1}{4}
+$$
+
+$$
+b_g = y_Q - [x_Q \cdot a_g] = 2.06 - \left[0.485 \cdot \frac{1}{4}\right] = 1.93875
+$$
+
+$$
+g(x) = a_gx + b_g = \frac{1}{4}x + 1.93875 \approx \frac{1}{4}x + 1.94
+$$
+
+### Implementation
+
+```
+function find([fa,fb], d) {
+  const _fa = -1 / fa;
+  const _f = x => _fa * x + fb;
+  
+  const xVector = d * Math.cos(Math.atan(_fa));
+  const [qx,qy] = [xVector, _f(xVector)];
+  const gb = qy - (qx * fa);
+  
+  return x => fa * x + gb;
+}
+
+find([0.25, 4], 2)
+// x => 0.25 * x + 1.938447
 ```
 
 ## By distance $\vec{y}$ from parallel function $f(x)$
