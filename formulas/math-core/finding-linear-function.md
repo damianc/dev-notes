@@ -18,6 +18,7 @@
 - [By Parabola _f(x)_ Tangent at _x_](#by-parabola-fx-tangent-at-x)
 - [By Parabola _f(x)_ Intersection at _x1_ and _x2_](#by-parabola-fx-intersection-at-x_1-and-x_2)
 - [By Circumference _l_ of Triangle Rendered with Lines _f(x)_ and _g(x)_](#by-circumference-ell-of-triangle-rendered-with-lines-fx-and-gx)
+- [By Area _P_ of Triangle Rendered with Lines _f(x)_ and _g(x)_](#by-area-p-of-triangle-rendered-with-lines-fx-and-gx)
 
 ## By two points $A$ and $B$
 
@@ -1791,4 +1792,188 @@ find(
   [1, -1]
 )
 // x => 0.459927 * x - 1.235305
+```
+
+## By Area $P$ of Triangle Rendered with Lines $f(x)$ and $g(x)$
+
+$$
+f(x) = ax + b
+$$
+
+$$
+g(x) = cx + d
+$$
+
+$$
+\vec{p} = 1 \ \cup\ -1
+$$
+
+$$
+\vec{q} = 1 \ \cup\ -1
+$$
+
+$$
+\implies
+$$
+
+$$
+\gamma = \arctan\left(\left| \frac{c-a}{1+ac} \right|\right)
+$$
+
+$$
+\theta = \left| \left[ \left( \frac{1-\vec{p}\cdot\vec{q}}{2} \right) \cdot \pi \right] - \gamma \right|
+$$
+
+$$
+AB = 2 \cdot \frac{P}{\sin(\theta)}
+$$
+
+$$
+\vec{t} = \sqrt{AB}
+$$
+
+$$
+I_x = \frac{d-b}{a-c}
+$$
+
+$$
+I_y = f(I_x)
+$$
+
+$$
+P_x = I_x + \vec{p} \cdot \frac{\vec{t}}{\sqrt{1+a^2}}
+$$
+
+$$
+P_y = f(P_x)
+$$
+
+$$
+Q_x = I_x + \vec{q} \cdot \frac{\vec{t}}{\sqrt{1+c^2}}
+$$
+
+$$
+Q_y = g(Q_x)
+$$
+
+$$
+h_a = \frac{Q_y-P_y}{Q_x-P_x}
+$$
+
+$$
+h_b = \frac{Q_xP_y - P_xQ_y}{Q_x-P_x}
+$$
+
+$$
+h(x) = h_ax + h_b
+$$
+
+### Example
+
+$$
+f(x) = -0.5x + 3
+$$
+
+$$
+g(x) = 4x - 2
+$$
+
+$$
+P = 12
+$$
+
+$$
+\left[ \vec{p}, \vec{q} \right] = [1, -1]
+$$
+
+$$
+\implies
+$$
+
+$$
+\gamma = \arctan\left(\left| \frac{c-a}{1+ac} \right|\right) = \arctan\left(\left| \frac{4.5}{-1} \right|\right) = \arctan(4.5) = 1.352127
+$$
+
+$$
+\theta = \left| \left[ \left( \frac{1-\vec{p}\cdot\vec{q}}{2} \right) \cdot \pi \right] - \gamma \right| = | \pi - 1.352127 | = 1.789466
+$$
+
+$$
+AB = 2 \cdot \frac{P}{\sin(\theta)} = 2 \cdot \frac{12}{0.976187} = 24.585453
+$$
+
+$$
+\vec{t} = \sqrt{AB} = \sqrt{24.585453} = 4.958372
+$$
+
+$$
+I_x = \frac{d-b}{a-c} = \frac{-2-3}{-0.5-4} = \frac{-5}{-4.5} = 1.1111
+$$
+
+$$
+I_y = f(I_x) = f(1.1111) = 2.44445
+$$
+
+$$
+P_x = I_x + \vec{p} \cdot \frac{\vec{t}}{\sqrt{1+a^2}} = 1.1111 + \frac{4.958372}{\sqrt{1.25}} = 1.1111 + 4.434903 = 5.546003
+$$
+
+$$
+P_y = f(P_x) = f(5.546003) = 0.226999
+$$
+
+$$
+Q_x = I_x + \vec{q} \cdot \frac{\vec{t}}{\sqrt{1+c^2}} = 1.1111 - \frac{4.958372}{\sqrt{17}} = 1.1111 - 1.202582 = -0.091482
+$$
+
+$$
+Q_y = g(Q_x) = g(-0.091482) = -2.365928
+$$
+
+$$
+h_a = \frac{Q_y-P_y}{Q_x-P_x} = \frac{-2.365928 - 0.226999}{-0.091482 - 5.546003} = 0.459944
+$$
+
+$$
+h_b = \frac{Q_xP_y - P_xQ_y}{Q_x-P_x} = \frac{-0.091482\cdot0.226999 - 5.546003\cdot(-2.365928)}{-0.091482 - 5.546003} = -2.323851
+$$
+
+$$
+h(x) = h_ax + h_b = 0.459944x - 2.323851
+$$
+
+### Implementation
+
+```
+function find([a,b], [c,d], area, [p,q] = [1,1]) {
+  const gamma = Math.atan(
+    Math.abs((c-a)/(1+a*c))
+  );
+  const theta = Math.abs(
+    ((1-p*q)/2)*Math.PI - gamma
+  );
+  const AB = 2 * (area / Math.sin(theta));
+  const vecT = Math.sqrt(AB);
+
+  const Ix = (d-b)/(a-c);
+  const Iy = a * Ix + b;
+
+  const Px = Ix + p * (vecT / Math.sqrt(1 + a**2));
+  const Py = a * Px + b;
+
+  const Qx = Ix + q * (vecT / Math.sqrt(1 + c**2));
+  const Qy = c * Qx + d;
+
+  const ha = (Qy-Py)/(Qx-Px);
+  const hb = (Qx*Py - Px*Qy)/(Qx-Px);
+  return x => ha * x + hb;
+}
+
+find(
+  [-0.5, 3],
+  [4, -2],
+  12,
+  [1, -1]
+)
+// x => 0.459935 * x - 2.323812
 ```
