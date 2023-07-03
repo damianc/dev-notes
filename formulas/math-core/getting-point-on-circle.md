@@ -14,3 +14,5 @@ $$
 $$
 P_y = r \cdot \sin(\Delta) + b
 $$
+
+![Point on Circle by Angle](https://github.com/damianc/dev-notes/blob/master/_images/math/point-on-circle-2.png "Point on Circle by Angle")
