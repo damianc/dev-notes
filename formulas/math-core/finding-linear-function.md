@@ -8,7 +8,8 @@
 - [By angle β towards Y-axis ↑](#by-measuredangle-angle-beta-towards-y-axis-uarr)
 - [By angle γ towards _f(x)_ function line](#by-measuredangle-angle-gamma-towards-fx-function-line)
 - [By distance _d_ from _f(x)_ parallel function line ║](#by-distance-d-from-fx-parallel-function-line-parallel)
-- [By length _l_ in range of size _d_](#by-length-ell-in-range-of-size-d-implies-leftx_nx_ndright)
+- [By length _l_ in X-range of size _d_](#by-length-ell-in-x-range-of-size-d-implies-leftx_nx_ndright)
+- [By length _l_ in Y-range of size _d_](#by-length-ell-in-y-range-of-size-d-implies-lefty_ny_ndright)
 - [By distance _y_ from parallel function _f(x)_](#by-distance-vecy-from-parallel-function-fx)
 - [By distance _x_ from parallel function _f(x)_](#by-distance-vecx-from-parallel-function-fx)
 - [By Circle Tangent](#by-circle-tangent)
@@ -611,7 +612,7 @@ find([0.25, 4], 2)
 // x => 0.25 * x + 1.938447
 ```
 
-## By length $\ell$ in range of size $d$ $\implies \left[x_n;x_{n+d}\right]$
+## By length $\ell$ in X-range of size $d$ $\implies \left[x_n;x_{n+d}\right]$
 
 > $\ell \geq d$  
 > $\beta = -\beta$ if function values are to be decreasing
@@ -697,6 +698,94 @@ function find(length, xRange, [x,y]) {
 
 find(6, 2, [4,3])
 // x => 2.828427 * x - 8.313708
+```
+
+## By length $\ell$ in Y-range of size $d$ $\implies \left[y_n;y_{n+d}\right]$
+
+> $\ell \geq d$  
+> $\beta = -\beta$ if function values are to be decreasing
+
+$$
+P = (x_p, y_p)
+$$
+
+$$
+\implies
+$$
+
+$$
+\alpha = \arcsin\left(\frac{d}{\ell}\right)
+$$
+
+$$
+\beta = \alpha - \pi
+$$
+
+$$
+a_f = \tan \beta
+$$
+
+$$
+b_f = y_p - (x_p \cdot a_f)
+$$
+
+$$
+f(x) = a_fx + b_f 
+$$
+
+### Example
+
+$$
+P = (4,3)
+$$
+
+$$
+\ell = 6
+$$
+
+$$
+d = 2
+$$
+
+$$
+\implies
+$$
+
+$$
+\alpha = \arcsin\left(\frac{d}{\ell}\right) = \arcsin \left( \frac{2}{6} \right) \approx 0.339837
+$$
+
+$$
+\beta = \alpha - \pi \approx -2.801756
+$$
+
+$$
+a_f = \tan \beta = 0.353553
+$$
+
+$$
+b_f = y_p - (x_p \cdot a_f) = 3 - (4 \cdot 0.353553) = 1.585788
+$$
+
+$$
+f(x) = a_fx + b_f = 0.353553x + 1.585788 \approx 0.35x + 1.59
+$$
+
+### Implementation
+
+```
+function find(length, xRange, [x,y]) {
+  const alpha = Math.asin(xRange / length);
+  const beta = alpha - Math.PI;
+
+  const fa = Math.tan(beta);
+  const fb = y - (x * fa);
+  
+  return x => fa * x + fb;
+}
+
+find(6, 2, [4,3])
+// x => 0.353553 * x + 1.585786
 ```
 
 ## By distance $\vec{y}$ from parallel function $f(x)$
