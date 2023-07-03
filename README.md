@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **347** Dev_Notes
+Currently: &nbsp; **348** Dev_Notes
 
 ---
 
@@ -277,6 +277,7 @@ Currently: &nbsp; **347** Dev_Notes
 # Formulas
 
 * [Distance Between 2 Coords](formulas/distance-between-two-coords.md)
+* [Angular Diameter/Size](formulas/angular-size.md)
 * [Distribute Items Equally on a Circle](ui/distribute-items-equally-on-circle.md)
 * [Getting Point on Circle](formulas/math-core/getting-point-on-circle.md)
 * [Polygon Area](formulas/polygon-area.md)
