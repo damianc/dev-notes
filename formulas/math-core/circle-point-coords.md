@@ -97,3 +97,41 @@ $$
 180\degree \iff y=b \ \cap\ x=a+r
 \end{cases}
 $$
+
+### Custom `Math.atan2()` Implementation
+
+```
+function atan2([x1,y1],[x2,y2]) {
+  const r = Math.sqrt((x2-x1)**2 + (y2-y1)**2);
+  const rd = Math.acos((x2-x1)/r);
+  const a = (rd/(2*Math.PI))*360;
+
+  const rad = deg => deg/180*Math.PI;
+
+  if (y2 < y1) return rad(-a);
+  if (y2 > y1) return rad(a);
+  if (y2 === y1) {
+    if (x2 === x1 + r) return rad(0);
+    if (x2 === x1 - r) return rad(180);
+  }
+  return null;
+}
+```
+
+```
+const p1 = {x:2,y:2};
+const p2 = {x:4,y:4};
+
+atan2([p1.x,p1.y], [p2.x,p2.y])
+// 0.7853981633974485
+Math.atan2(p2.y-p1.y, p2.x-p1.x)
+// 0.7853981633974483
+
+const p3 = {x:-2,y:2};
+const p4 = {x:4,y:-8};
+
+atan2([p3.x,p3.y], [p4.x,p4.y])
+// -1.0303768265243125
+Math.atan2(p4.y-p3.y, p4.x-p3.x)
+// -1.0303768265243125
+```
