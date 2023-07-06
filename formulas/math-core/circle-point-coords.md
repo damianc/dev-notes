@@ -36,7 +36,7 @@ $$
 
 > $-\alpha = 360-\alpha$
 
-> $\frac{r\Delta}{2pi} \cdot 360$ = $\frac{r\Delta}{\pi} \cdot 180$ = $\frac{2 \cdot r\Delta}{\pi} \cdot 90$
+> $\frac{r\Delta}{2\pi} \cdot 360$ = $\frac{r\Delta}{\pi} \cdot 180$ = $\frac{2 \cdot r\Delta}{\pi} \cdot 90$
 
 ### Conditions
 
