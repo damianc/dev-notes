@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **349** Dev_Notes
+Currently: &nbsp; **350** Dev_Notes
 
 ---
 
@@ -297,6 +297,7 @@ Currently: &nbsp; **349** Dev_Notes
 * [Getting Triangle's Lacking Parameters](formulas/math-core/triangle-lacking-info.md)
 * [Circle Parameters](formulas/math-core/circle-parameters.md)
 * [Point on Circle by Angle](formulas/math-core/point-on-circle-by-angle.md)
+* [Point Coordinates on Circle](formulas/math-core/circle-point-coords.md)
 * [Bump Arc Length](formulas/math-core/bump-arc-length.md)
 * [Line and Parabola Intersection](formulas/math-core/line-parabola-intersection.md)
 * [Line and Circle Intersection](formulas/math-core/line-circle-intersection.md)
