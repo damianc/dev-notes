@@ -34,7 +34,7 @@ $$
 | $\Delta - \frac{1}{2}\pi$ | $$\frac{\frac{1}{2}\pi-r\Delta}{2\pi} \cdot 360$$ | $(8, 2.5359)$ | $30\degree$ |
 | $\Delta + \pi$ | $$\frac{\pi-r\Delta}{2\pi} \cdot 360$$ | $(2.5359, 4))$ | $30\degree$ |
 
-> $-\alpha = 360-\alpha$
+> $-\alpha = 360-\alpha$  
 > $\frac{r\Delta}{2pi} \cdot 360$ = $\frac{r\Delta}{\pi} \cdot 180$ = $\frac{2 \cdot r\Delta}{\pi} \cdot 90$
 
 ### Conditions
