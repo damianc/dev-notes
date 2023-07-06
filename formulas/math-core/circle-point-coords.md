@@ -135,3 +135,36 @@ atan2([p3.x,p3.y], [p4.x,p4.y])
 Math.atan2(p4.y-p3.y, p4.x-p3.x)
 // -1.0303768265243125
 ```
+
+#### Calculations
+
+$$
+r = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}
+$$
+
+$$
+r\Delta = \arccos\left( \frac{x_2-x_1}{r} \right)
+$$
+
+$$
+\alpha' = \frac{r\Delta}{2\pi} \cdot 360
+$$
+
+$$
+\alpha = \frac{\alpha'}{180} \cdot \pi
+$$
+
+$$
+\begin{cases}
+y_2 \gt y_1 \implies \alpha
+\\
+y_2 \lt y_1 \implies -\alpha
+\\
+y_2 = y_1 \implies
+\begin{cases}
+x_2 = x_1 + r \implies 0
+\\
+x_2 = x_1 - r \implies \pi
+\end{cases}
+\end{cases}
+$$
