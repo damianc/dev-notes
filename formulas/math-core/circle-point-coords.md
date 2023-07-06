@@ -36,13 +36,9 @@ $$
 
 > $-\alpha = 360-\alpha$
 
-### Conditions
-
 * the main condition for every point $(x,y)$ is $(x-a)^2 + (y-b)^2 = r^2$ for circle with center at $(a,b)$ and $r$ in radius
-
-* for $\Delta$
-
-
+* futhermore
+  - for $\Delta$:
 $$
 \begin{cases}
 \alpha \iff y \lt b
@@ -54,9 +50,7 @@ $$
 180\degree \iff y=b \ \cap\ x=a-r
 \end{cases}
 $$
-
-* for $\Delta + \frac{1}{2}\pi$
-
+  - for $\Delta + \frac{1}{2}\pi$:
 $$
 \begin{cases}
 \alpha \iff x \lt a
@@ -68,9 +62,7 @@ $$
 180\degree \iff x=a \ \cap\ y=b+r
 \end{cases}
 $$
-
-* for $\Delta - \frac{1}{2}\pi$
-
+  - for $\Delta - \frac{1}{2}\pi$:
 $$
 \begin{cases}
 \alpha \iff x \gt a
@@ -82,9 +74,7 @@ $$
 180\degree \iff x=a \ \cap\ y=b-r
 \end{cases}
 $$
-
-* for $\Delta + \pi$
-
+  - for $\Delta + \pi$:
 $$
 \begin{cases}
 \alpha \iff y \gt b
