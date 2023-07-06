@@ -45,9 +45,9 @@ $$
 
 $$
 \begin{cases}
-\alpha \iff y<b
+\alpha \iff y \lt b
 \\
--\alpha \iff y>b
+-\alpha \iff y \gt b
 \\
 0\degree \iff y=b \ \cap\ x=a+r
 \\
@@ -59,9 +59,9 @@ $$
 
 $$
 \begin{cases}
-\alpha \iff x<a
+\alpha \iff x \lt a
 \\
--\alpha \iff x>a
+-\alpha \iff x \gt a
 \\
 0\degree \iff x=a \ \cap\ y=b-r
 \\
@@ -73,9 +73,9 @@ $$
 
 $$
 \begin{cases}
-\alpha \iff x>a
+\alpha \iff x \gt a
 \\
--\alpha \iff x<a
+-\alpha \iff x \lt a
 \\
 0\degree \iff x=a \ \cap\ y=b+r
 \\
@@ -87,9 +87,9 @@ $$
 
 $$
 \begin{cases}
-\alpha \iff y>b
+\alpha \iff y \gt b
 \\
--\alpha \iff y<b
+-\alpha \iff y \lt b
 \\
 0\degree \iff y=b \ \cap\ x=a-r
 \\
