@@ -37,7 +37,7 @@ slope = \frac{y_2-y_1}{x_2-x_1}
 $$
 
 $$
-g_a = \frac{-1}{\begin{cases}slope \iff slope \neq 0\\1 \iff slope = 0\end{cases}}
+g_a = \frac{-1}{slope \ \cup\ 1}
 $$
 
 $$
@@ -82,7 +82,7 @@ function findCircle([x1,y1], [x2,y2], r) {
   
   if (crd === d) return [x3, y3];
 
-  const alpha = 2 * Math.asin(crd/(2*r));
+  const alpha = 2 * Math.asin(crd/d);
   const perp = r * Math.cos(alpha/2);
 
   const slope = (y2-y1)/(x2-x1);
