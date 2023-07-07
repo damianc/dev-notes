@@ -90,10 +90,10 @@ function findCircle([x1,y1], [x2,y2], r) {
   const gb = y3 - (x3 * ga);
   const tVec = perp / Math.sqrt(1 + ga**2);
 
-  const a1 = x3 + tVec;
+  const a1 = +(x3 + tVec).toFixed(4);
   const b1 = ga * a1 + gb;
 
-  const a2 = x3 - tVec;
+  const a2 = +(x3 - tVec).toFixed(4);
   const b2 = ga * a2 + gb;
 
   return [[a1,b1], [a2,b2]];
