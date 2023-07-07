@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **351** Dev_Notes
+Currently: &nbsp; **352** Dev_Notes
 
 ---
 
@@ -299,6 +299,7 @@ Currently: &nbsp; **351** Dev_Notes
 * [Point on Circle by Angle](formulas/math-core/point-on-circle-by-angle.md)
 * [Point Coordinates on Circle](formulas/math-core/circle-point-coords.md)
 * [Find Circle by 2 Points and Radius](formulas/math-core/find-circle-by-two-points-and-r.md)
+* [Find Circle by Point Coords/Angle and Radius](formulas/math-core/find-circle-by-point-angle-and-r.md)
 * [Bump Arc Length](formulas/math-core/bump-arc-length.md)
 * [Line and Parabola Intersection](formulas/math-core/line-parabola-intersection.md)
 * [Line and Circle Intersection](formulas/math-core/line-circle-intersection.md)
