@@ -68,6 +68,8 @@ $$
 \left[ [a_1, b_1] , [a_2, b_2] \right]
 $$
 
+![Find circle by 2 points](https://github.com/damianc/dev-notes/blob/master/_images/math/circle-by-two-points.png "Find circle by 2 points")
+
 ## Implementation
 
 ```
