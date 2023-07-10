@@ -44,6 +44,9 @@ $$
 y' = f(x')
 $$
 
+![Attract point to line](https://github.com/damianc/dev-notes/blob/master/_images/math/attract-point-to-line.png "Attract point to line")
+
+
 ## Implementation
 
 ```
