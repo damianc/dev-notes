@@ -65,3 +65,23 @@ function attractPointToLine([a,b], [x,y]) {
   return [_x, _y];
 }
 ```
+
+## By X-axis
+
+$$
+x' = \frac{y-b}{a}
+$$
+
+$$
+y' = y
+$$
+
+## By Y-axis
+
+$$
+x' = x
+$$
+
+$$
+y' = f(x)
+$$
