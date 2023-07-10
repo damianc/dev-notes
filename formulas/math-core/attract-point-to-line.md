@@ -1,15 +1,27 @@
 # Attract Point to Line
 
 $$
+f(x) = ax + b
+$$
+
+$$
+P = (x,y)
+$$
+
+$$
+\implies
+$$
+
+$$
 \Delta = f(x) - y
 $$
 
 $$
-\|v\| = \sqrt{1 + a^2}
+||v|| = \sqrt{1 + a^2}
 $$
 
 $$
-dx = \frac{|\Delta|}{\|v\|}
+dx = \frac{|\Delta|}{||v||}
 $$
 
 $$
@@ -17,7 +29,7 @@ d = \sqrt{\Delta^2 - dx^2}
 $$
 
 $$
-\vec{d} =\frac{d}{\|v\|}
+\vec{d} =\frac{d}{||v||}
 $$
 
 $$
@@ -37,7 +49,7 @@ $$
 ```
 function attractPointToLine([a,b], [x,y]) {
   const f = _x => _x * a + b;
-  
+
   const delta = f(x) - y;
   const vec = Math.sqrt(1 + a**2);
   const dx = Math.abs(delta) / vec;
