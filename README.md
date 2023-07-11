@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **353** Dev_Notes
+Currently: &nbsp; **354** Dev_Notes
 
 ---
 
@@ -295,6 +295,7 @@ Currently: &nbsp; **353** Dev_Notes
 * [Straight Lines: Intersection Point and Angle](formulas/math-core/lines-intersection-angle.md)
 * [Line Segment: Length and Center](formulas/math-core/line-segment.md)
 * [Attract Point to Line](formulas/math-core/attract-point-to-line.md)
+* [Attract Point to Circle](formulas/math-core/attract-point-to-circle.md)
 * [Getting Triangle's Lacking Parameters](formulas/math-core/triangle-lacking-info.md)
 * [Circle Parameters](formulas/math-core/circle-parameters.md)
 * [Point on Circle by Angle](formulas/math-core/point-on-circle-by-angle.md)
