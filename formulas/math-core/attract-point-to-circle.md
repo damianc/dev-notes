@@ -79,7 +79,12 @@ $$
 ```
 function attractToCircle([a,b,r], [x,y]) {
   if (x === a && y === b) {
-    return [x + r, y];
+    return {
+      RIGHT: [x + r, y],
+      LEFT: [x - r, y],
+      TOP: [x, y - r],
+      BOTTOM: [x, y + r]
+    }['RIGHT'];
   }
   
   if (x === a || y === b) {
