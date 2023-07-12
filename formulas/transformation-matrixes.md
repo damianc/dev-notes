@@ -29,7 +29,7 @@ $$
 
 ## Matrixes
 
-### Translation Matrix [by $tx$/$ty$]
+### Translation Matrix [by $tx$ / $ty$]
 
 $$
 \begin{vmatrix}
@@ -41,7 +41,7 @@ $$
 \end{vmatrix}
 $$
 
-### Scale Matrix [by $sx$/$sy$]
+### Scale Matrix [by $sx$ / $sy$]
 
 $$
 \begin{vmatrix}
@@ -53,7 +53,7 @@ sx & 0 & 0
 \end{vmatrix}
 $$
 
-### Homothety/Similarity Matrix (Scale by Point) [by $sx$/$sy$ at $(p_x,p_y)$]
+### Homothety/Similarity Matrix (Scale by Point) [by $sx$ / $sy$ at $(p_x,p_y)$]
 
 $$
 \begin{vmatrix}
