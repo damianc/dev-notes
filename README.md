@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **354** Dev_Notes
+Currently: &nbsp; **355** Dev_Notes
 
 ---
 
@@ -281,6 +281,7 @@ Currently: &nbsp; **354** Dev_Notes
 * [Distribute Items Equally on a Circle](ui/distribute-items-equally-on-circle.md)
 * [Getting Point on Circle](formulas/math-core/getting-point-on-circle.md)
 * [Polygon Area](formulas/polygon-area.md)
+* [Transformation Matrixes](formulas/transformation-matrixes.md)
 
 ## Math Core
 
