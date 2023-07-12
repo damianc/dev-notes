@@ -163,6 +163,33 @@ function getMatrix(transformationMatrix, pointMatrix) {
 }
 ```
 
+use example:
+
+```
+const points = [
+  { x: 100, y: 20 },
+  { x: 150, y: 120 },
+  { x: 50, y: 120 }
+];
+
+const translateX100Matrix = [
+  [ 1, 0, 100 ],
+  [ 0, 1, 0 ],
+  [ 0, 0, 1 ]
+];
+
+const newCoords = transformPoints(points, translateX100Matrix);
+/*
+[
+  { x: 200, y: 20 },
+  { x: 250, y: 120 },
+  { x: 150, y: 120 }
+]
+*/
+```
+
+----
+
 $$
 \sum_{i=0}^{M_1} \sum_{j=0}^{M_2[0]}
 \implies
