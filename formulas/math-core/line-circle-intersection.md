@@ -14,7 +14,7 @@ b = -2a + 2mi - 2bm
 $$
 
 $$
-c = a^2 + (i-b)^2 - r^2
+c = a^2 + b^2 + i^2 - r^2 - 2ib
 $$
 
 $$
@@ -55,7 +55,7 @@ $$
 function circleLineIntersection({m,i}, {x,y,r}) {
   const A = 1 + m**2;
   const B = -2*x + 2*m*i - 2*y*m;
-  const C = x**2 + (i-y)**2 - r**2;
+  const C = x**2 + y**2 + i**2 - r**2 - (2*i*y);
   const delta = B**2 - 4*A*C;
   
   if (delta < 0) return null;
