@@ -9,6 +9,7 @@
 | sector area | $\frac{\alpha}{2} R^2$ | $\sqrt{\frac{2x}{\alpha}}$ | $2 \frac{x}{R^2}$ |
 | segment area | $\frac{R^2}{2}(\alpha - \sin(\alpha))$ | $\sqrt{2\frac{x}{\alpha - \sin(\alpha)}}$ | *brute force* method |
 | perpendicular distance from circle center to chord | $R \cos(\frac{\alpha}{2})$ | $\frac{x}{\cos(\frac{\alpha}{2})}$ | $2 \arccos(\frac{x}{R})$ |
+| perpendicular distance from circle edge to chord | $R - R \cdot \cos\left(\frac{\alpha}{2}\right)$ | $-x \cdot \frac{1}{\cos\left(\frac{\alpha}{2}\right)-1}$ | $2 \arccos\left(\frac{-x+R}{R}\right)$ |
 
 ![Circle Parameters](https://github.com/damianc/dev-notes/blob/master/_images/math/circle-parameters.png "Circle Parameters")
 
