@@ -11,6 +11,7 @@
 | angle between line and Y-axis | $\frac{1}{2}\pi - \arctan(a)$ or $\arctan(\frac{1}{a})$ |
 | angle between two lines | $\arctan\left(\vert \frac{a_2-a_1}{1 + a_1a_2} \vert\right)$ |
 | two lines intersection point | $$\left( \frac{b_2-b_1}{a_1-a_2}, \frac{a_1\cdot[b_2-b_1]}{a_1-a_2} + b_1 \right)$$ |
+| line segment center | $$\left(\frac{x_1+x_2}{2},\frac{y_1+y_2}{2}\right)$$ |
 | distance between two parallel lines | $$\frac{\vert b_2-b_1 \vert}{\sqrt{1+a^2}}$$ |
 | distance between line and point | $$\frac{\vert ax_p-y_p+b \vert}{\sqrt{1+a^2}}$$ |
 | distance between two points | $\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$ |
