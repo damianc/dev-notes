@@ -9,6 +9,8 @@
 - [By angle γ towards _f(x)_ function line](#by-measuredangle-angle-gamma-towards-fx-function-line)
 - [By length _l_ in X-range of size _d_](#by-length-ell-in-x-range-of-size-d-implies-leftx_nx_ndright)
 - [By length _l_ in Y-range of size _d_](#by-length-ell-in-y-range-of-size-d-implies-lefty_ny_ndright)
+- [By Length *L* in X/Y Range <n;n+d>](#by-length-l-in-xy-range-langle-nnd-rangle)
+- [By Range Span *d* in Which Length is *L*](#by-range-span-d-in-which-length-is-l)
 - [By distance _d_ from _f(x)_ parallel function line ║](#by-distance-d-from-fx-parallel-function-line-parallel)
 - [By distance _y_ from parallel function _f(x)_](#by-distance-vecy-from-parallel-function-fx)
 - [By distance _x_ from parallel function _f(x)_](#by-distance-vecx-from-parallel-function-fx)
@@ -689,6 +691,50 @@ function find(length, xRange, [x,y]) {
 find(6, 2, [4,3])
 // x => 0.353553 * x + 1.585786
 ```
+
+## By Length $L$ in X/Y Range $\langle n;n+d \rangle$
+
+* length $L$ in X-Range $\langle x;x+d \rangle$
+
+$$
+a = \sqrt{\left(\frac{L}{d}\right)^2 - 1}
+$$
+
+$$
+b = P_y - (P_x \cdot a)
+$$
+
+* length $L$ in Y-Range $\langle y;y+d \rangle$
+
+$$
+a = \sqrt{\frac{1}{\left(\frac{L}{d}\right)^2 - 1}}
+$$
+
+$$
+b = P_y - (P_x \cdot a)
+$$
+
+## By Range Span $d$ in Which Length is $L$
+
+* X-Range $\langle x;x+d \rangle$ in Which Length is $L$
+
+$$
+a = \frac{\sqrt{L^2-d^2}}{d}
+$$
+
+$$
+b = P_y - (P_x \cdot a)
+$$
+
+* Y-Range $\langle y;y+d \rangle$ in Which Length is $L$
+
+$$
+a = \frac{1}{d \cdot \sqrt{L^2-d^2}}
+$$
+
+$$
+b = P_y - (P_x \cdot a)
+$$
 
 ## By distance $d$ from $f(x)$ parallel function line $\parallel$
 
