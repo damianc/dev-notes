@@ -518,6 +518,8 @@ find([2,1], [2,4], 30)
 
 ## By length $\ell$ in X-range of size $d$ $\implies \left[x_n;x_{n+d}\right]$
 
+> [Faster Approach](#by-length-l-in-xy-range-langle-nnd-rangle)
+  
 > $\ell \geq d$  
 > $\beta = -\beta$ if function values are to be decreasing
 
@@ -606,6 +608,8 @@ find(6, 2, [4,3])
 
 ## By length $\ell$ in Y-range of size $d$ $\implies \left[y_n;y_{n+d}\right]$
 
+> [Faster Approach](#by-length-l-in-xy-range-langle-nnd-rangle)
+  
 > $\ell \geq d$  
 > $\beta = -\beta$ if function values are to be decreasing
 
