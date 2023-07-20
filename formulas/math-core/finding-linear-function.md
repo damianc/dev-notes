@@ -7,6 +7,8 @@
 - [By angle α towards X-axis →](#by-measuredangle-angle-alpha-towards-x-axis-rarr)
 - [By angle β towards Y-axis ↑](#by-measuredangle-angle-beta-towards-y-axis-uarr)
 - [By angle γ towards _f(x)_ function line](#by-measuredangle-angle-gamma-towards-fx-function-line)
+- [By slope *a* and point *P*](#by-slope-a-and-point-p)
+- [By y-intercept *b* and point *P*](#by-y-intercept-b-and-point-p)
 - [By length _l_ in X-range of size _d_](#by-length-ell-in-x-range-of-size-d-implies-leftx_nx_ndright)
 - [By length _l_ in Y-range of size _d_](#by-length-ell-in-y-range-of-size-d-implies-lefty_ny_ndright)
 - [By Length *L* in X/Y Range <n;n+d>](#by-length-l-in-xy-range-langle-nnd-rangle)
@@ -515,6 +517,34 @@ function find([fa,fb], [x,y], gamma) {
 find([2,1], [2,4], 30)
 // x => 0.660254 * x +  2.679492
 ```
+
+## By slope $a$ and point $P$
+
+$$
+a = a
+$$
+
+$$
+b = P_y - (P_x \cdot a)
+$$
+
+$$
+f(x) = ax + b
+$$
+
+## By y-intercept $b$ and point $P$
+
+$$
+b = b
+$$
+
+$$
+a = \frac{y-b}{x}
+$$
+
+$$
+f(x) = ax + b
+$$
 
 ## By length $\ell$ in X-range of size $d$ $\implies \left[x_n;x_{n+d}\right]$
 
