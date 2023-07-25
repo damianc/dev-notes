@@ -2,18 +2,18 @@
 
 > $f(x) = ax + b$
 
-## Rotate (by $\gamma$ at $x$)
+## Rotate (by $\gamma$ at $(x,y)$)
 
 $$
 \alpha = \arctan(a)
 $$
 
 $$
-a' = \tan(\alpha + \gamma)
+a' = \tan(\alpha \pm \gamma)
 $$
 
 $$
-b' = f(x) - (x \cdot a')
+b' = y - (x \cdot a')
 $$
 
 ## Translate (by $\perp$ distance $d$)
@@ -23,13 +23,13 @@ a' = a
 $$
 
 $$
-b' = -d \cdot \sqrt{1 + a^2} + b
+b' = \pm d \cdot \sqrt{1 + a^2} + b
 $$
 
 ## Translate (by $\vec{x}$ distance $d$)
 
 $$
-z = \frac{-b}{a} + d
+z = \frac{-b}{a} \pm d
 $$
 
 $$
@@ -47,5 +47,5 @@ a' = a
 $$
 
 $$
-b' = b - d
+b' = b \pm d
 $$
