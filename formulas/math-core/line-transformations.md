@@ -2,7 +2,7 @@
 
 > $f(x) = ax + b$
 
-## Rotate (by $\gamma$ at $(x,y)$ )
+## Rotate (by $\gamma$ at $(x,y)$\)
 
 $$
 \alpha = \arctan(a)
