@@ -3,18 +3,18 @@
 ## 2 Words
 
 $$
-\color{#a2e} \lfloor H \rceil
-\color{#000} = a^2 + b^2
+\textcolor{#a2e}{\lfloor H \rceil}
+= a^2 + b^2
 $$
 
 $$
-\color{#000} a\ 
-\color{#2ae} \lfloor op \rceil
-\color{#000} \ b
-\color{#000} \mapsto
-\color{#a2e} \lfloor H \rceil
-\color{#2ae} \lfloor op \rceil
-\color{#000} 2ab
+a\ 
+\textcolor{#2ae}{\lfloor op \rceil}
+\ b
+\mapsto
+\textcolor{#a2e}{\lfloor H \rceil}
+\textcolor{#2ae}{\lfloor op \rceil}
+2ab
 $$
 
 | $(...)^2$ | | H ... |
@@ -27,23 +27,22 @@ $$
 ## 3 Words
 
 $$
-\color{#a2e} \lfloor H \rceil
-\color{#000} = a^2 + b^2 + c^2
+\textcolor{#a2e}{\lfloor H \rceil}
+= a^2 + b^2 + c^2
 $$
 
 $$
-\color{#000} a\ 
-\color{#2ae} \lfloor op\ 1 \rceil
-\color{#000} \ b\ 
-\color{#fa0} \lfloor op\ 2 \rceil
-\color{#000} \ c
-\color{#000} \mapsto
-\color{#a2e} \lfloor H \rceil
-\color{#2ae} \lfloor op\ 1 \rceil
-\color{#000} \ 2ab\ 
-\color{#fa0} \lfloor op\ 2 \rceil
-\color{#000} \ 2ac\ 
-\color{#000}
+a\ 
+\textcolor{#2ae}{\lfloor op\ 1 \rceil}
+\ b\ 
+\textcolor{#fa0}{\lfloor op\ 2 \rceil}
+\ c
+\mapsto
+\textcolor{#a2e}{\lfloor H \rceil}
+\textcolor{#2ae}{\lfloor op\ 1 \rceil}
+\ 2ab\ 
+\textcolor{#fa0}{\lfloor op\ 2 \rceil}
+\ 2ac\ 
 \left[
 \begin{cases}
 op\ 1 = op\ 2 \implies \color{#ae2} \lfloor + \rceil
@@ -51,7 +50,7 @@ op\ 1 = op\ 2 \implies \color{#ae2} \lfloor + \rceil
 op\ 1 \neq op\ 2 \implies \color{#f00} \lfloor - \rceil
 \end{cases}
 \right]
-\color{#000} \ 2bc
+\ 2bc
 $$
 
 | $(...)^2$ | | H ... |
