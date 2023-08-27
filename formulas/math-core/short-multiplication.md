@@ -67,33 +67,33 @@ $$
 ## 4 Words
 
 $$
-\color{#a2e} \lfloor H \rceil
-\color{#000} = a^2 + b^2 + c^2 + d^2
+\textcolor{#a2e}{\lfloor H \rceil}
+= a^2 + b^2 + c^2 + d^2
 $$
 
-### $3 \times \color{#ae2} \lfloor + \rceil \ \color{#000} \cup\ 3 \times \color{#f00} \lfloor - \rceil$
+### $3 \times \textcolor{#ae2}{\lfloor + \rceil} \ \cup\ 3 \times \textcolor{#f00}{\lfloor - \rceil}$
 
 $a\ 
-\color{#2ae} \lfloor op \rceil
-\ \color{#000}b\ 
-\color{#2ae} \lfloor op \rceil
-\ \color{#000}c\ 
-\color{#2ae} \lfloor op \rceil
-\ \color{#000}d\ 
-\color{#000} \mapsto
-\color{#a2e} \lfloor H \rceil
-\color{#2ae} \lfloor op \rceil
-\ \color{#000}2ab\ 
-\color{#2ae} \lfloor op \rceil
-\ \color{#000}2ac\ 
-\color{#2ae} \lfloor op \rceil
-\ \color{#000}2ad\ 
-\color{#ae2} \lfloor + \rceil
-\ \color{#000}2bc\ 
-\color{#ae2} \lfloor + \rceil
-\ \color{#000}2bd\ 
-\color{#ae2} \lfloor + \rceil
-\ \color{#000}2cd\ $
+\textcolor{#2ae}{\lfloor op \rceil}
+\ b\ 
+\textcolor{#2ae}{\lfloor op \rceil}
+\ c\ 
+\textcolor{#2ae}{\lfloor op \rceil}
+\ d\ 
+\mapsto
+\textcolor{#a2e}{\lfloor H \rceil}
+\textcolor{#2ae}{\lfloor op \rceil}
+\ 2ab\ 
+\textcolor{#2ae}{\lfloor op \rceil}
+\ 2ac\ 
+\textcolor{#2ae}{\lfloor op \rceil}
+\ 2ad\ 
+\textcolor{#ae2}{\lfloor + \rceil}
+\ 2bc\ 
+\textcolor{#ae2}{\lfloor + \rceil}
+\ 2bd\ 
+\textcolor{#ae2}{\lfloor + \rceil}
+\ 2cd\ $
 
 | $(...)^2$ || H ... |
 |-|-|-|
@@ -102,29 +102,29 @@ $a\
 | $\color{#f00} \lfloor - \rceil \color{#f00} \lfloor - \rceil \color{#f00} \lfloor - \rceil$ | $\mapsto$ | $\color{#a2e} \lfloor H \rceil \color{#f00} \lfloor - \rceil \color{#f00} \lfloor - \rceil \color{#f00} \lfloor - \rceil \color{#ae2} \lfloor + \rceil \color{#ae2} \lfloor + \rceil \color{#ae2} \lfloor + \rceil$ |
 | $(a-b-c-d)^2$ | $\mapsto$ | $H - 2ab - 2ac - 2ad + 2bc + 2bd + 2cd$ |
 
-### $1 \times \color{#ae2} \lfloor + \rceil \ \color{#000} \cap\ 2 \times \color{#f00} \lfloor - \rceil$
+### $1 \times \textcolor{#ae2}{\lfloor + \rceil} \ \cap\ 2 \times \textcolor{#f00}{\lfloor - \rceil}$
 
 $a\ 
-\color{#2ae} \lfloor op\ 1 \rceil
-\color{#000}\ b\ 
-\color{#fa0} \lfloor op\ 2 \rceil
-\color{#000}\ c\ 
-\color{#a2e} \lfloor op\ 3 \rceil
-\color{#000}\ d\ 
-\color{#000} \mapsto
-\color{#a2e} \lfloor H \rceil
-\color{#2ae} \lfloor op\ 1 \rceil
-\color{#000}\ 2ab\ 
-\color{#fa0} \lfloor op\ 2 \rceil
-\color{#000}\ 2ac\ 
-\color{#a2e} \lfloor op\ 3 \rceil
-\color{#000}\ 2ad\ 
-\color{#a2e} \lfloor op\ 3 \rceil
-\color{#000}\ 2bc\ 
-\color{#fa0} \lfloor op\ 2 \rceil
-\color{#000}\ 2bd\ 
-\color{#2ae} \lfloor op\ 1 \rceil
-\color{#000}\ 2cd$
+\textcolor{#2ae}{\lfloor op\ 1 \rceil}
+\ b\ 
+\textcolor{#fa0}{\lfloor op\ 2 \rceil}
+\ c\ 
+\textcolor{#a2e}{\lfloor op\ 3 \rceil}
+\ d\ 
+\mapsto
+\textcolor{#a2e}{\lfloor H \rceil}
+\textcolor{#2ae}{\lfloor op\ 1 \rceil}
+\ 2ab\ 
+\textcolor{#fa0}{\lfloor op\ 2 \rceil}
+\ 2ac\ 
+\textcolor{#a2e}{\lfloor op\ 3 \rceil}
+\ 2ad\ 
+\textcolor{#a2e}{\lfloor op\ 3 \rceil}
+\ 2bc\ 
+\textcolor{#fa0}{\lfloor op\ 2 \rceil}
+\ 2bd\ 
+\textcolor{#2ae}{\lfloor op\ 1 \rceil}
+\ 2cd$
 
 | $(...)^2$ | | H ... |
 |--|--|--|
@@ -135,29 +135,29 @@ $a\
 | $\color{#f00} \lfloor - \rceil \color{#f00} \lfloor - \rceil \color{#ae2} \lfloor + \rceil$ | $\mapsto$ | $\color{#a2e} \lfloor H \rceil \color{#f00} \lfloor - \rceil \color{#f00} \lfloor - \rceil \color{#ae2} \lfloor + \rceil\color{#ae2} \lfloor + \rceil \color{#f00} \lfloor - \rceil \color{#f00} \lfloor - \rceil$ |
 | $(a-b-c+d)^2$ | $\mapsto$ | $H-2ab-2ac+2ad+2bc-2bd-2cd$ |
 
-### $2 \times \color{#ae2} \lfloor + \rceil \ \color{#000} \cap\ 1 \times \color{#f00} \lfloor - \rceil$
+### $2 \times \textcolor{#ae2}{\lfloor + \rceil} \ \cap\ 1 \times \textcolor{#f00}{\lfloor - \rceil}$
 
 $a\ 
-\color{#2ae} \lfloor op\ 1 \rceil
-\color{#000} \ b\ 
-\color{#fa0} \lfloor op\ 2 \rceil
-\color{#000} \ c\ 
-\color{#a2e} \lfloor op\ 3 \rceil
-\color{#000} \ d\ 
-\color{#000} \mapsto
-\color{#a2e} \lfloor H \rceil 
-\color{#2ae} \lfloor op\ 1 \rceil
-\ \color{#000}2ab\ 
-\color{#fa0} \lfloor op\ 2 \rceil
-\ \color{#000}2ac\ 
-\color{#a2e} \lfloor op\ 3 \rceil
-\ \color{#000}2ad\ 
-\color{#d4f} \lfloor -op\ 3 \rceil
-\ \color{#000}2bc\ 
-\color{#fc2} \lfloor -op\ 2 \rceil
-\ \color{#000}2bd\ 
-\color{#4cf} \lfloor -op\ 1 \rceil
-\ \color{#000}2cd$
+\textcolor{#2ae}{\lfloor op\ 1 \rceil}
+\ b\ 
+\textcolor{#fa0}{\lfloor op\ 2 \rceil}
+\ c\ 
+\textcolor{#a2e}{\lfloor op\ 3 \rceil}
+\ d\ 
+\mapsto
+\textcolor{#a2e}{\lfloor H \rceil}
+\textcolor{#2ae}{\lfloor op\ 1 \rceil}
+\ 2ab\ 
+\textcolor{#fa0}{\lfloor op\ 2 \rceil}
+\ 2ac\ 
+\textcolor{#a2e}{\lfloor op\ 3 \rceil}
+\ 2ad\ 
+\textcolor{#d4f}{\lfloor -op\ 3 \rceil}
+\ 2bc\ 
+\textcolor{#fc2}{\lfloor -op\ 2 \rceil}
+\ 2bd\ 
+\textcolor{#4cf}{\lfloor -op\ 1 \rceil}
+\ 2cd$
 
 | $(...)^2$ | | H... |
 |--|--|--|
