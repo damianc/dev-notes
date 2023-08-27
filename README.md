@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **356** Dev_Notes
+Currently: &nbsp; **357** Dev_Notes
 
 ---
 
@@ -309,6 +309,7 @@ Currently: &nbsp; **356** Dev_Notes
 * [Line and Circle Intersection](formulas/math-core/line-circle-intersection.md)
 * [Circles Intersection](formulas/math-core/circles-intersection.md)
 * [Centroid of Triangle Rendered with Lines _f(x)_, _g(x)_ and _h(x)_](formulas/math-core/triangle-centroid.md)
+* [Short Multiplication](formulas/math-core/short-multiplication.md)
 
 # Git
 
