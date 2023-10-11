@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **357** Dev_Notes
+Currently: &nbsp; **358** Dev_Notes
 
 ---
 
@@ -276,6 +276,7 @@ Currently: &nbsp; **357** Dev_Notes
 
 # Formulas
 
+* [Lacking Stuff of `Math`](formulas/math-lacking-stuff.md)
 * [Distance Between 2 Coords](formulas/distance-between-two-coords.md)
 * [Angular Diameter/Size](formulas/angular-size.md)
 * [Distribute Items Equally on a Circle](ui/distribute-items-equally-on-circle.md)
