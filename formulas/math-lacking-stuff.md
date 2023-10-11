@@ -23,3 +23,18 @@ function log(x, n) {
   return Math.log(x) / Math.log(n);
 }
 ```
+
+## Clamp value in a range
+
+$$
+x \mapsto \min(\max(m^{-},x),m^{+})
+$$
+
+```
+function clamp(x, min, max) {
+  return Math.min(
+    Math.max(min,x),
+    max
+  );
+}
+```
