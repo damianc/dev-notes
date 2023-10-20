@@ -2,6 +2,8 @@
 
 | Algorithm | Formula |
 |--|--|
+| Sum Alignment to S | $$x' = x \cdot \frac{S}{\Sigma x}$$ |
+| Product Alignment to P | $$x' = x \cdot \sqrt[n]{\frac{P}{\Pi x}}$$ |
 | min-max | $$x' = \frac{x-min}{max-min}$$ |
 | z-score | $$x' = \frac{x-mean}{std}$$ |
 | decimal scaling | $$x' = \frac{x}{s} \iff s = 10^p \ \cap\ p = \lfloor \log_{10} max \rfloor + 1$$ |
