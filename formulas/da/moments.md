@@ -5,7 +5,7 @@
 | central (r-th) | $$\mu_r = \frac{\displaystyle\sum_{i=1}^{n} (x_i - \overline{x})^r}{n} $$ |
 | raw (r-th) | $$m_r = \frac{\displaystyle\sum_{i=1}^{n} x_i^r}{n}$$ |
 
-## Relations Between Cental and Raw Moments
+## Relations Between Central and Raw Moments
 
 - $\mu_2 = m_2 - m_1^2$
 - $\mu_3 = m_3 - 3m_1m_2 + 2m_1^3$
