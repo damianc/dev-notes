@@ -1,0 +1,4 @@
+# Means
+
+| Type | Formula |
+|--|--|
