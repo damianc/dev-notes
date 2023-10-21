@@ -11,15 +11,7 @@ function rsSort(arr, asc=true, ri = 1) {
 	
 	arr = [...arr];
 	const es = arr.slice(ri-1);
-	const [,minIdx] = es.reduce((
-		acc,curr,idx
-	) => {
-		if (asc ^ !(curr > acc[0])) {
-			return [curr,idx];
-		}
-		
-		return acc;
-	}, [es[0],0]);
+	const [,minIdx] = peakIndex(es,asc);
 	
 	const si = minIdx + ri - 1;
 	const [min] = arr.splice(si, 1);
@@ -34,7 +26,17 @@ function recSort(
 	if (arr.length === 0) return sorted;
 	
 	arr = [...arr];
-	const [,minIdx] = arr.reduce((
+	const [,minIdx] = peakIndex(arr,asc);
+	
+	const [min] = arr.splice(minIdx, 1);
+	
+	return recSort(
+		arr, asc, [min, ...sorted]
+	);
+}
+
+function peakIndex(arr, asc=true) {
+	return arr.reduce((
 		acc,curr,idx
 	) => {
 		if (asc ^ !(curr > acc[0])) {
@@ -43,10 +45,4 @@ function recSort(
 		
 		return acc;
 	}, [arr[0],0]);
-	
-	const [min] = arr.splice(minIdx, 1);
-	
-	return recSort(
-		arr, asc, [min, ...sorted]
-	);
 }
