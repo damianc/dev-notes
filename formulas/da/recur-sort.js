@@ -8,11 +8,10 @@ console.log(
 
 function rsSort(arr, asc=true, ri = 1) {
 	if (ri > arr.length) return arr;
-	
 	arr = [...arr];
+	
 	const es = arr.slice(ri-1);
 	const [,minIdx] = peakIndex(es,asc);
-	
 	const si = minIdx + ri - 1;
 	const [min] = arr.splice(si, 1);
 	arr.unshift(min);
@@ -24,10 +23,9 @@ function recSort(
 	arr, asc=true, sorted = []
 ) {
 	if (arr.length === 0) return sorted;
-	
 	arr = [...arr];
-	const [,minIdx] = peakIndex(arr,asc);
 	
+	const [,minIdx] = peakIndex(arr,asc);
 	const [min] = arr.splice(minIdx, 1);
 	
 	return recSort(
