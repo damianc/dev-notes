@@ -54,3 +54,5 @@
 | $\ell$ | `\ell` |
 | $\eth$ | `\eth` |
 | $\daleth$ | `\daleth` |
+| $\beth$ | `\beth` |
+| $\gimel$ | `\gimel` |
