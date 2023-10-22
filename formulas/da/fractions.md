@@ -1,5 +1,13 @@
 # Fractions
 
+## Complex Division
+
+- $a/b/c/d = \frac{a}{bcd}$
+- $\frac{\frac{a}{b}}{c} = \frac{a}{bc}$
+- $\frac{a}{\frac{b}{c}} = \frac{ac}{b} = \frac{a}{b} \cdot c = \frac{c}{b} \cdot a$
+
+## Operations
+
 | Operation | Formula | Example | Notes |
 |--|--|--|--|
 | exluding the integer | $$\frac{a}{b} = \frac{Ab+r}{b} = A\frac{r}{b}$$ | $$\frac{11}{4} = \frac{8+3}{4} = \frac{8}{4}+\frac{3}{4} = 2\frac{3}{4}$$ | $$a \geq b; b \neq 0; A,r \in \mathbb{C}$$ |
