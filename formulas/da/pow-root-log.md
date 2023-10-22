@@ -15,3 +15,19 @@
 ||
 |--|
 | $$\sqrt[n]{a}^m = \sqrt[n]{a^m}$$ |
+
+----
+
+- $$\log_a xy = \log_a x + \log_a y$$
+- $$\log_a \frac{x}{y} = \log_a x - \log_a y$$
+- $$\log_a x^r = r \cdot \log_a x$$
+- $$\log_a b = \frac{1}{\log_b a}$$
+- $$log_b x = log_b a \cdot \log_a x$$
+
+----
+
+- $$a^{\log_a b} = b$$
+
+----
+
+- $$\log_a b = \frac{\ln b}{\ln a}$$
