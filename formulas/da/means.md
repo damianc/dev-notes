@@ -18,6 +18,13 @@
 - $\overline{x}_R(x,p) = \overline{x}_P\left(x,\frac{1}{p}\right)$
 - $\overline{x}_{Ln}(x,e) = \overline{x}_L(x)$
 
+## Contra- Means
+
+| Type | Formula |
+|--|--|
+| contraharmonic mean | $$CM_p = \frac{\Sigma x^{p+1}}{\Sigma x^p}$$ |
+| contraharmonic geometric mean | $$CGM_p = \frac{\sqrt[n]{\Pi x^{p+1}}{\sqrt[n]{\Pi x^p}$$ |
+
 ## Non-standard
 
 | Type | Formula |
