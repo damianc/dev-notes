@@ -4,7 +4,7 @@
 |--|--|
 | permutation | $P_n = n!$ |
 | combination | $C {k \atop n} = \binom{n}{k}$ |
-| variation without repetition | $V {k \atop n} = \frac{n!}{(n-k)!}$ |
+| variation without repetition | $V {k \atop n} = \frac{n!}{(n-k)!} = \displaystyle\prod_{i=0}^{k-1} n-i$ |
 | variation with repetition | $W {k \atop n} = n^k$ |
 
 ## Binomial coefficient
