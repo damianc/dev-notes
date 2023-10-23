@@ -24,7 +24,13 @@
 | $$\sqrt[n]{a} \cdot \sqrt[n]{b} = \sqrt[n]{ab}$$ | $$\frac{\sqrt[n]{a}}{\sqrt[n]{b}} = \sqrt[n]{\frac{a}{b}}$$ |
 | $$\sqrt[m]{a} \cdot \sqrt[n]{a} = \sqrt[mn]{a^{m+n}}$$ | $$\frac{\sqrt[m]{a}}{\sqrt[n]{a}} = \sqrt[mn]{a^{n-m}}$$ |
 
-----
+## Logarithms
+
+|||
+|--|--|
+| $$\log_a a^n = n$$ | $$\log_a \frac{1}{a^n} = -n$$ |
+| $$\log_a \sqrt[n]{a} = \frac{1}{n}$$ | $$\log_a \frac{1}{\sqrt[n]{a}} = -\frac{1}{n}$$ |
+| $$\log_a \sqrt[n]{a^m} = \frac{m}{n}$$ | $$\log_a \frac{1}{\sqrt[n]{a^m}} = -\frac{m}{n}$$ |
 
 - $$\log_a xy = \log_a x + \log_a y$$
 - $$\log_a \frac{x}{y} = \log_a x - \log_a y$$
