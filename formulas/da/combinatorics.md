@@ -1,11 +1,11 @@
 # Combinatorial Analysis
 
-| Set | Formula |
+| Subset | Formula |
 |--|--|
-| permutation | $$P_n = n!$$ |
-| combination | $$C_n^k = \binom{n}{k}$$ |
-| variation without repetition | $$V_n^k = \frac{n!}{(n-k)!}$$ |
-| variation with repetition | $$W_n^k = n^k$$ |
+| permutation | $P_n = n!$ |
+| combination | $C {k \atop n} = \binom{n}{k}$ |
+| variation without repetition | $V {k \atop n} = \frac{n!}{(n-k)!}$ |
+| variation with repetition | $W {k \atop n} = n^k$ |
 
 ## Binomial coefficient
 
