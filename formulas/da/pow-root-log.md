@@ -10,6 +10,7 @@
 |||
 |--|--|
 | $$(a^m)^n = a^{mn}$$ | $$a^{-n} = \left(\frac{1}{a}\right)^n = \frac{1}{a^n}$$ |
+| $$a^{\frac{1}{n}} = \sqrt[n]{a}$$ | $$a^{-\frac{1}{n}} = \frac{1}{\sqrt[n]{a}}$$ |
 | $$a^{\frac{m}{n}} = \sqrt[n]{a^m}$$ | $$a^{-\frac{m}{n}} = \frac{1}{\sqrt[n]{a^m}}$$ |
 
 ||
