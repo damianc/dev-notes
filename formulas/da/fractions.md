@@ -15,3 +15,5 @@
 | simplifying | $$\frac{ac}{bc} = \frac{a}{b}$$ | $$\frac{12}{16} = \frac{3 \cdot 4}{4 \cdot 4} = \frac{3}{4}$$ | $$b,c \neq 0$$ |
 | expanding | $$\frac{a}{b} = \frac{ac}{bc}$$ | $$\frac{1}{5} = \frac{1 \cdot 2}{5 \cdot 2} = \frac{2}{10}$$ | $$b,c \neq 0$$ |
 | addition and subtraction | $$\frac{a}{b} \pm \frac{c}{d} = \frac{ad \pm bc}{bd}$$ | $$\frac{2}{3} + \frac{4}{5} = \frac{10+12}{15} = \frac{22}{15}$$ | $$b,d \neq 0$$ |
+|| $$\frac{a}{kb} \pm \frac{c}{b} = \frac{a \pm kc}{kb}$$ | $$\frac{7}{10} - \frac{2}{5} = \frac{7}{10} - \frac{4}{10} = \frac{3}{10}$$ | $$k,b \neq 0; k \in \mathbb{C}$$ |
+|| $$\frac{a}{b} \pm \frac{c}{kb} = \frac{ka \pm c}{kb}$$ | $$\frac{1}{2} + \frac{5}{6} = \frac{3}{6} + \frac{5}{6} = \frac{8}{6} = \frac{4}{3}$$ | $$k,b \neq 0; k \in \mathbb{C}$$ |
