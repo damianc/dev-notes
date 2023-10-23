@@ -5,7 +5,7 @@
 | permutation | $P_n = n!$ |
 | combination | $C {k \atop n} = \binom{n}{k}$ |
 | variation without repetition | $V {k \atop n} = \frac{n!}{(n-k)!} = \displaystyle\prod_{i=0}^{k-1} n-i$ |
-| variation with repetition | $W {k \atop n} = n^k$ |
+| variation with repetition | $W {k \atop n} = n^k = \displaystyle\prod_{i=1}^{k} n$ |
 
 ## Binomial coefficient
 
@@ -28,11 +28,11 @@ $$
 ## What to pick
 
 - All elements required?
-  - **YES**: permutation
+  - **YES**: _permutation_
   - **NO**:
     - Elements order matters?
       - **YES**:
         - Repetition allowed?
-          - **YES**: variation with repetition
-          - **NO**: variation without repetition
-      - **NO**: combination
+          - **YES**: _variation with repetition_
+          - **NO**: _variation without repetition_
+      - **NO**: _combination_
