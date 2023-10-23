@@ -24,3 +24,15 @@ $$
 
 - $\binom{n}{0} = \binom{n}{n} = 1$
 - $\binom{n}{1} = \binom{n}{n-1} = n$
+
+## What to pick
+
+- All elements required?
+  - **YES**: permutation
+  - **NO**:
+    - Elements order matters?
+      - **YES**:
+        - Repetition allowed?
+          - **YES**: variation with repetition
+          - **NO**: variation without repetition
+      - **NO**: combination
