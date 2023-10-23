@@ -7,7 +7,7 @@
 | harmonic | $$\overline{x}_H = \frac{n}{\Sigma \frac{1}{x}}$$ | $$\overline{x}_{WH} = \frac{\Sigma w}{\Sigma \frac{w}{x}}$$ |
 | quadratic (_root mean square_) | $$\overline{x}_Q = \sqrt{\frac{\Sigma x^2}{n}} = \sqrt{\frac{1}{n} \Sigma x^2}$$ | $$\overline{x}_{WQ} = \sqrt{\frac{\Sigma x^2 \cdot w}{\Sigma w}}$$ |
 | power (of $p$) | $$\overline{x}_P = \sqrt[p]{\frac{\Sigma x^p}{n}} = \sqrt[p]{\frac{1}{n} \Sigma x^p}$$ | $$\overline{x}_{WP} = \sqrt[p]{\frac{\Sigma x^p \cdot w}{\Sigma w}}$$ |
-| root (with degree $d$) | $$\overline{x}_R = \left( \Sigma \frac{\sqrt[d]{x}}{n} \right)^d$$ | $$\overline{x}_{WR} = \left(\frac{\Sigma \sqrt[d]{x} \cdot w}{\Sigma w}\right)^d$$ |
+| root (with degree $d$) | $$\overline{x}_R = \left( \Sigma \frac{\sqrt[d]{x}}{n} \right)^d = \left(\frac{\Sigma \sqrt[d]{x}}{n}\right)^d$$ | $$\overline{x}_{WR} = \left(\Sigma \frac{\sqrt[d]{x} \cdot w}{\Sigma w}\right)^d = \left(\frac{\Sigma \sqrt[d]{x} \cdot w}{\Sigma w}\right)^d$$ |
 | logarithmic | $$\overline{x}_L = e^{\ell} \iff \ell = \frac{\Sigma \ln x}{n}$$ | $$\overline{x}_{WL} = e^{\ell} \iff \ell = \frac{\Sigma \ln(x) \cdot w}{\Sigma w}$$ |
 | logarithmic (with base $b$) | $$\overline{x}_{Ln} = e^{\ell} \iff \ell = \frac{\Sigma \log_b x}{n}$$ | $$\overline{x}_{WLn} = e^{\ell} \iff \ell = \frac{\Sigma \log_b(x) \cdot w}{\Sigma w}$$ |
 
