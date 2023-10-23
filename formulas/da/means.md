@@ -15,6 +15,7 @@
 
 - $\overline{x}_P(x,p) = \overline{x}_R\left(x,\frac{1}{p}\right)$
 - $\overline{x}_R(x,p) = \overline{x}_P\left(x,\frac{1}{p}\right)$
+- $\overline{x}_{Ln}(x,e) = \overline{x}_L(x)$
 
 ## Non-standard
 
