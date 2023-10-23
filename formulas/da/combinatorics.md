@@ -7,6 +7,9 @@
 | variation without repetition | $V {k \atop n} = \frac{n!}{(n-k)!} = \displaystyle\prod_{i=0}^{k-1} n-i$ |
 | variation with repetition | $W {k \atop n} = n^k = \displaystyle\prod_{i=1}^{k} n$ |
 
+> `n` - size of entire set  
+> `k` - size of a subset
+
 ## Binomial coefficient
 
 > read as _n choose k_
