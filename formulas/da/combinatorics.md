@@ -15,6 +15,11 @@ $$
 \binom{n}{k} = \frac{n!}{k! \cdot (n-k)!}
 $$
 
+$$
+k,n \in \mathbb{N} \ \cup\ \\{0\\};
+k \leq n
+$$
+
 ### Properties
 
 - $\binom{n}{0} = \binom{n}{n} = 1$
