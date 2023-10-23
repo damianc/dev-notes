@@ -11,6 +11,11 @@
 | logarithmic | $$\overline{x}_L = e^{\ell} \iff \ell = \frac{\Sigma \ln x}{n}$$ |
 | logarithmic (with base $b$) | $$\overline{x}_{Ln} = e^{\ell} \iff \ell = \frac{\Sigma \log_b x}{n}$$ |
 
+### Relations
+
+- $\overline{x}_P(x,p) = \overline{x}_R\left(x,\frac{1}{p}\right)$
+- $\overline{x}_R(x,p) = \overline{x}_P\left(x,\frac{1}{p}\right)$
+
 ## Non-standard
 
 | Type | Formula |
