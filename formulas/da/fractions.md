@@ -18,5 +18,7 @@
 || $$\frac{a}{kb} \pm \frac{c}{b} = \frac{a \pm kc}{kb}$$ | $$\frac{7}{10} - \frac{2}{5} = \frac{7}{10} - \frac{4}{10} = \frac{3}{10}$$ | $$k,b \neq 0; k \in \mathbb{C}$$ |
 || $$\frac{a}{b} \pm \frac{c}{kb} = \frac{ka \pm c}{kb}$$ | $$\frac{1}{2} + \frac{5}{6} = \frac{3}{6} + \frac{5}{6} = \frac{8}{6} = \frac{4}{3}$$ | $$k,b \neq 0; k \in \mathbb{C}$$ |
 || $$\frac{a}{b} \pm \frac{c}{d} = \frac{a\frac{m}{b} \pm b\frac{m}{d}}{m} \iff m = LCM(b,d)$$ | $$\frac{7}{10} + \frac{4}{15} = \frac{7 \cdot 3 + 4 \cdot 2}{30} = \frac{29}{30}$$ | $$b,d \neq 0$$ |
+| multiplication | $$\frac{a}{b} \cdot \frac{c}{d} = \frac{ac}{bd}$$ | $$\frac{2}{3} \cdot \frac{4}{5} = \frac{8}{15}$$ | $$b,d \neq 0$$ |
+| division | $$\frac{a}{b} : \frac{c}{d} = \frac{ad}{bc}$$ | $$\frac{2}{3} : \frac{4}{5} = \frac{2}{3} \cdot \frac{5}{4} = \frac{10}{12} = \frac{5}{6}$$ | $$b,c,d \neq 0$$ |
 
 > **LCM** - Least Common Multiple
