@@ -32,16 +32,14 @@
 | $$\log_a \sqrt[n]{a} = \frac{1}{n}$$ | $$\log_a \frac{1}{\sqrt[n]{a}} = -\frac{1}{n}$$ |
 | $$\log_a \sqrt[n]{a^m} = \frac{m}{n}$$ | $$\log_a \frac{1}{\sqrt[n]{a^m}} = -\frac{m}{n}$$ |
 
-- $$\log_a xy = \log_a x + \log_a y$$
-- $$\log_a \frac{x}{y} = \log_a x - \log_a y$$
-- $$\log_a x^r = r \cdot \log_a x$$
-- $$\log_a b = \frac{1}{\log_b a}$$
-- $$log_b x = log_b a \cdot \log_a x$$
+|||
+|--|--|
+| $$\log_a(xy) = \log_a x + \log_a y$$ | $$\log_a \frac{x}{y} = \log_a x - \log_a y$$ |
 
-----
-
-- $$a^{\log_a b} = b$$
-
-----
-
-- $$\log_a b = \frac{\ln b}{\ln a}$$
+||
+|--|
+| $$\log_a(x^r) = r \cdot \log_a x$$ |
+| $$\log_a b = \frac{1}{\log_b a}$$ |
+| $$log_b x = \log_b a \cdot \log_a x$$ |
+| $$a^{\log_a b} = b$$ |
+| $$\log_a b = \frac{\ln b}{\ln a}$$ |
