@@ -39,3 +39,5 @@ $$
           - **YES**: _variation with repetition_
           - **NO**: _variation without repetition_
       - **NO**: _combination_
+
+> `(a,b)` and `(b,a)` in a combination are considered equal, in a variation - not.
