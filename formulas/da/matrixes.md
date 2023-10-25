@@ -102,3 +102,41 @@ $$
 |--|
 | $$[a_{ij}]\_{mn} \cdot [b_{ij}]\_{np} = [c_{ij}]\_{mp}$$ |
 | $$c_{ij} = \sum_{k=1}^{n} a_{ik}b_{kj}$$ |
+
+$$
+\begin{bmatrix}
+1 && -2 && 0
+\\
+3 && 4 && -1
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+-1 && 0
+\\
+0 && 3
+\\
+2 && -4
+\end{bmatrix}
+\=
+$$
+
+$$
+\begin{bmatrix}
+1 \cdot (-1) - 2 \cdot 0 + 0 \cdot 2
+&&
+1 \cdot 0 - 2 \cdot 3 + 0 \cdot (-4)
+\\
+3 \cdot (-1) + 4 \cdot 0 - 1 \cdot 2
+&&
+3 \cdot 0 + 4 \cdot 3 - 1 \cdot (-4)
+\end{bmatrix}
+\=
+$$
+
+$$
+\begin{bmatrix}
+-1 && -6
+\\
+-5 && 16
+\end{bmatrix}
+$$
