@@ -24,6 +24,16 @@ $$
 
 > in other words, this is the n×n square matrix with ones on the main diagonal and zeros elsewhere
 
+$$
+\begin{bmatrix}
+1 && 0 && 0
+\\
+0 && 1 && 0
+\\
+0 && 0 && 1
+\end{bmatrix}
+$$
+
 ## Addition and subtraction
 
 ||
