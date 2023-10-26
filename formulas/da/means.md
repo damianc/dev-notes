@@ -26,8 +26,9 @@
 | contraharmonic geometric mean | $$CGM_p = \frac{\sqrt[n]{\Pi x^{p+1}}}{\sqrt[n]{\Pi x^p}}$$ |
 | contraharmonic harmonic mean | $$CHM_p = \frac{\Sigma x^p}{\Sigma \frac{1}{x^p}}$$ |
 
-## Non-standard
+## Non-standard/Experimental
 
 | Type | Formula |
 |--|--|
 | delta ($\Delta$) | $$\sqrt{\vert b^2 - 4a \vert} \iff a = \overline{x}_Q \ \cap\ b = \overline{x}_G$$ |
+| delta 3 ($\Delta^3$) | $$\sqrt[d]{b^2 - 4ac} \iff d=\frac{max-min}{2} \ \cap\ a = \overline{x}\_{P(3)} \ \cap\ b = \overline{x}\_{Q} \ \cap\ c = \overline{x}\_{H}$$ |
