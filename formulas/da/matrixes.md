@@ -210,8 +210,10 @@ a_{12}a_{21}a_{33}
 $$
 
 $$
-\det M = \sum_{i=1}^n \prod_{j=1}^n
-a_{[j][\alpha(i+j-1)]} +
+\det M = \left(
+\sum_{i=1}^n \prod_{j=1}^n
+a_{[j][\alpha(i+j-1)]}
+\right) +
 \sum_{i=1}^n - \left(
 \prod_{j=1}^n a_{[j][\alpha(
 2n-(i+j-1)
