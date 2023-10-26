@@ -45,3 +45,15 @@
 || $$\frac{\frac{\frac{a+b}{2+2q}+c}{2+q}+d}{2}$$ $$q \in (0;1)$$ |
 | DC (_divide and conquer_) | $$\frac{\frac{a+b}{2}+\frac{c+d}{2}}{2}$$ |
 | tree | $$\frac{\frac{\frac{a+b}{2}+\frac{b+c}{2}}{2}+\frac{\frac{b+c}{2}+\frac{c+d}{2}}{2}}{2}$$ |
+
+## Handling Zeros
+
+| Method ||
+|--|--|
+| Keep Zeros (KZ) | $[0,0] \mapsto [0,0]$ |
+| Remove Zeros (RZ) | $[0,0] \mapsto [\varnothing]$ |
+| Map Zeros (MZ) | $[0,0] \mapsto [0.10,0.10]$ |
+| Partial RZ (pRZ) | $[0,0] \mapsto [0]$ |
+| Partial MZ (pMZ) | $[0,0] \mapsto [0.10,0]$ |
+| RZ+MZ (RMZ) | $[0,0] \mapsto [0.10]$ |
+| Tri-Op Zeros (3OZ) | $[0,0,0] \mapsto [0.10,0]$ |
