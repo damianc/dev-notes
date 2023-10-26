@@ -45,6 +45,8 @@
 || $$\frac{\frac{\frac{a+b}{2+2q}+c}{2+q}+d}{2}$$ $$q \in (0;1)$$ |
 | DC (_divide and conquer_) | $$\frac{\frac{a+b}{2}+\frac{c+d}{2}}{2}$$ |
 | tree | $$\frac{\frac{\frac{a+b}{2}+\frac{b+c}{2}}{2}+\frac{\frac{b+c}{2}+\frac{c+d}{2}}{2}}{2}$$ |
+| min-max | $$\sqrt{\frac{\frac{min_1+max_1}{2} + \frac{min_2+max_2}{2}}{2} \cdot median}$$ |
+| reversed min-max | $$\frac{\sqrt{\sqrt{min_1 \cdot max_1} \cdot \sqrt{min_2 \cdot max_2}} + median}{2}$$ |
 
 ## Handling Zeros
 
