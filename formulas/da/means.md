@@ -41,5 +41,7 @@
 | accumulated | $$\frac{\frac{\frac{a+b}{2}+c}{2}+d}{2}$$ |
 || $$\frac{\frac{\frac{a+b}{2}+c}{3}+d}{4}$$ |
 || $$\frac{\frac{\frac{a+b}{2}+c}{2+q}+d}{2+2q}$$ $$q \in (0;1)$$ |
+| reversed accumulated| $$\frac{\frac{\frac{a+b}{4}+c}{3}+d}{2}$$ |
+|| $$\frac{\frac{\frac{a+b}{2+2q}+c}{2+q}+d}{2}$$ $$q \in (0;1)$$ |
 | DC (_divide and conquer_) | $$\frac{\frac{a+b}{2}+\frac{c+d}{2}}{2}$$ |
 | tree | $$\frac{\frac{\frac{a+b}{2}+\frac{b+c}{2}}{2}+\frac{\frac{b+c}{2}+\frac{c+d}{2}}{2}}{2}$$ |
