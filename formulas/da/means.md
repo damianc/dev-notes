@@ -58,3 +58,5 @@
 | RZ+MZ (RMZ) | $[0,0] \mapsto [0.10]$ |
 | Tri-Op Zeros (3OZ) | $[0,0,0] \mapsto [0.10,0]$ |
 | Proportional Op ($\varphi\text{OP}$) | like partial but with proportion other than 1:1 and like tri-op but with proportion other than 1:1:1 |
+| Increase All 1/1 | $[0,1,2] \mapsto [1,2,3]$ |
+| Increase All 1/2 | $[0,1,2] \mapsto [1,3,4]$ |
