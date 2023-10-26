@@ -146,3 +146,89 @@ $$
 -5 && 16
 \end{bmatrix}
 $$
+
+## Determinant
+
+* matrix $1 \times 1$:
+
+$$
+\det
+\begin{bmatrix}
+a
+\end{bmatrix} =
+a
+$$
+
+* matrix $2 \times 2$:
+
+$$
+\det
+\begin{bmatrix}
+a && b
+\\
+c && d
+\end{bmatrix} =
+ad-bc
+$$
+
+* matrix $3 \times 3$ (Sarrus's expansion):
+
+$$
+\det
+\begin{bmatrix}
+a && b && c
+\\
+d && e && f
+\\
+g && h && i
+\end{bmatrix} =
+aei+bfg+cdh-ceg-bdi-afh
+$$
+
+----
+
+**Sarrus's method/rule:**
+
+$$
+M = \begin{bmatrix}
+a_{11} && a_{12} && a_{13}
+\\
+a_{21} && a_{22} && a_{23}
+\\
+a_{31} && a_{32} && a_{33}
+\end{bmatrix}
+$$
+
+$$
+\det M =
+a_{11}a_{22}a_{33} +
+a_{12}a_{23}a_{31} +
+a_{13}a_{21}a_{32} -
+a_{13}a_{22}a_{31} -
+a_{11}a_{23}a_{32} -
+a_{12}a_{21}a_{33}
+$$
+
+$$
+\det M = \sum_{i=1}^n \prod_{j=1}^n
+a_{[j][\alpha(i+j-1)]} +
+\sum_{i=1}^n - \left(
+\prod_{j=1}^n a_{[j][\alpha(
+2n-(i+j-1)
+)]}
+\right)
+$$
+
+$$
+\iff
+$$
+
+$$
+\alpha(x) = \begin{cases}
+x = 3 \implies 3
+\\
+x \neq 3 \implies x \\% 3
+\end{cases}
+$$
+
+----
