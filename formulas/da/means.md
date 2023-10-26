@@ -32,3 +32,14 @@
 |--|--|
 | delta ($\Delta$) | $$\sqrt{\vert b^2 - 4a \vert} \iff a = \overline{x}_Q \ \cap\ b = \overline{x}_G$$ |
 | delta 3 ($\Delta^3$) | $$\sqrt[d]{b^2 - 4ac} \iff d=\frac{max-min}{2} \ \cap\ a = \overline{x}\_{P(3)} \ \cap\ b = \overline{x}\_{Q} \ \cap\ c = \overline{x}\_{H}$$ |
+
+## Calculation Models
+
+| Model | Formula |
+|--|--|
+| linear | $$\frac{a+b+c+d}{4}$$ |
+| accumulated | $$\frac{\frac{\frac{a+b}{2}+c}{2}+d}{2}$$ |
+|| $$\frac{\frac{\frac{a+b}{2}+c}{3}+d}{4}$$ |
+|| $$\frac{\frac{\frac{a+b}{2}+c}{2+q}+d}{2+2q}$$ $$q \in (0;1)$$ |
+| DC (_divide and conquer_) | $$\frac{\frac{a+b}{2}+\frac{c+d}{2}}{2}$$ |
+| tree | $$\frac{\frac{\frac{a+b}{2}+\frac{b+c}{2}}{2}+\frac{\frac{b+c}{2}+\frac{c+d}{2}}{2}}{2}$$ |
