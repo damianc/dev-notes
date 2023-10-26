@@ -190,7 +190,7 @@ $$
 **Sarrus's method/rule:**
 
 $$
-M = \begin{bmatrix}
+A = \begin{bmatrix}
 a_{11} && a_{12} && a_{13}
 \\
 a_{21} && a_{22} && a_{23}
@@ -200,7 +200,7 @@ a_{31} && a_{32} && a_{33}
 $$
 
 $$
-\det M =
+\det A =
 a_{11}a_{22}a_{33} +
 a_{12}a_{23}a_{31} +
 a_{13}a_{21}a_{32} -
@@ -210,7 +210,7 @@ a_{12}a_{21}a_{33}
 $$
 
 $$
-\det M = \left(
+\det A = \left(
 \sum_{i=1}^n \prod_{j=1}^n
 a_{[j][\alpha(i+j-1)]}
 \right) +
@@ -232,5 +232,37 @@ x = 3 \implies 3
 x \neq 3 \implies x \\% 3
 \end{cases}
 $$
+
+----
+
+* matrix $n \times n$ (Laplace's expansion):
+
+$$
+A = \begin{bmatrix}
+a && b && c && d
+\\
+e && f && g && h
+\\
+i && j && k && l
+\\
+m && n && o && p
+\end{bmatrix}
+$$
+
+$$
+\det A = a \cdot M_{11} - b \cdot M_{12} + c \cdot M_{13} - d \cdot M_{14}
+$$
+
+----
+
+**Laplace's expansion:**
+
+$$
+\det A = \sum_{i=1}^n (
+a_{1i} \cdot M_{1i}
+) \cdot (-1)^{i+1}
+$$
+
+> **M** stands for a *minor* of the matrix
 
 ----
