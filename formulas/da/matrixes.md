@@ -274,6 +274,8 @@ A = [a_{ij}]\_{nn} \mapsto
 A^T = [a_{ji}]\_{nn}
 $$
 
+----
+
 $$
 A = \begin{bmatrix}
 1 && 0 && 2
@@ -308,6 +310,8 @@ $$
 $$
 d_{ij} = (-1)^{i+j} \det A_{ij}
 $$
+
+----
 
 $$
 A = \begin{bmatrix}
@@ -364,4 +368,28 @@ $$
 
 $$
 \det A \neq 0
+$$
+
+----
+
+$$
+\det A = 3
+$$
+
+$$
+A^{-1} = \frac{1}{3}
+\begin{bmatrix}
+-17 && 8 && 2
+\\
+-1 && 1 && 1
+\\
+10 && -4 && -1
+\end{bmatrix} =
+\begin{bmatrix}
+\frac{-17}{3} && \frac{8}{3} && \frac{2}{3}
+\\
+\frac{-1}{3} && \frac{1}{3} && \frac{1}{3}
+\\
+\frac{10}{3} && \frac{-4}{3} && \frac{-1}{3}
+\end{bmatrix}
 $$
