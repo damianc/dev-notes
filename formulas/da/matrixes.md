@@ -350,3 +350,18 @@ A_d = \begin{bmatrix}
 2 && 1 && -1
 \end{bmatrix}
 $$
+
+## Inverse Matrix
+
+$$
+A = [a_{ij}]_{nn} \mapsto
+A^{-1} = \frac{1}{\det A} A_d^T
+$$
+
+$$
+\iff
+$$
+
+$$
+\det A \neq 0
+$$
