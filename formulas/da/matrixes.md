@@ -266,3 +266,30 @@ $$
 > **M** stands for a *minor* of the matrix
 
 ----
+
+## Transpose Matrix
+
+$$
+A = [a_{ij}]\_{nn} \mapsto
+A^T = [a_{ji}]\_{nn}
+$$
+
+$$
+A = \begin{bmatrix}
+1 && 0 && 2
+\\
+3 && -1 && 5
+\\
+-2 && 4 && 0
+\end{bmatrix}
+$$
+
+$$
+A^T = \begin{bmatrix}
+1 && 3 && -2
+\\
+0 && -1 && 4
+\\
+2 && 5 && 0
+\end{bmatrix}
+$$
