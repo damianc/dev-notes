@@ -293,3 +293,60 @@ A^T = \begin{bmatrix}
 2 && 5 && 0
 \end{bmatrix}
 $$
+
+## Cofactor Matrix
+
+$$
+A = [a_{ij}]\_{nn} \mapsto
+A_d = [d_{ij}]\_{nn}
+$$
+
+$$
+\iff
+$$
+
+$$
+d_{ij} = (-1)^{i+j} \det A_{ij}
+$$
+
+$$
+A = \begin{bmatrix}
+1 && 0 && 2
+\\
+3 && -1 && 5
+\\
+-2 && 4 && -3
+\end{bmatrix}
+$$
+
+$$
+d_{11} = (-1)^{1+1}
+\begin{bmatrix}
+-1 && 5
+\\
+4 && -3
+\end{bmatrix} = -17
+$$
+
+$$
+\vdots
+$$
+
+$$
+d_{33} = (-1)^{3+3}
+\begin{bmatrix}
+1 && 0
+\\
+3 && -1
+\end{bmatrix} = -1
+$$
+
+$$
+A_d = \begin{bmatrix}
+-17 && -1 && 10
+\\
+8 && 1 && -4
+\\
+2 && 1 && -1
+\end{bmatrix}
+$$
