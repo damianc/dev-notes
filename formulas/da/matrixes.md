@@ -267,6 +267,84 @@ $$
 
 ----
 
+### Determinant Properties
+
+#### When the determinant does not change
+
+• if we perform transposition
+
+$$
+\det
+\begin{bmatrix}
+1 && 2
+\\
+3 && 4
+\end{bmatrix} = \det
+\begin{bmatrix}
+1 && 3
+\\
+2 && 4
+\end{bmatrix} = -2
+$$
+
+• if we add values of another row/column multiplied by a constant to a specific row/column
+
+$$
+\det
+\begin{bmatrix}
+1 && 2
+\\
+3 && 4
+\end{bmatrix} = \det
+\begin{bmatrix}
+1 && 2
+\\
+5 && 8
+\end{bmatrix} = -2
+$$
+
+#### When the determinant is equal to 0
+
+• if matrix A contains a row or column consisting of only zeros
+
+$$
+\det
+\begin{bmatrix}
+0 && 0
+\\
+3 && 4
+\end{bmatrix} = 0
+$$
+
+• if matrix A has two proportional rows or columns
+
+$$
+\det
+\begin{bmatrix}
+1 && 2
+\\
+2 && 4
+\end{bmatrix} = 0
+$$
+
+#### When the determinant changes its sign to the opposite
+
+• if we swap 2 rows or columns
+
+$$
+\det
+\begin{bmatrix}
+1 && 3
+\\
+2 && 4
+\end{bmatrix} = -\det
+\begin{bmatrix}
+3 && 1
+\\
+4 && 2
+\end{bmatrix}
+$$
+
 ## Transpose Matrix
 
 $$
