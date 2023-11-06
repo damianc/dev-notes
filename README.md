@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **359** Dev_Notes
+Currently: &nbsp; **360** Dev_Notes
 
 ---
 
@@ -227,6 +227,7 @@ Currently: &nbsp; **359** Dev_Notes
 ## Structural
 
 * [Adapter](design-patterns/structural/adapter.md)
+* [Bridge](design-patterns/structural/bridge.md)
 * [Composite](design-patterns/structural/composite.md)
 * [Decorator](design-patterns/structural/decorator.md)
 * [Facade](design-patterns/structural/facade.md)
