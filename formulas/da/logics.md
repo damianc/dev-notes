@@ -12,3 +12,5 @@
 | XNOR | $p \cancel{\otimes} q$ | 1 | 0 | 0 | 1 |
 | NOT | $\lnot p$ | 1 | 1 | 0 | 0 |
 || $\lnot q$ | 1 | 0 | 1 | 0 |
+| $\implies$ | $p \implies q$ | 1 | 1 | 0 | 1 |
+|| $q \implies p$ | 1 | 0 | 1 | 1 |
