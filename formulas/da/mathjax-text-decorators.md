@@ -26,3 +26,13 @@
 |--|--|
 | $\widetilde{ax}$ | `widetilde` |
 | $\widehat{ax}$ | `widehat` |
+
+## Complex Operators
+
+| Operator | Example | Code |
+|--|--|--|
+| `overset` | $$\overset{\frown}{x}$$ | `\overset{\frown}{x}` |
+| `underset` | $$\underset{x \in \mathbb{R}}{\exists}$$ | `\underset{x \in \mathbb{R}}{\exists}` |
+| `binom` | $$\binom{n}{k}$$ | `\binom{n}{k}` |
+| `atop` | $${n \atop k}$$ | `{n \atop k}` |
+| `frac` | $$\frac{\circ}{x}$$ | `\frac{\circ}{x}` |
