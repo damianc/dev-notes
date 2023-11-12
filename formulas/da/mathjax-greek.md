@@ -72,10 +72,12 @@
 
 | Char | Symbol |
 |--|--|
-| $\complement$ | `\complement` |
-| $\digamma$ | `\digamma` |
-| $\Finv$ | `\Finv` |
+| $\forall$ | `\forall` |
+| $\exists$ | `\exists` |
 | $\Game$ | `\Game` |
+| $\Finv$ | `\Finv` |
+| $\digamma$ | `\digamma` |
+| $\complement$ | `\complement` |
+| $\intercal$ | `\intercal` |
 | $\Im$ | `\Im` |
 | $\Re$ | `\Re` |
-| $\intercal$ | `\intercal` |
