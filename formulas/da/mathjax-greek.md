@@ -46,6 +46,19 @@
 | $\varPsi$ | `\varPsi` |
 | $\varOmega$ | `\varOmega` |
 
+## Others (Greek-like)
+
+| Char | Symbol |
+|--|--|
+| $\nabla$ | `\nabla` |
+| $\partial$ | `\partial` |
+| $\backepsilon$ | `\backepsilon` |
+| $\imath$ | `\imath` |
+| $\jmath$ | `\jmath` |
+| $\amalg$ | `\amalg` |
+| $\wp$ | `\wp` |
+| $\mho$ | `\mho` |
+
 ## Others (Non-Greek)
 
 | Char | Symbol |
