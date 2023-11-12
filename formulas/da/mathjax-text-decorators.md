@@ -36,3 +36,31 @@
 | `binom` | $$\binom{n}{k}$$ | `\binom{n}{k}` |
 | `atop` | $${n \atop k}$$ | `{n \atop k}` |
 | `frac` | $$\frac{\circ}{x}$$ | `\frac{\circ}{x}` |
+
+$$
+^{/}x^{\backslash}
+$$
+
+$$
+\_{\backslash}x\_{/}
+$$
+
+$$
+^{/}_{\backslash}x
+$$
+
+$$
+x^{\backslash}_{/}
+$$
+
+$$
+^{/}\_{\backslash}x^{\backslash}\_{/}
+$$
+
+$$
+^{/}x\_{/}
+$$
+
+$$
+\_{\backslash}x^{\backslash}
+$$
