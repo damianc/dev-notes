@@ -68,3 +68,11 @@ $$
 $$
 \_{\backslash}x^{\backslash}
 $$
+
+$$
+^1/_4
+$$
+
+$$
+_p\backslash^q
+$$
