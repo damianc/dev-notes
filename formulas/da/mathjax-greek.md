@@ -69,3 +69,13 @@
 | $\daleth$ | `\daleth` |
 | $\beth$ | `\beth` |
 | $\gimel$ | `\gimel` |
+
+| Char | Symbol |
+|--|--|
+| $\complement$ | `\complement` |
+| $\digamma$ | `\digamma` |
+| $\Finv$ | `\Finv` |
+| $\Game$ | `\Game` |
+| $\Im$ | `\Im` |
+| $\Re$ | `\Re` |
+| $\intercal$ | `\intercal` |
