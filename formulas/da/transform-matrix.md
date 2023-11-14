@@ -25,7 +25,8 @@ x \cdot ry + y \cdot sy + ty
 \end{bmatrix}
 $$
 
-> In short, new coordinates are calculated as follows:  
+> In short, new coordinates are calculated as follows:
+>   
 > $x' = x \cdot sx + y \cdot rx + tx$  
 > $y' = x \cdot ry + y \cdot sy + ty$
 
