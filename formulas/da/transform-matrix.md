@@ -66,3 +66,65 @@ $$
 1
 \end{bmatrix}
 $$
+
+## Transformation Matrixes
+
+- translation by $\vec{[tx,ty]}$
+
+$$
+\begin{bmatrix}
+1 && 0 && tx
+\\
+0 && 1 && ty
+\\
+0 && 0 && 1
+\end{bmatrix}
+$$
+
+- scale by $[sx,sy]$
+
+$$
+\begin{bmatrix}
+sx&&0&&0
+\\
+0&&sy&&0
+\\
+0&&0&&1
+\end{bmatrix}
+$$
+
+- rotation by $\alpha$ at $(0,0)$
+
+$$
+\begin{bmatrix}
+\cos(\alpha)&&-\sin(\alpha)&&0
+\\
+\sin(\alpha)&&\cos(\alpha)&&0
+\\
+0&&0&&1
+\end{bmatrix}
+$$
+
+- rotation by $\alpha$ at $(x,y)$
+
+$$
+\begin{bmatrix}
+\cos(\alpha)&&-\sin(\alpha)&&x(1-\cos(\alpha))+y\cdot\sin(\alpha)
+\\
+\sin(\alpha)&&\cos(\alpha)&&y(1-\cos(\alpha))-x\cdot\sin(\alpha)
+\\
+0&&0&&1
+\end{bmatrix}
+$$
+
+- homothety/similarity (scale by point) by $[sx,sy]$ at $(x,y)$
+
+$$
+\begin{bmatrix}
+sx&&0&&x(1-sx)
+\\
+0&&sy&&y(1-sy)
+\\
+0&&0&&1
+\end{bmatrix}
+$$
