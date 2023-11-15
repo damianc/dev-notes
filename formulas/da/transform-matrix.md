@@ -128,3 +128,40 @@ sx&&0&&x(1-sx)
 0&&0&&1
 \end{bmatrix}
 $$
+
+- skew-x by $\alpha$
+
+$$
+\begin{bmatrix}
+1&&\tan(\alpha)&&0
+\\
+0&&1&&0
+\\
+0&&0&&1
+\end{bmatrix}
+$$
+
+- skew-y by $\beta$
+
+$$
+\begin{bmatrix}
+1&&0&&0
+\\
+\tan(\beta)&&1&&0
+\\
+0&&0&&1
+\end{bmatrix}
+$$
+
+- skew-xy by $\alpha$ and $\beta$
+
+$$
+\begin{bmatrix}
+1&&\tan(\beta)&&0
+\\
+\tan(\alpha)&&1&&0
+\\
+0&&0&&1
+\end{bmatrix}
+$$
+ 
