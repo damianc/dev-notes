@@ -69,6 +69,18 @@ $$
 
 ## Transformation Matrixes
 
+- unity matrix (defaults)
+
+ $$
+ \begin{bmatrix}
+ 1&&0&&0
+ \\
+ 0&&1&&0
+ \\
+ 0&&0&&1
+ \end{bmatrix}
+ $$
+
 - translation by $\vec{[tx,ty]}$
 
 $$
