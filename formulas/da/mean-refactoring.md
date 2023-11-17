@@ -20,7 +20,8 @@
 | Mean | Weight of new value |
 |--|--|
 | arithmetic | $$\lambda=\frac{(\Sigma xw)-\hat{x}\Sigma w}{\hat{x}-\nabla}$$ |
-| geometric | $$\lambda=\frac{\ln(\hat{x})\cdot\Sigma w-\ln(\Pi x^w)}{\ln(\nabla)-\ln(\hat{x})}$$ |
-| harmonic | $$\lambda=\frac{\Sigma w-\hat{x}\left(\sum \frac{w}{x}\right)}{\frac{1}{\nabla}\hat{x}-1}$$ |
+| geometric | $$\lambda=\frac{\ln(\hat{x})\cdot[\Sigma w]-\ln(\Pi x^w)}{\ln(\nabla)-\ln(\hat{x})}$$ |
+| harmonic | $$\lambda=\frac{[\Sigma w]-\hat{x}\left(\sum \frac{w}{x}\right)}{\frac{1}{\nabla}\hat{x}-1}$$ |
 | power (of $p$) | $$\lambda=\frac{(\Sigma x^p \cdot w)-\hat{x}\Sigma w}{\hat{x}^p-\nabla^p}$$ |
 | root (with degree $d$) | $$\lambda=\frac{(\Sigma \sqrt[d]{x} \cdot w)-\sqrt[d]{\hat{x}} \cdot \Sigma w}{\sqrt[d]{\hat{x}}-\sqrt[d]{\nabla}}$$ |
+| logarithmic (with base $b$) | $$\lambda=\frac{\ln(\hat{x})\cdot[\Sigma w]-\Sigma \log_b(x) \cdot w}{\log_b(\nabla)-\ln(\hat{x})}$$ |
