@@ -24,7 +24,7 @@ $$
 \begin{cases}
 \nabla = \sqrt[n]{x}
 \\
-x = \nabla^n
+x = \nabla^n \ \cup\ e^{n\cdot\ln\nabla}
 \end{cases}
 $$
 
