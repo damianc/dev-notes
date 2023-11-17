@@ -42,4 +42,5 @@
 | $$\log_a b = \frac{1}{\log_b a}$$ |
 | $$log_b x = \log_b a \cdot \log_a x$$ |
 | $$a^{\log_a b} = b$$ |
+| $$a^{\frac{\log_a x}{n}} = \sqrt[n]{x}$$ |
 | $$\log_a b = \frac{\ln b}{\ln a}$$ |
