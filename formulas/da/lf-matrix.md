@@ -70,3 +70,15 @@ $$
 [\det (f \mapsto F)] \mapsto f
 \implies f(x) = a
 $$
+
+----
+
+$$
+[(f \mapsto F)+(g \mapsto G)] \mapsto h
+\implies h(x) = (a+c)x+b+d
+$$
+
+$$
+[(f \mapsto F)-(g \mapsto G)] \mapsto h
+\implies h(x) = (a-c)x+b-d
+$$
