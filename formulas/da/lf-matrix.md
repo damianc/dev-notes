@@ -44,3 +44,29 @@ $$=$$
 $$
 (x \mapsto (ac)x+ad+b)
 $$
+
+## Altering Matrix
+
+$$
+f(x) = ax+b
+$$
+
+$$
+(f \mapsto F)^T \mapsto f
+\implies f(x) = ax
+$$
+
+$$
+(f \mapsto F)_d \mapsto f
+\implies f(x) = x
+$$
+
+$$
+(f \mapsto F)^{-1} \mapsto f
+\implies f(x) = \frac{1}{a}x+\frac{b}{a} = \frac{x+b}{a}
+$$
+
+$$
+[\det (f \mapsto F)] \mapsto f
+\implies f(x) = a
+$$
