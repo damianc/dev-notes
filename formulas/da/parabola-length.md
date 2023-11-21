@@ -23,11 +23,21 @@ $$
 ## With ellipse
 
 $$
+l = \frac{\ell}{2}
+$$
+
+$$
+\iff
+$$
+
+$$
 a = \frac{\vert x_2-x_1 \vert}{2}
 $$
 
 $$
-b = q
+b = q = \frac{-\Delta}{4f_a}
+\iff
+\Delta f_b^2 - 4f_af_c
 $$
 
 $$
@@ -50,8 +60,4 @@ $$
 \pi(a+b)\left(1+\frac{3h}{10+\sqrt{4-3h}}\right)
 \iff
 h=\frac{(a-b)^2}{(a+b)^2}
-$$
-
-$$
-l = \frac{\ell}{2}
 $$
