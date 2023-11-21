@@ -35,7 +35,7 @@ a = -\frac{q}{w^2}
 $$
 
 $$
-f(x) = a(x-x_1)(x-x_2) = a(x-p)^2-w^2
+f(x) = a(x-x_1)(x-x_2) = a[(x-p)^2-w^2]
 $$
 
 ## Zeros/Span relative to line `0x+n`
