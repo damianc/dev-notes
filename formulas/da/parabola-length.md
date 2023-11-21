@@ -35,9 +35,9 @@ a = \frac{\vert x_2-x_1 \vert}{2}
 $$
 
 $$
-b = q = \frac{-\Delta}{4f_a}
+b = q = \frac{-\Delta}{4f_a} = \frac{-f_b^2}{4f_a}+f_c
 \iff
-\Delta f_b^2 - 4f_af_c
+\Delta = f_b^2 - 4f_af_c
 $$
 
 $$
