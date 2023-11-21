@@ -15,7 +15,7 @@ x_L = \min(x_1,x_2)
 $$
 
 $$
-l = \sum_{i=0}^{s} x_L + \nabla i
+l = 2\left(\sum_{i=0}^{s} x_L + \nabla i\right)
 $$
 
 > $s \in (1;\infty)$ - number of samples
