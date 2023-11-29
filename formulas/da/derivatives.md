@@ -60,3 +60,25 @@ $$
 
 > $m \in \mathbb{R}$  
 > $n \in \mathbb{N}$
+
+### Alternative forms (of last two)
+
+$$
+\begin{cases}
+y' = m(nx^\frac{n-m}{n})^{-1}
+\\\ \\
+y' = \frac{m}{n\sqrt[n]{x^{n-m}}}
+\\\ \\
+y' = \frac{m}{n} x^{\frac{m}{n}-1}
+\end{cases}
+$$
+
+$$
+\begin{cases}
+y' = -m(nx^\frac{n+m}{n})^{-1}
+\\\ \\
+y' = -\frac{m}{n\sqrt[n]{x^{n+m}}}
+\\\ \\
+y' = -\frac{m}{n} x^{-\frac{m}{n}-1}
+\end{cases}
+$$
