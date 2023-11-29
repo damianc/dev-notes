@@ -46,6 +46,8 @@ $$
 y = ax^{10} + bx^9 + \dots + ix^2 + jx + k
 \\
 y' = 10ax^9 + 9bx^8 + \dots + 2ix + j
+\\
+ax^n \mapsto nax^{n-1}
 \end{cases}
 $$
 
