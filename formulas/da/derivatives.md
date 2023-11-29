@@ -104,3 +104,13 @@ $$
 | $$y = \log_a x$$ | $$y' = \frac{1}{x \ln a}$$ |
 
 > $0 < a \neq 1$
+
+## Trigonometric and cyclometric functions
+
+| Function | Derivative |
+|--|--|
+| $$y = \sin(x)/\cos(x)/\tan(\hat{x})$$ | $$y' = \cos(x)/-\sin(x)/\frac{1}{\cos^2 x}$$ |
+| $$y = \arcsin/\arccos/\arctan x$$ | $$y' = \frac{1}{\sqrt{1-x^2}}/\frac{-1}{\sqrt{1-x^2}}/\frac{1}{x^2+1}$$ |
+
+> $\hat{x} \neq \left(k+\frac{1}{2}\right)\pi$  
+> $k \in \mathbb{C}$
