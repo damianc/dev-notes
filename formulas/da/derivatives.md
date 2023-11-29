@@ -48,3 +48,10 @@ y = ax^{10} + bx^9 + \dots + ix^2 + jx + k
 y' = 10ax^9 + 9bx^8 + \dots + 2ix + j
 \end{cases}
 $$
+
+## Power functions
+
+| Function | Derivative |
+|--|--|
+| $$y = x^m$$ | $$y' = mx^{m-1}$$ |
+| $$y = x^{-n} = \frac{1}{x^n}$$ | $$y' = -\frac{n}{x^{n+1}} = -nx^{-(n+1)}$$ |
