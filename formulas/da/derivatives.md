@@ -113,4 +113,4 @@ $$
 | $$y = \arcsin/\arccos/\arctan x$$ | $$y' = \frac{1}{\sqrt{1-x^2}}/\frac{-1}{\sqrt{1-x^2}}/\frac{1}{x^2+1}$$ |
 
 > $\hat{x} \neq \left(k+\frac{1}{2}\right)\pi$  
-> $k \in \mathbb{C}$
+> $k \in \mathbb{Z}$
