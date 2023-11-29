@@ -93,3 +93,12 @@ $$
 > $a,b,c,d \in \mathbb{R}$  
 > $c \neq 0$  
 > $W(x), V(x)$ - polynomials
+
+## Exponential and logarithmic functions
+
+| Function | Derivative |
+|--|--|
+| $$y = a^x$$ | $$y' = a^x \ln a$$ |
+| $$y = \log_a x$$ | $$y' = \frac{1}{x \ln a}$$ |
+
+> $0 < a \neq 1$
