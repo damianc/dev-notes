@@ -82,3 +82,14 @@ y' = -\frac{m}{n\sqrt[n]{x^{n+m}}}
 y' = -\frac{m}{n} x^{-\frac{m}{n}-1}
 \end{cases}
 $$
+
+## Rational functions
+
+| Function | Derivative |
+|--|--|
+| $$y = \frac{ax+b}{cx+d}$$ | $$y' = \frac{ad-bc}{(cx+d)^2}$$ |
+| $$y = \frac{W(x)}{V(x)}$$ | $$y' = \frac{W'(x)V(x)-W(x)V'(x)}{V^2(x)}$$ |
+
+> $a,b,c,d \in \mathbb{R}$  
+> $c \neq 0$  
+> $W(x), V(x)$ - polynomials
