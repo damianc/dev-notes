@@ -9,7 +9,13 @@
 | $y=ax^2+bx+c$ | $y'=2ax+b$ |
 | $y=ax^3+bx^2+cx+d$ | $y'=3ax^2+2bx+c$ |
 
+> $a,b,c,d \in \mathbb{R}$
+
 ### General scheme
+
+> $a_i \in \mathbb{R}$  
+> $i \in \\{ 1,2,\dots,n\\}$  
+> $n \in \mathbb{N}$
 
 $$
 \begin{cases}
