@@ -57,3 +57,6 @@ $$
 | $$y = x^{-n} = \frac{1}{x^n}$$ | $$y' = -\frac{n}{x^{n+1}} = -nx^{-(n+1)}$$ |
 | $$y = x^\frac{m}{n} = \sqrt[n]{x^m}$$ | $$y' = m(nx^\frac{n-m}{n})^{-1}$$ |
 | $$y = x^{-\frac{m}{n}} = \frac{1}{\sqrt[n]{x^m}}$$ | $$y' = -m(nx^\frac{n+m}{n})^{-1}$$ |
+
+> $m \in \mathbb{R}$  
+> $n \in \mathbb{N}$
