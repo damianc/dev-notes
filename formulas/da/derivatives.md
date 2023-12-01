@@ -122,3 +122,21 @@ $$
 | $$[f(x) \pm g(x)]' = f'(x) \pm g'(x)$$ |
 | $$[f(x) \cdot g(x)]' = f'(x) \cdot g(x) + f(x) \cdot g'(x)$$ |
 | $$\left[ \frac{f(x)}{g(x)} \right]' = \frac{f'(x) \cdot g(x) - f(x) \cdot g'(x)}{g^2(x)}$$ |
+
+### Examples
+
+$$
+\begin{cases}
+y = 2x + \sin x
+\\
+y' = 2 + \cos x
+\end{cases}
+$$
+
+$$
+\begin{cases}
+y = \sqrt{x} - \ln x
+\\
+y' = \frac{1}{2\sqrt{x}} - \frac{1}{x} = \frac{\sqrt{x}-2}{2x}
+\end{cases}
+$$
