@@ -114,3 +114,11 @@ $$
 
 > $\hat{x} \neq \left(k+\frac{1}{2}\right)\pi$  
 > $k \in \mathbb{Z}$
+
+## Non-elementary functions
+
+| Derivative |
+|--|
+| $$[f(x) \pm g(x)]' = f'(x) \pm g'(x)$$ |
+| $$[f(x) \cdot g(x)]' = f'(x) \cdot g(x) + f(x) \cdot g'(x)$$ |
+| $$\left[ \frac{f(x)}{g(x)} \right]' = \frac{f'(x) \cdot g(x) - f(x) \cdot g'(x)}{g^2(x)}$$ |
