@@ -140,3 +140,21 @@ y = \sqrt{x} - \ln x
 y' = \frac{1}{2\sqrt{x}} - \frac{1}{x} = \frac{\sqrt{x}-2}{2x}
 \end{cases}
 $$
+
+$$
+\begin{cases}
+y = xe^x
+\\
+y' = e^x + xe^x = e^x(1+x)
+\end{cases}
+$$
+
+$$
+\begin{cases}
+y = \tan x = \frac{\sin x}{\cos x}
+\\
+y' = \frac{\cos(x) \cdot \cos(x) - \sin(x) \cdot (-\sin(x))}{(\cos(x))^2}
+\\
+y' = \frac{\cos^2(x) + \sin^2(x)}{\cos^2(x)} = \frac{1}{\cos^2(x)} = \cos^{-2}(x)
+\end{cases}
+$$
