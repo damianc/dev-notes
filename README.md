@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **360** Dev_Notes
+Currently: &nbsp; **361** Dev_Notes
 
 ---
 
@@ -285,6 +285,7 @@ Currently: &nbsp; **360** Dev_Notes
 * [Getting Point on Circle](formulas/math-core/getting-point-on-circle.md)
 * [Polygon Area](formulas/polygon-area.md)
 * [Transformation Matrixes](formulas/transformation-matrixes.md)
+* [Math Outside](formulas/math-outside.md)
 
 ## Math Core
 
