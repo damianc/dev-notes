@@ -16,7 +16,7 @@ add_filter('manage_book_posts_columns', function ($columns) {
 	return $columns;
 });
 
-add_action('manage_book_posts_custom_column'', function ($column) {
+add_action('manage_book_posts_custom_column', function ($column) {
 	global $post;
 	
 	if ($column === 'prfx_pages') {
