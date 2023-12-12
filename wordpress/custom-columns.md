@@ -25,3 +25,30 @@ add_action('manage_book_posts_custom_column', function ($column) {
 	}
 });
 ```
+
+## Sortable Columns
+
+```
+add_filter('manage_edit-book_sortable_columns', function ($columns) {
+	$columns['prfx_pages'] = 'pages';
+	return $columns;
+});
+
+add_action('pre_get_posts', function ($query) {
+	$orderby = $query->get('orderby');
+	
+	if ($orderby === 'pages') {
+		$meta_query = [
+		 'relation' => OR, [
+		  'key' => 'prfx_book_pages',
+		  'compare' => 'NOT EXISTS'
+		 ], [
+		  'key' => 'prfx_book_pages'
+		 ]
+		];
+		
+		$query->set('meta_query', $meta_query);
+		$query->set('orderby', 'meta_value_num');
+	}
+});
+```
