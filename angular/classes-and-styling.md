@@ -4,7 +4,7 @@
 
 ### `[ngClass]` directive
 
-> `[ngClass]="string | string[] | Set<string> | Record<string,boolean> | Map<string,boolean>`
+> `[ngClass]="string | string[] | Set<string> | Record<string,boolean> | Map<string,boolean>"`
 
 ```
 <div [ngClass]="getClass()">
@@ -47,3 +47,40 @@ getClassMap() {
 - `[class.foo]="expr"`
 - `[class.fooBar]="expr"`
 - `[class.foo-bar]="expr"`
+
+## Styling
+
+### `[ngStyle]` directive
+
+> `[ngClass]="Record<string,any> | Map<string,any>"`
+
+```
+<div [ngStyle]="getStyling()">
+  ...
+</div>
+```
+
+```
+getStyling() {
+  return {
+    color: 'red',
+    'marginLeft.px': 150,
+    'font-size.px': 30
+  };
+}
+
+getStylingMap() {
+  return new Map([
+    ['color', 'red'],
+    ['marginLeft.px', 150],
+    ['font-size.px', 30]
+  ]);
+}
+```
+
+### `[style.*]` attribute
+
+- `[style.color]="'red'"`
+- `[style.marginLeft.px]="150"`
+- `[style.font-size.px]="30"`
+- `[style.height.%]="100"`
