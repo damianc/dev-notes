@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **362** Dev_Notes
+Currently: &nbsp; **363** Dev_Notes
 
 ---
 
@@ -88,6 +88,7 @@ Currently: &nbsp; **362** Dev_Notes
 
 # Angular
 
+* [Classes and styling](https://github.com/damianc/dev-notes/blob/master/angular/classes-and-styling.md)
 * [Resolving path, e.g., `@interface/Readable`](angular/resolve-path.md)
 * [RxJS Imports](angular/rxjs-imports.md)
 * [Interfaces](angular/interfaces.md)
