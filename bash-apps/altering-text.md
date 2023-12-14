@@ -70,3 +70,36 @@ echo ${str#*.}
 echo ${str##*.}
 # baz
 ```
+
+## Example
+
+```
+path='/path/to/foo.cpp'
+
+echo "${path%.cpp}"
+# /path/to/foo
+
+echo "${path%.cpp}.o"
+# /path/to/foo.o
+
+echo "${path%/*}"
+# /path/to
+
+
+echo "${path##*.}"
+# cpp (extension)
+
+echo "${path##*/}"
+# foo.cpp (basepath)
+
+
+echo "${path#*/}"
+# path/to/foo.cpp
+
+echo "${path##*/}"
+# foo.cpp
+
+
+echo "${path/foo/bar}"
+# /path/to/bar.cpp
+```
