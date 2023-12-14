@@ -10,6 +10,8 @@
 | `${str#prefix}` | remove prefix |
 | `${str%%suffix}` | remove long suffix |
 | `${str##prefix}` | remove long prefix |
+| `${str,[,]}` | lowercase first or all |
+| `${str^[^]}` | uppercase first or all |
 
 ## Replacing
 
@@ -33,6 +35,28 @@ echo ${str/o/}
 
 echo ${str//o/}
 # f
+```
+
+### Lowercase/Uppercase
+
+```
+str='FooBar'
+
+echo ${str,}
+# fooBar
+
+echo ${str,,}
+# foobar
+```
+
+```
+str='fooBar'
+
+echo ${str^}
+# FooBar
+
+echo ${str^^}
+# FOOBAR
 ```
 
 ## Replacing Suffix/Prefix
