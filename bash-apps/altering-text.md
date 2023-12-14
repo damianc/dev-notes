@@ -71,7 +71,7 @@ echo ${str##*.}
 # baz
 ```
 
-## Example
+## Examples
 
 ```
 path='/path/to/foo.cpp'
@@ -102,4 +102,16 @@ echo "${path##*/}"
 
 echo "${path/foo/bar}"
 # /path/to/bar.cpp
+```
+
+```
+src='/path/to/foo.cpp'
+
+base=${src##*/}
+echo $base
+# foo.cpp (basepath)
+
+dir=${src%$base}
+echo $dir
+# /path/to/ (dirpath)
 ```
