@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **363** Dev_Notes
+Currently: &nbsp; **364** Dev_Notes
 
 ---
 
@@ -167,6 +167,7 @@ Currently: &nbsp; **363** Dev_Notes
 * [Functions](bash-apps/functions.md)
 * [Flow Control](bash-apps/flow-control.md)
 * [Examining Stuff: `test`](bash-apps/examining-stuff-test.md)
+* [Altering Text](bash-apps/altering-text.md)
 * [Text Processing: `cut`](bash-apps/text-processing-cut.md)
 * [Text Processing: `tr`](bash-apps/text-processing-tr.md)
 * [Text Processing: `wc`](bash-apps/text-processing-wc.md)
