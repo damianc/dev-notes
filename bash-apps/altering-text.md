@@ -12,6 +12,7 @@
 | `${str##prefix}` | remove long prefix |
 | `${str,[,]}` | lowercase first or all |
 | `${str^[^]}` | uppercase first or all |
+| `${str:start:end}` | get slice |
 
 ## Replacing
 
@@ -93,6 +94,42 @@ echo ${str#*.}
 
 echo ${str##*.}
 # baz
+```
+
+## Slicing
+
+```
+name='John'
+
+echo ${name:0:2}
+# Jo
+
+echo ${name::2}
+# Jo
+
+echo ${name::-1}
+# Joh
+
+echo ${name:2}
+# hn
+```
+
+### Slicing from right
+
+```
+name='John'
+
+echo ${name:(-1)}
+# n
+
+echo ${name:(-2):1}
+# h
+
+echo ${name:(-3)}
+# ohn
+
+echo ${name:(-3):-1}
+# oh
 ```
 
 ## Examples
