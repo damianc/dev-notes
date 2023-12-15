@@ -127,3 +127,14 @@ add_action('pre_get_posts', function ($query) {
 	}
 });
 ```
+
+## Related Hooks
+
+| Hook name | Hook type |
+|--|--|
+| `manage_{POST_TYPE}_posts_columns` | filter |
+| `manage_{POST_TYPE}_posts_custom_column` | action |
+| `manage_{SCREEN_ID}_columns` | filter |
+| `manage_{SCREEN_ID}_custom_column` | action |
+| `manage_{SCREEN_ID}_custom_column_js_template` | action |
+| `manage_{SCREEN_ID}_sortable_columns` | filter |
