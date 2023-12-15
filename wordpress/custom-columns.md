@@ -143,15 +143,15 @@ add_action('pre_get_posts', function ($query) {
 
 | | `manage_*_columns` | `manage_*_custom_column` | Other hooks |
 |--|--|--|--|
-| `comments` | | action | `manage_*_nav` [A] |
+| `comments` | | action | `manage_*_nav` [A], `restrict_manage_*` [A] |
 | `link` | | action | |
 | `media` | filter | action | |
 | `pages` | filter | action | |
 | `plugins` | | action | |
-| `posts` | filter | action | `manage_*_extra_tablenav` [A] |
-| `sites` | | action | `manage_*_action_links` [F], `manage_*_extra_tablenav` [A] |
+| `posts` | filter | action | `manage_*_extra_tablenav` [A], `restrict_manage_*` [A] |
+| `sites` | | action | `manage_*_action_links` [F], `manage_*_extra_tablenav` [A], `restrict_manage_*` [A] |
 | `themes` | | action | |
-| `users` | | filter | `manage_*_extra_tablenav` [A] |
+| `users` | | filter | `manage_*_extra_tablenav` [A], `restrict_manage_*` [A] |
 
 - `manage_taxonomies_for_attachment_columns` (filter)
 - `manage_taxonomies_for_{POST_TYPE}_columns` (filter)
