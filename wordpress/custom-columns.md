@@ -138,3 +138,21 @@ add_action('pre_get_posts', function ($query) {
 | `manage_{SCREEN_ID}_custom_column` | action |
 | `manage_{SCREEN_ID}_custom_column_js_template` | action |
 | `manage_{SCREEN_ID}_sortable_columns` | filter |
+
+### Hooks related to built-in post types
+
+| | `manage_*_columns` | `manage_*_custom_column` | Other hooks |
+|--|--|--|--|
+| `comments` | | action | `manage_*_nav` [A] |
+| `link` | | action | |
+| `media` | filter | action | |
+| `pages` | filter | action | |
+| `plugins` | | action | |
+| `posts` | filter | action | `manage_*_extra_tablenav` [A] |
+| `sites` | | action | `manage_*_action_links` [F], `manage_*_extra_tablenav` [A] |
+| `themes` | | action | |
+| `users` | | filter | `manage_*_extra_tablenav` [A] |
+
+- `manage_taxonomies_for_attachment_columns` (filter)
+- `manage_taxonomies_for_{POST_TYPE}_columns` (filter)
+- `manage_{SCREEN_TAXONOMY}_custom_column` (filter)
