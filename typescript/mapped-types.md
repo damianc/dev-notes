@@ -98,3 +98,15 @@ declare const document: Document;
 const a = document.createElement('a');
 // typeof a === HTMLAnchorElement
 ```
+
+## Keys from an Array
+
+```
+const dims = ['x', 'y'] as const;
+type Coords = {
+  [K in typeof dims[number]]: number;
+};
+
+// =
+// type Coords = { x: number; y: number; };
+```
