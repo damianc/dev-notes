@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **364** Dev_Notes
+Currently: &nbsp; **365** Dev_Notes
 
 ---
 
@@ -563,6 +563,7 @@ Currently: &nbsp; **364** Dev_Notes
 
 * [Property Auto-Asignment within Constructor](typescript/auto-assignment.md)
 * [Iteration Types](typescript/iteration-types.md)
+* [`keyof any`](typescript/keyof-any.md)
 * [Generics](typescript/generics.md)
 * [Advanced Generics](typescript/advanced-generics.md)
 * [`Lowercase<T>`, `Uppercase<T>`, `Capitalize<T>` and `Uncapitalize<T>`](typescript/lowercase-uppercase-etc.md)
