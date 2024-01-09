@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **366** Dev_Notes
+Currently: &nbsp; **367** Dev_Notes
 
 ---
 
@@ -183,6 +183,7 @@ Currently: &nbsp; **366** Dev_Notes
 
 # Canvas
 
+* [Camera Preview on Canvas](canvas/canvas-camera-preview.md)
 * [Repeat Image in Grid](canvas/repeat-image-in-grid.md)
 
 ## `ImageData` and Pixel Control
