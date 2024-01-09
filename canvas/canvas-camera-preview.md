@@ -49,3 +49,13 @@ function playStream(canvas, stream) {
   video.srcObject = stream;
 }
 ```
+
+## `drawImage()`
+
+- `drawImage(image, dx, dy, [dWidth, dHeight])`
+- `drawImage(image, sx, sy, sWidth, sHeight, dx, dy, dWidth, dHeight)`
+
+> `image` is one of the following: `HTMLImageElement`, `SVGImageElement`, `HTMLVideoElement`, `HTMLCanvasElement`, `ImageBitmap`, `OffscreenCanvas`, `VideoFrame`
+
+![Getting Adjacent Pixels](https://github.com/damianc/dev-notes/blob/master/canvas/_images/draw-image.png)
+(source: https://html.spec.whatwg.org/images/drawImage.png)
