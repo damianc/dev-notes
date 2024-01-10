@@ -18,6 +18,10 @@ window.ondeviceorientation = e => {
 | `beta` | the motion of the device around the **x** axis | $[-180;180)$ |
 | `gamma` | the motion of the device around the **y** axis | $[-90;90)$ |
 
+## `alpha`
+
+`0` means initial heading (when script started), not _north_.
+
 ## `beta`
 
 ![Device beta](https://github.com/damianc/dev-notes/blob/master/_images/javascript/dm-beta.png)
