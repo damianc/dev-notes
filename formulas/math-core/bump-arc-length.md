@@ -2,7 +2,7 @@
 
 - [By _Law of Sines_](#By-Law-of-Sines)
 - [By Circles](#By-Circles)
-- [By central and inscribed angle](#by-central-and-indcribed-angle)
+- [By central and inscribed angle](#by-central-and-inscribed-angle)
 
 ## By _Law of Sines_
 
