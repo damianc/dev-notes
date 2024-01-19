@@ -312,3 +312,9 @@ $$
 $$
 r = \frac{w}{2 \sin\left(\frac{\gamma}{2}\right)}
 $$
+
+- arc length
+
+$$
+\overset{\frown}{a} = r\gamma = \frac{w\gamma}{2 \sin\left(\frac{\gamma}{2}\right)}
+$$
