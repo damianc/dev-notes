@@ -318,3 +318,20 @@ $$
 $$
 \overset{\frown}{a} = r\gamma = \frac{w\gamma}{2 \sin\left(\frac{\gamma}{2}\right)}
 $$
+
+### Implementation
+
+```
+function arcLength(w, h) {
+	const atan = Math.atan(w/(2*h));
+	const alpha = 2 * atan;
+	const beta = 2 * alpha;
+	const gamma = (2*Math.PI)-beta;
+	const r = w/(2*Math.sin(gamma/2));
+	const arc = r * gamma;
+	return arc;
+}
+
+arcLength(12,4)
+// 15.288068
+```
