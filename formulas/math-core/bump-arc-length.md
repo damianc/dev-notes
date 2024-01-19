@@ -2,6 +2,7 @@
 
 - [By _Law of Sines_](#By-Law-of-Sines)
 - [By Circles](#By-Circles)
+- [By central and inscribed angle](#by-central-and-indcribed-angle)
 
 ## By _Law of Sines_
 
@@ -280,4 +281,34 @@ $$
 
 $$
 \overset{\frown}{a} = R \cdot \alpha = 6.5 \cdot 2.35201 \approx 15.288065
+$$
+
+## By central and inscribed angle
+
+- inscribed angle ($\alpha$)
+
+$$
+\alpha_1 = \arctan\left(\frac{0.5w}{h}\right) = \arctan\left(\frac{w}{2h}\right)
+$$
+
+$$
+\alpha = 2\alpha_1 = 2 \arctan\left(\frac{w}{2h}\right)
+$$
+
+- central angle ($\beta$)
+
+$$
+\beta = 2\alpha = 4 \arctan\left(\frac{w}{2h}\right)
+$$
+
+- conjugate angle of $\beta$ ($\gamma$)
+
+$$
+\gamma = 360\degree - \beta = 360\degree - 4 \arctan\left(\frac{w}{2h}\right)
+$$
+
+- radius by chord length ($w$) and sector angle ($\gamma$)
+
+$$
+r = \frac{w}{2 \sin\left(\frac{\gamma}{2}\right)}
 $$
