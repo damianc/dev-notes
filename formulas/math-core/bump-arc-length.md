@@ -304,7 +304,7 @@ $$
 - conjugate angle of $\beta$ ($\gamma$)
 
 $$
-\gamma = 360\degree - \beta = 360\degree - 4 \arctan\left(\frac{w}{2h}\right)
+\gamma = 2\pi - \beta = 2\pi - 4 \arctan\left(\frac{w}{2h}\right)
 $$
 
 - radius by chord length ($w$) and sector angle ($\gamma$)
