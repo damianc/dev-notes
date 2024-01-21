@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **367** Dev_Notes
+Currently: &nbsp; **368** Dev_Notes
 
 ---
 
@@ -302,6 +302,7 @@ Currently: &nbsp; **367** Dev_Notes
 * [Linear Function Passing Through 2 Points](formulas/math-core/line-by-two-points.md)
 * [Straight Lines: Intersection Point and Angle](formulas/math-core/lines-intersection-angle.md)
 * [Line Segment: Length and Center](formulas/math-core/line-segment.md)
+* [Trigonometric Formulas](formulas/math-core/trigonometric-formulas.md)
 * [Attract Point to Line](formulas/math-core/attract-point-to-line.md)
 * [Attract Point to Circle](formulas/math-core/attract-point-to-circle.md)
 * [Getting Triangle's Lacking Parameters](formulas/math-core/triangle-lacking-info.md)
