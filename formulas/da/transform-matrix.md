@@ -200,3 +200,20 @@ $$
 0&&0&&1
 \end{bmatrix}
 $$
+
+- reflect by line $y=ax+b$
+
+$$
+\begin{bmatrix}
+\lambda(1-a^2)&&\lambda(2a)&&0
+\\
+\lambda(2a)&&\lambda(a^2-1)&&2b
+\\
+0&&0&&1
+\end{bmatrix}
+$$
+
+$$
+\iff
+\lambda(x) = \frac{x}{1+a^2}
+$$
