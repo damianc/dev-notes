@@ -176,4 +176,27 @@ $$
 0&&0&&1
 \end{bmatrix}
 $$
- 
+
+- reflect by horizontal line $Y=n$
+
+$$
+\begin{bmatrix}
+1&&0&&0
+\\
+0&&-1&&2n
+\\
+0&&0&&1
+\end{bmatrix}
+$$
+
+- reflect by vertical line $X=m$
+
+$$
+\begin{bmatrix}
+-1&&0&&2m
+\\
+0&&1&&0
+\\
+0&&0&&1
+\end{bmatrix}
+$$
