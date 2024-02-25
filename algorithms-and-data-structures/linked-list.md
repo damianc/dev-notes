@@ -1,5 +1,7 @@
 # Linked List
 
+## `LinkedList`
+
 ```
 class LinkedList {
   #list = [];
@@ -106,14 +108,22 @@ class LinkedList {
     }
   }
 }
+```
 
+## `CyclicLinkedList`
+
+```
 class CyclicLinkedList extends LinkedList {
   next() {
     if (!super.next()) this.reset();
     return true;
   }
 }
+```
 
+## `BidirectionalLinkedList`
+
+```
 class BidirectionalLinkedList extends LinkedList {
   previous() {
     if (this.validatePointer(this.pointer-1,false,true)) {
@@ -123,7 +133,11 @@ class BidirectionalLinkedList extends LinkedList {
     return false;
   }
 }
+```
 
+## `BidirectionalCyclicLinkedList`
+
+```
 class BidirectionalCyclicLinkedList extends BidirectionalLinkedList {
   next() {
     if (!super.next()) this.reset();
