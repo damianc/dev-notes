@@ -19,6 +19,9 @@ x_2 = r \cdot \cos(\gamma_2) + a
 y_2 = r \cdot \sin(\gamma_2) + b
 \end{cases}
 \end{cases}
+$$
+
+$$
 \iff
 \begin{cases}
 D = \sqrt{(p-a)^2 + (q-b)^2}
