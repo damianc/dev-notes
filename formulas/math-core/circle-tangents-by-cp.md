@@ -19,4 +19,18 @@ x_2 = r \cdot \cos(\gamma_2) + a
 y_2 = r \cdot \sin(\gamma_2) + b
 \end{cases}
 \end{cases}
+\iff
+\begin{cases}
+D = \sqrt{(p-a)^2 + (q-b)^2}
+\\
+d = D - r
+\\
+\alpha = 2 \arccos\left(\frac{r-d}{r}\right)
+\\
+\beta = \text{atan2}(q-b, p-a)
+\\
+\gamma_1 = \beta - \frac{1}{2}\alpha
+\\
+\gamma_2 = \beta + \frac{1}{2}\alpha
+\end{cases}
 $$
