@@ -28,7 +28,7 @@ D = \sqrt{(p-a)^2 + (q-b)^2}
 \\
 d = D - r
 \\
-\alpha = 2 \arccos\left(\frac{r-d}{r}\right)
+\alpha = 2 \arccos\left(\frac{r-d}{r}\right) = 2 \arccos\left(1-\frac{d}{r}\right)
 \\
 \beta = \text{atan2}(q-b, p-a)
 \\
