@@ -2,7 +2,7 @@
 
 - for circle $(x-a)^2+(y-b)^2=r^2$
 - and control point $(p,q)$
-- points of tangency are $(x_1,y_1)$ and $(x_2,y_2)$
+- points of tangency are $(x_1,y_1)$ and $(x_2,y_2)$ obtained from $\lambda(a,b,r,p,q)$
 
 $$
 \lambda(a,b,r,p,q) =
