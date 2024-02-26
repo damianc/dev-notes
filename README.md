@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **369** Dev_Notes
+Currently: &nbsp; **370** Dev_Notes
 
 ---
 
@@ -285,6 +285,7 @@ Currently: &nbsp; **369** Dev_Notes
 * [Lacking `Math` Angular Methods](formulas/math-lacking-angular-methods.md)
 * [Distance Between 2 Coords](formulas/distance-between-two-coords.md)
 * [Angular Diameter/Size](formulas/angular-size.md)
+* [Circle Tangents by Control Point](formulas/math-core/circle-tangents-by-cp.md)
 * [Distribute Items Equally on a Circle](ui/distribute-items-equally-on-circle.md)
 * [Getting Point on Circle](formulas/math-core/getting-point-on-circle.md)
 * [Polygon Area](formulas/polygon-area.md)
