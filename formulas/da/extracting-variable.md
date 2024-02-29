@@ -53,3 +53,29 @@ $$
 x = \sqrt[\nabla]{n} \ \cup\ e^{\frac{\ln n}{\nabla}}
 \end{cases}
 $$
+
+## Function
+
+$$
+\begin{cases}
+\nabla = f(x)
+\\
+x = f^{-1}(\nabla)
+\end{cases}
+$$
+
+$$
+\begin{cases}
+\nabla = \sin/\cos/\tan(x)
+\\
+x = \arcsin/\arccos/\arctan(\nabla)
+\end{cases}
+$$
+
+$$
+\begin{cases}
+\nabla = \sinh/\cosh/\tanh(x)
+\\
+x = \text{arcsinh/arccosh/arctanh}(\nabla)
+\end{cases}
+$$
