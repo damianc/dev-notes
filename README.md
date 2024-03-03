@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **370** Dev_Notes
+Currently: &nbsp; **371** Dev_Notes
 
 ---
 
@@ -360,6 +360,7 @@ Currently: &nbsp; **370** Dev_Notes
 
 # JavaScript
 
+* [`Array.fill(object)`](javascript/array-fill-with-object.md)
 * [`mouseenter`, `mouseover`, `mousemove`, `mouseleave` and `mouseout`](javascript/mouse-events.md)
 * [Disable Shortcuts or Context Menu](javascript/disable-shortcuts-or-contextmenu.md)
 * [`reduce()` Uses](javascript/reduce-uses.md)
