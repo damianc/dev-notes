@@ -199,34 +199,34 @@ class TrainNetworkManager {
 }
 
 class TrainNetworkFacade {
-	#network;
-	#manager;
-	
-	constructor(network, manager) {
-		this.#network = network;
-		this.#manager = manager;
-	}
-	
-	addTrain(trainId, route, pricePerKM) {
-		this.#network.addTrain(
-			trainId, route
-		);
-		this.#manager.definePrice(
-			trainId, pricePerKM
-		);
-	}
-	
-	addConnection(start, end, distance) {
-		this.#manager.defineDistance(
-			start,end,distance
-		);
- }
- 
- displayConnections(start, end) {
- 	return this.#manager.displayConnections(
- 		start, end
- 	);
- }
+  #network;
+  #manager;
+
+  constructor(network, manager) {
+    this.#network = network;
+    this.#manager = manager;
+  }
+
+  addTrain(trainId, route, pricePerKM) {
+    this.#network.addTrain(
+      trainId, route
+    );
+    this.#manager.definePrice(
+      trainId, pricePerKM
+    );
+  }
+
+  addConnection(start, end, distance) {
+    this.#manager.defineDistance(
+      start,end,distance
+    );
+  }
+
+  displayConnections(start, end) {
+    return this.#manager.displayConnections(
+      start, end
+    );
+  }
 }
 ```
 
