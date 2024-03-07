@@ -142,61 +142,60 @@ class TrainNetworkGraph {
 }
 
 class TrainNetworkManager {
-	#network;
-	#distances = {};
-	#prices = {};
-	
-	constructor(network) {
-		this.#network = network;
-	}
-	
-	defineDistance(start, end, distance) {
-		const D = this.#distances;
-		if (!(start in D)) D[start] = {};
-		if (!(end in D)) D[end] = {};
-		D[start][end] = D[end][start] = distance;
-	}
-	
-	definePrice(trainId, pricePerKM) {
-		const P = this.#prices;
-		P[trainId] = P[trainId+'`'] = pricePerKM;
-	}
-	
-	displayConnections(start, end) {
-		const routes = this.#network.getRoutes(
-			start, end
-		);
-  const formatted = routes.map(route => {
-	  let v = start;
-	  let price = 0;
-	  let dist = 0;
-	  
-	  route.forEach((segment,idx) => {
-		  const {trainId:id,target} = segment;
-		  const currDist = this.#distances[v][target];
-		  const currPrice = this.#prices[id];
-		  price += (currPrice * currDist);
-		  dist += currDist;
-		  v = target;
-	  });
-	  
-	  route = TrainNetworkGraph.compressPath(
-	  	route
-	  );
-	  
-	  let str = start;
-	  str += route.map(segment => {
-		  const {target,trainId:id} = segment;
-		  return ` -[${id}]-> ${target}`;
-	  }).join('');
-	  str += ` (${dist} km)`;
-	  str += ' -- ';
-	  str += `${price.toFixed(2)} PLN`;
-	  return str;
-  });
+  #network;
+  #distances = {};
+  #prices = {};
 
-  return formatted;
- }
+  constructor(network) {
+    this.#network = network;
+  }
+
+  defineDistance(start, end, distance) {
+    const D = this.#distances;
+    if (!(start in D)) D[start] = {};
+    if (!(end in D)) D[end] = {};
+    D[start][end] = D[end][start] = distance;
+  }
+
+  definePrice(trainId, pricePerKM) {
+    const P = this.#prices;
+    P[trainId] = P[trainId+'`'] = pricePerKM;
+  }
+
+  displayConnections(start, end) {
+    const routes = this.#network.getRoutes(
+      start, end
+    );
+    const formatted = routes.map(route => {
+      let v = start;
+      let price = 0;
+      let dist = 0;
+
+      route.forEach((segment,idx) => {
+        const {trainId:id,target} = segment;
+        const currDist = this.#distances[v][target];
+        const currPrice = this.#prices[id];
+        price += (currPrice * currDist);
+        dist += currDist;
+        v = target;
+      });
+
+      route = TrainNetworkGraph.compressPath(
+        route
+      );
+
+      let str = start;
+      str += route.map(segment => {
+        const {target,trainId:id} = segment;
+        return ` -[${id}]-> ${target}`;
+      }).join('');
+      str += ` (${dist} km)`;
+      str += ' -- ';
+      str += `${price.toFixed(2)} PLN`;
+      return str;
+    });
+    return formatted;
+  }
 }
 
 class TrainNetworkFacade {
