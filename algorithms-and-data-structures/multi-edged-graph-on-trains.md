@@ -48,6 +48,20 @@ console.log(F.displayConnections(
 ));
 ```
 
+### Output
+
+```
+
+[
+  "C -[IR]-> H -[KW]-> I (55 km) -- 8.50 PLN",
+  "C -[IR]-> I (55 km) -- 11.00 PLN",
+  "C -[IC`]-> D -[KW]-> I (85 km) -- 13.00 PLN",
+  "C -[IC`]-> D -[KW]-> H -[IR]-> I (85 km) -- 15.50 PLN",
+  "C -[IC`]-> E -[TLK]-> I (140 km) -- 27.50 PLN",
+  "C -[IR]-> H -[KW`]-> D -[IC`]-> E -[TLK]-> I (170 km) -- 29.00 PLN"
+]
+```
+
 ## Implementation
 
 ```
