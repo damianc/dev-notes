@@ -80,7 +80,6 @@ Currently: &nbsp; **372** Dev_Notes
 
 * [Multi-Edged DAG for Network of Train Connections](algorithms-and-data-structures/multi-edged-graph-on-trains.md)
 * [Abstract Syntax Tree](algorithms-and-data-structures/ast.md)
-* [Decoding JWT Token](algorithms-and-data-structures/decode-jwt-token.md)
 * [Abstract Data Types](algorithms-and-data-structures/abstract-data-types.md)
 * [Algorithms](algorithms-and-data-structures/algorithms.md)
 * [Bubble Sort](algorithms-and-data-structures/bubble-sort.md)
@@ -504,6 +503,7 @@ Currently: &nbsp; **372** Dev_Notes
 
 # REST API
 
+* [Decoding JWT Token](rest-api/decode-jwt-token.md)
 * [HTTP Codes](rest-api/http-codes.md)
 * [Request Headers](rest-api/request-headers.md)
 * [Response Headers](rest-api/response-headers.md)
