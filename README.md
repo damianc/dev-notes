@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **372** Dev_Notes
+Currently: &nbsp; **373** Dev_Notes
 
 ---
 
@@ -379,6 +379,7 @@ Currently: &nbsp; **372** Dev_Notes
 
 ## Recipes
 
+* [Random Number from a Range](javascript/recipes/random-from-range.md)
 * [`n` Random Numbers from a Range](javascript/recipes/n-random-numbers-from-range.md)
 * [Alter Wrapper](javascript/recipes/alter-wrapper.md)
 * [_Trusted Value Providers_ aka _Signed Objects_](javascript/recipes/encapsulated-objects.md)
