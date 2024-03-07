@@ -230,3 +230,23 @@ class TrainNetworkFacade {
  }
 }
 ```
+
+### Overview
+
+`TrainNetworkGraph`
+- `addConnection(start,end,trainId)`
+- `addTrain(trainId,route)`
+- `getRoutes(start,end)`
+- `static compressPath(path)`
+
+`TrainNetworkManager`
+- `constructor(network)`
+- `defineDistance(start,end,distance)`
+- `definePrice(trainId,pricePerKM)`
+- `displayConnections(start,end)`
+
+`TrainNetworkFacade`
+- `constructor(network,manager)`
+- `addTrain(trainId,route,pricePerKM)`
+- `addConnection(start,end,distance)`
+- `displayConnections(start,end)`
