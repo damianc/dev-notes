@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **371** Dev_Notes
+Currently: &nbsp; **372** Dev_Notes
 
 ---
 
@@ -78,6 +78,7 @@ Currently: &nbsp; **371** Dev_Notes
 
 # Algorithms and Data Structures
 
+* [Multi-Edged DAG for Network of Train Connections](algorithms-and-data-structures/multi-edged-graph-on-trains.md)
 * [Abstract Syntax Tree](algorithms-and-data-structures/ast.md)
 * [Decoding JWT Token](algorithms-and-data-structures/decode-jwt-token.md)
 * [Abstract Data Types](algorithms-and-data-structures/abstract-data-types.md)
