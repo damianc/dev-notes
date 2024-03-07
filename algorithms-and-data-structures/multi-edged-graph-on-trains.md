@@ -50,7 +50,7 @@ console.log(F.displayConnections(
 
 ### Network visualization
 
-![Trains Network](https://github.com/damianc/dev-notes/blob/master/_images/aads/graph-trains.png)
+![Trains Network](https://github.com/damianc/dev-notes/blob/master/_images/aads/graph-trains-kms.png)
 
 ### Output
 
