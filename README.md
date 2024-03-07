@@ -16,6 +16,8 @@ Currently: &nbsp; **372** Dev_Notes
 # Categories
 
 * [Algorithms and Data Structures](#algorithms-and-data-structures)
+  - [Algorithms](#algorithms)
+  - [Data Structures](#data-structures)
 * [Angular](#angular)
   - [Directives and Components](#directives-and-components)
   - [Forms](#forms)
@@ -78,12 +80,17 @@ Currently: &nbsp; **372** Dev_Notes
 
 # Algorithms and Data Structures
 
-* [Multi-Edged DAG for Network of Train Connections](algorithms-and-data-structures/multi-edged-graph-on-trains.md)
-* [Abstract Syntax Tree](algorithms-and-data-structures/ast.md)
-* [Abstract Data Types](algorithms-and-data-structures/abstract-data-types.md)
+## Algorithms
+
 * [Algorithms](algorithms-and-data-structures/algorithms.md)
 * [Bubble Sort](algorithms-and-data-structures/bubble-sort.md)
 * [Fibonacci Generator](algorithms-and-data-structures/fibonacci-generator.md)
+
+## Data Structures
+
+* [Multi-Edged DAG for Network of Train Connections](algorithms-and-data-structures/multi-edged-graph-on-trains.md)
+* [Abstract Syntax Tree](algorithms-and-data-structures/ast.md)
+* [Abstract Data Types](algorithms-and-data-structures/abstract-data-types.md)
 * [Linked List](algorithms-and-data-structures/linked-list.md)
 * [Priority Queue on Max Heap](algorithms-and-data-structures/priority-queue-on-max-heap.md)
 
