@@ -51,9 +51,9 @@ const F = new TrainNetworkFacade(
 ### Output
 
 ```
-console.log(F.displayConnections(
-  'C','I'
-));
+console.log(
+  F.displayConnections('C','I')
+);
 
 /*
 [
@@ -67,9 +67,9 @@ console.log(F.displayConnections(
 */
 
 // direct connections only
-console.log(F.displayConnections(
-  'C','I',0
-));
+console.log(
+  F.displayConnections('C','I',0)
+);
 
 /*
 [
@@ -265,17 +265,17 @@ class TrainNetworkFacade {
 `TrainNetworkGraph`
 - `addConnection(start,end,trainId)`
 - `addTrain(trainId,route)`
-- `getRoutes(start,end)`
+- `getRoutes(start,end,maxReboards=10)`
 - `static compressPath(path)`
 
 `TrainNetworkManager`
 - `constructor(network)`
 - `defineDistance(start,end,distance)`
 - `definePrice(trainId,pricePerKM)`
-- `displayConnections(start,end)`
+- `displayConnections(start,end,maxReboards?)`
 
 `TrainNetworkFacade`
 - `constructor(network,manager)`
 - `addTrain(trainId,route,pricePerKM)`
 - `addConnection(start,end,distance)`
-- `displayConnections(start,end)`
+- `displayConnections(start,end,maxReboards?)`
