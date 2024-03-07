@@ -42,10 +42,6 @@ const F = new TrainNetworkFacade(
 ].forEach(args => {
   F.addConnection(...args);
 });
-
-console.log(F.displayConnections(
-  'C','I'
-));
 ```
 
 ### Network visualization
@@ -55,7 +51,11 @@ console.log(F.displayConnections(
 ### Output
 
 ```
+console.log(F.displayConnections(
+  'C','I'
+));
 
+/*
 [
   "C -[IR]-> H -[KW]-> I (55 km) -- 8.50 PLN",
   "C -[IR]-> I (55 km) -- 11.00 PLN",
@@ -64,6 +64,18 @@ console.log(F.displayConnections(
   "C -[IC`]-> E -[TLK]-> I (140 km) -- 27.50 PLN",
   "C -[IR]-> H -[KW`]-> D -[IC`]-> E -[TLK]-> I (170 km) -- 29.00 PLN"
 ]
+*/
+
+// direct connections only
+console.log(F.displayConnections(
+  'C','I',0
+));
+
+/*
+[
+  "C -[IR]-> I (55 km) -- 11.00 PLN"
+]
+*/
 ```
 
 ## Implementation
