@@ -71,6 +71,7 @@ console.log(F.displayConnections(
 ```
 class TrainNetworkGraph {
   #connections = {};
+  #reboards = 10;
 	
   addConnection(a, b, trainId) {
     if (!(a in this.#connections)) {
@@ -86,11 +87,12 @@ class TrainNetworkGraph {
     for (let i=0; i<=route.length-2; i++) {
       const [a,b] = route.slice(i,i+2);
       this.addConnection(a,b,trainId);
+      // + return train
       this.addConnection(b,a,trainId+'`');
     }
   }
  
-  getRoutes(start, end) {
+  getRoutes(start, end, reboards = null) {
     const G = this.#connections;
     const routes = [];
     let paths = G[start].map(r => [r]);
@@ -109,6 +111,13 @@ class TrainNetworkGraph {
 	 
       for (let i=paths.length-1; i>=0; i--) {
         const path = paths[i];
+        const rb = this.#countReboards(path);
+
+        if (rb > (reboards ?? this.#reboards)) {
+          paths.splice(i,1);
+          continue;
+        }
+
         if (
           path[path.length-1].target === end
         ) {
@@ -126,6 +135,11 @@ class TrainNetworkGraph {
       (next.target === start) ||
       path.some(p => p.target === next.target)
     );
+  }
+
+  #countReboards(path) {
+    const cp = TrainNetworkGraph.compressPath(path);
+    return cp.length-1;
   }
 
   static compressPath(path) {
@@ -166,9 +180,9 @@ class TrainNetworkManager {
     P[trainId] = P[trainId+'`'] = pricePerKM;
   }
 
-  displayConnections(start, end) {
+  displayConnections(start, end, rb = null) {
     const routes = this.#network.getRoutes(
-      start, end
+      start, end, rb
     );
     const formatted = routes.map(route => {
       let v = start;
@@ -226,9 +240,9 @@ class TrainNetworkFacade {
     );
   }
 
-  displayConnections(start, end) {
+  displayConnections(start, end, rb = null) {
     return this.#manager.displayConnections(
-      start, end
+      start, end, rb
     );
   }
 }
