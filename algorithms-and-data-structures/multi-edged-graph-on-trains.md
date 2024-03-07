@@ -66,78 +66,79 @@ console.log(F.displayConnections(
 
 ```
 class TrainNetworkGraph {
-	#connections = {};
+  #connections = {};
 	
-	addConnection(a, b, trainId) {
-		if (!(a in this.#connections)) {
-			this.#connections[a] = [];
-		}
-		this.#connections[a].push({
-			target: b,
-			trainId
-		});
-	}
+  addConnection(a, b, trainId) {
+    if (!(a in this.#connections)) {
+      this.#connections[a] = [];
+    }
+    this.#connections[a].push({
+      target: b,
+      trainId
+    });
+  }
 	
-	addTrain(trainId, route) {
-	 for (let i=0; i<=route.length-2; i++) {
-		 const [a,b] = route.slice(i,i+2);
-		 this.addConnection(a,b,trainId);
-		 this.addConnection(b,a,trainId+'`');
-	 }
- }
+  addTrain(trainId, route) {
+    for (let i=0; i<=route.length-2; i++) {
+      const [a,b] = route.slice(i,i+2);
+      this.addConnection(a,b,trainId);
+      this.addConnection(b,a,trainId+'`');
+    }
+  }
  
- getRoutes(start, end) {
- 	const G = this.#connections;
-  const routes = [];
-  let paths = G[start].map(r => [r]);
+  getRoutes(start, end) {
+    const G = this.#connections;
+    const routes = [];
+    let paths = G[start].map(r => [r]);
  
-  while (paths.length > 0) {
-	  paths = paths.flatMap(path => {
-		  const rear = path[path.length-1];
-		  const nextTarget = rear.target;
-		  if (!(nextTarget in G)) return [];
-		 
-		  const next = G[nextTarget].filter(
-		  	n => this.#excludeCycles(start,path,n)
-		  );
-		  return next.map(n => [...path,n]);
-	  });
+    while (paths.length > 0) {
+      paths = paths.flatMap(path => {
+        const rear = path[path.length-1];
+        const nextTarget = rear.target;
+        if (!(nextTarget in G)) return [];
+
+        const next = G[nextTarget].filter(
+          n => this.#excludeCycles(start,path,n)
+        );
+        return next.map(n => [...path,n]);
+      });
 	 
-	  for (let i=paths.length-1; i>=0; i--) {
-		  const path = paths[i];
-		  if (
-		 	 path[path.length-1].target === end
-		  ) {
-			  routes.push(path);
-			  paths.splice(i,1);
-		  }
-	  }
-	 }
+      for (let i=paths.length-1; i>=0; i--) {
+        const path = paths[i];
+        if (
+          path[path.length-1].target === end
+        ) {
+          routes.push(path);
+          paths.splice(i,1);
+        }
+      }
+    }
+
+    return routes;
+  }
  
-  return routes;
- }
- 
- #excludeCycles(start, path, next) {
-	 return !(
-		 (next.target === start) ||
-		 path.some(p => p.target === next.target)
-	 );
- }
- 
- static compressPath(path) {
-	 path = path.map(obj => ({...obj}));
-	 const route = [path[0]];
-	 while (path.length > 0) {
-		 const last = route[route.length-1];
-		 const current = path.shift();
-		 if (last.trainId === current.trainId) {
-			 last.target = current.target;
-		 } else {
-			 route.push(current);
-		 }
-	 }
-	 return route;
- }
+  #excludeCycles(start, path, next) {
+    return !(
+      (next.target === start) ||
+      path.some(p => p.target === next.target)
+    );
+  }
+
+  static compressPath(path) {
+    path = path.map(obj => ({...obj}));
+    const route = [path[0]];
+    while (path.length > 0) {
+      const last = route[route.length-1];
+      const current = path.shift();
+
+      if (last.trainId === current.trainId) {
+        last.target = current.target;
+      } else {
+        route.push(current);
+      }
+    }
+    return route;
+  }
 }
 
 class TrainNetworkManager {
