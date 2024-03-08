@@ -26,9 +26,9 @@ function getDistance(lat1, lon1, lat2, lon2) {
 $lat_{\Delta} = lat_2 - lat_1$  
 $lon_{\Delta} = lon_2 - lon_1$  
   
-$a = \sin(\frac{lat_{\Delta}}{2})^2 +  \cos(lat_1) \cdot \cos(lat_2) \cdot \sin(\frac{lon_{\Delta}}{2})^2$  
+$a = \sin^2\left(\frac{lat_{\Delta}}{2}\right) + \sin^2\left(\frac{lon_{\Delta}}{2}\right) \cdot  \cos(lat_1) \cdot \cos(lat_2)$  
   
-$c = 2 \cdot \text{atan}^2(\sqrt{a}, \sqrt{1- a})$  
+$c = 2 \cdot \text{atan2}(\sqrt{a}, \sqrt{1- a})$  
   
 > $d = 6371 \cdot c$
 
