@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **372** Dev_Notes
+Currently: &nbsp; **373** Dev_Notes
 
 ---
 
@@ -374,6 +374,7 @@ Currently: &nbsp; **372** Dev_Notes
 * [Deep Clone of Object](javascript/deep-clone.md)
 * [Enumerating Properties](javascript/enumerating-properties.md)
 * [`this` reference](javascript/this-reference.md)
+* [`Math`](javascript/math.md)
 * [`BigInt`](javascript/bigint.md)
 * [Checking `NaN`](javascript/checking-nan.md)
 
