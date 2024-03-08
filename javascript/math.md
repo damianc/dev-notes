@@ -36,6 +36,18 @@
 | `sign(x)` | $\frac{x}{\vert x \vert\ \cup\ 1}$ |
 | `min(a,b,...)` | $\min(a,b,...)$ |
 | `max(a,b,...)` | $\max(a,b,...)$ |
+| `sin(x)` | $\sin(x)$ |
+| `cos(x)` | $\cos(x)$ |
+| `tan(x)` | $\tan(x)$ |
+| `asin(x)` | $\arcsin(x)$ |
+| `acos(x)` | $\arccos(x)$ |
+| `atan(x)` | $\arctan(x)$ |
+| `sinh(x)` | $\sinh(x)$ |
+| `cosh(x)` | $\cosh(x)$ |
+| `tanh(x)` | $\tanh(x)$ |
+| `asinh(x)` | $\text{arcsinh}(x)$ |
+| `acosh(x)` | $\text{arccosh}(x)$ |
+| `atanh(x)` | $\text{arctanh}(x)$ |
 
 ## Extra Methods
 
