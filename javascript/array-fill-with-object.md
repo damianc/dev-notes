@@ -50,7 +50,7 @@ console.log(arr2);
 
 function fill2D(m,n,value) {
   const arr = [];
-  for (let i=0; i<m; i++) {
+  for (let i=1; i<=m; i++) {
     arr.push(new Array(n).fill(value));
   }
   return arr;
