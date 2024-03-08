@@ -6,7 +6,7 @@
 ---
 
 $$
-D(lat_1,lon_1,lat_2,lon_2) = 6371c
+D([lat_1,lon_1],[lat_2,lon_2]) = 6371c
 $$
 
 $$
