@@ -29,3 +29,10 @@
 | `log1p(x)` | $\ln(1+x)$ |
 | `exp(x)` | $e^x$ |
 | `expm1(x)` | $e^x - 1$ |
+| `round(x)` | $\lfloor x \rceil$ |
+| `ceil(x)` | $\lceil x \rceil$ |
+| `floor(x)` | $\lfloor x \rfloor$ |
+| `abs(x)` | $\vert x \vert$ |
+| `sign(x)` | $\frac{x}{\vert x \vert\ \cup\ 1}$ |
+| `min(a,b,...)` | $\min(a,b,...)$ |
+| `max(a,b,...)` | $\max(a,b,...)$ |
