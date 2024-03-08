@@ -36,3 +36,23 @@
 | `sign(x)` | $\frac{x}{\vert x \vert\ \cup\ 1}$ |
 | `min(a,b,...)` | $\min(a,b,...)$ |
 | `max(a,b,...)` | $\max(a,b,...)$ |
+
+## Extra Methods
+
+```
+function root(x,n) {
+  return x**(1/n);
+}
+
+function logn(x,n) {
+  return Math.log(x)/Math.log(n);
+}
+
+function _round(x,digits,method) {
+  const m = 10**digits;
+  return method(x*m)/m;
+}
+function fround(x,digits=2) {
+  return _round(x,digits,Math.round);
+}
+```
