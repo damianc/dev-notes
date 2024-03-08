@@ -55,4 +55,10 @@ function _round(x,digits,method) {
 function fround(x,digits=2) {
   return _round(x,digits,Math.round);
 }
+function fceil(x,digits=2) {
+  return _round(x,digits,Math.ceil);
+}
+function ffloor(x,digits=2) {
+  return _round(x,digits,Math.floor);
+}
 ```
