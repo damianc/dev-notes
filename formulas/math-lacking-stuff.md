@@ -27,7 +27,14 @@ function log(x, n) {
 ## Clamp value in a range
 
 $$
-x \mapsto \min(\max(m^{-},x),m^{+})
+x \mapsto
+\begin{cases}
+x \iff x \in \langle m^{-}; m^{+} \rangle
+\\
+m^{-} \iff x < m^{-}
+\\
+m^{+} \iff x > m^{+}
+\end{cases}
 $$
 
 ```
