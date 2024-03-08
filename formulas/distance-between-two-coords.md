@@ -3,32 +3,7 @@
 * [Haversine Formula](https://en.wikipedia.org/wiki/Haversine_formula)
 * [UTM Coordinate System](https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system)
 
-```
-function getDistance(A, B) {
-  const rad = n => n * Math.PI / 180;
-  const [lat1,lon1] = A.map(rad);
-  const [lat2,lon2] = B.map(rad);
-  
-  const sin2 = x => Math.sin(x)**2;
-  const R = 6371; // radius of Earth (KM)
-
-  const latDelta = lat2 - lat1;
-  const lonDelta = lon2 - lon1;
-
-  const n = Math.cos(lat1) * Math.cos(lat2);
-  const a =
-    sin2(latDelta / 2) +
-    sin2(lonDelta / 2) * n;
-
-  const c = 2 * Math.atan2(
-    Math.sqrt(a),
-    Math.sqrt(1 - a)
-  );
-  const d = R * c;
-
-  return +d.toFixed(2); // KM
-}
-```
+---
 
 $$
 D(lat_1,lon_1,lat_2,lon_2) = 6371c
@@ -56,6 +31,33 @@ c = 2 \cdot \text{atan2} = (
 )
 \end{cases}
 $$
+
+```
+function getDistance(A, B) {
+  const rad = n => n * Math.PI / 180;
+  const [lat1,lon1] = A.map(rad);
+  const [lat2,lon2] = B.map(rad);
+  
+  const sin2 = x => Math.sin(x)**2;
+  const R = 6371; // radius of Earth (KM)
+
+  const latDelta = lat2 - lat1;
+  const lonDelta = lon2 - lon1;
+
+  const n = Math.cos(lat1) * Math.cos(lat2);
+  const a =
+    sin2(latDelta / 2) +
+    sin2(lonDelta / 2) * n;
+
+  const c = 2 * Math.atan2(
+    Math.sqrt(a),
+    Math.sqrt(1 - a)
+  );
+  const d = R * c;
+
+  return +d.toFixed(2); // KM
+}
+```
 
 ```
 const tokyo = [35.6895, 139.69171];
