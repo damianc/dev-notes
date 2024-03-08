@@ -30,14 +30,32 @@ function getDistance(A, B) {
 }
 ```
 
-$lat_{\Delta} = lat_2 - lat_1$  
-$lon_{\Delta} = lon_2 - lon_1$  
-  
-$a = \sin^2\left(\frac{lat_{\Delta}}{2}\right) + \sin^2\left(\frac{lon_{\Delta}}{2}\right) \cdot  \cos(lat_1) \cdot \cos(lat_2)$  
-  
-$c = 2 \cdot \text{atan2}(\sqrt{a}, \sqrt{1- a})$  
-  
-> $d = 6371 \cdot c$
+$$
+D(lat_1,lon_1,lat_2,lon_2) = 6371c
+$$
+
+$$
+\iff
+\begin{cases}
+\varphi_{\Delta} = lat_2 - lat_1
+\\
+\lambda_{\Delta} = lon_2 - lon_1
+\\\ \\
+k = \cos(lat_1)\cos(lat_2)
+\\
+\theta = \sin^2\left(
+ \frac{\varphi_{\Delta}}{2}
+\right) +
+\sin^2\left(
+ \frac{\lambda_{\Delta}}{2}
+\right) \cdot k
+\\
+c = 2 \cdot \text{atan2} = (
+ \sqrt{\theta},
+ \sqrt{1-\theta}
+)
+\end{cases}
+$$
 
 ```
 const tokyo = [35.6895, 139.69171];
