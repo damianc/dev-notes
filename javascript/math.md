@@ -32,6 +32,7 @@
 | `round(x)` | $\lfloor x \rceil$ |
 | `ceil(x)` | $\lceil x \rceil$ |
 | `floor(x)` | $\lfloor x \rfloor$ |
+| `trunc(x)` | $x-(x\\%1)$ |
 | `abs(x)` | $\vert x \vert$ |
 | `sign(x)` | $\frac{x}{\vert x \vert\ \cup\ 1}$ |
 | `min(a,b,...)` | $\min(a,b,...)$ |
