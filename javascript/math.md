@@ -43,11 +43,15 @@
 function root(x,n) {
   return x**(1/n);
 }
+```
 
+```
 function logn(x,n) {
   return Math.log(x)/Math.log(n);
 }
+```
 
+```
 function _round(x,digits,method) {
   const m = 10**digits;
   return method(x*m)/m;
