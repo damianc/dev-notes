@@ -56,13 +56,20 @@ function _round(x,digits,method) {
   const m = 10**digits;
   return method(x*m)/m;
 }
+
 function fround(x,digits=2) {
-  return _round(x,digits,Math.round);
+  return _round(
+    x, digits, Math.round
+  );
 }
 function fceil(x,digits=2) {
-  return _round(x,digits,Math.ceil);
+  return _round(
+    x, digits, Math.ceil
+  );
 }
 function ffloor(x,digits=2) {
-  return _round(x,digits,Math.floor);
+  return _round(
+    x, digits, Math.floor
+  );
 }
 ```
