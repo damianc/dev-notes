@@ -4,19 +4,26 @@
 * [UTM Coordinate System](https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system)
 
 ```
-function getDistance(lat1, lon1, lat2, lon2) {
+function getDistance(A, B) {
   const rad = n => n * Math.PI / 180;
+  const [lat1,lon1] = A.map(rad);
+  const [lat2,lon2] = B.map(rad);
+  
+  const sin2 = x => Math.sin(x)**2;
   const R = 6371; // radius of Earth (KM)
 
-  const latDelta = rad(lat2) - rad(lat1);
-  const lonDelta = rad(lon2) - rad(lon1);
+  const latDelta = lat2 - lat1;
+  const lonDelta = lon2 - lon1;
 
+  const n = Math.cos(lat1) * Math.cos(lat2);
   const a =
-    Math.sin(latDelta / 2) ** 2 +
-    Math.cos(rad(lat1)) * Math.cos(rad(lat2)) *
-    Math.sin(lonDelta / 2) ** 2;
+    sin2(latDelta / 2) +
+    sin2(lonDelta / 2) * n;
 
-  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  const c = 2 * Math.atan2(
+    Math.sqrt(a),
+    Math.sqrt(1 - a)
+  );
   const d = R * c;
 
   return +d.toFixed(2); // KM
@@ -36,7 +43,9 @@ $c = 2 \cdot \text{atan2}(\sqrt{a}, \sqrt{1- a})$
 const tokyo = [35.6895, 139.69171];
 const sydney = [-33.86785, 151.20732];
 
-getDistance(...tokyo, ...sydney);
+console.log(
+  getDistance(tokyo, sydney)
+);
 // 7826.48
 // (7821 KM by Google)
 
@@ -44,7 +53,9 @@ getDistance(...tokyo, ...sydney);
 const warsaw = [52.22977, 21.01178];
 const poznan = [52.40692, 16.92993];
 
-getDistance(...warsaw, ...poznan);
+console.log(
+  getDistance(warsaw, poznan)
+);
 // 278.11
 // (278.34 KM by Google Maps)
 ```
