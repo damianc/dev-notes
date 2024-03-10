@@ -9,7 +9,7 @@
 | secant | $\sec(x) = \frac{1}{\cos(x)}$ | $\sec(x)\tan(x) = \frac{\tan(x)}{\cos(x)}$ | $\arccos\left(\frac{1}{x}\right)$ |
 | cotangent | $\cot(x) = \frac{1}{\tan(x)}$ | $-\csc^2(x) = \frac{-1}{\sin^2(x)}$ | $\arctan\left(\frac{1}{x}\right)$ |
 | exsec[ant] (_external secant_) | $\text{exs}(x) = \frac{1}{\cos(x)}-1$ | $\tan(x)\sec(x) = \frac{\sin(x)}{\cos^2(x)}$ | $\text{arcsec}(x+1) = \arccos\left(\frac{1}{x+1}\right) = \arctan(\sqrt{x^2+2x})$ | 
-| excosec[ant]/coexsec[ant] (_external cosecant_) | $\text{exc} = \frac{1}{\sin(x)}-1$ | $-\cot(x)\csc(x) = \frac{-\cos(x)}{\sin^2(x)}$ | $\text{arccsc}(x+1) = \arcsin\left(\frac{1}{x+1}\right)$ |
+| excosec[ant]/coexsec[ant] (_external cosecant_) | $\text{exc}(x) = \frac{1}{\sin(x)}-1$ | $-\cot(x)\csc(x) = \frac{-\cos(x)}{\sin^2(x)}$ | $\text{arccsc}(x+1) = \arcsin\left(\frac{1}{x+1}\right)$ |
 | versin (_versed sine_) | $\text{ver}(x) = 2\sin^2\left(\frac{x}{2}\right) = 1-\cos(x)$ | $\sin(x)$ | $\arccos(1-x)$ |
 | coversin (_coversed sine_) | $\text{cvs}(x) = 1-\sin(x)$ | $-\cos(x)$ | $\arcsin(1-x)$ |
 | vercos (_versed cosine_) | $\text{vcs}(x) = 2\cos^2\left(\frac{x}{2}\right) = 1+\cos(x)$ | $-\sin(x)$ | $\arccos(x-1)$ |
