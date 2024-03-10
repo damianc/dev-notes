@@ -14,3 +14,7 @@
 | coversin (coversed sine) | $\text{cvs}(x) = 1-\sin(x)$ | $-\cos(x)$ | $\arcsin(1-x)$ |
 | vercos (versed cosine) | $\text{vcs}(x) = 2\cos^2\left(\frac{x}{2}\right) = 1+\cos(x)$ | $-\sin(x)$ | $\arccos(x-1)$ |
 | covercos (coversed cosine) | $\text{cvc}(x) = 1+\sin(x)$ | $\cos(x)$ | $\arcsin(x-1)$ |
+| haversin (half-versed sine) | $\text{hav}(x) = \sin^2\left(\frac{x}{2}\right) = \frac{1-\cos(x)}{2}$ | $\frac{\sin(x)}{2}$ | $2\arcsin(\sqrt{x}) = \arccos(1-2x)$ |
+| hacoversin (half-coversed sine) | $\text{hcv}(x) = \frac{1-\sin(x)}{2}$ | $\frac{-\cos(x)}{2}$ | $\arcsin(1-2x)$ |
+| havercos (half-versed cosine) | $\text{hvc}(x) = \cos^2\left(\frac{x}{2}\right) = \frac{1+\cos(x)}{2}$ | $\frac{-\sin(x)}{2}$ | $2\arccos(\sqrt{x}) = \arccos(2x-1)$ |
+| hacovercos (half-coversed cosine) | $\text{hcc}(x) = \frac{1+\sin(x)}{2}$ | $\frac{\cos(x)}{2}$ | $\arcsin(2x-1)$ |
