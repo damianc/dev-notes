@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **373** Dev_Notes
+Currently: &nbsp; **374** Dev_Notes
 
 ---
 
@@ -289,6 +289,7 @@ Currently: &nbsp; **373** Dev_Notes
 # Formulas
 
 * [Lacking Stuff of `Math`](formulas/math-lacking-stuff.md)
+* [Angular Methods](formulas/angular-methods-list.md)
 * [Lacking `Math` Angular Methods](formulas/math-lacking-angular-methods.md)
 * [Distance Between 2 Coords](formulas/distance-between-two-coords.md)
 * [Angular Diameter/Size](formulas/angular-size.md)
