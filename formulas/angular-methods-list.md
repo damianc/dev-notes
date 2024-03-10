@@ -18,3 +18,8 @@
 | hacoversin (_half-coversed sine_) | $\text{hcv}(x) = \frac{1-\sin(x)}{2}$ | $\frac{-\cos(x)}{2}$ | $\arcsin(1-2x)$ |
 | havercos (_half-versed cosine_) | $\text{hvc}(x) = \cos^2\left(\frac{x}{2}\right) = \frac{1+\cos(x)}{2}$ | $\frac{-\sin(x)}{2}$ | $2\arccos(\sqrt{x}) = \arccos(2x-1)$ |
 | hacovercos (_half-coversed cosine_) | $\text{hcc}(x) = \frac{1+\sin(x)}{2}$ | $\frac{\cos(x)}{2}$ | $\arcsin(2x-1)$ |
+
+> In terms of naming, _*sin_ = _*sine_, as well as _*cos_ = _*cosin(e)_.
+
+> for $x \in (0;\pi)$: $\csc'=-\text{arcsinh}(\cot(x))$
+> for $x \in \left(-\frac{\pi}{2};\frac{\pi}{2}\right)$: $\sec'(x) = \text{arcsinh}(\tan(x))$
