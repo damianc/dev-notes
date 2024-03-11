@@ -25,3 +25,21 @@ $$
 $$
 \nabla_L = B^{\ln(\hat{x})(n+1)-\Sigma \log_B(x)}
 $$
+
+## New value $\nabla$ with weight $\lambda$ to get mean $\hat{x}$
+
+$$
+\nabla_A = \frac{1}{\lambda}\large(\hat{x}([\Sigma w]+\lambda)-[\Sigma xw])
+$$
+
+$$
+\nabla_G = \large\sqrt[\lambda]{\hat{x}^{[\Sigma w]+\lambda} (\Pi x^w)^{-1}}
+$$
+
+$$
+\nabla_H = \lambda\left(\frac{[\Sigma w]+\lambda}{\hat{x}}-\left[\sum \frac{w}{x}\right]\right)^{-1}
+$$
+
+$$
+\nabla_P = \sqrt[P]{\frac{1}{\lambda}\large(\hat{x}^P([\Sigma w]+\lambda)-[\Sigma x^P \cdot w])}
+$$
