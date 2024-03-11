@@ -347,13 +347,21 @@ $$
 
 $$
 \begin{bmatrix}
-\begin{bmatrix}1_a&2_a\\3_a&4_a\end{bmatrix}
+\begin{bmatrix}1_a&2_a
+\\
+3_a&4_a\end{bmatrix}
 &
-\begin{bmatrix}1_b&2_b\\3_b&4_b\end{bmatrix}
+\begin{bmatrix}1_b&2_b
+\\
+3_b&4_b\end{bmatrix}
 \\\\
-\begin{bmatrix}1_c&2_c\\3_c&4_c\end{bmatrix}
+\begin{bmatrix}1_c&2_c
+\\
+3_c&4_c\end{bmatrix}
 &
-\begin{bmatrix}1_d&2_d\\3_d&4_d\end{bmatrix}
+\begin{bmatrix}1_d&2_d
+\\
+3_d&4_d\end{bmatrix}
 \end{bmatrix}
 $$
 
@@ -513,7 +521,8 @@ $$
 $$
 \left[\begin{array}{c||cc|c}
 1&2&3&4
-\\\hline
+\\
+\hline
 5&6&7&8
 \end{array}\right]
 $$
@@ -523,7 +532,8 @@ $$
 1&2&3&4
 \\
 5&6&7&8
-\\\hline
+\\
+\hline
 x_1&x_2&x_3&x_4
 \end{array}\right]
 $$
@@ -533,7 +543,8 @@ $$
 x&2&3&4
 \\
 y&6&7&8
-\\\hline
+\\
+\hline
 \ &x_2&x_3&x_4
 \end{array}
 $$
@@ -543,19 +554,27 @@ $$
 $$
 \left[\begin{array}{cc}
 \left(\begin{array}{cc}
-a&b\\c&d
+a&b
+\\
+c&d
 \end{array}\right)
 &
 \left\\{\begin{array}{cc}
-a&b\\c&d
+a&b
+\\
+c&d
 \end{array}\right\\}_2^n
 \\\\
 \left\|\begin{array}{c|c}
-1&2\\\hline 3&4
+1&2\\
+\hline
+3&4
 \end{array}\right\|
 &
 \left[\begin{array}{cc|c}
-a&b&+\\c&d&x
+a&b&+
+\\
+c&d&x
 \end{array}\right]
 \end{array}\right]
 $$
@@ -573,7 +592,8 @@ $$
 $$
 f(n) = \begin{cases}
 n/2, & \text{if $n$ is even}
-\\\hline
+\\
+\hline
 3n+1, & \text{if $n$ is odd}
 \\
 3n+2, & \text{if $n$ is odd and $\gt$ 100}
