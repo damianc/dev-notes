@@ -43,3 +43,21 @@ $$
 $$
 \nabla_P = \sqrt[P]{\frac{1}{\lambda}\large(\hat{x}^P([\Sigma w]+\lambda)-[\Sigma x^P \cdot w])}
 $$
+
+$$
+\nabla_R = \left[
+ \frac{1}{\lambda}
+ \left(
+  \sqrt[d]{\hat{x}}
+  \left(\left[\sum w\right]+\lambda\right) -
+   \left[\sum \sqrt[d]{x} \cdot w\right]
+ \right)
+\right]^d
+$$
+
+$$
+\nabla_L = \large\sqrt[\lambda]{B^{
+ \ln(\hat{x})([\Sigma w]+\lambda)-
+ [\Sigma \log_B(x) \cdot w]
+}}
+$$
