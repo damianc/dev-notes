@@ -259,43 +259,53 @@ $\begin{bmatrix}
 
 * `a &  c & e \\ b & d & f`
 
-$\begin{bmatrix}
+$$
+\begin{bmatrix}
 a &  c & e
 \\
 b & d & f
-\end{bmatrix}$
+\end{bmatrix}
+$$
 
 * `a &  c \\ b & d`
 
-$\begin{bmatrix}
+$$
+\begin{bmatrix}
 a &  c
 \\
 b & d
-\end{bmatrix}$
+\end{bmatrix}
+$$
 
 * `a & c`
 
-$\begin{bmatrix}
+$$
+\begin{bmatrix}
 a &  c
-\end{bmatrix}$
+\end{bmatrix}
+$$
 
 * `a \\ b`
 
-$\begin{bmatrix}
+$$
+\begin{bmatrix}
 a
 \\
 b
-\end{bmatrix}$
+\end{bmatrix}
+$$
 
 * `a \\ b \\ c`
 
-$\begin{bmatrix}
+$$
+\begin{bmatrix}
 a
 \\
 b
 \\
 c
-\end{bmatrix}$
+\end{bmatrix}
+$$
 
 ---
 
@@ -309,13 +319,15 @@ c \\ d
 \end{bmatrix}$
 ```
 
-$\begin{bmatrix}
+$$
+\begin{bmatrix}
 a \\ b
 \end{bmatrix}
 \times
 \begin{bmatrix}
 c \\ d
-\end{bmatrix}$
+\end{bmatrix}
+$$
 
 ----
 
@@ -371,126 +383,160 @@ $$
 
 ### Other Matrixes
 
-$\begin{bmatrix}
+$$
+\begin{bmatrix}
 a &  c & e
 \\
 b & d & f
-\end{bmatrix}$
+\end{bmatrix}
+$$
 
-$\begin{matrix}
+$$
+\begin{matrix}
 a &  c & e
 \\
 b & d & f
-\end{matrix}$
+\end{matrix}
+$$
 
-$\begin{pmatrix}
+$$
+\begin{pmatrix}
 a &  c & e
 \\
 b & d & f
-\end{pmatrix}$
+\end{pmatrix}
+$$
 
-$\begin{Bmatrix}
+$$
+\begin{Bmatrix}
 a &  c & e
 \\
 b & d & f
-\end{Bmatrix}$
+\end{Bmatrix}
+$$
 
-$\begin{vmatrix}
+$$
+\begin{vmatrix}
 a &  c & e
 \\
 b & d & f
-\end{vmatrix}$
+\end{vmatrix}
+$$
 
-$\begin{Vmatrix}
+$$
+\begin{Vmatrix}
 a &  c & e
 \\
 b & d & f
-\end{Vmatrix}$
+\end{Vmatrix}
+$$
 
 ## Arrays
 
-$\left(\begin{array}{cc|c}
+$$
+\left(\begin{array}{cc|c}
 1&2&3
 \\
 4&5&6
-\end{array}\right)$
+\end{array}\right)
+$$
 
-$\left\{\begin{array}{cc|c}
+$$
+\left\\{\begin{array}{cc|c}
 1&2&3
 \\
 4&5&6
-\end{array}\right\}$
+\end{array}\right\\}
+$$
 
-$\left|\begin{array}{cc|c}
+$$
+\left|\begin{array}{cc|c}
 1&2&3
 \\
 4&5&6
-\end{array}\right|$
+\end{array}\right|
+$$
 
-$\left\|\begin{array}{cc|c}
+$$
+\left\|\begin{array}{cc|c}
 1&2&3
 \\
 4&5&6
-\end{array}\right\|$
+\end{array}\right\|
+$$
 
-$\begin{array}{cc|c}
+$$
+\begin{array}{cc|c}
 1&2&3
 \\
 4&5&6
-\end{array}$
+\end{array}
+$$
 
 ----
 
 * with array:
 
-$\left\{\begin{array}{c}
+$$
+\left\{\begin{array}{c}
 a_1x + b_1y + c_1z = d_1
 \\
 a_2x + b_2y + c_2z = d_2
 \\
 a_3x + b_3y + c_3z = d_3
-\end{array}\right.$
+\end{array}\right.
+$$
 
 * with cases:
 
-$\begin{cases}
+$$
+\begin{cases}
 a_1x + b_1y + c_1z = d_1
 \\
 a_2x + b_2y + c_2z = d_2
 \\
 a_3x + b_3y + c_3z = d_3
-\end{cases}$
+\end{cases}
+$$
 
 
 ----
 
-$\left[\begin{array}{c||cc|c}
+$$
+\left[\begin{array}{c||cc|c}
 1&2&3&4
 \\
 5&6&7&8
-\end{array}\right]$
+\end{array}\right]
+$$
 
-$\left[\begin{array}{c||cc|c}
+$$
+\left[\begin{array}{c||cc|c}
 1&2&3&4
 \\\hline
 5&6&7&8
-\end{array}\right]$
+\end{array}\right]
+$$
 
-$\left[\begin{array}{cccc}
+$$
+\left[\begin{array}{cccc}
 1&2&3&4
 \\
 5&6&7&8
 \\\hline
 x_1&x_2&x_3&x_4
-\end{array}\right]$
+\end{array}\right]
+$$
 
-$\begin{array}{c|ccc}
+$$
+\begin{array}{c|ccc}
 x&2&3&4
 \\
 y&6&7&8
 \\\hline
-&x_2&x_3&x_4
-\end{array}$
+\ &x_2&x_3&x_4
+\end{array}
+$$
 
 ----
 
@@ -500,9 +546,9 @@ $$
 a&b\\c&d
 \end{array}\right)
 &
-\left\{\begin{array}{cc}
+\left\\{\begin{array}{cc}
 a&b\\c&d
-\end{array}\right\}_2^n
+\end{array}\right\\}_2^n
 \\\\
 \left\|\begin{array}{c|c}
 1&2\\\hline 3&4
@@ -556,7 +602,7 @@ $$
 \text{if $n$ is even:} & n/2
 \\
 \text{if $n$ is odd:} & 3n+1
-\end{array}\right\}
+\end{array}\right.
 =f(n)
 $$
 
