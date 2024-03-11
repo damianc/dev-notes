@@ -19,7 +19,7 @@ $$
 $$
 
 $$
-\nabla_R = (\sqrt[d]{\hat{x}}(n+1)-\Sigma \sqrt[d]{x})^d
+\nabla_R = \left(\sqrt[d]{\hat{x}}(n+1)-\Sigma \sqrt[d]{x}\right)^d
 $$
 
 $$
