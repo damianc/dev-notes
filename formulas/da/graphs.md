@@ -1,0 +1,9 @@
+$$
+\fbox{A}
+\overset{
+ \mathtt{c}
+}{
+\longrightarrow
+}
+\fbox{B}
+$$
