@@ -1,14 +1,19 @@
 $$
-\fbox{A}
-\overset{
- \mathtt{c}
-}{
-\longrightarrow
+-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!\rightarrow
+$$
+
+$$
+\- \- \- \- \rightarrow
+$$
+
+$$
+\overset{n}{
+-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!\rightarrow
 }
-\fbox{B}
-\\\ \\
-\overset{a}{\longrightarrow}
-\atop
-\quad\quad\quad\quad\quad
-\underset{c}{\longleftarrow}
+$$
+
+$$
+\overset{n}{
+\- \- \- \- \rightarrow
+}
 $$
