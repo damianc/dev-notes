@@ -61,3 +61,40 @@ $$
  [\Sigma \log_B(x) \cdot w]
 }}
 $$
+
+## Weight $\lambda$ of new value $\nabla$ to get mean $\hat{x}$
+
+$$
+\lambda_A = (\hat{x}[\Sigma w]+[\Sigma xw])(\nabla-\hat{x})^{-1}
+$$
+
+$$
+\lambda_G = \left(\ln\left(\prod x^w\right)-\ln(\hat{x})\left[\sum w\right]\right)\ln^{-1}\left(\frac{\hat{x}}{\nabla}\right)
+$$
+
+$$
+\lambda_H = \left(
+ \hat{x}\left[\sum \frac{w}{x}\right]-
+ \sum w
+\right)\left(
+ 1-\frac{\hat{x}}{\nabla}
+\right)^{-1}
+$$
+
+$$
+\lambda_P = (\hat{x}^P[\Sigma w]-[\Sigma x^P \cdot w])(\nabla^P - \hat{x}^P)^{-1}
+$$
+
+$$
+\lambda_R = \left(\sqrt[d]{\hat{x}}\Sigma w-\left[
+ \Sigma \sqrt[d]{x} \cdot w
+\right]\right)\left(
+ \sqrt[d]{\nabla} - \sqrt[d]{\hat{x}}
+\right)^{-1}
+$$
+
+$$
+\lambda_L = (\ln(\hat{x})\Sigma w-[
+ \Sigma \log_B(x^w)
+])(\log_B(\nabla)-\ln(\hat{x}))^{-1}
+$$
