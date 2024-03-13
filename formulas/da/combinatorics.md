@@ -138,3 +138,30 @@ $$
 $$
 W^4_{10} \times W^2_{26} = 6\ 760\ 000
 $$
+
+## More complex example
+
+How many ways can the results list of a speedway round be presented, considering that not all riders may reach the finish line?
+
+|  |  |  |
+|--|--|--|
+| **case 1:** all riders reach the finish line | | |
+|  | number of ways to select 4 riders | $C^4_4 = \binom{4}{4} = 1$ |
+|  | number of ways to order 4 riders | $P_4 = 4! = 24$ |
+|  | result for the case | $\Omega_1 = C^4_4 \times P_4 = 24$ |
+| **case 2:** three riders reach the finish line | | |
+|  | number of ways to select 3 riders | $C^3_4 = \binom{4}{3} = 4$ |
+|  | number of ways to order 3 riders | $P_3 = 3! = 6$ |
+|  | result for the case | $\Omega_2 = C^3_4 \times P_3 = 24$ |
+| **case 3:** two riders reach the finish line | | |
+|  | number of ways to select 2 riders | $C^2_4 = \binom{4}{2} = 6$ |
+|  | number of ways to order 2 riders | $P_2 = 2! = 2$ |
+|  | result for the case | $\Omega_3 = C^2_4 \times P_2 = 12$ |
+| **case 4:** one rider reaches the finish line | | |
+|  | number of ways to select 1 rider | $C^1_4 = \binom{4}{1} = 4$ |
+|  | number of ways to order 1 rider | $P_1 = 1! = 1$ |
+|  | result for the case | $\Omega_4 = C^1_4 \times P_1 = 4$ |
+| **case 5:** no rider reachee the finish line | | |
+|  | number of ways to order 0 riders | $P_0 = 0! = 1$ |
+|  | result for the case | $\Omega_5 = 1 \times P_0 = 1$ |
+| **RESULT** |  | $$\sum_{i=1}^5 \Omega_i = 65$$ |
