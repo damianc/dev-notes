@@ -161,7 +161,7 @@ How many ways can the results list of a speedway round be presented, considering
 |  | number of ways to select 1 rider | $C^1_4 = \binom{4}{1} = 4$ |
 |  | number of ways to order 1 rider | $P_1 = 1! = 1$ |
 |  | result for the case | $\Omega_4 = C^1_4 \times P_1 = 4$ |
-| **case 5:** no rider reachee the finish line | | |
+| **case 5:** no rider reaches the finish line | | |
 |  | number of ways to order 0 riders | $P_0 = 0! = 1$ |
 |  | result for the case | $\Omega_5 = 1 \times P_0 = 1$ |
 | **RESULT** |  | $$\sum_{i=1}^5 \Omega_i = 65$$ |
