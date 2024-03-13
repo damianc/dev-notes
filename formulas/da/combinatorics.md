@@ -235,3 +235,30 @@ $$
 $$
 \sum_{i=1}^3 \Omega_i = 7290
 $$
+
+----
+
+Number of codes that satisfy the pattern `AA[A] 1111{1|A}`, i.e., 2 or 3 letters, 4 digits and 1 digit or letter.
+
+- `H`: head (`AA` or `AAA`)
+- `T`: tail (`11111` or `1111A`)
+
+$$
+\begin{cases}
+H_1 = W^2_{26} = 26^2 = 676
+\\
+H_2 = W^3_{26} = 26^3 = 15\ 576
+\end{cases}
+$$
+
+$$
+\begin{cases}
+T_1 = W^4_{10} \cdot W^1_{10} = 10^4 \cdot 10 = 100\ 000
+\\
+T_2 = W^4_{10} \cdot W^1_{26} = 10^4 \cdot 26 = 260\ 000
+\end{cases}
+$$
+
+$$
+\sum_{i=1}^2 \sum_{j=1}^2 H_i T_j = 6\ 570\ 720\ 000
+$$
