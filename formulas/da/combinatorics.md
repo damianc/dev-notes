@@ -95,6 +95,46 @@ $$
 W^4_{10} + W^5_{10} + W^6_{10} = 1\ 110\ 000
 $$
 
-<!--
 ### Multiplication (AND conditions)
--->
+
+We are constructing a speedway team for a round. We need to select 2 out of 4 riders **AND** 2 motorcycles out of 6 available. How many ways can we make the selection?
+
+- **part 1:** players
+
+$$
+C^2_4 = \binom{4}{2} = 6
+$$
+
+- **part 2:** motorcycles
+
+$$
+C^2_6 = \binom{6}{2} = 15
+$$
+
+- **result**
+
+$$
+C^2_4 \times C^2_6 = 90
+$$
+
+----
+
+What is the number of codes with the pattern _DIGIT-DIGIT-DIGIT-DIGIT-LETTER-LETTER_ (i.e., codes consisting of 4 digits **AND** 2 letters)?
+
+- **part 1:** 4 digits
+
+$$
+W^4_{10} = 10^4 = 10\ 000
+$$
+
+- **part 2:** 2 letters
+
+$$
+W^2_{26} = 26^2 = 676
+$$
+
+- **result**
+
+$$
+W^4_{10} \times W^2_{26} = 6\ 760\ 000
+$$
