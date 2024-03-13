@@ -41,3 +41,60 @@ $$
       - **NO**: _combination_
 
 > `(a,b)` and `(b,a)` in a combination are considered equal, in a variation - not.
+
+## Complex examples
+
+### Addition (OR conditions)
+
+How many ways can you construct a team from 10 volunteers, assuming the team consists of **2 OR 3** players?
+
+- **case 1:** the team consists of 2 players
+
+$$
+C_{10}^2 = \binom{10}{2} = 45
+$$
+
+- **case 2:** the team consists of 3 players
+
+$$
+C_{10}^3 = \binom{10}{3} = 120
+$$
+
+- **result**
+
+$$
+C^2_{10} + C^3_{10} = 165
+$$
+
+----
+
+How many codes of length 4-6 are there (i.e., codes whose length is **4 OR 5 OR 6**)?
+
+- **case 1:** 4-digit codes
+
+$$
+W^4_{10} = 10^4 = 10\ 000
+$$
+
+- **case 2:** 5-digit codes
+
+
+$$
+W^5_{10} = 10^5 = 100\ 000
+$$
+
+- **case 3:** 6-digit codes
+
+$$
+W^6_{10} = 10^6 = 1\ 000\ 000
+$$
+
+- **result**
+
+$$
+W^4_{10} + W^5_{10} + W^6_{10} = 1\ 110\ 000
+$$
+
+<!--
+### Multiplication (AND conditions)
+-->
