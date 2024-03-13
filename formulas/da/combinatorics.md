@@ -139,7 +139,7 @@ $$
 W^4_{10} \times W^2_{26} = 6\ 760\ 000
 $$
 
-## More complex example
+## More complex examples
 
 How many ways can the results list of a speedway round be presented, considering that not all riders may reach the finish line?
 
@@ -165,3 +165,73 @@ How many ways can the results list of a speedway round be presented, considering
 |  | number of ways to order 0 riders | $P_0 = 0! = 1$ |
 |  | result for the case | $\Omega_5 = 1 \times P_0 = 1$ |
 | **RESULT** |  | $$\sum_{i=1}^5 \Omega_i = 65$$ |
+
+----
+
+A number of 4-digit codes, the first 3 digits of which may be repeated, but the last digit must be unique.
+
+- **case 1:**  all three digits equal $\implies$ **1** digit used ($\delta$), **9** to use ($\mu$), **1** variant of distribution ($\partial$) - all equal
+
+$$
+\begin{cases}
+\delta=1
+\\
+\mu=9
+\\
+\partial=1
+\end{cases}
+\quad\quad
+\begin{cases}
+V^{\delta}\_{10} = V^1_{10} = 10
+\\
+\Omega_1 = V^1_{10} \cdot \mu
+\\
+\Omega_1 = 10 \cdot 9 = 90
+\end{cases}
+$$
+
+- **case 2:**  two digits equal $\implies$ **2** digits used ($\delta$), **8** to use ($\mu$), **3** variants of distribution ($\partial$): _AAB, ABA, BAA_
+
+$$
+\begin{cases}
+\delta=2
+\\
+\mu=8
+\\
+\partial=3
+\end{cases}
+\quad\quad
+\begin{cases}
+V^{\delta}\_{10} = V^2_{10} = 10 \cdot 9 = 90
+\\
+\Omega_2 = \partial(V^2_{10} \cdot \mu)
+\\
+\Omega_2 = 3(90 \cdot 8) = 2160
+\end{cases}
+$$
+
+- **case 3:**  all three digits are different $\implies$ **3** digits used ($\delta$), **7** to use ($\mu$), **1** variant of distribution ($\partial$) - all are different
+
+$$
+\begin{cases}
+\delta=3
+\\
+\mu=7
+\\
+\partial=1
+\end{cases}
+\quad\quad
+\begin{cases}
+V^{\delta}\_{10} = V^3_{10} = 10 \cdot 9 \cdot 8 = 720
+\\
+\Omega_3 = V^3_{10} \cdot \mu
+\\
+\Omega_3 = 10 \cdot 9 = 720 \cdot 7 = 5040
+\end{cases}
+$$
+
+- **result:**
+
+$$
+\sum_{i=1}^3 \Omega_i = 7290
+$$
