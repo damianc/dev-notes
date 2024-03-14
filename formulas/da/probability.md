@@ -15,3 +15,6 @@
 | intersection of events $A$ and $B$ (events $A$ and $B$ occur simultaneously) | $A \cap B$ | $A \cap C = \\{T\\}$ | $A \cap C = \\{2\\}$ |
 | difference of events $A$ and $B$ (event $A$ occurs and event $B$ does not occur) | $A \setminus B$ | $A \setminus B = \\{T\\}$ | $A \setminus B = \\{4,6\\}$ |
 | event $A$ implies event $B$ | $A \subset B$ | $A \subset C$ | $B \subset A$ |
+| events $A$ and $B$ are mutually exclusive (mutually exclusive events) | $A \cap B = \varnothing$ | $A \cap B = \varnothing$ | $A \cap D = \varnothing$ |
+| event opposite to event $A$ | $A' = \Omega \setminus A$ | $A'=B$ | $A'=D$ |
+| probability of event $A$ (classical definition of probability) | $p = P(A) = \frac{m}{n}$ | $P(A)=P(B)=\frac{1}{2}$, $P(C)=\frac{2}{2}=1$ | $P(A)=P(D)=\frac{1}{2}$, $P(B)=\frac{1}{6}$, $P(C)=\frac{1}{3}$ |
