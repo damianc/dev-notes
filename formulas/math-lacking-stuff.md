@@ -24,6 +24,22 @@ function log(x, n) {
 }
 ```
 
+## Tetration
+
+$$
+^n a = a^{{a^{a^a}} {\large \\}} n} \neq \overset{{\ \ \ \ \ \ \ \ \small \dots \times n}}{((a^a)^a)^a}
+$$
+
+```
+function tetration(a, n) {
+  if (n === 0) return 1;
+
+  let res = a;
+  for (; --n; ) res = a**res;
+  return res;
+}
+```
+
 ## Clamp value in a range
 
 $$
