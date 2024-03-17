@@ -21,7 +21,7 @@ $$
 \begin{array}{ccccr}
 A && \rightarrow && B && \rightarrow && C
 \\
-\uparrow && && \downarrow && && \downarrow
+\uparrow && && \downarrow && \nearrow && \downarrow
 \\
 D && \leftarrow && E && \leftarrow && \\_|
 \end{array}
