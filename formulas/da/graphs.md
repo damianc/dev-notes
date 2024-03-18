@@ -110,4 +110,8 @@ D && \rightarrow && E && \rightarrow && \\_|
 \end{array}
 $$
 
+> Undirected graphs are not changed.
+> 
 > Weights in a weighted graph are not changed, only directions are reversed.
+>
+> If multiple edges connect one vertex to other, all are reversed in direction.
