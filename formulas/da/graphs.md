@@ -17,6 +17,40 @@
 
 ## Adjacency Matrix
 
+### Undirected Graph
+
+The following graph:
+
+$$
+\begin{array}{ccccr}
+A && - && B && - && C
+\\
+| && && | && && |
+\\
+D && - && E && - && \\_|
+\end{array}
+$$
+
+may be represented by the following matrix:
+
+$$
+\begin{bmatrix}
+0 && 1 && 0 && 0 && 0
+\\
+1 && 0 && 1 && 0 && 1
+\\
+0 && 1 && 0 && 0 && 1
+\\
+0 && 0 && 0 && 0 && 1
+\\
+0 && 1 && 1 && 1 && 0
+\end{bmatrix}
+$$
+
+### Directed Graph
+
+The following graph:
+
 $$
 \begin{array}{ccccr}
 A && \rightarrow && B && \rightarrow && C
