@@ -116,7 +116,9 @@ $$
 >
 > If multiple edges connect one vertex to other, all are reversed in direction.
 
-## Weights
+### Weighted Graph
+
+The following weighted graph:
 
 $$
 \begin{array}{ccccr}
@@ -126,4 +128,25 @@ A && \overset{4}{\rightarrow} && B && \overset{6}{\rightarrow} && C
 \\
 D && \underset{2}{\leftarrow} && E && \underset{3}{\leftarrow} && \\_|
 \end{array}
+$$
+
+is reflected by the following matrix:
+
+$$
+\left[
+\begin{array}{c|ccccc}
+&& \color{#aaa}{A} && \color{#aaa}{B} && \color{#aaa}{C} && \color{#aaa}{D} && \color{#aaa}{E}
+\\
+\hline
+\color{#aaa}{A} && 0 && 4 && 0 && 0 && 0
+\\
+\color{#aaa}{B} && 0 && 0 && 6 && 0 && 8
+\\
+\color{#aaa}{C} && 0 && 0 && 0 && 0 && 3
+\\
+\color{#aaa}{D} && 5 && 0 && 0 && 0 && 0
+\\
+\color{#aaa}{E} && 0 && 0 && 10 && 2 && 0
+\end{array}
+\right]
 $$
