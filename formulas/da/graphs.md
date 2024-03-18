@@ -34,17 +34,22 @@ $$
 may be represented by the following matrix:
 
 $$
-\begin{bmatrix}
-0 && 1 && 0 && 0 && 0
+\left[
+\begin{array}{c|ccccc}
+&& \color{#aaa}{A} && \color{#aaa}{B} && \color{#aaa}{C} && \color{#aaa}{D} && \color{#aaa}{E}
 \\
-1 && 0 && 1 && 0 && 1
+\hline
+\color{#aaa}{A} && 0 && 1 && 0 && 0 && 0
 \\
-0 && 1 && 0 && 0 && 1
+\color{#aaa}{B} && 1 && 0 && 1 && 0 && 1
 \\
-0 && 0 && 0 && 0 && 1
+\color{#aaa}{C} && 0 && 1 && 0 && 0 && 1
 \\
-0 && 1 && 1 && 1 && 0
-\end{bmatrix}
+\color{#aaa}{D} && 0 && 0 && 0 && 0 && 1
+\\
+\color{#aaa}{E} && 0 && 1 && 1 && 1 && 0
+\end{array}
+\right]
 $$
 
 ### Directed Graph
