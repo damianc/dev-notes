@@ -109,3 +109,5 @@ A && \leftarrow && B && \leftarrow && C
 D && \rightarrow && E && \rightarrow && \\_|
 \end{array}
 $$
+
+> Weights in a weighted graph are not changed, only directions are reversed.
