@@ -69,7 +69,7 @@ $$
 may be represented by the following matrix:
 
 $$
-\begin{bmatrix}
+A = \begin{bmatrix}
 0 && 1 && 0 && 0 && 0
 \\
 0 && 0 && 1 && 0 && 1
@@ -80,4 +80,32 @@ $$
 \\
 0 && 0 && 1 && 1 && 0
 \end{bmatrix}
+$$
+
+#### Transpose Matrix
+
+$$
+A^T = \begin{bmatrix}
+0 && 0 && 0 && 1 && 0
+\\
+1 && 0 && 0 && 0 && 0
+\\
+0 && 1 && 0 && 0 && 1
+\\
+0 && 0 && 0 && 0 && 1
+\\
+0 && 1 && 1 && 0 && 0
+\end{bmatrix}
+$$
+
+represents the original matrix with all edges having reversed direction:
+
+$$
+\begin{array}{ccccr}
+A && \leftarrow && B && \leftarrow && C
+\\
+\downarrow && && \uparrow && \swarrow && \uparrow
+\\
+D && \rightarrow && E && \rightarrow && \\_|
+\end{array}
 $$
