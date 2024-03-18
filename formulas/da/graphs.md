@@ -15,7 +15,7 @@
 | Two-Way Directed |  $$\overset{m}{-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!\rightarrow}\atop\underset{n}{\leftarrow\- \- \- \-}$$ | $$\overset{}{-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!\rightarrow}\atop\underset{}{\leftarrow\- \- \- \-}$$ |
 | Undirected |  $$\overset{m}{-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!\-}\atop\underset{n}{\- \- \- \- \-}$$ | $$\overset{}{-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!-\\!\\!\\!-}\atop\underset{}{\- \- \- \- \-}$$ |
 
-## Chart
+## Adjacency Matrix
 
 $$
 \begin{array}{ccccr}
@@ -25,4 +25,20 @@ A && \rightarrow && B && \rightarrow && C
 \\
 D && \leftarrow && E && \leftarrow && \\_|
 \end{array}
+$$
+
+may be represented by the following matrix:
+
+$$
+\begin{bmatrix}
+0 && 1 && 0 && 0 && 0
+\\
+0 && 0 && 1 && 0 && 1
+\\
+0 && 0 && 0 && 0 && 1
+\\
+1 && 0 && 0 && 0 && 0
+\\
+0 && 0 && 1 && 1 && 0
+\end{bmatrix}
 $$
