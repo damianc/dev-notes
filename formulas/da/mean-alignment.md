@@ -2,14 +2,14 @@
 
 ## New value $\nabla$ to get mean $\hat{x}$
 
-| Type | Formula |
-|--|--|
-| $\nabla_A$ | $$\hat{x}(n+1)-\Sigma x$$ |
-| $\nabla_G$ | $$\frac{\hat{x}^{n+1}}{\Pi x}$$ |
-| $\nabla_H$ | $$\left(\frac{n+1}{\hat{x}}-\sum \frac{1}{x}\right)^{-1}$$ |
-| $\nabla_P$ | $$\sqrt[P]{\hat{x}^P(n+1)-\Sigma x^P}$$ |
-| $\nabla_R$ | $$\left(\sqrt[d]{\hat{x}}(n+1)-\Sigma \sqrt[d]{x}\right)^d$$ |
-| $\nabla_L$ | $$B^{\ln(\hat{x})(n+1)-\Sigma \log_B(x)}$$ |
+| Type | Formula | Formula by mean $\overline{x}$ |
+|--|--|--|
+| $\nabla_A$ | $$\hat{x}(n+1)-\Sigma x$$ | $$\hat{x}(n+1)-n\cdot\overline{x}$$ |
+| $\nabla_G$ | $$\frac{\hat{x}^{n+1}}{\Pi x}$$ | $$\frac{\hat{x}^{n+1}}{\overline{x}^n}$$ |
+| $\nabla_H$ | $$\left(\frac{n+1}{\hat{x}}-\sum \frac{1}{x}\right)^{-1}$$ | $$\left(\frac{n+1}{\hat{x}}-\frac{n}{\overline{x}}\right)^{-1}$$ |
+| $\nabla_P$ | $$\sqrt[P]{\hat{x}^P(n+1)-\Sigma x^P}$$ | $$\sqrt[P]{\hat{x}^P (n+1) - n \cdot \overline{x}^P}$$ |
+| $\nabla_R$ | $$\left(\sqrt[d]{\hat{x}}(n+1)-\Sigma \sqrt[d]{x}\right)^d$$ | $$\left(\sqrt[d]{\hat{x}} (n+1) - n \cdot \sqrt[d]{\overline{x}}\right)^d$$ |
+| $\nabla_L$ | $$B^{\ln(\hat{x})(n+1)-\Sigma \log_B(x)}$$ | $$B^{(n+1)\ln(\hat{x})-n \cdot \ln(\overline{x})}$$ |
 
 ## New value $\nabla$ with weight $\lambda$ to get mean $\hat{x}$
 
