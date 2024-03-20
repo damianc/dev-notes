@@ -9,7 +9,7 @@
 | $\nabla_H$ | $$\left(\frac{n+1}{\hat{x}}-\sum \frac{1}{x}\right)^{-1}$$ | $$\left(\frac{n+1}{\hat{x}}-\frac{n}{\overline{x}}\right)^{-1}$$ |
 | $\nabla_P$ | $$\sqrt[P]{\hat{x}^P(n+1)-\Sigma x^P}$$ | $$\sqrt[P]{\hat{x}^P (n+1) - n \cdot \overline{x}^P}$$ |
 | $\nabla_R$ | $$\left(\sqrt[d]{\hat{x}}(n+1)-\Sigma \sqrt[d]{x}\right)^d$$ | $$\left(\sqrt[d]{\hat{x}} (n+1) - n \cdot \sqrt[d]{\overline{x}}\right)^d$$ |
-| $\nabla_L$ | $$B^{\ln(\hat{x})(n+1)-\Sigma \log_B(x)}$$ | $$B^{(n+1)\ln(\hat{x})-n \cdot \ln(\overline{x})}$$ |
+| $\nabla_L$ | $$B^{(n+1)\ln(\hat{x})-\Sigma \log_B(x)}$$ | $$B^{(n+1)\ln(\hat{x})-n \cdot \ln(\overline{x})}$$ |
 
 ## New value $\nabla$ with weight $\lambda$ to get mean $\hat{x}$
 
