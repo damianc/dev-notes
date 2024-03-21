@@ -185,3 +185,37 @@ $$
 \end{vmatrix}
 $$
 ```
+
+## Labelled Matrix
+
+$$
+\begin{array}{c|ccc}
+& \color{#aaa}{A}
+& \color{#aaa}{B}
+& \color{#aaa}{C}
+\\
+\hline
+\color{#aaa}{A} & 0 & 1 & 0
+\\
+\color{#aaa}{B} & 0 & 0 & 1
+\\
+\color{#aaa}{C} & 1 & 0 & 0
+\end{array}
+$$
+
+```
+$$
+\begin{array}{c|ccc}
+  & \color{#aaa}{A}
+  & \color{#aaa}{B}
+  & \color{#aaa}{C}
+  \\
+  \hline
+  \color{#aaa}{A} & 0 & 1 & 0
+  \\
+  \color{#aaa}{B} & 0 & 0 & 1
+  \\
+  \color{#aaa}{C} & 1 & 0 & 0
+\end{array}
+$$
+```
