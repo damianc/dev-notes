@@ -59,18 +59,23 @@ Possible variants
 
 include:
 
-- `[` with `]`
-- `(` with `)`
-- `\\{` with `\\}`
-- `\langle` with `\rangle` (or `<` with `>`)
-- `\rangle` with `\langle` (or `>` with `<`)
-- `\vert` with `\vert` (or `|` with `|`)
-- `\Vert` with `\Vert`
-- `\lgroup` with `\rgroup`
-- `\rmoustache` with `\lmoustache`
-- `\lfloor` with `\rceil`
-- `[` (or other char) with `.` (left side only)
-- `.` with `]` (or other char) (right side only)
+| Chars | Preview |
+|--|--|
+| `[` with `]` | $[\cdots]$ |
+| `(` with `)` | $(\cdots)$ |
+| `\\{` with `\\}` | $\\{\cdots\\}$ |
+| `\langle` with `\rangle` (or `<` with `>`) | $\langle\cdots\rangle$ |
+| `\rangle` with `\langle` (or `>` with `<`) | $\rangle\cdots\langle$ |
+| `\vert` with `\vert` (or `\|` with `\|`) | $\vert\cdots\vert$ |
+| `\Vert` with `\Vert` | $\Vert\cdots\Vert$ |
+| `\lgroup` with `\rgroup` | $\lgroup\cdots\rgroup$ |
+| `\lmoustache` with `\rmoustache` | $\lmoustache\cdots\rmoustache$ |
+| `\rmoustache` with `\lmoustache` | $\rmoustache\cdots\lmoustache$ |
+| `\lceil` with `\rceil` | $\lceil\cdots\rceil$ |
+| `\lfloor` with `\rfloor` | $\lfloor\cdots\rfloor$ |
+| `\lfloor` with `\rceil` | $\lfloor\cdots\rceil$ |
+| `\\{` (or other char) with `.` (left side only) | $\\{\cdots$ |
+| `.` with `\\}` (or other char) (right side only) | $\cdots\\}$ |
 
 ## Horizontal and Vertical Lines
 
