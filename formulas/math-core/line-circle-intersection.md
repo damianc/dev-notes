@@ -17,6 +17,24 @@ $$
 c = a^2 + b^2 + i^2 - r^2 - 2ib
 $$
 
+----
+
+### Special Case: X-axis as Line
+
+$$
+a = 1
+$$
+
+$$
+b = -2a
+$$
+
+$$
+c = a^2+b^2-r^2
+$$
+
+----
+
 $$
 \Delta = b^2 - 4ac
 $$
