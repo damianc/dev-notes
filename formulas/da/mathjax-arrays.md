@@ -59,7 +59,7 @@ include:
 - `\Vert` with `\Vert`
 - `\lfloor` with `\rceil`
 
-## Horizontal and vertical lines
+## Horizontal and Vertical Lines
 
 $$
 \begin{array}{c|ccc}
