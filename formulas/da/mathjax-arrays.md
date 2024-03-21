@@ -1,5 +1,49 @@
 # MathJax Arrays
 
+$$
+\begin{array}{c}
+1 & 2 & 3
+\\
+4 & 5 & 6
+\end{array}
+$$
+
+```
+$$
+\begin{array}{c}
+  1 & 2 & 3
+  \\
+  4 & 5 & 6
+\end{array}
+$$
+```
+
+## Horizontal and vertical lines
+
+$$
+\begin{array}{c|ccc}
+x & 2 & 3 & 4
+\\
+y & 6 & 7 & 8
+\\
+\hline
+& x_2 & x_3 & x_4
+\end{array}
+$$
+
+```
+$$
+\begin{array}{c|ccc}
+  x & 2 & 3 & 4
+  \\
+  y & 6 & 7 & 8
+  \\
+  \hline
+  & x_2 & x_3 & x_4
+\end{array}
+$$
+```
+
 ## Nested Arrays
 
 $$
