@@ -91,6 +91,11 @@ $$
 
 ## Double Edges
 
+| Expression | Meaning |
+|--|--|
+| `@=` | double horizontal edge |
+| `@\|` | double vertical edge |
+
 $$
 \begin{CD}
 A @= A_1
