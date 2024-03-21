@@ -66,6 +66,8 @@ include:
 - `\rangle` with `\langle` (or `>` with `<`)
 - `\vert` with `\vert` (or `|` with `|`)
 - `\Vert` with `\Vert`
+- `\lgroup` with `\rgroup`
+- `\rmoustache` with `\lmoustache`
 - `\lfloor` with `\rceil`
 - `[` (or other char) with `.` (left side only)
 - `.` with `]` (or other char) (right side only)
