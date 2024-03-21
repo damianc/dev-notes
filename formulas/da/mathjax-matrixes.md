@@ -255,7 +255,7 @@ $$
 ```
 
 $$
-\begin{array}{ccccr}
+\begin{matrix}
   A &&
   \overset{4}{\rightarrow} &&
   B &&
@@ -273,12 +273,12 @@ $$
   E &&
   \underset{3}{\leftarrow} &&
   \\_|
-\end{array}
+\end{matrix}
 $$
 
 ```
 $$
-\begin{array}{ccccr}
+\begin{matrix}
   A &&
   \overset{4}{\rightarrow} &&
   B &&
@@ -296,6 +296,6 @@ $$
   E &&
   \underset{3}{\leftarrow} &&
   \\_|
-\end{array}
+\end{matrix}
 $$
 ```
