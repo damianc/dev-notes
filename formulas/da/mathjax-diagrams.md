@@ -1,27 +1,5 @@
 # Diagrams
 
-<!--
-$$
-\begin{CD}
-A @>ab>> B @= X
-\\
-@A da AA = @VVbcV @|
-\\
-D @<< cd < C @. Y
-\end{CD}
-$$
-
-$$
-\begin{CD}
-A @>ab>> B @= X @= Y
-\\
-@A da AA = @VVbcV  @. @|
-\\
-D @<< cd < C  @.  @. Z
-\end{CD}
-$$
--->
-
 ## Horizontal Direction
 
 $$
@@ -109,4 +87,131 @@ $$
 
 ```
 @V [left] V [right] V
+```
+
+## Double Edges
+
+$$
+\begin{CD}
+A @= A_1
+\\
+@|
+\\
+A_2
+\end{CD}
+$$
+
+```
+$$
+\begin{CD}
+  A @= A_1
+  \\
+  @|
+  \\
+  A_2
+\end{CD}
+$$
+```
+
+$$
+\begin{CD}
+A @= A_1
+\\
+@. @|
+\\
+@. A_1^2
+\end{CD}
+$$
+
+```
+$$
+  \begin{CD}
+  A @= A_1
+  \\
+  @. @|
+  \\
+  @. A_1^2
+\end{CD}
+$$
+```
+
+## Complex Diagrams
+
+| Expression | Meaning |
+|--|--|
+| `\\` | break line |
+| `@.` | skip column |
+
+$$
+\begin{CD}
+A @>>> B @>>> C
+\\
+@. @. @VVV
+\\
+H @<<< G @. D
+\\
+@. @AAA @VVV
+\\
+@. F @<<< E
+\end{CD}
+$$
+
+```
+$$
+\begin{CD}
+  A @>>> B @>>> C
+  \\
+  @. @. @VVV
+  \\
+  H @<<< G @. D
+  \\
+  @. @AAA @VVV
+  \\
+  @. F @<<< E
+\end{CD}
+$$
+```
+
+$$
+\begin{CD}
+A @>ab>> B @= X
+\\
+@A da AA = @VVbcV @|
+\\
+D @<< cd < C @. Z
+\end{CD}
+$$
+
+```
+$$
+\begin{CD}
+  A @>ab>> B @= X
+  \\
+  @A da AA = @VVbcV @|
+  \\
+  D @<< cd < C @. Z
+\end{CD}
+$$
+```
+
+$$
+\begin{CD}
+A @>ab>> B @= X @>>> Y
+\\
+@A da AA = @VVbcV  @. @VVV
+\\
+D @<< cd < C  @.  @. Z
+\end{CD}
+$$
+
+```
+$$
+\begin{CD}
+  A @>ab>> B @= X @>>> Y
+  \\
+  @A da AA = @VVbcV  @. @VVV
+  \\
+  D @<< cd < C  @.  @. Z
+\end{CD}
+$$
 ```
