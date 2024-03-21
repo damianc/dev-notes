@@ -1,5 +1,13 @@
 # MathJax Arrays
 
+- [Basic Array](#basic-array)
+- [Surrounding](#surrounding)
+- [Horizontal and Vertical Lines](#horizontal-and-vertical-lines)
+- [Aligning](#aligning)
+- [Nested Arrays](#nested-arrays)
+
+## Basic Array
+
 $$
 \begin{array}{c}
 1 & 2 & 3
