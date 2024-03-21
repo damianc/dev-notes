@@ -58,6 +58,8 @@ include:
 - `\vert` with `\vert` (or `|` with `|`)
 - `\Vert` with `\Vert`
 - `\lfloor` with `\rceil`
+- `[` (or other char) with `.` (left side only)
+- `.` with `]` (or other char) (right side only)
 
 ## Horizontal and Vertical Lines
 
@@ -82,6 +84,36 @@ $$
   \hline
   & x_2 & x_3 & x_4
 \end{array}
+$$
+```
+
+## Aligning
+
+$$
+f(x) =
+\left\\{
+\begin{array}{rl}
+1 & \text{if $x \gt 0$}
+\\
+-1 & \text{if $x \lt 0$}
+\\
+0 & \text{otherwise}
+\end{array}
+\right.
+$$
+
+```
+$$
+f(x) =
+\left\\{
+  \begin{array}{rl}
+    1 & \text{if $x \gt 0$}
+    \\
+    -1 & \text{if $x \lt 0$}
+    \\
+    0 & \text{otherwise}
+  \end{array}
+\right.
 $$
 ```
 
