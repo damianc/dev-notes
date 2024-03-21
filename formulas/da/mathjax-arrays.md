@@ -117,6 +117,42 @@ f(x) =
 $$
 ```
 
+$$
+f(x) =
+\left\\{
+\begin{array}{rl}
+x=0 \implies & 0
+\\
+x \neq 0 \implies & \left\\{
+\begin{array}{lr}
+x \gt 0 \implies & 1
+\\
+x \lt 0 \implies & -1
+\end{array}
+\right.
+\end{array}
+\right.
+$$
+
+```
+$$
+f(x) =
+\left\\{
+  \begin{array}{rl}
+    x=0 \implies & 0
+    \\
+    x \neq 0 \implies & \left\\{
+      \begin{array}{lr}
+        x \gt 0 \implies & 1
+        \\
+        x \lt 0 \implies & -1
+      \end{array}
+    \right.
+  \end{array}
+\right.
+$$
+```
+
 ## Nested Arrays
 
 $$
