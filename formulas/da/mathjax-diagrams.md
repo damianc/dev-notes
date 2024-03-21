@@ -203,7 +203,7 @@ $$
 \begin{CD}
 A @>ab>> B @= X @>>> Y
 \\
-@A da AA = @VVbcV  @. @VVV
+@A da AA @VVbcV  @. @VVV
 \\
 D @<< cd < C  @.  @. Z
 \end{CD}
@@ -214,7 +214,7 @@ $$
 \begin{CD}
   A @>ab>> B @= X @>>> Y
   \\
-  @A da AA = @VVbcV  @. @VVV
+  @A da AA @VVbcV  @. @VVV
   \\
   D @<< cd < C  @.  @. Z
 \end{CD}
