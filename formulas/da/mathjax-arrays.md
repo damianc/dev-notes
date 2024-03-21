@@ -5,6 +5,7 @@
 - [Horizontal and Vertical Lines](#horizontal-and-vertical-lines)
 - [Aligning](#aligning)
 - [Nested Arrays](#nested-arrays)
+- [Simulating Graphs](#simulating-graphs)
 
 ## Basic Array
 
@@ -229,5 +230,75 @@ $$
     \right]
   \end{array}
 \right]
+$$
+```
+
+## Simulating Graphs
+
+$$
+\begin{array}{c}
+A & \rightarrow & B
+\\
+& \nwarrow & \downarrow & \searrow
+\\
+&& C & \leftarrow & D
+\end{array}
+$$
+
+```
+$$
+\begin{array}{c}
+  A & \rightarrow & B
+  \\
+  & \nwarrow & \downarrow & \searrow
+  \\
+  && C & \leftarrow & D
+\end{array}
+$$
+```
+
+$$
+\begin{array}{ccccr}
+  A &&
+  \overset{4}{\rightarrow} &&
+  B &&
+  \overset{6}{\rightarrow} &&
+  C
+  \\
+  ^5 \uparrow &&
+  &&
+  \downarrow^8 &&
+  \nearrow_{10} &&
+  \downarrow
+  \\
+  D &&
+  \underset{2}{\leftarrow} &&
+  E &&
+  \underset{3}{\leftarrow} &&
+  \\_|
+\end{array}
+$$
+
+```
+$$
+\begin{array}{ccccr}
+  A &&
+  \overset{4}{\rightarrow} &&
+  B &&
+  \overset{6}{\rightarrow} &&
+  C
+  \\
+  ^5 \uparrow &&
+  &&
+  \downarrow^8 &&
+  \nearrow_{10} &&
+  \downarrow
+  \\
+  D &&
+  \underset{2}{\leftarrow} &&
+  E &&
+  \underset{3}{\leftarrow} &&
+  \\_|
+\end{array}
 $$
 ```
