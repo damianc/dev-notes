@@ -1,5 +1,15 @@
 # MathJax Matrixes
 
+- [Basic Matrix](#basic-matrix)
+- [Types of Matrixes](#types-of-matrixes)
+- [Horizontal Lines](#horizontal-lines)
+- [Matrix with Dots](#matrix-with-dots)
+- [Nested Matrixes](#nested-matrixes)
+- [Labelled Matrix](#labelled-matrix)
+- [Simulating Graphs](#simulating-graphs)
+
+## Basic Matrix
+
 $$
 \begin{matrix}
 a & b
