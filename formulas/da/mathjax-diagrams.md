@@ -3,11 +3,21 @@
 <!--
 $$
 \begin{CD}
-A @>a_1>a_2> B @= X
+A @>ab>> B @= X
 \\
-@A d_1 A d_2 A = @VVbV @|
+@A da AA = @VVbcV @|
 \\
-D @<< c < C @. Y
+D @<< cd < C @. Y
+\end{CD}
+$$
+
+$$
+\begin{CD}
+A @>ab>> B @= X @= Y
+\\
+@A da AA = @VVbcV  @. @|
+\\
+D @<< cd < C  @.  @. Z
 \end{CD}
 $$
 -->
