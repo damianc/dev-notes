@@ -11,6 +11,17 @@
 | $\nabla_R$ | $$\left(\sqrt[d]{\hat{x}}(n+1)-\Sigma \sqrt[d]{x}\right)^d$$ | $$\left(\sqrt[d]{\hat{x}} (n+1) - n \cdot \sqrt[d]{\overline{x}}\right)^d$$ |
 | $\nabla_L$ | $$B^{(n+1)\ln(\hat{x})-\Sigma \log_B(x)}$$ | $$B^{(n+1)\ln(\hat{x})-n \cdot \ln(\overline{x})}$$ |
 
+### New value $\nabla$ to get mean bigger/smaller $m$ times
+
+| Type | Mean $\times m$ bigger | Mean $\times m$ smaller |
+|--|--|--|
+| $\nabla_A$ | $$(m(n+1)-n)\overline{x}$$ | $$\left(\frac{n+1}{m}-n\right)\overline{x}$$ |
+| $\nabla_G$ | $$\overline{x}m^{n+1}$$ | $$\frac{\overline{x}}{m^{n+1}}$$ |
+| $\nabla_H$ | $$\frac{m\overline{x}}{(1-m)n+1}$$ | $$\frac{\overline{x}}{(n+1)m-n}$$ |
+| $\nabla_P$ | $$[(n+1)m^P-n]\overline{x}^P$$ | $$\left(\frac{n+1}{m^P}-n\right)\overline{x}^P$$ |
+| $\nabla_R$ | $$\overline{x} \cdot [(n+1)\sqrt[d]{m}-n]^d$$ | $$\overline{x} \cdot \left(\frac{n+1}{\sqrt[d]{m}}-n\right)^d$$ |
+| $\nabla_L$ | $$\large B^{\ln(\overline{x}m^{n+1})}$$ | $$\large B^{\ln\left(\frac{\overline{x}}{m^{n+1}}\right)}$$ |
+
 ## New value $\nabla$ with weight $\lambda$ to get mean $\hat{x}$
 
 $$
