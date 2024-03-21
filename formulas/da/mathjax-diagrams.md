@@ -57,7 +57,7 @@ $$
 | right | top and bottom| `p @> T > B > q` |
 -->
 
-# Vertical Direction
+## Vertical Direction
 
 $$
 \begin{CD}
