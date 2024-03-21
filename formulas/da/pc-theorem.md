@@ -16,3 +16,10 @@
 | Symbol | Meaning |
 |--|--|
 | $$\sum_{i=1}^{\overline{\overline{A}}} \\!\\!\\!\\! \varnothing \quad \\{ \ldots \\}$$ | iteration |
+| $$^{\text{iter:}} \sum_{i=1}^{\overline{\overline{A}}} \\!\\!\\!\\! \varnothing \quad \\{ \ldots \\}$$ | named iteration |
+| $$\circlearrowright$$ | skip this iteration and continue |
+| $$\dashv$$ | stop and exit from loop |
+| $$\curvearrowright$$ | _continue_ parent loop |
+| $$\overset{\text{iter}}{\curvearrowright}$$ | _continue_ given loop |
+| $$\curvearrowleft$$ | _break_ parent loop |
+| $$\overset{\text{iter}}{\curvearrowleft}$$ | _break_ given loop |
