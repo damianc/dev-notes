@@ -76,31 +76,41 @@ $$
 
 ```
 $$
-\left[\begin{array}{cc}
-  \left(\begin{array}{cc}
-    a & b
+\left[
+  \begin{array}{cc}
+    \left(
+      \begin{array}{cc}
+        a & b
+        \\
+        c & d
+      \end{array}
+    \right)
+    &
+    \left\\{
+      \begin{array}{cc}
+        a & b
+        \\
+        c & d
+      \end{array}
+    \right\\}_2^n
     \\
-    c & d
-  \end{array}\right)
-  &
-  \left\\{\begin{array}{cc}
-    a & b
-    \\
-    c & d
-  \end{array}\right\\}_2^n
-  \\
-  \left\|\begin{array}{c|c}
-    1 & 2
-    \\
-    \hline
-    3 & 4
-  \end{array}\right\|
-  &
-  \left[\begin{array}{cc|c}
-    a & b& +
-    \\
-    c &d & x
-  \end{array}\right]
-\end{array}\right]
+    \left\|
+      \begin{array}{c|c}
+        1 & 2
+        \\
+        \hline
+        3 & 4
+      \end{array}
+    \right\|
+    &
+    \left[
+      \begin{array}{cc|c}
+        a & b& +
+        \\
+        c &d & x
+      \end{array}
+    \right]
+  \end{array}
+\right]
 $$
 ```
