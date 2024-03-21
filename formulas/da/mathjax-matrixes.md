@@ -100,3 +100,88 @@ $$
 \end{matrix}
 $$
 ```
+
+## Matrix with Dots
+
+$$
+\begin{bmatrix}
+1_1 & \cdots & 1_n
+\\
+\vdots & \ddots & \vdots
+\\
+n_1 & \cdots & n_n
+\end{bmatrix}
+$$
+
+```
+
+$$
+\begin{bmatrix}
+  1_1 & \cdots & 1_n
+  \\
+  \vdots & \ddots & \vdots
+  \\
+  n_1 & \cdots & n_n
+\end{bmatrix}
+$$
+```
+
+## Nested Matrixes
+
+$$
+\begin{vmatrix}
+\begin{bmatrix}
+a_1 & a_2
+\\
+a_3 & a_4
+\end{bmatrix}
+&
+\begin{bmatrix}
+b_1 & b_2
+\\
+b_3 & c_4
+\end{bmatrix}
+\\
+\begin{bmatrix}
+c_1 & c_2
+\\
+c_3 & c_4
+\end{bmatrix}
+&
+\begin{bmatrix}
+d_1 & d_2
+\\
+d_3 & d_4
+\end{bmatrix}
+\end{vmatrix}
+$$
+
+```
+$$
+\begin{vmatrix}
+  \begin{bmatrix}
+    a_1 & a_2
+    \\
+    a_3 & a_4
+  \end{bmatrix}
+  &
+  \begin{bmatrix}
+    b_1 & b_2
+    \\
+    b_3 & c_4
+  \end{bmatrix}
+  \\
+  \begin{bmatrix}
+    c_1 & c_2
+    \\
+    c_3 & c_4
+  \end{bmatrix}
+  &
+  \begin{bmatrix}
+    d_1 & d_2
+    \\
+    d_3 & d_4
+  \end{bmatrix}
+\end{vmatrix}
+$$
+```
