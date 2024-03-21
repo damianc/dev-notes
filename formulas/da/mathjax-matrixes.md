@@ -219,3 +219,27 @@ $$
 \end{array}
 $$
 ```
+
+## Simulating Graphs
+
+$$
+\begin{matrix}
+A & \rightarrow & B
+\\
+& \nwarrow & \downarrow & \searrow
+\\
+&& C & \leftarrow & D
+\end{matrix}
+$$
+
+```
+$$
+\begin{matrix}
+  A & \rightarrow & B
+  \\
+  & \nwarrow & \downarrow & \searrow
+  \\
+  && C & \leftarrow & D
+\end{matrix}
+$$
+```
