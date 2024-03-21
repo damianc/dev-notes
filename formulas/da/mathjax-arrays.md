@@ -18,6 +18,47 @@ $$
 $$
 ```
 
+## Surrounding
+
+$$
+\left[
+\begin{array}{c}
+1 & 2 & 3
+\\
+4 & 5 & 6
+\end{array}
+\right]
+$$
+
+```
+$$
+\left[
+  \begin{array}{c}
+    1 & 2 & 3
+    \\
+    4 & 5 & 6
+  \end{array}
+\right]
+$$
+```
+
+Possible variants
+
+`\left`$\boxed{\large\cdot}$  
+`...`  
+`\right`$\boxed{\large\cdot}$
+
+include:
+
+- `[` with `]`
+- `(` with `)`
+- `\\{` with `\\}`
+- `\langle` with `\rangle` (or `<` with `>`)
+- `\rangle` with `\langle` (or `>` with `<`)
+- `\vert` with `\vert` (or `|` with `|`)
+- `\Vert` with `\Vert`
+- `\lfloor` with `\rceil`
+
 ## Horizontal and vertical lines
 
 $$
