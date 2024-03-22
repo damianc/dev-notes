@@ -6,6 +6,18 @@
 | exclude | $$\underset{i \in S}{{\large\Lsh}} \quad i \gt 10$$ | $$\underset{i \in S}{{\large\forall}} i \dashleftarrow i \gt 10$$ |
 | reduce | $$\underset{i \in S}{{\large\pitchfork}} \quad \partial + i $$ | $$\underset{i \in S}{{\large\forall}} i \looparrowright \partial + i$$ |
 
+## Pipe
+
+| Expression | Piped expression |
+|--|--|
+| $\sqrt{ax}$ | $\sqrt{\partial} \leftarrowtail ax$ |
+| $\frac{1}{ax}$ | $\frac{1}{\partial} \leftarrowtail ax$ |
+| $\sqrt{\frac{1}{ax}}$ | $\sqrt{\partial} \leftarrowtail \left(\frac{1}{\partial} \leftarrowtail ax\right)$ |
+
+> Counting items:
+>
+> $$n = \left\lgroup \overline{\overline{\partial}} \leftarrowtail \left[\underset{i \in S}{\large \Rsh} \quad i \gt 10\right] \right\rgroup$$
+
 ## Conditions
 
 | Symbol | Meaning |
