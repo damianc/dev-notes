@@ -19,3 +19,13 @@
 | `mathcal` | $\mathcal{ABC\ abc\ 123}$ |
 | `mathbb` | $\mathbb{ABC\ abc\ 123}$ |
 | `boldsymbol` | $\boldsymbol{ABC\ abc\ 123}$ |
+
+<!--
+$$
+\Bbb{ABC\ abc\ 123}
+\quad
+\pmb{ABC\ abc\ 123}
+\quad
+\text{ABC\ abc\ 123}
+$$
+-->
