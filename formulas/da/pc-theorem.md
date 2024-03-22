@@ -2,7 +2,9 @@
 
 | Operation | Notation G | Notation A |
 |--|--|--|
-| filter | $$\underset{i \in S}{{\large\Rsh}} i \gt 10$$ | $$\underset{i \in S}{{\large\forall}} i \dashrightarrow i \gt 10$$ |
+| filter | $$\underset{i \in S}{{\large\Rsh}} \quad i \gt 10$$ | $$\underset{i \in S}{{\large\forall}} i \dashrightarrow i \gt 10$$ |
+| exclude | $$\underset{i \in S}{{\large\Lsh}} \quad i \gt 10$$ | $$\underset{i \in S}{{\large\forall}} i \dashleftarrow i \gt 10$$ |
+| reduce | $$\underset{i \in S}{{\large\pitchfork}} \quad \partial + i $$ | $$\underset{i \in S}{{\large\forall}} i \looparrowright \partial + i$$ |
 
 ## Conditions
 
