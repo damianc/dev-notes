@@ -7,8 +7,8 @@
 | reduce | $$\underset{i \in S}{{\large\pitchfork}} \quad \partial + i $$ | $$\underset{i \in S}{{\large\forall}} i \looparrowright \partial + i$$ |
 | map | $$\underset{i \in S}{{\large\triangleright}} \quad i^2$$ | $$\underset{i \in S}{{\large\forall}} i \mapsto i^2$$ |
 | flat map | $$\underset{i \in S}{{\large\triangleright\triangleright}} \quad [i,i^2]$$ | $$\underset{i \in S}{{\large\forall}} i \twoheadrightarrow [i,i^2]$$ |
-| check _some_ | $$\underset{i \in S}{{\large\cup}} \quad i \gt 10$$ | |
-| check _every_ | $$\underset{i \in S}{{\large\cap}} \quad i \gt 10$$ | |
+| check _some_ | $$\underset{i \in S}{{\large\cup}} \quad i \gt 10$$ | $$\underset{i \in S}{{\large\forall}} i \cong i \gt 10$$ |
+| check _every_ | $$\underset{i \in S}{{\large\cap}} \quad i \gt 10$$ | $$\underset{i \in S}{{\large\forall}} i \equiv i \gt 10$$ |
 
 ## Pipe
 
