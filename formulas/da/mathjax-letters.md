@@ -56,3 +56,15 @@
 | $\beth$ | `\beth` |
 | $\daleth$ | `\daleth` |
 | $\gimel$ | `\gimel` |
+
+### Latin-like
+
+| Char | Symbol |
+|--|--|
+| $\forall$ | `\forall` |
+| $\complement$ | `\complement` |
+| $\exists$ | `\exists` |
+| $\digamma$ | `\digamma` |
+| $\Finv$ | `\Finv` |
+| $\Game$ | `\Game` |
+| $\intercal$ | `\intercal` |
