@@ -20,6 +20,20 @@
 | `mathbb` | $\mathbb{ABC\ abc\ 123}$ |
 | `boldsymbol` | $\boldsymbol{ABC\ abc\ 123}$ |
 
+## Font Size
+
+```
+{\SIZE text}
+```
+
+| Size | Preview |
+|--|--|
+| `small` | ${\small ABC\ abc}$ |
+| normal size | $ABC\ abc$ |
+| `large` | ${\large ABC\ abc}$ |
+| `Large` | ${\Large ABC\ abc}$ |
+| `LARGE` | ${\LARGE ABC\ abc}$ |
+
 <!--
 $$
 \Bbb{ABC\ abc\ 123}
