@@ -28,3 +28,31 @@
 | $\chi$ | `\chi` | $X$ | `X` | | |
 | $\psi$ | `\psi` | $\Psi$ | `\Psi` | $\varPsi$ | `\varPsi` |
 | $\omega$ | `\omega` | $\Omega$ | `\Omega` | $\varOmega$ | `\varOmega` |
+
+## Others
+
+### Greek-like
+
+| Char | Symbol |
+|--|--|
+| $\nabla$ | `\nabla` |
+| $\backepsilon$ | `\backepsilon` |
+| $\imath$ | `\imath` |
+| $\jmath$ | `\jmath` |
+| $\amalg$ | `\amalg` |
+| $\mho$ | `\mho` |
+
+### Additional
+
+| Char | Symbol |
+|--|--|
+| $\Im$ | `\Im` |
+| $\Re$ | `\Re` |
+| $\wp$ | `\wp` |
+| $\ell$ | `\ell` |
+| $\aleph$ | `\aleph` |
+| $\partial$ | `\partial` |
+| $\eth$ | `\eth` |
+| $\beth$ | `\beth` |
+| $\daleth$ | `\daleth` |
+| $\gimel$ | `\gimel` |
