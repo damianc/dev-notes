@@ -28,6 +28,8 @@
 
 | Size | Preview |
 |--|--|
+| `tiny` | ${\tiny ABC\ abc}$ |
+| `Tiny` | ${\Tiny ABC\ abc}$ |
 | `small` | ${\small ABC\ abc}$ |
 | normal size | $ABC\ abc$ |
 | `large` | ${\large ABC\ abc}$ |
