@@ -63,8 +63,14 @@
 |--|--|
 | $\forall$ | `\forall` |
 | $\complement$ | `\complement` |
+| $\textestimated$ | `\textestimated` |
 | $\exists$ | `\exists` |
 | $\digamma$ | `\digamma` |
 | $\Finv$ | `\Finv` |
 | $\Game$ | `\Game` |
+| $\hbar$ | `\hbar` |
+| $\hslash$ | `\hslash` |
+| $\Bbbk$ | `\Bbbk` |
 | $\intercal$ | `\intercal` |
+| $\top$ | `\top` |
+| $\bot$ | `\bot` |
