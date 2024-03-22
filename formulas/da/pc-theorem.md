@@ -1,5 +1,9 @@
 # Pseudocode Theorem
 
+| Operation | Notation G | Notation A |
+|--|--|--|
+| filter | $$\underset{i \in S}{{\large\Rsh}} i \gt 10$$ | $$\underset{i \in S}{{\large\forall}} i \dashrightarrow i \gt 10$$ |
+
 ## Conditions
 
 | Symbol | Meaning |
