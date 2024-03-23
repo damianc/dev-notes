@@ -1,5 +1,13 @@
 # MathJax Symbols
 
+| | | | |
+|--|--|--|--|
+| $=$ | `=` | $\neq$ | `\neq` |
+| $\gt$ | `\gt` | $\ngtr$ | `\ngtr` |
+| $\lt$ | `\lt` | $\nless$ | `\nless` |
+| $\ge$ | `\ge`,`\geq` | $\ngeq$ | `\ngeq` |
+| $\le$ | `\le`,`\leq` | $\nleq$ | `\nleq` |
+
 ## Functions and Other Text-Represented Stuff
 
 | Function | Trig.  | | Cycl. | | Hyp. | |
