@@ -1,5 +1,16 @@
 # MathJax Symbols
 
+| | | | | | |
+|--|--|--|--|--|--|
+| $\leftarrow$ | `\leftarrow` | $\rightarrow$ | `\rightarrow` | $\leftrightarrow$ | `\leftrightarrow` |
+| $\longleftarrow$ | `\longleftarrow` | $\longrightarrow$ | `\longrightarrow` | $\longleftrightarrow$ | `\longleftrightarrow` |
+| $\Leftarrow$ | `\Leftarrow` | $\Rightarrow$ | `\Rightarrow` | $\Leftrightarrow$ | `\Leftrightarrow` |
+| $\Longleftarrow$ | `\Longleftarrow` | $\Longrightarrow$ | `\Longrightarrow` | $\Longleftrightarrow$ | `\Longleftrightarrow` |
+| $\Lleftarrow$ | `\Lleftarrow` | $\Rrightarrow$ | `\Rrightarrow` | | |
+| $\twoheadleftarrow$ | `\twoheadleftarrow` | $\twoheadrightarrow$ | `\twoheadrightarrow` | | |
+| $\leftarrowtail$ | `\leftarrowtail` | $\rightarrowtail$ | `\rightarrowtail` | | |
+| $\dashleftarrow$ | `\dashleftarrow` | $\dashrightarrow$ | `\dashrightarrow` | | |
+
 ## Operators
 
 | | | | |
