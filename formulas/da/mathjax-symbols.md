@@ -2,17 +2,29 @@
 
 ## Functions etc.
 
-| Expr. | Symbol |
-|--|--|
-| `\sin` | $\sin$ |
-| `\cos` | $\cos$ |
-| `\tan` | $\tan$ |
-| `\csc` | $\csc$ |
-| `\sec` | $\sec$ |
-| `\cot` | $\cot$ |
-| `\arcsin` | $\arcsin$ |
-| `\arccos` | $\arccos$ |
-| `\arctan` | $\arctan$ |
-| `\sinh` | $\sinh$ |
-| `\cosh` | $\cosh$ |
-| `\tanh` | $\tanh$ |
+| Function | Trig.  | | Cycl. | | Hyp. | |
+|--|--|--|--|--|--|--|
+| sine | `\sin` | $\sin$ | `\arcsin` | $\arcsin$ | `\sinh` | $\sinh$ |
+| cosine | `\cos` | $\cos$ | `\arccos` | $\arccos$ | `\cosh` | $\cosh$ |
+| tangent | `\tan` | $\tan$ | `\arctan` | $\arctan$ | `\tanh` | $\tanh$ |
+| cosecant | `\csc` | $\csc$ | | | | |
+| secant | `\sec` | $\sec$ | | | | |
+| cotangent | `\cot` | $\cot$ | | | `\coth` | $\coth$ |
+
+| Expr. | Preview | Desc. |
+|--|--|--|
+| `\exp` | $\exp$ | exponential function |
+| `\ln` | $\ln$ | natural logarithm |
+| `\log` | $\log$ | logarithm |
+| `\lg` | $\lg$ | |
+| `\mod` | $z \mod x$ | modulus operator; modulo |
+| `\bmod` | $n \bmod x$ | |
+| `\pmod` | $\pmod x$ | |
+| `\min` | $\min$ | minimum |
+| `\max` | $\max$ | maximum |
+| `\gcd` | $\gcd$ | greatest common divisor |
+| `\det` | $\det$ | determinant |
+| `\arg` | $\arg$ | the complex argument function |
+| `\inf` | $\inf$ | infimum; greatest lower bound |
+| `\sup` | $\sup$ | supremum; least upper bound |
+| `\lim` | $\lim$ | limit
