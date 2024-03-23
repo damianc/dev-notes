@@ -9,7 +9,14 @@
 | $\Lleftarrow$ | `\Lleftarrow` | $\Rrightarrow$ | `\Rrightarrow` | | |
 | $\twoheadleftarrow$ | `\twoheadleftarrow` | $\twoheadrightarrow$ | `\twoheadrightarrow` | | |
 | $\leftarrowtail$ | `\leftarrowtail` | $\rightarrowtail$ | `\rightarrowtail` | | |
+| $\hookleftarrow$ | `\hookleftarrow` | $\hookrightarrow$ | `\hookrightarrow` | | |
 | $\dashleftarrow$ | `\dashleftarrow` | $\dashrightarrow$ | `\dashrightarrow` | | |
+| $\leftleftarrows$ | `\leftleftarrows` | $\rightrightarrows$ | `\rightrightarrows` | $\leftrightarrows$, $\rightleftarrows$ | `\leftrightarrows`,`\rightleftarrows` |
+| | | $\rightsquigarrow$ | `\rightsquigarrow` | $\leftrightsquigarrow$ | `\leftrightsquigarrow` |
+| $\curvearrowleft$ | `\curvearrowleft` | $\curvearrowright$ | `\curvearrowright` | | |
+| $\circlearrowleft$ | `\circlearrowleft` | $\circlearrowright$ | `\circlearrowright` | | |
+| $\looparrowleft$ | `\looparrowleft` | $\looparrowright$ | `\looparrowright` | | |
+| $\Lsh$ | `\Lsh` | $\Rsh$ | `\Rsh` | | |
 
 ## Operators
 
