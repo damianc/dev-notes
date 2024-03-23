@@ -18,6 +18,21 @@
 | $\lneqq$ | `\lneqq` | $\lvertneqq$ | `\lvertneqq` |
 | $\gneq$ | `\gneq` | $\lneq$ | `\lneq` |
 
+| | | | |
+|--|--|--|--|
+| $\sqsupset$ | `\sqsupset` | $\sqsubset$ | `\sqsubset` |
+| $\sqsupseteq$ | `\sqsupseteq` | $\sqsubseteq$ | `\sqsubseteq` |
+| $\supset$ | `\supset` | $\subset$ | `\subset` |
+| $\Supset$ | `\Supset` | $\Subset$ | `\Subset` |
+| $\supseteq$ | `\supseteq` | $\subseteq$ | `\subseteq` |
+| $\supsetneq$ | `\supsetneq` | $\subsetneq$ | `\subsetneq` |
+| $\supseteqq$ | `\supseteqq` | $\subseteqq$ | `\subseteqq` |
+| $\supsetneqq$ | `\supsetneqq` | $\subsetneqq$ | `\subsetneqq` |
+| $\nsupseteq$ | `\nsupseteq` | $\nsubseteq$ | `\nsubseteq` |
+| $\nsupseteqq$ | `\nsupseteqq` | $\nsubseteqq$ | `\nsubseteqq` |
+| $\varsupsetneq$ | `\varsupsetneq` | $\varsubsetneq$ | `\varsubsetneq` |
+| $\varsubsetneqq$ | `\varsubsetneqq` | $\varsupsetneqq$ | `\varsupsetneqq` | $\varsubsetneqq$ | `\varsubsetneqq` |
+
 ## Functions and Other Text-Represented Stuff
 
 | Function | Trig.  | | Cycl. | | Hyp. | |
