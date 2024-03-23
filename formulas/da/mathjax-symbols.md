@@ -20,6 +20,13 @@
 | $\gtrless$ | `\gtrless` | $\lessgtr$ | `\lessgtr` |
 | $\gtreqless$ | `\gtreqless` | $\lesseqgtr$ | `\lesseqgtr` |
 | $\gtreqqless$ | `\gtreqqless` | $\lesseqqgtr$ | `\lesseqqgtr` |
+| $\gg$ | `\gg` | $\ggg$ | `\ggg`,`\gggtr` |
+| $\ll$ | `\ll` | $\lll$ | `\lll`,`\llless` |
+| $\gtrdot$ | `\gtrdot` | $\lessdot$ | `\lessdot` |
+| $\fallingdotseq$ | `\fallingdotseq` | $\risingdotseq$ | `\risingdotseq` |
+| $\doteq$ | `\doteq` | $\Doteq$ | `\Doteq` |
+| $\eqcirc$ | `\eqcirc` | $\circeq$ | `\circeq` |
+| $\bumpeq$ | `\bumpeq` | $\Bumpeq$ | `\Bumpeq` |
 
 | | | | |
 |--|--|--|--|
