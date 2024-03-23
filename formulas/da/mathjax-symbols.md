@@ -7,6 +7,10 @@
 | $\lt$ | `\lt` | $\nless$ | `\nless` |
 | $\ge$ | `\ge`,`\geq` | $\ngeq$ | `\ngeq` |
 | $\le$ | `\le`,`\leq` | $\nleq$ | `\nleq` |
+| $\geqslant$ | `\geqslant` | $\ngeqslant$ | `\ngeqslant` |
+| $\leqslant$ | `\leqslant` | $\nleqslant$ | `\nleqslant` |
+| $\eqslantgtr$ | `\eqslantgtr` | | |
+| $\eqslantless$ | `\eqslantless` | | |
 
 ## Functions and Other Text-Represented Stuff
 
