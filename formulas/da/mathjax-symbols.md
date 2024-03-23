@@ -1,6 +1,6 @@
 # MathJax Symbols
 
-## Functions etc.
+## Functions and Other Text-Represented Stuff
 
 | Function | Trig.  | | Cycl. | | Hyp. | |
 |--|--|--|--|--|--|--|
@@ -27,4 +27,17 @@
 | `\arg` | $\arg$ | the complex argument function |
 | `\inf` | $\inf$ | infimum; greatest lower bound |
 | `\sup` | $\sup$ | supremum; least upper bound |
-| `\lim` | $\lim$ | limit
+| `\lim` | $\lim$ | limit |
+| `\injlim` | $\injlim$ | injective limit |
+| `\varinjlim` | $\varinjlim$ | |
+| `\projlim` | $\projlim$ | projective limit |
+| `\varprojlim` | $\varprojlim$ | |
+| `\liminf` | $\liminf$ | limit inferior |
+| `\varliminf` | $\varliminf$ | |
+| `\limsup` | $\limsup$ | limit superior |
+| `\varlimsup` | $\varlimsup$ | |
+| `\deg` | $\deg$ | degree |
+| `\dim` | $\dim$ | dimension |
+| `\hom` | $\hom$ | homomorphism |
+| `\ker` | $\ker$ | kernel |
+| `\Pr` | $\Pr$ | |
