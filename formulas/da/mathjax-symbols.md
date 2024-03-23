@@ -62,6 +62,17 @@
 | $\lesssim$ | `\lesssim` | $\lnsim$ | `\lnsim` |
 | $\gtrapprox$ | `\gtrapprox` | $\gnapprox$ | `\gnapprox` |
 | $\lessapprox$ | `\lessapprox` | $\lnapprox$ | `\lnapprox` |
+| $\prec$ | `\prec` | $\succ$ | `\succ` |
+| $\nprec$ | `\nprec` | $\nsucc$ | `\nsucc` |
+| $\preceq$ | `\preceq` | $\succeq$ | `\succeq` |
+| $\preccurlyeq$ | `\preccurlyeq` | $\succcurlyeq$ | `\succcurlyeq` |
+| $\curlyeqprec$ | `\curlyeqprec` | $\curlyeqsucc$ | `\curlyeqsucc` |
+| $\npreceq$ | `\npreceq` | $\nsucceq$ | `\nsucceq` |
+| $\precneqq$ | `\precneqq` | $\succneqq$ | `\succneqq` |
+| $\precapprox$ | `\precapprox` | $\succapprox$ | `\succapprox` |
+| $\precnapprox$ | `\precnapprox` | $\succnapprox$ | `\succnapprox` |
+| $\precsim$ | `\precsim` | $\succsim$ | `\succsim` |
+| $\precnsim$ | `\precnsim` | $\succnsim$ | `\succnsim` |
 
 ## Functions and Other Text-Represented Stuff
 
