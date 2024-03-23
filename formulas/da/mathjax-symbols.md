@@ -1,5 +1,7 @@
 # MathJax Symbols
 
+## Operators
+
 | | | | |
 |--|--|--|--|
 | $=$ | `=` | $\neq$ | `\ne`,`\neq` |
@@ -28,6 +30,8 @@
 | $\eqcirc$ | `\eqcirc` | $\circeq$ | `\circeq` |
 | $\bumpeq$ | `\bumpeq` | $\Bumpeq$ | `\Bumpeq` |
 
+### Sets
+
 | | | | |
 |--|--|--|--|
 | $\sqsupset$ | `\sqsupset` | $\sqsubset$ | `\sqsubset` |
@@ -42,6 +46,22 @@
 | $\nsupseteqq$ | `\nsupseteqq` | $\nsubseteqq$ | `\nsubseteqq` |
 | $\varsupsetneq$ | `\varsupsetneq` | $\varsubsetneq$ | `\varsubsetneq` |
 | $\varsubsetneqq$ | `\varsubsetneqq` | $\varsupsetneqq$ | `\varsupsetneqq` | $\varsubsetneqq$ | `\varsubsetneqq` |
+
+### Number Theory
+
+| | | | |
+|--|--|--|--|
+| $\approx$ | `\approx` | $\thickapprox$ | `\thickapprox` |
+| $\sim$ | `\sim` | $\thicksim$ | `\thicksim` |
+| $\nsim$ | `\nsim` | | |
+| $\backsim$ | `\backsim` | $\backsimeq$ | `\backsimeq` |
+| $\eqsim$ | `\eqsim` | $\simeq$ | `\simeq` |
+| $\approxeq$ | `\approxeq` | | |
+| $\cong$ | `\cong` | $\ncong$ | `\ncong` |
+| $\gtrsim$ | `\gtrsim` | $\gnsim$ | `\gnsim` |
+| $\lesssim$ | `\lesssim` | $\lnsim$ | `\lnsim` |
+| $\gtrapprox$ | `\gtrapprox` | $\gnapprox$ | `\gnapprox` |
+| $\lessapprox$ | `\lessapprox` | $\lnapprox$ | `\lnapprox` |
 
 ## Functions and Other Text-Represented Stuff
 
