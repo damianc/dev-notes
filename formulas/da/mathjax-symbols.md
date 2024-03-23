@@ -2,7 +2,7 @@
 
 | | | | |
 |--|--|--|--|
-| $=$ | `=` | $\neq$ | `\neq` |
+| $=$ | `=` | $\neq$ | `\ne`,`\neq` |
 | $\gt$ | `\gt` | $\ngtr$ | `\ngtr` |
 | $\lt$ | `\lt` | $\nless$ | `\nless` |
 | $\ge$ | `\ge`,`\geq` | $\ngeq$ | `\ngeq` |
@@ -11,6 +11,12 @@
 | $\leqslant$ | `\leqslant` | $\nleqslant$ | `\nleqslant` |
 | $\eqslantgtr$ | `\eqslantgtr` | | |
 | $\eqslantless$ | `\eqslantless` | | |
+| $\equiv$ | `\equiv` | | |
+| $\geqq$ | `\geqq` | $\ngeqq$ | `\ngeqq` |
+| $\leqq$ | `\leqq` | $\nleqq$ | `\nleqq` |
+| $\gneqq$ | `\gneqq` | $\gvertneqq$ | `\gvertneqq` |
+| $\lneqq$ | `\lneqq` | $\lvertneqq$ | `\lvertneqq` |
+| $\gneq$ | `\gneq` | $\lneq$ | `\lneq` |
 
 ## Functions and Other Text-Represented Stuff
 
