@@ -17,6 +17,9 @@
 | $\gneqq$ | `\gneqq` | $\gvertneqq$ | `\gvertneqq` |
 | $\lneqq$ | `\lneqq` | $\lvertneqq$ | `\lvertneqq` |
 | $\gneq$ | `\gneq` | $\lneq$ | `\lneq` |
+| $\gtrless$ | `\gtrless` | $\lessgtr$ | `\lessgtr` |
+| $\gtreqless$ | `\gtreqless` | $\lesseqgtr$ | `\lesseqgtr` |
+| $\gtreqqless$ | `\gtreqqless` | $\lesseqqgtr$ | `\lesseqqgtr` |
 
 | | | | |
 |--|--|--|--|
