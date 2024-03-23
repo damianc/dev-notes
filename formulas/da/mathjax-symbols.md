@@ -40,4 +40,4 @@
 | `\dim` | $\dim$ | dimension |
 | `\hom` | $\hom$ | homomorphism |
 | `\ker` | $\ker$ | kernel |
-| `\Pr` | $\Pr$ | |
+| `\Pr` | $\Pr$ | probability |
