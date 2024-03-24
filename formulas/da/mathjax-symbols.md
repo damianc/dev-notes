@@ -1,6 +1,28 @@
 # MathJax Symbols
 
-## Triangles
+## Shapes
+
+### Lines
+
+| | | | |
+|--|--|--|--|
+| $\top$ | `\top` | $\bot$ | `\bot` |
+| $\dashv$ | `\dashv` | | |
+| $\vdash$ | `\vdash` | $\nvdash$ | `\nvdash` |
+| $\vDash$ | `\vDash` | $\nvDash$ | `\nvDash` |
+| $\Vdash$ | `\Vdash` | $\nVdash$ | `\nVdash` |
+| | | $\nVDash$ | `\nVDash` |
+| $\Vvdash$ | `\Vvdash` | | |
+| $\vert$ | `\vert` | $\Vert$ | `\Vert` |
+| $\nmid$ | `\nmid` | | |
+| $\parallel$ | `\parallel` | $\nparallel$ | `\nparallel` |
+| $\perp$ | `\perp` | $\models$ | `\models` |
+| $\diagdown$ | `\diagdown` | $\diagup$ | `\diagup` |
+| $\leftthreetimes$ | `\leftthreetimes` | $\rightthreetimes$ | `\rightthreetimes` |
+| $\ltimes$ | `\ltimes` | $\rtimes$ | `\rtimes` |
+| $\bowtie$ | `\bowtie` | $\Join$ | `\Join` |
+
+### Triangles
 
 | | | | |
 |--|--|--|--|
