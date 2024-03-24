@@ -1,5 +1,23 @@
 # MathJax Symbols
 
+## Triangles
+
+| | | | |
+|--|--|--|--|
+| $\triangleleft$ | `\triangleleft` | $\triangleright$ | `\triangleright` |
+| $\ntriangleleft$ | `\ntriangleleft` | $\ntriangleright$ | `\ntriangleright` |
+| $\trianglelefteq$ | `\trianglelefteq` | $\trianglerighteq$ | `\trianglerighteq` |
+| $\ntrianglelefteq$ | `\ntrianglelefteq` | $\ntrianglerighteq$ | `\ntrianglerighteq` |
+| $\triangleq$ | `\triangleq` | | |
+| $\lhd$ | `\lhd` | $\rhd$ | `\rhd` |
+| $\unlhd$ | `\unlhd` | $\unrhd$ | `\unrhd` |
+| $\bigtriangleup$ | `\bigtriangleup` | $\bigtriangledown$ | `\bigtriangledown` |
+| $\triangle$ | `\triangle` | $\triangledown$ | `\triangledown` |
+| $\blacktriangle$ | `\blacktriangle` | $\blacktriangledown$ | `\blacktriangledown` |
+| $\blacktriangleleft$ | `\blacktriangleleft` | $\blacktriangleright$ | `\blacktriangleright` |
+| $\vartriangle$ | `\vartriangle` | | |
+| $\vartriangleleft$ | `\vartriangleleft` | $\vartriangleright$ | `\vartriangleright` |
+
 ## Arrows
 
 ### Horizontal
