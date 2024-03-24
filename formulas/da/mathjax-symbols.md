@@ -1,5 +1,9 @@
 # MathJax Symbols
 
+## Arrows
+
+### Horizontal
+
 | | | | | | |
 |--|--|--|--|--|--|
 | $\leftarrow$ | `\leftarrow` | $\rightarrow$ | `\rightarrow` | $\leftrightarrow$ | `\leftrightarrow` |
@@ -17,6 +21,29 @@
 | $\circlearrowleft$ | `\circlearrowleft` | $\circlearrowright$ | `\circlearrowright` | | |
 | $\looparrowleft$ | `\looparrowleft` | $\looparrowright$ | `\looparrowright` | | |
 | $\Lsh$ | `\Lsh` | $\Rsh$ | `\Rsh` | | |
+
+#### Negated
+
+| | | | |
+|--|--|--|--|
+| $\nleftarrow$ | `\nleftarrow` | $\nLeftarrow$ | `\nLeftarrow` |
+| $\nrightarrow$ | `\nrightarrow` | $\nRightarrow$ | `\nRightarrow` |
+| $\nleftrightarrow$ | `\nleftrightarrow` | $\nLeftrightarrow$ | `\nLeftrightarrow` |
+
+### Vertical
+
+| | | | | | |
+|--|--|--|--|--|--|
+| $\uparrow$ | `\uparrow` | $\downarrow$ | `\downarrow` | $\updownarrow$ | `\updownarrow` |
+| $\Uparrow$ | `\Uparrow` | $\Downarrow$ | `\Downarrow` | $\Updownarrow$ | `\Updownarrow` |
+| $\upuparrows$ | `\upuparrows` | $\downdownarrows$ | `\downdownarrows` | | |
+
+### Diagonal
+
+| | | | |
+|--|--|--|--|
+| $\nwarrow$ | `\nwarrow` | $\nearrow$ | `\nearrow` |
+| $\swarrow$ | `\swarrow` | $\searrow$ | `\searrow` |
 
 ## Operators
 
