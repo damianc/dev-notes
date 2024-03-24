@@ -45,6 +45,16 @@
 | $\nwarrow$ | `\nwarrow` | $\nearrow$ | `\nearrow` |
 | $\swarrow$ | `\swarrow` | $\searrow$ | `\searrow` |
 
+### Harpoons
+
+| | | | |
+|--|--|--|--|
+| $\leftharpoonup$ | `\leftharpoonup` | $\rightharpoonup$ | `\rightharpoonup` |
+| $\leftharpoondown$ | `\leftharpoondown` | $\rightharpoondown$ | `\rightharpoondown` |
+| $\leftrightharpoons$ | `\leftrightharpoons` | $\rightleftharpoons$ | `\rightleftharpoons` |
+| $\upharpoonleft$ | `\upharpoonleft` | $\upharpoonright$ | `\upharpoonright` |
+| $\downharpoonleft$ | `\downharpoonleft` | $\downharpoonright$ | `\downharpoonright` |
+
 ## Operators
 
 | | | | |
