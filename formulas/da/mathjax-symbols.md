@@ -1,100 +1,5 @@
 # MathJax Symbols
 
-## Shapes
-
-### Lines
-
-| | | | |
-|--|--|--|--|
-| $\top$ | `\top` | $\bot$ | `\bot` |
-| $\dashv$ | `\dashv` | | |
-| $\vdash$ | `\vdash` | $\nvdash$ | `\nvdash` |
-| $\vDash$ | `\vDash` | $\nvDash$ | `\nvDash` |
-| $\Vdash$ | `\Vdash` | $\nVdash$ | `\nVdash` |
-| | | $\nVDash$ | `\nVDash` |
-| $\Vvdash$ | `\Vvdash` | | |
-| $\vert$ | `\vert` | $\Vert$ | `\Vert` |
-| $\nmid$ | `\nmid` | | |
-| $\parallel$ | `\parallel` | $\nparallel$ | `\nparallel` |
-| $\perp$ | `\perp` | $\models$ | `\models` |
-| $\diagdown$ | `\diagdown` | $\diagup$ | `\diagup` |
-| $\leftthreetimes$ | `\leftthreetimes` | $\rightthreetimes$ | `\rightthreetimes` |
-| $\ltimes$ | `\ltimes` | $\rtimes$ | `\rtimes` |
-| $\bowtie$ | `\bowtie` | $\Join$ | `\Join` |
-
-### Triangles
-
-| | | | |
-|--|--|--|--|
-| $\triangleleft$ | `\triangleleft` | $\triangleright$ | `\triangleright` |
-| $\ntriangleleft$ | `\ntriangleleft` | $\ntriangleright$ | `\ntriangleright` |
-| $\trianglelefteq$ | `\trianglelefteq` | $\trianglerighteq$ | `\trianglerighteq` |
-| $\ntrianglelefteq$ | `\ntrianglelefteq` | $\ntrianglerighteq$ | `\ntrianglerighteq` |
-| $\triangleq$ | `\triangleq` | | |
-| $\lhd$ | `\lhd` | $\rhd$ | `\rhd` |
-| $\unlhd$ | `\unlhd` | $\unrhd$ | `\unrhd` |
-| $\bigtriangleup$ | `\bigtriangleup` | $\bigtriangledown$ | `\bigtriangledown` |
-| $\triangle$ | `\triangle` | $\triangledown$ | `\triangledown` |
-| $\blacktriangle$ | `\blacktriangle` | $\blacktriangledown$ | `\blacktriangledown` |
-| $\blacktriangleleft$ | `\blacktriangleleft` | $\blacktriangleright$ | `\blacktriangleright` |
-| $\vartriangle$ | `\vartriangle` | | |
-| $\vartriangleleft$ | `\vartriangleleft` | $\vartriangleright$ | `\vartriangleright` |
-
-## Arrows
-
-### Horizontal
-
-| | | | | | |
-|--|--|--|--|--|--|
-| $\leftarrow$ | `\leftarrow` | $\rightarrow$ | `\rightarrow` | $\leftrightarrow$ | `\leftrightarrow` |
-| $\longleftarrow$ | `\longleftarrow` | $\longrightarrow$ | `\longrightarrow` | $\longleftrightarrow$ | `\longleftrightarrow` |
-| $\Leftarrow$ | `\Leftarrow` | $\Rightarrow$ | `\Rightarrow` | $\Leftrightarrow$ | `\Leftrightarrow` |
-| $\Longleftarrow$ | `\Longleftarrow` | $\Longrightarrow$ | `\Longrightarrow` | $\Longleftrightarrow$ | `\Longleftrightarrow` |
-| $\Lleftarrow$ | `\Lleftarrow` | $\Rrightarrow$ | `\Rrightarrow` | | |
-| $\twoheadleftarrow$ | `\twoheadleftarrow` | $\twoheadrightarrow$ | `\twoheadrightarrow` | | |
-| $\leftarrowtail$ | `\leftarrowtail` | $\rightarrowtail$ | `\rightarrowtail` | | |
-| $\hookleftarrow$ | `\hookleftarrow` | $\hookrightarrow$ | `\hookrightarrow` | | |
-| $\dashleftarrow$ | `\dashleftarrow` | $\dashrightarrow$ | `\dashrightarrow` | | |
-| $\leftleftarrows$ | `\leftleftarrows` | $\rightrightarrows$ | `\rightrightarrows` | $\leftrightarrows$, $\rightleftarrows$ | `\leftrightarrows`,`\rightleftarrows` |
-| | | $\rightsquigarrow$ | `\rightsquigarrow` | $\leftrightsquigarrow$ | `\leftrightsquigarrow` |
-| $\curvearrowleft$ | `\curvearrowleft` | $\curvearrowright$ | `\curvearrowright` | | |
-| $\circlearrowleft$ | `\circlearrowleft` | $\circlearrowright$ | `\circlearrowright` | | |
-| $\looparrowleft$ | `\looparrowleft` | $\looparrowright$ | `\looparrowright` | | |
-| $\Lsh$ | `\Lsh` | $\Rsh$ | `\Rsh` | | |
-
-#### Negated
-
-| | | | |
-|--|--|--|--|
-| $\nleftarrow$ | `\nleftarrow` | $\nLeftarrow$ | `\nLeftarrow` |
-| $\nrightarrow$ | `\nrightarrow` | $\nRightarrow$ | `\nRightarrow` |
-| $\nleftrightarrow$ | `\nleftrightarrow` | $\nLeftrightarrow$ | `\nLeftrightarrow` |
-
-### Vertical
-
-| | | | | | |
-|--|--|--|--|--|--|
-| $\uparrow$ | `\uparrow` | $\downarrow$ | `\downarrow` | $\updownarrow$ | `\updownarrow` |
-| $\Uparrow$ | `\Uparrow` | $\Downarrow$ | `\Downarrow` | $\Updownarrow$ | `\Updownarrow` |
-| $\upuparrows$ | `\upuparrows` | $\downdownarrows$ | `\downdownarrows` | | |
-
-### Diagonal
-
-| | | | |
-|--|--|--|--|
-| $\nwarrow$ | `\nwarrow` | $\nearrow$ | `\nearrow` |
-| $\swarrow$ | `\swarrow` | $\searrow$ | `\searrow` |
-
-### Harpoons
-
-| | | | |
-|--|--|--|--|
-| $\leftharpoonup$ | `\leftharpoonup` | $\rightharpoonup$ | `\rightharpoonup` |
-| $\leftharpoondown$ | `\leftharpoondown` | $\rightharpoondown$ | `\rightharpoondown` |
-| $\leftrightharpoons$ | `\leftrightharpoons` | $\rightleftharpoons$ | `\rightleftharpoons` |
-| $\upharpoonleft$ | `\upharpoonleft` | $\upharpoonright$ | `\upharpoonright` |
-| $\downharpoonleft$ | `\downharpoonleft` | $\downharpoonright$ | `\downharpoonright` |
-
 ## Operators
 
 | | | | |
@@ -210,3 +115,98 @@
 | `\hom` | $\hom$ | homomorphism |
 | `\ker` | $\ker$ | kernel |
 | `\Pr` | $\Pr$ | probability |
+
+## Arrows
+
+### Horizontal
+
+| | | | | | |
+|--|--|--|--|--|--|
+| $\leftarrow$ | `\leftarrow` | $\rightarrow$ | `\rightarrow` | $\leftrightarrow$ | `\leftrightarrow` |
+| $\longleftarrow$ | `\longleftarrow` | $\longrightarrow$ | `\longrightarrow` | $\longleftrightarrow$ | `\longleftrightarrow` |
+| $\Leftarrow$ | `\Leftarrow` | $\Rightarrow$ | `\Rightarrow` | $\Leftrightarrow$ | `\Leftrightarrow` |
+| $\Longleftarrow$ | `\Longleftarrow` | $\Longrightarrow$ | `\Longrightarrow` | $\Longleftrightarrow$ | `\Longleftrightarrow` |
+| $\Lleftarrow$ | `\Lleftarrow` | $\Rrightarrow$ | `\Rrightarrow` | | |
+| $\twoheadleftarrow$ | `\twoheadleftarrow` | $\twoheadrightarrow$ | `\twoheadrightarrow` | | |
+| $\leftarrowtail$ | `\leftarrowtail` | $\rightarrowtail$ | `\rightarrowtail` | | |
+| $\hookleftarrow$ | `\hookleftarrow` | $\hookrightarrow$ | `\hookrightarrow` | | |
+| $\dashleftarrow$ | `\dashleftarrow` | $\dashrightarrow$ | `\dashrightarrow` | | |
+| $\leftleftarrows$ | `\leftleftarrows` | $\rightrightarrows$ | `\rightrightarrows` | $\leftrightarrows$, $\rightleftarrows$ | `\leftrightarrows`,`\rightleftarrows` |
+| | | $\rightsquigarrow$ | `\rightsquigarrow` | $\leftrightsquigarrow$ | `\leftrightsquigarrow` |
+| $\curvearrowleft$ | `\curvearrowleft` | $\curvearrowright$ | `\curvearrowright` | | |
+| $\circlearrowleft$ | `\circlearrowleft` | $\circlearrowright$ | `\circlearrowright` | | |
+| $\looparrowleft$ | `\looparrowleft` | $\looparrowright$ | `\looparrowright` | | |
+| $\Lsh$ | `\Lsh` | $\Rsh$ | `\Rsh` | | |
+
+#### Negated
+
+| | | | |
+|--|--|--|--|
+| $\nleftarrow$ | `\nleftarrow` | $\nLeftarrow$ | `\nLeftarrow` |
+| $\nrightarrow$ | `\nrightarrow` | $\nRightarrow$ | `\nRightarrow` |
+| $\nleftrightarrow$ | `\nleftrightarrow` | $\nLeftrightarrow$ | `\nLeftrightarrow` |
+
+### Vertical
+
+| | | | | | |
+|--|--|--|--|--|--|
+| $\uparrow$ | `\uparrow` | $\downarrow$ | `\downarrow` | $\updownarrow$ | `\updownarrow` |
+| $\Uparrow$ | `\Uparrow` | $\Downarrow$ | `\Downarrow` | $\Updownarrow$ | `\Updownarrow` |
+| $\upuparrows$ | `\upuparrows` | $\downdownarrows$ | `\downdownarrows` | | |
+
+### Diagonal
+
+| | | | |
+|--|--|--|--|
+| $\nwarrow$ | `\nwarrow` | $\nearrow$ | `\nearrow` |
+| $\swarrow$ | `\swarrow` | $\searrow$ | `\searrow` |
+
+### Harpoons
+
+| | | | |
+|--|--|--|--|
+| $\leftharpoonup$ | `\leftharpoonup` | $\rightharpoonup$ | `\rightharpoonup` |
+| $\leftharpoondown$ | `\leftharpoondown` | $\rightharpoondown$ | `\rightharpoondown` |
+| $\leftrightharpoons$ | `\leftrightharpoons` | $\rightleftharpoons$ | `\rightleftharpoons` |
+| $\upharpoonleft$ | `\upharpoonleft` | $\upharpoonright$ | `\upharpoonright` |
+| $\downharpoonleft$ | `\downharpoonleft` | $\downharpoonright$ | `\downharpoonright` |
+
+## Shapes
+
+### Lines
+
+| | | | |
+|--|--|--|--|
+| $\top$ | `\top` | $\bot$ | `\bot` |
+| $\dashv$ | `\dashv` | | |
+| $\vdash$ | `\vdash` | $\nvdash$ | `\nvdash` |
+| $\vDash$ | `\vDash` | $\nvDash$ | `\nvDash` |
+| $\Vdash$ | `\Vdash` | $\nVdash$ | `\nVdash` |
+| | | $\nVDash$ | `\nVDash` |
+| $\Vvdash$ | `\Vvdash` | | |
+| $\vert$ | `\vert` | $\Vert$ | `\Vert` |
+| $\nmid$ | `\nmid` | | |
+| $\parallel$ | `\parallel` | $\nparallel$ | `\nparallel` |
+| $\perp$ | `\perp` | $\models$ | `\models` |
+| $\diagdown$ | `\diagdown` | $\diagup$ | `\diagup` |
+| $\leftthreetimes$ | `\leftthreetimes` | $\rightthreetimes$ | `\rightthreetimes` |
+| $\ltimes$ | `\ltimes` | $\rtimes$ | `\rtimes` |
+| $\bowtie$ | `\bowtie` | $\Join$ | `\Join` |
+
+### Triangles
+
+| | | | |
+|--|--|--|--|
+| $\triangleleft$ | `\triangleleft` | $\triangleright$ | `\triangleright` |
+| $\ntriangleleft$ | `\ntriangleleft` | $\ntriangleright$ | `\ntriangleright` |
+| $\trianglelefteq$ | `\trianglelefteq` | $\trianglerighteq$ | `\trianglerighteq` |
+| $\ntrianglelefteq$ | `\ntrianglelefteq` | $\ntrianglerighteq$ | `\ntrianglerighteq` |
+| $\triangleq$ | `\triangleq` | | |
+| $\lhd$ | `\lhd` | $\rhd$ | `\rhd` |
+| $\unlhd$ | `\unlhd` | $\unrhd$ | `\unrhd` |
+| $\bigtriangleup$ | `\bigtriangleup` | $\bigtriangledown$ | `\bigtriangledown` |
+| $\triangle$ | `\triangle` | $\triangledown$ | `\triangledown` |
+| $\blacktriangle$ | `\blacktriangle` | $\blacktriangledown$ | `\blacktriangledown` |
+| $\blacktriangleleft$ | `\blacktriangleleft` | $\blacktriangleright$ | `\blacktriangleright` |
+| $\vartriangle$ | `\vartriangle` | | |
+| $\vartriangleleft$ | `\vartriangleleft` | $\vartriangleright$ | `\vartriangleright` |
