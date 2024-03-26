@@ -90,6 +90,9 @@ x^2 \gt 0
 
 | | | | |
 |--|--|--|--|
+| $\varnothing$ | `\varnothing` | $\emptyset$ | `\emptyset` |
+| $\cup$ | `\cup` | $\cap$ | `\cap` |
+| $\uplus$ | `\uplus` | $\setminus$ | `\setminus` |
 | $\sqsupset$ | `\sqsupset` | $\sqsubset$ | `\sqsubset` |
 | $\sqsupseteq$ | `\sqsupseteq` | $\sqsubseteq$ | `\sqsubseteq` |
 | $\supset$ | `\supset` | $\subset$ | `\subset` |
