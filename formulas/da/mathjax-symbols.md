@@ -56,6 +56,7 @@ x^2 \gt 0
 | | | | |
 |--|--|--|--|
 | $\forall$ | `\forall` | $\exists$ | `\exists` |
+| $\not\forall$ | `\not\forall` | $\nexists$ | `\nexists` |
 | $\wedge$ | `\wedge` | $\vee$ | `\vee` |
 | $\in$ | `\in` | $\notin$ | `\notin` |
 | $\ni$ | `\ni`,`\owns` | | |
