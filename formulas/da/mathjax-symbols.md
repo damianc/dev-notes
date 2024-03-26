@@ -1,5 +1,61 @@
 # MathJax Symbols
 
+## Common Operators
+
+| | | | |
+|--|--|--|--|
+| $+$ | `+` | $-$ | `-` |
+| $\cdot$ | `\cdot` | $\times$ | `\times` |
+| $\div$ | `\div` | $\divideontimes$ | `\divideontimes` |
+| $\pm$ | `\pm` | $\mp$ | `\mp` |
+
+## Assertion Formulation
+
+$$
+\underset
+{x \lt 0}
+{\large\forall}
+\quad
+x^2 \gt 0
+$$
+
+```
+\underset
+{x \lt 0}
+{\large \forall}
+\quad
+x^2 \gt 0
+```
+
+| | | | |
+|--|--|--|--|
+| $\forall$ | `\forall` | $\exists$ | `\exists` |
+| $\wedge$ | `\wedge` | $\vee$ | `\vee` |
+| $\in$ | `\in` | $\notin$ | `\notin` |
+| $\ni$ | `\ni`,`\owns` | | |
+| $\because$ | `\because` | $\therefore$ | `\therefore` |
+| $\implies$ | `\implies` | $\impliedby$ | `\impliedby` |
+| $\leadsto$ | `\leadsto` | $\iff$ | `\iff` |
+| $\to$ | `\to` | $\gets$ | `\gets` |
+| $\mapsto$ | `\mapsto` | $\longmapsto$ | `\longmapsto` |
+| $\multimap$ | `\multimap` | | |
+| $\cap$ | `\cap` | $\cup$ | `\cup` |
+| $\land$ | `\land` | $\lor$ | `\lor` |
+| $\lnot$ | `\lnot`,`\neg` | $\not$ | `\not` |
+
+### Additional
+
+| | | | |
+|--|--|--|--|
+| $\bigwedge$ | `\bigwedge` | $\bigvee$ | `\bigvee` |
+| $\barwedge$ | `\barwedge` | $\veebar$ | `\veebar` |
+| $\doublebarwedge$ | `\doublebarwedge` | | |
+| $\curlywedge$ | `\curlywedge` | $\curlyvee$ | `\curlyvee` |
+| $\bigcap$ | `\bigcap` | $\bigcup$ | `\bigcup` |
+| $\Cap$ | `\Cap`,`\doublecap` | $\Cup$ | `\Cup`,`\doublecup` |
+| $\sqcap$ | `\sqcap` | $\sqcup$ | `\sqcup` |
+| | | $\bigsqcup$ | `\bigsqcup` |
+
 ## Operators
 
 | | | | |
