@@ -1,6 +1,6 @@
 # MathJax Symbols
 
-## Common Operators and Symbols
+## Common Symbols and Operators
 
 | | | | |
 |--|--|--|--|
