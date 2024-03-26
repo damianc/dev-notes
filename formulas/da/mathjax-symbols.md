@@ -1,6 +1,6 @@
 # MathJax Symbols
 
-## Common Operators
+## Common Operators and Symbols
 
 | | | | |
 |--|--|--|--|
@@ -8,6 +8,32 @@
 | $\cdot$ | `\cdot` | $\times$ | `\times` |
 | $\div$ | `\div` | $\divideontimes$ | `\divideontimes` |
 | $\pm$ | `\pm` | $\mp$ | `\mp` |
+| $\vert$ | `\vert` | $\Vert$ | `\Vert` |
+| $\langle$ | `\langle` | $\rangle$ | `\rangle` |
+| $\infty$ | `\infty` | $\prime$ | `\prime` |
+| $\int$ - $\iiiint$ | `\int`-`\iiiint` | $\oint$ | `\oint` |
+| $\degree$ | `\degree` | $^{\circ}$ | `^{\circ}` |
+| $\angle$ | `\angle` | $\measuredangle$ | `\measuredangle` |
+| $\sphericalangle$ | `\sphericalangle` | | |
+| $\parallel$ | `\parallel` | $\nparallel$ | `\nparallel` |
+| $\perp$ | `\perp` | $\cancel{\perp}$ | `\cancel{\perp}` |
+| $\sum$ | `\sum` | | |
+| $\prod$ | `\prod` | $\coprod$ | `\coprod` |
+
+$$
+\overline{x} = \frac{
+  \displaystyle
+  \sum_{i=1}^{n} x_i
+}{n}
+$$
+
+```
+\overline{x} = \frac{
+  \displaystyle
+  \sum_{i=1}^{n} x_i
+}{n}
+```
+
 
 ## Assertion Formulation
 
