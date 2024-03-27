@@ -42,7 +42,7 @@ $$
 M_{nn} \to M_{mm \iff m=n-1}
 $$
 
-### Probability Function
+## Probability Function
 
 $$
 \text{P}(\omega) = \frac
