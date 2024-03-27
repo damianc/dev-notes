@@ -30,6 +30,12 @@ x_n & \vdots & \cdots & \cdots
 \end{array}
 $$
 
+$$
+\color{grey}
+\because
+(n_i,n_j) \equiv (n_j,n_i)
+$$
+
 ### Probability Function
 
 $$
