@@ -46,7 +46,7 @@ $$
 
 $$
 \text{P}(\omega) = \frac
-{\displaystyle\sum_{i=1}^{n-2} f(\omega,i)}
+{\displaystyle\sum_{i=1}^{n-2} \nu(\omega,i)}
 {\overline{\overline{\Omega}}}
 $$
 
@@ -55,7 +55,7 @@ $$
 $$
 
 $$
-f(\omega,i) = \left\\{\begin{array}{lll}
+\nu(\omega,i) = \left\\{\begin{array}{lll}
 {\LARGE 1} & & \text{if } \bigg[S\setminus\\{a,b\\}\bigg]\_i \quad \omega_{op} \quad {\Large\frac{a+b}{2}}
 \\
 {\Large 0} & & \text{otherwise}
