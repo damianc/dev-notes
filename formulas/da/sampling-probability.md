@@ -33,7 +33,13 @@ $$
 $$
 \color{grey}
 \because
-(n_i,n_j) \equiv (n_j,n_i)
+(x_i,x_j) \equiv (x_j,x_i)
+$$
+
+$$
+\color{grey}
+\therefore
+M_{nn} \to M_{mm \iff m=n-1}
 $$
 
 ### Probability Function
