@@ -68,6 +68,6 @@ $$\omega_{op} \quad = \quad \gtreqless$$
 
 $$a \in S$$
 
-$$b \in S\setminus\{a\}$$
+$$b \in S\setminus\\{a\\}$$
 
 $$\overline{\overline{\Omega}} = C_n^2 = \binom{n}{2} = \frac{n!}{2 \cdot (n-2)!}$$
