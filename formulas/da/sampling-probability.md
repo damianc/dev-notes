@@ -17,7 +17,7 @@ $$
 ## Options Matrix
 
 $$
-\begin{array}{c|ccc}
+M = \begin{array}{c|ccc}
 & x_1 & \cdots & x_{n-1}
 \\
 \hline
@@ -30,17 +30,8 @@ x_n & \frac{x_1+x_n}{2} & \cdots & \frac{x_{n-1}+x_n}{2}
 \end{array}
 $$
 
-$$
-\color{grey}
-\because
-(x_i,x_j) \equiv (x_j,x_i)
-$$
-
-$$
-\color{grey}
-\therefore
-M_{nn} \to M_{mm \iff m=n-1}
-$$
+> $\because (x_i,x_j) \equiv (x_j,x_i)$
+> $\therefore M_{nn} \to M_{mm \iff m=n-1}$
 
 ## Probability Function
 
