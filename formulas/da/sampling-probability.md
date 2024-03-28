@@ -96,11 +96,11 @@ $$
 
 | Event | | $\overline{\overline{\square}}$ | $P(\square)$ |
 |--|--|--|--|
-| $A$ | $\hat{x} \eqslantgtr \overline{x}$ | 6 | 60% |
-| $B$ | $\hat{x} \gt \overline{x}$ | 4 | 40% |
-| $\color{red}C$ | $\color{red}\hat{x} = \overline{x}$ | 2 | 20% |
-| $\color{green}D$ | $\color{green}\hat{x} \neq \overline{x}$ | 8 | 80% |
-| $E$ | $\hat{x} \lt \overline{x}$ | 4 | 40% |
-| $F$ | $\hat{x} \eqslantless \overline{x}$ | 6 | 60% |
+| $A$ | $\hat{x} \eqslantgtr \overline{x}$ | $6$ | $60\\%$ |
+| $B$ | $\hat{x} \gt \overline{x}$ | $4$ | $40\\%$ |
+| $\color{red}C$ | $\color{red}\hat{x} = \overline{x}$ | $\color{red}2$ | $\color{red}20\\%$ |
+| $\color{green}D$ | $\color{green}\hat{x} \neq \overline{x}$ | $\color{green}8$ | $\color{green}80\\%$ |
+| $E$ | $\hat{x} \lt \overline{x}$ | $4$ | $40\\%$ |
+| $F$ | $\hat{x} \eqslantless \overline{x}$ | $6$ | $60\\%$ |
 
 
