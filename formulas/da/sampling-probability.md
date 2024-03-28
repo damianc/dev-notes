@@ -21,11 +21,11 @@ $$
 & x_1 & \cdots & x_{n-1}
 \\
 \hline
-x_2 & \vdots
+x_2 & \frac{x_1+x_2}{2} & \cdots & \frac{x_{n-1}+x_2}{2}
 \\
-\vdots & \vdots & \ddots
+\vdots & \vdots & \ddots & \vdots
 \\
-x_n & \vdots & \cdots & \cdots
+x_n & \frac{x_1+x_n}{2} & \cdots & \frac{x_{n-1}+x_n}{2}
 \\
 \end{array}
 $$
