@@ -62,3 +62,39 @@ $$a \in S$$
 $$b \in S\setminus\\{a\\}$$
 
 $$\overline{\overline{\Omega}} = C_n^2 = \binom{n}{2} = \frac{n!}{2 \cdot (n-2)!}$$
+
+### Example
+
+- $S = \\{2,3,5,7,8\\}$
+- $\overline{x} = 5$
+- $\overline{\overline{\Omega}} = C_5^2 = \binom{5}{2} = 10$
+
+- matrix of possibilities:
+
+$$
+M = \begin{array}{c|ccccc}
+& 2 & 3 & 5 & 7
+\\
+\hline
+3 & 2.5
+\\
+5 & 3.5 & 4
+\\
+7 & 4.5 & 5 & 6
+\\
+8 & 5 & 5.5 & 6.5 & 7.5
+\end{array}
+$$
+
+### Probability
+
+| Event | | $\overline{\overline{\square}}$ | $P(\square)$ |
+|--|--|--|--|
+| $A$ | $\hat{x} \eqslantgtr \overline{x}$ | 6 | 60% |
+| $B$ | $\hat{x} \gt \overline{x}$ | 4 | 40% |
+| $C$ | $\hat{x} = \overline{x}$ | 2 | 20% |
+| $D$ | $\hat{x} \neq \overline{x}$ | 8 | 80% |
+| $E$ | $\hat{x} \lt \overline{x}$ | 4 | 40% |
+| $F$ | $\hat{x} \eqslantless \overline{x}$ | 6 | 60% |
+
+
