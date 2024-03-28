@@ -72,7 +72,7 @@ $$\overline{\overline{\Omega}} = C_n^2 = \binom{n}{2} = \frac{n!}{2 \cdot (n-2)!
 - matrix of possibilities:
 
 $$
-M = \begin{array}{c|ccccc}
+M = \ \ \begin{array}{c|ccccc}
 & 2 & 3 & 5 & 7
 \\
 \hline
