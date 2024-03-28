@@ -98,8 +98,8 @@ $$
 |--|--|--|--|
 | $A$ | $\hat{x} \eqslantgtr \overline{x}$ | 6 | 60% |
 | $B$ | $\hat{x} \gt \overline{x}$ | 4 | 40% |
-| $C$ | $\hat{x} = \overline{x}$ | 2 | 20% |
-| $D$ | $\hat{x} \neq \overline{x}$ | 8 | 80% |
+| $\color{red}C$ | $\color{red}\hat{x} = \overline{x}$ | 2 | 20% |
+| $\color{green}D$ | $\color{green}\hat{x} \neq \overline{x}$ | 8 | 80% |
 | $E$ | $\hat{x} \lt \overline{x}$ | 4 | 40% |
 | $F$ | $\hat{x} \eqslantless \overline{x}$ | 6 | 60% |
 
