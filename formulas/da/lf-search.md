@@ -13,6 +13,6 @@
 | by angle $\gamma$ | $$f(x) = (x-x_p)\tan(\arctan(m)+\gamma)+f(x_p)$$ |
 | by $\triangle$ area $A$ | $$f(x) = \frac{2A(x-z)}{-z^2}$$ |
 | by $\triangle$ perimeter $L$ | $$f(x) = \frac{(x-z)(L^2-2Lz)}{-z(L+z)}$$ |
-| parallel to $F(x)=mx+i$ by x-distance $d$ | $$f(x) = F(x)-md$$ |
-| parallel to $F(x)=mx+i$ by y-distance $d$ | $$f(x) = F(x)+d$$ |
-| parallel to $F(x)= mx+i$ by $\perp$-distance $d$ | $$f(x) = F(x)+d\sqrt{1+m^2}$$ |
+| parallel to $F(x)=mx+i$ by x-distance $d$ | $$f(x) = (x-d)m+i$$ |
+| parallel to $F(x)=mx+i$ by y-distance $d$ | $$f(x) = mx+i+d$$ |
+| parallel to $F(x)= mx+i$ by $\perp$-distance $d$ | $$f(x) = mx+i+d\sqrt{1+m^2}$$ |
