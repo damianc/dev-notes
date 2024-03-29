@@ -2,4 +2,4 @@
 
 | Requirement | Formula |
 |--|--|
-| by points $a$ and $b$ | $$f(x) = \frac{(x-a_x)(b_y-a_y)}{b_x-a_x}+a_y$$ |
+| by points $p$ and $q$ | $$f(x) = \frac{(x-x_p)(y_q-y_p)}{x_q-x_p}+y_p$$ |
