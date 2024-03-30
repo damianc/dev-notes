@@ -1,4 +1,4 @@
-# LF Area under Line
+# LF Area Under a Line
 
 > $f(x)=mx+i \iff m \gt 0, i \leqslant 0$
 > $z = \frac{-i}{m}$
