@@ -15,6 +15,11 @@
 | distance between two parallel lines | $$\frac{\vert b_2-b_1 \vert}{\sqrt{1+a^2}}$$ |
 | distance between line and point | $$\frac{\vert ax_p-y_p+b \vert}{\sqrt{1+a^2}}$$ |
 | distance between two points | $\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$ |
+| derivative | $$f'(x) = a$$ |
+| indefinite integral | $$\int f\ dx = \frac{1}{2}ax^2 + bx + C$$ |
+| definite integral | $$\overset{\quad u}{\underset{l}{\int}} f\ dx = \frac{a(u^2-l^2)}{2} + (u-l)b$$ |
+| normal vector length | $\|\|v\|\| = \sqrt{1+a^2}$ |
+| area of triangle $\Delta_{z0b}$ ($a \cdot b \neq 0$) | $$A_{\Delta z0b} = \frac{b^2}{\|2a\|}$$ |
 
 ## Lengths
 
