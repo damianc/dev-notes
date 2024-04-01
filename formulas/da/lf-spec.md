@@ -30,3 +30,6 @@ $$
 | line length in y-range $\vec{y}$ | $$L = \frac{\vec{y} \cdot \|\|v\|\|}{m} \ \cup\ \frac{\vec{y}}{\sin(\alpha)}$$ |
 | $\vec{x}$ by $\vec{y}$ | $$\vec{x} = \frac{\vec{y}}{m}$$ |
 | $\vec{y}$ by $\vec{x}$ | $$\vec{y} = m\vec{x}$$ |
+| sum of $n$ values starting from $m$, i e., $f(z+1)$ | $$S_n = \left(\left[1+\frac{n-1}{2}\right]m\right)n$$ |
+| sum of values in range $\langle n;w \rangle$ | $$S_w^n = \frac{(n+w)m}{2} \cdot (w-n+1)$$ |
+| | $\iff w \gt n \geq z+1$ |
