@@ -28,3 +28,16 @@
 | line length in range $\langle y; y \pm r \rangle$ in Y-axis | $$\sqrt{\left(\frac{r}{m}\right)^2 + r^2}$$ |
 | length of X-axis range in which line is $\ell$ in length | $$\frac{\ell}{\sqrt{1+m^2}}$$ |
 | length of Y-axis range in which line is $\ell$ in length | $$\frac{\ell}{\sqrt{1+\frac{1}{m^2}}}$$ |
+
+or:
+
+| Length | Formula | Formula with angle |
+|--|--|--|
+| $r_x$ by $L$ | $$\frac{L}{\|\|v\|\|}$$ | $$L \cdot \cos(\alpha)$$ |
+| $r_y$ by $L$ | $$\frac{Lm}{\|\|v\|\|}$$ | $$L \cdot \sin(\alpha)$$ |
+| $L$ by $r_x$ | $$r_x \cdot \|\|v\|\|$$ | $$\frac{r_x}{\cos(\alpha)}$$ |
+| $L$ by $r_y$ | $$\frac{r_y}{m} \cdot \|\|v\|\|$$ | $$\frac{r_y}{\sin(\alpha)}$$ |
+| $r_x$ by $r_y$ | $$\frac{r_y}{m}$$ | $$\frac{r_y}{\tan(\alpha)}$$ |
+| $r_y$ by $r_x$ | $$mr_x$$ | $$r_x \cdot \tan(\alpha)$$ |
+
+> $\|\|v\|\| = \sqrt{1+m^2}$
