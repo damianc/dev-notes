@@ -24,8 +24,8 @@ $$
 | area of triangle $\triangle_{0iz}$ | $$A_{\triangle 0iz} = \frac{\|iz\|}{2}$$ |
 | area under line in range $\langle a;b \rangle$ | $$A_{\langle a;b \rangle} = \frac{f(a)+f(b)}{2} \cdot (b-a)$$ |
 | | $\iff b \gt a \geq z \ \cap\ m \gt 0, i \leq 0$ |
-| $\vec{x}$ by line length $L$ | $$\vec{x} = \frac{L}{\|\|v\|\|}$$ |
-| $\vec{y}$ by line length $L$ | $$\vec{y} = \frac{Lm}{\|\|v\|\|}$$ |
+| $\vec{x}$ by line length $L$ | $$\vec{x} = \frac{L}{\|\|v\|\|} \ \cup\ L \cdot \cos(\alpha)$$ |
+| $\vec{y}$ by line length $L$ | $$\vec{y} = \frac{Lm}{\|\|v\|\|} \ \cup\ L \cdot \sin(\alpha)$$ |
 | line length in x-range $\vec{x}$ | $$L = \vec{x} \cdot \|\|v\|\|$$ |
 | line length in y-range $\vec{y}$ | $$L = \frac{\vec{y} \cdot \|\|v\|\|}{m}$$ |
 | $\vec{x}$ by $\vec{y}$ | $$\vec{x} = \frac{\vec{y}}{m}$$ |
