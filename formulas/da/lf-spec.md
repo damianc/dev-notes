@@ -26,7 +26,7 @@ $$
 | | $\iff b \gt a \geq z \ \cap\ m \gt 0, i \leq 0$ |
 | $\vec{x}$ by line length $L$ | $$\vec{x} = \frac{L}{\|\|v\|\|} \ \cup\ L \cdot \cos(\alpha)$$ |
 | $\vec{y}$ by line length $L$ | $$\vec{y} = \frac{Lm}{\|\|v\|\|} \ \cup\ L \cdot \sin(\alpha)$$ |
-| line length in x-range $\vec{x}$ | $$L = \vec{x} \cdot \|\|v\|\|$$ |
-| line length in y-range $\vec{y}$ | $$L = \frac{\vec{y} \cdot \|\|v\|\|}{m}$$ |
+| line length in x-range $\vec{x}$ | $$L = \vec{x} \cdot \|\|v\|\| \ \cup\ \frac{\vec{x}}{\cos(\alpha)}$$ |
+| line length in y-range $\vec{y}$ | $$L = \frac{\vec{y} \cdot \|\|v\|\|}{m} \ \cup\ \frac{\vec{y}}{\sin(\alpha)}$$ |
 | $\vec{x}$ by $\vec{y}$ | $$\vec{x} = \frac{\vec{y}}{m}$$ |
 | $\vec{y}$ by $\vec{x}$ | $$\vec{y} = m\vec{x}$$ |
