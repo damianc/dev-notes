@@ -21,6 +21,6 @@ $$
 | derivative | $$f'(x) = m$$ |
 | antiderivative; indefinite integral | $$\int f\ dx = \frac{1}{2}mx^2+ix+C$$ |
 | definite integral | $$\overset{\quad b}{\underset{a}{\int}} f\ dx = \frac{m(b^2-a^2)}{2}+(b-a)i$$ |
-| area of triangle $\triangle_{0iz}$ | $$A = \frac{\|iz\|}{2}$$ |
-| area under line in range $\langle a;b \rangle$ | $$A = \frac{f(a)+f(b)}{2} \cdot (b-a)$$ |
+| area of triangle $\triangle_{0iz}$ | $$A_{\triangle 0iz} = \frac{\|iz\|}{2}$$ |
+| area under line in range $\langle a;b \rangle$ | $$A_{\langle a;b \rangle} = \frac{f(a)+f(b)}{2} \cdot (b-a)$$ |
 | | $\iff b \gt a \geq z \ \cap\ m \gt 0, i \leq 0$ |
