@@ -49,3 +49,30 @@ $$
 $$
 \overleftarrow{g}(x) = (n-1) \cdot log_{\frac{max}{min}}\left(\frac{x}{x_1}\right)+1
 $$
+
+## Perp. Dist. Dev.
+
+$$
+\hat{d}_{\perp} =
+{\large \frac{1}{n-2}}
+\left[
+ \sum\_{i=2}^{n-1}
+ \frac{\|f(i)-x_i\|}{\|\|v\|\|}
+\right]
+$$
+
+$$
+\iff
+$$
+
+$$
+m = \frac{x_n-x_1}{n-1}
+$$
+
+$$
+f(x) = (x-1)m + x_1
+$$
+
+$$
+\|\|v\|\| = \sqrt{1+m^2}
+$$
