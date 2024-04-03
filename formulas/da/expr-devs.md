@@ -76,3 +76,43 @@ $$
 $$
 \|\|v\|\| = \sqrt{1+m^2}
 $$
+
+## Segmented Length Dev.
+
+$$
+\overline{d}_L = \| \overline{L}-\hat{L} \|
+$$
+
+$$
+\iff
+$$
+
+$$
+\overline{L} = \sqrt{
+ (n-1)^2 + (x_n-x_1)^2
+}
+$$
+
+$$
+\hat{L} = \sum_{i=1}^{n-1}
+\sqrt{1 + (x_{i+1} + x_i)^2}
+$$
+
+## Segmented Area Dev.
+
+$$
+\overline{d}_A = \| \overline{A}-\hat{A} \|
+$$
+
+$$
+\iff
+$$
+
+$$
+\overline{A} = \frac{(n-1)(x_n-x_1)}{2}
+$$
+
+$$
+\hat{A} = \sum_{i=1}^{n-1}
+\frac{x_i+x_{i+1}-2x_1}{2}
+$$
