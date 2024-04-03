@@ -18,3 +18,28 @@
 | events $A$ and $B$ are mutually exclusive (mutually exclusive events) | $A \cap B = \varnothing$ | $A \cap B = \varnothing$ | $A \cap D = \varnothing$ |
 | event opposite to event $A$ | $A' = \Omega \setminus A$ | $A'=B$ | $A'=D$ |
 | probability of event $A$ (classical definition of probability) | $p = P(A) = \frac{m}{n}$ | $P(A)=P(B)=\frac{1}{2}$, $P(C)=\frac{2}{2}=1$ | $P(A)=P(D)=\frac{1}{2}$, $P(B)=\frac{1}{6}$, $P(C)=\frac{1}{3}$ |
+
+## Conditional Probability
+
+Probability of event $A$ given event $B$ ($B \neq \varnothing$) is to occur:
+
+$$
+P(A \setminus B) = \frac{P(A \cap B)}{P(B)} = \frac{\overline{\overline{A \cap B}}}{\overline{\overline{B}}}
+$$
+
+**EXAMPLE**  
+Probability of getting an even number when rolling dice under the condition of getting 4+:
+
+$$
+\begin{array}{ll}
+A = \\{2,4,6\\} & B = \\{4,5,6\\}
+\\
+& \overline{\overline{B}} = 3
+\\\ \\
+P(A \cap B) = \\{4,6\\}
+\\
+\overline{\overline{A \cap B}} = 2
+\\\ \\
+P(A \setminus B) = \frac{2}{3} \approx 67\\%
+\end{array}
+$$
