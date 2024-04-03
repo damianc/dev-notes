@@ -128,7 +128,7 @@ $$
 ## Segmented Length Dev.
 
 $$
-\overline{d}_L = \| \overline{L}-\hat{L} \|
+\overline{d}_L = \left\| \overline{L}-\hat{L} \right\|
 $$
 
 $$
@@ -149,7 +149,7 @@ $$
 ## Segmented Area Dev.
 
 $$
-\overline{d}_A = \| \overline{A}-\hat{A} \|
+\overline{d}_A = \left\| \overline{A}-\hat{A} \right\|
 $$
 
 $$
