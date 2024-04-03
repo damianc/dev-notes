@@ -45,3 +45,23 @@
 | $$a^{n\cdot\log_a b} = b^n$$ |
 | $$a^{\frac{\log_a x}{n}} = \sqrt[n]{x}$$ |
 | $$\log_a b = \frac{\ln b}{\ln a}$$ |
+
+$$
+\begin{array}{llcl}
+\hline
+\because &
+\log_b(x^n) & = & n \cdot \log_b(x)
+\\
+\therefore &
+\log_b(\sqrt[n]{x}) & = & \frac{\log_b(x)}{n}
+\\
+\hline
+\because &
+\log_{b^n}(x) & = & \frac{\log_b(x)}{n}
+\\
+\therefore &
+\log_{\sqrt[n]{b}}(x) & = & n \cdot \log_b(x)
+\\
+\hline
+\end{array}
+$$
