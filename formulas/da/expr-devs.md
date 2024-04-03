@@ -50,6 +50,54 @@ $$
 \overleftarrow{g}(x) = (n-1) \cdot log_{\frac{max}{min}}\left(\frac{x}{x_1}\right)+1
 $$
 
+## Arithmetic Seq. Mean Dev.
+
+$$
+\tilde{d}_A = \left\| \overline{d}_A - \hat{d}_A \right\|
+$$
+
+$$
+\iff
+$$
+
+$$
+\overline{d}\_A = \frac
+{\displaystyle\sum_{i=2}^{n-1} x_i}
+{n-2}
+$$
+
+$$
+\hat{d}\_A = \frac{
+ \displaystyle\sum_{i=2}^{n-1}
+ x_1 + \frac{(i-1)(x_n-x_1)}{n-1}
+}{n-2}
+$$
+
+## Geometric Seq. Mean Dev.
+
+$$
+\tilde{d}_G = \left\| \overline{d}_G - \hat{d}_G \right\|
+$$
+
+$$
+\iff
+$$
+
+$$
+\overline{d}\_G = \sqrt[n-2]{
+ \prod_{i=2}^{n-1} x_i
+}
+$$
+
+$$
+\hat{d}\_G = \sqrt[n-2]{
+ \prod_{i=2}^{n-1}
+ x_1 \cdot \left(
+  \frac{x_n}{x_1}
+ \right)^{\frac{i-1}{n-1}}
+}
+$$
+
 ## Perp. Dist. Dev.
 
 $$
