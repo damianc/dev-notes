@@ -200,3 +200,14 @@ $$
 $$
 \theta = \frac{(x_n-x_1)\pi}{\Sigma x}
 $$
+
+## Parabolic Dev.
+
+$$
+\overset{\frown}{d} =
+\frac{
+ \left(
+  \frac{x_n-x_1}{n-1}-\frac{2x_n}{n}
+ \right)n^2
+}{-2x_n} - \frac{4n\sqrt{x_n}}{x_n} - 1
+$$
