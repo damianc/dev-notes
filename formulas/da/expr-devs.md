@@ -165,14 +165,38 @@ $$
 \frac{x_i+x_{i+1}-2x_1}{2}
 $$
 
+## Triangular Seq. Dev.
+
+$$
+\overline{d}\_{\triangle} = \frac
+{\displaystyle\sum_{i=1}^{n-1} x_{i+1} - x_i}
+{n-1}
+$$
+
+## Triangular Acc. Dev.
+
+$$
+\hat{d}\_{\triangle} = \frac
+{\displaystyle\sum_{i=1}^{n-1}
+ \frac{x_{i+1} - x_i}{i}
+}
+{n-1}
+$$
+
 ## Circular Dev.
 
 $$
 \mathring{d} = \frac
 {
- 4n \cdot \sin\left(
-  \frac{(x_n-x_1)\pi}{\Sigma x}
- \right)
+ 4n \cdot \sin(\theta)
 }
 {(x_2-x_1)+(x_n-x_{n-1})}
+$$
+
+$$
+\iff
+$$
+
+$$
+\theta = \frac{(x_n-x_1)\pi}{\Sigma x}
 $$
