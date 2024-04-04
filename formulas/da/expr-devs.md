@@ -164,3 +164,15 @@ $$
 \hat{A} = \sum_{i=1}^{n-1}
 \frac{x_i+x_{i+1}-2x_1}{2}
 $$
+
+## Circular Dev.
+
+$$
+\mathring{d} = \frac
+{
+ 4n \cdot \sin\left(
+  \frac{(x_n-x_1)\pi}{\Sigma x}
+ \right)
+}
+{(x_2-x_1)+(x_n-x_{n-1})}
+$$
