@@ -1,11 +1,12 @@
 # Series
 
-## _n-th_ word
+## Getting words
 
 | Word | Arithmetic | Geometric |
 |--|--|--|
 | _n-th_ | $a_n=a_1+(n-1)r$ | $a_n=a_1 \cdot q^{n-1}$ |
 | _n-th_ by _k-th_ | $a_n=a_k+(n-k)r$ | $a_n=a_k \cdot q^{n-k}$ |
+| position of word $x$ | $n=1+\frac{x-a_1}{r}$ | $n=1+\log_q\left(\frac{x}{a_1}\right)$ |
 
 
 ## Sum of $n$ first words
