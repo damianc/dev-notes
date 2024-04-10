@@ -17,6 +17,16 @@
 |--|
 | $$\sqrt[n]{a}^m = \sqrt[n]{a^m}$$ |
 
+| | |
+|--|--|
+| $$x^a \cdot x^b \cdot x^c$$ | $$x^{a+b+c}$$ |
+| $$a^n \cdot b^n \cdot c^n$$ | $$(abc)^n$$ |
+| $$\cfrac{\cfrac{x^a}{x^b}}{x^c}$$ | $$x^{a-b-c}$$ |
+| $$\cfrac{\cfrac{a^n}{b^n}}{c^n}$$ | $$\left(\frac{a}{bc}\right)^n$$ |
+| | |
+| $$\cfrac{x^a}{\cfrac{x^b}{x^c}}$$ | $$x^{a+c-b}$$ |
+| $$\cfrac{a^n}{\cfrac{b^n}{c^n}}$$ | $$\left(\frac{ac}{b}\right)^n$$ |
+
 ## Roots
 
 |||
