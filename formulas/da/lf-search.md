@@ -21,4 +21,5 @@
 | | $$\iff \gamma = \theta + 2\arcsin\left(\frac{c}{2r}\right)$$ |
 | by $m$ and $\displaystyle\int_a^b$ equal $A$ | $$f(x) = \left(x-\frac{b+a}{2}\right)m+\frac{A}{b-a}$$ |
 | by $i$ and $\displaystyle\int_a^b$ equal $A$ | $$f(x) = \frac{2x[A-i(b-a)]}{b^2-a^2}+i$$ |
+| by line integral $\displaystyle\int_a^b$ equal $L$ | $$f(x) = {\large\frac{L}{b-a}}\sqrt{1-\left(\frac{b-a}{L}\right)^2}{\large(x-x_p)+y_p}$$ |
 
