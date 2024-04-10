@@ -27,6 +27,22 @@
 | $$\cfrac{x^a}{\cfrac{x^b}{x^c}}$$ | $$x^{a+c-b}$$ |
 | $$\cfrac{a^n}{\cfrac{b^n}{c^n}}$$ | $$\left(\frac{ac}{b}\right)^n$$ |
 
+$$
+\begin{array}{cl}
+\sqrt[n]{x^{kn}} = x^k
+\\
+\cup
+\\
+\sqrt[n]{x^p} = x^{\cfrac{p}{n}}
+\\
+& \sqrt[3]{4^6} = 4^2
+\\
+& \sqrt[2]{4^6} = 4^3
+\\
+& \sqrt[4]{4^{12}} = 4^3
+\end{array}
+$$
+
 ## Roots
 
 |||
