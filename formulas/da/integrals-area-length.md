@@ -1,5 +1,10 @@
 # Integrals: Area and Length
 
+| Data | Integral |
+|--|--|
+| area | $$\int f(x)\ dx$$ |
+| length | $$\int \sqrt{1+[f'(x)]^2}\ dx$$ |
+
 ## Area
 
 - function: $f(x) = 2x-4$
