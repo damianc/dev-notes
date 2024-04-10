@@ -34,6 +34,10 @@
 | $$\sqrt[n]{a} \cdot \sqrt[n]{b} = \sqrt[n]{ab}$$ | $$\frac{\sqrt[n]{a}}{\sqrt[n]{b}} = \sqrt[n]{\frac{a}{b}}$$ |
 | $$\sqrt[m]{a} \cdot \sqrt[n]{a} = \sqrt[mn]{a^{m+n}}$$ | $$\frac{\sqrt[m]{a}}{\sqrt[n]{a}} = \sqrt[mn]{a^{n-m}}$$ |
 
+$$
+\sqrt[m]{\sqrt[n]{x}} = \sqrt[mn]{x}
+$$
+
 ## Logarithms
 
 |||
