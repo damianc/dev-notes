@@ -20,5 +20,5 @@
 | chord $c$ in length crossing circle $(a,b,r)$ at point $\theta$ | $$f(x) = \frac{(\sin(\gamma)-\sin(\theta))(x-r \cdot \cos(\theta)-a)}{\cos(\gamma)-\cos(\theta)}+r \cdot \sin(\theta)+b$$ |
 | | $$\iff \gamma = \theta + 2\arcsin\left(\frac{c}{2r}\right)$$ |
 | by $m$ and $\displaystyle\int_a^b$ equal $A$ | $$f(x) = \left(x-\frac{b+a}{2}\right)m+\frac{A}{b-a}$$ |
-| by $i$ and $\displaystyle\int_a^b$ equal $A$ | $$f(x) = \frac{2[A-i(b-a)]}{b^2-a^2}x+i$$ |
+| by $i$ and $\displaystyle\int_a^b$ equal $A$ | $$f(x) = \frac{2x[A-i(b-a)]}{b^2-a^2}+i$$ |
 
