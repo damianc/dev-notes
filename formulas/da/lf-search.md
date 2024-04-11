@@ -18,6 +18,7 @@
 | parallel to $F(x)=mx+i$ by y-distance $d$ | $$f(x) = mx+i+d$$ |
 | parallel to $F(x)= mx+i$ by $\perp$-distance $d$ | $$f(x) = mx+i+d\sqrt{1+m^2}$$ |
 | tangent to circle $(x-a)^2+(y-b)^2=r^2$ at $(p,q)$ | $$f(x) = \frac{(x-p)(b-q)}{p-a}+q$$ |
+| | $$\leadsto (p,q) = (r \cdot \cos(\theta) + a, r \cdot \sin(\theta) + b)$$ |
 | chord $c$ in length crossing circle $(a,b,r)$ at point $\theta$ | $$f(x) = \frac{(\sin(\gamma)-\sin(\theta))(x-r \cdot \cos(\theta)-a)}{\cos(\gamma)-\cos(\theta)}+r \cdot \sin(\theta)+b$$ |
 | | $$\iff \gamma = \theta + 2\arcsin\left(\frac{c}{2r}\right)$$ |
 | by $m$ and $\displaystyle\int_a^b$ equal $A$ | $$f(x) = \left(x-\frac{b+a}{2}\right)m+\frac{A}{b-a}$$ |
