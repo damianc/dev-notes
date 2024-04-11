@@ -21,6 +21,8 @@
 | | $$\leadsto (p,q) = (r \cdot \cos(\theta) + a, r \cdot \sin(\theta) + b)$$ |
 | chord $c$ in length crossing circle $(a,b,r)$ at point $\theta$ | $$f(x) = \frac{(\sin(\gamma)-\sin(\theta))(x-r \cdot \cos(\theta)-a)}{\cos(\gamma)-\cos(\theta)}+r \cdot \sin(\theta)+b$$ |
 | | $$\iff \gamma = \theta + 2\arcsin\left(\frac{c}{2r}\right)$$ |
+| by arc $a$ in length | $$\text{as above}$$ |
+| | $$\iff \gamma = \theta + \frac{a}{r}$$ |
 | by $m$ and $\displaystyle\int_a^b$ equal $A$ | $$f(x) = \left(x-\frac{b+a}{2}\right)m+\frac{A}{b-a}$$ |
 | by $i$ and $\displaystyle\int_a^b$ equal $A$ | $$f(x) = \frac{2x[A-i(b-a)]}{b^2-a^2}+i$$ |
 | by line integral $\displaystyle\int_a^b$ equal $L$ | $$f(x) = {\large\frac{L(x-x_p)}{b-a}}\sqrt{1-\left(\frac{b-a}{L}\right)^2}{\large \mathop{+} y_p}$$ |
