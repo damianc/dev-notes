@@ -26,6 +26,7 @@
 | by $m$ and $\displaystyle\int_a^b$ equal $A$ | $$f(x) = \left(x-\frac{b+a}{2}\right)m+\frac{A}{b-a}$$ |
 | by $i$ and $\displaystyle\int_a^b$ equal $A$ | $$f(x) = \frac{2x[A-i(b-a)]}{b^2-a^2}+i$$ |
 | by zero-point $z$ and $\displaystyle\int_a^b$ equal $A$ | $$f(x) = \frac{2A(x-z)}{(b-a)(b+a-2z)}$$ |
+| | $$\iff b \gt a \gt z \quad \cup \quad a \in (z;b)$$ |
 | by line integral $\displaystyle\int_a^b$ equal $L$ | $$f(x) = {\large\frac{L(x-x_p)}{b-a}}\sqrt{1-\left(\frac{b-a}{L}\right)^2}{\large \mathop{+} y_p}$$ |
 | by arithmetic series $(a_1=h,\ \dots,\ a_n=t)$ | $$f(x) = h + \frac{(x-1)(t-h)}{n-1}$$ |
 | tangent to $g(x)$ at $x_0$ | $$f(x) = (x-x_0)g'(x_0)+g(x_0)$$ |
