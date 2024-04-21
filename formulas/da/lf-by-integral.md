@@ -1,5 +1,7 @@
 # Linear Function by Integral
 
+## by area
+
 Find a linear function such that:
 
 $$
@@ -28,7 +30,7 @@ f(x) = \frac{
 }
 $$
 
-----
+## by length
 
 Find a linear function $f(x)$ such that:
 
