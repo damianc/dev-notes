@@ -30,6 +30,22 @@ f(x) = \frac{
 }
 $$
 
+- by slope $m$:
+
+$$
+f(x) = \left(
+ x-\frac{b+a}{2}
+\right)m + \frac{A}{b-a}
+$$
+
+- by intercept $i$:
+
+$$
+f(x) = \left(
+ \frac{2A}{b^2-a^2} - \frac{2i}{b+a}
+\right)x + i
+$$
+
 ## by length
 
 Find a linear function $f(x)$ such that:
