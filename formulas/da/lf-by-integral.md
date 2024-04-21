@@ -27,3 +27,17 @@ f(x) = \frac{
  (b-a)^2
 }
 $$
+
+----
+
+Find a linear function $f(x)$ such that:
+
+$$
+\int_a^b \sqrt{1+[f'(x)]^2} dx = L
+$$
+
+- passing by $(p,q)$ point:
+
+$$
+f(x) = {\large(x-p)}\sqrt{\left(\frac{L}{b-a}\right)^2 - 1}{\large\ +\ q}
+$$
