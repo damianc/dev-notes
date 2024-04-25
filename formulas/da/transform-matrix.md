@@ -205,9 +205,9 @@ $$
 
 $$
 \begin{bmatrix}
-\lambda(1-a^2)&&\lambda(2a)&&0
+\lambda(1-a^2)&&\lambda(2a)&&\lambda(-2ab)
 \\
-\lambda(2a)&&\lambda(a^2-1)&&2b
+\lambda(2a)&&\lambda(a^2-1)&&\lambda(2b)
 \\
 0&&0&&1
 \end{bmatrix}
