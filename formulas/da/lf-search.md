@@ -28,6 +28,7 @@
 | by zero-point $z$ and $\displaystyle\int_a^b$ equal $A$ | $$f(x) = \frac{2A(x-z)}{(b-a)(b+a-2z)}$$ |
 | | $$\iff b \gt a \gt z \quad \cup \quad a \in (z;b)$$ |
 | by line integral $\displaystyle\int_a^b$ equal $L$ | $$f(x) = {\large\frac{L(x-x_p)}{b-a}}\sqrt{1-\left(\frac{b-a}{L}\right)^2}{\large \mathop{+} y_p}$$ |
+| | $$\ \cup \ f(x) = \frac{(x-x_p)\sqrt{L^2-(b-a)^2}}{b-a} + y_p$$ |
 | by arithmetic series $(a_1=h,\ \dots,\ a_n=t)$ | $$f(x) = h + \frac{(x-1)(t-h)}{n-1}$$ |
 | tangent to $g(x)$ at $x_0$ | $$f(x) = (x-x_0)g'(x_0)+g(x_0)$$ |
 
