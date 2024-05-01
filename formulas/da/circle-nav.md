@@ -52,3 +52,19 @@ $$
 \end{array}\right.
 \end{array}
 $$
+
+## Getting a Circle's Center
+
+$$
+\begin{array}{l}
+ a = x_p - r \cdot \cos(\alpha)
+ \\
+ b = y_p - r \cdot \sin(\alpha)
+\end{array}
+$$
+
+## Getting a Circle's Radius
+
+$$
+r = \left\|\frac{x_p-a}{\cos(\alpha)}\right\| = \left\|\frac{y_p-b}{\sin(\alpha)}\right\|
+$$
