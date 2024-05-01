@@ -79,3 +79,48 @@ $$
 x = \text{arcsinh/arccosh/arctanh}(\nabla)
 \end{cases}
 $$
+
+## Others
+
+$$
+\begin{cases}
+\nabla = (x-n)(x+n)
+\\
+x = \sqrt{\nabla-n^2}
+\end{cases}
+$$
+
+$$
+\begin{cases}
+\nabla = (x+n)^2
+\\
+x = \sqrt{\nabla}-n
+\end{cases}
+$$
+
+$$
+\begin{cases}
+\nabla = (x-n)^2
+\\
+x = \sqrt{\nabla}+n
+\end{cases}
+$$
+
+$$
+\begin{cases}
+\nabla = (n-x)^2
+\\
+x = n-\sqrt{\nabla}
+\end{cases}
+$$
+
+$$
+\begin{cases}
+\nabla = \frac{ax+b}{cx+d}
+\\
+x = \frac{b-\nabla d}{\nabla c-a}
+\end{cases}
+$$
+
+
+
