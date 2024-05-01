@@ -36,3 +36,19 @@ $$
 \end{cases}
 \end{array}
 $$
+
+## Angle by Point
+
+$$
+\begin{array}{l}
+\phi_x = \arccos\left(\frac{x_p-a}{r}\right)
+\\
+\phi_y = \arcsin\left(\frac{y_p-b}{r}\right)
+\\
+\alpha = \left\\{\begin{array}{ll}
+ \phi_x & \iff \phi_y \geqslant 0
+ \\
+ 2\pi-\phi_x & \iff \phi_y \lt 0
+\end{array}\right.
+\end{array}
+$$
