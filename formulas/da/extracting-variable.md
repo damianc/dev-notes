@@ -122,5 +122,14 @@ x = \frac{b-\nabla d}{\nabla c-a}
 \end{cases}
 $$
 
+$$
+\begin{cases}
+\nabla = \sin(90\degree \pm x)
+\\
+x = \arccos(\nabla)
+\end{cases}
+$$
+
+
 
 
