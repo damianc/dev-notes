@@ -1,8 +1,8 @@
 # Quantiles
 
-- _n-th_ quantile of data split into $\Delta$ pieces
-- data is $L$ in length
-- data is sorted in ascending order
+- _n-th_ quantile of a dataset split into $\Delta$ pieces
+- the dataset is $L$ in length
+- the dataset is sorted in ascending order
 
 $$
 \begin{array}{l}
