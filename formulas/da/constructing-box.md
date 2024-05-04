@@ -55,3 +55,86 @@ a-\left(\frac{1}{6}a+\frac{1}{6}a\right)
 x = \frac{1}{6}a
 \end{array}
 $$
+
+----
+
+$$
+\begin{array}{ll}
+V(x) & =
+(a-2x)(b-2x)x
+\\
+& =
+[(a-2x)b-(a-2x)2x]x
+\\
+& =
+([ab-2bx]-[2ax-4x^2])x
+\\
+& =
+(ab-2bx-2ax+4x^2)x
+\\
+& =
+abx-2bx^2-2ax^2+4x^3
+\\
+& =
+4x^3-2bx^2-2ax^2+abx
+\\
+& =
+4x^3-(2b+2a)x^2+abx
+\\
+& =
+4x^3-2(b+a)x^2+abx
+\\\ \\
+V'(x)
+& =
+12x^2-4(b+a)x+ab
+\end{array}
+$$
+
+$$
+\begin{array}{ll}
+A = 12
+\\
+B = -4(b+a)
+\\
+C = ab
+\\
+\Delta & = B^2-4AC
+\\
+& = 16(a+b)^2-4 \cdot 12 \cdot ab
+\\
+& = 16(a+b)^2-48ab
+\\
+& = 16[(a+b)^2-3ab]
+\\
+\sqrt{\Delta}
+& = \sqrt{16[(a+b)^2-3ab]}
+\\
+& = \sqrt{16} \sqrt{(a+b)^2-3ab}
+\\
+& = 4 \sqrt{(a+b)^2-3ab}
+\\\ \\
+x_{1,2} & = \frac{-B \pm \sqrt{\Delta}}{2A}
+\\
+x_1 & =
+\frac{4(a+b)+4\sqrt{(a+b)^2-3ab}}{24}
+\\
+& =
+\frac{4(a+b+\sqrt{(a+b)^2-3ab})}{24}
+\\
+& =
+\frac{1}{6}\left[
+ a+b+\sqrt{(a+b)^2-3ab}
+\right]
+\\
+x_2 & =
+\frac{4(a+b)-4\sqrt{(a+b)^2-3ab}}{24}
+\\
+& =
+\frac{4(a+b-\sqrt{(a+b)^2-3ab})}{24}
+\\
+& =
+\frac{1}{6}\left[
+ a+b-\sqrt{(a+b)^2-3ab}
+\right]
+\end{array}
+$$
