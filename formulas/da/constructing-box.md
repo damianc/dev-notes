@@ -92,11 +92,11 @@ $$
 
 $$
 \begin{array}{ll}
-A = 12
+A & = 12
 \\
-B = -4(b+a)
+B & = -4(b+a)
 \\
-C = ab
+C & = ab
 \\
 \Delta & = B^2-4AC
 \\
@@ -137,4 +137,10 @@ x_2 & =
  a+b-\sqrt{(a+b)^2-3ab}
 \right]
 \end{array}
+$$
+
+$$
+x = x_i \iff
+\underset{i \in \\{1,2\\}}{\Large \exists}
+\quad x_i \in \left(0; \frac{\min(a,b)}{2}\right)
 $$
