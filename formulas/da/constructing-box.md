@@ -1,5 +1,35 @@
 # Constructing a Box
 
+Construct a box with maximum possible volume.
+
+![Ready Box](https://github.com/damianc/dev-notes/blob/master/_images/math/box-done.png)
+
+## Square Plane
+
+![Square Plane](https://github.com/damianc/dev-notes/blob/master/_images/math/box-plane-sq.png)
+
+$$
+x = \frac{1}{6} a
+$$
+
+## Rectangular Plane
+
+![Rectangular Plane](https://github.com/damianc/dev-notes/blob/master/_images/math/box-plane-rect.png)
+
+$$
+x = \frac{1}{6}\left[a+b+\sqrt{(a+b)^2-3ab}\right]
+$$
+
+$$
+\cup\ \frac{1}{6}\left[a+b-\sqrt{(a+b)^2-3ab}\right]
+$$
+
+depending on which belongs to $\left(0; \frac{\min(a,b)}{2}\right)$
+
+## Proofs
+
+### Square Plane
+
 $$
 \begin{array}{ll}
 V(x) & = (a-2x)^2x
@@ -56,7 +86,7 @@ x = \frac{1}{6}a
 \end{array}
 $$
 
-----
+### Rectangular Plane
 
 $$
 \begin{array}{ll}
