@@ -217,3 +217,33 @@ $$
 \iff
 \lambda(x) = \frac{x}{1+a^2}
 $$
+
+## Combining Transformations
+
+$$
+\begin{bmatrix}
+A & B & C
+\\
+D & E & F
+\\
+0 & 0 & 1
+\end{bmatrix}
+\times
+\begin{bmatrix}
+G & H & I
+\\
+J & K & L
+\\
+0 & 0 & 1
+\end{bmatrix} =
+$$
+
+$$
+\begin{bmatrix}
+AG+BJ && AH+BK && AI+BL+C
+\\
+DG+EJ && DH+EK && DI+EL+F
+\\
+0 && 0 && 1
+\end{bmatrix}
+$$
