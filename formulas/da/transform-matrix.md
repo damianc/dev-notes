@@ -247,3 +247,21 @@ DG+EJ && DH+EK && DI+EL+F
 0 && 0 && 1
 \end{bmatrix}
 $$
+
+$$
+\left\\{
+\begin{array}{ll}
+x' = & (AG+BJ)x\ +
+\\
+& (AH+BK)y\ +
+\\
+& (AI+BL+C)
+\\\ \\
+y' = & (DG+EJ)x\ +
+\\
+& (DH+EK)y\ +
+\\
+& (DI+EL+F)
+\end{array}
+\right.
+$$
