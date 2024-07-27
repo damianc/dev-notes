@@ -313,6 +313,8 @@ $$
 r = \frac{w}{2 \sin\left(\frac{\gamma}{2}\right)}
 $$
 
+> other formula to get a radius is $\frac{4hw}{4h^2+w^2}$
+
 - arc length
 
 $$
