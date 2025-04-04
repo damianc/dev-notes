@@ -381,6 +381,7 @@ Currently: &nbsp; **374** Dev_Notes
 
 ## Recipes
 
+* [Normalization of Diacritics](javascript/recipes/diacritics-normalization.md)
 * [Random Number from a Range](javascript/recipes/random-from-range.md)
 * [Alter Wrapper](javascript/recipes/alter-wrapper.md)
 * [_Trusted Value Providers_ aka _Signed Objects_](javascript/recipes/encapsulated-objects.md)
