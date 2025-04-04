@@ -8,3 +8,12 @@ function normalize(str) {
     .replace(/ø/g, 'o');
 }
 ```
+
+- use:
+
+```
+normalize(
+  'ãåāąáàâä čćç ėêëēèęé ł ńñ ōøõòôöó šś ŭúūûüù žżź'
+);
+// 'aaaaaaaa ccc eeeeeee l nn ooooooo ss uuuuuu zzz'
+```
