@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **374** Dev_Notes
+Currently: &nbsp; **375** Dev_Notes
 
 ---
 
@@ -84,6 +84,7 @@ Currently: &nbsp; **374** Dev_Notes
 
 * [Algorithms](algorithms-and-data-structures/algorithms.md)
 * [Bubble Sort](algorithms-and-data-structures/bubble-sort.md)
+* [Heap Sort](algorithms-and-data-structures/heap-sort.md)
 * [Fibonacci Generator](algorithms-and-data-structures/fibonacci-generator.md)
 
 ## Data Structures
