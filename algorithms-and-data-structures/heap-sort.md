@@ -2,7 +2,9 @@
 
 ```
 function heapSort(arr) {
+  arr = [...arr];
   buildHeap(arr);
+
   let heapSize = arr.length-1;
   for (let i=heapSize; i>=0; i--) {
     swap(arr,0,heapSize);
