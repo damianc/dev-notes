@@ -9,7 +9,7 @@ Similar repos:
 
 ---
 
-Currently: &nbsp; **375** Dev_Notes
+Currently: &nbsp; **376** Dev_Notes
 
 ---
 
@@ -383,7 +383,8 @@ Currently: &nbsp; **375** Dev_Notes
 ## Recipes
 
 * [Normalization of Diacritics](javascript/recipes/diacritics-normalization.md)
-* [Random Number from a Range](javascript/recipes/random-from-range.md)
+* [Getting a Random Value](https://github.com/damianc/dev-notes/blob/master/javascript/recipes/random-value.md)
+* [Random Number from a Range](javascript/recipes/random-from-range.md) (old/naive)
 * [Alter Wrapper](javascript/recipes/alter-wrapper.md)
 * [_Trusted Value Providers_ aka _Signed Objects_](javascript/recipes/encapsulated-objects.md)
 * [Calling `eval()` in a Context](javascript/recipes/eval-in-context.md)
