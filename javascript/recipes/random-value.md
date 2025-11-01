@@ -1,5 +1,7 @@
 # Getting a Random Value
 
+## A Single Value
+
 - random value $\in$ [0,1):
 
 ```
@@ -33,5 +35,21 @@ function random(min, max) {
   return Math.floor(
     Math.random() * (rMax-rMin+1) + rMin
   );
+}
+```
+
+## More Values
+
+```
+function randoms(count, minValue, maxValue) { 
+  count = Math.min(count, maxValue-minValue);
+
+  const res = [];
+  while (res.length !== count) {
+    const rand = random(minValue, maxValue);
+    if (res.indexOf(rand) === -1) res.push(rand);
+  }
+
+  return res;
 }
 ```
