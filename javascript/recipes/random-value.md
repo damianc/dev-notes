@@ -38,7 +38,7 @@ function random(min, max) {
 }
 ```
 
-## Multiple Values
+## Multiple Unique Values
 
 ```
 function randoms(count, minValue, maxValue) { 
