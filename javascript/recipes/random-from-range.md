@@ -6,6 +6,9 @@ function random(min, max) {
   return Math.floor(r) + min;
 }
 ```
+
+> Better implementations may be found in the note [Getting a Random Value](https://github.com/damianc/dev-notes/blob/master/javascript/recipes/random-value.md).
+
 ## `n` Random Numbers from a Range
 
 ```
